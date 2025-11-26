@@ -138,8 +138,6 @@ GROQ_API_KEY=your_groq_api_key_here
 HUGGINGFACE_TOKEN=your_huggingface_token_here
 ```
 
-**⚠️ IMPORTANT:** Never commit the `.env` file to git. It's already included in `.gitignore`.
-
 2. **Import Required Libraries**
 
 ```python
