@@ -1,0 +1,584 @@
+{
+  "metadata": {
+    "title": "Heap_Class8_Unit3_Trees_Heap",
+    "slide_count": 20
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS\nUE19CS202"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S & Kusuma K V"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Heap: Definition and Implementation"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Tree"
+        },
+        {
+          "type": "text",
+          "text": "Definition: A heap can be defined as a binary tree with keys assigned to its nodes (one key per node) provided the following two conditions are met:\n1. The tree's shape requirement - The binary tree is essentially complete, that is, all its levels are full except possibly the last level, where only some rightmost leaves may be missing\n2. The parental dominance requirement - The key at each node is greater than or equal to the keys at its children. (This condition is considered automatically satisfied for all leaves.)"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Tree"
+        },
+        {
+          "type": "text",
+          "text": "Only the topmost Binary Tree is a heap. Why?"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Shape Requirement not satisfied"
+        },
+        {
+          "type": "text",
+          "text": "Parental dominance not satisfied"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Properties of Heap"
+        },
+        {
+          "type": "text",
+          "text": "There exists exactly one essentially complete binary tree with n nodes. Its height is equal to \u230alog2n\u230b\n\nThe root of a heap always contains its largest element\n\nA node of a heap considered with all its descendants is also a heap\n\nA heap can be implemented as an array by recording its elements in the top-down, left-to-right fashion. It is convenient to store the heap's elements in positions 1 through n of such an array, leaving H[0] either unused or putting there a sentinel whose value is greater than every element in the heap."
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Properties of Heap"
+        },
+        {
+          "type": "text",
+          "text": "\u2026\nIn such a representation,\nThe parental node keys will be in the first \u230an/2\u230b positions of the array, while the leaf keys will occupy the last \u2308n/2\u2309 positions\n\nThe children of a key in the array's parental position i (1 <= i <= \u230an/2\u230b) will be in positions 2i and 2i + 1, and, correspondingly, the parent of a key in position i      (2 <= i <= n) will be in position \u230an/2\u230b"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Construction \u2013 Bottom Up"
+        },
+        {
+          "type": "text",
+          "text": "Bottom Up Heap Construction: 25, 57, 48, 37, 12, 92, 86, 33\nHere, n=8"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "At k = 4, v = 37\nCompare 37 with its only child 33\n37 > 33, it\u2019s a heap at k=4"
+        },
+        {
+          "type": "text",
+          "text": "Initial binary tree"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Construction \u2013 Bottom Up"
+        },
+        {
+          "type": "text",
+          "text": "Bottom Up Heap Construction: 25, 57, 48, 37, 12, 92, 86, 33\nHere, n=8"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "At k = 3, v = 48\nLargest child: 92\nCompare 48 with its largest child\n48 < 92, Heapify"
+        },
+        {
+          "type": "text",
+          "text": "Binary tree\nafter  one iteration at k=4"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 9,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Construction \u2013 Bottom Up"
+        },
+        {
+          "type": "text",
+          "text": "Bottom Up Heap Construction: 25, 57, 48, 37, 12, 92, 86, 33\nHere, n=8"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "At k = 2, v = 57\nLargest child: 37\nCompare 57 with its largest child\n57 > 37, it\u2019s a heap at k=2"
+        },
+        {
+          "type": "text",
+          "text": "Binary tree\nafter  two iterations at k=4, k=3"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 10,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Construction \u2013 Bottom Up"
+        },
+        {
+          "type": "text",
+          "text": "Bottom Up Heap Construction: 25, 57, 48, 37, 12, 92, 86, 33\nHere, n=8"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Binary tree after  three iterations at k=4, k=3, k=2"
+        },
+        {
+          "type": "text",
+          "text": "At k = 1, v = 25\nLargest child: 92\nCompare 25 with its largest child\n25 < 92, Heapify"
+        },
+        {
+          "type": "text",
+          "text": "v = 25, Now at k = 3, \nLargest child: 86\nCompare 25 with its largest child\n25<86, Heapify"
+        },
+        {
+          "type": "text",
+          "text": "Heap Constructed"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 11,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Construction \u2013 Bottom Up"
+        },
+        {
+          "type": "text",
+          "text": "Bottom Up Heap Construction: 25, 57, 48, 37, 12, 92, 86, 33\nHere, n=8"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Initial binary tree"
+        },
+        {
+          "type": "text",
+          "text": "Bottom Up Heap Constructed"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 12,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Construction \u2013 Bottom Up"
+        },
+        {
+          "type": "text",
+          "text": "ALGORITHM HeapBottomUp(H[1\u2026n])\n//Constructs a heap from the elements of a given array by bottom-up algorithm\n//Input: An array H[1\u2026n] of orderable items\n//Output: A heap H[1\u2026n]\nfor i \uf0df \u230an/2\u230b downto 1 {\n\tk \uf0df i\n\tv \uf0df H[k]\n\theap \uf0df false\n\twhile not heap and 2*k \u2264 n {\n\t\tj \uf0df 2*k\n\t\tif j < n\t\t\t//if there are two children\n\t\t    if H[j] < H[j+1]\n\t\t\tj \uf0df j+1\t\t//find position of largest child\n\t\tif v \u2265 H[j]\t//if key of parent node \u2265 key of largest child\n\t\t    heap \uf0df true\t//it\u2019s a heap\n\t\telse {\t\t\t//heapify\n\t\t\tH[k] \uf0df H[j]\n\t\t\tk \uf0df j\n\t\t}\t//end of else\n\t}\t//end of while\n\tH[k] \uf0df v\n}\t//end of for"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 13,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Construction \u2013 Bottom Up"
+        },
+        {
+          "type": "text",
+          "text": "Efficiency"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 14,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Construction \u2013 Top Down"
+        },
+        {
+          "type": "text",
+          "text": "Top Down Heap Construction: 25, 57, 48, 37, 12, 92, 86, 33\nHere, n=8"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Insert 25"
+        },
+        {
+          "type": "text",
+          "text": "Insert 57"
+        },
+        {
+          "type": "text",
+          "text": "25<57, Heapify"
+        },
+        {
+          "type": "text",
+          "text": "Insert 48"
+        },
+        {
+          "type": "text",
+          "text": "Heap"
+        },
+        {
+          "type": "text",
+          "text": "Heap"
+        },
+        {
+          "type": "text",
+          "text": "Heap"
+        },
+        {
+          "type": "text",
+          "text": "Insert 37"
+        },
+        {
+          "type": "text",
+          "text": "25<37, Heapify"
+        },
+        {
+          "type": "text",
+          "text": "Heap"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 15,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Construction \u2013 Top Down"
+        },
+        {
+          "type": "text",
+          "text": "Top Down Heap Construction: 25, 57, 48, 37, 12, 92, 86, 33\nHere, n=8"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Insert 12"
+        },
+        {
+          "type": "text",
+          "text": "48<92, Heapify"
+        },
+        {
+          "type": "text",
+          "text": "Heap"
+        },
+        {
+          "type": "text",
+          "text": "Insert 92"
+        },
+        {
+          "type": "text",
+          "text": "57<92, Heapify"
+        },
+        {
+          "type": "text",
+          "text": "Heap"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 16,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Construction \u2013 Top Down"
+        },
+        {
+          "type": "text",
+          "text": "Top Down Heap Construction: 25, 57, 48, 37, 12, 92, 86, 33\nHere, n=8"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Insert 86"
+        },
+        {
+          "type": "text",
+          "text": "Heap"
+        },
+        {
+          "type": "text",
+          "text": "57<86, Heapify"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 17,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Construction \u2013 Top Down"
+        },
+        {
+          "type": "text",
+          "text": "Top Down Heap Construction: 25, 57, 48, 37, 12, 92, 86, 33\nHere, n=8"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Insert 33"
+        },
+        {
+          "type": "text",
+          "text": "Heap"
+        },
+        {
+          "type": "text",
+          "text": "25<33, Heapify"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 18,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Construction \u2013 Top Down"
+        },
+        {
+          "type": "text",
+          "text": "First, attach a new node with key K in it after the last leaf of the existing heap\nThen sift K up to its appropriate place in the new heap as follows\nCompare K with its parent's key: if the latter is greater than or equal to K, stop (the structure is a heap); \notherwise, swap these two keys and compare K with its new parent\nThis swapping continues until K is not greater than its last parent or it reaches the root\nIn this algorithm, too, we can sift up an empty node until it reaches its proper position, where it will get K 's value"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 19,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Heap Construction \u2013 Top Down"
+        },
+        {
+          "type": "text",
+          "text": "Efficiency of insertion is O(log n)"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 20,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "shylaja.sharath@pes.edu"
+        },
+        {
+          "type": "text",
+          "text": "+91 9449867804"
+        },
+        {
+          "type": "text",
+          "text": "THANK YOU"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n& Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    }
+  ]
+}

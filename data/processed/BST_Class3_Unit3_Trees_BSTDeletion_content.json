@@ -1,0 +1,362 @@
+{
+  "metadata": {
+    "title": "BST_Class3_Unit3_Trees_BSTDeletion",
+    "slide_count": 10
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS\nUE19CS202"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S & Kusuma K V"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "BST: Deletion Operations"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree - Deletion"
+        },
+        {
+          "type": "text",
+          "text": "Deletion of a Node in Binary Search Tree\ncase1: Node with no child (leaf node)\ncase2: Node with 1 child\ncase3: Node with 2 children"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree - Deletion"
+        },
+        {
+          "type": "text",
+          "text": "case1: Node with no child (leaf node)"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "9"
+        },
+        {
+          "type": "text",
+          "text": "7"
+        },
+        {
+          "type": "text",
+          "text": "To delete the node with info 7:\nSet its parent\u2019s left child  field to point to NULL\nFree memory allocated to node with info 7"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree - Deletion"
+        },
+        {
+          "type": "text",
+          "text": "case1: Node with no child (leaf node)"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "To delete the node with info 4:\nSet its parent\u2019s right child  field to point to NULL\nFree memory allocated to node with info 4"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree - Deletion"
+        },
+        {
+          "type": "text",
+          "text": "case2: Node with 1 child"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "8"
+        },
+        {
+          "type": "text",
+          "text": "To delete the node with info 6:\nSet its parent\u2019s right child  field to point to its only child\nFree memory allocated to node with info 6"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree - Deletion"
+        },
+        {
+          "type": "text",
+          "text": "case2: Node with 1 child"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "8"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "To delete the node with info 2:\nSet its parent\u2019s left child  field to point to its only child\nFree memory allocated to node with info 2"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree - Deletion"
+        },
+        {
+          "type": "text",
+          "text": "case3: Node with 2 children"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "8"
+        },
+        {
+          "type": "text",
+          "text": "To delete the node with info 5:\nReplace 5 with its inorder successor and delete that inorder successor\nNow case3 has got changed to case2 (In general may change to case2 or case1)"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "8"
+        },
+        {
+          "type": "text",
+          "text": "(Replace with inorder successor)"
+        },
+        {
+          "type": "text",
+          "text": "(Way1)"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 9,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree - Deletion"
+        },
+        {
+          "type": "text",
+          "text": "case3: Node with 2 children"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "8"
+        },
+        {
+          "type": "text",
+          "text": "To delete the node with info 5:\nReplace 5 with its inorder predecessor and delete that inorder predecessor\nHere case3 has got changed to case1 (In general may change to case2 or case1)"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "(Replace with inorder predecessor)"
+        },
+        {
+          "type": "text",
+          "text": "(Way2)"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 10,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "shylaja.sharath@pes.edu"
+        },
+        {
+          "type": "text",
+          "text": "+91 9449867804"
+        },
+        {
+          "type": "text",
+          "text": "THANK YOU"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n& Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    }
+  ]
+}

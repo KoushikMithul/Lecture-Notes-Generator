@@ -1,0 +1,385 @@
+{
+  "metadata": {
+    "title": "Tree_traversal_class9_Unit3_Trees_naryTraversal",
+    "slide_count": 13
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS\nUE19CS202"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S & Kusuma K V"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "n-ary Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "Structure of a treenode revisited\nstruct treenode{\n \tint info;\n\tstruct treenode *child;\n\tstruct treenode *sibling;\n};"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "With the treenode implemented as having pointers to first child and immediate sibling, the traversal preorder, inorder and postorder for a tree are defined as follows:\nPreorder:\n1. Visit the root of the first tree in the forest\n2. Traverse in preorder the forest formed by the subtrees of  the first tree, if any\n3. Traverse in preorder the forest formed by the remaining trees in the forest, if any"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "Preorder Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "A"
+        },
+        {
+          "type": "text",
+          "text": "B"
+        },
+        {
+          "type": "text",
+          "text": "E"
+        },
+        {
+          "type": "text",
+          "text": "F"
+        },
+        {
+          "type": "text",
+          "text": "C"
+        },
+        {
+          "type": "text",
+          "text": "G"
+        },
+        {
+          "type": "text",
+          "text": "H"
+        },
+        {
+          "type": "text",
+          "text": "D"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 9
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "void preorder(TREE *root)\n{\n     if(root!=NULL)\n     {\n       printf(\" %d \",root->info);\n       preorder(root->child);\n       preorder(root->sibling);\n    }\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "Inorder\n1. Traverse in inorder the forest formed by the subtrees of the  first tree, if any\n2. Visit the root of the first tree in the forest\n3. Traverse in inorder the forest formed by the remaining trees in the forest, if any"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "Inorder Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "E"
+        },
+        {
+          "type": "text",
+          "text": "F"
+        },
+        {
+          "type": "text",
+          "text": "B"
+        },
+        {
+          "type": "text",
+          "text": "H"
+        },
+        {
+          "type": "text",
+          "text": "G"
+        },
+        {
+          "type": "text",
+          "text": "C"
+        },
+        {
+          "type": "text",
+          "text": "D"
+        },
+        {
+          "type": "text",
+          "text": "A"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 9
+    },
+    {
+      "slide_number": 9,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "void inorder(TREE *root)\n{\n   if(root!=NULL)\n     {\n       inorder(root->child);\n       printf(\" %d \",root->info);\n       inorder(root->sibling);\n    }\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 10,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "Postorder\n Traverse in postorder the forest formed by the subtrees of the first tree, if any\n Traverse in postorder the forest formed by the remaining trees in the forest, if any\n Visit the root of the first tree in the forest"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 11,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "Postorder Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "F"
+        },
+        {
+          "type": "text",
+          "text": "E"
+        },
+        {
+          "type": "text",
+          "text": "H"
+        },
+        {
+          "type": "text",
+          "text": "G"
+        },
+        {
+          "type": "text",
+          "text": "D"
+        },
+        {
+          "type": "text",
+          "text": "C"
+        },
+        {
+          "type": "text",
+          "text": "B"
+        },
+        {
+          "type": "text",
+          "text": "A"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 9
+    },
+    {
+      "slide_number": 12,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "void postorder(TREE *root)\n{\n   if(root!=NULL)\n     {\n       postorder(root->child);\n       postorder(root->sibling);\n       printf(\" %d \", root->info);\n    }\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 13,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "shylaja.sharath@pes.edu"
+        },
+        {
+          "type": "text",
+          "text": "THANK YOU"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n& Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    }
+  ]
+}

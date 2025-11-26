@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "title": "Multimodal_MAMBA",
+    "slide_count": 20
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "Page 1",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5 \nLarge Language Models and Their Applications\nDr. Shylaja S S \nDirector of Cloud Computing & Big Data (CCBD), Centre \nfor Data Sciences & Applied Machine Learning (CDSAML) \nDepartment of Computer Science and Engineering \nshylaja.sharath@pes.edu\nAck: Yashaswini Ippili \nTeaching Assistant\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 2,
+      "title": "Page 2",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nImagine reading a really long book \u2014 like Harry Potter \u2014 but instead of flipping through \nevery single page to find what matters, you magically remember only the important \nparts and instantly skip the rest. \nThat\u2019s kind of what Mamba does for sequences. \n- It\u2019s sleek \u2014 no need to compare every word to every other word like Transformers \ndo. \n- It\u2019s fast \u2014 can zoom through super long sequences with ease. \n- It\u2019s smart \u2014 decides what to remember and what to forget on the fly. \nMamba is a new kind of brain for machines, built to understand sequences more \nefficiently \u2014 without the heavy lifting of traditional attention models. \nSurprisingly \u2014 \"Mamba\" is not an abbreviation in the original paper. It's just a name, \nlikely chosen for being catchy, memorable, and evoking something fast and agile! \nOriginal Paper : https://arxiv.org/pdf/2312.00752\nMeet Mamba \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 3,
+      "title": "Page 3",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nWhat is Mamba?\nMamba is a new neural network architecture designed for working with sequences \u2014 \nlike text, audio, or DNA \u2014 in a way that's faster and more efficient than traditional \nmodels like Transformers. Most modern models (like Transformers) use attention to \ndecide which parts of a sequence to focus on. This works well, but it becomes slow \nand memory-intensive as the sequence gets longer. \nMamba takes a different approach: it uses something called a Selective State Space \nModel (SSM). State Space Models are like memory systems: they track information \nover time using internal \"states\". In Selective SSMs, these states change based on the \ninput \u2014 for example, the model can choose to \"remember\" or \"forget\" things \ndepending on the current token. This makes Mamba especially good at handling long \nsequences because it doesn't need to compare every token with every other token like \nattention does. \n\u2028\nIn short, Mamba models the flow of information over time in a smart and efficient way \n\u2014 remembering what matters and forgetting what doesn\u2019t.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 4,
+      "title": "Page 4",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nArchitecture\nSource: https://\nthegradient.pub/mamba-\nexplained/ \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 5,
+      "title": "Page 5",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nKey Components of Mamba\n1. State Space Models (SSMs) \nWhat?  \nMamba replaces attention with a different mechanism called state space models \n(SSMs), which maintain a running memory (or state) as they process input step by \nstep. \nHow? \nThink of how you follow a recipe while cooking. You don\u2019t reread the whole recipe \nevery minute; you remember where you are and just keep updating your progress \nas you go. That internal memory is like the \"state\" in SSMs. \nWhy? \nThis avoids repeatedly scanning everything (like attention does), making it much \nfaster and more efficient\u2014especially for long sequences like documents or time-\nseries data.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 6,
+      "title": "Page 6",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nKey Components of Mamba\n2. Selective State Space Models (Selective SSMs) \n(the heart of what makes Mamba work so well) \nWhat? \nA Selective SSM is an enhanced form of a state space model that adapts its dynamics \nbased on the input at each step\u2014enabling relevance-based processing. This selective \nbehavior makes SSMs more like attention, without incurring attention's cost. \nHow? \nImagine you're sorting emails: instead of applying the same rules to every email, you \nchange your filter based on the sender or subject. If it's from your boss, you prioritize it. \nThat\u2019s selection based on input\u2014dynamically adjusting your behavior. \nWhy? \nTraditional SSMs have fixed filters, meaning they process all inputs similarly. Selective \nSSMs (used in Mamba) can focus on what's important and ignore the rest, much like \nattention\u2014but in a lightweight, faster way.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 7,
+      "title": "Page 7",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nKey Components of Mamba\n3. Continuous-Time Dynamics (Implicitly) \nWhat? \nSSMs model input as if it flows continuously over time, which helps them naturally \ncapture long-range relationships. \nHow? \nSuppose someone tells you in the morning, \u201cDon\u2019t forget to pick up groceries on \nthe way back.\u201d Even if you do 20 other things during the day, you still remember \nthat important instruction later. That\u2019s your brain handling long-term dependencies \nwithout constant reminders. \nWhy?  \nThis gives Mamba the ability to remember important information across very long \nsequences\u2014without the overhead of scanning all previous steps like attention \ndoes.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 8,
+      "title": "Page 8",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nKey Components of Mamba\n4. Input-Dependent Parameterization (Selectivity) \nWhat? \nUnlike traditional SSMs that use fixed filters, Mamba dynamically adjusts its \ninternal processing based on the input it's seeing right now. \nHow? \nImagine you\u2019re on a video call, and you automatically start paying closer attention \nwhen your manager begins talking about your project, versus when someone is \ncasually chatting. You didn\u2019t pre-plan this\u2014you adjusted your focus in the moment \nbased on relevance. \nWhy? \nThis makes Mamba selective\u2014it focuses on relevant parts of the input like \nattention does, but in a faster and more efficient way.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 9,
+      "title": "Page 9",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nKey Components of Mamba\n5. Convolutional Kernel + Gating \nWhat? \nMamba uses causal convolutions to capture local interactions and modulates them \nwith a learnable gate that controls how much information should be passed \nthrough. \nHow? \nThink of noise-canceling headphones that dynamically adjust how much outside \nsound to let in. If someone is speaking to you directly, it lets that through; \notherwise, it blocks background noise. That\u2019s like gating in Mamba\u2014filtering \nwhat's useful. \nWhy? \nThis makes Mamba expressive\u2014it can handle both important details and \nsuppress unneeded ones\u2014without increasing computation costs like complex \nattention layers.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 10,
+      "title": "Page 10",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nKey Components of Mamba\n6. Linear Time Complexity \nWhat? \nMamba processes sequences in linear time, while attention (used in \nTransformers) takes quadratic time, which becomes very expensive for long \ninputs. \nHow? \nImagine reading a book where, for every new sentence, you have to reread all the \nprevious ones to understand it (attention). That\u2019s exhausting. Now imagine just \nkeeping relevant facts in your head and moving on\u2014that\u2019s what Mamba does. \nWhy? \nThis makes Mamba extremely scalable. It can handle longer sequences (text, \nDNA, sensor data) with much less cost, making it practical for real-world \napplications.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 11,
+      "title": "Page 11",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nKey Components of Mamba\n7. Scan Algorithm for Parallelism \nWhat? \nDespite being a sequential model, Mamba uses the scan algorithm to parallelize \noperations\u2014making training fast. \nHow? \nImagine a relay team in a race, but instead of waiting for the baton, each runner \nstarts warming up and prepping based on the estimated arrival time of the \nbaton. They\u2019re doing things in parallel, not purely waiting. \nWhy? \nThis allows Mamba to maintain sequence order while still getting the speed \nbenefits of parallel computation\u2014making it competitive with or even faster than \nTransformers.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 12,
+      "title": "Page 12",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nKey Components of Mamba\n8. Drop-in Replacement for Attention \nWhat? \nMamba is designed as a modular block\u2014you can plug it in where attention \nlayers used to be in Transformer models. \nHow? \nIt\u2019s like swapping the engine in a car with a more efficient one, without \nredesigning the whole car. Everything still works, just faster and better. \nWhy? \nThis makes it easy to adopt. You get the benefits of Mamba without rewriting \nyour model architecture from scratch\u2014perfect for researchers and engineers.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 13,
+      "title": "Page 13",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nMamba vs Transformer vs RNN vs CNN\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 14,
+      "title": "Page 14",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nApplication: DNA Modeling \u2014 Pretraining on the Human Genome\nTask: Model long-range dependencies in the human genome (HG38), using \nsegments from Enformer\u2019s training splits (~4.5B tokens). \nSetup: \n\u25cfInput: DNA sequences (base pairs) as token streams. \n\u25cfContext lengths: from 1K to 1M (2\u00b9\u2070 to 2\u00b2\u2070). \n\u25cfCompared: Mamba vs HyenaDNA vs Transformer++. \n\u25cfMamba uses custom tokenization and scalable context-aware pretraining. \nKey Design Choices: \n\u25cfSub-sampling strategy based on context length: \n\u25cbIf context < 2\u00b9\u2077 \u2192 break segments into multiple. \n\u25cbIf context > 2\u00b9\u2077 \u2192 create \"start\" and \"end\" segment samples. \n\u25cfSequence Length Warmup (SLW): gradually increase context length during \ntraining. \n\u25cfConstant batch token count, not sample count (i.e., fewer samples for \nlonger sequences). \nTakeaway: Mamba outperforms on long-context genomic modeling, scaling \nwell to >1M token contexts.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 15,
+      "title": "Page 15",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nApplication 2: Audio Pretraining \u2014 YouTubeMix Dataset\nTask: Model raw audio waveforms using long context, autoregressive training. \nSetup: \n\u25cfDataset: 8-bit mu-law encoded YouTube audio clips (~1 min). \n\u25cfTokenized as 256-class discrete sequences. \n\u25cfSequence lengths up to 958K tokens (\u2248 1M). \n\u25cfMamba architecture with 3.5M parameters (15 blocks). \nTraining: \n\u25cf200K steps, cosine LR schedule (0.002 max). \n\u25cfLarge batch sizes: constant token count per step (\u22481M tokens). \n\u25cfInput segments: 2048 \u00d7 {468, 234, ..., 4} \u2192 progressively halved. \nKey Ablation: \n\u25cfCompared Mamba-S6 (default) vs Mamba-S4 (LTI layer). \n\u25cfS4 better captures smooth continuous dynamics of audio. \nResult: \n- For raw audio, LTI structure (S4) performs better due to continuity in waveforms. \n- Use Mamba-S4 in early layers, switch to Mamba-S6 deeper in model (post-tokenization).\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 16,
+      "title": "Page 16",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nResults\nTable 1: Selective Copying Accuracy \nWhat it shows: It tests how well different models can memorize and copy \nsequences. \nHow to read it: Different model backbones (S4, H3, Mamba) are combined with \ndifferent layers (S4, Hyena, Mamba, etc.) to see how well they can copy. \nKey Takeaways: \n\u25cfMamba on both architecture and sequence layer (Mamba/Mamba S6) performs best \nat 99.8% accuracy \u2014 nearly perfect copying. \n\u25cfH3/S6 and No gate/S6 also perform quite well, but Mamba is consistently the best \nacross all configurations. \n\u25cfHyena performs the worst in this task, especially when used in the inner layer. \nWhy it matters: Copying accuracy reflects the model's ability to retain and \nmanipulate structured sequences, a skill needed in tasks like algorithm learning, \nparsing, or program synthesis. \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 17,
+      "title": "Page 17",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nResults\nTable 2: Induction Heads Extrapolation \nWhat it shows: How well models generalize to longer sequences than they were trained on \n(from 64 up to over 1 million tokens). \nHow to read it: \n\u25cfAll models are trained on 256-token sequences. \n\u25cfThe x-axis is the test sequence length, and the y-axis is accuracy. \n\u25cfMamba maintains high accuracy the longest, before dropping. \nKey Takeaways: \n\u25cfMamba outperforms other models at long sequence extrapolation. \n\u25cfTransformers (Absolute, RoPE, xPos), H3, and Hyena drop sharply in \nperformance once the sequence length exceeds the training length. \n\u25cfMamba shows strong generalization and scalability to much longer \nsequences, far beyond training size. \nWhy it matters: This shows Mamba has better inductive bias and \nlong-range understanding, making it more robust for real-world tasks \nwhere input lengths vary \u2014 such as long documents, code, or DNA \nsequences.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 18,
+      "title": "Page 18",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nResults\nScaling Laws \nWhat it shows: How model quality (measured by perplexity) scales with more computation \n(FLOPs) on language modeling tasks from The Pile dataset. \nTop (image): Sequence Length = 2048 \nBottom (image): Sequence Length = 8192 \nHow to read it: \n\u25cfLower perplexity = better predictions. \n\u25cfX-axis = more computation. \n\u25cfY-axis = model quality. \n\u25cfLines closer to the bottom are better. \nKey Takeaways: \n\u25cfMamba consistently achieves lower perplexity across all compute budgets and sequence \nlengths. \n\u25cfAt longer sequences (8192), the gap between Mamba and others grows, showing it scales better \nthan Transformers, Hyena, RWKV, and others. \n\u25cfTransformer++ is close, but Mamba remains ahead. \nWhy it matters: This proves Mamba is not just theoretically better \u2014 it actually delivers better \nperformance with fewer resources, especially on long input sequences. This is key for efficiency at \nscale.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 19,
+      "title": "Page 19",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nResources\n1.https://arxiv.org/pdf/2312.00752  \n2.https://youtu.be/N6Piou4oYx8  \n3.https://youtu.be/vrF3MtGwD0Y  \n4.https://youtu.be/BDTVVlUU1Ck  \n5.https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-\nand-state  \n6.https://github.com/state-spaces/mamba  \n7.https://thegradient.pub/mamba-explained/  \n8.https://huggingface.co/docs/transformers/en/model_doc/mamba  \n9.https://medium.com/@jelkhoury880/what-is-mamba-845987734ffc \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 20,
+      "title": "Page 20",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5 \nLarge Language Models and Their Applications\nDr. Shylaja S S \nDirector of Cloud Computing & Big Data (CCBD), Centre \nfor Data Sciences & Applied Machine Learning (CDSAML) \nDepartment of Computer Science and Engineering \nshylaja.sharath@pes.edu\nAck: Yashaswini Ippili \nTeaching Assistant\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    }
+  ]
+}

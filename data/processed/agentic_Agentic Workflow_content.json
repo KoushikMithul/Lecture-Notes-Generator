@@ -1,0 +1,216 @@
+{
+  "metadata": {
+    "title": "agentic_Agentic Workflow",
+    "slide_count": 16
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "Page 1",
+      "content": [
+        {
+          "type": "text",
+          "text": "Dr. Shylaja S S \nDirector of Cloud Computing & Big Data (CCBD), Centre \nfor Data Sciences & Applied Machine Learning (CDSAML) \nDepartment of Computer Science and Engineering \nshylaja.sharath@pes.edu\nAck: Ujjwal MK, \nTeaching Assistant\nUE22AM343BB5 \nAgentic Workflow\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 2,
+      "title": "Page 2",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nThe Foundational AI Stack: A Layered Perspective \nArtificial Intelligence can be conceptualized as a stack of \ninterconnected layers. At the base, Semiconductors provide the \nnecessary computational power for AI models. Above this lies the \nCloud Infrastructure, offering scalable resources for data storage \nand processing, exemplified by platforms like Snowflake. The \ncrucial upper layer comprises Applications, where AI algorithms \nare translated into practical solutions addressing real-world \nproblems.    \nWhile technological advancements in the lower layers are vital, the \ntrue transformative potential of AI is realized through the \ndevelopment and deployment of innovative applications. This \nlayered perspective helps us understand the dependencies and \nopportunities within the broader AI ecosystem. \nCredits: Generative-AI-Tech-Stack.jpg\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 3,
+      "title": "Page 3",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nThe Impact of Generative AI: Accelerating Innovation \nGenerative AI represents a significant advancement in \nthe field, enabling the rapid development and iteration \nof machine learning models. This acceleration allows \nresearch teams and developers to create functional \nprototypes in significantly shorter timeframes, moving \nfrom months to potentially just days or weeks.    \nThis capability fosters a culture of rapid \nexperimentation, where multiple hypotheses can be \ntested and refined efficiently. While the speed of \nprototyping has increased dramatically, it's crucial to \nemphasize the importance of rigorous evaluation and \nresponsible development practices to ensure the \nreliability and ethical implications of these rapidly \ncreated AI solutions are thoroughly considered\nCredits: Generative-AI-Tech-Stack.jpg\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 4,
+      "title": "Page 4",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nIntroducing Agentic Workflows: A Paradigm Shift in AI Interaction \nTraditional interactions with AI often involve a single prompt leading to a direct response. \nAgentic Workflows represent a more sophisticated approach where AI systems, known \nas agents, engage in iterative and deliberative processes to accomplish complex tasks. \nThis involves multiple steps such as research, planning, execution, and refinement, \nmirroring human problem-solving methodologies.    \nThis shift towards agentic workflows often yields significantly improved outcomes, \nparticularly for tasks requiring nuanced reasoning and multiple stages of processing. The \nconcept of an \"agentic orchestration layer\" is also emerging to facilitate the development \nand management of these complex AI agent-based applications.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 5,
+      "title": "Page 5",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nIntroducing Agentic Workflows: A Paradigm Shift in AI Interaction \nCredits: 66bf53e88fd1e0c7e9f2919b_66903ec919d3481cdfc63a9c_agents-breakdown%20(8).png\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 6,
+      "title": "Page 6",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nDesign Pattern: Reflection - The Power of Self-Critique \nThe Reflection design pattern equips AI agents with the ability \nto evaluate and critique their own outputs. Similar to peer review \nin academic settings or debugging in software development, this \nprocess allows the AI to identify errors, inefficiencies, or areas \nfor improvement. \nThrough iterative cycles of self-assessment and revision, AI \nagents employing reflection can achieve more accurate and \nhigher-quality results. This can involve a single agent reflecting \non its work or a multi-agent system where one agent generates \ncontent and another provides constructive criticism.\nCredits: https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-2-\nreflection/\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 7,
+      "title": "Page 7",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nDesign Pattern:Tool Use\nThe Tool Use design pattern enables AI agents to extend \ntheir functionality by leveraging external tools and APIs. \nThese tools can range from information retrieval systems like \nweb search engines to computational tools like code \ninterpreters, and even interfaces for interacting with real-\nworld applications. \nBy integrating with these external resources, AI agents \nbecome more versatile and capable of addressing a wider \nrange of complex tasks that require interaction with the \nexternal environment or specialized functionalities. \nCredits: https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-3-tool-use/\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 8,
+      "title": "Page 8",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \n Design Pattern Planning - Strategizing for Complex Objectives\nThe Planning design pattern involves AI agents \nbreaking down complex requests or goals into a \nsequence of smaller, more manageable sub-tasks. \nThis decomposition allows the agent to approach \nintricate problems in a structured and organized \nmanner, similar to project management \nmethodologies.    \nBy planning the necessary steps to achieve a \ncomplex objective, AI agents can better manage the \ninherent complexity and increase the likelihood of \nsuccessful task completion. This planning process \ncan be static, where the entire plan is defined \nupfront, or dynamic, where the agent adjusts its plan \nbased on new information or unexpected events. \nCredits: https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-4-planning/\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 9,
+      "title": "Page 9",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nDesign Pattern: Multi-Agent Collaboration - Harnessing Collective Intelligence \nMulti-Agent Collaboration is a design pattern that \nleverages the combined capabilities of multiple AI agents \nworking together to achieve a common goal. In this \nmodel, different agents are assigned specialized roles or \nfunctionalities, allowing them to contribute their unique \nexpertise to the task at hand.    \nThese agents can communicate and interact with each \nother, exchanging information and coordinating their \nefforts to solve complex problems, much like a team of \nresearchers or engineers working on a project. This \ncollaborative approach can lead to enhanced \nperformance and the ability to tackle more intricate \nchallenges.   \nCredits: https://www.deeplearning.ai/the-batch/agentic-design-patterns-part-4-planning/\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 10,
+      "title": "Page 10",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nThe Expanding Role of Visual AI: Interpreting the Visual World \nBeyond agentic workflows, advancements in Visual AI are \nsignificantly expanding the scope of AI applications. Visual AI \nencompasses technologies that enable computers to \ninterpret and understand visual information from images and \nvideos.    \nApplications of visual AI are diverse and span numerous \nfields, including autonomous vehicles, medical imaging \nanalysis, quality control in manufacturing, and retail \nanalytics. The ability to effectively process and understand \nvisual data, along with other forms of unstructured data like \naudio and text, is crucial for building more powerful and \nversatile AI systems.\nCredits: https://voxel51.com/blog/what-is-visual-ai-going-beyond-computer-vision/\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 11,
+      "title": "Page 11",
+      "content": [
+        {
+          "type": "text",
+          "text": "The development of Agentic AI builds upon the concept of compound LLMs. This approach \ninvolves strategically linking multiple LLMs in sequence to enhance task outcomes. For \nexample, a system might utilize one LLM for initial drafting, a second for critical review, and a \nthird for revision based on the critique, reflecting an iterative refinement process. \nCompound LLM systems demonstrate the value of combining specialized AI functions. By \nstructuring interactions between LLMs, such systems can achieve a level of quality and \nsophistication in their output that often surpasses what a single LLM can produce alone. This \nrepresents a step towards AI systems capable of reflection and improvement during task \nexecution.\nUE22AM343BB5: Large Language Models and Their Applications \nIntroduction to Agentic AI\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 12,
+      "title": "Page 12",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nDefining Agentic AI: Components and Orchestration \nAgentic AI expands significantly on compound LLMs by employing a diverse set of \"agents.\" \nThese agents are not limited to LLMs; they can be any computational tool or resource, such as \ndata retrieval systems or external APIs, chosen for specific capabilities. A key element is the \npresence of an 'orchestrator' agent. \nThe orchestrator dynamically manages the workflow, selecting and directing the appropriate \nagents or tools based on the current state of the task and its requirements. This contrasts with \nrigid, pre-defined workflows, allowing the system to adapt its approach in response to \nintermediate results or changing conditions, leading to more flexible and robust problem-solving.\nCredits: https://medium.com/pythoneers/building-ai-agent-systems-with-\nlanggraph-9d85537a6326\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 13,
+      "title": "Page 13",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nFoundational Concept - Compound LLMs \nThe development of Agentic AI builds upon the concept \nof compound LLMs. This approach involves \nstrategically linking multiple LLMs in sequence to \nenhance task outcomes. For example, a system might \nutilize one LLM for initial drafting, a second for critical \nreview, and a third for revision based on the critique, \nreflecting an iterative refinement process. \nCompound LLM systems demonstrate the value of \ncombining specialized AI functions. By structuring \ninteractions between LLMs, such systems can achieve \na level of quality and sophistication in their output that \noften surpasses what a single LLM can produce alone. \nThis represents a step towards AI systems capable of \nreflection and improvement during task execution.\nCredits: https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-reasoning-llms?\nsource=queue&autoPlay=false\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 14,
+      "title": "Page 14",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nSignificance and Advantages of Agentic AI \nThe core advantage of Agentic AI lies in its ability to effectively coordinate multiple \nspecialized agents. This allows for the decomposition of complex problems, assigning \nsub-tasks to the agents best suited for them. Such orchestration enhances overall system \nintelligence, efficiency, and the potential for generating novel solutions by combining \ndiverse functionalities. \nFurthermore, the inherent adaptability of Agentic AI systems is a key differentiator. These \nsystems can modify their strategies based on real-time feedback or changing \nenvironmental factors, making them more resilient and effective in dynamic, real-world \nsituations compared to less flexible AI architectures.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 15,
+      "title": "Page 15",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nConclusion: The Future of Intelligent Systems \nThe field of Artificial Intelligence is undergoing rapid transformation, with a \nsignificant emphasis on developing practical and impactful applications. The \nemergence of agentic workflows, driven by key design patterns, and the \nadvancements in visual AI are paving the way for more sophisticated and \ncapable intelligent systems.    \nAs AI continues to evolve, these trends will unlock new possibilities for \ninnovation across a wide range of industries and research domains. \nUnderstanding these fundamental concepts is crucial for future researchers, \ndevelopers, and anyone interested in the transformative potential of artificial \nintelligence.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 16,
+      "title": "Page 16",
+      "content": [
+        {
+          "type": "text",
+          "text": "Dr. Shylaja S S \nDirector of Cloud Computing & Big Data (CCBD), Centre \nfor Data Sciences & Applied Machine Learning (CDSAML) \nDepartment of Computer Science and Engineering \nshylaja.sharath@pes.edu\nAck: Ujjwal MK, \nTeaching Assistant\nUE22AM343BB5 \nAgentic Workflow\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    }
+  ]
+}

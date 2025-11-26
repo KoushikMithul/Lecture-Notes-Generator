@@ -1,0 +1,2982 @@
+{
+  "metadata": {
+    "title": "binary_tree_traversal_Class5_Unit3_BST_Traversal",
+    "slide_count": 54
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS\nUE19CS202"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S & Kusuma K V"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Binary Tree Traversal"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Tree Traversals"
+        },
+        {
+          "type": "text",
+          "text": "Important operation: Traversal\nTraversal: Moving through all the nodes in a binary tree and visiting each one in turn\nTrees: There are many orders possible since it is a nonlinear DS\nTasks: 1. Visiting a node denoted by V\n            2. Traversing the left subtree denoted by L\n            3. Traversing the right subtree denoted by R\nSix ways to arrange them: VLR, LVR, LRV, VRL, RVL, RLV\nStandard   Traversals   include:   VLR-Preorder,    LVR-Inorder,   \t \t\t\t\t      LRV-Postorder"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Tree Traversal: Preorder"
+        },
+        {
+          "type": "text",
+          "text": "Steps:\n Root Node is visited before the subtrees\n Left subtree is traversed in preorder\n Right subtree is traversed in preorder"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "F"
+        },
+        {
+          "type": "text",
+          "text": "B"
+        },
+        {
+          "type": "text",
+          "text": "G"
+        },
+        {
+          "type": "text",
+          "text": "I"
+        },
+        {
+          "type": "text",
+          "text": "D"
+        },
+        {
+          "type": "text",
+          "text": "C"
+        },
+        {
+          "type": "text",
+          "text": "E"
+        },
+        {
+          "type": "text",
+          "text": "A"
+        },
+        {
+          "type": "text",
+          "text": "H"
+        },
+        {
+          "type": "text",
+          "text": "F"
+        },
+        {
+          "type": "text",
+          "text": "B"
+        },
+        {
+          "type": "text",
+          "text": "A"
+        },
+        {
+          "type": "text",
+          "text": "D"
+        },
+        {
+          "type": "text",
+          "text": "C"
+        },
+        {
+          "type": "text",
+          "text": "E"
+        },
+        {
+          "type": "text",
+          "text": "G"
+        },
+        {
+          "type": "text",
+          "text": "I"
+        },
+        {
+          "type": "text",
+          "text": "H"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 18
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Tree Traversal: Inorder"
+        },
+        {
+          "type": "text",
+          "text": "Steps:\n Left subtree is traversed in Inorder\n Root Node is visited\n Right subtree is traversed in Inorder"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "F"
+        },
+        {
+          "type": "text",
+          "text": "B"
+        },
+        {
+          "type": "text",
+          "text": "G"
+        },
+        {
+          "type": "text",
+          "text": "I"
+        },
+        {
+          "type": "text",
+          "text": "D"
+        },
+        {
+          "type": "text",
+          "text": "C"
+        },
+        {
+          "type": "text",
+          "text": "E"
+        },
+        {
+          "type": "text",
+          "text": "A"
+        },
+        {
+          "type": "text",
+          "text": "H"
+        },
+        {
+          "type": "text",
+          "text": "A"
+        },
+        {
+          "type": "text",
+          "text": "B"
+        },
+        {
+          "type": "text",
+          "text": "C"
+        },
+        {
+          "type": "text",
+          "text": "D"
+        },
+        {
+          "type": "text",
+          "text": "E"
+        },
+        {
+          "type": "text",
+          "text": "F"
+        },
+        {
+          "type": "text",
+          "text": "G"
+        },
+        {
+          "type": "text",
+          "text": "H"
+        },
+        {
+          "type": "text",
+          "text": "I"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 18
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Tree Traversal: Postorder"
+        },
+        {
+          "type": "text",
+          "text": "Steps:\n Left subtree is traversed in postorder\n Right subtree is traversed in postorder\n Root Node is visited"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "F"
+        },
+        {
+          "type": "text",
+          "text": "B"
+        },
+        {
+          "type": "text",
+          "text": "G"
+        },
+        {
+          "type": "text",
+          "text": "I"
+        },
+        {
+          "type": "text",
+          "text": "D"
+        },
+        {
+          "type": "text",
+          "text": "C"
+        },
+        {
+          "type": "text",
+          "text": "E"
+        },
+        {
+          "type": "text",
+          "text": "A"
+        },
+        {
+          "type": "text",
+          "text": "H"
+        },
+        {
+          "type": "text",
+          "text": "A"
+        },
+        {
+          "type": "text",
+          "text": "C"
+        },
+        {
+          "type": "text",
+          "text": "E"
+        },
+        {
+          "type": "text",
+          "text": "D"
+        },
+        {
+          "type": "text",
+          "text": "B"
+        },
+        {
+          "type": "text",
+          "text": "H"
+        },
+        {
+          "type": "text",
+          "text": "I"
+        },
+        {
+          "type": "text",
+          "text": "G"
+        },
+        {
+          "type": "text",
+          "text": "F"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 18
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Inorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativeInorder(root)\n s = emptyStack\ncurrent = root\ndo {\n\t\twhile(current != null)     \n\t\t{ \t/* Travel down left branches as far as possible \t\tsaving pointers to nodes passed in the stack*/\n\t\t\tpush(s, current)\n\t\t\tcurrent = current->left\n\t\t} //At this point, the left subtree is empty\n\t\tpoppedNode = pop(s)\t\t\n\t\tprint poppedNode ->info\t //visit the node\n\t\tcurrent = poppedNode ->right //traverse right subtree\n} while(!isEmpty(s) or current != null)"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Inorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativeInorder(root)\n s = emptyStack\ncurrent = root\ndo {\n\t  while(current != null)\n\t{ \t\n\t\tpush(s, current)\n\t\tcurrent = current->left\n\t  }\n\t  poppedNode = pop(s)\t\t\n\t  print poppedNode ->info\t\n\t  current = poppedNode ->right\n} while(!isEmpty(s) or current != null)"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "Note: Stack has Address of Nodes Pushed In"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 6
+    },
+    {
+      "slide_number": 9,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Inorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativeInorder(root)\n s = emptyStack\ncurrent = root\ndo {\n\t  while(current != null)\n\t{ \t\n\t\tpush(s, current)\n\t\tcurrent = current->left\n\t  }\n\t  poppedNode = pop(s)\t\t\n\t  print poppedNode ->info\t\n\t  current = poppedNode ->right\n} while(!isEmpty(s) or current != null)"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 10,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Inorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativeInorder(root)\n s = emptyStack\ncurrent = root\ndo {\n\t  while(current != null)\n\t{ \t\n\t\tpush(s, current)\n\t\tcurrent = current->left\n\t  }\n\t  poppedNode = pop(s)\t\t\n\t  print poppedNode ->info\t\n\t  current = poppedNode ->right\n} while(!isEmpty(s) or current != null)"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 11,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Inorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativeInorder(root)\n s = emptyStack\ncurrent = root\ndo {\n\t  while(current != null)\n\t{ \t\n\t\tpush(s, current)\n\t\tcurrent = current->left\n\t  }\n\t  poppedNode = pop(s)\t\t\n\t  print poppedNode ->info\t\n\t  current = poppedNode ->right\n} while(!isEmpty(s) or current != null)"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 12,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Inorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativeInorder(root)\n s = emptyStack\ncurrent = root\ndo {\n\t  while(current != null)\n\t{ \t\n\t\tpush(s, current)\n\t\tcurrent = current->left\n\t  }\n\t  poppedNode = pop(s)\t\t\n\t  print poppedNode ->info\t\n\t  current = poppedNode ->right\n} while(                     or                           )"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "poppedNode ="
+        },
+        {
+          "type": "text",
+          "text": "Inorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "!isEmpty(s)"
+        },
+        {
+          "type": "text",
+          "text": "current != null"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 5
+    },
+    {
+      "slide_number": 13,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Inorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativeInorder(root)\n s = emptyStack\ncurrent = root\ndo {\n\t  while(current != null)\n\t{ \t\n\t\tpush(s, current)\n\t\tcurrent = current->left\n\t  }\n\t  poppedNode = pop(s)\t\t\n\t  print poppedNode ->info\t\n\t  current = poppedNode ->right\n} while(                     or                           )"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "poppedNode ="
+        },
+        {
+          "type": "text",
+          "text": "Inorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "!isEmpty(s)"
+        },
+        {
+          "type": "text",
+          "text": "current != null"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 7
+    },
+    {
+      "slide_number": 14,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Inorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativeInorder(root)\n s = emptyStack\ncurrent = root\ndo {\n\t  while(current != null)\n\t{ \t\n\t\tpush(s, current)\n\t\tcurrent = current->left\n\t  }\n\t  poppedNode = pop(s)\t\t\n\t  print poppedNode ->info\t\n\t  current = poppedNode ->right\n} while(                     or                           )"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "Inorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "!isEmpty(s)"
+        },
+        {
+          "type": "text",
+          "text": "current != null"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 15,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Inorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativeInorder(root)\n s = emptyStack\ncurrent = root\ndo {\n\t  while(current != null)\n\t{ \t\n\t\tpush(s, current)\n\t\tcurrent = current->left\n\t  }\n\t  poppedNode = pop(s)\t\t\n\t  print poppedNode ->info\t\n\t  current = poppedNode ->right\n} while(                     or                           )"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "Inorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "!isEmpty(s)"
+        },
+        {
+          "type": "text",
+          "text": "current != null"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "poppedNode ="
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 7
+    },
+    {
+      "slide_number": 16,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Inorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativeInorder(root)\n s = emptyStack\ncurrent = root\ndo {\n\t  while(current != null)\n\t{ \t\n\t\tpush(s, current)\n\t\tcurrent = current->left\n\t  }\n\t  poppedNode = pop(s)\t\t\n\t  print poppedNode ->info\t\n\t  current = poppedNode ->right\n} while(                     or                           )"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "Inorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "!isEmpty(s)"
+        },
+        {
+          "type": "text",
+          "text": "current != null"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "poppedNode ="
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 7
+    },
+    {
+      "slide_number": 17,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Inorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativeInorder(root)\n s = emptyStack\ncurrent = root\ndo {\n\t  while(current != null)\n\t{ \t\n\t\tpush(s, current)\n\t\tcurrent = current->left\n\t  }\n\t  poppedNode = pop(s)\t\t\n\t  print poppedNode ->info\t\n\t  current = poppedNode ->right\n} while(                     or                           )"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "Inorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "!isEmpty(s)"
+        },
+        {
+          "type": "text",
+          "text": "current != null"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 18,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Inorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativeInorder(root)\n s = emptyStack\ncurrent = root\ndo {\n\t  while(current != null)\n\t{ \t\n\t\tpush(s, current)\n\t\tcurrent = current->left\n\t  }\n\t  poppedNode = pop(s)\t\t\n\t  print poppedNode ->info\t\n\t  current = poppedNode ->right\n} while(                     or                           )"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "Inorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "!isEmpty(s)"
+        },
+        {
+          "type": "text",
+          "text": "current != null"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "poppedNode ="
+        },
+        {
+          "type": "text",
+          "text": "6"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 7
+    },
+    {
+      "slide_number": 19,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Preorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePreorder(root)\ncurrent=root\nif (current == null)\n    return\ns = emptyStack \npush(s, current) \nwhile(!isEmpty(s)) {\n\tcurrent = pop(s)\n\tprint current->info\n\t//right child is pushed first so that left is processed first\n\tif(current->right !=NULL)\n\t\tpush(s, current->right)\n\tif(current->left !=NULL)\n\t\tpush(s, current->left)\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 20,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Preorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "iterativePreorder(root)\ncurrent=root\nif (current == null)\n    return\ns = emptyStack \npush(s, current) \n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "Note: Stack has Address of Nodes Pushed In"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 5
+    },
+    {
+      "slide_number": 21,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Preorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "iterativePreorder(root)\n\u2026\n\u2026\n\u2026\nwhile (!isEmpty(s)) \n{ \n    current = pop(s) \n    print current ->info\n    if(current->right != null)\n        push(s, current->right) \n    if(current->left != null)\n        push(s, current->left)\n}"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "Preorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 22,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Preorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "iterativePreorder(root)\n\u2026\n\u2026\n\u2026\nwhile (!isEmpty(s))\n{ \n    current = pop(s) \n    print current ->info\n    if(current->right != null)\n        push(s, current->right) \n    if(current->left != null)\n        push(s, current->left)\n}"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "Preorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "current->right ="
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 23,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Preorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "iterativePreorder(root)\n\u2026\n\u2026\n\u2026\nwhile (!isEmpty(s))\n{ \n    current = pop(s) \n    print current ->info\n    if(current->right != null)\n        push(s, current->right) \n    if(current->left != null)\n        push(s, current->left)\n}"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "Preorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "current->left ="
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 24,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Preorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "iterativePreorder(root)\n\u2026\n\u2026\n\u2026\nwhile (!isEmpty(s))\n{ \n    current = pop(s) \n    print current ->info\n    if(current->right != null)\n        push(s, current->right) \n    if(current->left != null)\n        push(s, current->left)\n}"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "Preorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 25,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Preorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "iterativePreorder(root)\n\u2026\n\u2026\n\u2026\nwhile (!isEmpty(s))\n{ \n    current = pop(s) \n    print current ->info\n    if(current->right != null)\n        push(s, current->right) \n    if(current->left != null)\n        push(s, current->left)\n}"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "Preorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "current->right ="
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 26,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Preorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "iterativePreorder(root)\n\u2026\n\u2026\n\u2026\nwhile (!isEmpty(s))\n{ \n    current = pop(s) \n    print current ->info\n    if(current->right != null)\n        push(s, current->right) \n    if(current->left != null)\n        push(s, current->left)\n}"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "Preorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "current->left ="
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 27,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Preorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "iterativePreorder(root)\n\u2026\n\u2026\n\u2026\nwhile (!isEmpty(s))\n{ \n    current = pop(s) \n    print current ->info\n    if(current->right != null)\n        push(s, current->right) \n    if(current->left != null)\n        push(s, current->left)\n}"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "Preorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 28,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Preorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "iterativePreorder(root)\n\u2026\n\u2026\n\u2026\nwhile (!isEmpty(s))\n{ \n    current = pop(s) \n    print current ->info\n    if(current->right != null)\n        push(s, current->right) \n    if(current->left != null)\n        push(s, current->left)\n}"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "Preorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "current->right ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 29,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Preorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "iterativePreorder(root)\n\u2026\n\u2026\n\u2026\nwhile (!isEmpty(s))\n{ \n    current = pop(s) \n    print current ->info\n    if(current->right != null)\n        push(s, current->right) \n    if(current->left != null)\n        push(s, current->left)\n}"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "Preorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "current->left ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 30,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Preorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "iterativePreorder(root)\n\u2026\n\u2026\n\u2026\nwhile (!isEmpty(s))\n{ \n    current = pop(s) \n    print current ->info\n    if(current->right != null)\n        push(s, current->right) \n    if(current->left != null)\n        push(s, current->left)\n}"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "Preorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 31,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Preorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "iterativePreorder(root)\n\u2026\n\u2026\n\u2026\nwhile (!isEmpty(s))\n{ \n    current = pop(s) \n    print current ->info\n    if(current->right != null)\n        push(s, current->right) \n    if(current->left != null)\n        push(s, current->left)\n}"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "Preorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "current->right ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "current->left ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 32,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Preorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "iterativePreorder(root)\n\u2026\n\u2026\n\u2026\nwhile (!isEmpty(s))\n{ \n    current = pop(s) \n    print current ->info\n    if(current->right != null)\n        push(s, current->right) \n    if(current->left != null)\n        push(s, current->left)\n}"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "Preorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "current->right ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "current->left ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 6
+    },
+    {
+      "slide_number": 33,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\ns1 = emptyStack ; s2 = emptyStack ; push(s1, root)\nwhile(!isEmpty(s1)) {\n\tcurrent = pop(s1)\n\tpush(s2,current)\n\tif(current->left !=NULL)\n\t\tpush(s1, current->left)\n\tif(current->right !=NULL)\n\t\tpush(s1, current->right)\n}\nwhile(!isEmpty(s2)) {\t//Print all the elements of stack2\n\tcurrent = pop(s2)\n\tprint current->info\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 34,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\ns1 = emptyStack\ns2 = emptyStack\npush(s1, root)\n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "root ="
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "Note: Stacks have Address of Nodes Pushed In"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 35,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 36,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "current->left ="
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 37,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current->right ="
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 38,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 39,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "current->left ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "current->right ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 40,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 41,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 42,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "current->left ="
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 43,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "current->right ="
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 44,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 45,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "current->left ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "current->right ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 46,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 47,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\n\u2026\n\u2026\n\u2026"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "current->left ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "current->right ="
+        },
+        {
+          "type": "text",
+          "text": "N"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 48,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\nwhile(!isEmpty(s2)) {\n\tcurrent = pop(s2)\n\tprint current->info\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 49,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\nwhile(!isEmpty(s2)) {\n\tcurrent = pop(s2)\n\tprint current->info\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "Postorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 50,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\nwhile(!isEmpty(s2)) {\n\tcurrent = pop(s2)\n\tprint current->info\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "Postorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 51,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\nwhile(!isEmpty(s2)) {\n\tcurrent = pop(s2)\n\tprint current->info\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "Postorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 52,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\nwhile(!isEmpty(s2)) {\n\tcurrent = pop(s2)\n\tprint current->info\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "Postorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 53,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Iterative Postorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "iterativePostorder(root)\n\u2026\n\u2026\n\u2026\nwhile(!isEmpty(s1))\n{\n    current = pop(s1)\n    push(s2,current)\n    if(current->left !=NULL)\n\tpush(s1, current->left)\n    if(current->right !=NULL)\n\tpush(s1, current->right)\n}\nwhile(!isEmpty(s2)) {\n\tcurrent = pop(s2)\n\tprint current->info\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "s1"
+        },
+        {
+          "type": "text",
+          "text": "current ="
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "s2"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "Postorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "2"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "6"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 54,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "shylaja.sharath@pes.edu"
+        },
+        {
+          "type": "text",
+          "text": "+91 9449867804"
+        },
+        {
+          "type": "text",
+          "text": "THANK YOU"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n& Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    }
+  ]
+}

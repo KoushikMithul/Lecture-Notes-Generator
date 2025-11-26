@@ -1,0 +1,307 @@
+{
+  "metadata": {
+    "title": "Lora&Qlora_Finetuning",
+    "slide_count": 23
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "Page 1",
+      "content": [
+        {
+          "type": "text",
+          "text": "Dr. Shylaja S S \nDirector of Cloud Computing & Big Data (CCBD), Centre \nfor Data Sciences & Applied Machine Learning (CDSAML) \nDepartment of Computer Science and Engineering \nshylaja.sharath@pes.edu\nAck: Amara Sai Prasad, \nTeaching Assistant\nUE22AM343BB5 \nLarge Language Models and Their Applications\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 2,
+      "title": "Page 2",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nWhy Fine-tuning \n\u25cf\nLarge language models (LLMs) like GPT \nare trained on massive, general datasets \n(books, websites, etc.) \n\u25cf\nWhile they\u2019re incredibly powerful out-of-\nthe-box, they might not perform optimally \nfor specific domains, tasks, or user \nbehavior \n\u25cf\nLLMs have a need for repetitive \nprompting instructions. Users must \nrepeatedly include detailed instructions \nin every prompt to get consistent \nspecialized outputs. \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 3,
+      "title": "Page 3",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nWhat is Fine-Tuning? \n\u25cf\nFine-tuning in deep learning is a form of transfer learning \n\u25cf\nIt involves taking a pre-trained model, which has been trained on a \nlarge dataset for a general task such as image recognition or natural \nlanguage understanding, and making minor adjustments to its \ninternal parameters \n\u25cf\nThe goal is to optimize the model\u2019s performance on a new, related \ntask without starting the training process from scratch \n\u25cf\nFine-tuning lets you turn a generalist into a specialist \n\u25cf\nSolving a repetitive task at scale benefits from fine-tuning, which \nmakes the model more accurate, aligned, and efficient for the specific \nuse case \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 4,
+      "title": "Page 4",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nWhat is Fine-Tuning? \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 5,
+      "title": "Page 5",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nFine-Tuning \nGeneral Steps In Implementing Fine Tuning \n1. Prepare the Dataset \n2. Select a Pretrained Model \n3. Format and Tokenize the Data(Convert \nthe raw data into a format the model \nunderstands) \n4. Configure the Training Process(Set up all \nthe training parameters such as batch size, \nnumber of epochs an etc) \n5.Train the Model(During this process, it \nlearns to adjust its internal parameters to \nbetter align with the desired behavior) \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 6,
+      "title": "Page 6",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nTypes of Fine-Tuning : Full Fine-Tuning \n\u25cf\nAll model parameters are updated during \ntraining. \n\u25cf\nRequires backpropagation through the entire \nmodel. \n\u25cf\nNeeds more compute and memory, especially \nfor large models. \n\u25cf\nTraining is slower and generally needs longer \nepochs. \n\u25cf\nTypically done on task-specific labeled data. \n\u25cf\nOptimizer and gradients apply to the whole \nnetwork, not just parts of it. \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 7,
+      "title": "Page 7",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nProblems with Full Fine-Tuning : Catastrophic Forgetting \n\u25cf\nCatastrophic Forgetting refers to the \ntendency of LLMs, to lose or forget previously \nlearned information as the model is trained on \nnew data or fine-tuned for specific tasks \n\u25cf\nThis phenomenon may occur due to the \nlimitations of the training process, as model \ntraining usually prioritises recent data or tasks \nat the expense of earlier data \n\u25cf\nAs a result, the model\u2019s representations of \ncertain concepts or knowledge may degrade \nor be overwritten by newer information, \nleading to a loss of overall performance  \n\u25cf\nLoRA and Multi task learning are some ways \nto prevent this from happening \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 8,
+      "title": "Page 8",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nTypes of Fine-Tuning : PEFT (Parameter-Efficient Fine-Tuning) \n\u25cf\nOnly a small subset of model parameters \nis updated during training. \n\u25cf\nBackpropagation is limited to specific \ncomponents (e.g., LoRA layers, adapters, \nbiases). \n\u25cf\nRequires significantly less compute and \nmemory. \n\u25cf\nTraining is faster and generally requires \nfewer epochs. \n\u25cf\nCan be done effectively even with smaller \ndatasets. \n\u25cf\nOptimizer and gradients apply only to the \nsmall trainable components.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 9,
+      "title": "Page 9",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nLoRA(Low-Rank Adaptation) \n\u25cf\nThe idea behind Low-Rank Adaptation (LoRA) is built upon the \nobservation that the weights learned by Large Language Models (LLMs) \nafter training often contain redundancies \n\u25cf\nTherefore, instead of fine-tuning the entire set of weights in the LLM, we \ncan streamline the process by focusing on a low-rank approximation of \nthe weights \u2014 essentially, a smaller set of weights that eliminates these \nredundancies \n\u25cf\nDuring the fine-tuning process, all other weights remain frozen, by doing \nso we ensure learned weights are not altered during the fine-tuning \nprocess \n\u25cf\nThis approach not only makes the process more efficient but also \nreduces the risk of overfitting and catastrophic forgetting \n\u25cf\nIt is a form of PEFT\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 10,
+      "title": "Page 10",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nLoRA(Low-Rank Adaptation) \nThe following equation succinctly captures the LoRA-based fine-tuning \nprocess: \n\u25cb\nWo + \u2206W = Wo + BA, where B \u2208 R d\u00d7r , A \u2208 R r\u00d7k , and the rank \nr  << min(d, k) \n\u25cb\nIn this equation, \n\u25a0\nWo denotes the pre-trained parameter weights \n\u25a0\n\u2206W denotes the learned weights to be used in adjusting the \noriginal weights \n\u25a0\nW is the final fine-tuned weight that will be used during \ninference \n\u25a0\nB is a matrix of dimension d\u00d7r and A is a matrix of \ndimension r\u00d7k\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 11,
+      "title": "Page 11",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nLoRA(Low-Rank Adaptation) \n\u25cf\nThe approach is to fine-tune the matrix decomposition of \u2206W i.e. matrices \nB and A, with a rank r significantly less than the min(d, k) from the original \nmatrix. Hence, reducing the number of parameters we need to fine-tune \n\u25cf\nAlso, the product of matrices B and A, with dimensions d\u00d7r and r\u00d7k \nrespectively, yields a matrix with dimensions d\u00d7k. Hence we can see that \ndim(Wo) = dim(\u2206W) = dim(W) = d x k. Consequently, the resulting matrix \n\u2206W exhibits a dimensionality equal to the original weight matrix Wo \n\u25cf\nFine-tuning the matrices A & B gives the following advantages: \n\u25cb\nIt takes significantly less memory and storage fine-tuning since the \ndim r << min(d,k) \n\u25cb\nReduces the risk of catastrophic forgetting, the rest of the model \nparameters remain untouched\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 12,
+      "title": "Page 12",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nLoRA(Low-Rank Adaptation) \n\u25cf\nLet\u2019s take an example, \nOriginal weight matrix: \nW \u2208 R^(500 \u00d7 400) \nTotal parameters = 500 \u00d7 400 = 200,000 \nLoRA decomposition with rank r = 4: \nA \u2208 R^(500 \u00d7 4), B \u2208 R^(4 \u00d7 400) \nTotal trainable parameters: \n(500 \u00d7 4) + (4 \u00d7 400) = 2,000 + 1,600 = 3,600 \n\u25cf\nThis is an insane reduction in the no. of trainable parameters which also \nmitigates the catastrophic forgetting problem!\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 13,
+      "title": "Page 13",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nLoRA(Low-Rank Adaptation) \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 14,
+      "title": "Page 14",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nTypes of Fine-Tuning : PEFT (Parameter-Efficient Fine-Tuning) \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 15,
+      "title": "Page 15",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nQuantization \n\u25cf\nQuantization is the process of reducing the precision of the numbers used to \nrepresent model weights and activations \u2014 usually from 32-bit floating point \n(FP32) to lower-bit formats like 8-bit integers (INT8) or 16-bit floats (FP16, \nBF16) \n\u25cf\nIt is the mapping of a higher order dimensional number to a lower order one \n\u25cf\nIt is often a trade-off based on the use case to go with model that is quantized \n\u25cf\nQuantization improves performance by reducing memory bandwidth \nrequirement and increasing cache utilization\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 16,
+      "title": "Page 16",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nQuantization \nFormat\nBits\nExpo\nnent\nFracti\non\nMemory needed to store one \nvalue in bytes\nFP32\n32\n8\n23\n4\nFP16\n16\n5\n10\n2\nBFLOA\nT16\n16\n8\n7\n2\nINT8\n 8\n-\n7\n1\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 17,
+      "title": "Page 17",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nQuantization(BFLOAT16) \n\u25cf\nFP32 offers high precision and wide range, but it's heavy on memory and \ncompute. \n\u25cf\nFP16 is faster and uses less memory but has limited range and precision, \nwhich can lead to instability during training. \n\u25cf\nINT8 is extremely compact and fast, but it's mostly used for inference due to \nits low precision. \n\u25cf\nBFLOAT16 strikes a balance \u2014 it keeps FP32\u2019s wide numeric range (8 \nexponent bits) but reduces precision (only 7 fraction bits). This makes it ideal \nfor efficient, large-scale training without the numerical instability of FP16.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 18,
+      "title": "Page 18",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nQLoRA (Quantized Low-Rank Adaptation) \n\u25cf\nAs the name suggests, QLoRA is a combination of quantization and LORA \ntechniques. \n\u25cf\nIt builds on the principles of LoRA while introducing 4-bit NormalFloat (NF4) \nquantization and Double Quantization techniques. \n\u25cf\nNF4 Quantization \n\u25cb\nNF4 quantization reduces neural network weights from 32-bit floating-\npoint numbers to 4-bit values.  \n\u25cb\nIt exploits the fact that weights in pre-trained models typically follow a \nzero-centered normal distribution.  \n\u25cb\nBy aligning this natural distribution to a predefined 4-bit scale (within the \nrange -1 to 1), NF4 avoids computationally intensive statistical \ncalculations.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 19,
+      "title": "Page 19",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nQLoRA (Quantized Low-Rank Adaptation) \n\u25cf\nDouble Quantization \n\u25cb\nDouble Quantization reduces the memory cost of storing quantization \nparameters (e.g., scaling factors).  \n\u25cb\nIt applies a second quantization step to these parameters, compressing \nthem from 32-bit to 8-bit values. \n\u25cb\nThis nested approach minimizes memory overhead while preserving \nmodel performance.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 20,
+      "title": "Page 20",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nQLoRA (Quantized Low-Rank Adaptation) \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 21,
+      "title": "Page 21",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nReferences \n\u25cf\nhttps://images.app.goo.gl/nXR1owXUkeGMBy36A \n\u25cf\nhttps://medium.com/@amanatulla1606/fine-tuning-the-model-what-why-\nand-how-e7fa52bc8ddf \n\u25cf\nFine-tuning large language models (LLMs) in 2025 | SuperAnnotate \n\u25cf\nhttps://images.app.goo.gl/9mjJjz6afX9iEomF8 \n\u25cf\nhttps://images.app.goo.gl/ukfKcwukXKkyeGwg7 \n\u25cf\nhttps://images.app.goo.gl/FqwStgiWF6dex4TP7 \n\u25cf\nhttps://images.app.goo.gl/xD96mypHcQ8pFGa97 \n\u25cf\nhttps://images.app.goo.gl/SeUSbmMNRLXLeQXu6 \n\u25cf\nCatastrophic Forgetting In LLMs. Catastrophic forgetting (CF) refers to\u2026 | by Cobus Greyling | Medium \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 22,
+      "title": "Page 22",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications \nReferences \n\u25cf\nIntroduction to Low Rank Approximation (LoRA) | Medium \n\u25cf\nWhat is Quantization in LLM. Large Language Models comes in all\u2026 | by Nithin Devanand | Medium \n\u25cf\nhttps://images.app.goo.gl/j479kxN7x1imNrcF9 \n\u25cf\nFine Tuning LLM with QLoRA | Medium \n\u25cf\nFine-Tuning of Large Language Models with LoRA and QLoRA \n\u25cf\nQLORA: A Game-Changing Approach. The advent of Large Language Models\u2026 | by Vivas.AI | Medium \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 23,
+      "title": "Page 23",
+      "content": [
+        {
+          "type": "text",
+          "text": "Dr. Shylaja S S \nDirector of Cloud Computing & Big Data (CCBD), Centre \nfor Data Sciences & Applied Machine Learning (CDSAML) \nDepartment of Computer Science and Engineering \nshylaja.sharath@pes.edu\nAck: Amara Sai Prasad, \nTeaching Assistant\nUE22AM343BB5 \nLarge Language Models and Their Applications\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    }
+  ]
+}

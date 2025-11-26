@@ -1,0 +1,983 @@
+{
+  "metadata": {
+    "title": "stable_diffusion_Stable Diffusion",
+    "slide_count": 75
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "Page 1",
+      "content": [
+        {
+          "type": "text",
+          "text": ""
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 2,
+      "title": "Page 2",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion\n"
+        }
+      ],
+      "notes": "",
+      "has_images": false,
+      "image_count": 0
+    },
+    {
+      "slide_number": 3,
+      "title": "Page 3",
+      "content": [
+        {
+          "type": "text",
+          "text": "What is Stable Diffusion?\n\u2022 Stable Diffusion is a latent diffusion model that generates AI images\nfrom text.\n\u2022 Instead of operating in the high-dimensional image space, it first\ncompresses the image into the latent space.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 4,
+      "title": "Page 4",
+      "content": [
+        {
+          "type": "text",
+          "text": "What is Stable Diffusion?\n\u2022 In the simplest form, Stable Diffusion is a text-to-image model. Give it\na text prompt. It will return an AI image matching the text.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 5,
+      "title": "Page 5",
+      "content": [
+        {
+          "type": "text",
+          "text": "Diffusion Model\n\u2022 Stable Diffusion belongs to a class of deep learning models called\ndiffusion models.\n\u2022 They are generative models, meaning they are designed to generate\nnew data similar to what they have seen in training. In the case of\nStable Diffusion, the data are images.\nWhy is it called the diffusion model? \nBecause its math looks very much like \ndiffusion in physics.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 6,
+      "title": "Page 6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Forward Diffusion\n\u2022 Let\u2019s say I trained a diffusion model with only two kinds of images: cats \nand dogs. In the figure below, the two peaks on the left represent the \ngroups of cat and dog images.\nForward diffusion turns a photo into noise.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 7,
+      "title": "Page 7",
+      "content": [
+        {
+          "type": "text",
+          "text": "Forward Diffusion\n\u2022 A forward diffusion process adds noise to a training image, gradually \nturning it into an uncharacteristic noise image. \n\u2022 The forward process will turn any cat or dog image into a noise image. \n\u2022 Eventually, you won\u2019t be able to tell whether they are initially a dog or a \ncat.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 8,
+      "title": "Page 8",
+      "content": [
+        {
+          "type": "text",
+          "text": "Forward Diffusion\n\u2022 It\u2019s like a drop of ink fell into a glass of water. \n\u2022 The ink drop diffuses in water. \n\u2022 After a few minutes, It randomly distributes itself throughout the water. \n\u2022 You can no longer tell whether it initially fell at the center or near the \nrim.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 9,
+      "title": "Page 9",
+      "content": [
+        {
+          "type": "text",
+          "text": "Forward Diffusion\n\u2022 Below is an example of an image undergoing forward diffusion. The \ncat image turns to random noise.\nForward diffusion of a cat image.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 10,
+      "title": "Page 10",
+      "content": [
+        {
+          "type": "text",
+          "text": "Reverse Diffusion\n\u2022 What if we can reverse the diffusion? Like playing a video backward. \nGoing backward in time. We will see where the ink drop was initially \nadded.\nThe reverse diffusion process recovers an image.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 11,
+      "title": "Page 11",
+      "content": [
+        {
+          "type": "text",
+          "text": "Reverse Diffusion\n\u2022 Technically, every diffusion process has two parts: (1) drift and \n(2) random motion. \n\u2022 The reverse diffusion drifts towards either cat OR dog images but \nnothing in between. That\u2019s why the result can either be a cat or a dog.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 12,
+      "title": "Page 12",
+      "content": [
+        {
+          "type": "text",
+          "text": "How training is done\n\u2022 To reverse the diffusion, we need to know how much noise is added \nto an image. \n\u2022 The answer is teaching a neural network model to predict the noise \nadded. \n\u2022 It is called the noise predictor in Stable Diffusion. It is a U-Net model.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 13,
+      "title": "Page 13",
+      "content": [
+        {
+          "type": "text",
+          "text": "How training is done\nThe training goes as follows.\n1. Pick a training image, like a photo of a cat.\n2. Generate a random noise image.\n3. Corrupt the training image by adding this noisy image up to a \ncertain number of steps.\n4. Teach the noise predictor to tell us how much noise was added. This \nis done by tuning its weights and showing it the correct answer.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 14,
+      "title": "Page 14",
+      "content": [
+        {
+          "type": "text",
+          "text": "How training is done\nNoise is sequentially added at each step. The noise predictor estimates the total noise added up to each step.\nAfter training, we have a noise predictor capable of estimating the noise \nadded to an image.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 15,
+      "title": "Page 15",
+      "content": [
+        {
+          "type": "text",
+          "text": "How training is done : Reverse Diffusion \n\u2022 Now we have the noise predictor. How to use it?\n\u2022 We first generate a completely random image and ask the noise \npredictor to tell us the noise. We then subtract this estimated noise \nfrom the original image. Repeat this process a few times. You will get \nan image of either a cat or a dog.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 16,
+      "title": "Page 16",
+      "content": [
+        {
+          "type": "text",
+          "text": "How training is done : Reverse Diffusion \nReverse diffusion works by subtracting the predicted noise from the image successively.\nYou may notice we have no control over generating a cat or dog\u2019s image.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 17,
+      "title": "Page 17",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion Model\n\u2022 The above diffusion process is in image space. It is computationally very, very \nslow. You won\u2019t be able to run on any single GPU.\n\u2022 The image space is enormous. Think about it: a 512\u00d7512 image with three \ncolor channels (red, green, and blue) is a 786,432-dimensional space! (You \nneed to specify that many values for ONE image.)\n\u2022 Diffusion models like Google\u2019s Imagen and Open AI\u2019s DALL-E are in pixel \nspace. They have used some tricks to make the model faster but still not \nenough.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 18,
+      "title": "Page 18",
+      "content": [
+        {
+          "type": "text",
+          "text": "Latent Diffusion Model\n\u2022 Stable Diffusion is designed to solve the speed problem. Here\u2019s how.\n\u2022 Stable Diffusion is a latent diffusion model. \n\u2022 Instead of operating in the high-dimensional image space, it first \ncompresses the image into the latent space. \n\u2022 The latent space is 48 times smaller so it reaps the benefit of \ncrunching a lot fewer numbers. \n\u2022 That\u2019s why it\u2019s a lot faster.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 19,
+      "title": "Page 19",
+      "content": [
+        {
+          "type": "text",
+          "text": "Variational Autoencoder\n\u2022 Stable Diffusion is done using a technique called the variational \nautoencoder. Yes, that\u2019s precisely what the VAE files are. \n\u2022 The Variational Autoencoder (VAE) neural network has two parts: \n\u2022 (1) an encoder and \n\u2022 The encoder compresses an image to a lower dimensional representation in \nthe latent space.\n\u2022 (2) a decoder.  \n\u2022 The decoder restores the image from the latent space.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 20,
+      "title": "Page 20",
+      "content": [
+        {
+          "type": "text",
+          "text": "Variational Autoencoder\nVariational autoencoder transforms the image to and from the latent space.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 21,
+      "title": "Page 21",
+      "content": [
+        {
+          "type": "text",
+          "text": "Variational Autoencoder\n\u2022 The latent space of Stable Diffusion model is 4x64x64, 48 times \nsmaller than the image pixel space. All the forward and reverse \ndiffusions are actually done in the latent space.\n\u2022 So during training, instead of generating a noisy image, it generates \na random tensor in latent space (latent noise). \n\u2022 Instead of corrupting an image with noise, it corrupts the \nrepresentation of the image in latent space with the latent noise.\n\u2022 The reason for doing that is it is a lot faster since the latent space is \nsmaller.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 22,
+      "title": "Page 22",
+      "content": [
+        {
+          "type": "text",
+          "text": "Image Resolution\n\u2022 The image resolution is reflected in the size of the latent image \ntensor. The size of the latent image is 4x64x64 for 512\u00d7512 images \nonly. It is 4x96x64 for a 768\u00d7512 portrait image. That\u2019s why it takes \nlonger and more VRAM to generate a larger image.\n\u2022 Since Stable Diffusion v1 is fine-tuned on 512\u00d7512 images, generating \nimages larger than 512\u00d7512 could result in duplicate objects, e.g., \nthe infamous two heads.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 23,
+      "title": "Page 23",
+      "content": [
+        {
+          "type": "text",
+          "text": "Image Upscaling\n\u2022 To generate a large print, keep at least one side of the image to 512 \npixels. Use an AI upscaler or image-to-image function for image \nupscaling.\n\u2022 Alternatively, use the SDXL model. It has a larger default size of 1,024 \nx 1,024 pixels.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 24,
+      "title": "Page 24",
+      "content": [
+        {
+          "type": "text",
+          "text": "Why Latent Space Representation is Effective?\n\u2022 Natural images display structured regularities, making them non-\nrandom and predictable.\n\u2022 Features such as facial elements and body structures follow specific \nspatial relationships, aiding in efficient compression.\n\u2022 This allows high-dimensional images to be compressed into smaller \nlatent spaces without significant loss of information, supported by the \nmanifold hypothesis.\"\n\u2022\nYou may think why the VAE can compress an image into a much \nsmaller latent space without losing information?\n\u2022\nSurprisingly, natural images are not random. They have high regularity: \nA face follows a specific spatial relationship between the eyes, nose, \ncheek, and mouth. A dog has 4 legs and is a particular shape.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 25,
+      "title": "Page 25",
+      "content": [
+        {
+          "type": "text",
+          "text": "Reverse Diffusion in Latent Space\nHere\u2019s how latent reverse diffusion in Stable Diffusion works.\n1. A random latent space matrix is generated.\n2. The noise predictor estimates the noise of the latent matrix.\n3. The estimated noise is then subtracted from the latent matrix.\n4. Steps 2 and 3 are repeated up to specific sampling steps.\n5. The decoder of VAE converts the latent matrix to the final image.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 26,
+      "title": "Page 26",
+      "content": [
+        {
+          "type": "text",
+          "text": "What is VAE file?\n\u2022 VAE files are used in Stable Diffusion v1 to improve eyes and faces. \nThey are the decoder of the autoencoder. By further fine-tuning the \ndecoder, the model can paint finer details.\n\u2022 Compressing an image into the latent space does lose information \nsince the original VAE did not recover the fine details. Instead, the VAE \ndecoder is responsible for painting fine details.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 27,
+      "title": "Page 27",
+      "content": [
+        {
+          "type": "text",
+          "text": "Conditioning in Stable Diffusion\n\u2022 Text prompts influence the generation process, steering the noise \npredictor to ensure the final image matches the desired outcome, \nlike generating a specific type of image (e.g., a cat or a dog) based \non the prompt provided.\n\u2022 This helps control the output, making Stable Diffusion a true text-\nto-image model.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 28,
+      "title": "Page 28",
+      "content": [
+        {
+          "type": "text",
+          "text": "Text Conditioning (text-to-image)\n\u2022 Text prompt is processed and fed into the noise predictor.\nHow the text prompt is processed and fed into the noise predictor to steer image generation.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 29,
+      "title": "Page 29",
+      "content": [
+        {
+          "type": "text",
+          "text": "Text Conditioning (text-to-image)\n\u2022 Tokenizer first converts each word in the prompt to a number called \na token. \n\u2022 Each token is then converted to a 768-value vector called embedding. \n(the same embedding used in AUTOMATIC1111).\n\u2022 The embeddings are then processed by the text transformer and are \nready to be consumed by the noise predictor.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 30,
+      "title": "Page 30",
+      "content": [
+        {
+          "type": "text",
+          "text": "Text Conditioning (text-to-image): Tokenizer\n\u2022 The text prompt is first tokenized by a CLIP tokenizer.\n\u2022 Tokenization is the computer\u2019s way of understanding words.\nTokenizer.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 31,
+      "title": "Page 31",
+      "content": [
+        {
+          "type": "text",
+          "text": "Text Conditioning (text-to-image): Tokenizer\n\u2022 A tokenizer can only tokenize words it has seen during training. For \nexample, there are \u201cdream\u201d and \u201cbeach\u201d in the CLIP model but not \n\u201cdreambeach\u201d. Tokenizer would break up the word \u201cdreambeach\u201d into \ntwo tokens \u201cdream\u201d and \u201cbeach\u201d. So one word does not always mean \none token!\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 32,
+      "title": "Page 32",
+      "content": [
+        {
+          "type": "text",
+          "text": "Text Conditioning (text-to-image): Tokenizer\n\u2022 Another fine print is the space character is also part of a token. In the \nabove case, the phrase \u201cdream beach\u201d produces two tokens \u201cdream\u201d \nand \u201c[space]beach\u201d. These tokens are not the same as that produced \nby \u201cdreambeach\u201d which is \u201cdream\u201d and \u201cbeach\u201d (without space before \nbeach).\n\u2022 Stable Diffusion model is limited to using 75 tokens in a prompt.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 33,
+      "title": "Page 33",
+      "content": [
+        {
+          "type": "text",
+          "text": "Text Conditioning (text-to-image): Embeddings\n\u2022 Embedding is a 768-value vector. Each token has its own unique \nembedding vector. Embedding is fixed by the CLIP model, which is \nlearned during training.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 34,
+      "title": "Page 34",
+      "content": [
+        {
+          "type": "text",
+          "text": "Text Conditioning (text-to-image):Feeding Embeddings to \nNoise Prediction\n\u2022 The embedding needs to be further processed by the\ntext \ntransformer before feeding into the noise predictor.\nFrom embeddings to the noise predictor.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 35,
+      "title": "Page 35",
+      "content": [
+        {
+          "type": "text",
+          "text": "Text Conditioning (text-to-image):Feeding Embeddings to \nNoise Prediction\n\u2022 The transformer is like a universal adapter for conditioning. \n\u2022 In this case, its input is text embedding vectors, but it could also be \nsomething else, like class labels, images, and depth maps. \n\u2022 The transformer not only further processes the data but also provides \na mechanism to include different conditioning modalities.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 36,
+      "title": "Page 36",
+      "content": [
+        {
+          "type": "text",
+          "text": "Text Conditioning (text-to-image):Cross Attention\n\u2022 The output of the text transformer is used multiple times by the \nnoise predictor throughout the U-Net. The U-Net consumes it by \na cross-attention mechanism. \n\u2022 That\u2019s where the prompt meets the image.\n\u2022 The cross-attention mechanism is the most important machinery \nof the Stable Diffusion model.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 37,
+      "title": "Page 37",
+      "content": [
+        {
+          "type": "text",
+          "text": "Text Conditioning (text-to-image):Cross Attention\n\u2022 Let\u2019s use the prompt \u201cA man with blue eyes\u201d as an example. \nStable Diffusion pairs the words \u201cblue\u201d and \u201ceyes\u201d together. It then \nuses this information to steer the reverse diffusion of an image \nregion to render a pair of blue eyes. (cross-attention between the \nprompt and the image)\nNote: Hypernetwork, a technique to fine-tune Stable Diffusion \nmodels, hijacks the cross-attention network to insert styles. LoRA \nmodels modify the weights of the cross-attention module to change \nstyles. The fact that modifying this module alone can fine-tune a \nStabe Diffusion model tells you how important this module is.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 38,
+      "title": "Page 38",
+      "content": [
+        {
+          "type": "text",
+          "text": "Others Conditioning\n\u2022\nThe text prompt is not the only way a Stable Diffusion model can be \nconditioned.\n\u2022\nBoth a text prompt and a depth image are used to condition the depth-to-\nimage model.\n\u2022\nControlNet conditions the noise predictor with detected outlines, human \nposes, etc., and achieves excellent controls over image generations.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 39,
+      "title": "Page 39",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Text-to-Image)\n\u2022\nIn text-to-image, you give Stable Diffusion a text prompt, and it returns an \nimage.\n\u2022\nStep 1. Stable Diffusion generates a random tensor in the latent space. \nYou control this tensor by setting the seed of the random number \ngenerator. If you set the seed to a certain value, you will always get the \nsame random tensor. This is your image in latent space. But it is all \nnoise for now.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 40,
+      "title": "Page 40",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Text-to-Image)\nStep 1. Stable Diffusion generates a random tensor in the latent space.\nA random tensor is generated in latent space.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 41,
+      "title": "Page 41",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Text-to-Image)\nStep 2. The noise predictor U-Net takes the latent noisy image and text \nprompt as input and predicts the noise, also in latent space (a 4x64x64 \ntensor).\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 42,
+      "title": "Page 42",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Text-to-Image)\nStep 3. Subtract the latent noise from the latent image. This becomes \nyour new latent image.\nSteps 2 and 3 are repeated for a certain number of sampling steps, for \nexample, 20 times.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 43,
+      "title": "Page 43",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Text-to-Image)\nStep 4. Finally, the decoder of VAE converts the latent image back to pixel \nspace. This is the image you get after running Stable Diffusion.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 44,
+      "title": "Page 44",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Text-to-Image)\nHere\u2019s how the image evolves in each sampling step.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 45,
+      "title": "Page 45",
+      "content": [
+        {
+          "type": "text",
+          "text": "Noise schedule\n\u2022\nThe noise schedule dictates the \npattern of noise subtraction \nduring the sampling process.\n\u2022\nInitially, larger amounts of noise \nmay be subtracted, gradually \ndecreasing to finer adjustments.\n\u2022\nThe sampler fine-tunes the noise \nreduction to precisely meet the \nexpected noise level for each \nsubsequent step.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 46,
+      "title": "Page 46",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Image-to-Image)\n\u2022\nImage-to-image transforms an image into another one using Stable \nDiffusion.\n\u2022\nIt is first proposed in the SDEdit method. SDEdit can be applied to any \ndiffusion model. So we have image-to-image for Stable Diffusion (a \nlatent diffusion model).\n\u2022\nAn input image and a text prompt are supplied as the input in image-to-\nimage. The generated image will be conditioned by both the input \nimage and text prompt.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 47,
+      "title": "Page 47",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Image-to-Image)\n\u2022\nFor example, using this amateur drawing and the prompt \u201cphoto of \nperfect green apple with stem, water droplets, dramatic lighting\u201d as \ninputs, image-to-image can turn it into a professional drawing:\nImage-to-image\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 48,
+      "title": "Page 48",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Image-to-Image)\n\u2022\nStep 1. The input image is encoded to latent space.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 49,
+      "title": "Page 49",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Image-to-Image)\nStep 2. Noise is added to the latent image. Denoising strength controls \nhow much noise is added. If it is 0, no noise is added. If it is 1, the \nmaximum amount of noise is added so that the latent image becomes a \ncomplete random tensor.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 50,
+      "title": "Page 50",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Image-to-Image)\nStep 3. The noise predictor U-Net takes the latent noisy image and text \nprompt as input and predicts the noise in latent space (a 4x64x64 tensor).\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 51,
+      "title": "Page 51",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Image-to-Image)\nStep 4. Subtract the latent noise from the latent image. This becomes \nyour new latent image.\nSteps 3 and 4 are repeated for a certain number of sampling steps, for \nexample, 20 times.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 52,
+      "title": "Page 52",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Image-to-Image)\nStep 5. Finally, the decoder of VAE converts the latent image back to pixel \nspace. This is the image you get after running image-to-image.\nSteps 3 and 4 are repeated for a certain number of sampling steps, for \nexample, 20 times.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 53,
+      "title": "Page 53",
+      "content": [
+        {
+          "type": "text",
+          "text": "Inpainting\n\u2022\nInpainting is really just a particular case of image-to-image. \n\u2022\nNoise is added to the parts of the image you wanted to inpaint. \n\u2022\nThe amount of noise is similarly controlled by denoising strength.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 54,
+      "title": "Page 54",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Depth-to-Image)\n\u2022\nDepth-to-image is an enhancement \nto image-to-image; \n\u2022\nIt \ngenerates \nnew \nimages \nwith \nadditional conditioning using a depth \nmap.\n\u2022\nStep 1. The input image is encoded \ninto the latent state\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 55,
+      "title": "Page 55",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Image-to-Image)\nStep 2. MiDaS (an AI depth model) estimates the depth map from the \ninput image.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 56,
+      "title": "Page 56",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Image-to-Image)\nStep 3. Noise is added to the latent image. Denoising strength controls \nhow much noise is added. If the denoising strength is 0, no noise is added. \nIf the denoising strength is 1, the maximum noise is added so that the \nlatent image becomes a random tensor.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 57,
+      "title": "Page 57",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Image-to-Image)\nStep 4. The noise predictor estimates the noise of the latent \nspace, conditioned by the text prompt and the depth map.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 58,
+      "title": "Page 58",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Image-to-Image)\nStep 5. Subtract the latent noise from the latent image. This becomes \nyour new latent image.\nSteps 4 and 5 are repeated for the number of sampling steps.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 59,
+      "title": "Page 59",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion: Step by Step (Image-to-Image)\nStep 6. The decoder of VAE decodes the latent image. Now, you get the \nfinal image from depth-to-image.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 60,
+      "title": "Page 60",
+      "content": [
+        {
+          "type": "text",
+          "text": "Classifier Guidance\n\u2022\nClassifier guidance is a way to incorporate image labels in diffusion \nmodels. \n\u2022\nYou can use a label to guide the diffusion process. \n\u2022\nFor example, the label \u201ccat\u201d steers the reverse diffusion process to \ngenerate photos of cats.\n\u2022\nThe classifier guidance scale is a parameter for controlling how \nclosely should the diffusion process follow the label.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 61,
+      "title": "Page 61",
+      "content": [
+        {
+          "type": "text",
+          "text": "Classifier Guidance\n\u2022\nSuppose there are 3 groups of images with labels \u201ccat\u201d, \u201cdog\u201d, and \n\u201chuman\u201d. If the diffusion is unguided, the model will draw samples \nfrom each group\u2019s total population, but sometimes it may draw images \nthat could fit two labels, e.g. a boy petting a dog.\nClassifier guidance. Left: unguided. Middle: small guidance scale. Right: large guidance scale.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 62,
+      "title": "Page 62",
+      "content": [
+        {
+          "type": "text",
+          "text": "Classifier Guidance\n\u2022\nWith high classifier guidance, the images produced by the diffusion model \nwould be biased toward the extreme or unambiguous examples. If you ask \nthe model for a cat, it will return an image that is unambiguously a cat and \nnothing else.\n\u2022\nThe classifier guidance scale controls how closely the guidance is followed. \nIn the figure above, the sampling on the right has a higher classifier guidance \nscale than the one in the middle. In practice, this scale value is simply the \nmultiplier to the drift term toward the data with that label.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 63,
+      "title": "Page 63",
+      "content": [
+        {
+          "type": "text",
+          "text": "Classifier Free Guidance\n\u2022\nAlthough classifier guidance achieved record-breaking performance, it needs \nan extra model to provide that guidance. This has presented some difficulties \nin training.\n\u2022\nClassifier-free guidance, in its authors\u2019 terms, is a way to achieve \u201cclassifier \nguidance without a classifier\u201d. Instead of using class labels and a separate \nmodel for guidance, they proposed to use image captions and train \na conditional diffusion model, exactly like the one in text-to-image.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 64,
+      "title": "Page 64",
+      "content": [
+        {
+          "type": "text",
+          "text": "Classifier Free Guidance\n\u2022\nThey put the classifier part as conditioning of the noise predictor U-Net, \nachieving the so-called \u201cclassifier-free\u201d (i.e., without a separate image \nclassifier) guidance in image generation.\n\u2022\nThe text prompt provides this guidance in text-to-image.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 65,
+      "title": "Page 65",
+      "content": [
+        {
+          "type": "text",
+          "text": "Classifier Free Guidance Scale\n\u2022\nNow, we have a classifier-free diffusion process using conditioning. \nHow do we control how much the AI-generated images should follow \nthe guidance?\n\u2022\nThe classifier-free guidance scale (CFG scale) is a value that \ncontrols how much the text prompt steers the diffusion process. \nThe AI image generation is unconditioned (i.e. the prompt is ignored) \nwhen the CFG scale is set to 0. A higher CFG scale steers the diffusion \ntowards the prompt.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 66,
+      "title": "Page 66",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion v1.5 vs v2\n\u2022\nModel Differences: Stable Diffusion v2 uses OpenClip for enhanced \nimage quality due to its larger size compared to v1.5, which uses \nOpenAI\u2019s CLIP ViT-L/14. OpenClip offers greater transparency for \nresearch.\n\u2022\nVersions: v2 has two versions; one generates 512x512 images, and \nthe other 768x768 images.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 67,
+      "title": "Page 67",
+      "content": [
+        {
+          "type": "text",
+          "text": "Stable Diffusion v1.5 vs v2\n\u2022Training Data:\n\u2022 v1.5 was trained with various steps at different resolutions on \nthe laion2B-en and laion-high-resolution datasets.\n\u2022 v2 training involved more steps and was fine-tuned for explicit \ncontent filtering and aesthetics on a subset of LAION-5B.\n\u2022 v2.1 continued training from v2.0 with additional steps and \nvaried explicit content filters.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 68,
+      "title": "Page 68",
+      "content": [
+        {
+          "type": "text",
+          "text": "Outcome Difference\n\u2022\nUsers struggle with style control and generating celebrity images in \nStable Diffusion v2, unlike in v1.5 and SDXL.\n\u2022\nStability AI did not filter out artist and celebrity names, but their \nrepresentation is weaker in v2, likely due to different training data.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 69,
+      "title": "Page 69",
+      "content": [
+        {
+          "type": "text",
+          "text": "Outcome Difference\n\u2022\nOpenAI's proprietary data used for earlier versions may include more \ndiverse images of artwork and celebrities, enhancing style and \nrecognition capabilities.\n\u2022\nDespite newer versions, the fine-tuned v1.5 and SDXL models remain \nmore popular among users.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 70,
+      "title": "Page 70",
+      "content": [
+        {
+          "type": "text",
+          "text": "SDXL Model\n\u2022\nSDXL model is a much larger model. In the AI world, we can expect it \nto be better. The total number of parameters of the SDXL model is 6.6 \nbillion, compared with 0.98 billion for the v1.5 model.\nThe SDXL pipeline consists of a base model and a refiner model.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 71,
+      "title": "Page 71",
+      "content": [
+        {
+          "type": "text",
+          "text": "SDXL Model\n\u2022\nThe SDXL model is, in practice, two models. \n\u2022\nYou run the base model, followed by the refiner model. \n\u2022\nThe base model sets the global composition. \n\u2022\nThe refiner model adds finer details.\n\u2022\nYou can run the base model alone without the refiner.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 72,
+      "title": "Page 72",
+      "content": [
+        {
+          "type": "text",
+          "text": "SDXL Model\nThe changes in the SDXL base model are:\n\u2022\nThe text encoder combines the largest OpenClip model (ViT-G/14) \nand OpenAI\u2019s proprietary CLIP ViT-L. It is a smart choice because it \nmakes SDXL easy to prompt while remaining the powerful and \ntrainable OpenClip.\n\u2022\nNew image size conditioning that aims to use training images smaller \nthan 256\u00d7256. This significantly increases the training data by not \ndiscarding 39% of the images.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 73,
+      "title": "Page 73",
+      "content": [
+        {
+          "type": "text",
+          "text": "SDXL Model\n\u2022The U-Net is three times larger than v1.5.\n\u2022 The default image size is 1024\u00d71024. This is 4 times larger than the \nv1.5 model\u2019s 512\u00d7512.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 74,
+      "title": "Page 74",
+      "content": [
+        {
+          "type": "text",
+          "text": "Ethical ,moral and Legal issues\n\u2022\nStable Diffusion requires extensive data for training, initially using \nimages without copyright permissions.\n\u2022\nLegal challenges arose as it gained commercial popularity, including \na class-action lawsuit by three artists in January 2023 and a lawsuit \nfrom Getty in February 2023.\n\u2022\nThese lawsuits highlight complex legal and moral questions about AI-\ngenerated content and copyright infringement.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 75,
+      "title": "Page 75",
+      "content": [
+        {
+          "type": "text",
+          "text": ""
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    }
+  ]
+}

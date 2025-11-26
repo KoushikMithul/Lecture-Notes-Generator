@@ -1,0 +1,1082 @@
+{
+  "metadata": {
+    "title": "expn_tree_Class7_Unit3_Trees_ExprTree",
+    "slide_count": 26
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS\nUE19CS202"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S & Kusuma K V"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Implementation of Binary Expression Tree"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Expression Tree"
+        },
+        {
+          "type": "text",
+          "text": "An expression can be represented using the Expression Tree data structure \n Such a tree is built normally for translating the code as data and then analysing and evaluating expressions\n Immutable: To change the expression another tree has to be constructed"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Expression Tree Construction"
+        },
+        {
+          "type": "text",
+          "text": "Normally a postfix expression is used in constructing the Expression tree\n When an operand is received, a new node is created which will be a leaf in the expression tree\n If an operator, it connects to two leaves\n Stack DS is used as intermediary storing place of node\u2019s address"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Expression Tree Construction"
+        },
+        {
+          "type": "text",
+          "text": "Postfix Expression: abc*+"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "100"
+        },
+        {
+          "type": "text",
+          "text": "150"
+        },
+        {
+          "type": "text",
+          "text": "300"
+        },
+        {
+          "type": "text",
+          "text": "Symbol = a"
+        },
+        {
+          "type": "text",
+          "text": "Symbol =  *"
+        },
+        {
+          "type": "text",
+          "text": "Symbol=b"
+        },
+        {
+          "type": "text",
+          "text": "Symbol=c"
+        },
+        {
+          "type": "text",
+          "text": "Address=100"
+        },
+        {
+          "type": "text",
+          "text": "Address=150"
+        },
+        {
+          "type": "text",
+          "text": "Address=300"
+        },
+        {
+          "type": "text",
+          "text": "Address=250"
+        },
+        {
+          "type": "text",
+          "text": "Symbol =  +"
+        },
+        {
+          "type": "text",
+          "text": "250"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "Address=400"
+        },
+        {
+          "type": "text",
+          "text": "400"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 5
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Expression Tree Construction"
+        },
+        {
+          "type": "text",
+          "text": "Scan the postfix expression till the end, one symbol at a time\n Create a new node, with symbol as info and left and right link as NULL\n If symbol is an operand, push address of node to stack\n If symbol is an operator\n Pop address from stack and make it right child of new node\n Pop address from stack and make it left child of new  node\n Now push address of new node to stack\n Finally, stack has only element which is the address of the root of expression tree"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Expression Tree Construction"
+        },
+        {
+          "type": "text",
+          "text": "Postfix Expression:"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Symbol = a"
+        },
+        {
+          "type": "text",
+          "text": "Address=100"
+        },
+        {
+          "type": "text",
+          "text": "100"
+        },
+        {
+          "type": "text",
+          "text": "Scan the postfix expression till the end, one symbol at a time\n Create a new node, with symbol as info and left and right link as NULL\n If symbol is an operand, push address of node to stack\n If symbol is an operator\n Pop the address from stack and make it right child of new node\n Pop the address from stack and make it left child of new node\n Now push address of new node to stack\n Finally, stack has only element which is the address of the root of expression tree"
+        },
+        {
+          "type": "text",
+          "text": "a"
+        },
+        {
+          "type": "text",
+          "text": "b"
+        },
+        {
+          "type": "text",
+          "text": "c"
+        },
+        {
+          "type": "text",
+          "text": "*"
+        },
+        {
+          "type": "text",
+          "text": "+"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Expression Tree Construction"
+        },
+        {
+          "type": "text",
+          "text": "Postfix Expression:"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Symbol = b"
+        },
+        {
+          "type": "text",
+          "text": "Address=150"
+        },
+        {
+          "type": "text",
+          "text": "100"
+        },
+        {
+          "type": "text",
+          "text": "Scan the postfix expression till the end, one symbol at a time\n Create a new node, with symbol as info and left and right link as NULL\n If symbol is an operand, push address of node to stack\n If symbol is an operator\n Pop the address from stack and make it right child of new node\n Pop the address from stack and make it left child of new node\n Now push address of new node to stack\n Finally, stack has only element which is the address of the root of expression tree"
+        },
+        {
+          "type": "text",
+          "text": "a"
+        },
+        {
+          "type": "text",
+          "text": "b"
+        },
+        {
+          "type": "text",
+          "text": "c"
+        },
+        {
+          "type": "text",
+          "text": "*"
+        },
+        {
+          "type": "text",
+          "text": "+"
+        },
+        {
+          "type": "text",
+          "text": "150"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 9,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Expression Tree Construction"
+        },
+        {
+          "type": "text",
+          "text": "Postfix Expression:"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Symbol = c"
+        },
+        {
+          "type": "text",
+          "text": "Address=300"
+        },
+        {
+          "type": "text",
+          "text": "100"
+        },
+        {
+          "type": "text",
+          "text": "Scan the postfix expression till the end, one symbol at a time\n Create a new node, with symbol as info and left and right link as NULL\n If symbol is an operand, push address of node to stack\n If symbol is an operator\n Pop the address from stack and make it right child of new node\n Pop the address from stack and make it left child of new node\n Now push address of new node to stack\n Finally, stack has only element which is the address of the root of expression tree"
+        },
+        {
+          "type": "text",
+          "text": "a"
+        },
+        {
+          "type": "text",
+          "text": "b"
+        },
+        {
+          "type": "text",
+          "text": "c"
+        },
+        {
+          "type": "text",
+          "text": "*"
+        },
+        {
+          "type": "text",
+          "text": "+"
+        },
+        {
+          "type": "text",
+          "text": "150"
+        },
+        {
+          "type": "text",
+          "text": "300"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 10,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Expression Tree Construction"
+        },
+        {
+          "type": "text",
+          "text": "Postfix Expression:"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "Symbol = *"
+        },
+        {
+          "type": "text",
+          "text": "Address=250"
+        },
+        {
+          "type": "text",
+          "text": "100"
+        },
+        {
+          "type": "text",
+          "text": "Scan the postfix expression till the end, one symbol at a time\n Create a new node, with symbol as info and left and right link as NULL\n If symbol is an operand, push address of node to stack\n If symbol is an operator\n Pop the address from stack and make it right child of new node\n Pop the address from stack and make it left child of new node\n Now push address of new node to stack\n Finally, stack has only element which is the address of the root of expression tree"
+        },
+        {
+          "type": "text",
+          "text": "a"
+        },
+        {
+          "type": "text",
+          "text": "b"
+        },
+        {
+          "type": "text",
+          "text": "c"
+        },
+        {
+          "type": "text",
+          "text": "*"
+        },
+        {
+          "type": "text",
+          "text": "+"
+        },
+        {
+          "type": "text",
+          "text": "150"
+        },
+        {
+          "type": "text",
+          "text": "300"
+        },
+        {
+          "type": "text",
+          "text": "250"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 6
+    },
+    {
+      "slide_number": 11,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Expression Tree Construction"
+        },
+        {
+          "type": "text",
+          "text": "Postfix Expression:"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "Symbol = +"
+        },
+        {
+          "type": "text",
+          "text": "Address=400"
+        },
+        {
+          "type": "text",
+          "text": "100"
+        },
+        {
+          "type": "text",
+          "text": "Scan the postfix expression till the end, one symbol at a time\n Create a new node, with symbol as info and left and right link as NULL\n If symbol is an operand, push address of node to stack\n If symbol is an operator\n Pop the address from stack and make it right child of new node\n Pop the address from stack and make it left child of new node\n Now push address of new node to stack\n Finally, stack has only element which is the address of the root of expression tree"
+        },
+        {
+          "type": "text",
+          "text": "a"
+        },
+        {
+          "type": "text",
+          "text": "b"
+        },
+        {
+          "type": "text",
+          "text": "c"
+        },
+        {
+          "type": "text",
+          "text": "*"
+        },
+        {
+          "type": "text",
+          "text": "+"
+        },
+        {
+          "type": "text",
+          "text": "250"
+        },
+        {
+          "type": "text",
+          "text": "400"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 7
+    },
+    {
+      "slide_number": 12,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Expression Tree Evaluation"
+        },
+        {
+          "type": "text",
+          "text": "Think in terms of recursion\n eval(t)     // 't' has the address of the root node of expression tree\n    if t->data is an operator\nreturn eval (t->left) t->data eval(t->right)\n    return t->data"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "eval(400)"
+        },
+        {
+          "type": "text",
+          "text": "eval(100)"
+        },
+        {
+          "type": "text",
+          "text": "+"
+        },
+        {
+          "type": "text",
+          "text": "eval(100)"
+        },
+        {
+          "type": "text",
+          "text": "eval(250)"
+        },
+        {
+          "type": "text",
+          "text": "return"
+        },
+        {
+          "type": "text",
+          "text": "return 8"
+        },
+        {
+          "type": "text",
+          "text": "8"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 7
+    },
+    {
+      "slide_number": 13,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Expression Tree Evaluation"
+        },
+        {
+          "type": "text",
+          "text": "Think in terms of recursion\n eval(t)     // 't' has the address of the root node of expression tree\n    if t->data is an operator\nreturn eval (t->left) t->data eval(t->right)\n    return t->data"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "eval(400)"
+        },
+        {
+          "type": "text",
+          "text": "+"
+        },
+        {
+          "type": "text",
+          "text": "eval(250)"
+        },
+        {
+          "type": "text",
+          "text": "eval(250)"
+        },
+        {
+          "type": "text",
+          "text": "return"
+        },
+        {
+          "type": "text",
+          "text": "8"
+        },
+        {
+          "type": "text",
+          "text": "eval(150)"
+        },
+        {
+          "type": "text",
+          "text": "*"
+        },
+        {
+          "type": "text",
+          "text": "eval(300)"
+        },
+        {
+          "type": "text",
+          "text": "return"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 5
+    },
+    {
+      "slide_number": 14,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Expression Tree Evaluation"
+        },
+        {
+          "type": "text",
+          "text": "Think in terms of recursion\n eval(t)     // 't' has the address of the root node of expression tree\n    if t->data is an operator\nreturn eval (t->left) t->data eval(t->right)\n    return t->data"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "eval(400)"
+        },
+        {
+          "type": "text",
+          "text": "+"
+        },
+        {
+          "type": "text",
+          "text": "eval(250)"
+        },
+        {
+          "type": "text",
+          "text": "eval(250)"
+        },
+        {
+          "type": "text",
+          "text": "return"
+        },
+        {
+          "type": "text",
+          "text": "8"
+        },
+        {
+          "type": "text",
+          "text": "eval(150)"
+        },
+        {
+          "type": "text",
+          "text": "*"
+        },
+        {
+          "type": "text",
+          "text": "eval(300)"
+        },
+        {
+          "type": "text",
+          "text": "return"
+        },
+        {
+          "type": "text",
+          "text": "eval(150)"
+        },
+        {
+          "type": "text",
+          "text": "return 4"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "eval(300)"
+        },
+        {
+          "type": "text",
+          "text": "return 3"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 7
+    },
+    {
+      "slide_number": 15,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Expression Tree Evaluation"
+        },
+        {
+          "type": "text",
+          "text": "Think in terms of recursion\n eval(t)     // 't' has the address of the root node of expression tree\n    if t->data is an operator\nreturn eval (t->left) t->data eval(t->right)\n    return t->data"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "eval(400)"
+        },
+        {
+          "type": "text",
+          "text": "+"
+        },
+        {
+          "type": "text",
+          "text": "eval(250)"
+        },
+        {
+          "type": "text",
+          "text": "eval(250)"
+        },
+        {
+          "type": "text",
+          "text": "return"
+        },
+        {
+          "type": "text",
+          "text": "8"
+        },
+        {
+          "type": "text",
+          "text": "12"
+        },
+        {
+          "type": "text",
+          "text": "return"
+        },
+        {
+          "type": "text",
+          "text": "12"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 16,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Expression Tree Evaluation"
+        },
+        {
+          "type": "text",
+          "text": "Think in terms of recursion\n eval(t)     // 't' has the address of the root node of expression tree\n    if t->data is an operator\nreturn eval (t->left) t->data eval(t->right)\n    return t->data"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "eval(400)"
+        },
+        {
+          "type": "text",
+          "text": "20"
+        },
+        {
+          "type": "text",
+          "text": "return"
+        },
+        {
+          "type": "text",
+          "text": "8"
+        },
+        {
+          "type": "text",
+          "text": "12"
+        },
+        {
+          "type": "text",
+          "text": "20"
+        },
+        {
+          "type": "text",
+          "text": "Postfix   abc*+ :"
+        },
+        {
+          "type": "text",
+          "text": "+"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 3
+    },
+    {
+      "slide_number": 17,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "General Expression Tree Evaluation"
+        },
+        {
+          "type": "text",
+          "text": "struct treenode\n{\n  short int utype;\n   union{\n      char operator[MAX];\n       float val;\n     }info;\n   struct treenode *child;\n   struct treenode *sibling;\n};\ntypedef struct treenode TREENODE;"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 18,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "General Expression Tree Evaluation"
+        },
+        {
+          "type": "text",
+          "text": "Here node can be either an operand or an operator"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "q(A+B, sin(C), X * (Y + Z))"
+        },
+        {
+          "type": "text",
+          "text": "Tree representation of an arithmetic expression"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 19,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "General Expression Tree Evaluation"
+        },
+        {
+          "type": "text",
+          "text": "void replace(TREENODE *p)\n{\n   float val;\n   TREENODE *q,*r;\n   if(p->utype == operator)\n  {\n    q = p->child;\n    while(q != NULL)\n     {\n        replace(q);\n        q = q->next;} \n     }"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 20,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "General Expression Tree Evaluation"
+        },
+        {
+          "type": "text",
+          "text": "value = apply(p);\n   p->utype = OPERAND;\n   p->val = value;\n   q = p->child;\n   p->child = NULL;\n   while(q != NULL)\n   {\n        r = q;\n        q = q->next;\n        free(r);\n   }\n  }\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 21,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "General Expression Tree Evaluation"
+        },
+        {
+          "type": "text",
+          "text": "float eval(TREENODE *p)\n{\n  replace(p);\n  return(p->val);\n  free(p);\n }"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 22,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Constructing a Tree"
+        },
+        {
+          "type": "text",
+          "text": "void setchildren(TREENODE *p,TREENODE *list)\n{\n   if(p == NULL) {\n     printf(\"invalid insertion\");\n     exit(1);\n   }\n  if(p->child != NULL) {\n    printf(\"invalid insertion\");\n    exit(1);\n  }\n  p->child = list;\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 23,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Constructing a Tree"
+        },
+        {
+          "type": "text",
+          "text": "void addchild(TREENODE *p,int x)\n{\n  TREENODE *q;\n  if(p==NULL)\n  {\n    printf(\"void insertion\");\n    exit(1);\n  }"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 24,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Constructing a Tree"
+        },
+        {
+          "type": "text",
+          "text": "r = NULL;\n  q = p->child;\n  while(q != NULL)\n  {\n    r = q;\n    q = q->next; \n  }\n  q = getnode();\n  q->info = x;\n  q->next = NULL;"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 25,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Constructing a Tree"
+        },
+        {
+          "type": "text",
+          "text": "if(r==NULL)\n    p->child=q;\n  else\n    r->next=q;\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 26,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "shylaja.sharath@pes.edu"
+        },
+        {
+          "type": "text",
+          "text": "+91 9449867804"
+        },
+        {
+          "type": "text",
+          "text": "THANK YOU"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n& Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    }
+  ]
+}

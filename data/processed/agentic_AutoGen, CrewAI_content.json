@@ -1,0 +1,151 @@
+{
+  "metadata": {
+    "title": "agentic_AutoGen, CrewAI",
+    "slide_count": 11
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "Page 1",
+      "content": [
+        {
+          "type": "text",
+          "text": "LARGE LANGUAGE MODEL\nDr. Shylaja S S\nDepartment of Computer Science and Engineering\nAutoGen, CrewAI\nUE21CS421AC1\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 4
+    },
+    {
+      "slide_number": 2,
+      "title": "Page 2",
+      "content": [
+        {
+          "type": "text",
+          "text": "LARGE LANGUAGE MODEL\nAutoGen, CrewAI  \u2013 Features\nDepartment of Computer Science and Engineering\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 3,
+      "title": "Page 3",
+      "content": [
+        {
+          "type": "text",
+          "text": "LARGE LANGUAGE MODEL\nAutoGen \u2013 Features\n1.\nMulti-Agent Communication Framework \n\u2022 AutoGen allows you to define multiple AI agents (and humans!) that can talk to each other via \nstructured messages. \n\u2022 Each agent has a role and behavioral logic, like \"Coder\", \"Reviewer\", or \"Planner\".  \n2.\nConversational Workflow Orchestration \n\u2022 It supports looping dialogues between agents until a task is complete.  \n\u2022 This enables powerful coordination for tasks like code generation, debugging, or multi-step \nproblem solving.  \n3. Extensibility & Tool Integration \n\u2022 Agents can be connected to external tools, functions, APIs, or custom code. \n\u2022 You can easily create agents that call Python code, run shell commands, or interact with web \nAPIs.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 4,
+      "title": "Page 4",
+      "content": [
+        {
+          "type": "text",
+          "text": "LARGE LANGUAGE MODEL\nAutoGen \u2013 Example\nfrom autogen import UserProxyAgent, AssistantAgent \n# Create a user-facing agent \nuser_proxy = UserProxyAgent(name=\"user_proxy\", human_input_mode=\"TERMINAL\") \n# Create a code assistant agent \ncode_assistant = AssistantAgent(name=\"code_assistant\", llm_config={\"config_list\": [...]}) \n# Let them chat \nuser_proxy.initiate_chat( \n    code_assistant, \n    message=\"Can you write a Python function to calculate factorial?\" \n)\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 5,
+      "title": "Page 5",
+      "content": [
+        {
+          "type": "text",
+          "text": "LARGE LANGUAGE MODEL\nAutoGen \u2013 Example\nfrom autogen import GroupChat, GroupChatManager \n# Add another agent for reviewing \nreviewer = AssistantAgent(name=\"reviewer\", llm_config={\"config_list\": [...]}) \n# Group chat setup \ngroupchat = GroupChat(agents=[user_proxy, code_assistant, reviewer], messages=[], max_round=5) \nmanager = GroupChatManager(groupchat=groupchat, llm_config={\"config_list\": [...]}) \n# Start a multi-agent loop \nuser_proxy.initiate_chat(manager, message=\"Please build and review a function to sort a list of numbers.\")\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 6,
+      "title": "Page 6",
+      "content": [
+        {
+          "type": "text",
+          "text": "LARGE LANGUAGE MODEL\nAutoGen \u2013 Example\nfrom autogen import PythonCodeExecutorAgent \n# An agent that can execute Python code \nexecutor = PythonCodeExecutorAgent(name=\"executor\", human_input_mode=\"NEVER\") \n# Let user_proxy chat with executor \nuser_proxy.initiate_chat( \n    executor, \n    message=\"Write and execute a script that prints the Fibonacci sequence up to 100.\" \n)\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 7,
+      "title": "Page 7",
+      "content": [
+        {
+          "type": "text",
+          "text": "LARGE LANGUAGE MODEL\nCrewAI \u2013 Features\n1.\nModular Agent Roles with \"Crew\" Structure \n\u2022 You define a crew composed of specialized agents, like an Analyst, Researcher, or Presenter. \n\u2022 Each agent has a clear task description, improving task division and collaboration. \n2.\nTask Planning & Delegation \n\u2022 CrewAI supports auto-task planning, where a Manager agent can split tasks and assign them to \nother agents. \n\u2022 This enables hierarchical workflows, like planning \u2192 researching \u2192 writing. \n3. Deterministic & Reusable Pipelines \n\u2022 You can run agents in a defined sequence, like a production line. \n\u2022 Perfect for use cases like content creation, document processing, or automated research \nworkflows.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 8,
+      "title": "Page 8",
+      "content": [
+        {
+          "type": "text",
+          "text": "LARGE LANGUAGE MODEL\nCrewAI \u2013 Example\nfrom crewai import Agent, Task, Crew \nfrom langchain.chat_models import ChatOpenAI  # Or use any other supported LLM \n# LLM Setup (you can replace this with HuggingFace or Ollama if needed) \nllm = ChatOpenAI(temperature=0.7, model=\"gpt-4\")  # Or \"gpt-3.5-turbo\" \n# Define Agents \nresearcher = Agent( \n    role=\"Research Specialist\", \n    goal=\"Find up-to-date information on quantum computing\", \n    backstory=\"You are an expert researcher who always finds accurate and current info.\", \n    verbose=True, \n    llm=llm, \n)\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 9,
+      "title": "Page 9",
+      "content": [
+        {
+          "type": "text",
+          "text": "LARGE LANGUAGE MODEL\nCrewAI \u2013 Example\nsummarizer = Agent( \n    role=\"Scientific Writer\", \n    goal=\"Summarize complex research into simple, readable content\", \n    backstory=\"You write blog posts that help beginners understand tough topics.\", \n    verbose=True, \n    llm=llm, \n) \n# Define Tasks \ntask1 = Task( \n    description=\"Search and gather recent breakthroughs in quantum computing.\", \n    agent=researcher, \n) \ntask2 = Task( \n    description=\"Summarize the findings from the researcher in a blog-post format.\", \n    agent=summarizer, \n    depends on=[task1], \n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 10,
+      "title": "Page 10",
+      "content": [
+        {
+          "type": "text",
+          "text": "LARGE LANGUAGE MODEL\nCrewAI \u2013 Example\n# Define the Crew (the pipeline) \ncrew = Crew( \n    agents=[researcher, summarizer], \n    tasks=[task1, task2], \n    verbose=True, \n) \n# Kick off the workflow \nresult = crew.kickoff() \nprint(\" Final Output:\\n\", result)\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 11,
+      "title": "Page 11",
+      "content": [
+        {
+          "type": "text",
+          "text": "shylaja.sharath@pes.edu\nTHANK YOU\nDr. Shylaja S S\nDepartment of Computer Science Engineering\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    }
+  ]
+}

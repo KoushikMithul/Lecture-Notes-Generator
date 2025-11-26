@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "title": "BST_Class4_Unit3_Trees_BST_ArrayInsert",
+    "slide_count": 7
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS\nUE19CS202"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S & Kusuma K V"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "BST: Implementation using Arrays"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree - Implementation"
+        },
+        {
+          "type": "text",
+          "text": "Array Implementation (Implicit implementation)"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree - Implementation"
+        },
+        {
+          "type": "text",
+          "text": "Array Implementation (Implicit implementation)\n   typedef struct tree_array\n   {\n\tint info;\n\tint used;\n   }NODE;\n\n NODE bst[MAX]; \t//here bst is an array of nodes\n each node has its data and another field by name used to contain whether it is a valid node or not\n used = 1 or 0"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree - Implementation"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Root Position: i = 0\nLeft Child Position: 2i + 1\nRight Child Position: 2i + 2"
+        },
+        {
+          "type": "text",
+          "text": "Root Position: i = 1\nLeft Child Position: 2i\nRight Child Position: 2i + 1"
+        },
+        {
+          "type": "text",
+          "text": "Position: i"
+        },
+        {
+          "type": "text",
+          "text": "Position: i"
+        },
+        {
+          "type": "text",
+          "text": "OR"
+        },
+        {
+          "type": "text",
+          "text": "Array Implementation: 5, 3, 7, 8, 1, 4"
+        },
+        {
+          "type": "text",
+          "text": "info"
+        },
+        {
+          "type": "text",
+          "text": "used"
+        },
+        {
+          "type": "text",
+          "text": "info"
+        },
+        {
+          "type": "text",
+          "text": "used"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree - Implementation"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Root Position: i = 0\nLeft Child Position: 2i + 1\nRight Child Position: 2i + 2"
+        },
+        {
+          "type": "text",
+          "text": "Root Position: i = 1\nLeft Child Position: 2i\nRight Child Position: 2i + 1"
+        },
+        {
+          "type": "text",
+          "text": "Position: i"
+        },
+        {
+          "type": "text",
+          "text": "Position: i"
+        },
+        {
+          "type": "text",
+          "text": "OR"
+        },
+        {
+          "type": "text",
+          "text": "Array Implementation: 5, 3, 7, 8, 1, 4"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        },
+        {
+          "type": "text",
+          "text": "3"
+        },
+        {
+          "type": "text",
+          "text": "7"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "4"
+        },
+        {
+          "type": "text",
+          "text": "8"
+        },
+        {
+          "type": "text",
+          "text": "info"
+        },
+        {
+          "type": "text",
+          "text": "used"
+        },
+        {
+          "type": "text",
+          "text": "info"
+        },
+        {
+          "type": "text",
+          "text": "used"
+        },
+        {
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 15
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "shylaja.sharath@pes.edu"
+        },
+        {
+          "type": "text",
+          "text": "+91 9449867804"
+        },
+        {
+          "type": "text",
+          "text": "THANK YOU"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n& Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    }
+  ]
+}

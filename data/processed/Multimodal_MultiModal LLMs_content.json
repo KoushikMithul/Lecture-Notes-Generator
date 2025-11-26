@@ -1,0 +1,281 @@
+{
+  "metadata": {
+    "title": "Multimodal_MultiModal LLMs",
+    "slide_count": 21
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "Page 1",
+      "content": [
+        {
+          "type": "text",
+          "text": "Dr. Shylaja S S\nDirector of Cloud Computing & Big Data (CCBD), Centre \nfor Data Sciences & Applied Machine Learning (CDSAML)\nDepartment of Computer Science and Engineering\nshylaja.sharath@pes.edu\nAck: Varun Bharadwaj,\nTeaching Assistant\nUE22AM343BB5\nLarge Language Models and Their Applications\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 2,
+      "title": "Page 2",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nOverview of Multimodal LLMs\n\u25cf\nIntroduction:\n\u25cb\nMultimodal LLMs process multiple data types (text, images, audio, video).\n\u25cf\nImportance of Multimodality:\n\u25cb\nAllows LLMs to mimic human cognitive abilities to integrate diverse sensory inputs.\n\u25cf\nKey Components:\n\u25cb\nModality Encoders: Convert raw data into embeddings.\n\u25cb\nFusion Mechanisms: Merge embeddings into a unified representation.\n\u25cb\nTransformer Core: Processes fused representations for output generation.\n\u25cf\nTraining Techniques:\n\u25cb\nSelf-supervised learning for diverse data types.\n\u25cb\nContrastive learning for aligning modalities.\n\u25cb\nMultitask learning across various datasets.\n\u25cf\nApplications\n\u25cf\nChallenges\n\u25cf\nFuture Directions\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 3,
+      "title": "Page 3",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nIntroduction to Multimodal LLMs\nWhat are Multimodal LLMs?\nThey are specialized models now interpret the world through multiple senses, much like humans do. \nThese models can comprehend text sentiment, recognize objects in images, and interpret audio \ncues, integrating this information to form a holistic understanding. \nWhy Multimodality?\nUtilizing multimodal LLMs can boost productivity and innovation across industries, from healthcare \nand technology to finance and automotive. Powered by vast datasets and innovative designs like \ntransformers, these AI systems bring us closer to natural humanlike interactions. \nExamples of some Multimodal LLMs:\nGPT-4V: Text + images.\nGemini 1.5: Text, image, video, audio.\nFlamingo: Few-shot learning for vision-language tasks.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 4,
+      "title": "Page 4",
+      "content": [
+        {
+          "type": "text",
+          "text": "Key Components of a Multimodal LLM:\n\u25cf\nModality Encoders: Convert inputs (e.g., images) into embeddings.\n\u25cf\nFusion Mechanism: Merges embeddings into a unified space.\n\u25cf\nTransformer Core: Processes fused representations.\nUE22AM343BB5: Large Language Models and Their Applications\nArchitecture of Multimodal LLMs\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 5,
+      "title": "Page 5",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nArchitecture of Multimodal LLMs\nArchitectural Variants:\n\u25cf\nSingle-stream: Shared transformer for all modalities.\n\u25cf\nDual-stream: Separate networks for each modality, later merged.\n\u25cf\nLate Fusion: Combines results after independent processing.\nWe shall discuss the variants further along this course.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 6,
+      "title": "Page 6",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nArchitecture of Multimodal LLMs (An illustration)\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 7,
+      "title": "Page 7",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nTraining Multimodal LLMs\n\u25cf\nData Preprocessing:\n\u25cb\nText: Tokenization (BPE, SentencePiece).\n\u25cb\nImages: CLIP embeddings, object detection.\n\u25cb\nAudio: Spectrogram conversion (Wav2Vec).\n\u25cf\nDatasets:\n\u25cb\nLAION-5B (image-text pairs).\n\u25cb\nCOCO Captions (annotated images).\n\u25cb\nVQA Dataset (visual question answering).\n\u25cf\nTraining Methods:\n\u25cb\nSelf-supervised learning (predict masked parts).\n\u25cb\nContrastive learning (CLIP-style embeddings).\n\u25cb\nMultitask learning across datasets.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 8,
+      "title": "Page 8",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nTraining Multimodal LLMs\nTokenization and Embeddings for Multimodal Inputs\n\u25cf\nText Tokenization: BPE, WordPiece, SentencePiece.\n\u25cf\nImage Tokenization:\n\u25cb\nVision Transformers (ViT): Patch tokens from images.\n\u25cb\nCLIP/DINO: Dense image embeddings.\n\u25cf\nAudio Tokenization:\n\u25cb\nSpectrogram-based embeddings (Whisper).\n\u25cb\nPhoneme-based models (speech synthesis).\n\u25cf\nUnified Tokenization: Kosmos-1 uses a single vocabulary for all modalities.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 9,
+      "title": "Page 9",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nTraining Multimodal LLMs\nTraining Pipeline:\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 10,
+      "title": "Page 10",
+      "content": [
+        {
+          "type": "text",
+          "text": "\u25cf\nConcatenation-Based Fusion: \n\u25cb\n Embeddings from different modalities are concatenated into a single vector.\n\u25cb\nEarly multimodal transformers used this method to combine text and image embeddings.\n\u25cf\nCross-Attention Fusion: \n\u25cb\nApproach: Each modality attends to others at different layers using attention mechanisms \n(e.g., text embeddings attending to image embeddings).\n\u25cb\nFlamingo employs cross-attention to integrate vision and language tasks seamlessly.\nUE22AM343BB5: Large Language Models and Their Applications\nMultimodal Fusion Techniques\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 11,
+      "title": "Page 11",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nMultimodal Fusion Techniques\n\u25cf\nMixture-of-Experts (MoE): \n\u25cb\n Specialized expert networks are assigned to handle specific modalities, and their outputs are \ncombined dynamically based on the task.\n\u25cb\nGemini uses MoE for handling text, image, audio, and video inputs.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 12,
+      "title": "Page 12",
+      "content": [
+        {
+          "type": "text",
+          "text": "Latent Space Alignment:\n\u25cf\nContrastive learning aligns embeddings from different modalities into a shared latent space, \nensuring they are semantically consistent.\n\u25cf\nCLIP aligns text and image embeddings into a unified space for tasks like image captioning.\nUE22AM343BB5: Large Language Models and Their Applications\nMultimodal Fusion Techniques\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 2
+    },
+    {
+      "slide_number": 13,
+      "title": "Page 13",
+      "content": [
+        {
+          "type": "text",
+          "text": "What is CLIP?\nContrastive Language\u2013Image Pretraining (CLIP) by OpenAI learns visual concepts from natural \nlanguage supervision.\nHow it works:\n\u25cf\nTrains an image encoder (ViT/ResNet) and a text encoder (Transformer).\nAligns text and image embeddings using contrastive learning.\nLearns to match images with their textual descriptions without fine-tuning.\nApplications:\n\u25cf\nZero-shot image classification.\nVisual search & content moderation.\nA base for models like DALL\u00b7E and Flamingo.\nUE22AM343BB5: Large Language Models and Their Applications\nSpotlight: CLIP - Connecting Vision and Language\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 14,
+      "title": "Page 14",
+      "content": [
+        {
+          "type": "text",
+          "text": "What is BLIP?\n A vision-language model that combines image captioning, VQA, and retrieval using a bootstrapped \nlearning pipeline.\nKey Innovations:\n\u25cf\nUses captioning models to generate pseudo-labels for pretraining.\n\u25cf\nEmploys both contrastive and generative objectives.\nSupports both encoder-decoder and decoder-only architectures.\nApplications:\nImage captioning & tagging\nVisual question answering.\nRetrieval-augmented generation (BLIP-2).\nUE22AM343BB5: Large Language Models and Their Applications\nSpotlight: BLIP Bootstrapped Language-Image Pretraining\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 15,
+      "title": "Page 15",
+      "content": [
+        {
+          "type": "text",
+          "text": "What is BLIP?\n A vision-language model that combines image captioning, VQA, and retrieval using a bootstrapped \nlearning pipeline.\nKey Innovations:\n\u25cf\nUses captioning models to generate pseudo-labels for pretraining.\n\u25cf\nEmploys both contrastive and generative objectives.\nSupports both encoder-decoder and decoder-only architectures.\nApplications:\nImage captioning & tagging\nVisual question answering.\nRetrieval-augmented generation (BLIP-2).\nUE22AM343BB5: Large Language Models and Their Applications\nSpotlight: BLIP Bootstrapped Language-Image Pretraining\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 16,
+      "title": "Page 16",
+      "content": [
+        {
+          "type": "text",
+          "text": "What is Whisper?\n An automatic speech recognition (ASR) model trained on 680k hours of multilingual & multitask \nsupervised data.\nCore Features:\n\u25cf\nConverts speech \u2192 text using encoder-decoder Transformer\n\u25cf\nHandles multiple languages & noisy environments\n\u25cf\nFine-tuned for translation, language ID, and timestamps.\nApplications:\n\u25cf\nTranscription services (YouTube, podcasts).\nReal-time voice interfaces.\nSubtitle generation & accessibility tools.\nUE22AM343BB5: Large Language Models and Their Applications\nSpotlight: Whisper: Automatic Speech Recognition (ASR) by OpenAI\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 17,
+      "title": "Page 17",
+      "content": [
+        {
+          "type": "text",
+          "text": "1.\nImage Captioning: BLIP generates captions for visual inputs.\n2.\nVisual Question Answering (VQA): GPT-4V answers questions based on images.\n3.\nSpeech-to-Text/Text-to-Speech: Whisper converts speech to text; Coqui TTS synthesizes \nspeech from text.\n4.\nVideo Understanding & Summarization: Gemini analyzes video content and generates \nsummaries.\n5.\nMedical AI: Processes X-rays or MRIs with textual descriptions for diagnostics.\nUE22AM343BB5: Large Language Models and Their Applications\nApplications of Multimodal LLMs\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 18,
+      "title": "Page 18",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nChallenges in Multimodal LLMs\n1.\nData Limitations: Scarcity of labeled multimodal datasets; noisy annotations affect quality.\n2.\nComputational Costs: Training requires massive compute resources like GPUs/TPUs.\n3.\nModality Alignment Issues: Difficult to align diverse data types into a unified representation \nspace.\n4.\nBias and Fairness Concerns: Models can inherit biases from large-scale datasets.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 19,
+      "title": "Page 19",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nFuture Directions & Research Areas\n1.\nEfficient Learning Techniques: LoRA enables parameter-efficient fine-tuning of multimodal \nmodels.\n2.\nUnified Foundation Models: Develop models capable of processing all modalities seamlessly.\n3.\nBetter Data Curation: Address dataset biases and improve diversity.\n4.\nFew-shot/Zero-shot Learning: Enhance generalization to unseen modalities with minimal \ntraining.\n5.\nHuman-AI Collaboration: Assist creative tasks like generating multimodal content for art or \nresearch.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 20,
+      "title": "Page 20",
+      "content": [
+        {
+          "type": "text",
+          "text": "UE22AM343BB5: Large Language Models and Their Applications\nConclusion & Takeaways\n\u25cf\nMultimodal LLMs are transforming AI by bridging text, images, audio, and video.\n\u25cf\nAdvancements include unified architectures, fusion techniques, and large-scale datasets.\n\u25cf\nThe future lies in efficient, interpretable models that mimic human-like understanding across \nmodalities.\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 21,
+      "title": "Page 21",
+      "content": [
+        {
+          "type": "text",
+          "text": "Dr. Shylaja S S\nDirector of Cloud Computing & Big Data (CCBD), Centre \nfor Data Sciences & Applied Machine Learning (CDSAML)\nDepartment of Computer Science and Engineering\nshylaja.sharath@pes.edu\nAck: Varun Bharadwaj,\nTeaching Assistant\nUE22AM343BB5\nLarge Language Models and Their Applications\n"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    }
+  ]
+}

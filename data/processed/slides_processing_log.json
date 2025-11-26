@@ -1,0 +1,91 @@
+{
+  "timestamp": "2025-04-22 13:29:18",
+  "total_slides": 14,
+  "success_count": 14,
+  "results": [
+    {
+      "slide_path": "data/raw/slides/Tree_traversal_class9_Unit3_Trees_naryTraversal.pptx",
+      "content_file": "Tree_traversal_class9_Unit3_Trees_naryTraversal_content.json",
+      "slide_count": 13,
+      "status": "success"
+    },
+    {
+      "slide_path": "data/raw/slides/BST_Class3_Unit3_Trees_BSTDeletion.pptx",
+      "content_file": "BST_Class3_Unit3_Trees_BSTDeletion_content.json",
+      "slide_count": 10,
+      "status": "success"
+    },
+    {
+      "slide_path": "data/raw/slides/BST_Class2_Unit3_Tree_BST_DynamicInsert.pptx",
+      "content_file": "BST_Class2_Unit3_Tree_BST_DynamicInsert_content.json",
+      "slide_count": 8,
+      "status": "success"
+    },
+    {
+      "slide_path": "data/raw/slides/BST_Class4_Unit3_Trees_BST_ArrayInsert.pptx",
+      "content_file": "BST_Class4_Unit3_Trees_BST_ArrayInsert_content.json",
+      "slide_count": 7,
+      "status": "success"
+    },
+    {
+      "slide_path": "data/raw/slides/binary_tree_traversal_Class5_Unit3_BST_Traversal.pptx",
+      "content_file": "binary_tree_traversal_Class5_Unit3_BST_Traversal_content.json",
+      "slide_count": 54,
+      "status": "success"
+    },
+    {
+      "slide_path": "data/raw/slides/TBT_Class6_Unit3_Trees_ThreadBST.pptx",
+      "content_file": "TBT_Class6_Unit3_Trees_ThreadBST_content.json",
+      "slide_count": 16,
+      "status": "success"
+    },
+    {
+      "slide_path": "data/raw/slides/expn_tree_Class7_Unit3_Trees_ExprTree.pptx",
+      "content_file": "expn_tree_Class7_Unit3_Trees_ExprTree_content.json",
+      "slide_count": 26,
+      "status": "success"
+    },
+    {
+      "slide_path": "data/raw/slides/Heap_Class8_Unit3_Trees_Heap.pptx",
+      "content_file": "Heap_Class8_Unit3_Trees_Heap_content.json",
+      "slide_count": 20,
+      "status": "success"
+    },
+    {
+      "slide_path": "data/raw/slides/agentic_Agentic Workflow.pdf",
+      "content_file": "agentic_Agentic Workflow_content.json",
+      "slide_count": 16,
+      "status": "success"
+    },
+    {
+      "slide_path": "data/raw/slides/Multimodal_MAMBA.pdf",
+      "content_file": "Multimodal_MAMBA_content.json",
+      "slide_count": 20,
+      "status": "success"
+    },
+    {
+      "slide_path": "data/raw/slides/Lora&Qlora_Finetuning.pdf",
+      "content_file": "Lora&Qlora_Finetuning_content.json",
+      "slide_count": 23,
+      "status": "success"
+    },
+    {
+      "slide_path": "data/raw/slides/Multimodal_MultiModal LLMs.pdf",
+      "content_file": "Multimodal_MultiModal LLMs_content.json",
+      "slide_count": 21,
+      "status": "success"
+    },
+    {
+      "slide_path": "data/raw/slides/stable_diffusion_Stable Diffusion.pdf",
+      "content_file": "stable_diffusion_Stable Diffusion_content.json",
+      "slide_count": 75,
+      "status": "success"
+    },
+    {
+      "slide_path": "data/raw/slides/agentic_AutoGen, CrewAI.pdf",
+      "content_file": "agentic_AutoGen, CrewAI_content.json",
+      "slide_count": 11,
+      "status": "success"
+    }
+  ]
+}

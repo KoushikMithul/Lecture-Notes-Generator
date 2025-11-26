@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-04-22 13:23:20",
+  "total_files": 5,
+  "success_count": 5,
+  "results": [
+    {
+      "audio": "data/processed/audio/stable_diffusion_19853_shylaja.sharath_31_20250327084200249_Video_ENC.wav",
+      "transcript": "data/processed/transcripts/stable_diffusion_19853_shylaja.sharath_31_20250327084200249_Video_ENC_transcript.json",
+      "word_count": 6751,
+      "status": "success"
+    },
+    {
+      "audio": "data/processed/audio/stable_diffusion_19853_shylaja.sharath_31_20250327092700214_Video_ENC (1).wav",
+      "transcript": "data/processed/transcripts/stable_diffusion_19853_shylaja.sharath_31_20250327092700214_Video_ENC (1)_transcript.json",
+      "word_count": 4307,
+      "status": "success"
+    },
+    {
+      "audio": "data/processed/audio/Lora&Qlora_19853_shylaja.sharath_31_20250318121200085_Video_ENC (1).wav",
+      "transcript": "data/processed/transcripts/Lora&Qlora_19853_shylaja.sharath_31_20250318121200085_Video_ENC (1)_transcript.json",
+      "word_count": 7548,
+      "status": "success"
+    },
+    {
+      "audio": "data/processed/audio/agentic_19853_shylaja.sharath_31_20250401121200417_Video_ENC.wav",
+      "transcript": "data/processed/transcripts/agentic_19853_shylaja.sharath_31_20250401121200417_Video_ENC_transcript.json",
+      "word_count": 7280,
+      "status": "success"
+    },
+    {
+      "audio": "data/processed/audio/Lora&Qlora_19853_shylaja.sharath_31_20250318112700094_Video_ENC (1).wav",
+      "transcript": "data/processed/transcripts/Lora&Qlora_19853_shylaja.sharath_31_20250318112700094_Video_ENC (1)_transcript.json",
+      "word_count": 7183,
+      "status": "success"
+    }
+  ]
+}

@@ -1,0 +1,852 @@
+{
+  "metadata": {
+    "title": "TBT_Class6_Unit3_Trees_ThreadBST",
+    "slide_count": 16
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS\nUE19CS202"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S & Kusuma K V"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Threaded BST and its Implementation"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Threaded Binary Search Tree"
+        },
+        {
+          "type": "text",
+          "text": "Motivation\n Iterative Inorder Traversal requires Explicit stack\n Costly\n Since we loose track of address as and when we navigate,  Node addresses were stacked\n If this can be achieved through some other less expensive mechanism, we can eliminate the use of explicit stack\n Small structural modification carried on Binary tree will solve the above problem"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Threaded Binary Search Tree"
+        },
+        {
+          "type": "text",
+          "text": "We can use the right pointer of a node to point to the inorder successor if in case it is not pointing to the child. Such a tree is called Right-In Threaded Binary Tree\n If we use the left pointer to store the inorder predecessor, the tree is called Left-In Threaded Binary Tree\n If we use both the pointers, the tree is called In Threaded Binary Tree"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Threaded Binary Search Tree"
+        },
+        {
+          "type": "text",
+          "text": "Right-In Threaded Binary Tree"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Binary Tree"
+        },
+        {
+          "type": "text",
+          "text": "Right-In Threaded Binary Tree"
+        },
+        {
+          "type": "text",
+          "text": "Inorder Traversal:\nA B C D E F G H I"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Threaded Binary Search Tree"
+        },
+        {
+          "type": "text",
+          "text": "Left-In Threaded Binary Tree"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Binary Tree"
+        },
+        {
+          "type": "text",
+          "text": "Left-In Threaded Binary Tree"
+        },
+        {
+          "type": "text",
+          "text": "Inorder Traversal:\nA B C D E F G H I"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Threaded Binary Search Tree"
+        },
+        {
+          "type": "text",
+          "text": "In Threaded Binary Tree"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Binary Tree"
+        },
+        {
+          "type": "text",
+          "text": "In Threaded Binary Tree"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Threaded Binary Search Tree: Implementation"
+        },
+        {
+          "type": "text",
+          "text": "Right In Threaded Binary Tree\ntypedef struct node\n{\n\tint info;\n\tstruct node *left;\t// pointer to left child\n\tstruct node *right;\t// pointer to right child\n\tint rthread;\t\t// rthread is TRUE if right is NULL \t\t\t\t// or a non-NULL thread\n}NODE;"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "Node Structure"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 9,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Threaded Binary Search Tree: Implementation"
+        },
+        {
+          "type": "text",
+          "text": "NODE* createNode(int e)\n{\n\tNODE* temp=malloc(sizeof(NODE));\n\ttemp->info=e;\n\ttemp->left=NULL;\n\ttemp->right=NULL;\n\ttemp->rthread=1;\n\treturn temp;\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "createNode(57)"
+        },
+        {
+          "type": "text",
+          "text": "..."
+        },
+        {
+          "type": "text",
+          "text": "\u2026"
+        },
+        {
+          "type": "text",
+          "text": "\u2026"
+        },
+        {
+          "type": "text",
+          "text": "\u2026"
+        },
+        {
+          "type": "text",
+          "text": "temp ->"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "57"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "Let Address of this node on Heap: 2000"
+        },
+        {
+          "type": "text",
+          "text": "// Returns: 2000"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 8
+    },
+    {
+      "slide_number": 10,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Threaded Binary Search Tree: Implementation"
+        },
+        {
+          "type": "text",
+          "text": "Right In Threaded Binary Tree: 57, 25, 28\n  A node is created with rthread set to TRUE\n  insert 57"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "57"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "Address: 800"
+        },
+        {
+          "type": "text",
+          "text": "Node Structure"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 11,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Threaded Binary Search Tree: Implementation"
+        },
+        {
+          "type": "text",
+          "text": "Right In Threaded Binary Tree: 57, 25, 28\n  A node is created with rthread set to TRUE\n  insert 57\n  insert 25 (left of 57)"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "57"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "25"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "Address: 800"
+        },
+        {
+          "type": "text",
+          "text": "Address: 400"
+        },
+        {
+          "type": "text",
+          "text": "400"
+        },
+        {
+          "type": "text",
+          "text": "800"
+        },
+        {
+          "type": "text",
+          "text": "Node Structure"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 12,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Threaded Binary Search Tree: Implementation"
+        },
+        {
+          "type": "text",
+          "text": "Right In Threaded Binary Tree: 57, 25, 28\n  A node is created with rthread set to TRUE\n  insert 57\n  insert 25"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "57"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "25"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "Address: 800"
+        },
+        {
+          "type": "text",
+          "text": "Address: 400"
+        },
+        {
+          "type": "text",
+          "text": "400"
+        },
+        {
+          "type": "text",
+          "text": "800"
+        },
+        {
+          "type": "text",
+          "text": "Node Structure"
+        },
+        {
+          "type": "text",
+          "text": "q ->"
+        },
+        {
+          "type": "text",
+          "text": "temp ->"
+        },
+        {
+          "type": "text",
+          "text": "void setLeft(NODE* q, int e) {\t     //set node with info e to left of q\n\tNODE* temp=createNode(e);\t\t//e=25\n\tq->left=temp;\n\ttemp->right=q;\n}"
+        },
+        {
+          "type": "text",
+          "text": "q ->"
+        },
+        {
+          "type": "text",
+          "text": "temp ->"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 13,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Threaded Binary Search Tree: Implementation"
+        },
+        {
+          "type": "text",
+          "text": "Right In Threaded Binary Tree: 57, 25, 28\n  A node is created with rthread set to TRUE\n  insert 57\n  insert 25\n  insert 28"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "57"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "25"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "Address: 800"
+        },
+        {
+          "type": "text",
+          "text": "Address: 400"
+        },
+        {
+          "type": "text",
+          "text": "400"
+        },
+        {
+          "type": "text",
+          "text": "800"
+        },
+        {
+          "type": "text",
+          "text": "Node Structure"
+        },
+        {
+          "type": "text",
+          "text": "Address: 1200"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "28"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "800"
+        },
+        {
+          "type": "text",
+          "text": "1200"
+        },
+        {
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "type": "text",
+          "text": "(Right of 25)"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 14,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Threaded Binary Search Tree: Implementation"
+        },
+        {
+          "type": "text",
+          "text": "Right In Threaded Binary Tree: 57, 25, 28\n  A node is created with rthread set to TRUE\n  insert 57\n  insert 25\n  insert 28"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "57"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "25"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "Address: 800"
+        },
+        {
+          "type": "text",
+          "text": "Address: 400"
+        },
+        {
+          "type": "text",
+          "text": "400"
+        },
+        {
+          "type": "text",
+          "text": "800"
+        },
+        {
+          "type": "text",
+          "text": "Node Structure"
+        },
+        {
+          "type": "text",
+          "text": "Address: 1200"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "28"
+        },
+        {
+          "type": "text",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "text": "800"
+        },
+        {
+          "type": "text",
+          "text": "1200"
+        },
+        {
+          "type": "text",
+          "text": "0"
+        },
+        {
+          "type": "text",
+          "text": "void setRight(NODE* q,int e) {\n    NODE* temp=createNode(e);\n    temp->right=q->right;  \n    q->right=temp;\n    q->rthread=0; \n    }"
+        },
+        {
+          "type": "text",
+          "text": "q ->"
+        },
+        {
+          "type": "text",
+          "text": "q ->"
+        },
+        {
+          "type": "text",
+          "text": "temp ->"
+        },
+        {
+          "type": "text",
+          "text": "temp ->"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 15,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Threaded Binary Search Tree: Inorder Traversal"
+        },
+        {
+          "type": "text",
+          "text": "void inOrder(NODE *root) {\n    NODE *p=root;\tNODE *q;\n    do{\n\tq=NULL;\n\twhile(p!=NULL) {\n\t    q=p;\n\t    p=p->left;\n\t}\t\n\tif(q!=NULL) {\n\t    printf(\"%d \",q->info);\n\t    p=q->right;\n\t    while(q->rthread && p!=NULL) {\n\t        printf(\"%d \",p->info);\n\t        q=p;\n\t        p=p->right;\n\t    }\n\t}\n    }while(q!=NULL);\n}"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "p ->"
+        },
+        {
+          "type": "text",
+          "text": "q ->"
+        },
+        {
+          "type": "text",
+          "text": "..."
+        },
+        {
+          "type": "text",
+          "text": "rthread is TRUE for nodes with info: 22, 30, 57"
+        },
+        {
+          "type": "text",
+          "text": "Inorder Traversal:"
+        },
+        {
+          "type": "text",
+          "text": "22"
+        },
+        {
+          "type": "text",
+          "text": "25"
+        },
+        {
+          "type": "text",
+          "text": "28"
+        },
+        {
+          "type": "text",
+          "text": "30"
+        },
+        {
+          "type": "text",
+          "text": "57"
+        },
+        {
+          "type": "text",
+          "text": "NULL"
+        },
+        {
+          "type": "text",
+          "text": "q ->"
+        },
+        {
+          "type": "text",
+          "text": "p ->"
+        },
+        {
+          "type": "text",
+          "text": "q ->"
+        },
+        {
+          "type": "text",
+          "text": "p ->"
+        },
+        {
+          "type": "text",
+          "text": "q ->"
+        },
+        {
+          "type": "text",
+          "text": "p -> NULL"
+        },
+        {
+          "type": "text",
+          "text": "p->"
+        },
+        {
+          "type": "text",
+          "text": "q -> NULL"
+        },
+        {
+          "type": "text",
+          "text": "q->"
+        },
+        {
+          "type": "text",
+          "text": "p->"
+        },
+        {
+          "type": "text",
+          "text": "q->"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 15
+    },
+    {
+      "slide_number": 16,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "shylaja.sharath@pes.edu"
+        },
+        {
+          "type": "text",
+          "text": "+91 9449867804"
+        },
+        {
+          "type": "text",
+          "text": "THANK YOU"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n& Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    }
+  ]
+}

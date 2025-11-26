@@ -1,0 +1,97 @@
+{
+  "timestamp": "2025-04-22 17:13:25",
+  "total_files": 15,
+  "success_count": 15,
+  "results": [
+    {
+      "transcript": "data/processed/transcripts/binary_tree_traversal_5a_2020-09-15 09-04-51_BinTraversal_transcript.json",
+      "slide_content": "data/processed/binary_tree_traversal_Class5_Unit3_BST_Traversal_content.json",
+      "output": "data/output/lecture_notes/Binary_-_tree_notes.txt",
+      "status": "success"
+    },
+    {
+      "transcript": "data/processed/transcripts/expn_tree_7b_2020-09-25 12-12-37_ExprTReeCode 00_00_09-00_26_52_transcript.json",
+      "slide_content": "data/processed/expn_tree_Class7_Unit3_Trees_ExprTree_content.json",
+      "output": "data/output/lecture_notes/Expn_-_tree_notes.txt",
+      "status": "success"
+    },
+    {
+      "transcript": "data/processed/transcripts/stable_diffusion_19853_shylaja.sharath_31_20250327092700214_Video_ENC (1)_transcript.json",
+      "slide_content": "data/processed/stable_diffusion_Stable Diffusion_content.json",
+      "output": "data/output/lecture_notes/stable_diffusion_19853_shylaja_notes.txt",
+      "status": "success"
+    },
+    {
+      "transcript": "data/processed/transcripts/Tree_traversal_9a_2020-09-16 09-46-13_TreeTravCon_transcript.json",
+      "slide_content": "data/processed/Tree_traversal_class9_Unit3_Trees_naryTraversal_content.json",
+      "output": "data/output/lecture_notes/Tree_-_traversal_notes.txt",
+      "status": "success"
+    },
+    {
+      "transcript": "data/processed/transcripts/TBT_6b_2020-09-25 11-29-19_TBTCode 00_00_04-00_35_19~8_transcript.json",
+      "slide_content": "data/processed/TBT_Class6_Unit3_Trees_ThreadBST_content.json",
+      "output": "data/output/lecture_notes/Tbt_-_TBTCode_00_notes.txt",
+      "status": "success"
+    },
+    {
+      "transcript": "data/processed/transcripts/Heap_8a_2020-09-24 13-07-04_HeapCon 00_00_01-00_42_12~1_transcript.json",
+      "slide_content": "data/processed/Heap_Class8_Unit3_Trees_Heap_content.json",
+      "output": "data/output/lecture_notes/Heap_-_HeapCon_00_notes.txt",
+      "status": "success"
+    },
+    {
+      "transcript": "data/processed/transcripts/Multimodal_19853_shylaja.sharath_31_20250401112700078_Video_ENC_transcript.json",
+      "slide_content": "data/processed/Multimodal_MAMBA_content.json",
+      "output": "data/output/lecture_notes/Multimodal_-_shylaja_notes.txt",
+      "status": "success"
+    },
+    {
+      "transcript": "data/processed/transcripts/Lora&Qlora_19853_shylaja.sharath_31_20250318125700082_Video_ENC_transcript.json",
+      "slide_content": "data/processed/Lora&Qlora_Finetuning_content.json",
+      "output": "data/output/lecture_notes/Loraqlora_-_shylaja_notes.txt",
+      "status": "success"
+    },
+    {
+      "transcript": "data/processed/transcripts/Heap_8b_2020-09-26 09-34-27_HeapCode 00_00_09-00_56_50_transcript.json",
+      "slide_content": "data/processed/Heap_Class8_Unit3_Trees_Heap_content.json",
+      "output": "data/output/lecture_notes/Heap_-_HeapCode_00_notes.txt",
+      "status": "success"
+    },
+    {
+      "transcript": "data/processed/transcripts/agentic_19853_shylaja.sharath_31_20250401121200417_Video_ENC_transcript.json",
+      "slide_content": "data/processed/agentic_Agentic Workflow_content.json",
+      "output": "data/output/lecture_notes/Agentic_-_shylaja_notes.txt",
+      "status": "success"
+    },
+    {
+      "transcript": "data/processed/transcripts/expn_tree_7a_2020-09-24 09-28-52_ExprTreeCon_transcript.json",
+      "slide_content": "data/processed/expn_tree_Class7_Unit3_Trees_ExprTree_content.json",
+      "output": "data/output/lecture_notes/Expn_-_tree_notes.txt",
+      "status": "success"
+    },
+    {
+      "transcript": "data/processed/transcripts/stable_diffusion_19853_shylaja.sharath_31_20250327084200249_Video_ENC_transcript.json",
+      "slide_content": "data/processed/stable_diffusion_Stable Diffusion_content.json",
+      "output": "data/output/lecture_notes/stable_diffusion_19853_shylaja_notes.txt",
+      "status": "success"
+    },
+    {
+      "transcript": "data/processed/transcripts/Lora&Qlora_19853_shylaja.sharath_31_20250318112700094_Video_ENC (1)_transcript.json",
+      "slide_content": "data/processed/Lora&Qlora_Finetuning_content.json",
+      "output": "data/output/lecture_notes/Loraqlora_-_shylaja_notes.txt",
+      "status": "success"
+    },
+    {
+      "transcript": "data/processed/transcripts/Lora&Qlora_19853_shylaja.sharath_31_20250318121200085_Video_ENC (1)_transcript.json",
+      "slide_content": "data/processed/Lora&Qlora_Finetuning_content.json",
+      "output": "data/output/lecture_notes/Loraqlora_-_shylaja_notes.txt",
+      "status": "success"
+    },
+    {
+      "transcript": "data/processed/transcripts/TBT_6a_2020-09-22 09-49-32_TBTCon_transcript.json",
+      "slide_content": "data/processed/TBT_Class6_Unit3_Trees_ThreadBST_content.json",
+      "output": "data/output/lecture_notes/Tbt_-_TBTCon_notes.txt",
+      "status": "success"
+    }
+  ]
+}

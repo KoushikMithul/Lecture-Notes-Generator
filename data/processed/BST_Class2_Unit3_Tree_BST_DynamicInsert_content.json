@@ -1,0 +1,284 @@
+{
+  "metadata": {
+    "title": "BST_Class2_Unit3_Tree_BST_DynamicInsert",
+    "slide_count": 8
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS\nUE19CS202"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S & Kusuma K V"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "BST Implementation using Dynamic Allocation: Insertion"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science & Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree \u2013 An Application of Binary Tree"
+        },
+        {
+          "type": "text",
+          "text": "Background\nProblem : find a target key in a list of elements\nSequential: Potentially enumerate every key\nOrdered List: Searching can be done on logn\nFrequent insertions and deletions : Ordered List is much slower\nSolution: Binary Trees provide an excellent solution to this by organizing every element in the list as a node in the tree"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree: Definition"
+        },
+        {
+          "type": "text",
+          "text": "A Binary Search Tree is a binary tree which has the following properties:\nall the elements in the left subtree of a node n are less than the contents of node n\nall the elements in the right subtree of a node n are greater than or equal to the contents of node n"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree \u2013 An Application of Binary Tree"
+        },
+        {
+          "type": "text",
+          "text": "A  Binary  Search  Tree  with  the  nodes  inserted in the order: 5, 3, 6, 4, 2, 8, 1,7, 9"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "5"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree - Implementation"
+        },
+        {
+          "type": "text",
+          "text": "Linked implementation\nHere every node will have its own info along with the links to left child and right child\n\ntypedef struct tree_linked\n{\n  int info;\n  struct tree_linked *left,*right;\n}NODE;\n\nNODE *root=NULL; //root points to Root of the tree and initially it is null"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "Binary Search Tree - Implementation"
+        },
+        {
+          "type": "text",
+          "text": "Linked implementation: 5, 3, 7, 8, 1, 4"
+        },
+        {
+          "type": "text",
+          "text": "DATA STRUCTURES AND ITS APPLICATIONS"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "N"
+        },
+        {
+          "type": "text",
+          "text": "Root"
+        },
+        {
+          "type": "text",
+          "text": "3 < 5"
+        },
+        {
+          "type": "text",
+          "text": "1 < 5"
+        },
+        {
+          "type": "text",
+          "text": "1 < 3"
+        },
+        {
+          "type": "text",
+          "text": "7 > 5"
+        },
+        {
+          "type": "text",
+          "text": "8 > 5"
+        },
+        {
+          "type": "text",
+          "text": "8 > 7"
+        },
+        {
+          "type": "text",
+          "text": "4 < 5"
+        },
+        {
+          "type": "text",
+          "text": "4 > 3"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 6
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        {
+          "type": "text",
+          "text": "shylaja.sharath@pes.edu"
+        },
+        {
+          "type": "text",
+          "text": "+91 9449867804"
+        },
+        {
+          "type": "text",
+          "text": "THANK YOU"
+        },
+        {
+          "type": "text",
+          "text": "Shylaja S S"
+        },
+        {
+          "type": "text",
+          "text": "Department of Computer Science\n& Engineering"
+        }
+      ],
+      "notes": "",
+      "has_images": true,
+      "image_count": 1
+    }
+  ]
+}
