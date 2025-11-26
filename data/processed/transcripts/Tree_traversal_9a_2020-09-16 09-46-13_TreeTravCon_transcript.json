@@ -1,0 +1,1338 @@
+{
+  "video_name": "Tree_traversal_9a_2020-09-16 09-46-13_TreeTravCon",
+  "video_path": "data/raw/videos/Tree_traversal_9a_2020-09-16 09-46-13_TreeTravCon.mkv",
+  "duration_seconds": 1254.504,
+  "transcript": [
+    {
+      "text": " Hello everyone, welcome back.",
+      "start_time": 0.0,
+      "end_time": 6.0
+    },
+    {
+      "text": " In today's class, let us look at the concept and definitions related to general trees.",
+      "start_time": 6.0,
+      "end_time": 15.84
+    },
+    {
+      "text": " The tree data structure is also a non-linear data structure and it has finite non-empty",
+      "start_time": 15.84,
+      "end_time": 24.56
+    },
+    {
+      "text": "",
+      "start_time": 24.56,
+      "end_time": 0.0
+    },
+    {
+      "text": " set of elements like the way we define binary trace and it the .",
+      "start_time": 5.44,
+      "end_time": null
+    },
+    {
+      "text": " one element in that finite non-empty set is the root and remaining subsets if you look at",
+      "start_time": 30.0,
+      "end_time": 37.44
+    },
+    {
+      "text": " their disjoint subsets are also the trees. You can see that one element is the root and you",
+      "start_time": 37.44,
+      "end_time": 45.76
+    },
+    {
+      "text": " have remaining subsets in this example there are three subsets this is one subset this is another",
+      "start_time": 45.76,
+      "end_time": 53.120000000000005
+    },
+    {
+      "text": "",
+      "start_time": 53.68,
+      "end_time": 30.0
+    },
+    {
+      "text": " and this is the third subset. So remaining elements are partitioned into",
+      "start_time": 38.4,
+      "end_time": null
+    },
+    {
+      "text": " m greater than or equal to 0, it is a possibility that you may have just one node in the tree.",
+      "start_time": 60.0,
+      "end_time": 67.76
+    },
+    {
+      "text": " So, you may have three 0 subsets or in this example there are three and each of which",
+      "start_time": 67.76,
+      "end_time": 74.56
+    },
+    {
+      "text": " is in turn a tree.",
+      "start_time": 74.56,
+      "end_time": 76.64
+    },
+    {
+      "text": " Such a data organization is called as the tree data organization or tree data type.",
+      "start_time": 76.64,
+      "end_time": 84.56
+    },
+    {
+      "text": "",
+      "start_time": 84.56,
+      "end_time": 60.0
+    },
+    {
+      "text": " Now, in this tree if you provide an order for",
+      "start_time": 65.52,
+      "end_time": null
+    },
+    {
+      "text": " the subsets that you have the ordered set then such a tree is called as an ordered tree.",
+      "start_time": 90.0,
+      "end_time": 95.52
+    },
+    {
+      "text": " As an example, if you consider here A, it has sub trees, this BEF is one sub tree,",
+      "start_time": 96.08,
+      "end_time": 104.32
+    },
+    {
+      "text": " C is another and DG is another. If these subsets and sub trees, if they are given some order,",
+      "start_time": 104.32,
+      "end_time": 113.28
+    },
+    {
+      "text": "",
+      "start_time": 114.0,
+      "end_time": 90.0
+    },
+    {
+      "text": " Then such a tree is called as an ordered tree.",
+      "start_time": 94.96,
+      "end_time": 90.0
+    },
+    {
+      "text": " In this tree we call",
+      "start_time": 92.0,
+      "end_time": null
+    },
+    {
+      "text": " this as the first child of A, this as the second child and this as the third child.",
+      "start_time": 120.0,
+      "end_time": 128.92
+    },
+    {
+      "text": " So there is an order in which we are specifying the children of A, so first child, second",
+      "start_time": 128.92,
+      "end_time": 136.32
+    },
+    {
+      "text": " child and the last child.",
+      "start_time": 136.32,
+      "end_time": 139.88
+    },
+    {
+      "text": " Such a tree is called as an ordered tree, is that clear?",
+      "start_time": 139.88,
+      "end_time": 144.04
+    },
+    {
+      "text": "",
+      "start_time": 144.04,
+      "end_time": 120.0
+    },
+    {
+      "text": " So here the first child is also called as the oldest child of G.A. and the last child is the oldest child of G.A.",
+      "start_time": 126.0,
+      "end_time": 128.0
+    },
+    {
+      "text": " child is called as the youngest child of A. If you consider the trees here, okay, A has",
+      "start_time": 150.0,
+      "end_time": 158.36
+    },
+    {
+      "text": " three children, B, C, D in this as well you have B, C, D. B has two children E and F,",
+      "start_time": 158.36,
+      "end_time": 166.64
+    },
+    {
+      "text": " D has one child G. The same thing is true even on the other side of the tree, B has",
+      "start_time": 166.64,
+      "end_time": 173.24
+    },
+    {
+      "text": " two children E and F and D has one G. But look at the way the sequencing has been done.",
+      "start_time": 173.24,
+      "end_time": 179.48
+    },
+    {
+      "text": "",
+      "start_time": 179.48,
+      "end_time": 150.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 152.0,
+      "end_time": null
+    },
+    {
+      "text": " Now the question is are these two trees same or they not different? If you call these as unordered",
+      "start_time": 180.0,
+      "end_time": 188.64
+    },
+    {
+      "text": " trees then they are the same because each and every node has same number of children and",
+      "start_time": 188.64,
+      "end_time": 195.12
+    },
+    {
+      "text": " the children are also BCD. Only thing is what you are not specifying is who is first and who is",
+      "start_time": 196.0,
+      "end_time": 202.16
+    },
+    {
+      "text": " second. All are children. BCD are the children of A. Then these two trees become unordered trees.",
+      "start_time": 202.16,
+      "end_time": 209.52
+    },
+    {
+      "text": " But if you give an order to this particular node saying that A, B is the first child,",
+      "start_time": 210.0,
+      "end_time": 217.36
+    },
+    {
+      "text": " C is the second child, D is the last child, then these two trees become different. So,",
+      "start_time": 217.36,
+      "end_time": 223.2
+    },
+    {
+      "text": " if you say that these are two ordered trees and then ask a question, are these two trees",
+      "start_time": 223.2,
+      "end_time": 229.04
+    },
+    {
+      "text": " same? Then the answer is no. If you ask the question, are these two trees same? And we say",
+      "start_time": 229.04,
+      "end_time": 234.8
+    },
+    {
+      "text": "",
+      "start_time": 234.8,
+      "end_time": 210.0
+    },
+    {
+      "text": " that there are unordered trees then the answer is yes.",
+      "start_time": 213.04,
+      "end_time": null
+    },
+    {
+      "text": " moving forward. Let us look at nary tree and a forest. An nary tree is a rooted tree which",
+      "start_time": 240.0,
+      "end_time": 248.64
+    },
+    {
+      "text": " is also a tree in which every node has no more than n children. That is the meaning of nary",
+      "start_time": 248.64,
+      "end_time": 256.96
+    },
+    {
+      "text": " there. So, as an example, you have already looked at binary trees. The binary there stands for 2,",
+      "start_time": 257.52,
+      "end_time": 265.2
+    },
+    {
+      "text": "",
+      "start_time": 265.2,
+      "end_time": 240.0
+    },
+    {
+      "text": " n stands for 2. You have seen that in the binary tree,",
+      "start_time": 244.0,
+      "end_time": null
+    },
+    {
+      "text": " node cannot have more than two children. The maximum number of branches emanating from any node",
+      "start_time": 270.0,
+      "end_time": 276.88
+    },
+    {
+      "text": " is 2. So, that is why it is called as a binary tree. So, now you get that n-ary. In a n-ary tree,",
+      "start_time": 276.88,
+      "end_time": 284.48
+    },
+    {
+      "text": " the maximum number of branches that can emanate from any node is n. So, that is the meaning of",
+      "start_time": 284.48,
+      "end_time": 291.76
+    },
+    {
+      "text": " n-ary tree. Let us look at an example of n-ary tree with n equal to 5. When we say n-ary tree,",
+      "start_time": 291.76,
+      "end_time": 299.84
+    },
+    {
+      "text": " it is not necessary that every node must have the value n. I am saying that I am specifying",
+      "start_time": 300.0,
+      "end_time": 306.2
+    },
+    {
+      "text": " that the maximum a node can have is 5, okay. So, this is the example of a n-nary tree.",
+      "start_time": 306.2,
+      "end_time": 313.16
+    },
+    {
+      "text": " In this example for that matter only node A has 5 and rest of the nodes are having lesser",
+      "start_time": 313.16,
+      "end_time": 319.68
+    },
+    {
+      "text": " than that of n, the value 5. But this is an example of a fiery tree.",
+      "start_time": 319.68,
+      "end_time": 326.36
+    },
+    {
+      "text": "",
+      "start_time": 326.36,
+      "end_time": 300.0
+    },
+    {
+      "text": " I mean this example with reference.",
+      "start_time": 303.72,
+      "end_time": null
+    },
+    {
+      "text": " to A, there is an ordered set of these trees. B is one such, this is the oldest child, then",
+      "start_time": 330.0,
+      "end_time": 339.12
+    },
+    {
+      "text": " you have this one more subtree and then you have another and you have another and you",
+      "start_time": 339.12,
+      "end_time": 344.72
+    },
+    {
+      "text": " have another. So, these subsets are all ordered in turn. So, every subset is ordered tree.",
+      "start_time": 344.72,
+      "end_time": 352.24
+    },
+    {
+      "text": " So, G is the oldest, H is the last child, youngest child. Similarly, E has one child",
+      "start_time": 352.24,
+      "end_time": 359.08
+    },
+    {
+      "text": "",
+      "start_time": 359.08,
+      "end_time": 330.0
+    },
+    {
+      "text": " only that is.",
+      "start_time": 330.88,
+      "end_time": null
+    },
+    {
+      "text": " the oldest or first child, I in turn has first child.",
+      "start_time": 360.0,
+      "end_time": 363.76
+    },
+    {
+      "text": " So you can see that each of this ordered tree is a subset here and all these together form",
+      "start_time": 363.76,
+      "end_time": 372.4
+    },
+    {
+      "text": " a forest.",
+      "start_time": 372.4,
+      "end_time": 374.4
+    },
+    {
+      "text": " But at this level, the node A, so if you consider this whole of thing as a forest, in the forest",
+      "start_time": 374.4,
+      "end_time": 382.68
+    },
+    {
+      "text": "",
+      "start_time": 382.68,
+      "end_time": 360.0
+    },
+    {
+      "text": " we have just one tree. But if you look at this level, the forest has many disjoint trees.",
+      "start_time": 361.86,
+      "end_time": 367.12
+    },
+    {
+      "text": " So, you can also have another tree here and together it can be called as a forest.",
+      "start_time": 390.0,
+      "end_time": 396.32
+    },
+    {
+      "text": " So, forest is nothing but order set of ordered trees.",
+      "start_time": 396.32,
+      "end_time": 401.32
+    },
+    {
+      "text": " At this point also it is an ordered tree with reference to A it is an ordered tree.",
+      "start_time": 401.32,
+      "end_time": 407.16
+    },
+    {
+      "text": " We will leave this suppose if this is not there you have one tree with B, you have another",
+      "start_time": 407.16,
+      "end_time": 413.72
+    },
+    {
+      "text": " tree with CG heads, you have another tree D, you have another tree ordered tree, you",
+      "start_time": 413.72,
+      "end_time": 419.4
+    },
+    {
+      "text": "",
+      "start_time": 419.4,
+      "end_time": 390.0
+    },
+    {
+      "text": " I'll have another.",
+      "start_time": 390.84,
+      "end_time": null
+    },
+    {
+      "text": " So, all of these ordered trees become the forest, is that clear?",
+      "start_time": 420.0,
+      "end_time": 424.6
+    },
+    {
+      "text": " So that is the concept of a forest which is an ordered set of ordered trees.",
+      "start_time": 424.6,
+      "end_time": 430.48
+    },
+    {
+      "text": " Now, if you want to go ahead and think of representing this kind of a tree in the memory",
+      "start_time": 430.48,
+      "end_time": 439.16
+    },
+    {
+      "text": " what do we do?",
+      "start_time": 439.16,
+      "end_time": 440.64
+    },
+    {
+      "text": " Now, for a moment let us look at what we did in the binary tree implementation.",
+      "start_time": 440.64,
+      "end_time": 446.36
+    },
+    {
+      "text": " We had to define the node structure, is it not?",
+      "start_time": 446.36,
+      "end_time": 449.84
+    },
+    {
+      "text": "",
+      "start_time": 449.84,
+      "end_time": 420.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 421.0,
+      "end_time": null
+    },
+    {
+      "text": " wanted to define the node structure, what you are doing was to have the node contain",
+      "start_time": 450.0,
+      "end_time": 456.52
+    },
+    {
+      "text": " its own information and then we also had a pointer to the left child and a pointer to",
+      "start_time": 456.52,
+      "end_time": 462.68
+    },
+    {
+      "text": " the right child.",
+      "start_time": 462.68,
+      "end_time": 464.18
+    },
+    {
+      "text": " Because in the binary tree, you know that a node cannot have more than two children.",
+      "start_time": 464.18,
+      "end_time": 469.68
+    },
+    {
+      "text": " So all that is needed is a pointer to its left child and a pointer to the right child.",
+      "start_time": 469.68,
+      "end_time": 475.6
+    },
+    {
+      "text": "",
+      "start_time": 475.6,
+      "end_time": 450.0
+    },
+    {
+      "text": " Now in this example if you want to define it similarly the nodes.",
+      "start_time": 454.44,
+      "end_time": null
+    },
+    {
+      "text": " structure, what do we do? Now a node should have its own information here, then it should",
+      "start_time": 480.0,
+      "end_time": 487.52
+    },
+    {
+      "text": " have pointer to its first child, pointer to the next child, pointer to third child and",
+      "start_time": 487.52,
+      "end_time": 492.88
+    },
+    {
+      "text": " so on and how we need. So that depends on the n value. If the n value that we have decided",
+      "start_time": 492.88,
+      "end_time": 501.12
+    },
+    {
+      "text": " to choose is 15, let us say, we are planning to implement a 15 array tree, then a node",
+      "start_time": 501.12,
+      "end_time": 507.72
+    },
+    {
+      "text": "",
+      "start_time": 507.72,
+      "end_time": 480.0
+    },
+    {
+      "text": " should have a maximum of 15.",
+      "start_time": 482.32,
+      "end_time": null
+    },
+    {
+      "text": " pointers. Let us say during runtime if I want to expand the tree, if I want to have more nodes",
+      "start_time": 510.0,
+      "end_time": 518.72
+    },
+    {
+      "text": " than 15 array then it is not possible. The node will not be in a position to accommodate them",
+      "start_time": 519.36,
+      "end_time": 525.84
+    },
+    {
+      "text": " as the node will have only 15 pointers in it. At the same time how many nodes in the tree will have",
+      "start_time": 526.8,
+      "end_time": 534.64
+    },
+    {
+      "text": "",
+      "start_time": 534.64,
+      "end_time": 510.0
+    },
+    {
+      "text": " 15 point as emanating which are actually filled 15 branches as you",
+      "start_time": 515.24,
+      "end_time": null
+    },
+    {
+      "text": " in C here in this diagram itself, there is only one node whose 5 pointers are full.",
+      "start_time": 540.0,
+      "end_time": 546.72
+    },
+    {
+      "text": " In the case of D which is a leaf node, all the 5 pointers are vacant.",
+      "start_time": 546.72,
+      "end_time": 552.82
+    },
+    {
+      "text": " In the example of C, there are only 2 pointers which are utilized and 3 pointers are vacant.",
+      "start_time": 552.82,
+      "end_time": 559.12
+    },
+    {
+      "text": " If the same if you had a 15-ary tree with reference to A, 10 pointers would have gone",
+      "start_time": 559.12,
+      "end_time": 564.6
+    },
+    {
+      "text": " vacant.",
+      "start_time": 564.6,
+      "end_time": 565.6
+    },
+    {
+      "text": "",
+      "start_time": 565.6,
+      "end_time": 540.0
+    },
+    {
+      "text": " And the question is do you want to declare some",
+      "start_time": 544.0,
+      "end_time": 540.0
+    },
+    {
+      "text": " Uh",
+      "start_time": 542.0,
+      "end_time": null
+    },
+    {
+      "text": " 15 pointers or 20 pointers beforehand for a node structure and then almost in every node",
+      "start_time": 570.0,
+      "end_time": 576.6
+    },
+    {
+      "text": " some pointers are getting restrained.",
+      "start_time": 576.6,
+      "end_time": 578.64
+    },
+    {
+      "text": " We are not doing good in terms of pointers, is not it?",
+      "start_time": 578.64,
+      "end_time": 583.16
+    },
+    {
+      "text": " The number of pointers of the memory utilization.",
+      "start_time": 583.16,
+      "end_time": 585.6
+    },
+    {
+      "text": " Again, if you want to expand, if you want to have more branches, then even in that case",
+      "start_time": 585.6,
+      "end_time": 592.12
+    },
+    {
+      "text": " it is not possible because we have restricted the number of pointers in a node.",
+      "start_time": 592.12,
+      "end_time": 597.0
+    },
+    {
+      "text": "",
+      "start_time": 597.0,
+      "end_time": 570.0
+    },
+    {
+      "text": " So that is what is going to happen.",
+      "start_time": 574.56,
+      "end_time": null
+    },
+    {
+      "text": " if you use the node structure to be of this kind where the node will have its own information",
+      "start_time": 600.0,
+      "end_time": 606.16
+    },
+    {
+      "text": " field and it has an array of pointers, an array of pointers, child pointers and how many",
+      "start_time": 606.16,
+      "end_time": 613.8
+    },
+    {
+      "text": " we have defined a max.",
+      "start_time": 613.8,
+      "end_time": 615.48
+    },
+    {
+      "text": " If max is defined as 15, it is a 15 array tree.",
+      "start_time": 615.48,
+      "end_time": 619.6
+    },
+    {
+      "text": " So node is containing information and a series of pointers, how many max pointers.",
+      "start_time": 619.6,
+      "end_time": 625.32
+    },
+    {
+      "text": "",
+      "start_time": 625.32,
+      "end_time": 600.0
+    },
+    {
+      "text": " But just now I said that with this kind of an implementation, we",
+      "start_time": 604.64,
+      "end_time": null
+    },
+    {
+      "text": " We are constrained by the number of pointers that we have and you cannot have more branches",
+      "start_time": 630.0,
+      "end_time": 635.28
+    },
+    {
+      "text": " during runtime and at the same time during runtime if you do not have those many branches,",
+      "start_time": 635.28,
+      "end_time": 641.28
+    },
+    {
+      "text": " all these pointers are not being used.",
+      "start_time": 641.28,
+      "end_time": 644.34
+    },
+    {
+      "text": " So on both accounts, this kind of a node structure is not a very good idea.",
+      "start_time": 644.34,
+      "end_time": 650.28
+    },
+    {
+      "text": " So what do we do?",
+      "start_time": 650.28,
+      "end_time": 651.96
+    },
+    {
+      "text": " So let us go back to the tree and see here.",
+      "start_time": 651.96,
+      "end_time": 655.04
+    },
+    {
+      "text": "",
+      "start_time": 655.04,
+      "end_time": 630.0
+    },
+    {
+      "text": " if I have in this node A I stored the",
+      "start_time": 636.72,
+      "end_time": null
+    },
+    {
+      "text": " one pointer which will point to B and I will have another pointer only which will point",
+      "start_time": 660.0,
+      "end_time": 667.44
+    },
+    {
+      "text": " to its sibling. With reference to A I have only the first child but I do not have a sibling.",
+      "start_time": 667.44,
+      "end_time": 676.44
+    },
+    {
+      "text": " So in this case what may happen is the node A is see like the binary tree in this case",
+      "start_time": 676.44,
+      "end_time": 683.28
+    },
+    {
+      "text": " also I am going to define only two points but the purposes for which these two pointers",
+      "start_time": 683.28,
+      "end_time": 688.88
+    },
+    {
+      "text": "",
+      "start_time": 688.88,
+      "end_time": 660.0
+    },
+    {
+      "text": " are defined or defined.",
+      "start_time": 661.12,
+      "end_time": null
+    },
+    {
+      "text": " different. In the binary tree, both the pointers were having pointers to the children. But",
+      "start_time": 690.0,
+      "end_time": 696.78
+    },
+    {
+      "text": " in this case, I am saying that the two pointers that I am using are for different purposes.",
+      "start_time": 696.78,
+      "end_time": 703.02
+    },
+    {
+      "text": " One pointer I am using for the first child and the other pointer I am going to make it",
+      "start_time": 703.02,
+      "end_time": 708.66
+    },
+    {
+      "text": " point to its immediate sibling. With reference to the node A, with reference to the node",
+      "start_time": 708.66,
+      "end_time": 716.86
+    },
+    {
+      "text": "",
+      "start_time": 716.86,
+      "end_time": 690.0
+    },
+    {
+      "text": " you do not have a",
+      "start_time": 693.0,
+      "end_time": null
+    },
+    {
+      "text": " sibling because that is the root. Now, if you consider C, let us say example C, the",
+      "start_time": 720.0,
+      "end_time": 727.6
+    },
+    {
+      "text": " C node will have two pointers. It is not like the way it is shown in the picture. C will",
+      "start_time": 727.6,
+      "end_time": 733.84
+    },
+    {
+      "text": " have pointer to G and a C will have pointer to D. How about that? This is the idea that",
+      "start_time": 733.84,
+      "end_time": 741.2
+    },
+    {
+      "text": " I want to have and then present a different way of implementation in the case of tree",
+      "start_time": 741.2,
+      "end_time": 748.0
+    },
+    {
+      "text": "",
+      "start_time": 748.0,
+      "end_time": 720.0
+    },
+    {
+      "text": " so that my expansions",
+      "start_time": 722.0,
+      "end_time": null
+    },
+    {
+      "text": " and whatever number of pointers to be used all that is effectively used. So, let us look at the",
+      "start_time": 750.0,
+      "end_time": 756.8
+    },
+    {
+      "text": " second implementation of the tree node. In this case, what I am going to do is all the children",
+      "start_time": 756.8,
+      "end_time": 765.6
+    },
+    {
+      "text": " of a given node are linked like a linked list. All the children BC, D, E, F, G, all of these",
+      "start_time": 765.6,
+      "end_time": 771.92
+    },
+    {
+      "text": " children of a given node A are linked up and only the oldest child is linked to the parent.",
+      "start_time": 771.92,
+      "end_time": 777.84
+    },
+    {
+      "text": "",
+      "start_time": 779.12,
+      "end_time": 750.0
+    },
+    {
+      "text": " And no one has.",
+      "start_time": 752.16,
+      "end_time": null
+    },
+    {
+      "text": " a link to the first child and a link to immediate sibling. So that way if you",
+      "start_time": 780.0,
+      "end_time": 786.36
+    },
+    {
+      "text": " consider a node structure will be very similar to the binary tree's node",
+      "start_time": 786.36,
+      "end_time": 790.86
+    },
+    {
+      "text": " structure. It has information field and it has a pointer to the child, child here",
+      "start_time": 790.86,
+      "end_time": 797.14
+    },
+    {
+      "text": " in the meaning the first child and it has a pointer to the sibling. This kind of",
+      "start_time": 797.14,
+      "end_time": 803.08
+    },
+    {
+      "text": " an implementation is called as left child right sibling representation. First",
+      "start_time": 803.08,
+      "end_time": 808.56
+    },
+    {
+      "text": "",
+      "start_time": 808.56,
+      "end_time": 780.0
+    },
+    {
+      "text": " you link all the symbols.",
+      "start_time": 781.44,
+      "end_time": null
+    },
+    {
+      "text": " of a node. First you make a link list and then delete all links from node to its children",
+      "start_time": 810.0,
+      "end_time": 815.4
+    },
+    {
+      "text": " except for the link to its leftmost child. The left child in a binary tree is the node",
+      "start_time": 815.4,
+      "end_time": 821.2
+    },
+    {
+      "text": " which is the oldest child of the given node and the right child is the node to the immediate",
+      "start_time": 821.2,
+      "end_time": 826.4
+    },
+    {
+      "text": " right sibling. Such a binary tree will not have a right subtree because at the root you",
+      "start_time": 826.4,
+      "end_time": 832.44
+    },
+    {
+      "text": " do not have sibling. So, that is the way in which a tree is converted into a binary tree",
+      "start_time": 832.44,
+      "end_time": 838.6
+    },
+    {
+      "text": "",
+      "start_time": 838.6,
+      "end_time": 810.0
+    },
+    {
+      "text": " basically.",
+      "start_time": 810.92,
+      "end_time": null
+    },
+    {
+      "text": " So, let us look at an example.",
+      "start_time": 840.0,
+      "end_time": 843.16
+    },
+    {
+      "text": " See here, this is the three array tree.",
+      "start_time": 843.16,
+      "end_time": 846.36
+    },
+    {
+      "text": " So, we pick up this three array tree here.",
+      "start_time": 846.36,
+      "end_time": 850.08
+    },
+    {
+      "text": " What I need to do is link all siblings of a node.",
+      "start_time": 850.08,
+      "end_time": 853.12
+    },
+    {
+      "text": " So, B, C, D are to be linked up.",
+      "start_time": 853.12,
+      "end_time": 855.84
+    },
+    {
+      "text": " So, for this node I will link up B, C, D, all siblings are linked up.",
+      "start_time": 855.84,
+      "end_time": 861.36
+    },
+    {
+      "text": " And for B, I will link up E and F. Now, delete all the links from a node to its children",
+      "start_time": 861.36,
+      "end_time": 869.96
+    },
+    {
+      "text": "",
+      "start_time": 869.96,
+      "end_time": 840.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 841.0,
+      "end_time": null
+    },
+    {
+      "text": " except for the links to its leftmost child. So, for this node I remove these two links.",
+      "start_time": 870.0,
+      "end_time": 876.88
+    },
+    {
+      "text": " For B, I am going to remove this. So, this is how it is converted into binary tree. You",
+      "start_time": 876.88,
+      "end_time": 883.2
+    },
+    {
+      "text": " can see that all the children of node A are considered constructed as a linked list and",
+      "start_time": 883.2,
+      "end_time": 890.64
+    },
+    {
+      "text": " then these are attached to A and all the children of B are constructed as a series and then",
+      "start_time": 890.64,
+      "end_time": 898.56
+    },
+    {
+      "text": "",
+      "start_time": 898.56,
+      "end_time": 870.0
+    },
+    {
+      "text": " attached to B.",
+      "start_time": 871.08,
+      "end_time": null
+    },
+    {
+      "text": " So, you are converting while representing them, you are converting an NRE tree into",
+      "start_time": 900.0,
+      "end_time": 905.48
+    },
+    {
+      "text": " a binary tree representation basically.",
+      "start_time": 905.48,
+      "end_time": 908.64
+    },
+    {
+      "text": " But please note unlike binary tree, the two pointers are used for different purposes.",
+      "start_time": 908.64,
+      "end_time": 914.24
+    },
+    {
+      "text": " So, this kind of NRE tree is now being created as a binary tree.",
+      "start_time": 914.24,
+      "end_time": 919.44
+    },
+    {
+      "text": " So, the root node since does not have siblings, there is no right sub tree here.",
+      "start_time": 919.44,
+      "end_time": 924.68
+    },
+    {
+      "text": " So, A will only have left sub tree.",
+      "start_time": 924.68,
+      "end_time": 927.0
+    },
+    {
+      "text": "",
+      "start_time": 927.0,
+      "end_time": 900.0
+    },
+    {
+      "text": " all of these notes will be in the left side of E.",
+      "start_time": 903.0,
+      "end_time": null
+    },
+    {
+      "text": " itself. So, now if you draw it in the form of a binary tree, this is how you get it A,",
+      "start_time": 930.0,
+      "end_time": 940.2
+    },
+    {
+      "text": " node below B is the left child and to the right side of A is the sibling, but right",
+      "start_time": 940.2,
+      "end_time": 948.84
+    },
+    {
+      "text": " now you do not have. So, B if you come to node below E is the left child and node to",
+      "start_time": 948.84,
+      "end_time": 956.24
+    },
+    {
+      "text": "",
+      "start_time": 956.24,
+      "end_time": 930.0
+    },
+    {
+      "text": " the right is right child ok. Then you feel.",
+      "start_time": 933.8,
+      "end_time": null
+    },
+    {
+      "text": " you look at C, node below there is nothing, node to the right is the sibling, so you construct",
+      "start_time": 960.0,
+      "end_time": 966.48
+    },
+    {
+      "text": " this and then you have for D you have the left child to be G and there is no right child",
+      "start_time": 966.48,
+      "end_time": 975.76
+    },
+    {
+      "text": " and then for node E you have no left child but right child is F and that is it, okay.",
+      "start_time": 975.76,
+      "end_time": 982.48
+    },
+    {
+      "text": " For F there is nothing, so that is how the binary tree is going to be constructed for",
+      "start_time": 982.48,
+      "end_time": 988.64
+    },
+    {
+      "text": "",
+      "start_time": 988.64,
+      "end_time": 960.0
+    },
+    {
+      "text": " the corresponding energy.",
+      "start_time": 961.4,
+      "end_time": null
+    },
+    {
+      "text": " tree. So, we start with a link up and remaining we remove and then construct the binary tree",
+      "start_time": 990.0,
+      "end_time": 998.08
+    },
+    {
+      "text": " for the given n-ary tree. So, that is how the binary tree is constructed.",
+      "start_time": 998.08,
+      "end_time": 1006.48
+    },
+    {
+      "text": " Now, let us look at having a forest wherein you have distinct binary trees and how do",
+      "start_time": 1006.48,
+      "end_time": 1012.96
+    },
+    {
+      "text": " we go about constructing a binary tree in a forest where you have disjoint trees. So,",
+      "start_time": 1012.96,
+      "end_time": 1019.96
+    },
+    {
+      "text": "",
+      "start_time": 1019.96,
+      "end_time": 990.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 991.0,
+      "end_time": null
+    },
+    {
+      "text": " And in that case, the right child of the root node of every resulting binary tree will be",
+      "start_time": 1020.0,
+      "end_time": 1025.16
+    },
+    {
+      "text": " empty.",
+      "start_time": 1025.16,
+      "end_time": 1026.16
+    },
+    {
+      "text": " This is because the root of the tree we are transforming has no siblings.",
+      "start_time": 1026.16,
+      "end_time": 1030.64
+    },
+    {
+      "text": " On the other hand, if we have a forest, then these all transform into a single binary tree",
+      "start_time": 1030.64,
+      "end_time": 1035.96
+    },
+    {
+      "text": " as follows.",
+      "start_time": 1035.96,
+      "end_time": 1036.96
+    },
+    {
+      "text": " First, obtain the binary tree representation of each of the trees.",
+      "start_time": 1036.96,
+      "end_time": 1041.6
+    },
+    {
+      "text": " You may have let us say T1, T2 and T3.",
+      "start_time": 1041.6,
+      "end_time": 1045.28
+    },
+    {
+      "text": "",
+      "start_time": 1045.28,
+      "end_time": 1020.0
+    },
+    {
+      "text": " each of them like the way I said just now all of them have to be converted.",
+      "start_time": 1024.76,
+      "end_time": null
+    },
+    {
+      "text": " to binary tree. Then all these binary trees will have to be linked up as right sibling",
+      "start_time": 1050.0,
+      "end_time": 1055.36
+    },
+    {
+      "text": " of one another. So, conversion of forest to binary tree can be formally defined as the",
+      "start_time": 1055.36,
+      "end_time": 1062.88
+    },
+    {
+      "text": " following. Let us say suppose you have n trees in the forest, n disjoint trees, t1 to tn.",
+      "start_time": 1062.88,
+      "end_time": 1072.48
+    },
+    {
+      "text": " Then what we need to do is first and foremost convert all of them to binary tree representations.",
+      "start_time": 1072.48,
+      "end_time": 1079.32
+    },
+    {
+      "text": "",
+      "start_time": 1079.32,
+      "end_time": 1050.0
+    },
+    {
+      "text": " and",
+      "start_time": 1052.0,
+      "end_time": null
+    },
+    {
+      "text": " And this binary tree representation is B of t1, B of t2 and so on.",
+      "start_time": 1080.0,
+      "end_time": 1084.52
+    },
+    {
+      "text": " But our ultimate goal is to have single binary tree.",
+      "start_time": 1084.52,
+      "end_time": 1088.32
+    },
+    {
+      "text": " Now, how do we combine with certain conditions?",
+      "start_time": 1088.32,
+      "end_time": 1091.64
+    },
+    {
+      "text": " So, you have t1 to tn converted into a single binary tree consisting of all t1 to tn with",
+      "start_time": 1091.64,
+      "end_time": 1099.24
+    },
+    {
+      "text": " following conditions.",
+      "start_time": 1099.24,
+      "end_time": 1100.64
+    },
+    {
+      "text": " With if the number is 0, then it is an empty tree.",
+      "start_time": 1100.64,
+      "end_time": 1106.96
+    },
+    {
+      "text": "",
+      "start_time": 1106.96,
+      "end_time": 1080.0
+    },
+    {
+      "text": " otherwise the resulting binary T will have.",
+      "start_time": 1083.08,
+      "end_time": null
+    },
+    {
+      "text": " the root as T1, whatever root T1 has that is the resulting binary trees root as well.",
+      "start_time": 1110.0,
+      "end_time": 1117.44
+    },
+    {
+      "text": " And then its left subtree will be equal to all the trees that are there in T1. Whatever T1",
+      "start_time": 1118.8,
+      "end_time": 1126.4
+    },
+    {
+      "text": " have its subtree all of that will form the left subtree. All the remaining subtree that you have",
+      "start_time": 1126.4,
+      "end_time": 1133.92
+    },
+    {
+      "text": "",
+      "start_time": 1133.92,
+      "end_time": 1110.0
+    },
+    {
+      "text": " t2 to tn all of those will be the right separations. That is",
+      "start_time": 1116.08,
+      "end_time": null
+    },
+    {
+      "text": " is how the formation of the left subtree and right subtree are done with reference to T1.",
+      "start_time": 1140.0,
+      "end_time": 1147.04
+    },
+    {
+      "text": " So, let us understand these definitions with respect to an example. Now, you have T1 here,",
+      "start_time": 1147.04,
+      "end_time": 1155.04
+    },
+    {
+      "text": " T2 here and T3 here. Now, first and foremost step is to convert each one of them into a",
+      "start_time": 1155.04,
+      "end_time": 1162.28
+    },
+    {
+      "text": " binary tree. So, I do that. So, A is left child is B, there is no right child for A.",
+      "start_time": 1162.28,
+      "end_time": 1169.0
+    },
+    {
+      "text": "",
+      "start_time": 1169.0,
+      "end_time": 1140.0
+    },
+    {
+      "text": " That's it.",
+      "start_time": 1141.0,
+      "end_time": null
+    },
+    {
+      "text": " B's right child is C immediate sibling, C's right child is D, okay, E has F which is a",
+      "start_time": 1170.0,
+      "end_time": 1177.12
+    },
+    {
+      "text": " left child, G has left child's hedge and I is a sibling so I convert this.",
+      "start_time": 1177.12,
+      "end_time": 1183.12
+    },
+    {
+      "text": " So these are the binary trees.",
+      "start_time": 1183.12,
+      "end_time": 1185.2
+    },
+    {
+      "text": " Now I have to convert this into a single binary tree which is a forest here.",
+      "start_time": 1185.2,
+      "end_time": 1190.32
+    },
+    {
+      "text": " So what I do is these two binary trees I will link up.",
+      "start_time": 1190.32,
+      "end_time": 1193.8
+    },
+    {
+      "text": "",
+      "start_time": 1193.8,
+      "end_time": 1170.0
+    },
+    {
+      "text": " The way I am going to link up is to attach this root it has a right pointer now.",
+      "start_time": 1176.24,
+      "end_time": null
+    },
+    {
+      "text": " to this that is the way in which I am going to attach link binary tree T2 and binary tree",
+      "start_time": 1200.0,
+      "end_time": 1207.88
+    },
+    {
+      "text": " T3 by attaching it as a right sibling. So, a binary tree from the T3 will go as a right",
+      "start_time": 1207.88,
+      "end_time": 1216.32
+    },
+    {
+      "text": " link of binary tree T2. So, G becomes the right child of E. So, if you represent it",
+      "start_time": 1216.32,
+      "end_time": 1223.56
+    },
+    {
+      "text": " in the form of a binary tree this is a corresponding. We have been able to successfully merge the",
+      "start_time": 1223.56,
+      "end_time": 1229.6
+    },
+    {
+      "text": "",
+      "start_time": 1229.6,
+      "end_time": 1200.0
+    },
+    {
+      "text": " to be",
+      "start_time": 1200.5,
+      "end_time": null
+    },
+    {
+      "text": " Now, we have this tree and the original T1.",
+      "start_time": 1230.0,
+      "end_time": 1233.36
+    },
+    {
+      "text": " So, this is your T1 and this is a merged T2, T3 tree.",
+      "start_time": 1233.36,
+      "end_time": 1237.52
+    },
+    {
+      "text": " Again, link up these two by this and A's right side will become E and that is how the",
+      "start_time": 1237.52,
+      "end_time": 1245.48
+    },
+    {
+      "text": " binary tree is constructed from a forest.",
+      "start_time": 1245.48,
+      "end_time": 1248.88
+    },
+    {
+      "text": " So, with this I will end the discussion on general trees.",
+      "start_time": 1248.88,
+      "end_time": 1253.48
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1253.48,
+      "end_time": 1254.04
+    }
+  ],
+  "transcript_text": " Hello everyone, welcome back.  In today's class, let us look at the concept and definitions related to general trees.  The tree data structure is also a non-linear data structure and it has finite non-empty   set of elements like the way we define binary trace and it the .  one element in that finite non-empty set is the root and remaining subsets if you look at  their disjoint subsets are also the trees. You can see that one element is the root and you  have remaining subsets in this example there are three subsets this is one subset this is another   and this is the third subset. So remaining elements are partitioned into  m greater than or equal to 0, it is a possibility that you may have just one node in the tree.  So, you may have three 0 subsets or in this example there are three and each of which  is in turn a tree.  Such a data organization is called as the tree data organization or tree data type.   Now, in this tree if you provide an order for  the subsets that you have the ordered set then such a tree is called as an ordered tree.  As an example, if you consider here A, it has sub trees, this BEF is one sub tree,  C is another and DG is another. If these subsets and sub trees, if they are given some order,   Then such a tree is called as an ordered tree.  In this tree we call  this as the first child of A, this as the second child and this as the third child.  So there is an order in which we are specifying the children of A, so first child, second  child and the last child.  Such a tree is called as an ordered tree, is that clear?   So here the first child is also called as the oldest child of G.A. and the last child is the oldest child of G.A.  child is called as the youngest child of A. If you consider the trees here, okay, A has  three children, B, C, D in this as well you have B, C, D. B has two children E and F,  D has one child G. The same thing is true even on the other side of the tree, B has  two children E and F and D has one G. But look at the way the sequencing has been done.   Thank you.  Now the question is are these two trees same or they not different? If you call these as unordered  trees then they are the same because each and every node has same number of children and  the children are also BCD. Only thing is what you are not specifying is who is first and who is  second. All are children. BCD are the children of A. Then these two trees become unordered trees.  But if you give an order to this particular node saying that A, B is the first child,  C is the second child, D is the last child, then these two trees become different. So,  if you say that these are two ordered trees and then ask a question, are these two trees  same? Then the answer is no. If you ask the question, are these two trees same? And we say   that there are unordered trees then the answer is yes.  moving forward. Let us look at nary tree and a forest. An nary tree is a rooted tree which  is also a tree in which every node has no more than n children. That is the meaning of nary  there. So, as an example, you have already looked at binary trees. The binary there stands for 2,   n stands for 2. You have seen that in the binary tree,  node cannot have more than two children. The maximum number of branches emanating from any node  is 2. So, that is why it is called as a binary tree. So, now you get that n-ary. In a n-ary tree,  the maximum number of branches that can emanate from any node is n. So, that is the meaning of  n-ary tree. Let us look at an example of n-ary tree with n equal to 5. When we say n-ary tree,  it is not necessary that every node must have the value n. I am saying that I am specifying  that the maximum a node can have is 5, okay. So, this is the example of a n-nary tree.  In this example for that matter only node A has 5 and rest of the nodes are having lesser  than that of n, the value 5. But this is an example of a fiery tree.   I mean this example with reference.  to A, there is an ordered set of these trees. B is one such, this is the oldest child, then  you have this one more subtree and then you have another and you have another and you  have another. So, these subsets are all ordered in turn. So, every subset is ordered tree.  So, G is the oldest, H is the last child, youngest child. Similarly, E has one child   only that is.  the oldest or first child, I in turn has first child.  So you can see that each of this ordered tree is a subset here and all these together form  a forest.  But at this level, the node A, so if you consider this whole of thing as a forest, in the forest   we have just one tree. But if you look at this level, the forest has many disjoint trees.  So, you can also have another tree here and together it can be called as a forest.  So, forest is nothing but order set of ordered trees.  At this point also it is an ordered tree with reference to A it is an ordered tree.  We will leave this suppose if this is not there you have one tree with B, you have another  tree with CG heads, you have another tree D, you have another tree ordered tree, you   I'll have another.  So, all of these ordered trees become the forest, is that clear?  So that is the concept of a forest which is an ordered set of ordered trees.  Now, if you want to go ahead and think of representing this kind of a tree in the memory  what do we do?  Now, for a moment let us look at what we did in the binary tree implementation.  We had to define the node structure, is it not?   Thank you.  wanted to define the node structure, what you are doing was to have the node contain  its own information and then we also had a pointer to the left child and a pointer to  the right child.  Because in the binary tree, you know that a node cannot have more than two children.  So all that is needed is a pointer to its left child and a pointer to the right child.   Now in this example if you want to define it similarly the nodes.  structure, what do we do? Now a node should have its own information here, then it should  have pointer to its first child, pointer to the next child, pointer to third child and  so on and how we need. So that depends on the n value. If the n value that we have decided  to choose is 15, let us say, we are planning to implement a 15 array tree, then a node   should have a maximum of 15.  pointers. Let us say during runtime if I want to expand the tree, if I want to have more nodes  than 15 array then it is not possible. The node will not be in a position to accommodate them  as the node will have only 15 pointers in it. At the same time how many nodes in the tree will have   15 point as emanating which are actually filled 15 branches as you  in C here in this diagram itself, there is only one node whose 5 pointers are full.  In the case of D which is a leaf node, all the 5 pointers are vacant.  In the example of C, there are only 2 pointers which are utilized and 3 pointers are vacant.  If the same if you had a 15-ary tree with reference to A, 10 pointers would have gone  vacant.   And the question is do you want to declare some  Uh  15 pointers or 20 pointers beforehand for a node structure and then almost in every node  some pointers are getting restrained.  We are not doing good in terms of pointers, is not it?  The number of pointers of the memory utilization.  Again, if you want to expand, if you want to have more branches, then even in that case  it is not possible because we have restricted the number of pointers in a node.   So that is what is going to happen.  if you use the node structure to be of this kind where the node will have its own information  field and it has an array of pointers, an array of pointers, child pointers and how many  we have defined a max.  If max is defined as 15, it is a 15 array tree.  So node is containing information and a series of pointers, how many max pointers.   But just now I said that with this kind of an implementation, we  We are constrained by the number of pointers that we have and you cannot have more branches  during runtime and at the same time during runtime if you do not have those many branches,  all these pointers are not being used.  So on both accounts, this kind of a node structure is not a very good idea.  So what do we do?  So let us go back to the tree and see here.   if I have in this node A I stored the  one pointer which will point to B and I will have another pointer only which will point  to its sibling. With reference to A I have only the first child but I do not have a sibling.  So in this case what may happen is the node A is see like the binary tree in this case  also I am going to define only two points but the purposes for which these two pointers   are defined or defined.  different. In the binary tree, both the pointers were having pointers to the children. But  in this case, I am saying that the two pointers that I am using are for different purposes.  One pointer I am using for the first child and the other pointer I am going to make it  point to its immediate sibling. With reference to the node A, with reference to the node   you do not have a  sibling because that is the root. Now, if you consider C, let us say example C, the  C node will have two pointers. It is not like the way it is shown in the picture. C will  have pointer to G and a C will have pointer to D. How about that? This is the idea that  I want to have and then present a different way of implementation in the case of tree   so that my expansions  and whatever number of pointers to be used all that is effectively used. So, let us look at the  second implementation of the tree node. In this case, what I am going to do is all the children  of a given node are linked like a linked list. All the children BC, D, E, F, G, all of these  children of a given node A are linked up and only the oldest child is linked to the parent.   And no one has.  a link to the first child and a link to immediate sibling. So that way if you  consider a node structure will be very similar to the binary tree's node  structure. It has information field and it has a pointer to the child, child here  in the meaning the first child and it has a pointer to the sibling. This kind of  an implementation is called as left child right sibling representation. First   you link all the symbols.  of a node. First you make a link list and then delete all links from node to its children  except for the link to its leftmost child. The left child in a binary tree is the node  which is the oldest child of the given node and the right child is the node to the immediate  right sibling. Such a binary tree will not have a right subtree because at the root you  do not have sibling. So, that is the way in which a tree is converted into a binary tree   basically.  So, let us look at an example.  See here, this is the three array tree.  So, we pick up this three array tree here.  What I need to do is link all siblings of a node.  So, B, C, D are to be linked up.  So, for this node I will link up B, C, D, all siblings are linked up.  And for B, I will link up E and F. Now, delete all the links from a node to its children   Thank you.  except for the links to its leftmost child. So, for this node I remove these two links.  For B, I am going to remove this. So, this is how it is converted into binary tree. You  can see that all the children of node A are considered constructed as a linked list and  then these are attached to A and all the children of B are constructed as a series and then   attached to B.  So, you are converting while representing them, you are converting an NRE tree into  a binary tree representation basically.  But please note unlike binary tree, the two pointers are used for different purposes.  So, this kind of NRE tree is now being created as a binary tree.  So, the root node since does not have siblings, there is no right sub tree here.  So, A will only have left sub tree.   all of these notes will be in the left side of E.  itself. So, now if you draw it in the form of a binary tree, this is how you get it A,  node below B is the left child and to the right side of A is the sibling, but right  now you do not have. So, B if you come to node below E is the left child and node to   the right is right child ok. Then you feel.  you look at C, node below there is nothing, node to the right is the sibling, so you construct  this and then you have for D you have the left child to be G and there is no right child  and then for node E you have no left child but right child is F and that is it, okay.  For F there is nothing, so that is how the binary tree is going to be constructed for   the corresponding energy.  tree. So, we start with a link up and remaining we remove and then construct the binary tree  for the given n-ary tree. So, that is how the binary tree is constructed.  Now, let us look at having a forest wherein you have distinct binary trees and how do  we go about constructing a binary tree in a forest where you have disjoint trees. So,   Thank you.  And in that case, the right child of the root node of every resulting binary tree will be  empty.  This is because the root of the tree we are transforming has no siblings.  On the other hand, if we have a forest, then these all transform into a single binary tree  as follows.  First, obtain the binary tree representation of each of the trees.  You may have let us say T1, T2 and T3.   each of them like the way I said just now all of them have to be converted.  to binary tree. Then all these binary trees will have to be linked up as right sibling  of one another. So, conversion of forest to binary tree can be formally defined as the  following. Let us say suppose you have n trees in the forest, n disjoint trees, t1 to tn.  Then what we need to do is first and foremost convert all of them to binary tree representations.   and  And this binary tree representation is B of t1, B of t2 and so on.  But our ultimate goal is to have single binary tree.  Now, how do we combine with certain conditions?  So, you have t1 to tn converted into a single binary tree consisting of all t1 to tn with  following conditions.  With if the number is 0, then it is an empty tree.   otherwise the resulting binary T will have.  the root as T1, whatever root T1 has that is the resulting binary trees root as well.  And then its left subtree will be equal to all the trees that are there in T1. Whatever T1  have its subtree all of that will form the left subtree. All the remaining subtree that you have   t2 to tn all of those will be the right separations. That is  is how the formation of the left subtree and right subtree are done with reference to T1.  So, let us understand these definitions with respect to an example. Now, you have T1 here,  T2 here and T3 here. Now, first and foremost step is to convert each one of them into a  binary tree. So, I do that. So, A is left child is B, there is no right child for A.   That's it.  B's right child is C immediate sibling, C's right child is D, okay, E has F which is a  left child, G has left child's hedge and I is a sibling so I convert this.  So these are the binary trees.  Now I have to convert this into a single binary tree which is a forest here.  So what I do is these two binary trees I will link up.   The way I am going to link up is to attach this root it has a right pointer now.  to this that is the way in which I am going to attach link binary tree T2 and binary tree  T3 by attaching it as a right sibling. So, a binary tree from the T3 will go as a right  link of binary tree T2. So, G becomes the right child of E. So, if you represent it  in the form of a binary tree this is a corresponding. We have been able to successfully merge the   to be  Now, we have this tree and the original T1.  So, this is your T1 and this is a merged T2, T3 tree.  Again, link up these two by this and A's right side will become E and that is how the  binary tree is constructed from a forest.  So, with this I will end the discussion on general trees.  Thank you."
+}

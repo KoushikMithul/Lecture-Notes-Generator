@@ -1,0 +1,3328 @@
+{
+  "video_name": "Heap_8b_2020-09-26 09-34-27_HeapCode 00_00_09-00_56_50",
+  "video_path": "data/raw/videos/Heap_8b_2020-09-26 09-34-27_HeapCode 00_00_09-00_56_50.mkv",
+  "duration_seconds": 3401.63,
+  "transcript": [
+    {
+      "text": " So, we will look at implementation of, implementation of heap and as I have discussed in the sessions,",
+      "start_time": 0.0,
+      "end_time": 17.72
+    },
+    {
+      "text": " we are going to make use of an array representation to store the elements of the heap.",
+      "start_time": 17.72,
+      "end_time": 27.12
+    },
+    {
+      "text": "",
+      "start_time": 27.12,
+      "end_time": 0.0
+    },
+    {
+      "text": " So here initially",
+      "start_time": 2.0,
+      "end_time": null
+    },
+    {
+      "text": " I will collect a set of elements let us say 25, 57, 48, 37, 12, 92, 86 and 33 are the elements",
+      "start_time": 30.0,
+      "end_time": 47.36
+    },
+    {
+      "text": " stored in an array called as A. So, now as it is if you look at this you know that this",
+      "start_time": 47.36,
+      "end_time": 55.56
+    },
+    {
+      "text": "",
+      "start_time": 55.56,
+      "end_time": 30.0
+    },
+    {
+      "text": " is 0th position ok.",
+      "start_time": 32.76,
+      "end_time": null
+    },
+    {
+      "text": " So, here what happens is 25 is stored at 0th position, 57, 48, 37, 12 and then 92, 86 and",
+      "start_time": 60.0,
+      "end_time": 80.56
+    },
+    {
+      "text": " you have 33.",
+      "start_time": 80.56,
+      "end_time": 83.48
+    },
+    {
+      "text": "",
+      "start_time": 83.48,
+      "end_time": 60.0
+    },
+    {
+      "text": " This is how I currently this is the tree is present in the form of an array, but now .",
+      "start_time": 66.26,
+      "end_time": 67.26
+    },
+    {
+      "text": " So, my objective here is to make sure that this forms a descending heap.",
+      "start_time": 90.0,
+      "end_time": 95.68
+    },
+    {
+      "text": " So, what I am implementing is a descending heap, descending heap.",
+      "start_time": 95.68,
+      "end_time": 100.84
+    },
+    {
+      "text": " So, I know that this is not in the form of a descending heap.",
+      "start_time": 100.84,
+      "end_time": 104.6
+    },
+    {
+      "text": " So, what I am going to do is I am using the top down approach here, top down approach",
+      "start_time": 104.6,
+      "end_time": 111.88
+    },
+    {
+      "text": " to demonstrate how the descending heap is going to be constructed.",
+      "start_time": 111.88,
+      "end_time": 116.24
+    },
+    {
+      "text": "",
+      "start_time": 116.24,
+      "end_time": 90.0
+    },
+    {
+      "text": " So, what I will do is initially you will have to do this.",
+      "start_time": 97.0,
+      "end_time": null
+    },
+    {
+      "text": " know that at least one element if you consider it is definitely a heap ok.",
+      "start_time": 120.0,
+      "end_time": 128.0
+    },
+    {
+      "text": " Now I am going to consider remaining elements one by one all the remaining elements one",
+      "start_time": 128.0,
+      "end_time": 133.68
+    },
+    {
+      "text": " by one and I will make them part of the heap ok. So, now right now 57 is in this position",
+      "start_time": 133.68,
+      "end_time": 141.6
+    },
+    {
+      "text": " 57 is in this position this is the child's position. So, if this is the child's position",
+      "start_time": 141.6,
+      "end_time": 147.72
+    },
+    {
+      "text": "",
+      "start_time": 147.72,
+      "end_time": 120.0
+    },
+    {
+      "text": " you know that the left child will be.",
+      "start_time": 122.28,
+      "end_time": null
+    },
+    {
+      "text": " at position 2p plus 1. So, parent will be at position c minus 1 by 2 ok. So, if child",
+      "start_time": 150.0,
+      "end_time": 159.46
+    },
+    {
+      "text": " pointer the next element to be considered to be making it as part of the heap is 57.",
+      "start_time": 159.46,
+      "end_time": 167.12
+    },
+    {
+      "text": " If 57 is retained here itself we have to consider whether these two elements form a descending",
+      "start_time": 167.12,
+      "end_time": 173.72
+    },
+    {
+      "text": " heap. So, now what happens is from the pictorial representation this is how they are right",
+      "start_time": 173.72,
+      "end_time": 179.8
+    },
+    {
+      "text": "",
+      "start_time": 179.8,
+      "end_time": 150.0
+    },
+    {
+      "text": " No.",
+      "start_time": 150.5,
+      "end_time": null
+    },
+    {
+      "text": " Now, this is the child position, if 57 E is retained in this child position, we have to",
+      "start_time": 180.0,
+      "end_time": 187.76
+    },
+    {
+      "text": " consider where its parent is, either you can use left child or right child because this",
+      "start_time": 187.76,
+      "end_time": 192.16
+    },
+    {
+      "text": " is a division term.",
+      "start_time": 192.16,
+      "end_time": 193.16
+    },
+    {
+      "text": " So, we will have to find out here 1 minus 1 by 2 which is 0.",
+      "start_time": 193.16,
+      "end_time": 198.0
+    },
+    {
+      "text": " So, parents position will be here.",
+      "start_time": 198.0,
+      "end_time": 200.56
+    },
+    {
+      "text": " So, now I check the parents element with the child element, 57 I will capture it in a temporary",
+      "start_time": 200.56,
+      "end_time": 207.2
+    },
+    {
+      "text": "",
+      "start_time": 207.2,
+      "end_time": 180.0
+    },
+    {
+      "text": " variable to 57 and 20.",
+      "start_time": 182.8,
+      "end_time": null
+    },
+    {
+      "text": " 25 when I understand this. So, I know that 25 in a descending heap 25 cannot be the parent",
+      "start_time": 210.0,
+      "end_time": 216.6
+    },
+    {
+      "text": " of 57. So, what I will do is I will make this 25 move to the parents the child's position.",
+      "start_time": 216.6,
+      "end_time": 223.12
+    },
+    {
+      "text": " So, I will move the 25 to the parents child's position. Now, I will make the child pointer",
+      "start_time": 223.12,
+      "end_time": 230.84
+    },
+    {
+      "text": " come to the parent position and parent is computed. But what happens in this case is",
+      "start_time": 230.84,
+      "end_time": 239.4
+    },
+    {
+      "text": "",
+      "start_time": 239.4,
+      "end_time": 210.0
+    },
+    {
+      "text": " Since the child...",
+      "start_time": 210.64,
+      "end_time": null
+    },
+    {
+      "text": " has come to 0th position that is a limiting index right ok. So, we stop the traversal",
+      "start_time": 240.0,
+      "end_time": 246.28
+    },
+    {
+      "text": " and I know that 57 has to be fixed here. So, this modification I am going to make when",
+      "start_time": 246.28,
+      "end_time": 252.84
+    },
+    {
+      "text": " I compare these elements ok. Here 25 is going to be written on this, 25 will flow here and",
+      "start_time": 252.84,
+      "end_time": 267.64
+    },
+    {
+      "text": "",
+      "start_time": 267.64,
+      "end_time": 240.0
+    },
+    {
+      "text": " And since child pointer came here parent goes out of the house.",
+      "start_time": 242.4,
+      "end_time": null
+    },
+    {
+      "text": " the child is at 0th portion so we stop the traversal and then I place 57 here.",
+      "start_time": 270.0,
+      "end_time": 277.16
+    },
+    {
+      "text": " So now we have two element heap here.",
+      "start_time": 277.16,
+      "end_time": 280.32
+    },
+    {
+      "text": " So now see as in when I take more elements you will start getting to know.",
+      "start_time": 280.32,
+      "end_time": 285.28
+    },
+    {
+      "text": " So here the change that we have done is this is 57 and this is 25.",
+      "start_time": 285.28,
+      "end_time": 291.8
+    },
+    {
+      "text": " These two are now forming the heap, these two are forming the heap.",
+      "start_time": 291.8,
+      "end_time": 296.08
+    },
+    {
+      "text": "",
+      "start_time": 296.08,
+      "end_time": 270.0
+    },
+    {
+      "text": " Now I pick up 48, I pick up 40.",
+      "start_time": 274.0,
+      "end_time": null
+    },
+    {
+      "text": " 48 is picked. So, if 48 is in this position, if this is the child's position, where is",
+      "start_time": 300.0,
+      "end_time": 313.04
+    },
+    {
+      "text": " its parent again? Its parent will be at this position. So, now I compare, can I continue",
+      "start_time": 313.04,
+      "end_time": 319.76
+    },
+    {
+      "text": " retaining 48 here itself and still say that this will form the heap. In this case, 48",
+      "start_time": 319.76,
+      "end_time": 326.64
+    },
+    {
+      "text": "",
+      "start_time": 326.64,
+      "end_time": 300.0
+    },
+    {
+      "text": " happens to be less than the element that we have, happens to be",
+      "start_time": 303.44,
+      "end_time": null
+    },
+    {
+      "text": " less than 57. So, it forms a descending heap automatically. So, there is no change that",
+      "start_time": 330.0,
+      "end_time": 335.44
+    },
+    {
+      "text": " needs to be done. So, 48 is retained here itself there is nothing to be moved here.",
+      "start_time": 335.44,
+      "end_time": 340.4
+    },
+    {
+      "text": " So, now we have a three element heap this much is already done now ok. We are completing",
+      "start_time": 340.4,
+      "end_time": 347.76
+    },
+    {
+      "text": " this. So, what is my procedure now? The procedure for construction of the heap goes like this.",
+      "start_time": 347.76,
+      "end_time": 354.08
+    },
+    {
+      "text": "",
+      "start_time": 354.08,
+      "end_time": 330.0
+    },
+    {
+      "text": " I pick up the next element in the set. I pick up the next element in the set 37.",
+      "start_time": 336.0,
+      "end_time": null
+    },
+    {
+      "text": " And I will mark this as a child pointer.",
+      "start_time": 360.0,
+      "end_time": 364.84
+    },
+    {
+      "text": " If this is a child, I will find out because I have now three element heap.",
+      "start_time": 364.84,
+      "end_time": 370.32
+    },
+    {
+      "text": " These are the three elements that is why it is called as a top-down approach.",
+      "start_time": 370.32,
+      "end_time": 374.52
+    },
+    {
+      "text": " So three elements are already looked into and they have been made as part of the heap,",
+      "start_time": 374.52,
+      "end_time": 380.16
+    },
+    {
+      "text": " descending heap.",
+      "start_time": 380.16,
+      "end_time": 381.16
+    },
+    {
+      "text": " Now we have to include another member 37 into part of the heap.",
+      "start_time": 381.16,
+      "end_time": 385.76
+    },
+    {
+      "text": "",
+      "start_time": 385.76,
+      "end_time": 360.0
+    },
+    {
+      "text": " To do that 37 is to be compared with the child position.",
+      "start_time": 364.24,
+      "end_time": null
+    },
+    {
+      "text": " Because if child is residing at this position, we have to consider its parent because it",
+      "start_time": 390.0,
+      "end_time": 396.0
+    },
+    {
+      "text": " is representing a heap here.",
+      "start_time": 396.0,
+      "end_time": 397.92
+    },
+    {
+      "text": " So, if child position is at 3, we know that the parent is at position 1.",
+      "start_time": 397.92,
+      "end_time": 404.24
+    },
+    {
+      "text": " So, this is the parent's position.",
+      "start_time": 404.24,
+      "end_time": 407.76
+    },
+    {
+      "text": " Now I compare, so 37 because you know that if parent is having a smaller value that is",
+      "start_time": 407.76,
+      "end_time": 413.6
+    },
+    {
+      "text": " going to flow down, this 25 will flow down and it will override 37.",
+      "start_time": 413.6,
+      "end_time": 418.64
+    },
+    {
+      "text": "",
+      "start_time": 418.64,
+      "end_time": 390.0
+    },
+    {
+      "text": " So, we capture.",
+      "start_time": 391.28,
+      "end_time": null
+    },
+    {
+      "text": " 37 in a temporary element, temporary element and then I compare 25, 25 is compared with",
+      "start_time": 420.0,
+      "end_time": 430.06
+    },
+    {
+      "text": " 37 and I know that 25 is smaller. So, this cannot reside here, 37. So, the smaller one",
+      "start_time": 430.06,
+      "end_time": 439.02
+    },
+    {
+      "text": " has to be moved to this position. So, 25 will move to this position, 25 will move to this",
+      "start_time": 439.02,
+      "end_time": 445.56
+    },
+    {
+      "text": "",
+      "start_time": 445.56,
+      "end_time": 420.0
+    },
+    {
+      "text": " this version. So, here this is the change. Now, you can see that the change is not there",
+      "start_time": 427.0,
+      "end_time": null
+    },
+    {
+      "text": " You can see that now I will see whether I can fix 37 here.",
+      "start_time": 450.0,
+      "end_time": 454.2
+    },
+    {
+      "text": " So for that its parent has to be looked at.",
+      "start_time": 454.2,
+      "end_time": 456.68
+    },
+    {
+      "text": " So new parent, so child is here, parent position is here.",
+      "start_time": 456.68,
+      "end_time": 460.48
+    },
+    {
+      "text": " So we move the child and parent positions.",
+      "start_time": 460.48,
+      "end_time": 464.16
+    },
+    {
+      "text": " So here this is the new child's position and this is the parent's position.",
+      "start_time": 464.16,
+      "end_time": 471.7
+    },
+    {
+      "text": " So now I see whether 37 can be fixed here and for that its parent is looked at 37 and",
+      "start_time": 471.7,
+      "end_time": 478.24
+    },
+    {
+      "text": "",
+      "start_time": 478.24,
+      "end_time": 450.0
+    },
+    {
+      "text": " 57 are compared",
+      "start_time": 452.0,
+      "end_time": null
+    },
+    {
+      "text": " you see that 57 is greater than 37 therefore this is the place. So, I stopped the traversal",
+      "start_time": 480.0,
+      "end_time": 486.0
+    },
+    {
+      "text": " because not because I reached to the end because I found out a place holder for 37.",
+      "start_time": 486.0,
+      "end_time": 493.04
+    },
+    {
+      "text": " So, I am going to replace this place with 37. So, the 25 got moved and I found a place for 37.",
+      "start_time": 493.04,
+      "end_time": 500.64
+    },
+    {
+      "text": " So, this position I am going to replace it with 37.",
+      "start_time": 500.64,
+      "end_time": 504.32
+    },
+    {
+      "text": "",
+      "start_time": 506.32,
+      "end_time": 480.0
+    },
+    {
+      "text": " Now, I am done with four element heap. So, you can.",
+      "start_time": 485.0,
+      "end_time": 485.68
+    },
+    {
+      "text": " can include another element into the heap now. So, is this part is done now, this part",
+      "start_time": 510.0,
+      "end_time": 518.24
+    },
+    {
+      "text": " is done ok. Now, I have to consider the next element it is a same procedure ok. Now, now",
+      "start_time": 518.24,
+      "end_time": 526.76
+    },
+    {
+      "text": " I consider this as the child and its parent, its parent is now here ok. So, 37 and 12,",
+      "start_time": 526.76,
+      "end_time": 537.9
+    },
+    {
+      "text": "",
+      "start_time": 537.9,
+      "end_time": 510.0
+    },
+    {
+      "text": " this is all fine. So, 37.",
+      "start_time": 512.0,
+      "end_time": null
+    },
+    {
+      "text": " can be the parent of 12. So, there is no movement that is required here, it is all perfectly",
+      "start_time": 540.0,
+      "end_time": 545.24
+    },
+    {
+      "text": " fine. So, this part is done now. So, this part of the heap is also complete. So, this",
+      "start_time": 545.24,
+      "end_time": 551.28
+    },
+    {
+      "text": " part is also complete now. So, we have now in the heap 5 elements already considered",
+      "start_time": 551.28,
+      "end_time": 557.12
+    },
+    {
+      "text": " ok. So, 40, 48 is done, then we are also done with 12. So, we have 5 elements heap,",
+      "start_time": 557.12,
+      "end_time": 568.12
+    },
+    {
+      "text": "",
+      "start_time": 568.12,
+      "end_time": 540.0
+    },
+    {
+      "text": " the element to be considered is.",
+      "start_time": 541.88,
+      "end_time": null
+    },
+    {
+      "text": " 92. So, 92's parent I am going to consider this is the parent of 92, parent of 92. So,",
+      "start_time": 570.0,
+      "end_time": 581.64
+    },
+    {
+      "text": " the element that I am going to capture, element that I am going to capture is 92. So, 92's",
+      "start_time": 581.64,
+      "end_time": 588.8
+    },
+    {
+      "text": " parent I consider 48. So, 48 has to slide down. So, 48 will come and occupy this position",
+      "start_time": 588.8,
+      "end_time": 597.04
+    },
+    {
+      "text": "",
+      "start_time": 597.04,
+      "end_time": 570.0
+    },
+    {
+      "text": " Next, I will move the child power.",
+      "start_time": 573.0,
+      "end_time": null
+    },
+    {
+      "text": " pointer here and its parent is computed and 50 it is always comparison with the element",
+      "start_time": 600.0,
+      "end_time": 605.8
+    },
+    {
+      "text": " that we are looking at 57 and 92 ok. 57, 92, 57 cannot be the parent of 92. So, again",
+      "start_time": 605.8,
+      "end_time": 614.84
+    },
+    {
+      "text": " we move 57 to this position ok. So, 57 is moved to this position and then child will",
+      "start_time": 614.84,
+      "end_time": 623.8
+    },
+    {
+      "text": " move to this position parent will go out of scope. Since child has reached the limiting",
+      "start_time": 623.8,
+      "end_time": 627.88
+    },
+    {
+      "text": "",
+      "start_time": 627.88,
+      "end_time": 600.0
+    },
+    {
+      "text": " position this is the correct position.",
+      "start_time": 602.12,
+      "end_time": null
+    },
+    {
+      "text": " for 92 and I place it here. So, here 57 is placed and here I place 92 ok.",
+      "start_time": 630.0,
+      "end_time": 639.04
+    },
+    {
+      "text": " Next value that I pick up is 86 ok, the element to be picked up is 86. 86 is the child's",
+      "start_time": 639.04,
+      "end_time": 648.68
+    },
+    {
+      "text": "",
+      "start_time": 648.68,
+      "end_time": 630.0
+    },
+    {
+      "text": " position. So, then 48 here is the parent. So, here this is 0.",
+      "start_time": 641.32,
+      "end_time": null
+    },
+    {
+      "text": " 1, 2, 57 is the parent sorry 5, 6, 57 is the parent for, so this is the parent's position,",
+      "start_time": 660.0,
+      "end_time": 671.2
+    },
+    {
+      "text": " 57 cannot be the parent, so 57 they will move to 86 such place, in this case 57 will move,",
+      "start_time": 671.2,
+      "end_time": 679.52
+    },
+    {
+      "text": " now can 92 be the parent of 86, yes, so 86 is going to be placed here, so this is going",
+      "start_time": 679.52,
+      "end_time": 687.32
+    },
+    {
+      "text": "",
+      "start_time": 687.32,
+      "end_time": 660.0
+    },
+    {
+      "text": " to be replaced with 86.",
+      "start_time": 662.0,
+      "end_time": null
+    },
+    {
+      "text": " So, this is going to be 86 now.",
+      "start_time": 690.0,
+      "end_time": 696.24
+    },
+    {
+      "text": " So, then we have the last element which is the 33, 33's parent is right now 25, ok.",
+      "start_time": 696.24,
+      "end_time": 704.76
+    },
+    {
+      "text": " This is child, this is a child parent is 30, 25, ok.",
+      "start_time": 704.76,
+      "end_time": 709.92
+    },
+    {
+      "text": " Child is at position 7, 7 minus 1 by 2 which is 6 by 2, 3, ok.",
+      "start_time": 709.92,
+      "end_time": 715.96
+    },
+    {
+      "text": " So, this is a parent's position.",
+      "start_time": 715.96,
+      "end_time": 717.8
+    },
+    {
+      "text": "",
+      "start_time": 717.8,
+      "end_time": 690.0
+    },
+    {
+      "text": " 25 cannot be the parent of the child.",
+      "start_time": 692.16,
+      "end_time": null
+    },
+    {
+      "text": " So, that it will replace this position child will come here and parent will go to the position",
+      "start_time": 720.0,
+      "end_time": 726.68
+    },
+    {
+      "text": " 37, 37 can be the parent of 33.",
+      "start_time": 726.68,
+      "end_time": 729.84
+    },
+    {
+      "text": " So, 33 will be replacing this ok.",
+      "start_time": 729.84,
+      "end_time": 733.16
+    },
+    {
+      "text": " So, this is how the heap is going this 25 is here and this will become 33.",
+      "start_time": 733.16,
+      "end_time": 738.68
+    },
+    {
+      "text": " So, overall what is the tree now?",
+      "start_time": 738.68,
+      "end_time": 741.76
+    },
+    {
+      "text": "",
+      "start_time": 741.76,
+      "end_time": 720.0
+    },
+    {
+      "text": " to 37 86 then you have 25 12 and then 50",
+      "start_time": 730.0,
+      "end_time": null
+    },
+    {
+      "text": " 48, 58, 57, 57 and then you have 37, 86, then you have 33, this is 33 and then 12, 48, 57",
+      "start_time": 750.0,
+      "end_time": 771.92
+    },
+    {
+      "text": " and then 25.",
+      "start_time": 771.92,
+      "end_time": 772.92
+    },
+    {
+      "text": "",
+      "start_time": 772.92,
+      "end_time": 750.0
+    },
+    {
+      "text": " So, this is the heap that we have constructed, this is the heap principle that we have to",
+      "start_time": 757.08,
+      "end_time": null
+    },
+    {
+      "text": " to adopt. So, 92 that is 786 this is descending 373312 descending 864857 descending 3325 it",
+      "start_time": 780.0,
+      "end_time": 790.12
+    },
+    {
+      "text": " is descending. So, now if you look at the implementation what we have to do is we know",
+      "start_time": 790.12,
+      "end_time": 797.68
+    },
+    {
+      "text": " that it is one element heap in the beginning. So, I am going to pick up the remaining elements",
+      "start_time": 797.68,
+      "end_time": 803.6
+    },
+    {
+      "text": "",
+      "start_time": 803.6,
+      "end_time": 780.0
+    },
+    {
+      "text": " elements remaining elements up to n minus 1 ok. So, one element is equal to 1. So,",
+      "start_time": 787.0,
+      "end_time": null
+    },
+    {
+      "text": " a time, one element at a time. So, every time when i is 1, I pick up the next element, when",
+      "start_time": 810.0,
+      "end_time": 815.56
+    },
+    {
+      "text": " i equal to 2 next element to be formed into the heap, I mean joining into the heap. So,",
+      "start_time": 815.56,
+      "end_time": 821.2
+    },
+    {
+      "text": " element is equal to a of i because I have to store that, it is a so whichever I have",
+      "start_time": 821.2,
+      "end_time": 826.4
+    },
+    {
+      "text": " to store it and that is the child's position. So, child's position is captured as i, currently",
+      "start_time": 826.4,
+      "end_time": 832.32
+    },
+    {
+      "text": "",
+      "start_time": 832.32,
+      "end_time": 810.0
+    },
+    {
+      "text": " it is at ith position, its parent is computed, parent is c minus 1 by 2. So, when we compute the parent, we compute the parent, we compute the parent, we compute the parent, we compute",
+      "start_time": 817.8,
+      "end_time": 824.8
+    },
+    {
+      "text": " the parent, we compute the parent, we compute the parent, we compute the parent, we compute",
+      "start_time": 824.8,
+      "end_time": 832.8
+    },
+    {
+      "text": " compute is now I have to find out this is a child question this is a parent question.",
+      "start_time": 840.0,
+      "end_time": 845.64
+    },
+    {
+      "text": " While child question is greater than 0 if it becomes equal I have to stop the traversal",
+      "start_time": 845.64,
+      "end_time": 851.74
+    },
+    {
+      "text": " then I have to also move whenever I found the parent element a of the parent is less",
+      "start_time": 851.74,
+      "end_time": 860.6
+    },
+    {
+      "text": " than the element then the parent will have to flow down.",
+      "start_time": 860.6,
+      "end_time": 864.56
+    },
+    {
+      "text": " You can see the child parent pointers will move left and parent element will move to",
+      "start_time": 864.56,
+      "end_time": 869.4
+    },
+    {
+      "text": "",
+      "start_time": 869.4,
+      "end_time": 840.0
+    },
+    {
+      "text": " the change.",
+      "start_time": 840.5,
+      "end_time": null
+    },
+    {
+      "text": " So, A of child, child's position parent element will be moved, parent element will be moved",
+      "start_time": 870.0,
+      "end_time": 877.46
+    },
+    {
+      "text": " and then child will get the parent's position and the parent for this child is computed",
+      "start_time": 877.46,
+      "end_time": 883.66
+    },
+    {
+      "text": " ok.",
+      "start_time": 883.66,
+      "end_time": 884.66
+    },
+    {
+      "text": " This way we keep continuing.",
+      "start_time": 884.66,
+      "end_time": 886.16
+    },
+    {
+      "text": " So, once you are out of this, we have to place the element at the child's position, the new",
+      "start_time": 886.16,
+      "end_time": 891.82
+    },
+    {
+      "text": " the element the this element has to be placed at the child's position.",
+      "start_time": 891.82,
+      "end_time": 896.02
+    },
+    {
+      "text": "",
+      "start_time": 896.02,
+      "end_time": 870.0
+    },
+    {
+      "text": " So, that is how the heave principle is adopted.",
+      "start_time": 873.96,
+      "end_time": null
+    },
+    {
+      "text": " So, let us look at the code for this now.",
+      "start_time": 900.0,
+      "end_time": 905.16
+    },
+    {
+      "text": " I will create the heap, the heap is represented using an array here.",
+      "start_time": 905.16,
+      "end_time": 924.32
+    },
+    {
+      "text": "",
+      "start_time": 924.32,
+      "end_time": 900.0
+    },
+    {
+      "text": " So, I will define the max.",
+      "start_time": 905.44,
+      "end_time": null
+    },
+    {
+      "text": " as 50, then I use, I need variable i and I need variable c and then also b, okay, I",
+      "start_time": 930.0,
+      "end_time": 957.96
+    },
+    {
+      "text": "",
+      "start_time": 957.96,
+      "end_time": 930.0
+    },
+    {
+      "text": " I am going to take the element",
+      "start_time": 932.0,
+      "end_time": null
+    },
+    {
+      "text": " first, percent d, how many elements so that we have to take in, enter the number of elements,",
+      "start_time": 960.0,
+      "end_time": 974.16
+    },
+    {
+      "text": "",
+      "start_time": 974.16,
+      "end_time": 960.0
+    },
+    {
+      "text": " I will take it into n, sending ampersand n, I accept that and now I am going to the",
+      "start_time": 975.88,
+      "end_time": null
+    },
+    {
+      "text": " read the elements, let me write a message, enter the elements, enter the elements, I",
+      "start_time": 990.0,
+      "end_time": 1002.96
+    },
+    {
+      "text": " have to read these elements now, 0 i less than n i plus plus, i plus plus, scan if read",
+      "start_time": 1002.96,
+      "end_time": 1015.76
+    },
+    {
+      "text": "",
+      "start_time": 1015.76,
+      "end_time": 990.0
+    },
+    {
+      "text": " the elements a of i.",
+      "start_time": 993.96,
+      "end_time": null
+    },
+    {
+      "text": " So, elements are read. Now, what we have to do is to this procedure which I demonstrated",
+      "start_time": 1020.0,
+      "end_time": 1028.32
+    },
+    {
+      "text": " is called as HEPI ok HEPI the elements which is nothing but construction of the heap. So,",
+      "start_time": 1028.32,
+      "end_time": 1038.68
+    },
+    {
+      "text": " for that I have to pick up assume that one element heap is already formed. So, remaining",
+      "start_time": 1038.68,
+      "end_time": 1043.6
+    },
+    {
+      "text": "",
+      "start_time": 1043.6,
+      "end_time": 1020.0
+    },
+    {
+      "text": " elements have to be created as heave. So, is equal to 1 i less than n i.",
+      "start_time": 1026.26,
+      "end_time": null
+    },
+    {
+      "text": " First and foremost thing is element is to be captured in A of i that I capture, element",
+      "start_time": 1050.0,
+      "end_time": 1060.16
+    },
+    {
+      "text": " is captured because that ith position may get the parent's element.",
+      "start_time": 1060.16,
+      "end_time": 1066.96
+    },
+    {
+      "text": " So we have to do that.",
+      "start_time": 1066.96,
+      "end_time": 1067.96
+    },
+    {
+      "text": " So set that ith position as the child's position.",
+      "start_time": 1067.96,
+      "end_time": 1071.32
+    },
+    {
+      "text": " If that element is at child's position, where is its parent?",
+      "start_time": 1071.32,
+      "end_time": 1074.76
+    },
+    {
+      "text": "",
+      "start_time": 1074.76,
+      "end_time": 1050.0
+    },
+    {
+      "text": " parent will be at position c minus 1 by 2 this integer division.",
+      "start_time": 1055.26,
+      "end_time": null
+    },
+    {
+      "text": " position and then you find the parent's position while child's position. So, now we have to",
+      "start_time": 1080.0,
+      "end_time": 1085.96
+    },
+    {
+      "text": " fix the we have to compare the parent element and child element provided child has not reached",
+      "start_time": 1085.96,
+      "end_time": 1092.6
+    },
+    {
+      "text": " the limit child pointer. So, while C is greater than 0. So, you have a valid index for child",
+      "start_time": 1092.6,
+      "end_time": 1099.56
+    },
+    {
+      "text": " and then your parent element parent element is less than the element that we are trying",
+      "start_time": 1099.56,
+      "end_time": 1106.4
+    },
+    {
+      "text": "",
+      "start_time": 1106.4,
+      "end_time": 1080.0
+    },
+    {
+      "text": " into the heap ok. If that is there then .",
+      "start_time": 1083.6,
+      "end_time": null
+    },
+    {
+      "text": " then the parent element has to move to the child's position. So, to the child's position",
+      "start_time": 1110.0,
+      "end_time": 1115.12
+    },
+    {
+      "text": " what comes is A of P. So, A of P will flow into the child's position and now the child",
+      "start_time": 1115.12,
+      "end_time": 1121.96
+    },
+    {
+      "text": " pointer will come to the parent's position and the new parent for this position is to",
+      "start_time": 1121.96,
+      "end_time": 1127.72
+    },
+    {
+      "text": " be computed. So, that is what we are going to do by using the same formula again.",
+      "start_time": 1127.72,
+      "end_time": 1132.36
+    },
+    {
+      "text": " So, this way we keep moving the elements as long as the parent is greater than the parent",
+      "start_time": 1132.36,
+      "end_time": 1138.88
+    },
+    {
+      "text": "",
+      "start_time": 1138.88,
+      "end_time": 1110.0
+    },
+    {
+      "text": " smaller than the edge.",
+      "start_time": 1111.16,
+      "end_time": null
+    },
+    {
+      "text": " So, we may come out of the loop either because we stopped at c equal to 0 or we have stopped",
+      "start_time": 1140.0,
+      "end_time": 1146.14
+    },
+    {
+      "text": " at a position where the parent value is greater than the child element.",
+      "start_time": 1146.14,
+      "end_time": 1150.4
+    },
+    {
+      "text": " So, child's position is the correct position for the new element to be fixed in to be making",
+      "start_time": 1150.4,
+      "end_time": 1157.06
+    },
+    {
+      "text": " it as a part of the heap.",
+      "start_time": 1157.06,
+      "end_time": 1158.9
+    },
+    {
+      "text": " And then once we are done with this, we have finished creating the heap here.",
+      "start_time": 1158.9,
+      "end_time": 1164.62
+    },
+    {
+      "text": "",
+      "start_time": 1164.62,
+      "end_time": 1140.0
+    },
+    {
+      "text": " So, we have to move to the next element to be picked up and then continue.",
+      "start_time": 1145.1,
+      "end_time": null
+    },
+    {
+      "text": " So, now we will display the hippified elements.",
+      "start_time": 1170.0,
+      "end_time": 1177.0
+    },
+    {
+      "text": "",
+      "start_time": 1177.0,
+      "end_time": 1170.0
+    },
+    {
+      "text": " Let us say the hippified elements for i is equal to 0 i less than n i plus plus i plus",
+      "start_time": 1187.82,
+      "end_time": 1170.0
+    },
+    {
+      "text": " plus, F.",
+      "start_time": 1172.44,
+      "end_time": null
+    },
+    {
+      "text": " d space A of i, we will close the function, just now heapified, I will just say a new",
+      "start_time": 1200.0,
+      "end_time": 1218.6
+    },
+    {
+      "text": "",
+      "start_time": 1218.6,
+      "end_time": 1200.0
+    },
+    {
+      "text": " line elements of heap ok.",
+      "start_time": 1210.96,
+      "end_time": null
+    },
+    {
+      "text": " elements of the heap and I am going to display the elements. So, let us save this v heap",
+      "start_time": 1230.0,
+      "end_time": 1241.32
+    },
+    {
+      "text": "",
+      "start_time": 1241.32,
+      "end_time": 1230.0
+    },
+    {
+      "text": " See, we compile the code now, compile save, behave.c.",
+      "start_time": 1241.8,
+      "end_time": null
+    },
+    {
+      "text": " GCC v heap dot c if n is undeclared and element is not declared. So, we will do that n is",
+      "start_time": 1260.0,
+      "end_time": 1280.28
+    },
+    {
+      "text": "",
+      "start_time": 1280.28,
+      "end_time": 1260.0
+    },
+    {
+      "text": " not declared and element is not declared. So, we will now run.",
+      "start_time": 1267.44,
+      "end_time": null
+    },
+    {
+      "text": " No error, a dot xe enter the number of elements 8, same example I will pick up 25, 57, 48,",
+      "start_time": 1290.0,
+      "end_time": 1309.32
+    },
+    {
+      "text": "",
+      "start_time": 1309.32,
+      "end_time": 1290.0
+    },
+    {
+      "text": " 12, 92,",
+      "start_time": 1297.0,
+      "end_time": null
+    },
+    {
+      "text": " So, elements of the HEPA 92, 37, 86, you can see that 92, 37, 86, 33, 12, 48, 57, 33,",
+      "start_time": 1320.0,
+      "end_time": 1345.68
+    },
+    {
+      "text": " 12, 48, 57, 25.",
+      "start_time": 1345.68,
+      "end_time": 1347.8
+    },
+    {
+      "text": "",
+      "start_time": 1347.8,
+      "end_time": 1320.0
+    },
+    {
+      "text": " So, elements of the heap are.",
+      "start_time": 1322.2,
+      "end_time": null
+    },
+    {
+      "text": " in this. So, this is how the heap construction is going to be carried out.",
+      "start_time": 1350.0,
+      "end_time": 1354.88
+    },
+    {
+      "text": " So, now what I am going to do is use this heap for sorting the set of elements. So,",
+      "start_time": 1354.88,
+      "end_time": 1363.76
+    },
+    {
+      "text": " let us continue this is implementation of the heap. So, now what happens is let the",
+      "start_time": 1363.76,
+      "end_time": 1371.8
+    },
+    {
+      "text": "",
+      "start_time": 1371.8,
+      "end_time": 1350.0
+    },
+    {
+      "text": " the heap tree be here like this. So now my array if you look at it.",
+      "start_time": 1358.2,
+      "end_time": null
+    },
+    {
+      "text": " In the array it is like this. In the array you have 92, 37, 86 and then 33, then 12,",
+      "start_time": 1380.0,
+      "end_time": 1395.24
+    },
+    {
+      "text": "",
+      "start_time": 1395.24,
+      "end_time": 1380.0
+    },
+    {
+      "text": " 48 57 and then 25 0 1 2 3 4 5 6 7 so it is a 8 element heat so now now what happens",
+      "start_time": 1394.64,
+      "end_time": null
+    },
+    {
+      "text": " here is that this is the heap that is available. Now, how can I make use of this heap to sort",
+      "start_time": 1410.0,
+      "end_time": 1419.24
+    },
+    {
+      "text": " the elements? So, I am making use of the heap principle to sort the set of elements which",
+      "start_time": 1419.24,
+      "end_time": 1425.2
+    },
+    {
+      "text": " is a heap sort. So, heap sort can be executed in n log n type. So, it is quite good in that",
+      "start_time": 1425.2,
+      "end_time": 1432.76
+    },
+    {
+      "text": " sense because instead of a n square algorithm which is slower we would prefer a n log n",
+      "start_time": 1432.76,
+      "end_time": 1439.08
+    },
+    {
+      "text": "",
+      "start_time": 1439.08,
+      "end_time": 1410.0
+    },
+    {
+      "text": " and we will see you next time.",
+      "start_time": 1412.0,
+      "end_time": null
+    },
+    {
+      "text": " So, the heap sort is good as far as the sorting is concerned because of the time that it takes",
+      "start_time": 1440.0,
+      "end_time": 1446.88
+    },
+    {
+      "text": " n log n. Again many sorting techniques are there. So, we will have to compare them on",
+      "start_time": 1446.88,
+      "end_time": 1451.76
+    },
+    {
+      "text": " various parameters, but with respect to the time complexity here n log n n square, if",
+      "start_time": 1451.76,
+      "end_time": 1458.24
+    },
+    {
+      "text": " you consider these two, for example, bubble sort if you consider it takes n square whereas,",
+      "start_time": 1458.24,
+      "end_time": 1463.24
+    },
+    {
+      "text": " heap sort takes just n log n to sort the set of elements. So, as an application of the",
+      "start_time": 1463.24,
+      "end_time": 1468.8
+    },
+    {
+      "text": "",
+      "start_time": 1468.8,
+      "end_time": 1440.0
+    },
+    {
+      "text": " heap data structure.",
+      "start_time": 1441.2,
+      "end_time": null
+    },
+    {
+      "text": " Let us look at how to sort the set of elements.",
+      "start_time": 1470.0,
+      "end_time": 1474.28
+    },
+    {
+      "text": " Since I have already told you how to construct the heap, you are going to read an unsorted",
+      "start_time": 1474.28,
+      "end_time": 1479.16
+    },
+    {
+      "text": " set of elements and then construct a heap first of all and then use this heap for sorting",
+      "start_time": 1479.16,
+      "end_time": 1485.68
+    },
+    {
+      "text": " the set of elements.",
+      "start_time": 1485.68,
+      "end_time": 1486.68
+    },
+    {
+      "text": " So, let us see how to do that.",
+      "start_time": 1486.68,
+      "end_time": 1488.48
+    },
+    {
+      "text": " So, this one part is already done.",
+      "start_time": 1488.48,
+      "end_time": 1490.4
+    },
+    {
+      "text": " So, earlier I had taken unsorted set as 25, 57, 48, 37, 12, 92, 86 and 33.",
+      "start_time": 1490.4,
+      "end_time": 1499.2
+    },
+    {
+      "text": "",
+      "start_time": 1499.2,
+      "end_time": 1470.0
+    },
+    {
+      "text": " I constructed",
+      "start_time": 1472.0,
+      "end_time": null
+    },
+    {
+      "text": " the heap structure by looking into the various element positions and then reordering them",
+      "start_time": 1500.0,
+      "end_time": 1507.32
+    },
+    {
+      "text": " so that the hippify procedure is carried out and the heap is constructed.",
+      "start_time": 1507.32,
+      "end_time": 1516.04
+    },
+    {
+      "text": " Now what I need to do is to make sure that I use this heap to sort the set of elements",
+      "start_time": 1516.04,
+      "end_time": 1522.2
+    },
+    {
+      "text": " as an application.",
+      "start_time": 1522.2,
+      "end_time": 1523.32
+    },
+    {
+      "text": " So I am looking at heap sort as an application of the heap.",
+      "start_time": 1523.32,
+      "end_time": 1527.6
+    },
+    {
+      "text": "",
+      "start_time": 1527.6,
+      "end_time": 1500.0
+    },
+    {
+      "text": " So let us continue our discussion now.",
+      "start_time": 1502.04,
+      "end_time": null
+    },
+    {
+      "text": " So, I know that this is a descending heap, since this is a descending heap, the largest",
+      "start_time": 1530.0,
+      "end_time": 1537.36
+    },
+    {
+      "text": " element and I am going to do the ascending order sorting, the elements will be in the",
+      "start_time": 1537.36,
+      "end_time": 1545.04
+    },
+    {
+      "text": " ascending order, but you have a descending heap.",
+      "start_time": 1545.04,
+      "end_time": 1550.44
+    },
+    {
+      "text": " You know that the largest element is here and since the largest element is making way",
+      "start_time": 1550.44,
+      "end_time": 1557.08
+    },
+    {
+      "text": "",
+      "start_time": 1557.08,
+      "end_time": 1530.0
+    },
+    {
+      "text": " is part of the hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip",
+      "start_time": 1530.0,
+      "end_time": null
+    },
+    {
+      "text": " here at the largest element in the ascending order sorted list obviously will go to the",
+      "start_time": 1560.0,
+      "end_time": 1566.36
+    },
+    {
+      "text": " last position right.",
+      "start_time": 1566.36,
+      "end_time": 1567.96
+    },
+    {
+      "text": " So what I am going to do is place this 92 to the end.",
+      "start_time": 1567.96,
+      "end_time": 1572.36
+    },
+    {
+      "text": " So when I place 92 to this end you know that this 25 is getting displaced.",
+      "start_time": 1572.36,
+      "end_time": 1577.48
+    },
+    {
+      "text": " So 92 will come and sit here ok.",
+      "start_time": 1577.48,
+      "end_time": 1580.72
+    },
+    {
+      "text": " So because 92 comes and sits here so I need to now make sure that this position 25 element",
+      "start_time": 1580.72,
+      "end_time": 1589.16
+    },
+    {
+      "text": "",
+      "start_time": 1589.16,
+      "end_time": 1560.0
+    },
+    {
+      "text": " which is.",
+      "start_time": 1560.84,
+      "end_time": null
+    },
+    {
+      "text": " removed from this tree has to be adjusted properly. So, we cannot just like that displaced",
+      "start_time": 1590.0,
+      "end_time": 1596.4
+    },
+    {
+      "text": " 25 right. So, 25 I will capture in element and then I will move this 92 ok. So, now what",
+      "start_time": 1596.4,
+      "end_time": 1604.0
+    },
+    {
+      "text": " happens is this position is no more a valid heap now because 92 is removed from the heap",
+      "start_time": 1604.0,
+      "end_time": 1610.12
+    },
+    {
+      "text": " ok, 92 is removed from the heap. Now your valid heap position is only from 0 to 6. So,",
+      "start_time": 1610.12,
+      "end_time": 1616.64
+    },
+    {
+      "text": "",
+      "start_time": 1616.64,
+      "end_time": 1590.0
+    },
+    {
+      "text": " is you are trying to.",
+      "start_time": 1592.0,
+      "end_time": null
+    },
+    {
+      "text": " remove the first element, so your last position in the heap because it has to go to the current",
+      "start_time": 1620.0,
+      "end_time": 1627.84
+    },
+    {
+      "text": " last position, is not it? So, if you so for i is equal to n minus 1 to 1 because last",
+      "start_time": 1627.84,
+      "end_time": 1637.12
+    },
+    {
+      "text": " anyway will be adjusted. So, your element is captured in your element 25 is captured",
+      "start_time": 1637.12,
+      "end_time": 1644.16
+    },
+    {
+      "text": "",
+      "start_time": 1644.16,
+      "end_time": 1620.0
+    },
+    {
+      "text": " into this and 92 will come and sit into the n minus 1th position. So, a of 0",
+      "start_time": 1625.64,
+      "end_time": null
+    },
+    {
+      "text": " will get the ith position, A of 0 will come to the ith position. See ith position to begin",
+      "start_time": 1650.0,
+      "end_time": 1656.6
+    },
+    {
+      "text": " with is n minus 1 and in the next iteration this is the last, in the next iteration this",
+      "start_time": 1656.6,
+      "end_time": 1661.6
+    },
+    {
+      "text": " is the last and so on. 92 has gone to this, so it is out of the heap now.",
+      "start_time": 1661.6,
+      "end_time": 1667.44
+    },
+    {
+      "text": " Now in the remaining heap, whatever we had in the remaining heap, we have to make sure",
+      "start_time": 1667.44,
+      "end_time": 1673.28
+    },
+    {
+      "text": "",
+      "start_time": 1673.28,
+      "end_time": 1650.0
+    },
+    {
+      "text": " that 25 is placed. So, in this case can we directly swap it that way it is not possible.",
+      "start_time": 1656.72,
+      "end_time": null
+    },
+    {
+      "text": " you cannot put 25 here is not it. So, what we have to do is to find a proper place for",
+      "start_time": 1680.0,
+      "end_time": 1685.6
+    },
+    {
+      "text": " 25 in this heap. Now, the heap is only in the positions 0 to 6. So, how do I place this",
+      "start_time": 1685.6,
+      "end_time": 1692.56
+    },
+    {
+      "text": " 25, where do I place this 25? So, what I will start doing is I will fix the parent position",
+      "start_time": 1692.56,
+      "end_time": 1699.64
+    },
+    {
+      "text": " here and then find the greater of the two children. So, here if this is the parents",
+      "start_time": 1699.64,
+      "end_time": 1705.36
+    },
+    {
+      "text": "",
+      "start_time": 1705.36,
+      "end_time": 1680.0
+    },
+    {
+      "text": " position. Now is this 25 going to go to parents position here directly?",
+      "start_time": 1684.56,
+      "end_time": null
+    },
+    {
+      "text": " 25 going to go or greater of the two children.",
+      "start_time": 1710.0,
+      "end_time": 1714.48
+    },
+    {
+      "text": " So I will set the child pointer to the left child, you know how to compute parent is set",
+      "start_time": 1714.48,
+      "end_time": 1720.08
+    },
+    {
+      "text": " to 0 initialization, child is set to 1 and then I am going to check if C of 2 if it is",
+      "start_time": 1720.08,
+      "end_time": 1728.28
+    },
+    {
+      "text": " a valid position.",
+      "start_time": 1728.28,
+      "end_time": 1729.76
+    },
+    {
+      "text": " See you know as in when we complete sorting this position may not be valid at all.",
+      "start_time": 1729.76,
+      "end_time": 1735.76
+    },
+    {
+      "text": "",
+      "start_time": 1735.76,
+      "end_time": 1710.0
+    },
+    {
+      "text": " So if the position is valid and if your position is not valid, then you can change the position",
+      "start_time": 1717.0,
+      "end_time": null
+    },
+    {
+      "text": " 2 is greater than C of 1, if the position is valid, if I is greater than 2, then this",
+      "start_time": 1740.0,
+      "end_time": 1749.72
+    },
+    {
+      "text": " position is valid, if I is 2 this would have been gone.",
+      "start_time": 1749.72,
+      "end_time": 1753.16
+    },
+    {
+      "text": " See, if I is 7 then this is not part of the heap.",
+      "start_time": 1753.16,
+      "end_time": 1756.16
+    },
+    {
+      "text": " So, if I is greater than 2 and C of 2 is greater than C of 1, then I am going to make sure that",
+      "start_time": 1756.16,
+      "end_time": 1763.28
+    },
+    {
+      "text": " my child pointer will be at position 2.",
+      "start_time": 1763.28,
+      "end_time": 1766.18
+    },
+    {
+      "text": "",
+      "start_time": 1766.18,
+      "end_time": 1740.0
+    },
+    {
+      "text": " What I am trying to say here is that 92 has been.",
+      "start_time": 1743.84,
+      "end_time": null
+    },
+    {
+      "text": " placed here 92. Now 25 I am searching so that my heap is going to be intact and for",
+      "start_time": 1770.0,
+      "end_time": 1777.92
+    },
+    {
+      "text": " this I am going to look at greater of the two children.",
+      "start_time": 1777.92,
+      "end_time": 1781.28
+    },
+    {
+      "text": " First I set C to be 1 and then I see that the 86 is greater than 37 and it is a valid",
+      "start_time": 1781.28,
+      "end_time": 1788.28
+    },
+    {
+      "text": " position therefore I am going to set my child pointer to 2. This is the initialization that",
+      "start_time": 1788.28,
+      "end_time": 1793.48
+    },
+    {
+      "text": " I am going to carry out when I perform this operation, the initialization is done. So,",
+      "start_time": 1793.48,
+      "end_time": 1799.44
+    },
+    {
+      "text": "",
+      "start_time": 1799.44,
+      "end_time": 1770.0
+    },
+    {
+      "text": " after that you",
+      "start_time": 1772.0,
+      "end_time": null
+    },
+    {
+      "text": " initialization is done, now what I am going to do, I am going to find out whether 86 should",
+      "start_time": 1800.0,
+      "end_time": 1806.76
+    },
+    {
+      "text": " come and occupy 92's position or is it that 25 should come and occupy this.",
+      "start_time": 1806.76,
+      "end_time": 1812.48
+    },
+    {
+      "text": " So obviously 86 will come and sit here, so I am going to put 86 into this location, so",
+      "start_time": 1812.48,
+      "end_time": 1819.44
+    },
+    {
+      "text": " this will move up, so here also the child pointer is here, so 86 will move up.",
+      "start_time": 1819.44,
+      "end_time": 1825.12
+    },
+    {
+      "text": "",
+      "start_time": 1825.12,
+      "end_time": 1800.0
+    },
+    {
+      "text": " So now what happens the parent position will come to this and we find",
+      "start_time": 1804.88,
+      "end_time": null
+    },
+    {
+      "text": " the greater of the two children as so its left child is this and 48 is less than 57.",
+      "start_time": 1830.0,
+      "end_time": 1838.12
+    },
+    {
+      "text": " So my child is set to this position.",
+      "start_time": 1838.12,
+      "end_time": 1840.32
+    },
+    {
+      "text": " So child finally is set to this position.",
+      "start_time": 1840.32,
+      "end_time": 1842.64
+    },
+    {
+      "text": " Now is 57 that should come and occupy this position or is it 25 that should come and",
+      "start_time": 1842.64,
+      "end_time": 1848.12
+    },
+    {
+      "text": " occupy this position.",
+      "start_time": 1848.12,
+      "end_time": 1849.64
+    },
+    {
+      "text": " So it is definitely 57.",
+      "start_time": 1849.64,
+      "end_time": 1852.08
+    },
+    {
+      "text": " So I am going to make that 57 come and occupy this position.",
+      "start_time": 1852.08,
+      "end_time": 1858.48
+    },
+    {
+      "text": "",
+      "start_time": 1858.48,
+      "end_time": 1830.0
+    },
+    {
+      "text": " So it is 57.",
+      "start_time": 1831.56,
+      "end_time": null
+    },
+    {
+      "text": " Now, I come to the parent position, this is the position and then child is computed.",
+      "start_time": 1860.0,
+      "end_time": 1867.76
+    },
+    {
+      "text": " When I compute the child, child is out of scope, okay.",
+      "start_time": 1867.76,
+      "end_time": 1871.12
+    },
+    {
+      "text": " So I stop the traversal.",
+      "start_time": 1871.12,
+      "end_time": 1872.96
+    },
+    {
+      "text": " This can be done only if the child is well within the limits, but if the child has crossed",
+      "start_time": 1872.96,
+      "end_time": 1880.0
+    },
+    {
+      "text": " in the computation because parent is 6.",
+      "start_time": 1880.0,
+      "end_time": 1882.72
+    },
+    {
+      "text": " So child has crossed 2 into 6 plus 1, 12 plus 1, 13.",
+      "start_time": 1882.72,
+      "end_time": 1886.84
+    },
+    {
+      "text": "",
+      "start_time": 1886.84,
+      "end_time": 1860.0
+    },
+    {
+      "text": " it has crossed the limit of the ith position it.",
+      "start_time": 1863.16,
+      "end_time": null
+    },
+    {
+      "text": " I-1 position. Child, the valid position for I is up to I-1 because I-th position is this",
+      "start_time": 1890.0,
+      "end_time": 1896.32
+    },
+    {
+      "text": " element. So, if the child has in the setting, if the child has become greater than I-1,",
+      "start_time": 1896.32,
+      "end_time": 1903.16
+    },
+    {
+      "text": " then you know that this is not possible and therefore, you will set the child to minus",
+      "start_time": 1903.16,
+      "end_time": 1910.2
+    },
+    {
+      "text": " 1 so that the iteration can be stopped that is what I am going to do.",
+      "start_time": 1910.2,
+      "end_time": 1914.36
+    },
+    {
+      "text": "",
+      "start_time": 1914.36,
+      "end_time": 1890.0
+    },
+    {
+      "text": " So here this is the position so I am going to replace this with 20.",
+      "start_time": 1895.64,
+      "end_time": null
+    },
+    {
+      "text": " here. So, this becomes 25. So, you can see that now the heap which was earlier like this",
+      "start_time": 1920.0,
+      "end_time": 1927.0
+    },
+    {
+      "text": " now has been constructed this way. So, your current position looks like this, this is",
+      "start_time": 1927.0,
+      "end_time": 1933.64
+    },
+    {
+      "text": " the heap. So, 86 is here 37, 57, 37 and 57, 57 and then you have 25 placed here. So, again",
+      "start_time": 1933.64,
+      "end_time": 1949.32
+    },
+    {
+      "text": "",
+      "start_time": 1949.32,
+      "end_time": 1920.0
+    },
+    {
+      "text": " 25 only.",
+      "start_time": 1920.72,
+      "end_time": null
+    },
+    {
+      "text": " has come in this example. So, this is out of the heap now 92 is out of the heap you",
+      "start_time": 1950.0,
+      "end_time": 1956.0
+    },
+    {
+      "text": " have only this much as part of the heap now. So, that is how we have to consider.",
+      "start_time": 1956.0,
+      "end_time": 1961.44
+    },
+    {
+      "text": " So, let us redraw this diagram once again. I will draw the diagram 86, 37, 57 and then",
+      "start_time": 1961.44,
+      "end_time": 1976.88
+    },
+    {
+      "text": "",
+      "start_time": 1976.88,
+      "end_time": 1950.0
+    },
+    {
+      "text": " 33 12 and then",
+      "start_time": 1953.04,
+      "end_time": null
+    },
+    {
+      "text": " and then 45 and then 92 but this is not there now, this is not part of the heap. So, this",
+      "start_time": 1980.0,
+      "end_time": 1987.6
+    },
+    {
+      "text": " is the only heap now that we have. So, now in this heap again we have to continue the",
+      "start_time": 1987.6,
+      "end_time": 1993.72
+    },
+    {
+      "text": " sorting. Since the next element to be considered is i minus 1 now, i we started at n minus",
+      "start_time": 1993.72,
+      "end_time": 2002.32
+    },
+    {
+      "text": "",
+      "start_time": 2002.32,
+      "end_time": 1980.0
+    },
+    {
+      "text": " So, we have to start it n minus 2. So, I was started from here, I was started from here.",
+      "start_time": 1987.68,
+      "end_time": null
+    },
+    {
+      "text": " Next, I will go to this position.",
+      "start_time": 2010.0,
+      "end_time": 2012.24
+    },
+    {
+      "text": " So, when I goes to this position, it is 86, again you know that next highest element is",
+      "start_time": 2012.24,
+      "end_time": 2018.72
+    },
+    {
+      "text": " at the root, next highest element 86 has to come to this position again.",
+      "start_time": 2018.72,
+      "end_time": 2022.96
+    },
+    {
+      "text": " So, in this case, in this example, it is so happening that here again we have 25, ok.",
+      "start_time": 2022.96,
+      "end_time": 2029.04
+    },
+    {
+      "text": " It is not necessary that all the time we have something like that.",
+      "start_time": 2029.04,
+      "end_time": 2032.08
+    },
+    {
+      "text": "",
+      "start_time": 2032.08,
+      "end_time": 2010.0
+    },
+    {
+      "text": " So, here what we have is 86, we have 57 and then here we have",
+      "start_time": 2017.84,
+      "end_time": null
+    },
+    {
+      "text": " So, this 86 will come into this position.",
+      "start_time": 2040.0,
+      "end_time": 2043.72
+    },
+    {
+      "text": " So, 86 will come and occupy this position.",
+      "start_time": 2043.72,
+      "end_time": 2047.08
+    },
+    {
+      "text": " So, 25 is getting displaced.",
+      "start_time": 2047.08,
+      "end_time": 2049.6
+    },
+    {
+      "text": " So, an element that is displaced is 25.",
+      "start_time": 2049.6,
+      "end_time": 2052.84
+    },
+    {
+      "text": " So, again we have to find out whether 25 will come to this position or greater of the two",
+      "start_time": 2052.84,
+      "end_time": 2058.28
+    },
+    {
+      "text": " children who will come and occupy this position.",
+      "start_time": 2058.28,
+      "end_time": 2061.04
+    },
+    {
+      "text": " Because this is now out of the heap.",
+      "start_time": 2061.04,
+      "end_time": 2063.64
+    },
+    {
+      "text": " This is out of the heap.",
+      "start_time": 2063.64,
+      "end_time": 2065.24
+    },
+    {
+      "text": " In the remaining heap position we have to re-adjust again.",
+      "start_time": 2065.24,
+      "end_time": 2067.96
+    },
+    {
+      "text": "",
+      "start_time": 2067.96,
+      "end_time": 2040.0
+    },
+    {
+      "text": " So this procedure is called as reagent.",
+      "start_time": 2042.0,
+      "end_time": null
+    },
+    {
+      "text": " So, we adjust, so 86 will come and occupy this position 86, 86 is occupying this position",
+      "start_time": 2070.0,
+      "end_time": 2083.96
+    },
+    {
+      "text": " and this is 92 ok.",
+      "start_time": 2083.96,
+      "end_time": 2087.88
+    },
+    {
+      "text": " So, here what happens is 86 has come.",
+      "start_time": 2087.88,
+      "end_time": 2095.12
+    },
+    {
+      "text": " So, 25 we are looking for 25 now 25.",
+      "start_time": 2095.12,
+      "end_time": 2099.52
+    },
+    {
+      "text": "",
+      "start_time": 2099.52,
+      "end_time": 2070.0
+    },
+    {
+      "text": " So",
+      "start_time": 2072.0,
+      "end_time": null
+    },
+    {
+      "text": " So, parent position is this, so greater of the two children, this is a parent position,",
+      "start_time": 2100.0,
+      "end_time": 2105.92
+    },
+    {
+      "text": " greater of the two children I will say that is the initialization child will be said.",
+      "start_time": 2105.92,
+      "end_time": 2110.2
+    },
+    {
+      "text": " Now is 57 going to occupy here or is it 25?",
+      "start_time": 2110.2,
+      "end_time": 2114.96
+    },
+    {
+      "text": " So you know that it is 57 that is going to come and sit here, so 57 will come up, so",
+      "start_time": 2114.96,
+      "end_time": 2121.08
+    },
+    {
+      "text": " this will be replaced with 57, again the greater of the two children.",
+      "start_time": 2121.08,
+      "end_time": 2125.8
+    },
+    {
+      "text": "",
+      "start_time": 2125.8,
+      "end_time": 2100.0
+    },
+    {
+      "text": " please note that so the parent will come to this question greater.",
+      "start_time": 2104.2,
+      "end_time": null
+    },
+    {
+      "text": " the two children we have to do, but this is not part of the heap at all.",
+      "start_time": 2130.0,
+      "end_time": 2134.48
+    },
+    {
+      "text": " So it has only one left child correct.",
+      "start_time": 2134.48,
+      "end_time": 2137.76
+    },
+    {
+      "text": " So this is not to be considered, this position should not be considered.",
+      "start_time": 2137.76,
+      "end_time": 2141.2
+    },
+    {
+      "text": " As part of the heap only we have this.",
+      "start_time": 2141.2,
+      "end_time": 2143.4
+    },
+    {
+      "text": " So 57 right now has only one child okay.",
+      "start_time": 2143.4,
+      "end_time": 2146.44
+    },
+    {
+      "text": " So 48, is it 48 that should come here or is it 25 that should come here.",
+      "start_time": 2146.44,
+      "end_time": 2151.4
+    },
+    {
+      "text": " So I will repeat 86 we had moved to this.",
+      "start_time": 2151.4,
+      "end_time": 2154.36
+    },
+    {
+      "text": " This position should not be considered as part of the heap now.",
+      "start_time": 2154.36,
+      "end_time": 2157.6
+    },
+    {
+      "text": "",
+      "start_time": 2157.6,
+      "end_time": 2130.0
+    },
+    {
+      "text": " The valid questions of the heap are only up to this.",
+      "start_time": 2132.32,
+      "end_time": null
+    },
+    {
+      "text": " So, this is not a valid position at all.",
+      "start_time": 2160.0,
+      "end_time": 2162.8
+    },
+    {
+      "text": " So, now what I am going to do is, is it 37 or 57?",
+      "start_time": 2162.8,
+      "end_time": 2166.84
+    },
+    {
+      "text": " 57 has to move up.",
+      "start_time": 2166.84,
+      "end_time": 2168.32
+    },
+    {
+      "text": " So, 57 has moved up.",
+      "start_time": 2168.32,
+      "end_time": 2170.48
+    },
+    {
+      "text": " Parent position is this, the child position is 48.",
+      "start_time": 2170.48,
+      "end_time": 2173.24
+    },
+    {
+      "text": " Now, it is a left child, but the right child is not there now because it is not a valid",
+      "start_time": 2173.24,
+      "end_time": 2178.72
+    },
+    {
+      "text": " portion because it ends here.",
+      "start_time": 2178.72,
+      "end_time": 2180.24
+    },
+    {
+      "text": " So, we will set the child pointer only to the left child.",
+      "start_time": 2180.24,
+      "end_time": 2183.8
+    },
+    {
+      "text": " So, 48 should it come here or is it 25?",
+      "start_time": 2183.8,
+      "end_time": 2187.64
+    },
+    {
+      "text": "",
+      "start_time": 2187.64,
+      "end_time": 2160.0
+    },
+    {
+      "text": " This is what we have to see 48 has to come.",
+      "start_time": 2162.0,
+      "end_time": null
+    },
+    {
+      "text": " So, 48 will come and occupy because 25 cannot be placed here right.",
+      "start_time": 2190.0,
+      "end_time": 2194.76
+    },
+    {
+      "text": " So, 48 has to come here and again 25 is going to be placed at this point because we are",
+      "start_time": 2194.76,
+      "end_time": 2201.16
+    },
+    {
+      "text": " already out of this.",
+      "start_time": 2201.16,
+      "end_time": 2202.16
+    },
+    {
+      "text": " So, it is a parent's position where the new element is going to be placed.",
+      "start_time": 2202.16,
+      "end_time": 2206.28
+    },
+    {
+      "text": " So, here what happens is this is 57 now, this position is going to be 57 and this position",
+      "start_time": 2206.28,
+      "end_time": 2218.4
+    },
+    {
+      "text": "",
+      "start_time": 2218.4,
+      "end_time": 2190.0
+    },
+    {
+      "text": " is going to be.",
+      "start_time": 2191.36,
+      "end_time": null
+    },
+    {
+      "text": " is going to be 48 and this position will be the 25. So, this will be replaced with 25.",
+      "start_time": 2220.0,
+      "end_time": 2230.08
+    },
+    {
+      "text": " So, this is your new heap now two elements sorting is already done and 90 to 86 are already",
+      "start_time": 2230.08,
+      "end_time": 2237.2
+    },
+    {
+      "text": " part of the heap and this is how the correction is done. So, let us use this part. So, now",
+      "start_time": 2237.2,
+      "end_time": 2246.84
+    },
+    {
+      "text": "",
+      "start_time": 2246.84,
+      "end_time": 2220.0
+    },
+    {
+      "text": " Now what I am going to fill in is.",
+      "start_time": 2227.0,
+      "end_time": null
+    },
+    {
+      "text": " 57 and then 37, 48, 25. So, even in this case 25 is still at the last. Now, let us continue.",
+      "start_time": 2250.0,
+      "end_time": 2260.4
+    },
+    {
+      "text": " So, it is a repeat step now. So, now you know what needs to be done. Next highest element",
+      "start_time": 2260.4,
+      "end_time": 2266.24
+    },
+    {
+      "text": " in the heap 57 will come and occupy the position 25. So, 57 will be replacing this the next",
+      "start_time": 2266.24,
+      "end_time": 2277.28
+    },
+    {
+      "text": "",
+      "start_time": 2277.28,
+      "end_time": 2250.0
+    },
+    {
+      "text": " largest element because our aim is to sort the",
+      "start_time": 2252.72,
+      "end_time": null
+    },
+    {
+      "text": " elements again displaced element is 25. So, 57 will come and sit here. So, 57, 86 and",
+      "start_time": 2280.0,
+      "end_time": 2287.36
+    },
+    {
+      "text": " 92 are already done. So, the three elements sorting is already done ok 57, 86 and 92 these",
+      "start_time": 2287.36,
+      "end_time": 2301.2
+    },
+    {
+      "text": " are already done. These positions are no more belonging to the heap only this part is the",
+      "start_time": 2301.2,
+      "end_time": 2306.04
+    },
+    {
+      "text": "",
+      "start_time": 2306.04,
+      "end_time": 2280.0
+    },
+    {
+      "text": " heat ok. So, again the element displaced is 25.",
+      "start_time": 2283.84,
+      "end_time": null
+    },
+    {
+      "text": " So, now here in this pictorial representation, this is going to be replaced with 57.",
+      "start_time": 2310.0,
+      "end_time": 2319.02
+    },
+    {
+      "text": " So, now what happens?",
+      "start_time": 2319.02,
+      "end_time": 2324.28
+    },
+    {
+      "text": " This is no more the part of heap, this is not part of the heap.",
+      "start_time": 2324.28,
+      "end_time": 2328.66
+    },
+    {
+      "text": " So, remaining positions we have to see again the displaced element is 25, is 25 going to",
+      "start_time": 2328.66,
+      "end_time": 2334.22
+    },
+    {
+      "text": " come here or 48 going to come here.",
+      "start_time": 2334.22,
+      "end_time": 2336.42
+    },
+    {
+      "text": " So, it is 48 again here.",
+      "start_time": 2336.42,
+      "end_time": 2339.22
+    },
+    {
+      "text": "",
+      "start_time": 2339.22,
+      "end_time": 2310.0
+    },
+    {
+      "text": " No.",
+      "start_time": 2310.84,
+      "end_time": null
+    },
+    {
+      "text": " So, for 48 there is no child at all.",
+      "start_time": 2340.0,
+      "end_time": 2342.48
+    },
+    {
+      "text": " So, 25 is going to be fixed at the position 48, so it is simple.",
+      "start_time": 2342.48,
+      "end_time": 2348.32
+    },
+    {
+      "text": " So, in this case it is 48 and this is going to be 25.",
+      "start_time": 2348.32,
+      "end_time": 2352.76
+    },
+    {
+      "text": " So, we will be completing the heap construction here there.",
+      "start_time": 2352.76,
+      "end_time": 2357.12
+    },
+    {
+      "text": " So, now we will move the next one 48.",
+      "start_time": 2357.12,
+      "end_time": 2361.68
+    },
+    {
+      "text": "",
+      "start_time": 2361.68,
+      "end_time": 2340.0
+    },
+    {
+      "text": " So, here the elements that are there are 57, 86, 92, the wrong.",
+      "start_time": 2348.32,
+      "end_time": null
+    },
+    {
+      "text": " all part of this. So, 48, so this is going to be replaced with 25, 48 is going to be",
+      "start_time": 2370.0,
+      "end_time": 2378.32
+    },
+    {
+      "text": "",
+      "start_time": 2378.32,
+      "end_time": 2370.0
+    },
+    {
+      "text": " replaced with 25, so this is not there, this is 48, so now as you can see.",
+      "start_time": 2390.56,
+      "end_time": null
+    },
+    {
+      "text": " So, this is the 86, so 12 these are the various array positions, but this is already done,",
+      "start_time": 2400.0,
+      "end_time": 2423.56
+    },
+    {
+      "text": " this is already done 57, 86, 92.",
+      "start_time": 2423.56,
+      "end_time": 2425.96
+    },
+    {
+      "text": " So, we are not considering that.",
+      "start_time": 2425.96,
+      "end_time": 2428.32
+    },
+    {
+      "text": "",
+      "start_time": 2428.32,
+      "end_time": 2400.0
+    },
+    {
+      "text": " Okay, so no.",
+      "start_time": 2402.0,
+      "end_time": null
+    },
+    {
+      "text": " And the next highest element in the set is 48, 48 is going to replace it the last element.",
+      "start_time": 2430.0,
+      "end_time": 2437.0
+    },
+    {
+      "text": " So in this case, in this case the 48 is going to be displacing 12.",
+      "start_time": 2437.0,
+      "end_time": 2444.84
+    },
+    {
+      "text": " So we are at some ith iteration.",
+      "start_time": 2444.84,
+      "end_time": 2447.8
+    },
+    {
+      "text": " So this is going to be removed and this becomes 48 now.",
+      "start_time": 2447.8,
+      "end_time": 2452.64
+    },
+    {
+      "text": " So because this becomes 48 now, these many elements are already done.",
+      "start_time": 2452.64,
+      "end_time": 2457.96
+    },
+    {
+      "text": "",
+      "start_time": 2457.96,
+      "end_time": 2430.0
+    },
+    {
+      "text": " So we are completing these many.",
+      "start_time": 2432.06,
+      "end_time": null
+    },
+    {
+      "text": " element. So, now the displaced element is 12, the displaced element is 12. So, is 12",
+      "start_time": 2460.0,
+      "end_time": 2468.52
+    },
+    {
+      "text": " going to occupy this position or is it 37 or 25? So, 37 will come up, 37 will come up,",
+      "start_time": 2468.52,
+      "end_time": 2477.36
+    },
+    {
+      "text": " ok. Again here is 12 going to occupy this position because at this position we have",
+      "start_time": 2477.36,
+      "end_time": 2486.12
+    },
+    {
+      "text": "",
+      "start_time": 2486.12,
+      "end_time": 2460.0
+    },
+    {
+      "text": " 48. This is no longer belonging to the",
+      "start_time": 2467.0,
+      "end_time": null
+    },
+    {
+      "text": " Heap, this part is belonging to the heap now, this is 48, so this part is not there now.",
+      "start_time": 2490.0,
+      "end_time": 2498.8
+    },
+    {
+      "text": " So, now 37 or 25, 37 will come up, can I place 12 here? No, because 33 is greater child, so 33",
+      "start_time": 2498.8,
+      "end_time": 2506.8
+    },
+    {
+      "text": " will come and occupy this position and this will be 12. So, 33 will occupy the position here and",
+      "start_time": 2506.8,
+      "end_time": 2515.36
+    },
+    {
+      "text": "",
+      "start_time": 2515.36,
+      "end_time": 2490.0
+    },
+    {
+      "text": " this is where 12 is going to be present. So, that is how it happens.",
+      "start_time": 2494.56,
+      "end_time": null
+    },
+    {
+      "text": " So, now let us consider the next position element ok. Again 12 is at the end, 12 is",
+      "start_time": 2520.0,
+      "end_time": 2529.92
+    },
+    {
+      "text": " at the end. So, here 12 is swapped with 37 is at this position now, 37 is at this position",
+      "start_time": 2529.92,
+      "end_time": 2541.28
+    },
+    {
+      "text": "",
+      "start_time": 2541.28,
+      "end_time": 2520.0
+    },
+    {
+      "text": " we will make those changes 37, 33, 33, 32, 33, 32, 33, 32, 33, 32, 33, 33, 33, 33, 33, 33,",
+      "start_time": 2527.0,
+      "end_time": null
+    },
+    {
+      "text": " So, this is 33, 25, 12.",
+      "start_time": 2550.0,
+      "end_time": 2557.6
+    },
+    {
+      "text": " So, this is the heap that we have, this part is already sorted.",
+      "start_time": 2557.6,
+      "end_time": 2565.12
+    },
+    {
+      "text": " So, we have to move 37 to this position, 37.",
+      "start_time": 2565.12,
+      "end_time": 2569.4
+    },
+    {
+      "text": " Now this is already done.",
+      "start_time": 2569.4,
+      "end_time": 2571.0
+    },
+    {
+      "text": " So, 37 will come here, 37 is going to be occupying this position.",
+      "start_time": 2571.0,
+      "end_time": 2578.36
+    },
+    {
+      "text": "",
+      "start_time": 2578.36,
+      "end_time": 2550.0
+    },
+    {
+      "text": " 12 we have to now.",
+      "start_time": 2551.68,
+      "end_time": null
+    },
+    {
+      "text": " is it 33 or so in this position now we have 37. So, we have the heap 37. So, my heap",
+      "start_time": 2580.0,
+      "end_time": 2592.56
+    },
+    {
+      "text": " is already this much only now ok. So, now is it 12 or 33? So, 33. So, in this example",
+      "start_time": 2592.56,
+      "end_time": 2600.0
+    },
+    {
+      "text": " it is not necessary sometimes you may get a larger number. So, 12 is going to be so,",
+      "start_time": 2600.0,
+      "end_time": 2606.24
+    },
+    {
+      "text": "",
+      "start_time": 2606.24,
+      "end_time": 2580.0
+    },
+    {
+      "text": " So, 33 is going to be replacing this and.",
+      "start_time": 2583.76,
+      "end_time": null
+    },
+    {
+      "text": " and because of the larger of the two. So, then this has no child. So, we stop at this",
+      "start_time": 2610.0,
+      "end_time": 2615.9
+    },
+    {
+      "text": " and this is where 12 is going to be replacing. So, what happens here is after 37 is replaced,",
+      "start_time": 2615.9,
+      "end_time": 2622.12
+    },
+    {
+      "text": " this will become 33 and 12 is going to be replacing this position. So, this is how the",
+      "start_time": 2622.12,
+      "end_time": 2629.66
+    },
+    {
+      "text": " heap tree is going to be present at this point. So, now I have come i is equal to 2. So, 25",
+      "start_time": 2629.66,
+      "end_time": 2635.5
+    },
+    {
+      "text": "",
+      "start_time": 2635.5,
+      "end_time": 2610.0
+    },
+    {
+      "text": " I pick up 25 ok. Now, 25.",
+      "start_time": 2614.48,
+      "end_time": null
+    },
+    {
+      "text": " 25 is the child. So, 33 is ok. Now, 33 is going to replace 25 ok, 33 the first element",
+      "start_time": 2640.0,
+      "end_time": 2650.28
+    },
+    {
+      "text": " has to come in here. 33 will come to the first element, the largest in the current set is",
+      "start_time": 2650.28,
+      "end_time": 2658.2
+    },
+    {
+      "text": " 33. So, that part is already done now. So, we are finished with the sorting of this ok.",
+      "start_time": 2658.2,
+      "end_time": 2666.04
+    },
+    {
+      "text": "",
+      "start_time": 2666.04,
+      "end_time": 2640.0
+    },
+    {
+      "text": " So, now 25 is .",
+      "start_time": 2643.94,
+      "end_time": null
+    },
+    {
+      "text": " replaced with 33 here, this is replaced with 33 and my heap is having consisting of only",
+      "start_time": 2670.0,
+      "end_time": 2686.52
+    },
+    {
+      "text": " two elements. So, this much is already done. So, here all that you have is 12, 12. So,",
+      "start_time": 2686.52,
+      "end_time": 2699.56
+    },
+    {
+      "text": "",
+      "start_time": 2699.56,
+      "end_time": 2670.0
+    },
+    {
+      "text": " I use a con-",
+      "start_time": 2670.5,
+      "end_time": null
+    },
+    {
+      "text": " So, when i is equal to 2, you have only this left now. So, this is a 33 is replaced and",
+      "start_time": 2700.0,
+      "end_time": 2711.84
+    },
+    {
+      "text": " 25 is the displaced element. So, is 25 going to occupy or 12 going to occupy? In this",
+      "start_time": 2711.84,
+      "end_time": 2717.62
+    },
+    {
+      "text": " case you can see that it is not the child that is occupying, but the 25 that is occupying",
+      "start_time": 2717.62,
+      "end_time": 2722.56
+    },
+    {
+      "text": " here. So, 25 will be replacing this position. So, we are left with two element heap now.",
+      "start_time": 2722.56,
+      "end_time": 2729.52
+    },
+    {
+      "text": "",
+      "start_time": 2729.52,
+      "end_time": 2700.0
+    },
+    {
+      "text": " So, when you are doing this, you are doing this, you are doing this, you are doing this,",
+      "start_time": 2707.0,
+      "end_time": null
+    },
+    {
+      "text": " then i is equal to 1, so you just have to swap it that is it. So, 25 will come to this position,",
+      "start_time": 2730.0,
+      "end_time": 2737.0
+    },
+    {
+      "text": " so i equal to 1 we stop it and fix it as the parent position.",
+      "start_time": 2737.0,
+      "end_time": 2741.92
+    },
+    {
+      "text": " So, this is how the sorting of the elements is going to be done in the case of he being",
+      "start_time": 2741.92,
+      "end_time": 2749.52
+    },
+    {
+      "text": " present. So, all that we had to do was we have to start because my position starts from",
+      "start_time": 2749.52,
+      "end_time": 2756.12
+    },
+    {
+      "text": "",
+      "start_time": 2756.12,
+      "end_time": 2730.0
+    },
+    {
+      "text": " this question n minus 1 up to 1 we have to go as .",
+      "start_time": 2733.88,
+      "end_time": null
+    },
+    {
+      "text": " you saw here, then we have to make sure that every time when I capture when i is equal",
+      "start_time": 2760.0,
+      "end_time": 2767.46
+    },
+    {
+      "text": " to n minus 1, all that we need to do is to make sure that the element is going to capture,",
+      "start_time": 2767.46,
+      "end_time": 2775.04
+    },
+    {
+      "text": " captured in this because we may have to move the highest element here.",
+      "start_time": 2775.04,
+      "end_time": 2778.96
+    },
+    {
+      "text": " So at that position, ith position, I move the highest element in the heap, then I set",
+      "start_time": 2778.96,
+      "end_time": 2785.68
+    },
+    {
+      "text": "",
+      "start_time": 2785.68,
+      "end_time": 2760.0
+    },
+    {
+      "text": " the parent to parent position to zero child is",
+      "start_time": 2766.0,
+      "end_time": null
+    },
+    {
+      "text": " computed as 2p plus 1 first, but I do not know if this is the left child, but if initially",
+      "start_time": 2790.0,
+      "end_time": 2797.24
+    },
+    {
+      "text": " if you are in the more than 2 iteration greater than 2 and we are having the second, the right",
+      "start_time": 2797.24,
+      "end_time": 2807.6
+    },
+    {
+      "text": " child to be greater than the left child, then we have to set the value of child to the second",
+      "start_time": 2807.6,
+      "end_time": 2814.96
+    },
+    {
+      "text": " child that is what you have to do.",
+      "start_time": 2814.96,
+      "end_time": 2816.72
+    },
+    {
+      "text": "",
+      "start_time": 2816.72,
+      "end_time": 2790.0
+    },
+    {
+      "text": " This is the initialization. Once the initialization is done, the initialization is done.",
+      "start_time": 2792.0,
+      "end_time": 2793.28
+    },
+    {
+      "text": " is completed, then what did we do? We have to keep iterating that right as long as we",
+      "start_time": 2820.0,
+      "end_time": 2827.48
+    },
+    {
+      "text": " have not found a place holder. See parent was here, parent was here, child was great",
+      "start_time": 2827.48,
+      "end_time": 2833.92
+    },
+    {
+      "text": " of the two child. So, then we saw that this child position element had to move up to the",
+      "start_time": 2833.92,
+      "end_time": 2841.32
+    },
+    {
+      "text": " parent position and parent would come here, child again is completed, great of the two",
+      "start_time": 2841.32,
+      "end_time": 2846.2
+    },
+    {
+      "text": "",
+      "start_time": 2846.2,
+      "end_time": 2820.0
+    },
+    {
+      "text": " as long as the parent child keeps moving here.",
+      "start_time": 2823.84,
+      "end_time": null
+    },
+    {
+      "text": " So while child is greater than or equal to 0 minus 1 if we stop.",
+      "start_time": 2850.0,
+      "end_time": 2857.96
+    },
+    {
+      "text": " So and what we do is as long as the position at the child position element, if it is greater",
+      "start_time": 2857.96,
+      "end_time": 2872.68
+    },
+    {
+      "text": " than the element that we have displaced then the child has to move up, child has to come",
+      "start_time": 2872.68,
+      "end_time": 2878.48
+    },
+    {
+      "text": "",
+      "start_time": 2878.48,
+      "end_time": 2850.0
+    },
+    {
+      "text": " to the position of the p.",
+      "start_time": 2852.0,
+      "end_time": null
+    },
+    {
+      "text": " parent, child has to come to the, child will move up, greater of the two children will",
+      "start_time": 2880.0,
+      "end_time": 2885.04
+    },
+    {
+      "text": " move up to the parent position and then the parent will come to child position, new parent",
+      "start_time": 2885.04,
+      "end_time": 2892.0
+    },
+    {
+      "text": " and the child is computed again to P plus 1 and then again we check if i is equal to",
+      "start_time": 2892.0,
+      "end_time": 2900.92
+    },
+    {
+      "text": " if the child, child plus 1, second the right child if it is greater than or equal to i minus",
+      "start_time": 2900.92,
+      "end_time": 2907.96
+    },
+    {
+      "text": "",
+      "start_time": 2907.96,
+      "end_time": 2880.0
+    },
+    {
+      "text": " because the 8th question is already discussed.",
+      "start_time": 2882.0,
+      "end_time": null
+    },
+    {
+      "text": " rate, the right child's index is well within i minus 1 and the right child's index right",
+      "start_time": 2910.0,
+      "end_time": 2915.96
+    },
+    {
+      "text": " child element is greater than the left child then c is said to c plus 1.",
+      "start_time": 2915.96,
+      "end_time": 2922.48
+    },
+    {
+      "text": " After this initialization if c has become greater than i minus 1 then we have to make",
+      "start_time": 2922.48,
+      "end_time": 2928.24
+    },
+    {
+      "text": " the child as minus 1 ok. So, this is a way you have to keep looping once you are out",
+      "start_time": 2928.24,
+      "end_time": 2933.96
+    },
+    {
+      "text": " of the loop the correct position for the element is the parent position for the element to",
+      "start_time": 2933.96,
+      "end_time": 2939.84
+    },
+    {
+      "text": "",
+      "start_time": 2939.84,
+      "end_time": 2910.0
+    },
+    {
+      "text": " be.",
+      "start_time": 2912.0,
+      "end_time": null
+    },
+    {
+      "text": " placed in. So, this is how the sorting is going to be carried out. So, let us try the",
+      "start_time": 2940.0,
+      "end_time": 2945.36
+    },
+    {
+      "text": " code for that continue the code here. So, this is after heapifying. So, now I want to",
+      "start_time": 2945.36,
+      "end_time": 2953.16
+    },
+    {
+      "text": " readjust and make sure that I do the sorting. So, as I said I am going to for i is equal",
+      "start_time": 2953.16,
+      "end_time": 2961.76
+    },
+    {
+      "text": "",
+      "start_time": 2961.76,
+      "end_time": 2940.0
+    },
+    {
+      "text": " to n minus 1 to 1 n minus 1 ok. I will write this as n minus 1.",
+      "start_time": 2947.0,
+      "end_time": null
+    },
+    {
+      "text": " as long as it is greater than or equal to if it is equal to i, i will go up to only",
+      "start_time": 2970.0,
+      "end_time": 2977.6
+    },
+    {
+      "text": " one rate. So, i greater than 0, i minus minus, I keep moving forward. So, what I am going",
+      "start_time": 2977.6,
+      "end_time": 2988.32
+    },
+    {
+      "text": "",
+      "start_time": 2988.32,
+      "end_time": 2970.0
+    },
+    {
+      "text": " to do is capture it in element a of i, a of i and then a of 0, a of 0 will get.",
+      "start_time": 2981.44,
+      "end_time": null
+    },
+    {
+      "text": " A of i will get, A of i will get A of 0 and then I am going to set the initialization,",
+      "start_time": 3000.0,
+      "end_time": 3012.0
+    },
+    {
+      "text": " parent will be set to 0 and the child pointer, if my i is equal to, if I am in the starting",
+      "start_time": 3012.0,
+      "end_time": 3022.0
+    },
+    {
+      "text": " iteration I do not have to continue at all right.",
+      "start_time": 3022.0,
+      "end_time": 3024.32
+    },
+    {
+      "text": "",
+      "start_time": 3024.32,
+      "end_time": 3000.0
+    },
+    {
+      "text": " So, I have to check whether I have to continue the iteration. If i is equal to 1, then I know that I have to continue the iteration.",
+      "start_time": 3003.2,
+      "end_time": 3005.64
+    },
+    {
+      "text": " that I do not have to continue, so child will be set to minus 1. Otherwise, I need to figure",
+      "start_time": 3030.0,
+      "end_time": 3036.8
+    },
+    {
+      "text": " out that child has to be set to 1. Again, these are all initializations only. If again,",
+      "start_time": 3036.8,
+      "end_time": 3044.88
+    },
+    {
+      "text": " I have to check up to the second child I have to set, if i is greater than, i is greater",
+      "start_time": 3044.88,
+      "end_time": 3050.7
+    },
+    {
+      "text": "",
+      "start_time": 3050.7,
+      "end_time": 3030.0
+    },
+    {
+      "text": " than 2 and a of 2, a of 2 is greater than a of 1, then I know that.",
+      "start_time": 3039.28,
+      "end_time": null
+    },
+    {
+      "text": " I have to set the child to 2. So, this is my initialization. So, as you can see, a of",
+      "start_time": 3060.0,
+      "end_time": 3066.52
+    },
+    {
+      "text": " i position element, a capturing element because that is getting displaced, a of 0, the largest",
+      "start_time": 3066.52,
+      "end_time": 3071.68
+    },
+    {
+      "text": " in the heap will come to last position. So, valid positions are only up to i minus 1.",
+      "start_time": 3071.68,
+      "end_time": 3076.76
+    },
+    {
+      "text": " Suppose if you are in the iteration i equal to 1, then there is nothing to continue, right?",
+      "start_time": 3076.76,
+      "end_time": 3081.32
+    },
+    {
+      "text": " You just have to swap. So, I will set c equal to minus 1, so that further loop is not executed.",
+      "start_time": 3081.32,
+      "end_time": 3086.56
+    },
+    {
+      "text": "",
+      "start_time": 3086.56,
+      "end_time": 3060.0
+    },
+    {
+      "text": " otherwise I will set the C to temporarily left child.",
+      "start_time": 3063.44,
+      "end_time": null
+    },
+    {
+      "text": " Now I will check whether the right, if I am in the iteration greater than 2 then 2, position",
+      "start_time": 3090.0,
+      "end_time": 3095.72
+    },
+    {
+      "text": " 2 is also valid.",
+      "start_time": 3095.72,
+      "end_time": 3097.28
+    },
+    {
+      "text": " Then A of 2 is greater than A of 1 then I will set child to 2.",
+      "start_time": 3097.28,
+      "end_time": 3100.74
+    },
+    {
+      "text": " So this is my initialization of the parent and child.",
+      "start_time": 3100.74,
+      "end_time": 3103.9
+    },
+    {
+      "text": " Now I have to keep doing this in the loop while the child is greater than or equal to",
+      "start_time": 3103.9,
+      "end_time": 3109.38
+    },
+    {
+      "text": " 0.",
+      "start_time": 3109.38,
+      "end_time": 3110.38
+    },
+    {
+      "text": " See if it is minus 1 I would not even enter this and my element, the element is less than",
+      "start_time": 3110.38,
+      "end_time": 3118.78
+    },
+    {
+      "text": "",
+      "start_time": 3118.78,
+      "end_time": 3090.0
+    },
+    {
+      "text": " the child in the position.",
+      "start_time": 3091.2,
+      "end_time": null
+    },
+    {
+      "text": " element the then greater of the two children only will go forward right.",
+      "start_time": 3120.0,
+      "end_time": 3127.04
+    },
+    {
+      "text": " So it will come and occupy A of p will be A of child the child greater of the two child",
+      "start_time": 3127.04,
+      "end_time": 3135.84
+    },
+    {
+      "text": " will move up.",
+      "start_time": 3135.84,
+      "end_time": 3136.84
+    },
+    {
+      "text": " Now the parent will come to the child's position again we have to start computing the child",
+      "start_time": 3136.84,
+      "end_time": 3142.56
+    },
+    {
+      "text": " now.",
+      "start_time": 3142.56,
+      "end_time": 3143.56
+    },
+    {
+      "text": "",
+      "start_time": 3143.56,
+      "end_time": 3120.0
+    },
+    {
+      "text": " I am going to compute the child as first the left child 2 star 2 star.",
+      "start_time": 3126.48,
+      "end_time": null
+    },
+    {
+      "text": " 2 star p plus 1 that is the computation that I am going to make. So, 2 star p plus 1 is",
+      "start_time": 3150.0,
+      "end_time": 3160.04
+    },
+    {
+      "text": " the left child then once the left child is set now I have to find out if the right child",
+      "start_time": 3160.04,
+      "end_time": 3166.64
+    },
+    {
+      "text": " is valid if c plus 1 is less than or equal to if the right child is a valid person less",
+      "start_time": 3166.64,
+      "end_time": 3179.2
+    },
+    {
+      "text": "",
+      "start_time": 3179.2,
+      "end_time": 3150.0
+    },
+    {
+      "text": " then or it",
+      "start_time": 3151.0,
+      "end_time": null
+    },
+    {
+      "text": " equal to i minus 1 because you have the heap only up to i minus 1 because ith question",
+      "start_time": 3180.0,
+      "end_time": 3185.08
+    },
+    {
+      "text": " is displayed c plus 1 less than or equal to i minus 1 and you are the second left child.",
+      "start_time": 3185.08,
+      "end_time": 3194.28
+    },
+    {
+      "text": " Left child is less than the right child c c plus 1 then we have to set it to the right",
+      "start_time": 3194.28,
+      "end_time": 3201.16
+    },
+    {
+      "text": " child ok c should be set to the right child c should be already it is set to left child.",
+      "start_time": 3201.16,
+      "end_time": 3206.24
+    },
+    {
+      "text": "",
+      "start_time": 3206.24,
+      "end_time": 3180.0
+    },
+    {
+      "text": " The right child is at one more position greater than the right child.",
+      "start_time": 3183.78,
+      "end_time": null
+    },
+    {
+      "text": " After initializing C, you never know, C might have crossed the positions, the array positions.",
+      "start_time": 3210.0,
+      "end_time": 3217.76
+    },
+    {
+      "text": " So because of this initialization, if C has become greater than i minus 1, then I know",
+      "start_time": 3217.76,
+      "end_time": 3223.76
+    },
+    {
+      "text": " that it is not a valid position for C. So C equal to minus 1 because 2 star P plus 1",
+      "start_time": 3223.76,
+      "end_time": 3229.24
+    },
+    {
+      "text": " you never know, it may cross the limit also.",
+      "start_time": 3229.24,
+      "end_time": 3233.28
+    },
+    {
+      "text": "",
+      "start_time": 3233.28,
+      "end_time": 3210.0
+    },
+    {
+      "text": " if by chance the initialization has crossed the child index then we will",
+      "start_time": 3216.08,
+      "end_time": null
+    },
+    {
+      "text": " make sure that C is set to minus 1, so that you stop the iteration.",
+      "start_time": 3240.0,
+      "end_time": 3245.04
+    },
+    {
+      "text": " So this way we run the loop, now once we are out of this we know that the correct position",
+      "start_time": 3245.04,
+      "end_time": 3250.64
+    },
+    {
+      "text": " for the displaced element is the parent's position, so we set it at that and then I",
+      "start_time": 3250.64,
+      "end_time": 3255.92
+    },
+    {
+      "text": " continue in the for loop and then close it.",
+      "start_time": 3255.92,
+      "end_time": 3260.28
+    },
+    {
+      "text": " So now again I have to print the elements, this time I am going to print the sorted",
+      "start_time": 3260.28,
+      "end_time": 3265.84
+    },
+    {
+      "text": " set of elements.",
+      "start_time": 3265.84,
+      "end_time": 3267.32
+    },
+    {
+      "text": "",
+      "start_time": 3267.32,
+      "end_time": 3240.0
+    },
+    {
+      "text": " So I am going to do this.",
+      "start_time": 3242.72,
+      "end_time": null
+    },
+    {
+      "text": " that now. So, the sorted set of elements are sorted elements using heap sort ok, heap",
+      "start_time": 3270.0,
+      "end_time": 3281.2
+    },
+    {
+      "text": "",
+      "start_time": 3281.2,
+      "end_time": 3270.0
+    },
+    {
+      "text": " sort let us see. Let us run this program. This if is not closed.",
+      "start_time": 3288.44,
+      "end_time": null
+    },
+    {
+      "text": " Let us check that ok here, it is not closed, close this, we will run the program now ok.",
+      "start_time": 3300.0,
+      "end_time": 3310.8
+    },
+    {
+      "text": " So, it is fine now you dot exe run the program, so 8 elements same set of 8 elements I will",
+      "start_time": 3310.8,
+      "end_time": 3324.32
+    },
+    {
+      "text": "",
+      "start_time": 3324.32,
+      "end_time": 3300.0
+    },
+    {
+      "text": " ok. Now, 25, now 57.",
+      "start_time": 3307.0,
+      "end_time": null
+    },
+    {
+      "text": " 48, 37, 12, 92, 86, 33 ok. So, elements are in sorted order. I will just run it for another",
+      "start_time": 3330.0,
+      "end_time": 3350.36
+    },
+    {
+      "text": "",
+      "start_time": 3350.36,
+      "end_time": 3330.0
+    },
+    {
+      "text": " instance now ok. I will take let us say 5 elements 12, 32, 54, 76, 1, 2, 3, 4, 5, 6,",
+      "start_time": 3346.88,
+      "end_time": null
+    },
+    {
+      "text": " So, this is elements are in sorted order.",
+      "start_time": 3360.0,
+      "end_time": 3363.92
+    },
+    {
+      "text": " So, this is how the heap is going to be constructed and then I am going to heapify and make sure",
+      "start_time": 3363.92,
+      "end_time": 3371.12
+    },
+    {
+      "text": " that the elements are going to be created in sorted order.",
+      "start_time": 3371.12,
+      "end_time": 3374.96
+    },
+    {
+      "text": " This is the program for first creation of the heap, I read the elements they are not",
+      "start_time": 3374.96,
+      "end_time": 3380.28
+    },
+    {
+      "text": " going to form a heap.",
+      "start_time": 3380.28,
+      "end_time": 3381.28
+    },
+    {
+      "text": " So, I form the heapify operations and then subsequently I proceed to sort them.",
+      "start_time": 3381.28,
+      "end_time": 3387.92
+    },
+    {
+      "text": "",
+      "start_time": 3387.92,
+      "end_time": 3360.0
+    },
+    {
+      "text": " Here is an example of how to construct a heap.",
+      "start_time": 3362.0,
+      "end_time": null
+    },
+    {
+      "text": " heap and an application of heap which is the heap sort using the top down approach.",
+      "start_time": 3390.0,
+      "end_time": 3396.0
+    },
+    {
+      "text": " So this is how the heap is going to be used in sorting the set of elements.",
+      "start_time": 3396.0,
+      "end_time": 3401.6
+    }
+  ],
+  "transcript_text": " So, we will look at implementation of, implementation of heap and as I have discussed in the sessions,  we are going to make use of an array representation to store the elements of the heap.   So here initially  I will collect a set of elements let us say 25, 57, 48, 37, 12, 92, 86 and 33 are the elements  stored in an array called as A. So, now as it is if you look at this you know that this   is 0th position ok.  So, here what happens is 25 is stored at 0th position, 57, 48, 37, 12 and then 92, 86 and  you have 33.   This is how I currently this is the tree is present in the form of an array, but now .  So, my objective here is to make sure that this forms a descending heap.  So, what I am implementing is a descending heap, descending heap.  So, I know that this is not in the form of a descending heap.  So, what I am going to do is I am using the top down approach here, top down approach  to demonstrate how the descending heap is going to be constructed.   So, what I will do is initially you will have to do this.  know that at least one element if you consider it is definitely a heap ok.  Now I am going to consider remaining elements one by one all the remaining elements one  by one and I will make them part of the heap ok. So, now right now 57 is in this position  57 is in this position this is the child's position. So, if this is the child's position   you know that the left child will be.  at position 2p plus 1. So, parent will be at position c minus 1 by 2 ok. So, if child  pointer the next element to be considered to be making it as part of the heap is 57.  If 57 is retained here itself we have to consider whether these two elements form a descending  heap. So, now what happens is from the pictorial representation this is how they are right   No.  Now, this is the child position, if 57 E is retained in this child position, we have to  consider where its parent is, either you can use left child or right child because this  is a division term.  So, we will have to find out here 1 minus 1 by 2 which is 0.  So, parents position will be here.  So, now I check the parents element with the child element, 57 I will capture it in a temporary   variable to 57 and 20.  25 when I understand this. So, I know that 25 in a descending heap 25 cannot be the parent  of 57. So, what I will do is I will make this 25 move to the parents the child's position.  So, I will move the 25 to the parents child's position. Now, I will make the child pointer  come to the parent position and parent is computed. But what happens in this case is   Since the child...  has come to 0th position that is a limiting index right ok. So, we stop the traversal  and I know that 57 has to be fixed here. So, this modification I am going to make when  I compare these elements ok. Here 25 is going to be written on this, 25 will flow here and   And since child pointer came here parent goes out of the house.  the child is at 0th portion so we stop the traversal and then I place 57 here.  So now we have two element heap here.  So now see as in when I take more elements you will start getting to know.  So here the change that we have done is this is 57 and this is 25.  These two are now forming the heap, these two are forming the heap.   Now I pick up 48, I pick up 40.  48 is picked. So, if 48 is in this position, if this is the child's position, where is  its parent again? Its parent will be at this position. So, now I compare, can I continue  retaining 48 here itself and still say that this will form the heap. In this case, 48   happens to be less than the element that we have, happens to be  less than 57. So, it forms a descending heap automatically. So, there is no change that  needs to be done. So, 48 is retained here itself there is nothing to be moved here.  So, now we have a three element heap this much is already done now ok. We are completing  this. So, what is my procedure now? The procedure for construction of the heap goes like this.   I pick up the next element in the set. I pick up the next element in the set 37.  And I will mark this as a child pointer.  If this is a child, I will find out because I have now three element heap.  These are the three elements that is why it is called as a top-down approach.  So three elements are already looked into and they have been made as part of the heap,  descending heap.  Now we have to include another member 37 into part of the heap.   To do that 37 is to be compared with the child position.  Because if child is residing at this position, we have to consider its parent because it  is representing a heap here.  So, if child position is at 3, we know that the parent is at position 1.  So, this is the parent's position.  Now I compare, so 37 because you know that if parent is having a smaller value that is  going to flow down, this 25 will flow down and it will override 37.   So, we capture.  37 in a temporary element, temporary element and then I compare 25, 25 is compared with  37 and I know that 25 is smaller. So, this cannot reside here, 37. So, the smaller one  has to be moved to this position. So, 25 will move to this position, 25 will move to this   this version. So, here this is the change. Now, you can see that the change is not there  You can see that now I will see whether I can fix 37 here.  So for that its parent has to be looked at.  So new parent, so child is here, parent position is here.  So we move the child and parent positions.  So here this is the new child's position and this is the parent's position.  So now I see whether 37 can be fixed here and for that its parent is looked at 37 and   57 are compared  you see that 57 is greater than 37 therefore this is the place. So, I stopped the traversal  because not because I reached to the end because I found out a place holder for 37.  So, I am going to replace this place with 37. So, the 25 got moved and I found a place for 37.  So, this position I am going to replace it with 37.   Now, I am done with four element heap. So, you can.  can include another element into the heap now. So, is this part is done now, this part  is done ok. Now, I have to consider the next element it is a same procedure ok. Now, now  I consider this as the child and its parent, its parent is now here ok. So, 37 and 12,   this is all fine. So, 37.  can be the parent of 12. So, there is no movement that is required here, it is all perfectly  fine. So, this part is done now. So, this part of the heap is also complete. So, this  part is also complete now. So, we have now in the heap 5 elements already considered  ok. So, 40, 48 is done, then we are also done with 12. So, we have 5 elements heap,   the element to be considered is.  92. So, 92's parent I am going to consider this is the parent of 92, parent of 92. So,  the element that I am going to capture, element that I am going to capture is 92. So, 92's  parent I consider 48. So, 48 has to slide down. So, 48 will come and occupy this position   Next, I will move the child power.  pointer here and its parent is computed and 50 it is always comparison with the element  that we are looking at 57 and 92 ok. 57, 92, 57 cannot be the parent of 92. So, again  we move 57 to this position ok. So, 57 is moved to this position and then child will  move to this position parent will go out of scope. Since child has reached the limiting   position this is the correct position.  for 92 and I place it here. So, here 57 is placed and here I place 92 ok.  Next value that I pick up is 86 ok, the element to be picked up is 86. 86 is the child's   position. So, then 48 here is the parent. So, here this is 0.  1, 2, 57 is the parent sorry 5, 6, 57 is the parent for, so this is the parent's position,  57 cannot be the parent, so 57 they will move to 86 such place, in this case 57 will move,  now can 92 be the parent of 86, yes, so 86 is going to be placed here, so this is going   to be replaced with 86.  So, this is going to be 86 now.  So, then we have the last element which is the 33, 33's parent is right now 25, ok.  This is child, this is a child parent is 30, 25, ok.  Child is at position 7, 7 minus 1 by 2 which is 6 by 2, 3, ok.  So, this is a parent's position.   25 cannot be the parent of the child.  So, that it will replace this position child will come here and parent will go to the position  37, 37 can be the parent of 33.  So, 33 will be replacing this ok.  So, this is how the heap is going this 25 is here and this will become 33.  So, overall what is the tree now?   to 37 86 then you have 25 12 and then 50  48, 58, 57, 57 and then you have 37, 86, then you have 33, this is 33 and then 12, 48, 57  and then 25.   So, this is the heap that we have constructed, this is the heap principle that we have to  to adopt. So, 92 that is 786 this is descending 373312 descending 864857 descending 3325 it  is descending. So, now if you look at the implementation what we have to do is we know  that it is one element heap in the beginning. So, I am going to pick up the remaining elements   elements remaining elements up to n minus 1 ok. So, one element is equal to 1. So,  a time, one element at a time. So, every time when i is 1, I pick up the next element, when  i equal to 2 next element to be formed into the heap, I mean joining into the heap. So,  element is equal to a of i because I have to store that, it is a so whichever I have  to store it and that is the child's position. So, child's position is captured as i, currently   it is at ith position, its parent is computed, parent is c minus 1 by 2. So, when we compute the parent, we compute the parent, we compute the parent, we compute the parent, we compute  the parent, we compute the parent, we compute the parent, we compute the parent, we compute  compute is now I have to find out this is a child question this is a parent question.  While child question is greater than 0 if it becomes equal I have to stop the traversal  then I have to also move whenever I found the parent element a of the parent is less  than the element then the parent will have to flow down.  You can see the child parent pointers will move left and parent element will move to   the change.  So, A of child, child's position parent element will be moved, parent element will be moved  and then child will get the parent's position and the parent for this child is computed  ok.  This way we keep continuing.  So, once you are out of this, we have to place the element at the child's position, the new  the element the this element has to be placed at the child's position.   So, that is how the heave principle is adopted.  So, let us look at the code for this now.  I will create the heap, the heap is represented using an array here.   So, I will define the max.  as 50, then I use, I need variable i and I need variable c and then also b, okay, I   I am going to take the element  first, percent d, how many elements so that we have to take in, enter the number of elements,   I will take it into n, sending ampersand n, I accept that and now I am going to the  read the elements, let me write a message, enter the elements, enter the elements, I  have to read these elements now, 0 i less than n i plus plus, i plus plus, scan if read   the elements a of i.  So, elements are read. Now, what we have to do is to this procedure which I demonstrated  is called as HEPI ok HEPI the elements which is nothing but construction of the heap. So,  for that I have to pick up assume that one element heap is already formed. So, remaining   elements have to be created as heave. So, is equal to 1 i less than n i.  First and foremost thing is element is to be captured in A of i that I capture, element  is captured because that ith position may get the parent's element.  So we have to do that.  So set that ith position as the child's position.  If that element is at child's position, where is its parent?   parent will be at position c minus 1 by 2 this integer division.  position and then you find the parent's position while child's position. So, now we have to  fix the we have to compare the parent element and child element provided child has not reached  the limit child pointer. So, while C is greater than 0. So, you have a valid index for child  and then your parent element parent element is less than the element that we are trying   into the heap ok. If that is there then .  then the parent element has to move to the child's position. So, to the child's position  what comes is A of P. So, A of P will flow into the child's position and now the child  pointer will come to the parent's position and the new parent for this position is to  be computed. So, that is what we are going to do by using the same formula again.  So, this way we keep moving the elements as long as the parent is greater than the parent   smaller than the edge.  So, we may come out of the loop either because we stopped at c equal to 0 or we have stopped  at a position where the parent value is greater than the child element.  So, child's position is the correct position for the new element to be fixed in to be making  it as a part of the heap.  And then once we are done with this, we have finished creating the heap here.   So, we have to move to the next element to be picked up and then continue.  So, now we will display the hippified elements.   Let us say the hippified elements for i is equal to 0 i less than n i plus plus i plus  plus, F.  d space A of i, we will close the function, just now heapified, I will just say a new   line elements of heap ok.  elements of the heap and I am going to display the elements. So, let us save this v heap   See, we compile the code now, compile save, behave.c.  GCC v heap dot c if n is undeclared and element is not declared. So, we will do that n is   not declared and element is not declared. So, we will now run.  No error, a dot xe enter the number of elements 8, same example I will pick up 25, 57, 48,   12, 92,  So, elements of the HEPA 92, 37, 86, you can see that 92, 37, 86, 33, 12, 48, 57, 33,  12, 48, 57, 25.   So, elements of the heap are.  in this. So, this is how the heap construction is going to be carried out.  So, now what I am going to do is use this heap for sorting the set of elements. So,  let us continue this is implementation of the heap. So, now what happens is let the   the heap tree be here like this. So now my array if you look at it.  In the array it is like this. In the array you have 92, 37, 86 and then 33, then 12,   48 57 and then 25 0 1 2 3 4 5 6 7 so it is a 8 element heat so now now what happens  here is that this is the heap that is available. Now, how can I make use of this heap to sort  the elements? So, I am making use of the heap principle to sort the set of elements which  is a heap sort. So, heap sort can be executed in n log n type. So, it is quite good in that  sense because instead of a n square algorithm which is slower we would prefer a n log n   and we will see you next time.  So, the heap sort is good as far as the sorting is concerned because of the time that it takes  n log n. Again many sorting techniques are there. So, we will have to compare them on  various parameters, but with respect to the time complexity here n log n n square, if  you consider these two, for example, bubble sort if you consider it takes n square whereas,  heap sort takes just n log n to sort the set of elements. So, as an application of the   heap data structure.  Let us look at how to sort the set of elements.  Since I have already told you how to construct the heap, you are going to read an unsorted  set of elements and then construct a heap first of all and then use this heap for sorting  the set of elements.  So, let us see how to do that.  So, this one part is already done.  So, earlier I had taken unsorted set as 25, 57, 48, 37, 12, 92, 86 and 33.   I constructed  the heap structure by looking into the various element positions and then reordering them  so that the hippify procedure is carried out and the heap is constructed.  Now what I need to do is to make sure that I use this heap to sort the set of elements  as an application.  So I am looking at heap sort as an application of the heap.   So let us continue our discussion now.  So, I know that this is a descending heap, since this is a descending heap, the largest  element and I am going to do the ascending order sorting, the elements will be in the  ascending order, but you have a descending heap.  You know that the largest element is here and since the largest element is making way   is part of the hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip hip  here at the largest element in the ascending order sorted list obviously will go to the  last position right.  So what I am going to do is place this 92 to the end.  So when I place 92 to this end you know that this 25 is getting displaced.  So 92 will come and sit here ok.  So because 92 comes and sits here so I need to now make sure that this position 25 element   which is.  removed from this tree has to be adjusted properly. So, we cannot just like that displaced  25 right. So, 25 I will capture in element and then I will move this 92 ok. So, now what  happens is this position is no more a valid heap now because 92 is removed from the heap  ok, 92 is removed from the heap. Now your valid heap position is only from 0 to 6. So,   is you are trying to.  remove the first element, so your last position in the heap because it has to go to the current  last position, is not it? So, if you so for i is equal to n minus 1 to 1 because last  anyway will be adjusted. So, your element is captured in your element 25 is captured   into this and 92 will come and sit into the n minus 1th position. So, a of 0  will get the ith position, A of 0 will come to the ith position. See ith position to begin  with is n minus 1 and in the next iteration this is the last, in the next iteration this  is the last and so on. 92 has gone to this, so it is out of the heap now.  Now in the remaining heap, whatever we had in the remaining heap, we have to make sure   that 25 is placed. So, in this case can we directly swap it that way it is not possible.  you cannot put 25 here is not it. So, what we have to do is to find a proper place for  25 in this heap. Now, the heap is only in the positions 0 to 6. So, how do I place this  25, where do I place this 25? So, what I will start doing is I will fix the parent position  here and then find the greater of the two children. So, here if this is the parents   position. Now is this 25 going to go to parents position here directly?  25 going to go or greater of the two children.  So I will set the child pointer to the left child, you know how to compute parent is set  to 0 initialization, child is set to 1 and then I am going to check if C of 2 if it is  a valid position.  See you know as in when we complete sorting this position may not be valid at all.   So if the position is valid and if your position is not valid, then you can change the position  2 is greater than C of 1, if the position is valid, if I is greater than 2, then this  position is valid, if I is 2 this would have been gone.  See, if I is 7 then this is not part of the heap.  So, if I is greater than 2 and C of 2 is greater than C of 1, then I am going to make sure that  my child pointer will be at position 2.   What I am trying to say here is that 92 has been.  placed here 92. Now 25 I am searching so that my heap is going to be intact and for  this I am going to look at greater of the two children.  First I set C to be 1 and then I see that the 86 is greater than 37 and it is a valid  position therefore I am going to set my child pointer to 2. This is the initialization that  I am going to carry out when I perform this operation, the initialization is done. So,   after that you  initialization is done, now what I am going to do, I am going to find out whether 86 should  come and occupy 92's position or is it that 25 should come and occupy this.  So obviously 86 will come and sit here, so I am going to put 86 into this location, so  this will move up, so here also the child pointer is here, so 86 will move up.   So now what happens the parent position will come to this and we find  the greater of the two children as so its left child is this and 48 is less than 57.  So my child is set to this position.  So child finally is set to this position.  Now is 57 that should come and occupy this position or is it 25 that should come and  occupy this position.  So it is definitely 57.  So I am going to make that 57 come and occupy this position.   So it is 57.  Now, I come to the parent position, this is the position and then child is computed.  When I compute the child, child is out of scope, okay.  So I stop the traversal.  This can be done only if the child is well within the limits, but if the child has crossed  in the computation because parent is 6.  So child has crossed 2 into 6 plus 1, 12 plus 1, 13.   it has crossed the limit of the ith position it.  I-1 position. Child, the valid position for I is up to I-1 because I-th position is this  element. So, if the child has in the setting, if the child has become greater than I-1,  then you know that this is not possible and therefore, you will set the child to minus  1 so that the iteration can be stopped that is what I am going to do.   So here this is the position so I am going to replace this with 20.  here. So, this becomes 25. So, you can see that now the heap which was earlier like this  now has been constructed this way. So, your current position looks like this, this is  the heap. So, 86 is here 37, 57, 37 and 57, 57 and then you have 25 placed here. So, again   25 only.  has come in this example. So, this is out of the heap now 92 is out of the heap you  have only this much as part of the heap now. So, that is how we have to consider.  So, let us redraw this diagram once again. I will draw the diagram 86, 37, 57 and then   33 12 and then  and then 45 and then 92 but this is not there now, this is not part of the heap. So, this  is the only heap now that we have. So, now in this heap again we have to continue the  sorting. Since the next element to be considered is i minus 1 now, i we started at n minus   So, we have to start it n minus 2. So, I was started from here, I was started from here.  Next, I will go to this position.  So, when I goes to this position, it is 86, again you know that next highest element is  at the root, next highest element 86 has to come to this position again.  So, in this case, in this example, it is so happening that here again we have 25, ok.  It is not necessary that all the time we have something like that.   So, here what we have is 86, we have 57 and then here we have  So, this 86 will come into this position.  So, 86 will come and occupy this position.  So, 25 is getting displaced.  So, an element that is displaced is 25.  So, again we have to find out whether 25 will come to this position or greater of the two  children who will come and occupy this position.  Because this is now out of the heap.  This is out of the heap.  In the remaining heap position we have to re-adjust again.   So this procedure is called as reagent.  So, we adjust, so 86 will come and occupy this position 86, 86 is occupying this position  and this is 92 ok.  So, here what happens is 86 has come.  So, 25 we are looking for 25 now 25.   So  So, parent position is this, so greater of the two children, this is a parent position,  greater of the two children I will say that is the initialization child will be said.  Now is 57 going to occupy here or is it 25?  So you know that it is 57 that is going to come and sit here, so 57 will come up, so  this will be replaced with 57, again the greater of the two children.   please note that so the parent will come to this question greater.  the two children we have to do, but this is not part of the heap at all.  So it has only one left child correct.  So this is not to be considered, this position should not be considered.  As part of the heap only we have this.  So 57 right now has only one child okay.  So 48, is it 48 that should come here or is it 25 that should come here.  So I will repeat 86 we had moved to this.  This position should not be considered as part of the heap now.   The valid questions of the heap are only up to this.  So, this is not a valid position at all.  So, now what I am going to do is, is it 37 or 57?  57 has to move up.  So, 57 has moved up.  Parent position is this, the child position is 48.  Now, it is a left child, but the right child is not there now because it is not a valid  portion because it ends here.  So, we will set the child pointer only to the left child.  So, 48 should it come here or is it 25?   This is what we have to see 48 has to come.  So, 48 will come and occupy because 25 cannot be placed here right.  So, 48 has to come here and again 25 is going to be placed at this point because we are  already out of this.  So, it is a parent's position where the new element is going to be placed.  So, here what happens is this is 57 now, this position is going to be 57 and this position   is going to be.  is going to be 48 and this position will be the 25. So, this will be replaced with 25.  So, this is your new heap now two elements sorting is already done and 90 to 86 are already  part of the heap and this is how the correction is done. So, let us use this part. So, now   Now what I am going to fill in is.  57 and then 37, 48, 25. So, even in this case 25 is still at the last. Now, let us continue.  So, it is a repeat step now. So, now you know what needs to be done. Next highest element  in the heap 57 will come and occupy the position 25. So, 57 will be replacing this the next   largest element because our aim is to sort the  elements again displaced element is 25. So, 57 will come and sit here. So, 57, 86 and  92 are already done. So, the three elements sorting is already done ok 57, 86 and 92 these  are already done. These positions are no more belonging to the heap only this part is the   heat ok. So, again the element displaced is 25.  So, now here in this pictorial representation, this is going to be replaced with 57.  So, now what happens?  This is no more the part of heap, this is not part of the heap.  So, remaining positions we have to see again the displaced element is 25, is 25 going to  come here or 48 going to come here.  So, it is 48 again here.   No.  So, for 48 there is no child at all.  So, 25 is going to be fixed at the position 48, so it is simple.  So, in this case it is 48 and this is going to be 25.  So, we will be completing the heap construction here there.  So, now we will move the next one 48.   So, here the elements that are there are 57, 86, 92, the wrong.  all part of this. So, 48, so this is going to be replaced with 25, 48 is going to be   replaced with 25, so this is not there, this is 48, so now as you can see.  So, this is the 86, so 12 these are the various array positions, but this is already done,  this is already done 57, 86, 92.  So, we are not considering that.   Okay, so no.  And the next highest element in the set is 48, 48 is going to replace it the last element.  So in this case, in this case the 48 is going to be displacing 12.  So we are at some ith iteration.  So this is going to be removed and this becomes 48 now.  So because this becomes 48 now, these many elements are already done.   So we are completing these many.  element. So, now the displaced element is 12, the displaced element is 12. So, is 12  going to occupy this position or is it 37 or 25? So, 37 will come up, 37 will come up,  ok. Again here is 12 going to occupy this position because at this position we have   48. This is no longer belonging to the  Heap, this part is belonging to the heap now, this is 48, so this part is not there now.  So, now 37 or 25, 37 will come up, can I place 12 here? No, because 33 is greater child, so 33  will come and occupy this position and this will be 12. So, 33 will occupy the position here and   this is where 12 is going to be present. So, that is how it happens.  So, now let us consider the next position element ok. Again 12 is at the end, 12 is  at the end. So, here 12 is swapped with 37 is at this position now, 37 is at this position   we will make those changes 37, 33, 33, 32, 33, 32, 33, 32, 33, 32, 33, 33, 33, 33, 33, 33,  So, this is 33, 25, 12.  So, this is the heap that we have, this part is already sorted.  So, we have to move 37 to this position, 37.  Now this is already done.  So, 37 will come here, 37 is going to be occupying this position.   12 we have to now.  is it 33 or so in this position now we have 37. So, we have the heap 37. So, my heap  is already this much only now ok. So, now is it 12 or 33? So, 33. So, in this example  it is not necessary sometimes you may get a larger number. So, 12 is going to be so,   So, 33 is going to be replacing this and.  and because of the larger of the two. So, then this has no child. So, we stop at this  and this is where 12 is going to be replacing. So, what happens here is after 37 is replaced,  this will become 33 and 12 is going to be replacing this position. So, this is how the  heap tree is going to be present at this point. So, now I have come i is equal to 2. So, 25   I pick up 25 ok. Now, 25.  25 is the child. So, 33 is ok. Now, 33 is going to replace 25 ok, 33 the first element  has to come in here. 33 will come to the first element, the largest in the current set is  33. So, that part is already done now. So, we are finished with the sorting of this ok.   So, now 25 is .  replaced with 33 here, this is replaced with 33 and my heap is having consisting of only  two elements. So, this much is already done. So, here all that you have is 12, 12. So,   I use a con-  So, when i is equal to 2, you have only this left now. So, this is a 33 is replaced and  25 is the displaced element. So, is 25 going to occupy or 12 going to occupy? In this  case you can see that it is not the child that is occupying, but the 25 that is occupying  here. So, 25 will be replacing this position. So, we are left with two element heap now.   So, when you are doing this, you are doing this, you are doing this, you are doing this,  then i is equal to 1, so you just have to swap it that is it. So, 25 will come to this position,  so i equal to 1 we stop it and fix it as the parent position.  So, this is how the sorting of the elements is going to be done in the case of he being  present. So, all that we had to do was we have to start because my position starts from   this question n minus 1 up to 1 we have to go as .  you saw here, then we have to make sure that every time when I capture when i is equal  to n minus 1, all that we need to do is to make sure that the element is going to capture,  captured in this because we may have to move the highest element here.  So at that position, ith position, I move the highest element in the heap, then I set   the parent to parent position to zero child is  computed as 2p plus 1 first, but I do not know if this is the left child, but if initially  if you are in the more than 2 iteration greater than 2 and we are having the second, the right  child to be greater than the left child, then we have to set the value of child to the second  child that is what you have to do.   This is the initialization. Once the initialization is done, the initialization is done.  is completed, then what did we do? We have to keep iterating that right as long as we  have not found a place holder. See parent was here, parent was here, child was great  of the two child. So, then we saw that this child position element had to move up to the  parent position and parent would come here, child again is completed, great of the two   as long as the parent child keeps moving here.  So while child is greater than or equal to 0 minus 1 if we stop.  So and what we do is as long as the position at the child position element, if it is greater  than the element that we have displaced then the child has to move up, child has to come   to the position of the p.  parent, child has to come to the, child will move up, greater of the two children will  move up to the parent position and then the parent will come to child position, new parent  and the child is computed again to P plus 1 and then again we check if i is equal to  if the child, child plus 1, second the right child if it is greater than or equal to i minus   because the 8th question is already discussed.  rate, the right child's index is well within i minus 1 and the right child's index right  child element is greater than the left child then c is said to c plus 1.  After this initialization if c has become greater than i minus 1 then we have to make  the child as minus 1 ok. So, this is a way you have to keep looping once you are out  of the loop the correct position for the element is the parent position for the element to   be.  placed in. So, this is how the sorting is going to be carried out. So, let us try the  code for that continue the code here. So, this is after heapifying. So, now I want to  readjust and make sure that I do the sorting. So, as I said I am going to for i is equal   to n minus 1 to 1 n minus 1 ok. I will write this as n minus 1.  as long as it is greater than or equal to if it is equal to i, i will go up to only  one rate. So, i greater than 0, i minus minus, I keep moving forward. So, what I am going   to do is capture it in element a of i, a of i and then a of 0, a of 0 will get.  A of i will get, A of i will get A of 0 and then I am going to set the initialization,  parent will be set to 0 and the child pointer, if my i is equal to, if I am in the starting  iteration I do not have to continue at all right.   So, I have to check whether I have to continue the iteration. If i is equal to 1, then I know that I have to continue the iteration.  that I do not have to continue, so child will be set to minus 1. Otherwise, I need to figure  out that child has to be set to 1. Again, these are all initializations only. If again,  I have to check up to the second child I have to set, if i is greater than, i is greater   than 2 and a of 2, a of 2 is greater than a of 1, then I know that.  I have to set the child to 2. So, this is my initialization. So, as you can see, a of  i position element, a capturing element because that is getting displaced, a of 0, the largest  in the heap will come to last position. So, valid positions are only up to i minus 1.  Suppose if you are in the iteration i equal to 1, then there is nothing to continue, right?  You just have to swap. So, I will set c equal to minus 1, so that further loop is not executed.   otherwise I will set the C to temporarily left child.  Now I will check whether the right, if I am in the iteration greater than 2 then 2, position  2 is also valid.  Then A of 2 is greater than A of 1 then I will set child to 2.  So this is my initialization of the parent and child.  Now I have to keep doing this in the loop while the child is greater than or equal to  0.  See if it is minus 1 I would not even enter this and my element, the element is less than   the child in the position.  element the then greater of the two children only will go forward right.  So it will come and occupy A of p will be A of child the child greater of the two child  will move up.  Now the parent will come to the child's position again we have to start computing the child  now.   I am going to compute the child as first the left child 2 star 2 star.  2 star p plus 1 that is the computation that I am going to make. So, 2 star p plus 1 is  the left child then once the left child is set now I have to find out if the right child  is valid if c plus 1 is less than or equal to if the right child is a valid person less   then or it  equal to i minus 1 because you have the heap only up to i minus 1 because ith question  is displayed c plus 1 less than or equal to i minus 1 and you are the second left child.  Left child is less than the right child c c plus 1 then we have to set it to the right  child ok c should be set to the right child c should be already it is set to left child.   The right child is at one more position greater than the right child.  After initializing C, you never know, C might have crossed the positions, the array positions.  So because of this initialization, if C has become greater than i minus 1, then I know  that it is not a valid position for C. So C equal to minus 1 because 2 star P plus 1  you never know, it may cross the limit also.   if by chance the initialization has crossed the child index then we will  make sure that C is set to minus 1, so that you stop the iteration.  So this way we run the loop, now once we are out of this we know that the correct position  for the displaced element is the parent's position, so we set it at that and then I  continue in the for loop and then close it.  So now again I have to print the elements, this time I am going to print the sorted  set of elements.   So I am going to do this.  that now. So, the sorted set of elements are sorted elements using heap sort ok, heap   sort let us see. Let us run this program. This if is not closed.  Let us check that ok here, it is not closed, close this, we will run the program now ok.  So, it is fine now you dot exe run the program, so 8 elements same set of 8 elements I will   ok. Now, 25, now 57.  48, 37, 12, 92, 86, 33 ok. So, elements are in sorted order. I will just run it for another   instance now ok. I will take let us say 5 elements 12, 32, 54, 76, 1, 2, 3, 4, 5, 6,  So, this is elements are in sorted order.  So, this is how the heap is going to be constructed and then I am going to heapify and make sure  that the elements are going to be created in sorted order.  This is the program for first creation of the heap, I read the elements they are not  going to form a heap.  So, I form the heapify operations and then subsequently I proceed to sort them.   Here is an example of how to construct a heap.  heap and an application of heap which is the heap sort using the top down approach.  So this is how the heap is going to be used in sorting the set of elements."
+}

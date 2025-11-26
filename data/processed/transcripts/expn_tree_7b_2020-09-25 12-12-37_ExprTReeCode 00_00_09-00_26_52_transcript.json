@@ -1,0 +1,1418 @@
+{
+  "video_name": "expn_tree_7b_2020-09-25 12-12-37_ExprTReeCode 00_00_09-00_26_52",
+  "video_path": "data/raw/videos/expn_tree_7b_2020-09-25 12-12-37_ExprTReeCode 00_00_09-00_26_52.mkv",
+  "duration_seconds": 1603.222,
+  "transcript": [
+    {
+      "text": " So, expression, tree creation and evaluation, evaluation and for this I am going to make",
+      "start_time": 0.0,
+      "end_time": 15.88
+    },
+    {
+      "text": " use of different objects.",
+      "start_time": 15.88,
+      "end_time": 17.72
+    },
+    {
+      "text": " So, first let us look at what I mean by this.",
+      "start_time": 17.72,
+      "end_time": 22.32
+    },
+    {
+      "text": " So, you please note that we need to accept a postfix expression because I am going to",
+      "start_time": 22.32,
+      "end_time": 28.04
+    },
+    {
+      "text": "",
+      "start_time": 28.04,
+      "end_time": 0.0
+    },
+    {
+      "text": " create my binary expression.",
+      "start_time": 2.0,
+      "end_time": null
+    },
+    {
+      "text": " entry from a postfix expression and your postfix expression consists of I am going to directly",
+      "start_time": 30.0,
+      "end_time": 36.4
+    },
+    {
+      "text": " take single digits of this kind. So, these are my operands single digit operands.",
+      "start_time": 36.4,
+      "end_time": 44.16
+    },
+    {
+      "text": " Since I am taking these operands and they are also mixed kind of characters here, I",
+      "start_time": 44.16,
+      "end_time": 50.72
+    },
+    {
+      "text": " am going to use a character array postfix of some max characters. So, this is for the",
+      "start_time": 50.72,
+      "end_time": 58.04
+    },
+    {
+      "text": "",
+      "start_time": 58.04,
+      "end_time": 30.0
+    },
+    {
+      "text": " post fix this is a title.",
+      "start_time": 32.0,
+      "end_time": null
+    },
+    {
+      "text": " I am going to use. Now, you know that we are going to create something like this, this",
+      "start_time": 60.0,
+      "end_time": 68.4
+    },
+    {
+      "text": " is the expression binary expression tree that I am going to create. So, in this node is",
+      "start_time": 68.4,
+      "end_time": 74.03999999999999
+    },
+    {
+      "text": " an object. So, you are going to make use of the structure node, structure node which consists",
+      "start_time": 74.03999999999999,
+      "end_time": 81.4
+    },
+    {
+      "text": "",
+      "start_time": 81.4,
+      "end_time": 60.0
+    },
+    {
+      "text": " of information fail which is a character type, character information, the node is a",
+      "start_time": 68.56,
+      "end_time": null
+    },
+    {
+      "text": " character here and then it has a pointer to the left and it has a pointer to the right,",
+      "start_time": 90.0,
+      "end_time": 96.68
+    },
+    {
+      "text": " node pointers.",
+      "start_time": 96.68,
+      "end_time": 97.68
+    },
+    {
+      "text": " So, this is my node structure.",
+      "start_time": 97.68,
+      "end_time": 99.4
+    },
+    {
+      "text": " So, information field is a character in this case because it is a mixed type.",
+      "start_time": 99.4,
+      "end_time": 103.84
+    },
+    {
+      "text": " So, you have either the node to contain star or it can contain two.",
+      "start_time": 103.84,
+      "end_time": 109.28
+    },
+    {
+      "text": " So, both will be represented as characters here and stored in the tree construction.",
+      "start_time": 109.28,
+      "end_time": 114.28
+    },
+    {
+      "text": " So, this is what it is.",
+      "start_time": 114.28,
+      "end_time": 116.48
+    },
+    {
+      "text": " This is about the node.",
+      "start_time": 116.48,
+      "end_time": 117.48
+    },
+    {
+      "text": "",
+      "start_time": 117.48,
+      "end_time": 90.0
+    },
+    {
+      "text": " So this entire tree is an object for me.",
+      "start_time": 92.32,
+      "end_time": null
+    },
+    {
+      "text": " And this tree object is going to be pointed by the root node.",
+      "start_time": 120.0,
+      "end_time": 124.44
+    },
+    {
+      "text": " So, this is my tree object.",
+      "start_time": 124.44,
+      "end_time": 127.08
+    },
+    {
+      "text": " So, I am going to create a tree object.",
+      "start_time": 127.08,
+      "end_time": 131.64
+    },
+    {
+      "text": " So, this tree object will have only one attribute which is a pointer to the root node.",
+      "start_time": 131.64,
+      "end_time": 140.12
+    },
+    {
+      "text": " So, this pointer is a pointer to this type of node.",
+      "start_time": 140.12,
+      "end_time": 143.28
+    },
+    {
+      "text": " So, that is my tree object.",
+      "start_time": 143.28,
+      "end_time": 145.28
+    },
+    {
+      "text": " So, this is another object.",
+      "start_time": 145.28,
+      "end_time": 146.96
+    },
+    {
+      "text": "",
+      "start_time": 146.96,
+      "end_time": 120.0
+    },
+    {
+      "text": " Now as and when I am traversing, so the way I am traversing is to make sure that the",
+      "start_time": 127.0,
+      "end_time": null
+    },
+    {
+      "text": " going to create here is 3 is created as a node and I am going to push this address of 3 on",
+      "start_time": 150.0,
+      "end_time": 158.88
+    },
+    {
+      "text": " the stack, address of 3 on the stack. Then I am going to create 4 and push the address",
+      "start_time": 158.88,
+      "end_time": 164.0
+    },
+    {
+      "text": " of 4 on the stack. So, this is a stack containing addresses. So, my stack object, my stack object",
+      "start_time": 164.0,
+      "end_time": 172.56
+    },
+    {
+      "text": "",
+      "start_time": 172.56,
+      "end_time": 150.0
+    },
+    {
+      "text": " structure stack will contain let us say the stack name is .",
+      "start_time": 157.4,
+      "end_time": null
+    },
+    {
+      "text": " s of some max, it is of not integer in this case, it is containing addresses. So, it",
+      "start_time": 180.0,
+      "end_time": 187.0
+    },
+    {
+      "text": " is a node star stack and the top as usual is. So, this is the object stack. So, you",
+      "start_time": 187.0,
+      "end_time": 193.8
+    },
+    {
+      "text": " have an object stack, the postfix array, you have the node which is an object here and",
+      "start_time": 193.8,
+      "end_time": 199.76
+    },
+    {
+      "text": " you have the tree object. So, these are the varieties of objects that I need to possess",
+      "start_time": 199.76,
+      "end_time": 205.48
+    },
+    {
+      "text": "",
+      "start_time": 205.48,
+      "end_time": 180.0
+    },
+    {
+      "text": " to make sure that I construct a binary expression tree accordingly.",
+      "start_time": 184.54,
+      "end_time": null
+    },
+    {
+      "text": " and then subsequently proceed for evaluation. So, let us continue.",
+      "start_time": 210.0,
+      "end_time": 216.16
+    },
+    {
+      "text": " So, I will include the file first. It is dynamic allocation for the nodes, included",
+      "start_time": 216.16,
+      "end_time": 234.16
+    },
+    {
+      "text": "",
+      "start_time": 234.16,
+      "end_time": 210.0
+    },
+    {
+      "text": " Now, I am going to create all the varieties of all the varieties.",
+      "start_time": 222.56,
+      "end_time": null
+    },
+    {
+      "text": " PostfixRM going to create it in the name.",
+      "start_time": 240.0,
+      "end_time": 243.4
+    },
+    {
+      "text": " So I am going to first create the stack object.",
+      "start_time": 243.4,
+      "end_time": 253.76
+    },
+    {
+      "text": " As for the stack object, sorry, for the stack object you need node pointer.",
+      "start_time": 253.76,
+      "end_time": 257.96
+    },
+    {
+      "text": " So I need to have the node definition first.",
+      "start_time": 257.96,
+      "end_time": 262.0
+    },
+    {
+      "text": " StructureNode.",
+      "start_time": 262.0,
+      "end_time": 265.56
+    },
+    {
+      "text": "",
+      "start_time": 265.56,
+      "end_time": 240.0
+    },
+    {
+      "text": " It has character info to indicate what is the value of the character info.",
+      "start_time": 247.0,
+      "end_time": null
+    },
+    {
+      "text": " whether it is a operator or an outrider, left pointer and right pointer to point to the left",
+      "start_time": 270.0,
+      "end_time": 280.44
+    },
+    {
+      "text": " and right children. This is your node pointer and the tree itself has one pointer called",
+      "start_time": 280.44,
+      "end_time": 294.88
+    },
+    {
+      "text": "",
+      "start_time": 294.88,
+      "end_time": 270.0
+    },
+    {
+      "text": " is the root pointer and that is your root pointer.",
+      "start_time": 275.12,
+      "end_time": null
+    },
+    {
+      "text": " a tree data type and now the structure stack pointer, they said this has to have S of some",
+      "start_time": 300.0,
+      "end_time": 307.28
+    },
+    {
+      "text": " max. So, we will go and define the max.",
+      "start_time": 307.28,
+      "end_time": 311.84
+    },
+    {
+      "text": " Let us leave some here I just say. So, I come back here. So, it is an array of node pointer",
+      "start_time": 311.84,
+      "end_time": 324.28
+    },
+    {
+      "text": "",
+      "start_time": 324.28,
+      "end_time": 300.0
+    },
+    {
+      "text": " as I said, mode pointer is defined ok. So, S is a static mode pointer.",
+      "start_time": 305.72,
+      "end_time": null
+    },
+    {
+      "text": " which consists of not integers, but moodstaffs and then we also need to have the top. So,",
+      "start_time": 330.0,
+      "end_time": 336.0
+    },
+    {
+      "text": " these are the two attributes of the stack object. So, then so, we are pretty much done",
+      "start_time": 336.0,
+      "end_time": 343.6
+    },
+    {
+      "text": " with all the objects that I needed main objects that I needed. So, we have to now proceed for",
+      "start_time": 343.6,
+      "end_time": 348.88
+    },
+    {
+      "text": " initializations of various types. So, this is init tree init tree. So, the handler is passed",
+      "start_time": 348.88,
+      "end_time": 357.92
+    },
+    {
+      "text": "",
+      "start_time": 358.48,
+      "end_time": 330.0
+    },
+    {
+      "text": " for this.",
+      "start_time": 332.0,
+      "end_time": null
+    },
+    {
+      "text": " going to init refunction is responsible for initializing the root to null. Now, I am going",
+      "start_time": 360.0,
+      "end_time": 370.04
+    },
+    {
+      "text": " to also initialize the stack init stack init stack. It is a stack handler that I will pass",
+      "start_time": 370.04,
+      "end_time": 379.04
+    },
+    {
+      "text": " on now pointed to the stack. So, here ps pointing to the top is initialized to minus 1. It is",
+      "start_time": 379.04,
+      "end_time": 386.8
+    },
+    {
+      "text": "",
+      "start_time": 386.8,
+      "end_time": 360.0
+    },
+    {
+      "text": " the stack implementation using arrays.",
+      "start_time": 362.72,
+      "end_time": null
+    },
+    {
+      "text": " So, we have done initialization of the tree as well as the stack.",
+      "start_time": 390.0,
+      "end_time": 394.48
+    },
+    {
+      "text": " Now, we will have to proceed for the push function.",
+      "start_time": 394.48,
+      "end_time": 400.24
+    },
+    {
+      "text": " So, in the push function what I am going to do is push the push into the stack, push into",
+      "start_time": 400.24,
+      "end_time": 411.96
+    },
+    {
+      "text": " the stack the element E and return whether push was successful or not.",
+      "start_time": 411.96,
+      "end_time": 418.08
+    },
+    {
+      "text": "",
+      "start_time": 418.08,
+      "end_time": 390.0
+    },
+    {
+      "text": " So if...",
+      "start_time": 392.0,
+      "end_time": null
+    },
+    {
+      "text": " PS top is equal to max minus 1 not possible to push, right. So, return not successful,",
+      "start_time": 420.0,
+      "end_time": 430.08
+    },
+    {
+      "text": " so return 0 else it is possible to push the element. So, I am going to increment the top pointer and",
+      "start_time": 430.08,
+      "end_time": 438.24
+    },
+    {
+      "text": " then the stack is going to be housed at top position the value that we have to push. So,",
+      "start_time": 438.24,
+      "end_time": 448.24
+    },
+    {
+      "text": "",
+      "start_time": 448.24,
+      "end_time": 420.0
+    },
+    {
+      "text": " in this case it is not an.",
+      "start_time": 421.76,
+      "end_time": null
+    },
+    {
+      "text": " integer pointer, but the stack contains node star pointers. So, we have to pass the element",
+      "start_time": 450.0,
+      "end_time": 458.8
+    },
+    {
+      "text": " is a node star type. So, E has to be assigned to this. This is the stack and since this",
+      "start_time": 458.8,
+      "end_time": 466.76
+    },
+    {
+      "text": " is a first one I will return one. This is the push operation. Now, the pop operation",
+      "start_time": 466.76,
+      "end_time": 476.8
+    },
+    {
+      "text": "",
+      "start_time": 476.8,
+      "end_time": 450.0
+    },
+    {
+      "text": " the pop operation is let it return node star in this case.",
+      "start_time": 453.24,
+      "end_time": null
+    },
+    {
+      "text": " written, I will call the pop only if it is not empty in this case, stat, star PS, if",
+      "start_time": 480.0,
+      "end_time": 492.24
+    },
+    {
+      "text": " it is not empty, so I am not taking care of empty here. So, I will from the top position",
+      "start_time": 492.24,
+      "end_time": 498.04
+    },
+    {
+      "text": "",
+      "start_time": 498.04,
+      "end_time": 480.0
+    },
+    {
+      "text": " I have to node star temp is equal to PS pointing to stack from the top position.",
+      "start_time": 491.4,
+      "end_time": 480.0
+    },
+    {
+      "text": " position.",
+      "start_time": 480.56,
+      "end_time": null
+    },
+    {
+      "text": " the topmost pointer is removed. Now, we have to increment the top and return the top nodes",
+      "start_time": 510.0,
+      "end_time": 523.92
+    },
+    {
+      "text": " address which is there. So, otherwise you have to use pointer to pointer, so which I",
+      "start_time": 523.92,
+      "end_time": 530.4
+    },
+    {
+      "text": " am avoiding right now. So, the pop function has been sent has been called assuming that",
+      "start_time": 530.4,
+      "end_time": 536.76
+    },
+    {
+      "text": "",
+      "start_time": 536.76,
+      "end_time": 510.0
+    },
+    {
+      "text": " it is not empty. This is the assumption I have made.",
+      "start_time": 513.28,
+      "end_time": null
+    },
+    {
+      "text": " empty checking has been done, empty checked before entering the power ok, empty condition",
+      "start_time": 540.0,
+      "end_time": 558.36
+    },
+    {
+      "text": "",
+      "start_time": 558.36,
+      "end_time": 540.0
+    },
+    {
+      "text": " checked before assumption.",
+      "start_time": 550.16,
+      "end_time": null
+    },
+    {
+      "text": " So, I am just returning the topmost nodes address that is the pop function.",
+      "start_time": 570.0,
+      "end_time": 584.48
+    },
+    {
+      "text": " Now we have to see how the main function goes and then I will come back and define few more",
+      "start_time": 584.48,
+      "end_time": 592.2
+    },
+    {
+      "text": " functions like evaluate and all that.",
+      "start_time": 592.2,
+      "end_time": 595.16
+    },
+    {
+      "text": " And also we have to go for creation of the tree.",
+      "start_time": 595.16,
+      "end_time": 598.32
+    },
+    {
+      "text": "",
+      "start_time": 598.32,
+      "end_time": 570.0
+    },
+    {
+      "text": " So, let us first.",
+      "start_time": 571.68,
+      "end_time": null
+    },
+    {
+      "text": " to almost define the post-fix expression ok. This is also of some max characters. So, I",
+      "start_time": 600.0,
+      "end_time": 607.0
+    },
+    {
+      "text": " will accept the post-fix expression, valid post-fix expression, valid post-fix expression.",
+      "start_time": 607.0,
+      "end_time": 620.12
+    },
+    {
+      "text": " This code is going to work only if the valid post-fix expression is entered percent s post-fix",
+      "start_time": 620.12,
+      "end_time": 629.2
+    },
+    {
+      "text": "",
+      "start_time": 629.2,
+      "end_time": 600.0
+    },
+    {
+      "text": " Thanks.",
+      "start_time": 600.5,
+      "end_time": null
+    },
+    {
+      "text": " So, our postfix expression is ready.",
+      "start_time": 630.0,
+      "end_time": 633.36
+    },
+    {
+      "text": " Now, we have to start scanning one by one for creation of the tree while postfix of",
+      "start_time": 633.36,
+      "end_time": 640.28
+    },
+    {
+      "text": " as long as you have symbols left in the postfix array not equal to null as long as postfix",
+      "start_time": 640.28,
+      "end_time": 657.2
+    },
+    {
+      "text": "",
+      "start_time": 657.2,
+      "end_time": 630.0
+    },
+    {
+      "text": " of i is not equal to null. So, we will have to do this.",
+      "start_time": 632.82,
+      "end_time": null
+    },
+    {
+      "text": " to define the variable i and i in such a to 0. So, I have to start scanning the postfix",
+      "start_time": 660.0,
+      "end_time": 665.88
+    },
+    {
+      "text": " characters, I have to check if the postfix character is a operand or an operator. So,",
+      "start_time": 665.88,
+      "end_time": 674.36
+    },
+    {
+      "text": " but in any case we will have to allocate memory for this. So, I am going to allocate memory",
+      "start_time": 674.36,
+      "end_time": 680.76
+    },
+    {
+      "text": "",
+      "start_time": 680.76,
+      "end_time": 660.0
+    },
+    {
+      "text": " or this particular symbol, AV symbol that we encounter we have to allocate memory malloc",
+      "start_time": 669.2,
+      "end_time": null
+    },
+    {
+      "text": " size of node, I allocate this and Thames information field must be filled with this particular",
+      "start_time": 690.0,
+      "end_time": 704.84
+    },
+    {
+      "text": " character postfix of my character.",
+      "start_time": 704.84,
+      "end_time": 709.52
+    },
+    {
+      "text": "",
+      "start_time": 709.52,
+      "end_time": 690.0
+    },
+    {
+      "text": " And then this temps left is said to null, temps right is 0, temps right is 0, temps",
+      "start_time": 703.52,
+      "end_time": null
+    },
+    {
+      "text": " set to null, set to null. Now, we have to find out if the character if postfix of i,",
+      "start_time": 720.0,
+      "end_time": 731.0
+    },
+    {
+      "text": " if it is if is digit because I am only considering digits otherwise you should have said is all",
+      "start_time": 731.0,
+      "end_time": 739.8
+    },
+    {
+      "text": " num is digit postfix of i, if it is a digit type then I know that I just need to push",
+      "start_time": 739.8,
+      "end_time": 746.8
+    },
+    {
+      "text": "",
+      "start_time": 746.8,
+      "end_time": 720.0
+    },
+    {
+      "text": " because right now I do not know what to do with it.",
+      "start_time": 723.08,
+      "end_time": null
+    },
+    {
+      "text": " just push the function. So, I call the push function and pass the stack object. So, have",
+      "start_time": 750.0,
+      "end_time": 758.32
+    },
+    {
+      "text": " I created a stack object? No. So, I will create a stack object here. So, I need a stack here",
+      "start_time": 758.32,
+      "end_time": 765.36
+    },
+    {
+      "text": " to work with in this program. So, stack object I create and stack object and then I also",
+      "start_time": 765.36,
+      "end_time": 776.0
+    },
+    {
+      "text": "",
+      "start_time": 776.0,
+      "end_time": 750.0
+    },
+    {
+      "text": " So created tree object, tree object.",
+      "start_time": 753.6,
+      "end_time": null
+    },
+    {
+      "text": " And I make sure that I initialize both init tree and I pass the tree object to it.",
+      "start_time": 780.0,
+      "end_time": 791.36
+    },
+    {
+      "text": " Then I call init stack and I pass the stack object to it.",
+      "start_time": 791.36,
+      "end_time": 798.8
+    },
+    {
+      "text": " So, these two are initialized now ready with that.",
+      "start_time": 798.8,
+      "end_time": 804.68
+    },
+    {
+      "text": "",
+      "start_time": 804.68,
+      "end_time": 780.0
+    },
+    {
+      "text": " So, I am going to now push to the stack.",
+      "start_time": 785.04,
+      "end_time": null
+    },
+    {
+      "text": " push to the stack, which stack the stack object, what I have to push is the temp address,",
+      "start_time": 810.0,
+      "end_time": 819.68
+    },
+    {
+      "text": " address of the node which is present in temp. So, not address of temp, what about temp contains,",
+      "start_time": 819.68,
+      "end_time": 828.48
+    },
+    {
+      "text": "",
+      "start_time": 828.48,
+      "end_time": 810.0
+    },
+    {
+      "text": " If it is not a digit, we know that the temp's right side will be what?",
+      "start_time": 821.52,
+      "end_time": null
+    },
+    {
+      "text": " whatever we pop out whatever it returns. First one which we pop out should be set as",
+      "start_time": 840.0,
+      "end_time": 846.64
+    },
+    {
+      "text": " temp's right side. So, we have to pop it out from the stack object and the address of",
+      "start_time": 846.64,
+      "end_time": 853.88
+    },
+    {
+      "text": " the node that is present. Then the next popping out will make sure that it is set to the current",
+      "start_time": 853.88,
+      "end_time": 859.6
+    },
+    {
+      "text": "",
+      "start_time": 859.6,
+      "end_time": 840.0
+    },
+    {
+      "text": " times left side. So, we pop the object then I am going to push.",
+      "start_time": 849.92,
+      "end_time": null
+    },
+    {
+      "text": " push the object, push the object temporary. So, that is how I am going to make sure that",
+      "start_time": 870.0,
+      "end_time": 884.6
+    },
+    {
+      "text": " if it is not a digit, then I am going to pop and then pop and finally, I push it. So,",
+      "start_time": 884.6,
+      "end_time": 890.88
+    },
+    {
+      "text": " if the stack is not empty, we have to do it. If top is not equal to minus 1, then we have",
+      "start_time": 890.88,
+      "end_time": 897.4
+    },
+    {
+      "text": "",
+      "start_time": 897.4,
+      "end_time": 870.0
+    },
+    {
+      "text": " to do that.",
+      "start_time": 872.0,
+      "end_time": null
+    },
+    {
+      "text": " So this is how the pushing and popping operations are going to be done as long as we have characters",
+      "start_time": 900.0,
+      "end_time": 906.68
+    },
+    {
+      "text": " in the postfix expression.",
+      "start_time": 906.68,
+      "end_time": 909.76
+    },
+    {
+      "text": " Now once we have done with one character parsing, I am going to increment i and then continue",
+      "start_time": 909.76,
+      "end_time": 917.52
+    },
+    {
+      "text": " in the scanning of the postfix expression.",
+      "start_time": 917.52,
+      "end_time": 919.72
+    },
+    {
+      "text": " So like this I keep creating.",
+      "start_time": 919.72,
+      "end_time": 922.08
+    },
+    {
+      "text": " So once you are out of the postfix expression creation, you know that the root address is",
+      "start_time": 922.08,
+      "end_time": 927.84
+    },
+    {
+      "text": "",
+      "start_time": 927.84,
+      "end_time": 900.0
+    },
+    {
+      "text": " present in the story.",
+      "start_time": 902.16,
+      "end_time": null
+    },
+    {
+      "text": " as a last element. So, that we will have to connect it to the trees objects root pointer.",
+      "start_time": 930.0,
+      "end_time": 936.88
+    },
+    {
+      "text": " So, tree objects root pointer, tree objects root pointer will contain whatever we are",
+      "start_time": 936.88,
+      "end_time": 946.2
+    },
+    {
+      "text": " going to pop out finally from the stack object. So, the root is set. So, this is about the",
+      "start_time": 946.2,
+      "end_time": 956.32
+    },
+    {
+      "text": "",
+      "start_time": 956.32,
+      "end_time": 930.0
+    },
+    {
+      "text": " creation of the tree, creation of the tree.",
+      "start_time": 933.44,
+      "end_time": null
+    },
+    {
+      "text": " Now, we have to call the eval function, to call the eval function we have to pass the",
+      "start_time": 960.0,
+      "end_time": 966.44
+    },
+    {
+      "text": " tree object again.",
+      "start_time": 966.44,
+      "end_time": 969.32
+    },
+    {
+      "text": " Then the evaluated value is going to be returned, so that we will print it here.",
+      "start_time": 969.32,
+      "end_time": 984.96
+    },
+    {
+      "text": "",
+      "start_time": 984.96,
+      "end_time": 960.0
+    },
+    {
+      "text": " evaluated value of the expression.",
+      "start_time": 965.08,
+      "end_time": null
+    },
+    {
+      "text": " that is house-divider tree and then we end the main function. So, now I have to write",
+      "start_time": 990.0,
+      "end_time": 996.72
+    },
+    {
+      "text": " the eval function.",
+      "start_time": 996.72,
+      "end_time": 998.52
+    },
+    {
+      "text": "",
+      "start_time": 998.52,
+      "end_time": 990.0
+    },
+    {
+      "text": " So tree object is passed here.",
+      "start_time": 1005.32,
+      "end_time": 990.0
+    },
+    {
+      "text": " I am going to enter all the eval tree form.",
+      "start_time": 996.0,
+      "end_time": null
+    },
+    {
+      "text": " So, this is, see this is based on recursion.",
+      "start_time": 1020.0,
+      "end_time": 1025.92
+    },
+    {
+      "text": " So I am going to recurse on nodes.",
+      "start_time": 1025.92,
+      "end_time": 1031.12
+    },
+    {
+      "text": " So I am going to internally use another eval function to work on the nodes.",
+      "start_time": 1031.12,
+      "end_time": 1037.96
+    },
+    {
+      "text": " I am going to write it down that way.",
+      "start_time": 1037.96,
+      "end_time": 1044.24
+    },
+    {
+      "text": "",
+      "start_time": 1044.24,
+      "end_time": 1020.0
+    },
+    {
+      "text": " So now float divided.",
+      "start_time": 1027.0,
+      "end_time": null
+    },
+    {
+      "text": " So, I will write this function above, so that I do not have to do the prototype declination.",
+      "start_time": 1050.0,
+      "end_time": 1055.92
+    },
+    {
+      "text": " So, the recursion is on the node pointers node star root.",
+      "start_time": 1055.92,
+      "end_time": 1061.76
+    },
+    {
+      "text": " So, I am going to check a switch based on root info, root info.",
+      "start_time": 1061.76,
+      "end_time": 1070.4
+    },
+    {
+      "text": " If the root info case is a, see I am going to use only certain operators here plus and",
+      "start_time": 1070.4,
+      "end_time": 1079.88
+    },
+    {
+      "text": "",
+      "start_time": 1079.88,
+      "end_time": 1050.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1051.0,
+      "end_time": null
+    },
+    {
+      "text": " The root info might be a minus operator that is possible and I am allowing the star operator",
+      "start_time": 1080.0,
+      "end_time": 1090.0
+    },
+    {
+      "text": " to be present and then I am checking it is the slash operator.",
+      "start_time": 1090.0,
+      "end_time": 1097.44
+    },
+    {
+      "text": " So, if it is a case of plus, I know that if it is a plus operator at the root, I have",
+      "start_time": 1097.44,
+      "end_time": 1108.88
+    },
+    {
+      "text": "",
+      "start_time": 1108.88,
+      "end_time": 1080.0
+    },
+    {
+      "text": " to evaluate.",
+      "start_time": 1081.16,
+      "end_time": null
+    },
+    {
+      "text": " the left side of the tree first, I have to evaluate the left side of the tree and if",
+      "start_time": 1110.0,
+      "end_time": 1115.74
+    },
+    {
+      "text": " I get the answer for the left side of the tree, left side of the tree then I can apply",
+      "start_time": 1115.74,
+      "end_time": 1122.28
+    },
+    {
+      "text": " the plus operation and I have to also get the right side value. So, then I can apply",
+      "start_time": 1122.28,
+      "end_time": 1131.84
+    },
+    {
+      "text": "",
+      "start_time": 1131.84,
+      "end_time": 1110.0
+    },
+    {
+      "text": " the operation plus. So, we have to break. So, the same thing has to be.",
+      "start_time": 1117.48,
+      "end_time": null
+    },
+    {
+      "text": " written for minus except the symbol. So, we have to do this here we have to multiply",
+      "start_time": 1140.0,
+      "end_time": 1149.92
+    },
+    {
+      "text": " to multiply and then we here we have to divide.",
+      "start_time": 1152.32,
+      "end_time": 1157.04
+    },
+    {
+      "text": "",
+      "start_time": 1167.28,
+      "end_time": 1140.0
+    },
+    {
+      "text": " otherwise it is a default case.",
+      "start_time": 1152.2,
+      "end_time": null
+    },
+    {
+      "text": " In the default case, what I am going to return is return root info, I have to convert that",
+      "start_time": 1170.0,
+      "end_time": 1182.04
+    },
+    {
+      "text": " into integer version because it is in the form of a character and earlier in stack operations",
+      "start_time": 1182.04,
+      "end_time": 1188.36
+    },
+    {
+      "text": " while evaluating the expressions I have said that in order to convert a character into",
+      "start_time": 1188.36,
+      "end_time": 1193.8
+    },
+    {
+      "text": " a number, you can use subtract as key value of 0.",
+      "start_time": 1193.8,
+      "end_time": 1198.56
+    },
+    {
+      "text": "",
+      "start_time": 1198.56,
+      "end_time": 1170.0
+    },
+    {
+      "text": " is home mate.",
+      "start_time": 1171.16,
+      "end_time": null
+    },
+    {
+      "text": " case is going to work and we have to return the result. So, that is how the function evaluate",
+      "start_time": 1200.0,
+      "end_time": 1213.52
+    },
+    {
+      "text": " is going to be written. So, this is the code for evaluation of the expression.",
+      "start_time": 1213.52,
+      "end_time": 1222.72
+    },
+    {
+      "text": "",
+      "start_time": 1222.72,
+      "end_time": 1200.0
+    },
+    {
+      "text": " So, now let us run this expression.",
+      "start_time": 1207.28,
+      "end_time": null
+    },
+    {
+      "text": " So, we can see some errors result is undeclared, and this undeclared.",
+      "start_time": 1230.0,
+      "end_time": 1252.56
+    },
+    {
+      "text": "",
+      "start_time": 1252.56,
+      "end_time": 1230.0
+    },
+    {
+      "text": " digit has to be declared.",
+      "start_time": 1237.0,
+      "end_time": null
+    },
+    {
+      "text": " is digit is a certain variables which I need to define unit function, we start there and",
+      "start_time": 1260.0,
+      "end_time": 1277.36
+    },
+    {
+      "text": " temp has been used. So, I have to define temp. Temp is of type node type. So, I am going",
+      "start_time": 1277.36,
+      "end_time": 1287.56
+    },
+    {
+      "text": "",
+      "start_time": 1287.56,
+      "end_time": 1260.0
+    },
+    {
+      "text": " define mode star.",
+      "start_time": 1262.44,
+      "end_time": null
+    },
+    {
+      "text": " and a snobget and then the models I had to define the c type .h to include c type .h",
+      "start_time": 1290.0,
+      "end_time": 1307.44
+    },
+    {
+      "text": "",
+      "start_time": 1307.44,
+      "end_time": 1290.0
+    },
+    {
+      "text": " machine to C type dot h, this is to be included.",
+      "start_time": 1297.0,
+      "end_time": null
+    },
+    {
+      "text": " That is it, we will see now, compile and see.",
+      "start_time": 1320.0,
+      "end_time": 1327.0
+    },
+    {
+      "text": " The result is not a declared, so we will just declare that.",
+      "start_time": 1327.0,
+      "end_time": 1332.0
+    },
+    {
+      "text": " In the eval function, I am going to declare the result, load result and main I am just",
+      "start_time": 1332.0,
+      "end_time": 1344.0
+    },
+    {
+      "text": "",
+      "start_time": 1344.0,
+      "end_time": 1320.0
+    },
+    {
+      "text": " going to do. And it has u to mean.",
+      "start_time": 1322.0,
+      "end_time": null
+    },
+    {
+      "text": " I am going to save this, you will run the program again, ok. There is no error, we will",
+      "start_time": 1350.0,
+      "end_time": 1356.68
+    },
+    {
+      "text": " see whether it works now. So, I will say 2 3 plus if I point 0, 2 3 4 plus minus, 2",
+      "start_time": 1356.68,
+      "end_time": 1371.16
+    },
+    {
+      "text": " 3 4 plus minus, I told you I have to give a valid expression. So, 2 3 4 plus minus,",
+      "start_time": 1371.16,
+      "end_time": 1379.56
+    },
+    {
+      "text": "",
+      "start_time": 1379.56,
+      "end_time": 1350.0
+    },
+    {
+      "text": " the three.",
+      "start_time": 1350.5,
+      "end_time": null
+    },
+    {
+      "text": " is 7. So, 2 minus 7 is minus 5 that is fine, 2 3 plus 4 5 minus, so 5 and this is minus",
+      "start_time": 1380.0,
+      "end_time": 1393.6
+    },
+    {
+      "text": " 1 into, so minus 5. Next I will work out another 8 7 slash, 8 7 slash and then 2 3",
+      "start_time": 1393.6,
+      "end_time": 1408.68
+    },
+    {
+      "text": "",
+      "start_time": 1408.68,
+      "end_time": 1380.0
+    },
+    {
+      "text": " less stuff.",
+      "start_time": 1381.32,
+      "end_time": null
+    },
+    {
+      "text": " So, this is 8 by 7 some decimal you will get ok. So, that probably we will use a proper",
+      "start_time": 1410.0,
+      "end_time": 1419.92
+    },
+    {
+      "text": " number so that I will know. 8 2 slash so 8 by 2 is 4, 4, 5, 20, 20 is the answer. So,",
+      "start_time": 1419.92,
+      "end_time": 1430.96
+    },
+    {
+      "text": " that is how you get it. So, this is how the expression tree is going to be created as well",
+      "start_time": 1430.96,
+      "end_time": 1438.56
+    },
+    {
+      "text": "",
+      "start_time": 1438.56,
+      "end_time": 1410.0
+    },
+    {
+      "text": " evaluated.",
+      "start_time": 1411.08,
+      "end_time": null
+    },
+    {
+      "text": " So, you can see that I will just do a quick recap.",
+      "start_time": 1440.0,
+      "end_time": 1445.28
+    },
+    {
+      "text": " So, we took the postfix expression for every symbol had to allocate memory and if it was",
+      "start_time": 1445.28,
+      "end_time": 1451.76
+    },
+    {
+      "text": " a digit I just pushed it, if it is not a digit I just popped the two made them as right and",
+      "start_time": 1451.76,
+      "end_time": 1457.56
+    },
+    {
+      "text": " left and pushed it again.",
+      "start_time": 1457.56,
+      "end_time": 1459.2
+    },
+    {
+      "text": " This way we keep continue for every symbol at the end of it the final address of the",
+      "start_time": 1459.2,
+      "end_time": 1464.96
+    },
+    {
+      "text": " tree is present in the stack which I popped and made it as the whole.",
+      "start_time": 1464.96,
+      "end_time": 1468.6
+    },
+    {
+      "text": "",
+      "start_time": 1468.6,
+      "end_time": 1440.0
+    },
+    {
+      "text": " Now the tree is ready.",
+      "start_time": 1441.16,
+      "end_time": null
+    },
+    {
+      "text": " Of course, this point this entire portion of the tree creation could have been moved",
+      "start_time": 1470.0,
+      "end_time": 1474.44
+    },
+    {
+      "text": " to a function for better modularity and then we are going to call the evaluate tree function.",
+      "start_time": 1474.44,
+      "end_time": 1481.68
+    },
+    {
+      "text": " Since there is the slash operation which I am considering I am using the float value",
+      "start_time": 1481.68,
+      "end_time": 1486.68
+    },
+    {
+      "text": " as evaluated value.",
+      "start_time": 1486.68,
+      "end_time": 1488.32
+    },
+    {
+      "text": " So here I am going to call the I have sent the tree rooted at R. Now if the root is plus",
+      "start_time": 1488.32,
+      "end_time": 1496.0
+    },
+    {
+      "text": "",
+      "start_time": 1496.0,
+      "end_time": 1470.0
+    },
+    {
+      "text": " you know that you need a value for the left side and right side so that you can up.",
+      "start_time": 1474.0,
+      "end_time": null
+    },
+    {
+      "text": " So, I am going to call in recursion left side and I am going to call in right side the recursion.",
+      "start_time": 1500.0,
+      "end_time": 1506.44
+    },
+    {
+      "text": " So, this way we continue evaluating.",
+      "start_time": 1506.44,
+      "end_time": 1509.92
+    },
+    {
+      "text": " So, let me demonstrate that through an example how the evaluated values work.",
+      "start_time": 1509.92,
+      "end_time": 1518.08
+    },
+    {
+      "text": " So, let us say this is plus, this is 2 and this is star and this is 3 and this is 4.",
+      "start_time": 1518.08,
+      "end_time": 1528.12
+    },
+    {
+      "text": "",
+      "start_time": 1528.12,
+      "end_time": 1500.0
+    },
+    {
+      "text": " This is the expression that we have.",
+      "start_time": 1501.56,
+      "end_time": null
+    },
+    {
+      "text": " So, I call evaluate add plus, evaluated plus. So, I am going to call result is equal to",
+      "start_time": 1530.0,
+      "end_time": 1537.84
+    },
+    {
+      "text": " evaluate 2 and plus operation evaluate star. So, this will be returning the result. So,",
+      "start_time": 1537.84,
+      "end_time": 1550.32
+    },
+    {
+      "text": " evaluate 2 when we call it is a deform. So, it returns character 2 minus character 0 which",
+      "start_time": 1550.32,
+      "end_time": 1557.92
+    },
+    {
+      "text": "",
+      "start_time": 1557.92,
+      "end_time": 1530.0
+    },
+    {
+      "text": " is nothing but 2.",
+      "start_time": 1532.08,
+      "end_time": null
+    },
+    {
+      "text": " So, this value 2 is written to this, evaluate star, evaluate star will make sure that we",
+      "start_time": 1560.0,
+      "end_time": 1573.4
+    },
+    {
+      "text": " will call result equal to evaluate 3 into evaluate 4, this will be called this will",
+      "start_time": 1573.4,
+      "end_time": 1585.76
+    },
+    {
+      "text": "",
+      "start_time": 1585.76,
+      "end_time": 1560.0
+    },
+    {
+      "text": " return 3, this will be called this will return 4.",
+      "start_time": 1564.24,
+      "end_time": null
+    },
+    {
+      "text": " So, 3 into 4, 12, ok, 12 plus to 14.",
+      "start_time": 1590.0,
+      "end_time": 1595.8
+    },
+    {
+      "text": " So, the 14 is going to be returned from this function.",
+      "start_time": 1595.8,
+      "end_time": 1599.28
+    },
+    {
+      "text": " This is how the recursive function is working for the evaluation.",
+      "start_time": 1599.28,
+      "end_time": 1603.04
+    }
+  ],
+  "transcript_text": " So, expression, tree creation and evaluation, evaluation and for this I am going to make  use of different objects.  So, first let us look at what I mean by this.  So, you please note that we need to accept a postfix expression because I am going to   create my binary expression.  entry from a postfix expression and your postfix expression consists of I am going to directly  take single digits of this kind. So, these are my operands single digit operands.  Since I am taking these operands and they are also mixed kind of characters here, I  am going to use a character array postfix of some max characters. So, this is for the   post fix this is a title.  I am going to use. Now, you know that we are going to create something like this, this  is the expression binary expression tree that I am going to create. So, in this node is  an object. So, you are going to make use of the structure node, structure node which consists   of information fail which is a character type, character information, the node is a  character here and then it has a pointer to the left and it has a pointer to the right,  node pointers.  So, this is my node structure.  So, information field is a character in this case because it is a mixed type.  So, you have either the node to contain star or it can contain two.  So, both will be represented as characters here and stored in the tree construction.  So, this is what it is.  This is about the node.   So this entire tree is an object for me.  And this tree object is going to be pointed by the root node.  So, this is my tree object.  So, I am going to create a tree object.  So, this tree object will have only one attribute which is a pointer to the root node.  So, this pointer is a pointer to this type of node.  So, that is my tree object.  So, this is another object.   Now as and when I am traversing, so the way I am traversing is to make sure that the  going to create here is 3 is created as a node and I am going to push this address of 3 on  the stack, address of 3 on the stack. Then I am going to create 4 and push the address  of 4 on the stack. So, this is a stack containing addresses. So, my stack object, my stack object   structure stack will contain let us say the stack name is .  s of some max, it is of not integer in this case, it is containing addresses. So, it  is a node star stack and the top as usual is. So, this is the object stack. So, you  have an object stack, the postfix array, you have the node which is an object here and  you have the tree object. So, these are the varieties of objects that I need to possess   to make sure that I construct a binary expression tree accordingly.  and then subsequently proceed for evaluation. So, let us continue.  So, I will include the file first. It is dynamic allocation for the nodes, included   Now, I am going to create all the varieties of all the varieties.  PostfixRM going to create it in the name.  So I am going to first create the stack object.  As for the stack object, sorry, for the stack object you need node pointer.  So I need to have the node definition first.  StructureNode.   It has character info to indicate what is the value of the character info.  whether it is a operator or an outrider, left pointer and right pointer to point to the left  and right children. This is your node pointer and the tree itself has one pointer called   is the root pointer and that is your root pointer.  a tree data type and now the structure stack pointer, they said this has to have S of some  max. So, we will go and define the max.  Let us leave some here I just say. So, I come back here. So, it is an array of node pointer   as I said, mode pointer is defined ok. So, S is a static mode pointer.  which consists of not integers, but moodstaffs and then we also need to have the top. So,  these are the two attributes of the stack object. So, then so, we are pretty much done  with all the objects that I needed main objects that I needed. So, we have to now proceed for  initializations of various types. So, this is init tree init tree. So, the handler is passed   for this.  going to init refunction is responsible for initializing the root to null. Now, I am going  to also initialize the stack init stack init stack. It is a stack handler that I will pass  on now pointed to the stack. So, here ps pointing to the top is initialized to minus 1. It is   the stack implementation using arrays.  So, we have done initialization of the tree as well as the stack.  Now, we will have to proceed for the push function.  So, in the push function what I am going to do is push the push into the stack, push into  the stack the element E and return whether push was successful or not.   So if...  PS top is equal to max minus 1 not possible to push, right. So, return not successful,  so return 0 else it is possible to push the element. So, I am going to increment the top pointer and  then the stack is going to be housed at top position the value that we have to push. So,   in this case it is not an.  integer pointer, but the stack contains node star pointers. So, we have to pass the element  is a node star type. So, E has to be assigned to this. This is the stack and since this  is a first one I will return one. This is the push operation. Now, the pop operation   the pop operation is let it return node star in this case.  written, I will call the pop only if it is not empty in this case, stat, star PS, if  it is not empty, so I am not taking care of empty here. So, I will from the top position   I have to node star temp is equal to PS pointing to stack from the top position.  position.  the topmost pointer is removed. Now, we have to increment the top and return the top nodes  address which is there. So, otherwise you have to use pointer to pointer, so which I  am avoiding right now. So, the pop function has been sent has been called assuming that   it is not empty. This is the assumption I have made.  empty checking has been done, empty checked before entering the power ok, empty condition   checked before assumption.  So, I am just returning the topmost nodes address that is the pop function.  Now we have to see how the main function goes and then I will come back and define few more  functions like evaluate and all that.  And also we have to go for creation of the tree.   So, let us first.  to almost define the post-fix expression ok. This is also of some max characters. So, I  will accept the post-fix expression, valid post-fix expression, valid post-fix expression.  This code is going to work only if the valid post-fix expression is entered percent s post-fix   Thanks.  So, our postfix expression is ready.  Now, we have to start scanning one by one for creation of the tree while postfix of  as long as you have symbols left in the postfix array not equal to null as long as postfix   of i is not equal to null. So, we will have to do this.  to define the variable i and i in such a to 0. So, I have to start scanning the postfix  characters, I have to check if the postfix character is a operand or an operator. So,  but in any case we will have to allocate memory for this. So, I am going to allocate memory   or this particular symbol, AV symbol that we encounter we have to allocate memory malloc  size of node, I allocate this and Thames information field must be filled with this particular  character postfix of my character.   And then this temps left is said to null, temps right is 0, temps right is 0, temps  set to null, set to null. Now, we have to find out if the character if postfix of i,  if it is if is digit because I am only considering digits otherwise you should have said is all  num is digit postfix of i, if it is a digit type then I know that I just need to push   because right now I do not know what to do with it.  just push the function. So, I call the push function and pass the stack object. So, have  I created a stack object? No. So, I will create a stack object here. So, I need a stack here  to work with in this program. So, stack object I create and stack object and then I also   So created tree object, tree object.  And I make sure that I initialize both init tree and I pass the tree object to it.  Then I call init stack and I pass the stack object to it.  So, these two are initialized now ready with that.   So, I am going to now push to the stack.  push to the stack, which stack the stack object, what I have to push is the temp address,  address of the node which is present in temp. So, not address of temp, what about temp contains,   If it is not a digit, we know that the temp's right side will be what?  whatever we pop out whatever it returns. First one which we pop out should be set as  temp's right side. So, we have to pop it out from the stack object and the address of  the node that is present. Then the next popping out will make sure that it is set to the current   times left side. So, we pop the object then I am going to push.  push the object, push the object temporary. So, that is how I am going to make sure that  if it is not a digit, then I am going to pop and then pop and finally, I push it. So,  if the stack is not empty, we have to do it. If top is not equal to minus 1, then we have   to do that.  So this is how the pushing and popping operations are going to be done as long as we have characters  in the postfix expression.  Now once we have done with one character parsing, I am going to increment i and then continue  in the scanning of the postfix expression.  So like this I keep creating.  So once you are out of the postfix expression creation, you know that the root address is   present in the story.  as a last element. So, that we will have to connect it to the trees objects root pointer.  So, tree objects root pointer, tree objects root pointer will contain whatever we are  going to pop out finally from the stack object. So, the root is set. So, this is about the   creation of the tree, creation of the tree.  Now, we have to call the eval function, to call the eval function we have to pass the  tree object again.  Then the evaluated value is going to be returned, so that we will print it here.   evaluated value of the expression.  that is house-divider tree and then we end the main function. So, now I have to write  the eval function.   So tree object is passed here.  I am going to enter all the eval tree form.  So, this is, see this is based on recursion.  So I am going to recurse on nodes.  So I am going to internally use another eval function to work on the nodes.  I am going to write it down that way.   So now float divided.  So, I will write this function above, so that I do not have to do the prototype declination.  So, the recursion is on the node pointers node star root.  So, I am going to check a switch based on root info, root info.  If the root info case is a, see I am going to use only certain operators here plus and   Thank you.  The root info might be a minus operator that is possible and I am allowing the star operator  to be present and then I am checking it is the slash operator.  So, if it is a case of plus, I know that if it is a plus operator at the root, I have   to evaluate.  the left side of the tree first, I have to evaluate the left side of the tree and if  I get the answer for the left side of the tree, left side of the tree then I can apply  the plus operation and I have to also get the right side value. So, then I can apply   the operation plus. So, we have to break. So, the same thing has to be.  written for minus except the symbol. So, we have to do this here we have to multiply  to multiply and then we here we have to divide.   otherwise it is a default case.  In the default case, what I am going to return is return root info, I have to convert that  into integer version because it is in the form of a character and earlier in stack operations  while evaluating the expressions I have said that in order to convert a character into  a number, you can use subtract as key value of 0.   is home mate.  case is going to work and we have to return the result. So, that is how the function evaluate  is going to be written. So, this is the code for evaluation of the expression.   So, now let us run this expression.  So, we can see some errors result is undeclared, and this undeclared.   digit has to be declared.  is digit is a certain variables which I need to define unit function, we start there and  temp has been used. So, I have to define temp. Temp is of type node type. So, I am going   define mode star.  and a snobget and then the models I had to define the c type .h to include c type .h   machine to C type dot h, this is to be included.  That is it, we will see now, compile and see.  The result is not a declared, so we will just declare that.  In the eval function, I am going to declare the result, load result and main I am just   going to do. And it has u to mean.  I am going to save this, you will run the program again, ok. There is no error, we will  see whether it works now. So, I will say 2 3 plus if I point 0, 2 3 4 plus minus, 2  3 4 plus minus, I told you I have to give a valid expression. So, 2 3 4 plus minus,   the three.  is 7. So, 2 minus 7 is minus 5 that is fine, 2 3 plus 4 5 minus, so 5 and this is minus  1 into, so minus 5. Next I will work out another 8 7 slash, 8 7 slash and then 2 3   less stuff.  So, this is 8 by 7 some decimal you will get ok. So, that probably we will use a proper  number so that I will know. 8 2 slash so 8 by 2 is 4, 4, 5, 20, 20 is the answer. So,  that is how you get it. So, this is how the expression tree is going to be created as well   evaluated.  So, you can see that I will just do a quick recap.  So, we took the postfix expression for every symbol had to allocate memory and if it was  a digit I just pushed it, if it is not a digit I just popped the two made them as right and  left and pushed it again.  This way we keep continue for every symbol at the end of it the final address of the  tree is present in the stack which I popped and made it as the whole.   Now the tree is ready.  Of course, this point this entire portion of the tree creation could have been moved  to a function for better modularity and then we are going to call the evaluate tree function.  Since there is the slash operation which I am considering I am using the float value  as evaluated value.  So here I am going to call the I have sent the tree rooted at R. Now if the root is plus   you know that you need a value for the left side and right side so that you can up.  So, I am going to call in recursion left side and I am going to call in right side the recursion.  So, this way we continue evaluating.  So, let me demonstrate that through an example how the evaluated values work.  So, let us say this is plus, this is 2 and this is star and this is 3 and this is 4.   This is the expression that we have.  So, I call evaluate add plus, evaluated plus. So, I am going to call result is equal to  evaluate 2 and plus operation evaluate star. So, this will be returning the result. So,  evaluate 2 when we call it is a deform. So, it returns character 2 minus character 0 which   is nothing but 2.  So, this value 2 is written to this, evaluate star, evaluate star will make sure that we  will call result equal to evaluate 3 into evaluate 4, this will be called this will   return 3, this will be called this will return 4.  So, 3 into 4, 12, ok, 12 plus to 14.  So, the 14 is going to be returned from this function.  This is how the recursive function is working for the evaluation."
+}

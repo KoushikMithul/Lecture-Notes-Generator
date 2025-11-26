@@ -1,0 +1,3588 @@
+{
+  "video_name": "Lora&Qlora_19853_shylaja.sharath_31_20250318121200085_Video_ENC (1)",
+  "video_path": "data/raw/videos/Lora&Qlora_19853_shylaja.sharath_31_20250318121200085_Video_ENC (1).mp4",
+  "duration_seconds": 3299.968,
+  "transcript": [
+    {
+      "text": " B into A which is going to be blown up to 25. Now what you are going to do is you do",
+      "start_time": 0.0,
+      "end_time": 6.16
+    },
+    {
+      "text": " W plus B A. W is of the original size 25. So the two low ranked matrices which are learned,",
+      "start_time": 6.16,
+      "end_time": 15.76
+    },
+    {
+      "text": " these two low ranked matrices after they have learned which have very less parameters,",
+      "start_time": 15.76,
+      "end_time": 20.64
+    },
+    {
+      "text": " they when they are combined will get projected to the original dimension of the matrix and",
+      "start_time": 20.64,
+      "end_time": 26.72
+    },
+    {
+      "text": "",
+      "start_time": 26.72,
+      "end_time": 0.0
+    },
+    {
+      "text": " then you add them but there is another variation.",
+      "start_time": 3.32,
+      "end_time": null
+    },
+    {
+      "text": " Then there is alpha by r, alpha by r, alpha by r, r stands for rank and alpha is another",
+      "start_time": 30.0,
+      "end_time": 46.28
+    },
+    {
+      "text": "",
+      "start_time": 46.28,
+      "end_time": 30.0
+    },
+    {
+      "text": " scaling factor alpha by R into BA. This is based on principle similar to SVT.",
+      "start_time": 43.72,
+      "end_time": null
+    },
+    {
+      "text": " d decomposition, if you remember it in linear algebra you did that, SVD decomposition. How",
+      "start_time": 60.0,
+      "end_time": 66.76
+    },
+    {
+      "text": " did you do? Matrix A was decomposed into U S V transpose. Remember that what does SVD",
+      "start_time": 66.76,
+      "end_time": 76.48
+    },
+    {
+      "text": "",
+      "start_time": 76.48,
+      "end_time": 60.0
+    },
+    {
+      "text": " What is the reason why we use SVD decomposition?",
+      "start_time": 73.48,
+      "end_time": null
+    },
+    {
+      "text": " is mathematics but I am asking why is SVD decomposition useful, reason, compressing,",
+      "start_time": 90.0,
+      "end_time": 97.0
+    },
+    {
+      "text": " dimensionality reduction. Why do you think the dimensionality can be reduced? A matrix",
+      "start_time": 97.0,
+      "end_time": 106.88
+    },
+    {
+      "text": " has some information, A has some information. When you, it is possible to decompose a rectangular",
+      "start_time": 106.88,
+      "end_time": 112.68
+    },
+    {
+      "text": " matrix, otherwise PCI is only for square matrix but SVD can be used for rectangular matrix",
+      "start_time": 112.68,
+      "end_time": 119.24
+    },
+    {
+      "text": "",
+      "start_time": 119.24,
+      "end_time": 90.0
+    },
+    {
+      "text": " and you can do the...",
+      "start_time": 90.76,
+      "end_time": null
+    },
+    {
+      "text": " decomposition. But if you observe the singular value matrix, it is a diagonal matrix. You",
+      "start_time": 120.0,
+      "end_time": 126.68
+    },
+    {
+      "text": " remember that singular value matrix is a diagonal matrix where you will have singular values",
+      "start_time": 126.68,
+      "end_time": 131.48
+    },
+    {
+      "text": " only across the diagonal.",
+      "start_time": 131.48,
+      "end_time": 133.48
+    },
+    {
+      "text": " When you decompose this, see please note that A is represented in the form of USB transpose,",
+      "start_time": 133.48,
+      "end_time": 141.0
+    },
+    {
+      "text": " decomposed matrix. A is a matrix that is written in the form of three matrices, that",
+      "start_time": 141.0,
+      "end_time": 146.24
+    },
+    {
+      "text": "",
+      "start_time": 146.24,
+      "end_time": 120.0
+    },
+    {
+      "text": " message. Together they have to capture back this.",
+      "start_time": 123.52,
+      "end_time": null
+    },
+    {
+      "text": " Do you agree with me?",
+      "start_time": 150.0,
+      "end_time": 152.24
+    },
+    {
+      "text": " Together they have to capture back A when you multiply all of these matrices.",
+      "start_time": 152.24,
+      "end_time": 156.44
+    },
+    {
+      "text": " So A is decomposed into these three but when you look at the singular value matrix, yes",
+      "start_time": 156.44,
+      "end_time": 163.36
+    },
+    {
+      "text": " the singular values will be along the diagonal and rest of the entries will be 0.",
+      "start_time": 163.36,
+      "end_time": 169.32
+    },
+    {
+      "text": " Now if you observe the singular values as and when you move towards lower end most of",
+      "start_time": 169.32,
+      "end_time": 175.72
+    },
+    {
+      "text": "",
+      "start_time": 175.72,
+      "end_time": 150.0
+    },
+    {
+      "text": " the values will be 0's even the singular values will be 0's.",
+      "start_time": 154.28,
+      "end_time": null
+    },
+    {
+      "text": " near zeros, most of the singular values will be near zeros. What you can do is you can cut",
+      "start_time": 180.0,
+      "end_time": 186.36
+    },
+    {
+      "text": " off actually this portion, you can remove some singular values. So when you do the matrix",
+      "start_time": 186.36,
+      "end_time": 193.16
+    },
+    {
+      "text": " multiplication it will automatically reduce the dimension. By removing these singular",
+      "start_time": 193.16,
+      "end_time": 199.36
+    },
+    {
+      "text": " values of course there is loss of information you are compressing because full combined",
+      "start_time": 199.36,
+      "end_time": 205.92000000000002
+    },
+    {
+      "text": "",
+      "start_time": 205.92000000000002,
+      "end_time": 180.0
+    },
+    {
+      "text": " the u s v transpose will be your original a, but your original a will be your original a.",
+      "start_time": 184.0,
+      "end_time": 184.08
+    },
+    {
+      "text": " will be at some loss if you disconnect this portion, of course dimensions should match.",
+      "start_time": 210.0,
+      "end_time": 217.24
+    },
+    {
+      "text": " But you are going to, I am sure you are getting some idea regarding, I am not now talking",
+      "start_time": 217.24,
+      "end_time": 220.96
+    },
+    {
+      "text": " about dimensions. You have to remove some singular values because they are close to",
+      "start_time": 220.96,
+      "end_time": 225.36
+    },
+    {
+      "text": " 0. By removing this there will be some loss of information but the amount of dimensionality",
+      "start_time": 225.36,
+      "end_time": 233.2
+    },
+    {
+      "text": "",
+      "start_time": 233.2,
+      "end_time": 210.0
+    },
+    {
+      "text": " reduction that you get is immense and the performance is not that much affected.",
+      "start_time": 215.84,
+      "end_time": null
+    },
+    {
+      "text": " you apply singular value decomposition figure out how many singular values can be removed",
+      "start_time": 240.0,
+      "end_time": 245.04
+    },
+    {
+      "text": " and then you recombine form a new matrix so that it is a reduction matrix and then there",
+      "start_time": 245.04,
+      "end_time": 250.52
+    },
+    {
+      "text": " is some rank matrix linearly independent dependent rows and all of that.",
+      "start_time": 250.52,
+      "end_time": 255.0
+    },
+    {
+      "text": " So these concepts were used in low rank decomposition that is what they did this matrix can be decomposed",
+      "start_time": 255.0,
+      "end_time": 263.84
+    },
+    {
+      "text": "",
+      "start_time": 263.84,
+      "end_time": 240.0
+    },
+    {
+      "text": " into 5 cross 1 and 1 cross y and then you can merge this into a blown up matrix. This is",
+      "start_time": 246.04,
+      "end_time": 247.04
+    },
+    {
+      "text": " .",
+      "start_time": 247.04,
+      "end_time": 248.04
+    },
+    {
+      "text": " is a concept that is used in low rank adaptation. So, they have used a low rank adaptation,",
+      "start_time": 270.0,
+      "end_time": 276.12
+    },
+    {
+      "text": " lower size dimensions that they will learn first and then they will blow it up to a new",
+      "start_time": 276.12,
+      "end_time": 280.7
+    },
+    {
+      "text": " matrix by combining the two. So, learning these low rank matrices will still capture",
+      "start_time": 280.7,
+      "end_time": 288.56
+    },
+    {
+      "text": " useful information, there will be not much of loss of information. Of course, there will",
+      "start_time": 288.56,
+      "end_time": 293.04
+    },
+    {
+      "text": " be some loss, it is not like totally it is eliminated, but learning low rank matrix and",
+      "start_time": 293.04,
+      "end_time": 298.64
+    },
+    {
+      "text": "",
+      "start_time": 298.64,
+      "end_time": 270.0
+    },
+    {
+      "text": " combining it is okay.",
+      "start_time": 271.36,
+      "end_time": null
+    },
+    {
+      "text": " it is equivalent to learning it to a 5 x 5 matrix but you are learning the amount of",
+      "start_time": 300.0,
+      "end_time": 306.36
+    },
+    {
+      "text": " saving for a small matrix like this. If you had to learn inject the full size",
+      "start_time": 306.36,
+      "end_time": 311.2
+    },
+    {
+      "text": " 5 x 5 you had to inject but instead of injecting a 5 x 5 you are decomposing it into 5 x 1",
+      "start_time": 311.2,
+      "end_time": 319.2
+    },
+    {
+      "text": " and 1 x 5 you are learning only 10 parameters and projecting it to 25 and it still gives",
+      "start_time": 319.2,
+      "end_time": 326.44
+    },
+    {
+      "text": "",
+      "start_time": 326.44,
+      "end_time": 300.0
+    },
+    {
+      "text": " a reasonable answer as if y cross 5 has been introduced.",
+      "start_time": 303.56,
+      "end_time": null
+    },
+    {
+      "text": " So, you are decomposing a 5 cross 5 into this rank 5 cross 1 and 1 cross 5, 1 represents",
+      "start_time": 330.0,
+      "end_time": 336.6
+    },
+    {
+      "text": " the rank of the matrix, rank of the matrix.",
+      "start_time": 336.6,
+      "end_time": 344.04
+    },
+    {
+      "text": " Did you understand what is the trick that is used in low rank matrices?",
+      "start_time": 344.04,
+      "end_time": 348.0
+    },
+    {
+      "text": " Instead of injecting a 5 cross 5 like full blown up type of matrix, the Lora used the",
+      "start_time": 348.0,
+      "end_time": 354.2
+    },
+    {
+      "text": " linear algebra, you just understand this much right now, Lora use the linear algebra principle",
+      "start_time": 354.2,
+      "end_time": 359.44
+    },
+    {
+      "text": "",
+      "start_time": 359.44,
+      "end_time": 330.0
+    },
+    {
+      "text": " of the",
+      "start_time": 332.0,
+      "end_time": null
+    },
+    {
+      "text": " position and injected a low rank matrix into the adapter layer and learnt smaller number",
+      "start_time": 360.0,
+      "end_time": 368.12
+    },
+    {
+      "text": " of parameters, parameter efficient fine tuning, smaller number of parameters but that does",
+      "start_time": 368.12,
+      "end_time": 373.84
+    },
+    {
+      "text": " not mean that it will use only those, it will be blown up to the original size at the time",
+      "start_time": 373.84,
+      "end_time": 379.04
+    },
+    {
+      "text": " of inferencing, it will not before only merchant keep it.",
+      "start_time": 379.04,
+      "end_time": 384.4
+    },
+    {
+      "text": "",
+      "start_time": 384.4,
+      "end_time": 360.0
+    },
+    {
+      "text": " Are you getting what I am saying? So B is kept learnt, A is kept, you just, you just, you just, you just, you just, you",
+      "start_time": 362.16,
+      "end_time": 367.0
+    },
+    {
+      "text": " just, you just, you just, you just, you just, you just, you just, you just, you just, you",
+      "start_time": 367.0,
+      "end_time": 370.0
+    },
+    {
+      "text": " just, you just, you just, you just, you just, you just, you just, you just, you just, you",
+      "start_time": 370.0,
+      "end_time": 371.0
+    },
+    {
+      "text": " just, you just, you just, you just, you just, you just, you just, you just, you just,",
+      "start_time": 371.0,
+      "end_time": 372.0
+    },
+    {
+      "text": " you just, you just, you just, you just, you just, you just, you just, you just, you just,",
+      "start_time": 372.0,
+      "end_time": 373.0
+    },
+    {
+      "text": " you just, you just, you just, you just, you just, you just, you just, you just, you just,",
+      "start_time": 373.0,
+      "end_time": 374.0
+    },
+    {
+      "text": " you just, you just, you just, you just, you just, you just, you just, you just, you just,",
+      "start_time": 374.0,
+      "end_time": 375.0
+    },
+    {
+      "text": " you just, you just, you just, you just, you just, you just, you just, you just, you just,",
+      "start_time": 375.0,
+      "end_time": 376.0
+    },
+    {
+      "text": " you just, you just, you just, you just, you just, you just, you just, you just, you just, you",
+      "start_time": 376.0,
+      "end_time": 377.0
+    },
+    {
+      "text": " just, you just, you just, you just, you just, you just, you just, you just, you just, you just,",
+      "start_time": 377.0,
+      "end_time": 378.0
+    },
+    {
+      "text": " you just, you just, you just, you just, you just, you just, you just, you just, you just, you",
+      "start_time": 378.0,
+      "end_time": 379.0
+    },
+    {
+      "text": " just, you just, you just, you just, you just, you just, you just, you just, you just, you just,",
+      "start_time": 379.0,
+      "end_time": 380.0
+    },
+    {
+      "text": " you just, you just, you just, you just, you just, you just, you just, you just, you just, you just,",
+      "start_time": 380.0,
+      "end_time": 381.0
+    },
+    {
+      "text": " you just, you just, you just, you just, you just, you just, you just, you just, you just, you",
+      "start_time": 381.0,
+      "end_time": 382.0
+    },
+    {
+      "text": " just need memory of 5 cross 1 and 1 cross 5 only, you just need the memory of only 10",
+      "start_time": 390.0,
+      "end_time": 395.76
+    },
+    {
+      "text": " instead of 25 that is kept and then you have your original W that is kept and at the time",
+      "start_time": 395.76,
+      "end_time": 402.08
+    },
+    {
+      "text": " of inference new x comes in you need all of those weights, the fine tuned weights you",
+      "start_time": 402.08,
+      "end_time": 406.88
+    },
+    {
+      "text": " need 25, you need original weights pre-trained you need totally finally you need final 25",
+      "start_time": 406.88,
+      "end_time": 413.68
+    },
+    {
+      "text": " pre-trained plus fine tuned weights to do that what you are going to do at the inference",
+      "start_time": 413.68,
+      "end_time": 418.44
+    },
+    {
+      "text": "",
+      "start_time": 418.44,
+      "end_time": 390.0
+    },
+    {
+      "text": " time you will actually multiply.",
+      "start_time": 391.6,
+      "end_time": null
+    },
+    {
+      "text": " at that time it is temporary for a only short period you need that and then you will combine",
+      "start_time": 420.0,
+      "end_time": 425.48
+    },
+    {
+      "text": " and then produce.",
+      "start_time": 425.48,
+      "end_time": 426.48
+    },
+    {
+      "text": " But for inference time you will still need it, 25 size you need inference time but that",
+      "start_time": 426.48,
+      "end_time": 432.68
+    },
+    {
+      "text": " is for a short period.",
+      "start_time": 432.68,
+      "end_time": 433.84
+    },
+    {
+      "text": " Sometimes what they do is they do not do the full thing I will tell you that also.",
+      "start_time": 433.84,
+      "end_time": 439.44
+    },
+    {
+      "text": " But is the concept clear?",
+      "start_time": 439.44,
+      "end_time": 441.24
+    },
+    {
+      "text": " Now how much of so be it, do you understand the lower weight if I ask you questions like",
+      "start_time": 441.24,
+      "end_time": 448.4
+    },
+    {
+      "text": "",
+      "start_time": 448.4,
+      "end_time": 420.0
+    },
+    {
+      "text": " this, he is the same.",
+      "start_time": 421.6,
+      "end_time": null
+    },
+    {
+      "text": " Laura doing full fine tuning? No. What is the Laura's concept? It injects low ranked matrices",
+      "start_time": 450.0,
+      "end_time": 461.6
+    },
+    {
+      "text": " as two adapter layers. One above self attention, one above feed forward network in every layer",
+      "start_time": 461.6,
+      "end_time": 468.88
+    },
+    {
+      "text": " and learns those weights, freezing the original weights, freezing the original weights. The",
+      "start_time": 468.88,
+      "end_time": 475.48
+    },
+    {
+      "text": "",
+      "start_time": 475.48,
+      "end_time": 450.0
+    },
+    {
+      "text": " The original weights are not touched, they are there but they are not touched. What is the meaning?",
+      "start_time": 453.88,
+      "end_time": 454.52
+    },
+    {
+      "text": " of that freezing when you do back propagation you will only update the lower weights decompose",
+      "start_time": 480.0,
+      "end_time": 487.24
+    },
+    {
+      "text": " weight matrices but you will not update the blue, the blue continues to remain same.",
+      "start_time": 487.24,
+      "end_time": 494.2
+    },
+    {
+      "text": " And once the training fine tuning is done you are ready with your B and A, you are ready",
+      "start_time": 494.2,
+      "end_time": 501.28
+    },
+    {
+      "text": " with B and A. Now your new input comes what you should do, the new input comes and you",
+      "start_time": 501.28,
+      "end_time": 507.16
+    },
+    {
+      "text": "",
+      "start_time": 507.16,
+      "end_time": 480.0
+    },
+    {
+      "text": " have to give an answer to that new input x.",
+      "start_time": 482.12,
+      "end_time": null
+    },
+    {
+      "text": " This is the inference time, test image you are giving or test line you are giving.",
+      "start_time": 510.0,
+      "end_time": 516.16
+    },
+    {
+      "text": " At that time you need to perform this operation on the fly, B into A, 25, scale the lower",
+      "start_time": 516.16,
+      "end_time": 524.08
+    },
+    {
+      "text": " weights and then add it to original that is the final total learning and apply X on that",
+      "start_time": 524.08,
+      "end_time": 531.36
+    },
+    {
+      "text": " W into X, final W into X will give you the inference value.",
+      "start_time": 531.36,
+      "end_time": 538.56
+    },
+    {
+      "text": "",
+      "start_time": 538.56,
+      "end_time": 510.0
+    },
+    {
+      "text": " Is that clear? This is\u2026",
+      "start_time": 511.0,
+      "end_time": 511.5
+    },
+    {
+      "text": " is what we do in the LoRa case. Now alpha by R this rank that I chose and alpha which",
+      "start_time": 540.0,
+      "end_time": 548.28
+    },
+    {
+      "text": " is a scaling factor this is used to modulate how much of LoRa weights you should use in",
+      "start_time": 548.28,
+      "end_time": 554.2
+    },
+    {
+      "text": " the inference alpha by R. Typical values used are 16 for alpha and rank will be 4 to 8,",
+      "start_time": 554.2,
+      "end_time": 563.64
+    },
+    {
+      "text": "",
+      "start_time": 563.64,
+      "end_time": 540.0
+    },
+    {
+      "text": " into 32, you can choose, you can set it. The alpha value and the rank",
+      "start_time": 540.0,
+      "end_time": null
+    },
+    {
+      "text": " value. What is the rank that I have chosen now for injecting? When I say for Lora what",
+      "start_time": 570.0,
+      "end_time": 578.88
+    },
+    {
+      "text": " is the rank used? You should look at the injection B and A and decide. The second parameter is",
+      "start_time": 578.88,
+      "end_time": 584.84
+    },
+    {
+      "text": " the rank that I have added. So what is the rank that I have added? 1, rank is 1. If I",
+      "start_time": 584.84,
+      "end_time": 591.84
+    },
+    {
+      "text": "",
+      "start_time": 591.84,
+      "end_time": 570.0
+    },
+    {
+      "text": " say I want to inject a rank 2 matrices into lower what is your understanding 5 cross 2",
+      "start_time": 578.16,
+      "end_time": null
+    },
+    {
+      "text": " into 2 cross 5, what does this mean? Will it still produce 25 when you multiply? But",
+      "start_time": 600.0,
+      "end_time": 607.24
+    },
+    {
+      "text": " how is the number of parameters now? How many are there now? 20 parameters it is learning",
+      "start_time": 607.24,
+      "end_time": 614.68
+    },
+    {
+      "text": " instead of 25. Do you get it? Because there are 10 there and there are 10 here, 20 parameters",
+      "start_time": 614.68,
+      "end_time": 623.08
+    },
+    {
+      "text": " you are learning in place of 25. So as and when you start increasing the rank, what does",
+      "start_time": 623.08,
+      "end_time": 629.48
+    },
+    {
+      "text": "",
+      "start_time": 629.48,
+      "end_time": 600.0
+    },
+    {
+      "text": " that means?",
+      "start_time": 600.5,
+      "end_time": null
+    },
+    {
+      "text": " If you increase the rank, what is your understanding?",
+      "start_time": 630.0,
+      "end_time": 636.72
+    },
+    {
+      "text": " You are increasing the number of parameters to be learned during fine tuning, that's it.",
+      "start_time": 636.72,
+      "end_time": 641.8
+    },
+    {
+      "text": " It is coming closer to your full fine tuning, isn't it?",
+      "start_time": 641.8,
+      "end_time": 646.76
+    },
+    {
+      "text": " It is coming closer to your full fine tuning, full fine tuning means all 25.",
+      "start_time": 646.76,
+      "end_time": 654.6
+    },
+    {
+      "text": "",
+      "start_time": 654.6,
+      "end_time": 630.0
+    },
+    {
+      "text": " But as and when you increase the rank, it will be better because\u2026",
+      "start_time": 635.44,
+      "end_time": null
+    },
+    {
+      "text": " Because you are learning more parameters, more parameters is always better.",
+      "start_time": 660.0,
+      "end_time": 665.6
+    },
+    {
+      "text": " Even today as per Andrew J. Karpathi, we have not reached the top end.",
+      "start_time": 665.6,
+      "end_time": 670.0
+    },
+    {
+      "text": " So you can increase, increasing means performance increase.",
+      "start_time": 670.0,
+      "end_time": 674.24
+    },
+    {
+      "text": " So it has not reached saturation yet.",
+      "start_time": 674.24,
+      "end_time": 676.4
+    },
+    {
+      "text": " So more the number of parameters, more will be the knowledge.",
+      "start_time": 676.4,
+      "end_time": 678.92
+    },
+    {
+      "text": " We are at that stage.",
+      "start_time": 678.92,
+      "end_time": 680.08
+    },
+    {
+      "text": " So it is good to increase the rank.",
+      "start_time": 680.08,
+      "end_time": 683.0
+    },
+    {
+      "text": " But if you increase it so much, then we will lose our original thought.",
+      "start_time": 683.0,
+      "end_time": 687.6
+    },
+    {
+      "text": "",
+      "start_time": 687.6,
+      "end_time": 660.0
+    },
+    {
+      "text": " how much we have to that you have to take",
+      "start_time": 662.4,
+      "end_time": null
+    },
+    {
+      "text": " a decision normally for big models okay rank will be about 16, 64 even 64 rank is also",
+      "start_time": 690.0,
+      "end_time": 698.64
+    },
+    {
+      "text": " used very large models here I am taking a toy example if I take a 64 rank then it will",
+      "start_time": 698.64,
+      "end_time": 703.76
+    },
+    {
+      "text": " exceed your original 825 for 25 rank 1 is sufficient do you get what I am saying.",
+      "start_time": 703.76,
+      "end_time": 711.56
+    },
+    {
+      "text": " So one of the design decisions that you have to take while fine tuning is what should be",
+      "start_time": 711.56,
+      "end_time": 717.4
+    },
+    {
+      "text": "",
+      "start_time": 717.4,
+      "end_time": 690.0
+    },
+    {
+      "text": " the rank what you deserve.",
+      "start_time": 692.6,
+      "end_time": null
+    },
+    {
+      "text": " rank, it depends on your original size and then how much lesser you want to learn, okay.",
+      "start_time": 720.0,
+      "end_time": 727.0
+    },
+    {
+      "text": " Is it that you want to just use a single rank matrix or two ranked or 64 rank matrices for",
+      "start_time": 727.0,
+      "end_time": 734.48
+    },
+    {
+      "text": " 176 billion and all you cannot just use one rank and say that all 176 billion I will generate",
+      "start_time": 734.48,
+      "end_time": 739.68
+    },
+    {
+      "text": " using one rank matrix then it will not learn.",
+      "start_time": 739.68,
+      "end_time": 742.88
+    },
+    {
+      "text": " So you have to definitely use a higher rank matrix.",
+      "start_time": 742.88,
+      "end_time": 745.64
+    },
+    {
+      "text": "",
+      "start_time": 745.64,
+      "end_time": 720.0
+    },
+    {
+      "text": " So rank plays an important design principle which you have to use.",
+      "start_time": 724.36,
+      "end_time": null
+    },
+    {
+      "text": " based on your original size, that is a design parameter. Similarly alpha has to be set to",
+      "start_time": 750.0,
+      "end_time": 756.44
+    },
+    {
+      "text": " tell you as to how much of the learned weights B and A I should use for my updations. Now",
+      "start_time": 756.44,
+      "end_time": 764.84
+    },
+    {
+      "text": " there is something called as catastrophic forgetting, catastrophic forgetting.",
+      "start_time": 764.84,
+      "end_time": 771.72
+    },
+    {
+      "text": "",
+      "start_time": 771.72,
+      "end_time": 750.0
+    },
+    {
+      "text": " Have you heard of this?",
+      "start_time": 758.16,
+      "end_time": null
+    },
+    {
+      "text": " this is the curve that we will have in fine tuning. What is the meaning? If you choose",
+      "start_time": 780.0,
+      "end_time": 787.6
+    },
+    {
+      "text": " a very high ranked matrix, your fine tuned model will overtake. If the fine tuned model",
+      "start_time": 787.6,
+      "end_time": 795.04
+    },
+    {
+      "text": " overtakes then GPT will stop answering about your general questions. It will only answer",
+      "start_time": 795.04,
+      "end_time": 800.72
+    },
+    {
+      "text": " PES related questions. Is that clear? All your original parametric knowledge you update",
+      "start_time": 800.72,
+      "end_time": 807.16
+    },
+    {
+      "text": "",
+      "start_time": 807.16,
+      "end_time": 780.0
+    },
+    {
+      "text": " with high ranked matrices.",
+      "start_time": 782.0,
+      "end_time": null
+    },
+    {
+      "text": " I take a 128 rank matrix and learn properly the fine tuned weights.",
+      "start_time": 810.0,
+      "end_time": 816.28
+    },
+    {
+      "text": " The fine tuned weights are added to original weights.",
+      "start_time": 816.28,
+      "end_time": 819.52
+    },
+    {
+      "text": " So your fine tuned weights are overtaking your original weights which means that all",
+      "start_time": 819.52,
+      "end_time": 824.32
+    },
+    {
+      "text": " the parametric language model I am forgetting and I am learning only your new fine tuned",
+      "start_time": 824.32,
+      "end_time": 829.36
+    },
+    {
+      "text": " weights.",
+      "start_time": 829.36,
+      "end_time": 830.36
+    },
+    {
+      "text": " So the model will stop performing on the generic questions.",
+      "start_time": 830.36,
+      "end_time": 834.68
+    },
+    {
+      "text": " Do you understand?",
+      "start_time": 834.68,
+      "end_time": 835.68
+    },
+    {
+      "text": " This is known as catastrophic forgetting.",
+      "start_time": 835.68,
+      "end_time": 839.84
+    },
+    {
+      "text": "",
+      "start_time": 839.84,
+      "end_time": 810.0
+    },
+    {
+      "text": " Bye!",
+      "start_time": 812.0,
+      "end_time": null
+    },
+    {
+      "text": " So that is the reason why you should be careful on this alpha by r.",
+      "start_time": 840.0,
+      "end_time": 844.12
+    },
+    {
+      "text": " How much of Lora weight should be added to your original weight so that it does not lose",
+      "start_time": 844.12,
+      "end_time": 849.72
+    },
+    {
+      "text": " out on what it learnt already plus it will learn on the PES information.",
+      "start_time": 849.72,
+      "end_time": 854.6
+    },
+    {
+      "text": " Both are very important.",
+      "start_time": 854.6,
+      "end_time": 857.52
+    },
+    {
+      "text": " So you need to balance between Lora weights and your pre-trained weights so that it will",
+      "start_time": 857.52,
+      "end_time": 862.48
+    },
+    {
+      "text": " be able to answer generic as well as specific questions.",
+      "start_time": 862.48,
+      "end_time": 866.0
+    },
+    {
+      "text": " Both are very important.",
+      "start_time": 866.0,
+      "end_time": 868.56
+    },
+    {
+      "text": "",
+      "start_time": 868.56,
+      "end_time": 840.0
+    },
+    {
+      "text": " So alpha and r play.",
+      "start_time": 841.48,
+      "end_time": null
+    },
+    {
+      "text": " a very important role. This is based on your linear algebra principle that it is okay to",
+      "start_time": 870.0,
+      "end_time": 876.4
+    },
+    {
+      "text": " learn low rant matrices and project it to a high rant matrix still not losing useful",
+      "start_time": 876.4,
+      "end_time": 884.36
+    },
+    {
+      "text": " information and use them in weight ablation rules but not at the time of training but",
+      "start_time": 884.36,
+      "end_time": 891.2
+    },
+    {
+      "text": " at the time of inferencing only that B and A multiplication to full blown up weight is",
+      "start_time": 891.2,
+      "end_time": 897.6
+    },
+    {
+      "text": "",
+      "start_time": 897.6,
+      "end_time": 870.0
+    },
+    {
+      "text": " done only during inference time.",
+      "start_time": 871.92,
+      "end_time": null
+    },
+    {
+      "text": " not at the time of training, training you will learn B separately, A separately, B into",
+      "start_time": 900.0,
+      "end_time": 907.2
+    },
+    {
+      "text": " A is done only during inference time, so you will lead lesser memory and lesser information",
+      "start_time": 907.2,
+      "end_time": 914.2
+    },
+    {
+      "text": " that is stored, so all of the flops are also reduced, so this is the gain that you will",
+      "start_time": 914.2,
+      "end_time": 919.16
+    },
+    {
+      "text": " have using the low raw, the decomposition is okay and it is proved in linear algebra,",
+      "start_time": 919.16,
+      "end_time": 925.12
+    },
+    {
+      "text": " we are not further discussing on that, the decomposition matrix will still carry the",
+      "start_time": 925.12,
+      "end_time": 929.56
+    },
+    {
+      "text": "",
+      "start_time": 929.56,
+      "end_time": 900.0
+    },
+    {
+      "text": " The floor.",
+      "start_time": 900.5,
+      "end_time": null
+    },
+    {
+      "text": " full blown up information that will be not much of loss of information and therefore it",
+      "start_time": 930.0,
+      "end_time": 934.88
+    },
+    {
+      "text": " is okay to use this principle.",
+      "start_time": 934.88,
+      "end_time": 937.12
+    },
+    {
+      "text": " This is low ranked adaptation to learning full blown up weights and only those B and",
+      "start_time": 937.12,
+      "end_time": 944.56
+    },
+    {
+      "text": " A are back propagated and learnt not the original W.",
+      "start_time": 944.56,
+      "end_time": 949.84
+    },
+    {
+      "text": " Original W is freeze the original W and B into A are added only during the inference",
+      "start_time": 949.84,
+      "end_time": 956.2
+    },
+    {
+      "text": " time.",
+      "start_time": 956.2,
+      "end_time": 957.2
+    },
+    {
+      "text": "",
+      "start_time": 957.2,
+      "end_time": 930.0
+    },
+    {
+      "text": " Is this clear? Is the lower end adaptation?",
+      "start_time": 931.0,
+      "end_time": 932.8
+    },
+    {
+      "text": " clear then what is Q lora? Quantized what will happen? How will the W be then? In the",
+      "start_time": 960.0,
+      "end_time": 973.08
+    },
+    {
+      "text": " lora there is no quantization what does this mean what does W consist of? In the lora the",
+      "start_time": 973.08,
+      "end_time": 982.52
+    },
+    {
+      "text": "",
+      "start_time": 982.52,
+      "end_time": 960.0
+    },
+    {
+      "text": " W, your pre-tained weights, how will they appear?",
+      "start_time": 967.0,
+      "end_time": null
+    },
+    {
+      "text": " or Fp32? The W would be stored as Fp16 or Fp32 in Lora. Do you understand? B and A is",
+      "start_time": 990.0,
+      "end_time": 1004.4
+    },
+    {
+      "text": " always floating point, it is never quantized. B, one other point, so now I am talking about",
+      "start_time": 1004.4,
+      "end_time": 1010.24
+    },
+    {
+      "text": " Q Lora, I will tell you those details. In Q Lora, okay, I will start the story again.",
+      "start_time": 1010.24,
+      "end_time": 1017.04
+    },
+    {
+      "text": "",
+      "start_time": 1017.04,
+      "end_time": 990.0
+    },
+    {
+      "text": " So you have pre-trained a model. You are now pre-trained.",
+      "start_time": 992.32,
+      "end_time": 992.96
+    },
+    {
+      "text": " having 176 billion floating point 32 or 16 available with you. In Lora what you are doing",
+      "start_time": 1020.0,
+      "end_time": 1027.56
+    },
+    {
+      "text": " 176 billion floating point 30 I will take 16 as an example floating point 16 weights",
+      "start_time": 1027.56,
+      "end_time": 1034.0
+    },
+    {
+      "text": " are the ones which are there in the memory freeze floating point 16 weights 176 billion",
+      "start_time": 1034.0,
+      "end_time": 1041.36
+    },
+    {
+      "text": " parameter weights are available in memory then you are injecting B and A you are fine",
+      "start_time": 1041.36,
+      "end_time": 1045.8
+    },
+    {
+      "text": "",
+      "start_time": 1045.8,
+      "end_time": 1020.0
+    },
+    {
+      "text": " tuning, B and A is also Fp16.",
+      "start_time": 1023.44,
+      "end_time": null
+    },
+    {
+      "text": " B and A is also Fp16, you learn B and F Fp16 representation, B into A is Fp16, Fp16 Fp16",
+      "start_time": 1050.0,
+      "end_time": 1059.44
+    },
+    {
+      "text": " are added and then you get the final W, this is Lora, what is Q Lora trying to do? Q Lora",
+      "start_time": 1059.44,
+      "end_time": 1070.0
+    },
+    {
+      "text": " you do the pre-training, 176 billion parameters in the form of Fp16 or Fp32, there is one",
+      "start_time": 1070.0,
+      "end_time": 1077.76
+    },
+    {
+      "text": "",
+      "start_time": 1077.76,
+      "end_time": 1050.0
+    },
+    {
+      "text": " one more step, what is that one step?",
+      "start_time": 1051.76,
+      "end_time": null
+    },
+    {
+      "text": " You first you quantize it, okay quantize the FP16 weight matrix into 4 bit quantized matrix.",
+      "start_time": 1080.0,
+      "end_time": 1088.92
+    },
+    {
+      "text": " Every number now the weight matrix every number is represented as a 4 bit number and what",
+      "start_time": 1088.92,
+      "end_time": 1094.48
+    },
+    {
+      "text": " I am going to get is a quantized weight matrix in Qlora that is what is called as quantized.",
+      "start_time": 1094.48,
+      "end_time": 1102.72
+    },
+    {
+      "text": " I will tell you, yeah I will tell you, yeah you are right.",
+      "start_time": 1102.72,
+      "end_time": 1106.4
+    },
+    {
+      "text": "",
+      "start_time": 1106.4,
+      "end_time": 1080.0
+    },
+    {
+      "text": " So the quantized matrix is what I am getting.",
+      "start_time": 1083.64,
+      "end_time": null
+    },
+    {
+      "text": " number 800 GB to 80 GB. So, in LORA you are receiving 800 GB matrix, but in QLORA what",
+      "start_time": 1110.0,
+      "end_time": 1117.88
+    },
+    {
+      "text": " you are receiving only 80 GB matrix you are receiving. You know how to do quantization",
+      "start_time": 1117.88,
+      "end_time": 1121.84
+    },
+    {
+      "text": " I have already told you.",
+      "start_time": 1121.84,
+      "end_time": 1123.64
+    },
+    {
+      "text": " Now, 80 GB matrix I receive, but it is a quantized matrix is only integers, it is not having",
+      "start_time": 1123.64,
+      "end_time": 1130.84
+    },
+    {
+      "text": " floating point actual parameter are not available. Please note that the quantized matrix is not",
+      "start_time": 1130.84,
+      "end_time": 1136.6
+    },
+    {
+      "text": "",
+      "start_time": 1136.6,
+      "end_time": 1110.0
+    },
+    {
+      "text": " actually containing parametric information. It is only a map.",
+      "start_time": 1112.64,
+      "end_time": 1113.4
+    },
+    {
+      "text": " mapping that has been given. So now what you are going to do? You are going to inject b",
+      "start_time": 1140.0,
+      "end_time": 1147.0
+    },
+    {
+      "text": " and a again, you will learn b and a again, b and a is never quantized, b and a are always",
+      "start_time": 1147.0,
+      "end_time": 1154.0
+    },
+    {
+      "text": " either fp32 or fp16 that depends on what is your original. b and a are not quantized,",
+      "start_time": 1154.0,
+      "end_time": 1160.72
+    },
+    {
+      "text": " b and a are always fp32 and real parametric knowledge on the fine tune dataset you will",
+      "start_time": 1160.72,
+      "end_time": 1166.68
+    },
+    {
+      "text": "",
+      "start_time": 1166.68,
+      "end_time": 1140.0
+    },
+    {
+      "text": " Once you have B and A are learned, they are ready.",
+      "start_time": 1143.0,
+      "end_time": null
+    },
+    {
+      "text": " is ready, A is ready, W quantized is ready. Now you start the inferencing. When you are",
+      "start_time": 1170.0,
+      "end_time": 1176.16
+    },
+    {
+      "text": " about to inference, you have to decontize W. You have to decontize W, you have to multiply",
+      "start_time": 1176.16,
+      "end_time": 1183.8
+    },
+    {
+      "text": " B and A and you have to add them. But the problem is same again. You have 800 GB. If",
+      "start_time": 1183.8,
+      "end_time": 1193.16
+    },
+    {
+      "text": " you decontize it, you will have 800 GB again. Then where are you solving the problem? At",
+      "start_time": 1193.16,
+      "end_time": 1199.68
+    },
+    {
+      "text": "",
+      "start_time": 1199.68,
+      "end_time": 1170.0
+    },
+    {
+      "text": " Thanks for watching.",
+      "start_time": 1171.0,
+      "end_time": null
+    },
+    {
+      "text": " time at least you need 800 GB okay training time at least you eliminated you understood",
+      "start_time": 1200.0,
+      "end_time": 1205.04
+    },
+    {
+      "text": " but inference time where do you get 800 GB you learnt.",
+      "start_time": 1205.04,
+      "end_time": 1208.24
+    },
+    {
+      "text": " So what is done block by block decontize not together everything may be one layer you will",
+      "start_time": 1208.24,
+      "end_time": 1216.16
+    },
+    {
+      "text": " decontize and infer using that another layer you decontize.",
+      "start_time": 1216.16,
+      "end_time": 1220.4
+    },
+    {
+      "text": " So decontization for large models is never done fully is never done fully then the purpose",
+      "start_time": 1220.4,
+      "end_time": 1227.72
+    },
+    {
+      "text": "",
+      "start_time": 1227.72,
+      "end_time": 1200.0
+    },
+    {
+      "text": " is defeated.",
+      "start_time": 1200.72,
+      "end_time": null
+    },
+    {
+      "text": " you need a parameter knowledge of the pre-trained weights but you will not be doing it fully,",
+      "start_time": 1230.0,
+      "end_time": 1235.96
+    },
+    {
+      "text": " you will do part by part, you will decontize only this portion and you will add, you will",
+      "start_time": 1235.96,
+      "end_time": 1241.32
+    },
+    {
+      "text": " decontize this portion and then you will add like that.",
+      "start_time": 1241.32,
+      "end_time": 1244.4
+    },
+    {
+      "text": " So you will need, you will be needing only small amount of memory for decontization and",
+      "start_time": 1244.4,
+      "end_time": 1249.12
+    },
+    {
+      "text": " you will learn that and then you will scrap that over that memory itself again you will",
+      "start_time": 1249.12,
+      "end_time": 1254.04
+    },
+    {
+      "text": " calculate, then you will accumulate the results.",
+      "start_time": 1254.04,
+      "end_time": 1256.28
+    },
+    {
+      "text": "",
+      "start_time": 1256.28,
+      "end_time": 1230.0
+    },
+    {
+      "text": " Is that clear? This is the decontization step.",
+      "start_time": 1231.0,
+      "end_time": 1233.6
+    },
+    {
+      "text": " Please note that the decontization step will introduce errors that is what is going to happen.",
+      "start_time": 1260.0,
+      "end_time": 1266.64
+    },
+    {
+      "text": " This is clear?",
+      "start_time": 1266.64,
+      "end_time": 1267.64
+    },
+    {
+      "text": " So, this is Q-LORA that is it.",
+      "start_time": 1267.64,
+      "end_time": 1270.6
+    },
+    {
+      "text": " So, LORA, Q-LORA both are fine tuning techniques.",
+      "start_time": 1270.6,
+      "end_time": 1276.32
+    },
+    {
+      "text": " The LORA will receive the frozen weight in the FP32 or the 16 format.",
+      "start_time": 1276.32,
+      "end_time": 1282.4
+    },
+    {
+      "text": " Q-LORA will receive W in the quantized format that is the difference.",
+      "start_time": 1282.4,
+      "end_time": 1288.24
+    },
+    {
+      "text": "",
+      "start_time": 1288.24,
+      "end_time": 1260.0
+    },
+    {
+      "text": " Both are freeze. Five.",
+      "start_time": 1261.0,
+      "end_time": 1262.0
+    },
+    {
+      "text": " fine tuning will inject low rank adaptation fine tuning will inject two matrices B and",
+      "start_time": 1290.0,
+      "end_time": 1296.02
+    },
+    {
+      "text": " A rank has to be chosen B and A's rank will have to be chosen then you learn B separately",
+      "start_time": 1296.02,
+      "end_time": 1303.32
+    },
+    {
+      "text": " A separately keep them separately at the time of inference only you will decontize step",
+      "start_time": 1303.32,
+      "end_time": 1309.36
+    },
+    {
+      "text": " by step and B into A add it then accumulate so that will require only small amount of",
+      "start_time": 1309.36,
+      "end_time": 1315.24
+    },
+    {
+      "text": "",
+      "start_time": 1315.24,
+      "end_time": 1290.0
+    },
+    {
+      "text": " memory. This is Q law roughly. Is this clear?",
+      "start_time": 1293.44,
+      "end_time": null
+    },
+    {
+      "text": " any doubts on this. So to understand this we will solve a problem.",
+      "start_time": 1320.0,
+      "end_time": 1336.32
+    },
+    {
+      "text": "",
+      "start_time": 1336.32,
+      "end_time": 1320.0
+    },
+    {
+      "text": " So, I have run a Q-Laura model on English code.",
+      "start_time": 1333.72,
+      "end_time": null
+    },
+    {
+      "text": " ports, the main thing that I want to show you, look at this, so this is the quantization",
+      "start_time": 1350.0,
+      "end_time": 1369.64
+    },
+    {
+      "text": " configuration loading 4 bit, true, okay, okay and this is Lora configuration, can you be",
+      "start_time": 1369.64,
+      "end_time": 1379.08
+    },
+    {
+      "text": "",
+      "start_time": 1379.08,
+      "end_time": 1350.0
+    },
+    {
+      "text": " silent for some time.",
+      "start_time": 1351.0,
+      "end_time": null
+    },
+    {
+      "text": " And Lora configuration, Lora alpha, alpha has been set to 32, alpha has been set to",
+      "start_time": 1380.0,
+      "end_time": 1387.56
+    },
+    {
+      "text": " 30, rank is 4, rank is 4, dropout is also used, you want to use dropout you know and",
+      "start_time": 1387.56,
+      "end_time": 1394.08
+    },
+    {
+      "text": " target modules.",
+      "start_time": 1394.08,
+      "end_time": 1395.08
+    },
+    {
+      "text": " I just said about only 1 W but there is WQ, WK, WV, self attention, so all of that.",
+      "start_time": 1395.08,
+      "end_time": 1402.48
+    },
+    {
+      "text": " So I am saying here target modules to be affected for fine tuning are only Q projection and V",
+      "start_time": 1402.48,
+      "end_time": 1408.32
+    },
+    {
+      "text": "",
+      "start_time": 1408.32,
+      "end_time": 1380.0
+    },
+    {
+      "text": " that is what it is saying.",
+      "start_time": 1381.68,
+      "end_time": null
+    },
+    {
+      "text": " Now getPefedModel, this API which is there in the Pefed library of the hugging phase,",
+      "start_time": 1410.0,
+      "end_time": 1416.76
+    },
+    {
+      "text": " this model will ensure that your pre-trained model is frozen.",
+      "start_time": 1416.76,
+      "end_time": 1420.48
+    },
+    {
+      "text": " You do not have to do anything explicitly.",
+      "start_time": 1420.48,
+      "end_time": 1422.52
+    },
+    {
+      "text": " You can also explicitly set it to false.",
+      "start_time": 1422.52,
+      "end_time": 1425.48
+    },
+    {
+      "text": " The gradients can be set to false by explicitly freezing it or this library API getPefedModel",
+      "start_time": 1425.48,
+      "end_time": 1432.84
+    },
+    {
+      "text": " will automatically freeze it.",
+      "start_time": 1432.84,
+      "end_time": 1435.96
+    },
+    {
+      "text": " You do not have to do anything.",
+      "start_time": 1435.96,
+      "end_time": 1437.36
+    },
+    {
+      "text": "",
+      "start_time": 1437.36,
+      "end_time": 1410.0
+    },
+    {
+      "text": " from the implementation point of view there is nothing much.",
+      "start_time": 1412.6,
+      "end_time": null
+    },
+    {
+      "text": " But the underlying principle is what you have to understand.",
+      "start_time": 1440.0,
+      "end_time": 1442.96
+    },
+    {
+      "text": " So get pressed model, the model that you are giving and the pressed configuration.",
+      "start_time": 1442.96,
+      "end_time": 1447.68
+    },
+    {
+      "text": " So this will set up a Q-Low rough principle by freezing it and producing a wrapper around",
+      "start_time": 1447.68,
+      "end_time": 1453.28
+    },
+    {
+      "text": " this by injecting B and A to the model B and A and it you will get defined to model.",
+      "start_time": 1453.28,
+      "end_time": 1460.44
+    },
+    {
+      "text": " So this is done on English codes.",
+      "start_time": 1460.44,
+      "end_time": 1462.88
+    },
+    {
+      "text": "",
+      "start_time": 1462.88,
+      "end_time": 1440.0
+    },
+    {
+      "text": " So there is some inference in that line, so these are all the training parameters.",
+      "start_time": 1446.88,
+      "end_time": null
+    },
+    {
+      "text": " So, one inference is there, what is life and the meaning of life is love and all some rubbish",
+      "start_time": 1470.0,
+      "end_time": 1479.94
+    },
+    {
+      "text": " it is given.",
+      "start_time": 1479.94,
+      "end_time": 1480.94
+    },
+    {
+      "text": " So, anyway so that is it.",
+      "start_time": 1480.94,
+      "end_time": 1483.32
+    },
+    {
+      "text": " So, that is the inference.",
+      "start_time": 1483.32,
+      "end_time": 1485.32
+    },
+    {
+      "text": " So, that is about Lora configuration.",
+      "start_time": 1485.32,
+      "end_time": 1491.32
+    },
+    {
+      "text": " Is this clear?",
+      "start_time": 1491.32,
+      "end_time": 1496.32
+    },
+    {
+      "text": "",
+      "start_time": 1496.32,
+      "end_time": 1470.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1477.0,
+      "end_time": null
+    },
+    {
+      "text": " Now, I want to solve a problem, do you need a break now and then do it.",
+      "start_time": 1500.0,
+      "end_time": 1525.0
+    },
+    {
+      "text": "",
+      "start_time": 1525.0,
+      "end_time": 1500.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1505.0,
+      "end_time": null
+    },
+    {
+      "text": " See a rag and fine tune.",
+      "start_time": 1530.0,
+      "end_time": 1555.0
+    },
+    {
+      "text": "",
+      "start_time": 1555.0,
+      "end_time": 1530.0
+    },
+    {
+      "text": " No, this is changing the parameter.",
+      "start_time": 1534.2,
+      "end_time": null
+    },
+    {
+      "text": " The rag will not change, model parameters are not changed, fine tuning will be faster during",
+      "start_time": 1560.0,
+      "end_time": 1567.96
+    },
+    {
+      "text": " inference, do not you think so?",
+      "start_time": 1567.96,
+      "end_time": 1571.8
+    },
+    {
+      "text": " Rag you have to generate at that time embedding, the parameters will have to be learned at",
+      "start_time": 1571.8,
+      "end_time": 1578.44
+    },
+    {
+      "text": " that time, it will inject that, but in the fine tuning case the parameters are updated,",
+      "start_time": 1578.44,
+      "end_time": 1584.68
+    },
+    {
+      "text": " so probably the inference speed will be higher in this.",
+      "start_time": 1584.68,
+      "end_time": 1587.72
+    },
+    {
+      "text": "",
+      "start_time": 1587.72,
+      "end_time": 1560.0
+    },
+    {
+      "text": " RIG is also a method of fine tuning only.",
+      "start_time": 1562.24,
+      "end_time": null
+    },
+    {
+      "text": " Speed versus expense and how many parameters and you are already keeping it ready.",
+      "start_time": 1590.0,
+      "end_time": 1602.36
+    },
+    {
+      "text": " You do not have to follow those procedures.",
+      "start_time": 1602.36,
+      "end_time": 1604.56
+    },
+    {
+      "text": " You have training time, you have some work here but inference time will be faster.",
+      "start_time": 1604.56,
+      "end_time": 1612.08
+    },
+    {
+      "text": " That is what I am now thinking of, anything else we have to think through.",
+      "start_time": 1612.08,
+      "end_time": 1618.72
+    },
+    {
+      "text": "",
+      "start_time": 1618.72,
+      "end_time": 1590.0
+    },
+    {
+      "text": " you",
+      "start_time": 1592.0,
+      "end_time": null
+    },
+    {
+      "text": " Is it to this detail?",
+      "start_time": 1620.0,
+      "end_time": 1631.44
+    },
+    {
+      "text": " Yeah, okay.",
+      "start_time": 1631.44,
+      "end_time": 1639.12
+    },
+    {
+      "text": " Normally they just look at it from the code angle.",
+      "start_time": 1639.12,
+      "end_time": 1644.08
+    },
+    {
+      "text": "",
+      "start_time": 1644.08,
+      "end_time": 1620.0
+    },
+    {
+      "text": " Now you will know these parameters now what they are making Fp1632, 16 quantization.",
+      "start_time": 1625.92,
+      "end_time": null
+    },
+    {
+      "text": " So, with some knowledge you will design the parameters, there you will be doing trial",
+      "start_time": 1650.0,
+      "end_time": 1656.16
+    },
+    {
+      "text": " and error there.",
+      "start_time": 1656.16,
+      "end_time": 1659.16
+    },
+    {
+      "text": " Now, if somebody ask you to build an LLM you give numbers and tell whether it is possible",
+      "start_time": 1659.16,
+      "end_time": 1670.96
+    },
+    {
+      "text": " or not.",
+      "start_time": 1670.96,
+      "end_time": 1671.96
+    },
+    {
+      "text": " Like recently one of the with due regards to teachers I am saying one of the teachers",
+      "start_time": 1671.96,
+      "end_time": 1676.76
+    },
+    {
+      "text": "",
+      "start_time": 1676.76,
+      "end_time": 1650.0
+    },
+    {
+      "text": " has asked one group to build an LLM.",
+      "start_time": 1651.88,
+      "end_time": null
+    },
+    {
+      "text": " And then students are later laughing at it.",
+      "start_time": 1680.0,
+      "end_time": 1684.0
+    },
+    {
+      "text": " So because of the...",
+      "start_time": 1684.0,
+      "end_time": 1687.0
+    },
+    {
+      "text": " So what they had to say?",
+      "start_time": 1687.0,
+      "end_time": 1689.0
+    },
+    {
+      "text": " The teacher is not agreeing.",
+      "start_time": 1689.0,
+      "end_time": 1691.0
+    },
+    {
+      "text": " It's like that.",
+      "start_time": 1691.0,
+      "end_time": 1694.0
+    },
+    {
+      "text": " But there I think they should have given these numbers.",
+      "start_time": 1694.0,
+      "end_time": 1698.0
+    },
+    {
+      "text": " You give me 800 GB, I will do it.",
+      "start_time": 1698.0,
+      "end_time": 1701.0
+    },
+    {
+      "text": " It's not about your intelligence.",
+      "start_time": 1701.0,
+      "end_time": 1703.0
+    },
+    {
+      "text": " You are not in that place.",
+      "start_time": 1703.0,
+      "end_time": 1706.0
+    },
+    {
+      "text": "",
+      "start_time": 1706.0,
+      "end_time": 1680.0
+    },
+    {
+      "text": " If you are in open air, you will do it.",
+      "start_time": 1682.0,
+      "end_time": null
+    },
+    {
+      "text": " Finally, my mind is where are we heading finally?",
+      "start_time": 1710.0,
+      "end_time": 1717.0
+    },
+    {
+      "text": " I don't know, industry also is not able to, this much who will invest, 4000 crores.",
+      "start_time": 1717.0,
+      "end_time": 1725.0
+    },
+    {
+      "text": " Only some companies are able to invest, startups cannot.",
+      "start_time": 1725.0,
+      "end_time": 1728.0
+    },
+    {
+      "text": " Same fine tuning only, nothing else, rag or fine tuning.",
+      "start_time": 1728.0,
+      "end_time": 1733.0
+    },
+    {
+      "text": " So we have to research in fine tuning and rag only, I don't know how to solve this problem.",
+      "start_time": 1733.0,
+      "end_time": 1739.0
+    },
+    {
+      "text": "",
+      "start_time": 1739.0,
+      "end_time": 1710.0
+    },
+    {
+      "text": " problem.",
+      "start_time": 1712.0,
+      "end_time": null
+    },
+    {
+      "text": " Distilled model they have released. Deep Sikh you want me to cover? That is using reinforcement",
+      "start_time": 1740.0,
+      "end_time": 1754.94
+    },
+    {
+      "text": " learning. Fine tuning using RLHF that is not part of our Dharam. It uses reinforcement",
+      "start_time": 1754.94,
+      "end_time": 1760.96
+    },
+    {
+      "text": " learning with human feedback. RLHF. Deep Sikh. Reinforcement learning is a very tough topic.",
+      "start_time": 1760.96,
+      "end_time": 1769.96
+    },
+    {
+      "text": "",
+      "start_time": 1769.96,
+      "end_time": 1740.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1741.0,
+      "end_time": null
+    },
+    {
+      "text": " Yeah",
+      "start_time": 1770.0,
+      "end_time": 1772.0
+    },
+    {
+      "text": " No",
+      "start_time": 1774.2,
+      "end_time": 1776.2
+    },
+    {
+      "text": " Punishment and reward, huh?",
+      "start_time": 1778.6,
+      "end_time": 1780.6
+    },
+    {
+      "text": " Yeah, that is reinforcement learning that is reward and punishment model that is the driving also it is a reinforcement learning is used",
+      "start_time": 1791.88,
+      "end_time": 1799.48
+    },
+    {
+      "text": " But behind scene there is something called as discounted reward and then temporal difference,",
+      "start_time": 1800.0,
+      "end_time": 1806.16
+    },
+    {
+      "text": " Q learning, value learning, policy learning is a heavy math course, heavy heavy math course.",
+      "start_time": 1806.16,
+      "end_time": 1813.32
+    },
+    {
+      "text": " We stop it saying okay till learn reward till learn punishment and that is it, policy",
+      "start_time": 1813.32,
+      "end_time": 1822.44
+    },
+    {
+      "text": " and Q learning.",
+      "start_time": 1822.44,
+      "end_time": 1824.14
+    },
+    {
+      "text": " But how is the Q value created?",
+      "start_time": 1824.14,
+      "end_time": 1826.34
+    },
+    {
+      "text": " What happens to how do you update Q values?",
+      "start_time": 1826.34,
+      "end_time": 1829.24
+    },
+    {
+      "text": "",
+      "start_time": 1829.24,
+      "end_time": 1800.0
+    },
+    {
+      "text": " it a deep learning.",
+      "start_time": 1800.76,
+      "end_time": null
+    },
+    {
+      "text": " model you will use to learn Q value, so like that how is the data fed, so there is more",
+      "start_time": 1830.0,
+      "end_time": 1836.0
+    },
+    {
+      "text": " to it.",
+      "start_time": 1836.0,
+      "end_time": 1837.0
+    },
+    {
+      "text": " But finally it is all calculus linear algebra, fundamentals have been taught but we are not",
+      "start_time": 1837.0,
+      "end_time": 1841.88
+    },
+    {
+      "text": " able to connect the two properly, we have to do that.",
+      "start_time": 1841.88,
+      "end_time": 1847.72
+    },
+    {
+      "text": " But for that you should have interest, to create that interest you should have I think",
+      "start_time": 1847.72,
+      "end_time": 1852.8
+    },
+    {
+      "text": " only time for that, with 5, 6 projects I don't think so you are doing anything meaningful",
+      "start_time": 1852.8,
+      "end_time": 1858.6
+    },
+    {
+      "text": "",
+      "start_time": 1858.6,
+      "end_time": 1830.0
+    },
+    {
+      "text": " that is what I am saying.",
+      "start_time": 1830.88,
+      "end_time": null
+    },
+    {
+      "text": " Just in time review is announced, okay do something and show.",
+      "start_time": 1860.0,
+      "end_time": 1864.0
+    },
+    {
+      "text": " All the time we are, isn't it?",
+      "start_time": 1864.0,
+      "end_time": 1866.0
+    },
+    {
+      "text": " You are not able to give proper timing to any project properly.",
+      "start_time": 1866.0,
+      "end_time": 1870.0
+    },
+    {
+      "text": " To properly think through.",
+      "start_time": 1870.0,
+      "end_time": 1872.0
+    },
+    {
+      "text": " Two projects is good enough.",
+      "start_time": 1872.0,
+      "end_time": 1874.0
+    },
+    {
+      "text": " Meaningfully big size we can develop.",
+      "start_time": 1874.0,
+      "end_time": 1876.0
+    },
+    {
+      "text": " Six projects I don't think so.",
+      "start_time": 1876.0,
+      "end_time": 1878.0
+    },
+    {
+      "text": " So then you end up just doing some develop some code as the chargeability is there.",
+      "start_time": 1878.0,
+      "end_time": 1882.0
+    },
+    {
+      "text": " Just they have developed.",
+      "start_time": 1882.0,
+      "end_time": 1883.0
+    },
+    {
+      "text": " Make it work.",
+      "start_time": 1883.0,
+      "end_time": 1884.0
+    },
+    {
+      "text": " Show some output and that's it.",
+      "start_time": 1884.0,
+      "end_time": 1887.0
+    },
+    {
+      "text": "",
+      "start_time": 1887.0,
+      "end_time": 1860.0
+    },
+    {
+      "text": " With interest you are not able to do it.",
+      "start_time": 1863.0,
+      "end_time": null
+    },
+    {
+      "text": " it. More of only projects if you do it inside then I think maybe you will like it. Some",
+      "start_time": 1890.0,
+      "end_time": 1897.0
+    },
+    {
+      "text": " drastic change in education system is required if that is the case. Then how do we accommodate",
+      "start_time": 1899.8,
+      "end_time": 1904.88
+    },
+    {
+      "text": " for theory? We get scared. If theory is not balanced, so I am on the time thinking about",
+      "start_time": 1904.88,
+      "end_time": 1911.32
+    },
+    {
+      "text": " it. Should we really reform the way we are educating students? There is a big question",
+      "start_time": 1911.32,
+      "end_time": 1916.28
+    },
+    {
+      "text": "",
+      "start_time": 1916.28,
+      "end_time": 1890.0
+    },
+    {
+      "text": " mark. Yeah.",
+      "start_time": 1891.0,
+      "end_time": 1892.0
+    },
+    {
+      "text": " Experiential learning required.",
+      "start_time": 1892.0,
+      "end_time": 1893.2
+    },
+    {
+      "text": " theory is required how to balance between the two that is the and your attention span is low",
+      "start_time": 1920.0,
+      "end_time": 1928.16
+    },
+    {
+      "text": " I had to shout and then say no you listen to this like that",
+      "start_time": 1929.76,
+      "end_time": 1932.72
+    },
+    {
+      "text": " Hi with the chat gpt attention span has come down like that I mean to make you listen to what I am",
+      "start_time": 1938.0,
+      "end_time": 1943.92
+    },
+    {
+      "text": " saying no people don't find it interesting I used to see happy expressions when I used to teach",
+      "start_time": 1943.92,
+      "end_time": 1949.28
+    },
+    {
+      "text": " Now I am not seeing it, when she is going to stop like that.",
+      "start_time": 1950.0,
+      "end_time": 1954.0
+    },
+    {
+      "text": " Yeah, yeah, yeah, yeah. Data structures when I taught, it's like a pleasureous experience for me.",
+      "start_time": 1954.0,
+      "end_time": 1961.0
+    },
+    {
+      "text": " And inside my class, I never get angry, never get angry inside the class.",
+      "start_time": 1961.0,
+      "end_time": 1966.0
+    },
+    {
+      "text": " Because it's only, I mean business here, just teaching.",
+      "start_time": 1966.0,
+      "end_time": 1970.0
+    },
+    {
+      "text": " Okay, and they are liking it, they are understanding it, that is how it is.",
+      "start_time": 1970.0,
+      "end_time": 1974.0
+    },
+    {
+      "text": " But now if you give a learn, they will just do the charge equity and they'll submit it.",
+      "start_time": 1974.0,
+      "end_time": 1977.0
+    },
+    {
+      "text": "",
+      "start_time": 1977.0,
+      "end_time": 1950.0
+    },
+    {
+      "text": " They don't understand anything and I don't have any work done.",
+      "start_time": 1953.0,
+      "end_time": null
+    },
+    {
+      "text": " Where is the enjoyment here?",
+      "start_time": 1980.0,
+      "end_time": 1985.0
+    },
+    {
+      "text": " The enjoyment, the happiness expression is gone.",
+      "start_time": 1985.0,
+      "end_time": 1988.0
+    },
+    {
+      "text": " And you have multiple resources, not that only I teach and you understand.",
+      "start_time": 1988.0,
+      "end_time": 1992.0
+    },
+    {
+      "text": " You have multiple YouTube resources.",
+      "start_time": 1992.0,
+      "end_time": 1994.0
+    },
+    {
+      "text": " The only difference is I have time, patience, so I collate all of that information.",
+      "start_time": 1994.0,
+      "end_time": 1999.0
+    },
+    {
+      "text": " This is not available at one time.",
+      "start_time": 1999.0,
+      "end_time": 2001.0
+    },
+    {
+      "text": " I watch many YouTube videos and I get doubts when I'm actually,",
+      "start_time": 2001.0,
+      "end_time": 2007.0
+    },
+    {
+      "text": "",
+      "start_time": 2007.0,
+      "end_time": 1980.0
+    },
+    {
+      "text": " Okay, what I should say all the time here is once",
+      "start_time": 1982.4,
+      "end_time": null
+    },
+    {
+      "text": " Okay, when I'm rehearsing I will get doubts. So then I will ask Chajji Pity.",
+      "start_time": 2010.0,
+      "end_time": 2014.0
+    },
+    {
+      "text": " You know Chajji Pity, how many times it has told me that you are asking a great question?",
+      "start_time": 2014.0,
+      "end_time": 2018.0
+    },
+    {
+      "text": " So many times, normally it doesn't say. For some questions it doesn't say.",
+      "start_time": 2018.0,
+      "end_time": 2023.0
+    },
+    {
+      "text": " But for many of my questions it has said you have asked a great question.",
+      "start_time": 2023.0,
+      "end_time": 2026.0
+    },
+    {
+      "text": " Great question, great question, great question, I am asking.",
+      "start_time": 2026.0,
+      "end_time": 2029.0
+    },
+    {
+      "text": " Finally I understand everything. But I am also happy that Chajji Pity is there.",
+      "start_time": 2029.0,
+      "end_time": 2034.0
+    },
+    {
+      "text": " Otherwise I would have not understood to this level. It is hard.",
+      "start_time": 2034.0,
+      "end_time": 2038.0
+    },
+    {
+      "text": "",
+      "start_time": 2038.0,
+      "end_time": 2010.0
+    },
+    {
+      "text": " YouTubers they don't I mean that's not a",
+      "start_time": 2012.0,
+      "end_time": null
+    },
+    {
+      "text": " I can't guarantee that even charge gpt I can't guarantee multiple sources I have to read there's no proper textbook",
+      "start_time": 2040.0,
+      "end_time": 2050.0
+    },
+    {
+      "text": " so all of these are issues and finally we have to deliver we have to please do our duty",
+      "start_time": 2050.0,
+      "end_time": 2059.0
+    },
+    {
+      "text": " so certainly challenges are there",
+      "start_time": 2059.0,
+      "end_time": 2062.0
+    },
+    {
+      "text": "",
+      "start_time": 2062.0,
+      "end_time": 2040.0
+    },
+    {
+      "text": " companies, data structures, algorithms.",
+      "start_time": 2045.84,
+      "end_time": null
+    },
+    {
+      "text": " LLM and all that. But everybody wants to have a say in LLM. Now anybody who ask whichever",
+      "start_time": 2070.0,
+      "end_time": 2081.2
+    },
+    {
+      "text": " domain they are in, little bit of ML is required. So it is good to have this knowledge, there",
+      "start_time": 2081.2,
+      "end_time": 2086.04
+    },
+    {
+      "text": " is no doubt about it. And you are in the technology era, that is the strength now that we are",
+      "start_time": 2086.04,
+      "end_time": 2090.6
+    },
+    {
+      "text": " getting. If somebody says then we are not lost, we know about it. So that is good. But",
+      "start_time": 2090.6,
+      "end_time": 2098.84
+    },
+    {
+      "text": "",
+      "start_time": 2098.84,
+      "end_time": 2070.0
+    },
+    {
+      "text": " how much we will put to use.",
+      "start_time": 2071.16,
+      "end_time": null
+    },
+    {
+      "text": " But lot of productization I am not sure how much is there, how many recommender systems",
+      "start_time": 2100.0,
+      "end_time": 2106.78
+    },
+    {
+      "text": " are there I do not know.",
+      "start_time": 2106.78,
+      "end_time": 2109.46
+    },
+    {
+      "text": " All of the charge it is only.",
+      "start_time": 2109.46,
+      "end_time": 2110.98
+    },
+    {
+      "text": " You have to think of something very new we can do with LLM, I do not know what is that.",
+      "start_time": 2110.98,
+      "end_time": 2121.9
+    },
+    {
+      "text": " Everybody speaks whatever Andrew says now, the Karpati, these standard people.",
+      "start_time": 2121.9,
+      "end_time": 2127.54
+    },
+    {
+      "text": "",
+      "start_time": 2127.54,
+      "end_time": 2100.0
+    },
+    {
+      "text": " whenever they are speaking they will be already 5 years back.",
+      "start_time": 2102.48,
+      "end_time": null
+    },
+    {
+      "text": " in their research labs. That's why we are not able to catch up. Their labs are little bit infrastructure also, they are connected to Google and all of that.",
+      "start_time": 2130.0,
+      "end_time": 2140.0
+    },
+    {
+      "text": " So their infrastructure is high and students are high. Here students are also very high, there is no doubt. That is a balance.",
+      "start_time": 2140.0,
+      "end_time": 2146.0
+    },
+    {
+      "text": " I wouldn't say that our students are lower. Students equal, but rest are all down.",
+      "start_time": 2146.0,
+      "end_time": 2153.0
+    },
+    {
+      "text": "",
+      "start_time": 2153.0,
+      "end_time": 2130.0
+    },
+    {
+      "text": " So, we are not giving you a right exposure.",
+      "start_time": 2137.0,
+      "end_time": null
+    },
+    {
+      "text": " Whatever is in our bandwidth we are giving you that much.",
+      "start_time": 2160.0,
+      "end_time": 2164.0
+    },
+    {
+      "text": " It will still do a lot.",
+      "start_time": 2164.0,
+      "end_time": 2166.0
+    },
+    {
+      "text": " So we failed to catch up with them and eventually students will go abroad.",
+      "start_time": 2166.0,
+      "end_time": 2171.0
+    },
+    {
+      "text": " So they want that experience.",
+      "start_time": 2171.0,
+      "end_time": 2173.0
+    },
+    {
+      "text": " I have seen many students, instead of one student told me in Citrix he was drawing 22 lakhs.",
+      "start_time": 2173.0,
+      "end_time": 2178.0
+    },
+    {
+      "text": " And within no time he came back and asked me for a recommendation letter.",
+      "start_time": 2178.0,
+      "end_time": 2182.0
+    },
+    {
+      "text": " I asked him what, then his dad is a doctor and he was not getting that much.",
+      "start_time": 2182.0,
+      "end_time": 2187.0
+    },
+    {
+      "text": " He just graduated in 22 lakhs.",
+      "start_time": 2187.0,
+      "end_time": 2189.0
+    },
+    {
+      "text": "",
+      "start_time": 2189.0,
+      "end_time": 2160.0
+    },
+    {
+      "text": " So...",
+      "start_time": 2161.0,
+      "end_time": null
+    },
+    {
+      "text": " So, his father was asking, are you mad, you want to leave this 22 lakhs and then his answer",
+      "start_time": 2190.0,
+      "end_time": 2195.56
+    },
+    {
+      "text": " is they are not doing cutting edge technology work.",
+      "start_time": 2195.56,
+      "end_time": 2198.56
+    },
+    {
+      "text": " So, I am not enjoying that.",
+      "start_time": 2198.56,
+      "end_time": 2201.56
+    },
+    {
+      "text": " Now, all those, at least high GPS students whom I have asked, they all want to do, I",
+      "start_time": 2201.56,
+      "end_time": 2210.92
+    },
+    {
+      "text": " mean, understand better.",
+      "start_time": 2210.92,
+      "end_time": 2212.56
+    },
+    {
+      "text": " They want to do a good job.",
+      "start_time": 2212.56,
+      "end_time": 2213.76
+    },
+    {
+      "text": " They are not just looking at the money.",
+      "start_time": 2213.76,
+      "end_time": 2215.24
+    },
+    {
+      "text": " It is all initially tier one and all of that.",
+      "start_time": 2215.24,
+      "end_time": 2218.16
+    },
+    {
+      "text": "",
+      "start_time": 2218.16,
+      "end_time": 2190.0
+    },
+    {
+      "text": " who are placed in apple also they left.",
+      "start_time": 2191.68,
+      "end_time": null
+    },
+    {
+      "text": " It was 60 lakhs. The student did not like it. They did not like it. Left the 60 lakhs",
+      "start_time": 2220.0,
+      "end_time": 2227.0
+    },
+    {
+      "text": " thing and joined Microsoft Research for a lesser salary. But the student is more interested",
+      "start_time": 2227.0,
+      "end_time": 2233.0
+    },
+    {
+      "text": " in work that eventually happens. So after some time, money does not matter. It is important.",
+      "start_time": 2233.0,
+      "end_time": 2241.0
+    },
+    {
+      "text": " I am not saying it is. I will never say money is not important. Everybody likes it.",
+      "start_time": 2241.0,
+      "end_time": 2246.0
+    },
+    {
+      "text": "",
+      "start_time": 2246.0,
+      "end_time": 2220.0
+    },
+    {
+      "text": " driving factor but after some time",
+      "start_time": 2226.0,
+      "end_time": null
+    },
+    {
+      "text": " I think if you don't like the work then how will you?",
+      "start_time": 2250.0,
+      "end_time": 2257.0
+    },
+    {
+      "text": " Still you are not much exposed to the cutthroat environment there, business, all of that.",
+      "start_time": 2260.28,
+      "end_time": 2266.28
+    },
+    {
+      "text": " You are still young.",
+      "start_time": 2266.28,
+      "end_time": 2269.28
+    },
+    {
+      "text": " So all those skills you have to learn there.",
+      "start_time": 2269.28,
+      "end_time": 2275.28
+    },
+    {
+      "text": " How to please people, how to impress the manager, how to get 20 percent high, 30 percent",
+      "start_time": 2275.28,
+      "end_time": 2279.96
+    },
+    {
+      "text": "",
+      "start_time": 2279.96,
+      "end_time": 2250.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 2251.0,
+      "end_time": null
+    },
+    {
+      "text": " So this skill is not taught here.",
+      "start_time": 2280.0,
+      "end_time": 2287.0
+    },
+    {
+      "text": " No, no, no, I wouldn't say.",
+      "start_time": 2287.0,
+      "end_time": 2290.0
+    },
+    {
+      "text": " Both are important.",
+      "start_time": 2290.0,
+      "end_time": 2291.0
+    },
+    {
+      "text": " Both are important.",
+      "start_time": 2291.0,
+      "end_time": 2292.0
+    },
+    {
+      "text": " Without any stuff, no, all the junior people will be making walkere.",
+      "start_time": 2292.0,
+      "end_time": 2296.0
+    },
+    {
+      "text": " My manager doesn't know anything.",
+      "start_time": 2296.0,
+      "end_time": 2298.0
+    },
+    {
+      "text": " But if the manager knows technically, they will appreciate.",
+      "start_time": 2298.0,
+      "end_time": 2308.0
+    },
+    {
+      "text": "",
+      "start_time": 2308.0,
+      "end_time": 2280.0
+    },
+    {
+      "text": " But it depends on what they would do.",
+      "start_time": 2282.0,
+      "end_time": null
+    },
+    {
+      "text": " have done, depends on that.",
+      "start_time": 2310.0,
+      "end_time": 2317.0
+    },
+    {
+      "text": " That is because he is into the tech, otherwise, see in my age I can also be teaching only",
+      "start_time": 2317.0,
+      "end_time": 2326.28
+    },
+    {
+      "text": " management topics, I can actually teach only soft skills now, instead of LLM and all of",
+      "start_time": 2326.28,
+      "end_time": 2331.0
+    },
+    {
+      "text": " that, isn't it?",
+      "start_time": 2331.0,
+      "end_time": 2332.0
+    },
+    {
+      "text": " But I am, I like tech, I like tech, that's why I am into that, I code, I look at it,",
+      "start_time": 2332.0,
+      "end_time": 2339.24
+    },
+    {
+      "text": "",
+      "start_time": 2339.24,
+      "end_time": 2310.0
+    },
+    {
+      "text": " Nobody's asking.",
+      "start_time": 2310.8,
+      "end_time": null
+    },
+    {
+      "text": " me to do anything. After I have come out of my chairperson's role, I could have spent",
+      "start_time": 2340.0,
+      "end_time": 2344.88
+    },
+    {
+      "text": " a peaceful life here. Enjoy, simply come and go. Nobody is asking me to learn ML, TDL,",
+      "start_time": 2344.88,
+      "end_time": 2351.8
+    },
+    {
+      "text": " LLM, all of this. But this is the route I have chosen. It is up to you. And even when",
+      "start_time": 2351.8,
+      "end_time": 2359.2
+    },
+    {
+      "text": " I was the chairperson, I wanted to know everything so that others will not fool me. It is like",
+      "start_time": 2359.2,
+      "end_time": 2366.2
+    },
+    {
+      "text": "",
+      "start_time": 2366.2,
+      "end_time": 2340.0
+    },
+    {
+      "text": " So, I have always seen the tech domain I should not bit of everything.",
+      "start_time": 2343.8,
+      "end_time": null
+    },
+    {
+      "text": " If not to the depth, so somebody tells me this is the assignment that I am giving in",
+      "start_time": 2370.0,
+      "end_time": 2375.12
+    },
+    {
+      "text": " web technology, I should know that.",
+      "start_time": 2375.12,
+      "end_time": 2377.92
+    },
+    {
+      "text": " Simply they cannot love.",
+      "start_time": 2377.92,
+      "end_time": 2380.52
+    },
+    {
+      "text": " Teachers will be scared, otherwise you cannot be in the heads position.",
+      "start_time": 2380.52,
+      "end_time": 2384.52
+    },
+    {
+      "text": " You should know about the subject.",
+      "start_time": 2384.52,
+      "end_time": 2386.52
+    },
+    {
+      "text": " That is the difference in the managerial level also.",
+      "start_time": 2386.52,
+      "end_time": 2388.88
+    },
+    {
+      "text": " If you know it, then people under you cannot do it.",
+      "start_time": 2388.88,
+      "end_time": 2391.8
+    },
+    {
+      "text": " You should have taken that step.",
+      "start_time": 2391.8,
+      "end_time": 2393.16
+    },
+    {
+      "text": " So in that sense, you need technical depth is required.",
+      "start_time": 2393.16,
+      "end_time": 2396.4
+    },
+    {
+      "text": "",
+      "start_time": 2396.4,
+      "end_time": 2370.0
+    },
+    {
+      "text": " And after that you may use it may not use it that is a different matter but you should",
+      "start_time": 2373.52,
+      "end_time": null
+    },
+    {
+      "text": " Don't give it.",
+      "start_time": 2400.0,
+      "end_time": 2402.0
+    },
+    {
+      "text": " And you will be always respected.",
+      "start_time": 2402.0,
+      "end_time": 2407.0
+    },
+    {
+      "text": " When you are text-strong, you are respected more.",
+      "start_time": 2407.0,
+      "end_time": 2410.0
+    },
+    {
+      "text": " Superficial, it's all temporary.",
+      "start_time": 2410.0,
+      "end_time": 2414.0
+    },
+    {
+      "text": " And behind scene, there will be a lot of distinctions of that kind.",
+      "start_time": 2414.0,
+      "end_time": 2421.0
+    },
+    {
+      "text": " So text-strong person, you cannot...",
+      "start_time": 2421.0,
+      "end_time": 2423.0
+    },
+    {
+      "text": " Anant Raman, you see, nobody can touch him.",
+      "start_time": 2423.0,
+      "end_time": 2426.0
+    },
+    {
+      "text": " Nobody can go near him, it's like that.",
+      "start_time": 2426.0,
+      "end_time": 2429.0
+    },
+    {
+      "text": "",
+      "start_time": 2429.0,
+      "end_time": 2400.0
+    },
+    {
+      "text": " That is so strong.",
+      "start_time": 2401.0,
+      "end_time": null
+    },
+    {
+      "text": " He is now, he was in Adobe as a director.",
+      "start_time": 2430.0,
+      "end_time": 2442.0
+    },
+    {
+      "text": " He has worked in several big companies he has worked and he ran his own startup he has.",
+      "start_time": 2442.0,
+      "end_time": 2449.0
+    },
+    {
+      "text": "",
+      "start_time": 2449.0,
+      "end_time": 2430.0
+    },
+    {
+      "text": " Master's... No, no. He is associated with CCB. He is an adjunct professor.",
+      "start_time": 2441.0,
+      "end_time": null
+    },
+    {
+      "text": " he was supposed to come and teach this course. Me and him, we both designed Jennyi for CS.",
+      "start_time": 2460.0,
+      "end_time": 2467.0
+    },
+    {
+      "text": " Jennyi is a, because my daughter is taking, I can't teach there. So I came here.",
+      "start_time": 2467.0,
+      "end_time": 2473.0
+    },
+    {
+      "text": " Same, same. I'm telling you, I wanted to teach LLM, my daughter is in Jennyi there, I can't teach there.",
+      "start_time": 2473.0,
+      "end_time": 2486.0
+    },
+    {
+      "text": "",
+      "start_time": 2486.0,
+      "end_time": 2460.0
+    },
+    {
+      "text": " That is why I am still saying conflict of interest.",
+      "start_time": 2463.44,
+      "end_time": null
+    },
+    {
+      "text": " So I came here, took this opportunity.",
+      "start_time": 2490.0,
+      "end_time": 2494.0
+    },
+    {
+      "text": " Anyway, Jai Shri madam asked me whether I would teach.",
+      "start_time": 2494.0,
+      "end_time": 2497.0
+    },
+    {
+      "text": " I said readily agreed because I had designed the course there.",
+      "start_time": 2497.0,
+      "end_time": 2500.0
+    },
+    {
+      "text": " But I was feeling bad that I can't teach.",
+      "start_time": 2500.0,
+      "end_time": 2503.0
+    },
+    {
+      "text": " So here I got the opportunity.",
+      "start_time": 2503.0,
+      "end_time": 2506.0
+    },
+    {
+      "text": " Pardon?",
+      "start_time": 2506.0,
+      "end_time": 2511.0
+    },
+    {
+      "text": " A little change is there.",
+      "start_time": 2511.0,
+      "end_time": 2515.0
+    },
+    {
+      "text": " I little bit modified after the initial version.",
+      "start_time": 2515.0,
+      "end_time": 2519.0
+    },
+    {
+      "text": "",
+      "start_time": 2519.0,
+      "end_time": 2490.0
+    },
+    {
+      "text": " little bit of change",
+      "start_time": 2492.0,
+      "end_time": null
+    },
+    {
+      "text": " I did because this was lighter compared to the one which we have proposed there. There",
+      "start_time": 2520.0,
+      "end_time": 2525.68
+    },
+    {
+      "text": " it is little bit heavier. But I am telling Oma madam to teach all those whatever I mean",
+      "start_time": 2525.68,
+      "end_time": 2534.84
+    },
+    {
+      "text": " she had missed out like by parent coding BM25 and all of that. So I told her to teach that",
+      "start_time": 2534.84,
+      "end_time": 2539.88
+    },
+    {
+      "text": "",
+      "start_time": 2539.88,
+      "end_time": 2520.0
+    },
+    {
+      "text": " So, if she is missing out anything I am telling her to teach. So, that is it.",
+      "start_time": 2524.76,
+      "end_time": 2526.0
+    },
+    {
+      "text": " Next year I will be back in CS again teaching because she will anyway come to 7th so fine.",
+      "start_time": 2550.0,
+      "end_time": 2563.0
+    },
+    {
+      "text": " Now any year I can teach.",
+      "start_time": 2563.0,
+      "end_time": 2564.0
+    },
+    {
+      "text": " Last one year I am not able to teach ML, TDL, JNIA anything in CS I am not able to teach.",
+      "start_time": 2564.0,
+      "end_time": 2570.0
+    },
+    {
+      "text": " So I went back to data structures again last year.",
+      "start_time": 2570.0,
+      "end_time": 2573.0
+    },
+    {
+      "text": " Data structures.",
+      "start_time": 2573.0,
+      "end_time": 2574.0
+    },
+    {
+      "text": "",
+      "start_time": 2574.0,
+      "end_time": 2550.0
+    },
+    {
+      "text": " This time also TDL I am not able to teach.",
+      "start_time": 2553.0,
+      "end_time": null
+    },
+    {
+      "text": " last year TDL in my class all were 9 pointers, all were 9 pointers that elective batch TDL",
+      "start_time": 2580.0,
+      "end_time": 2592.28
+    },
+    {
+      "text": " I used to be scared to teach in that class, they never heard about what I am saying see",
+      "start_time": 2592.28,
+      "end_time": 2597.36
+    },
+    {
+      "text": " that is a different view but you are so scared because all are 9 pointers, not even close",
+      "start_time": 2597.36,
+      "end_time": 2607.44
+    },
+    {
+      "text": "",
+      "start_time": 2607.44,
+      "end_time": 2580.0
+    },
+    {
+      "text": " 9.3, 9.4 and above.",
+      "start_time": 2582.44,
+      "end_time": null
+    },
+    {
+      "text": " very allied batch that is okay there reasonably well recently two students",
+      "start_time": 2610.0,
+      "end_time": 2623.36
+    },
+    {
+      "text": " had not got he was in my actual TDL class he came here they're doing internship",
+      "start_time": 2623.36,
+      "end_time": 2629.8
+    },
+    {
+      "text": " in the center they didn't get a six credits internship they were doing it",
+      "start_time": 2629.8,
+      "end_time": 2634.12
+    },
+    {
+      "text": " they didn't get it and when I interviewed I was like so surprised 9.3",
+      "start_time": 2634.12,
+      "end_time": 2638.16
+    },
+    {
+      "text": "",
+      "start_time": 2638.16,
+      "end_time": 2610.0
+    },
+    {
+      "text": " guy is not yet displaced.",
+      "start_time": 2611.44,
+      "end_time": null
+    },
+    {
+      "text": " But I saw that there is a personality issue.",
+      "start_time": 2640.0,
+      "end_time": 2646.4
+    },
+    {
+      "text": " I told him about that.",
+      "start_time": 2646.4,
+      "end_time": 2648.2
+    },
+    {
+      "text": " In my interview, in the internship interview, I told him that these aspects are not good.",
+      "start_time": 2648.2,
+      "end_time": 2653.8
+    },
+    {
+      "text": " Probably you are not getting selected for that reason.",
+      "start_time": 2653.8,
+      "end_time": 2657.16
+    },
+    {
+      "text": " I told him some advices I gave.",
+      "start_time": 2657.16,
+      "end_time": 2659.8
+    },
+    {
+      "text": " I am just explaining, not about me, I am not talking about myself.",
+      "start_time": 2659.8,
+      "end_time": 2663.64
+    },
+    {
+      "text": " But when I explained, very next job he got it actually.",
+      "start_time": 2663.64,
+      "end_time": 2667.0
+    },
+    {
+      "text": "",
+      "start_time": 2667.0,
+      "end_time": 2640.0
+    },
+    {
+      "text": " He gave it to me.",
+      "start_time": 2642.0,
+      "end_time": null
+    },
+    {
+      "text": " There is no one factor.",
+      "start_time": 2670.0,
+      "end_time": 2673.04
+    },
+    {
+      "text": " See the company needs two, three people only and you are a thousand, five hundred students",
+      "start_time": 2673.04,
+      "end_time": 2677.64
+    },
+    {
+      "text": " applying.",
+      "start_time": 2677.64,
+      "end_time": 2678.64
+    },
+    {
+      "text": " So first filter, they are all rejection test, they are not acceptance test.",
+      "start_time": 2678.64,
+      "end_time": 2683.76
+    },
+    {
+      "text": " First scissoring is GPA because that will indicate how serious you are in studies.",
+      "start_time": 2683.76,
+      "end_time": 2689.64
+    },
+    {
+      "text": " So at least that much seriousness they will have to look at it.",
+      "start_time": 2689.64,
+      "end_time": 2692.8
+    },
+    {
+      "text": " After that they will look at what projects you have done and all of that.",
+      "start_time": 2692.8,
+      "end_time": 2696.08
+    },
+    {
+      "text": " So how much you have learned in the projects.",
+      "start_time": 2696.08,
+      "end_time": 2698.12
+    },
+    {
+      "text": "",
+      "start_time": 2698.12,
+      "end_time": 2670.0
+    },
+    {
+      "text": " the HR. This is going to be the next one.",
+      "start_time": 2671.0,
+      "end_time": 2671.88
+    },
+    {
+      "text": " was getting going up to the last round and in HR is getting rejected. So, seriously I",
+      "start_time": 2700.0,
+      "end_time": 2705.68
+    },
+    {
+      "text": " saw that is a behavioral issue, very low confidence and the more you get rejected now, you will",
+      "start_time": 2705.68,
+      "end_time": 2712.2
+    },
+    {
+      "text": " go with that fear only. So, somebody needs to tweak little bit, then that confidence",
+      "start_time": 2712.2,
+      "end_time": 2721.2
+    },
+    {
+      "text": "",
+      "start_time": 2721.2,
+      "end_time": 2700.0
+    },
+    {
+      "text": " One of my higher students way back in 2012 I think, 2015.",
+      "start_time": 2708.28,
+      "end_time": null
+    },
+    {
+      "text": " very good student he did project under me and used to teach others in the group",
+      "start_time": 2730.0,
+      "end_time": 2734.24
+    },
+    {
+      "text": " four member team damn good I would say in technology aptitude everything",
+      "start_time": 2734.24,
+      "end_time": 2739.52
+    },
+    {
+      "text": " all the rest of the three got placed and he didn't",
+      "start_time": 2739.52,
+      "end_time": 2742.56
+    },
+    {
+      "text": " so and single parent",
+      "start_time": 2742.56,
+      "end_time": 2744.46
+    },
+    {
+      "text": " only mother is there",
+      "start_time": 2744.46,
+      "end_time": 2746.0
+    },
+    {
+      "text": " so there is daily fight in the home",
+      "start_time": 2746.0,
+      "end_time": 2748.64
+    },
+    {
+      "text": " about he not getting placed",
+      "start_time": 2748.64,
+      "end_time": 2750.6
+    },
+    {
+      "text": " so the pressure is building and building and building",
+      "start_time": 2750.6,
+      "end_time": 2753.64
+    },
+    {
+      "text": " and after one point he stopped attending interviews",
+      "start_time": 2753.64,
+      "end_time": 2758.44
+    },
+    {
+      "text": "",
+      "start_time": 2758.44,
+      "end_time": 2730.0
+    },
+    {
+      "text": " He stopped.",
+      "start_time": 2732.0,
+      "end_time": null
+    },
+    {
+      "text": " So, there is regular fights between the mother and the son.",
+      "start_time": 2760.0,
+      "end_time": 2764.76
+    },
+    {
+      "text": " So, then one day he came and told me all these stories.",
+      "start_time": 2764.76,
+      "end_time": 2768.0
+    },
+    {
+      "text": " I was heading ISD department at that time.",
+      "start_time": 2768.0,
+      "end_time": 2770.0
+    },
+    {
+      "text": " So, he came and told me that this is what has happened.",
+      "start_time": 2770.0,
+      "end_time": 2773.0
+    },
+    {
+      "text": " Then I told that I think your mother requires counseling first.",
+      "start_time": 2773.0,
+      "end_time": 2777.0
+    },
+    {
+      "text": " Because there is so much pressure built, the son is not able to attend interviews only.",
+      "start_time": 2777.0,
+      "end_time": 2780.0
+    },
+    {
+      "text": " So, I told him to get the mother first.",
+      "start_time": 2780.0,
+      "end_time": 2783.0
+    },
+    {
+      "text": " Mother used to, in the night she used to take head bath and go to God's place and pray.",
+      "start_time": 2783.0,
+      "end_time": 2789.0
+    },
+    {
+      "text": "",
+      "start_time": 2789.0,
+      "end_time": 2760.0
+    },
+    {
+      "text": " pray and",
+      "start_time": 2761.0,
+      "end_time": null
+    },
+    {
+      "text": " this he has seen and he is getting shivers actually looking at his mother's situation",
+      "start_time": 2790.0,
+      "end_time": 2798.22
+    },
+    {
+      "text": " and his single parent and from childhood without father he has come up how much confidence",
+      "start_time": 2798.22,
+      "end_time": 2803.72
+    },
+    {
+      "text": " he will have already there is no confidence and on top of that mother is doing all that",
+      "start_time": 2803.72,
+      "end_time": 2808.36
+    },
+    {
+      "text": " in the night and there is like physical fight between the mother and the son.",
+      "start_time": 2808.36,
+      "end_time": 2816.4
+    },
+    {
+      "text": "",
+      "start_time": 2816.4,
+      "end_time": 2790.0
+    },
+    {
+      "text": " So I had to little bit intervene there and then did lot of counts.",
+      "start_time": 2793.6,
+      "end_time": null
+    },
+    {
+      "text": " to mother first and then one day I dropped him, one day I told him, the next one, next",
+      "start_time": 2820.0,
+      "end_time": 2828.0
+    },
+    {
+      "text": " year one, I told him that he has to take up and I took a promise from him that he will",
+      "start_time": 2828.0,
+      "end_time": 2833.0
+    },
+    {
+      "text": " attend at least.",
+      "start_time": 2833.0,
+      "end_time": 2834.0
+    },
+    {
+      "text": " Aptitude also he stopped attending.",
+      "start_time": 2834.0,
+      "end_time": 2836.0
+    },
+    {
+      "text": " So I took a promise and then he used to respect me because I was his guide.",
+      "start_time": 2836.0,
+      "end_time": 2840.0
+    },
+    {
+      "text": " So then he has a paper also with me and all of that.",
+      "start_time": 2840.0,
+      "end_time": 2844.0
+    },
+    {
+      "text": " Then he said he will do it and then he came and I told him that before going to the interview",
+      "start_time": 2844.0,
+      "end_time": 2848.0
+    },
+    {
+      "text": "",
+      "start_time": 2848.0,
+      "end_time": 2820.0
+    },
+    {
+      "text": " the interview you should come to my room and go.",
+      "start_time": 2821.68,
+      "end_time": null
+    },
+    {
+      "text": " He came to my room. Instead of going to placement, he went home.",
+      "start_time": 2850.0,
+      "end_time": 2854.0
+    },
+    {
+      "text": " He didn't go. Then I asked him about what happened.",
+      "start_time": 2854.0,
+      "end_time": 2859.0
+    },
+    {
+      "text": " Then he said he got scared and he left. He only showed his face in my room and left.",
+      "start_time": 2859.0,
+      "end_time": 2865.0
+    },
+    {
+      "text": " So the next one I said, you come again, I said. Then the second one, one more.",
+      "start_time": 2865.0,
+      "end_time": 2870.0
+    },
+    {
+      "text": " He came. Then next time he dropped in till the lab thinking that he will again deviate.",
+      "start_time": 2870.0,
+      "end_time": 2875.0
+    },
+    {
+      "text": "",
+      "start_time": 2875.0,
+      "end_time": 2850.0
+    },
+    {
+      "text": " I told him that I am going to stay there only outside. He has to finish the test and come.",
+      "start_time": 2853.0,
+      "end_time": 2855.0
+    },
+    {
+      "text": " that job he got. This much intervention was required for that boy. Finally now he is doing",
+      "start_time": 2880.0,
+      "end_time": 2887.0
+    },
+    {
+      "text": " very well. Another guy by name Himanshu, he was also Adobe he got it finally. So little",
+      "start_time": 2888.2,
+      "end_time": 2895.2
+    },
+    {
+      "text": " bit of counseling I do during that time when they are distressed. That is one of my job",
+      "start_time": 2897.52,
+      "end_time": 2902.68
+    },
+    {
+      "text": " ones. So it is only just pep talk is required nothing else. I do not do anything great but",
+      "start_time": 2902.68,
+      "end_time": 2909.68
+    },
+    {
+      "text": " to boost the confidence we need to step in 5 minutes that is what is mentorship actually",
+      "start_time": 2910.0,
+      "end_time": 2916.24
+    },
+    {
+      "text": " so we should step in and night 12 o clock he called me stating that he got adobe yeah",
+      "start_time": 2916.24,
+      "end_time": 2921.44
+    },
+    {
+      "text": " yeah he is still in touch with me so he makes it a point that he wishes me on my birthday",
+      "start_time": 2921.44,
+      "end_time": 2927.72
+    },
+    {
+      "text": " so all of that so that is happening like that so lots of life we touch like that nice but",
+      "start_time": 2927.72,
+      "end_time": 2936.56
+    },
+    {
+      "text": "",
+      "start_time": 2936.56,
+      "end_time": 2910.0
+    },
+    {
+      "text": " But that's a very\u2026",
+      "start_time": 2913.4,
+      "end_time": null
+    },
+    {
+      "text": " pressure cooker kind of scenario. My friend is getting players, I am not getting players.",
+      "start_time": 2940.0,
+      "end_time": 2947.0
+    },
+    {
+      "text": " Manisha and Ayush they were in single team. They come for pre-placement talk also, bootstrap",
+      "start_time": 2947.0,
+      "end_time": 2952.0
+    },
+    {
+      "text": " also they did. Ayush got it in first place, he takes. And Manisha got it in the 52nd attempt,",
+      "start_time": 2952.0,
+      "end_time": 2961.0
+    },
+    {
+      "text": " 52nd company. So I asked Ayush about sweets. Then he said until she doesn't get it I won't.",
+      "start_time": 2961.0,
+      "end_time": 2968.0
+    },
+    {
+      "text": "",
+      "start_time": 2968.0,
+      "end_time": 2940.0
+    },
+    {
+      "text": " So, 50 seconds.",
+      "start_time": 2942.0,
+      "end_time": null
+    },
+    {
+      "text": " she got it finally and after that she got three jobs.",
+      "start_time": 2970.0,
+      "end_time": 2975.0
+    },
+    {
+      "text": " I went to her marriage also. Now she has a child, all of that.",
+      "start_time": 2975.0,
+      "end_time": 2980.0
+    },
+    {
+      "text": " She is like family connect. Aish also had invited me to North Gujarat from Surat.",
+      "start_time": 2980.0,
+      "end_time": 2986.0
+    },
+    {
+      "text": " So he had invited me for his marriage. He is in regular touch.",
+      "start_time": 2986.0,
+      "end_time": 2990.0
+    },
+    {
+      "text": " We plan to do a joint collaboration also.",
+      "start_time": 2990.0,
+      "end_time": 2993.0
+    },
+    {
+      "text": " So that extent of friendship is there now because of that.",
+      "start_time": 2993.0,
+      "end_time": 2996.0
+    },
+    {
+      "text": "",
+      "start_time": 2996.0,
+      "end_time": 2970.0
+    },
+    {
+      "text": " They have become friends now. 2014 graduated.",
+      "start_time": 2974.0,
+      "end_time": null
+    },
+    {
+      "text": " But he had promised me at that time that he would come back and serve the institution.",
+      "start_time": 3000.0,
+      "end_time": 3004.0
+    },
+    {
+      "text": " 14 to 24, he has been coming. One decade he has come back. He has kept the promise.",
+      "start_time": 3004.0,
+      "end_time": 3011.0
+    },
+    {
+      "text": " He was the best outgoing student of that batch, 2014.",
+      "start_time": 3011.0,
+      "end_time": 3016.0
+    },
+    {
+      "text": " Even now I wrote to several alumni to assist in my capstone teams. They all have come back and agreed.",
+      "start_time": 3016.0,
+      "end_time": 3024.0
+    },
+    {
+      "text": "",
+      "start_time": 3024.0,
+      "end_time": 3000.0
+    },
+    {
+      "text": " The only thing is the teams are not showing interest. So lot of volume may are ready.",
+      "start_time": 3003.0,
+      "end_time": 3005.0
+    },
+    {
+      "text": " Okay, lot of digression I think I will get back to the, yeah.",
+      "start_time": 3030.0,
+      "end_time": 3037.0
+    },
+    {
+      "text": " I'm going to go ahead and take a look at the",
+      "start_time": 3060.0,
+      "end_time": 3062.0
+    },
+    {
+      "text": " video.",
+      "start_time": 3062.0,
+      "end_time": 3064.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 3090.0,
+      "end_time": 3097.0
+    },
+    {
+      "text": " This is the formula used for quantization and decontization and lower updates. So I will",
+      "start_time": 3120.0,
+      "end_time": 3142.28
+    },
+    {
+      "text": " give you a problem now, you have to solve. If you solve this, you will actually understand",
+      "start_time": 3142.28,
+      "end_time": 3148.32
+    },
+    {
+      "text": "",
+      "start_time": 3148.32,
+      "end_time": 3120.0
+    },
+    {
+      "text": " again better.",
+      "start_time": 3120.6,
+      "end_time": null
+    },
+    {
+      "text": " Pardon?",
+      "start_time": 3150.0,
+      "end_time": 3152.0
+    },
+    {
+      "text": " Yes.",
+      "start_time": 3152.0,
+      "end_time": 3154.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 3180.0,
+      "end_time": 3182.0
+    },
+    {
+      "text": " I'm going to go back to the other side of the road.",
+      "start_time": 3210.0,
+      "end_time": 3217.0
+    },
+    {
+      "text": " I am sorry.",
+      "start_time": 3240.0,
+      "end_time": 3247.0
+    },
+    {
+      "text": " Pardon?",
+      "start_time": 3251.0,
+      "end_time": 3252.0
+    },
+    {
+      "text": " I am sorry.",
+      "start_time": 3252.0,
+      "end_time": 3253.0
+    },
+    {
+      "text": " Yeah.",
+      "start_time": 3253.0,
+      "end_time": 3254.0
+    },
+    {
+      "text": "",
+      "start_time": 3254.0,
+      "end_time": 3240.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 3256.0,
+      "end_time": null
+    },
+    {
+      "text": " There are two problems, one for quantization and decontization, you have to find the error",
+      "start_time": 3270.0,
+      "end_time": 3289.92
+    },
+    {
+      "text": " in quantization. This is the second problem for Lora, wait, there are two problems, they",
+      "start_time": 3289.92,
+      "end_time": 3296.4
+    },
+    {
+      "text": "",
+      "start_time": 3296.4,
+      "end_time": 3270.0
+    },
+    {
+      "text": " separate.",
+      "start_time": 3272.0,
+      "end_time": null
+    }
+  ],
+  "transcript_text": " B into A which is going to be blown up to 25. Now what you are going to do is you do  W plus B A. W is of the original size 25. So the two low ranked matrices which are learned,  these two low ranked matrices after they have learned which have very less parameters,  they when they are combined will get projected to the original dimension of the matrix and   then you add them but there is another variation.  Then there is alpha by r, alpha by r, alpha by r, r stands for rank and alpha is another   scaling factor alpha by R into BA. This is based on principle similar to SVT.  d decomposition, if you remember it in linear algebra you did that, SVD decomposition. How  did you do? Matrix A was decomposed into U S V transpose. Remember that what does SVD   What is the reason why we use SVD decomposition?  is mathematics but I am asking why is SVD decomposition useful, reason, compressing,  dimensionality reduction. Why do you think the dimensionality can be reduced? A matrix  has some information, A has some information. When you, it is possible to decompose a rectangular  matrix, otherwise PCI is only for square matrix but SVD can be used for rectangular matrix   and you can do the...  decomposition. But if you observe the singular value matrix, it is a diagonal matrix. You  remember that singular value matrix is a diagonal matrix where you will have singular values  only across the diagonal.  When you decompose this, see please note that A is represented in the form of USB transpose,  decomposed matrix. A is a matrix that is written in the form of three matrices, that   message. Together they have to capture back this.  Do you agree with me?  Together they have to capture back A when you multiply all of these matrices.  So A is decomposed into these three but when you look at the singular value matrix, yes  the singular values will be along the diagonal and rest of the entries will be 0.  Now if you observe the singular values as and when you move towards lower end most of   the values will be 0's even the singular values will be 0's.  near zeros, most of the singular values will be near zeros. What you can do is you can cut  off actually this portion, you can remove some singular values. So when you do the matrix  multiplication it will automatically reduce the dimension. By removing these singular  values of course there is loss of information you are compressing because full combined   the u s v transpose will be your original a, but your original a will be your original a.  will be at some loss if you disconnect this portion, of course dimensions should match.  But you are going to, I am sure you are getting some idea regarding, I am not now talking  about dimensions. You have to remove some singular values because they are close to  0. By removing this there will be some loss of information but the amount of dimensionality   reduction that you get is immense and the performance is not that much affected.  you apply singular value decomposition figure out how many singular values can be removed  and then you recombine form a new matrix so that it is a reduction matrix and then there  is some rank matrix linearly independent dependent rows and all of that.  So these concepts were used in low rank decomposition that is what they did this matrix can be decomposed   into 5 cross 1 and 1 cross y and then you can merge this into a blown up matrix. This is  .  is a concept that is used in low rank adaptation. So, they have used a low rank adaptation,  lower size dimensions that they will learn first and then they will blow it up to a new  matrix by combining the two. So, learning these low rank matrices will still capture  useful information, there will be not much of loss of information. Of course, there will  be some loss, it is not like totally it is eliminated, but learning low rank matrix and   combining it is okay.  it is equivalent to learning it to a 5 x 5 matrix but you are learning the amount of  saving for a small matrix like this. If you had to learn inject the full size  5 x 5 you had to inject but instead of injecting a 5 x 5 you are decomposing it into 5 x 1  and 1 x 5 you are learning only 10 parameters and projecting it to 25 and it still gives   a reasonable answer as if y cross 5 has been introduced.  So, you are decomposing a 5 cross 5 into this rank 5 cross 1 and 1 cross 5, 1 represents  the rank of the matrix, rank of the matrix.  Did you understand what is the trick that is used in low rank matrices?  Instead of injecting a 5 cross 5 like full blown up type of matrix, the Lora used the  linear algebra, you just understand this much right now, Lora use the linear algebra principle   of the  position and injected a low rank matrix into the adapter layer and learnt smaller number  of parameters, parameter efficient fine tuning, smaller number of parameters but that does  not mean that it will use only those, it will be blown up to the original size at the time  of inferencing, it will not before only merchant keep it.   Are you getting what I am saying? So B is kept learnt, A is kept, you just, you just, you just, you just, you just, you  just, you just, you just, you just, you just, you just, you just, you just, you just, you  just, you just, you just, you just, you just, you just, you just, you just, you just, you  just, you just, you just, you just, you just, you just, you just, you just, you just,  you just, you just, you just, you just, you just, you just, you just, you just, you just,  you just, you just, you just, you just, you just, you just, you just, you just, you just,  you just, you just, you just, you just, you just, you just, you just, you just, you just,  you just, you just, you just, you just, you just, you just, you just, you just, you just,  you just, you just, you just, you just, you just, you just, you just, you just, you just, you  just, you just, you just, you just, you just, you just, you just, you just, you just, you just,  you just, you just, you just, you just, you just, you just, you just, you just, you just, you  just, you just, you just, you just, you just, you just, you just, you just, you just, you just,  you just, you just, you just, you just, you just, you just, you just, you just, you just, you just,  you just, you just, you just, you just, you just, you just, you just, you just, you just, you  just need memory of 5 cross 1 and 1 cross 5 only, you just need the memory of only 10  instead of 25 that is kept and then you have your original W that is kept and at the time  of inference new x comes in you need all of those weights, the fine tuned weights you  need 25, you need original weights pre-trained you need totally finally you need final 25  pre-trained plus fine tuned weights to do that what you are going to do at the inference   time you will actually multiply.  at that time it is temporary for a only short period you need that and then you will combine  and then produce.  But for inference time you will still need it, 25 size you need inference time but that  is for a short period.  Sometimes what they do is they do not do the full thing I will tell you that also.  But is the concept clear?  Now how much of so be it, do you understand the lower weight if I ask you questions like   this, he is the same.  Laura doing full fine tuning? No. What is the Laura's concept? It injects low ranked matrices  as two adapter layers. One above self attention, one above feed forward network in every layer  and learns those weights, freezing the original weights, freezing the original weights. The   The original weights are not touched, they are there but they are not touched. What is the meaning?  of that freezing when you do back propagation you will only update the lower weights decompose  weight matrices but you will not update the blue, the blue continues to remain same.  And once the training fine tuning is done you are ready with your B and A, you are ready  with B and A. Now your new input comes what you should do, the new input comes and you   have to give an answer to that new input x.  This is the inference time, test image you are giving or test line you are giving.  At that time you need to perform this operation on the fly, B into A, 25, scale the lower  weights and then add it to original that is the final total learning and apply X on that  W into X, final W into X will give you the inference value.   Is that clear? This is\u2026  is what we do in the LoRa case. Now alpha by R this rank that I chose and alpha which  is a scaling factor this is used to modulate how much of LoRa weights you should use in  the inference alpha by R. Typical values used are 16 for alpha and rank will be 4 to 8,   into 32, you can choose, you can set it. The alpha value and the rank  value. What is the rank that I have chosen now for injecting? When I say for Lora what  is the rank used? You should look at the injection B and A and decide. The second parameter is  the rank that I have added. So what is the rank that I have added? 1, rank is 1. If I   say I want to inject a rank 2 matrices into lower what is your understanding 5 cross 2  into 2 cross 5, what does this mean? Will it still produce 25 when you multiply? But  how is the number of parameters now? How many are there now? 20 parameters it is learning  instead of 25. Do you get it? Because there are 10 there and there are 10 here, 20 parameters  you are learning in place of 25. So as and when you start increasing the rank, what does   that means?  If you increase the rank, what is your understanding?  You are increasing the number of parameters to be learned during fine tuning, that's it.  It is coming closer to your full fine tuning, isn't it?  It is coming closer to your full fine tuning, full fine tuning means all 25.   But as and when you increase the rank, it will be better because\u2026  Because you are learning more parameters, more parameters is always better.  Even today as per Andrew J. Karpathi, we have not reached the top end.  So you can increase, increasing means performance increase.  So it has not reached saturation yet.  So more the number of parameters, more will be the knowledge.  We are at that stage.  So it is good to increase the rank.  But if you increase it so much, then we will lose our original thought.   how much we have to that you have to take  a decision normally for big models okay rank will be about 16, 64 even 64 rank is also  used very large models here I am taking a toy example if I take a 64 rank then it will  exceed your original 825 for 25 rank 1 is sufficient do you get what I am saying.  So one of the design decisions that you have to take while fine tuning is what should be   the rank what you deserve.  rank, it depends on your original size and then how much lesser you want to learn, okay.  Is it that you want to just use a single rank matrix or two ranked or 64 rank matrices for  176 billion and all you cannot just use one rank and say that all 176 billion I will generate  using one rank matrix then it will not learn.  So you have to definitely use a higher rank matrix.   So rank plays an important design principle which you have to use.  based on your original size, that is a design parameter. Similarly alpha has to be set to  tell you as to how much of the learned weights B and A I should use for my updations. Now  there is something called as catastrophic forgetting, catastrophic forgetting.   Have you heard of this?  this is the curve that we will have in fine tuning. What is the meaning? If you choose  a very high ranked matrix, your fine tuned model will overtake. If the fine tuned model  overtakes then GPT will stop answering about your general questions. It will only answer  PES related questions. Is that clear? All your original parametric knowledge you update   with high ranked matrices.  I take a 128 rank matrix and learn properly the fine tuned weights.  The fine tuned weights are added to original weights.  So your fine tuned weights are overtaking your original weights which means that all  the parametric language model I am forgetting and I am learning only your new fine tuned  weights.  So the model will stop performing on the generic questions.  Do you understand?  This is known as catastrophic forgetting.   Bye!  So that is the reason why you should be careful on this alpha by r.  How much of Lora weight should be added to your original weight so that it does not lose  out on what it learnt already plus it will learn on the PES information.  Both are very important.  So you need to balance between Lora weights and your pre-trained weights so that it will  be able to answer generic as well as specific questions.  Both are very important.   So alpha and r play.  a very important role. This is based on your linear algebra principle that it is okay to  learn low rant matrices and project it to a high rant matrix still not losing useful  information and use them in weight ablation rules but not at the time of training but  at the time of inferencing only that B and A multiplication to full blown up weight is   done only during inference time.  not at the time of training, training you will learn B separately, A separately, B into  A is done only during inference time, so you will lead lesser memory and lesser information  that is stored, so all of the flops are also reduced, so this is the gain that you will  have using the low raw, the decomposition is okay and it is proved in linear algebra,  we are not further discussing on that, the decomposition matrix will still carry the   The floor.  full blown up information that will be not much of loss of information and therefore it  is okay to use this principle.  This is low ranked adaptation to learning full blown up weights and only those B and  A are back propagated and learnt not the original W.  Original W is freeze the original W and B into A are added only during the inference  time.   Is this clear? Is the lower end adaptation?  clear then what is Q lora? Quantized what will happen? How will the W be then? In the  lora there is no quantization what does this mean what does W consist of? In the lora the   W, your pre-tained weights, how will they appear?  or Fp32? The W would be stored as Fp16 or Fp32 in Lora. Do you understand? B and A is  always floating point, it is never quantized. B, one other point, so now I am talking about  Q Lora, I will tell you those details. In Q Lora, okay, I will start the story again.   So you have pre-trained a model. You are now pre-trained.  having 176 billion floating point 32 or 16 available with you. In Lora what you are doing  176 billion floating point 30 I will take 16 as an example floating point 16 weights  are the ones which are there in the memory freeze floating point 16 weights 176 billion  parameter weights are available in memory then you are injecting B and A you are fine   tuning, B and A is also Fp16.  B and A is also Fp16, you learn B and F Fp16 representation, B into A is Fp16, Fp16 Fp16  are added and then you get the final W, this is Lora, what is Q Lora trying to do? Q Lora  you do the pre-training, 176 billion parameters in the form of Fp16 or Fp32, there is one   one more step, what is that one step?  You first you quantize it, okay quantize the FP16 weight matrix into 4 bit quantized matrix.  Every number now the weight matrix every number is represented as a 4 bit number and what  I am going to get is a quantized weight matrix in Qlora that is what is called as quantized.  I will tell you, yeah I will tell you, yeah you are right.   So the quantized matrix is what I am getting.  number 800 GB to 80 GB. So, in LORA you are receiving 800 GB matrix, but in QLORA what  you are receiving only 80 GB matrix you are receiving. You know how to do quantization  I have already told you.  Now, 80 GB matrix I receive, but it is a quantized matrix is only integers, it is not having  floating point actual parameter are not available. Please note that the quantized matrix is not   actually containing parametric information. It is only a map.  mapping that has been given. So now what you are going to do? You are going to inject b  and a again, you will learn b and a again, b and a is never quantized, b and a are always  either fp32 or fp16 that depends on what is your original. b and a are not quantized,  b and a are always fp32 and real parametric knowledge on the fine tune dataset you will   Once you have B and A are learned, they are ready.  is ready, A is ready, W quantized is ready. Now you start the inferencing. When you are  about to inference, you have to decontize W. You have to decontize W, you have to multiply  B and A and you have to add them. But the problem is same again. You have 800 GB. If  you decontize it, you will have 800 GB again. Then where are you solving the problem? At   Thanks for watching.  time at least you need 800 GB okay training time at least you eliminated you understood  but inference time where do you get 800 GB you learnt.  So what is done block by block decontize not together everything may be one layer you will  decontize and infer using that another layer you decontize.  So decontization for large models is never done fully is never done fully then the purpose   is defeated.  you need a parameter knowledge of the pre-trained weights but you will not be doing it fully,  you will do part by part, you will decontize only this portion and you will add, you will  decontize this portion and then you will add like that.  So you will need, you will be needing only small amount of memory for decontization and  you will learn that and then you will scrap that over that memory itself again you will  calculate, then you will accumulate the results.   Is that clear? This is the decontization step.  Please note that the decontization step will introduce errors that is what is going to happen.  This is clear?  So, this is Q-LORA that is it.  So, LORA, Q-LORA both are fine tuning techniques.  The LORA will receive the frozen weight in the FP32 or the 16 format.  Q-LORA will receive W in the quantized format that is the difference.   Both are freeze. Five.  fine tuning will inject low rank adaptation fine tuning will inject two matrices B and  A rank has to be chosen B and A's rank will have to be chosen then you learn B separately  A separately keep them separately at the time of inference only you will decontize step  by step and B into A add it then accumulate so that will require only small amount of   memory. This is Q law roughly. Is this clear?  any doubts on this. So to understand this we will solve a problem.   So, I have run a Q-Laura model on English code.  ports, the main thing that I want to show you, look at this, so this is the quantization  configuration loading 4 bit, true, okay, okay and this is Lora configuration, can you be   silent for some time.  And Lora configuration, Lora alpha, alpha has been set to 32, alpha has been set to  30, rank is 4, rank is 4, dropout is also used, you want to use dropout you know and  target modules.  I just said about only 1 W but there is WQ, WK, WV, self attention, so all of that.  So I am saying here target modules to be affected for fine tuning are only Q projection and V   that is what it is saying.  Now getPefedModel, this API which is there in the Pefed library of the hugging phase,  this model will ensure that your pre-trained model is frozen.  You do not have to do anything explicitly.  You can also explicitly set it to false.  The gradients can be set to false by explicitly freezing it or this library API getPefedModel  will automatically freeze it.  You do not have to do anything.   from the implementation point of view there is nothing much.  But the underlying principle is what you have to understand.  So get pressed model, the model that you are giving and the pressed configuration.  So this will set up a Q-Low rough principle by freezing it and producing a wrapper around  this by injecting B and A to the model B and A and it you will get defined to model.  So this is done on English codes.   So there is some inference in that line, so these are all the training parameters.  So, one inference is there, what is life and the meaning of life is love and all some rubbish  it is given.  So, anyway so that is it.  So, that is the inference.  So, that is about Lora configuration.  Is this clear?   Thank you.  Now, I want to solve a problem, do you need a break now and then do it.   Thank you.  See a rag and fine tune.   No, this is changing the parameter.  The rag will not change, model parameters are not changed, fine tuning will be faster during  inference, do not you think so?  Rag you have to generate at that time embedding, the parameters will have to be learned at  that time, it will inject that, but in the fine tuning case the parameters are updated,  so probably the inference speed will be higher in this.   RIG is also a method of fine tuning only.  Speed versus expense and how many parameters and you are already keeping it ready.  You do not have to follow those procedures.  You have training time, you have some work here but inference time will be faster.  That is what I am now thinking of, anything else we have to think through.   you  Is it to this detail?  Yeah, okay.  Normally they just look at it from the code angle.   Now you will know these parameters now what they are making Fp1632, 16 quantization.  So, with some knowledge you will design the parameters, there you will be doing trial  and error there.  Now, if somebody ask you to build an LLM you give numbers and tell whether it is possible  or not.  Like recently one of the with due regards to teachers I am saying one of the teachers   has asked one group to build an LLM.  And then students are later laughing at it.  So because of the...  So what they had to say?  The teacher is not agreeing.  It's like that.  But there I think they should have given these numbers.  You give me 800 GB, I will do it.  It's not about your intelligence.  You are not in that place.   If you are in open air, you will do it.  Finally, my mind is where are we heading finally?  I don't know, industry also is not able to, this much who will invest, 4000 crores.  Only some companies are able to invest, startups cannot.  Same fine tuning only, nothing else, rag or fine tuning.  So we have to research in fine tuning and rag only, I don't know how to solve this problem.   problem.  Distilled model they have released. Deep Sikh you want me to cover? That is using reinforcement  learning. Fine tuning using RLHF that is not part of our Dharam. It uses reinforcement  learning with human feedback. RLHF. Deep Sikh. Reinforcement learning is a very tough topic.   Thank you.  Yeah  No  Punishment and reward, huh?  Yeah, that is reinforcement learning that is reward and punishment model that is the driving also it is a reinforcement learning is used  But behind scene there is something called as discounted reward and then temporal difference,  Q learning, value learning, policy learning is a heavy math course, heavy heavy math course.  We stop it saying okay till learn reward till learn punishment and that is it, policy  and Q learning.  But how is the Q value created?  What happens to how do you update Q values?   it a deep learning.  model you will use to learn Q value, so like that how is the data fed, so there is more  to it.  But finally it is all calculus linear algebra, fundamentals have been taught but we are not  able to connect the two properly, we have to do that.  But for that you should have interest, to create that interest you should have I think  only time for that, with 5, 6 projects I don't think so you are doing anything meaningful   that is what I am saying.  Just in time review is announced, okay do something and show.  All the time we are, isn't it?  You are not able to give proper timing to any project properly.  To properly think through.  Two projects is good enough.  Meaningfully big size we can develop.  Six projects I don't think so.  So then you end up just doing some develop some code as the chargeability is there.  Just they have developed.  Make it work.  Show some output and that's it.   With interest you are not able to do it.  it. More of only projects if you do it inside then I think maybe you will like it. Some  drastic change in education system is required if that is the case. Then how do we accommodate  for theory? We get scared. If theory is not balanced, so I am on the time thinking about  it. Should we really reform the way we are educating students? There is a big question   mark. Yeah.  Experiential learning required.  theory is required how to balance between the two that is the and your attention span is low  I had to shout and then say no you listen to this like that  Hi with the chat gpt attention span has come down like that I mean to make you listen to what I am  saying no people don't find it interesting I used to see happy expressions when I used to teach  Now I am not seeing it, when she is going to stop like that.  Yeah, yeah, yeah, yeah. Data structures when I taught, it's like a pleasureous experience for me.  And inside my class, I never get angry, never get angry inside the class.  Because it's only, I mean business here, just teaching.  Okay, and they are liking it, they are understanding it, that is how it is.  But now if you give a learn, they will just do the charge equity and they'll submit it.   They don't understand anything and I don't have any work done.  Where is the enjoyment here?  The enjoyment, the happiness expression is gone.  And you have multiple resources, not that only I teach and you understand.  You have multiple YouTube resources.  The only difference is I have time, patience, so I collate all of that information.  This is not available at one time.  I watch many YouTube videos and I get doubts when I'm actually,   Okay, what I should say all the time here is once  Okay, when I'm rehearsing I will get doubts. So then I will ask Chajji Pity.  You know Chajji Pity, how many times it has told me that you are asking a great question?  So many times, normally it doesn't say. For some questions it doesn't say.  But for many of my questions it has said you have asked a great question.  Great question, great question, great question, I am asking.  Finally I understand everything. But I am also happy that Chajji Pity is there.  Otherwise I would have not understood to this level. It is hard.   YouTubers they don't I mean that's not a  I can't guarantee that even charge gpt I can't guarantee multiple sources I have to read there's no proper textbook  so all of these are issues and finally we have to deliver we have to please do our duty  so certainly challenges are there   companies, data structures, algorithms.  LLM and all that. But everybody wants to have a say in LLM. Now anybody who ask whichever  domain they are in, little bit of ML is required. So it is good to have this knowledge, there  is no doubt about it. And you are in the technology era, that is the strength now that we are  getting. If somebody says then we are not lost, we know about it. So that is good. But   how much we will put to use.  But lot of productization I am not sure how much is there, how many recommender systems  are there I do not know.  All of the charge it is only.  You have to think of something very new we can do with LLM, I do not know what is that.  Everybody speaks whatever Andrew says now, the Karpati, these standard people.   whenever they are speaking they will be already 5 years back.  in their research labs. That's why we are not able to catch up. Their labs are little bit infrastructure also, they are connected to Google and all of that.  So their infrastructure is high and students are high. Here students are also very high, there is no doubt. That is a balance.  I wouldn't say that our students are lower. Students equal, but rest are all down.   So, we are not giving you a right exposure.  Whatever is in our bandwidth we are giving you that much.  It will still do a lot.  So we failed to catch up with them and eventually students will go abroad.  So they want that experience.  I have seen many students, instead of one student told me in Citrix he was drawing 22 lakhs.  And within no time he came back and asked me for a recommendation letter.  I asked him what, then his dad is a doctor and he was not getting that much.  He just graduated in 22 lakhs.   So...  So, his father was asking, are you mad, you want to leave this 22 lakhs and then his answer  is they are not doing cutting edge technology work.  So, I am not enjoying that.  Now, all those, at least high GPS students whom I have asked, they all want to do, I  mean, understand better.  They want to do a good job.  They are not just looking at the money.  It is all initially tier one and all of that.   who are placed in apple also they left.  It was 60 lakhs. The student did not like it. They did not like it. Left the 60 lakhs  thing and joined Microsoft Research for a lesser salary. But the student is more interested  in work that eventually happens. So after some time, money does not matter. It is important.  I am not saying it is. I will never say money is not important. Everybody likes it.   driving factor but after some time  I think if you don't like the work then how will you?  Still you are not much exposed to the cutthroat environment there, business, all of that.  You are still young.  So all those skills you have to learn there.  How to please people, how to impress the manager, how to get 20 percent high, 30 percent   Thank you.  So this skill is not taught here.  No, no, no, I wouldn't say.  Both are important.  Both are important.  Without any stuff, no, all the junior people will be making walkere.  My manager doesn't know anything.  But if the manager knows technically, they will appreciate.   But it depends on what they would do.  have done, depends on that.  That is because he is into the tech, otherwise, see in my age I can also be teaching only  management topics, I can actually teach only soft skills now, instead of LLM and all of  that, isn't it?  But I am, I like tech, I like tech, that's why I am into that, I code, I look at it,   Nobody's asking.  me to do anything. After I have come out of my chairperson's role, I could have spent  a peaceful life here. Enjoy, simply come and go. Nobody is asking me to learn ML, TDL,  LLM, all of this. But this is the route I have chosen. It is up to you. And even when  I was the chairperson, I wanted to know everything so that others will not fool me. It is like   So, I have always seen the tech domain I should not bit of everything.  If not to the depth, so somebody tells me this is the assignment that I am giving in  web technology, I should know that.  Simply they cannot love.  Teachers will be scared, otherwise you cannot be in the heads position.  You should know about the subject.  That is the difference in the managerial level also.  If you know it, then people under you cannot do it.  You should have taken that step.  So in that sense, you need technical depth is required.   And after that you may use it may not use it that is a different matter but you should  Don't give it.  And you will be always respected.  When you are text-strong, you are respected more.  Superficial, it's all temporary.  And behind scene, there will be a lot of distinctions of that kind.  So text-strong person, you cannot...  Anant Raman, you see, nobody can touch him.  Nobody can go near him, it's like that.   That is so strong.  He is now, he was in Adobe as a director.  He has worked in several big companies he has worked and he ran his own startup he has.   Master's... No, no. He is associated with CCB. He is an adjunct professor.  he was supposed to come and teach this course. Me and him, we both designed Jennyi for CS.  Jennyi is a, because my daughter is taking, I can't teach there. So I came here.  Same, same. I'm telling you, I wanted to teach LLM, my daughter is in Jennyi there, I can't teach there.   That is why I am still saying conflict of interest.  So I came here, took this opportunity.  Anyway, Jai Shri madam asked me whether I would teach.  I said readily agreed because I had designed the course there.  But I was feeling bad that I can't teach.  So here I got the opportunity.  Pardon?  A little change is there.  I little bit modified after the initial version.   little bit of change  I did because this was lighter compared to the one which we have proposed there. There  it is little bit heavier. But I am telling Oma madam to teach all those whatever I mean  she had missed out like by parent coding BM25 and all of that. So I told her to teach that   So, if she is missing out anything I am telling her to teach. So, that is it.  Next year I will be back in CS again teaching because she will anyway come to 7th so fine.  Now any year I can teach.  Last one year I am not able to teach ML, TDL, JNIA anything in CS I am not able to teach.  So I went back to data structures again last year.  Data structures.   This time also TDL I am not able to teach.  last year TDL in my class all were 9 pointers, all were 9 pointers that elective batch TDL  I used to be scared to teach in that class, they never heard about what I am saying see  that is a different view but you are so scared because all are 9 pointers, not even close   9.3, 9.4 and above.  very allied batch that is okay there reasonably well recently two students  had not got he was in my actual TDL class he came here they're doing internship  in the center they didn't get a six credits internship they were doing it  they didn't get it and when I interviewed I was like so surprised 9.3   guy is not yet displaced.  But I saw that there is a personality issue.  I told him about that.  In my interview, in the internship interview, I told him that these aspects are not good.  Probably you are not getting selected for that reason.  I told him some advices I gave.  I am just explaining, not about me, I am not talking about myself.  But when I explained, very next job he got it actually.   He gave it to me.  There is no one factor.  See the company needs two, three people only and you are a thousand, five hundred students  applying.  So first filter, they are all rejection test, they are not acceptance test.  First scissoring is GPA because that will indicate how serious you are in studies.  So at least that much seriousness they will have to look at it.  After that they will look at what projects you have done and all of that.  So how much you have learned in the projects.   the HR. This is going to be the next one.  was getting going up to the last round and in HR is getting rejected. So, seriously I  saw that is a behavioral issue, very low confidence and the more you get rejected now, you will  go with that fear only. So, somebody needs to tweak little bit, then that confidence   One of my higher students way back in 2012 I think, 2015.  very good student he did project under me and used to teach others in the group  four member team damn good I would say in technology aptitude everything  all the rest of the three got placed and he didn't  so and single parent  only mother is there  so there is daily fight in the home  about he not getting placed  so the pressure is building and building and building  and after one point he stopped attending interviews   He stopped.  So, there is regular fights between the mother and the son.  So, then one day he came and told me all these stories.  I was heading ISD department at that time.  So, he came and told me that this is what has happened.  Then I told that I think your mother requires counseling first.  Because there is so much pressure built, the son is not able to attend interviews only.  So, I told him to get the mother first.  Mother used to, in the night she used to take head bath and go to God's place and pray.   pray and  this he has seen and he is getting shivers actually looking at his mother's situation  and his single parent and from childhood without father he has come up how much confidence  he will have already there is no confidence and on top of that mother is doing all that  in the night and there is like physical fight between the mother and the son.   So I had to little bit intervene there and then did lot of counts.  to mother first and then one day I dropped him, one day I told him, the next one, next  year one, I told him that he has to take up and I took a promise from him that he will  attend at least.  Aptitude also he stopped attending.  So I took a promise and then he used to respect me because I was his guide.  So then he has a paper also with me and all of that.  Then he said he will do it and then he came and I told him that before going to the interview   the interview you should come to my room and go.  He came to my room. Instead of going to placement, he went home.  He didn't go. Then I asked him about what happened.  Then he said he got scared and he left. He only showed his face in my room and left.  So the next one I said, you come again, I said. Then the second one, one more.  He came. Then next time he dropped in till the lab thinking that he will again deviate.   I told him that I am going to stay there only outside. He has to finish the test and come.  that job he got. This much intervention was required for that boy. Finally now he is doing  very well. Another guy by name Himanshu, he was also Adobe he got it finally. So little  bit of counseling I do during that time when they are distressed. That is one of my job  ones. So it is only just pep talk is required nothing else. I do not do anything great but  to boost the confidence we need to step in 5 minutes that is what is mentorship actually  so we should step in and night 12 o clock he called me stating that he got adobe yeah  yeah he is still in touch with me so he makes it a point that he wishes me on my birthday  so all of that so that is happening like that so lots of life we touch like that nice but   But that's a very\u2026  pressure cooker kind of scenario. My friend is getting players, I am not getting players.  Manisha and Ayush they were in single team. They come for pre-placement talk also, bootstrap  also they did. Ayush got it in first place, he takes. And Manisha got it in the 52nd attempt,  52nd company. So I asked Ayush about sweets. Then he said until she doesn't get it I won't.   So, 50 seconds.  she got it finally and after that she got three jobs.  I went to her marriage also. Now she has a child, all of that.  She is like family connect. Aish also had invited me to North Gujarat from Surat.  So he had invited me for his marriage. He is in regular touch.  We plan to do a joint collaboration also.  So that extent of friendship is there now because of that.   They have become friends now. 2014 graduated.  But he had promised me at that time that he would come back and serve the institution.  14 to 24, he has been coming. One decade he has come back. He has kept the promise.  He was the best outgoing student of that batch, 2014.  Even now I wrote to several alumni to assist in my capstone teams. They all have come back and agreed.   The only thing is the teams are not showing interest. So lot of volume may are ready.  Okay, lot of digression I think I will get back to the, yeah.  I'm going to go ahead and take a look at the  video.  Thank you.  This is the formula used for quantization and decontization and lower updates. So I will  give you a problem now, you have to solve. If you solve this, you will actually understand   again better.  Pardon?  Yes.  Thank you.  I'm going to go back to the other side of the road.  I am sorry.  Pardon?  I am sorry.  Yeah.   Thank you.  There are two problems, one for quantization and decontization, you have to find the error  in quantization. This is the second problem for Lora, wait, there are two problems, they   separate."
+}

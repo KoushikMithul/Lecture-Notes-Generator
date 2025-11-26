@@ -1,0 +1,3498 @@
+{
+  "video_name": "Multimodal_19853_shylaja.sharath_31_20250401112700078_Video_ENC",
+  "video_path": "data/raw/videos/Multimodal_19853_shylaja.sharath_31_20250401112700078_Video_ENC.mp4",
+  "duration_seconds": 3299.84,
+  "transcript": [
+    {
+      "text": " .",
+      "start_time": 0.0,
+      "end_time": 2.0
+    },
+    {
+      "text": " .",
+      "start_time": 30.0,
+      "end_time": 32.0
+    },
+    {
+      "text": " .",
+      "start_time": 60.0,
+      "end_time": 62.0
+    },
+    {
+      "text": " .",
+      "start_time": 90.0,
+      "end_time": 92.0
+    },
+    {
+      "text": " .",
+      "start_time": 120.0,
+      "end_time": 122.0
+    },
+    {
+      "text": " .",
+      "start_time": 150.0,
+      "end_time": 152.0
+    },
+    {
+      "text": " .",
+      "start_time": 180.0,
+      "end_time": 182.0
+    },
+    {
+      "text": " So, let us look at multimodal LLMs. Last time we had discussed about clip, contrastive language",
+      "start_time": 210.0,
+      "end_time": 229.6
+    },
+    {
+      "text": " image pre-training. Today we will look at two more. Clip we have already done. Contrastive",
+      "start_time": 229.6,
+      "end_time": 239.24
+    },
+    {
+      "text": "",
+      "start_time": 239.24,
+      "end_time": 210.0
+    },
+    {
+      "text": " language.",
+      "start_time": 210.76,
+      "end_time": null
+    },
+    {
+      "text": " image pre-training. Today we will look at blip bootstrapped language image pre-training,",
+      "start_time": 240.0,
+      "end_time": 266.28
+    },
+    {
+      "text": "",
+      "start_time": 266.28,
+      "end_time": 240.0
+    },
+    {
+      "text": " is pre-training, glip and whisper AI.",
+      "start_time": 243.16,
+      "end_time": null
+    },
+    {
+      "text": " These are the two multimodal LLMs we will see ok.",
+      "start_time": 270.0,
+      "end_time": 286.8
+    },
+    {
+      "text": " The main objective of a multimodal LLM is to process multiple modes of input and eventually",
+      "start_time": 286.8,
+      "end_time": 294.44
+    },
+    {
+      "text": " they all generate text.",
+      "start_time": 294.44,
+      "end_time": 295.68
+    },
+    {
+      "text": "",
+      "start_time": 295.68,
+      "end_time": 270.0
+    },
+    {
+      "text": " We are not looking at any other kind of generation. Basically, we are looking...",
+      "start_time": 273.08,
+      "end_time": 274.32
+    },
+    {
+      "text": " looking at input being in multimodal. The output also can be multimodal in nature but in the",
+      "start_time": 300.0,
+      "end_time": 306.32
+    },
+    {
+      "text": " course we are looking at multimodal in the context of the output being still a text.",
+      "start_time": 306.32,
+      "end_time": 312.36
+    },
+    {
+      "text": " The input is multimodal in nature. So, Clip also uses images and text like the other day",
+      "start_time": 312.36,
+      "end_time": 317.52
+    },
+    {
+      "text": " which I said both embeddings are tried we try to match them and there is something called",
+      "start_time": 317.52,
+      "end_time": 322.64
+    },
+    {
+      "text": " as contrastive learning that will happen to check whether the text embedding space and",
+      "start_time": 322.64,
+      "end_time": 327.96
+    },
+    {
+      "text": "",
+      "start_time": 327.96,
+      "end_time": 300.0
+    },
+    {
+      "text": " the image embedding space of the same.",
+      "start_time": 302.0,
+      "end_time": null
+    },
+    {
+      "text": " they are not same, it tries to learn in manner in which they are brought together.",
+      "start_time": 330.0,
+      "end_time": 335.72
+    },
+    {
+      "text": " If they are dissimilar, their embedding should be falling apart.",
+      "start_time": 335.72,
+      "end_time": 339.32
+    },
+    {
+      "text": " That was the objective with which Clip is designed.",
+      "start_time": 339.32,
+      "end_time": 343.84
+    },
+    {
+      "text": " Then bootstrapped language image pre-training also has similar objective, but it has, it",
+      "start_time": 343.84,
+      "end_time": 349.96
+    },
+    {
+      "text": " is a three step process.",
+      "start_time": 349.96,
+      "end_time": 351.48
+    },
+    {
+      "text": " The first step in Clip is same as Clip, which is called as image training contrastive learning,",
+      "start_time": 351.48,
+      "end_time": 357.88
+    },
+    {
+      "text": " ITC.",
+      "start_time": 357.88,
+      "end_time": 358.88
+    },
+    {
+      "text": "",
+      "start_time": 358.88,
+      "end_time": 330.0
+    },
+    {
+      "text": " You made text.",
+      "start_time": 332.0,
+      "end_time": null
+    },
+    {
+      "text": " text contrastive learning. The second step that is followed in blip is ITM, image text",
+      "start_time": 360.0,
+      "end_time": 371.4
+    },
+    {
+      "text": " matching and the third task on which it is processed is language generation. It acts",
+      "start_time": 371.4,
+      "end_time": 381.52
+    },
+    {
+      "text": " as a language model. These are the three tasks on which blip is trained. The three tasks",
+      "start_time": 381.52,
+      "end_time": 388.0
+    },
+    {
+      "text": "",
+      "start_time": 388.0,
+      "end_time": 360.0
+    },
+    {
+      "text": " on which the bootstrap",
+      "start_time": 362.0,
+      "end_time": null
+    },
+    {
+      "text": " language image pre-training model strains is one on image text contrast to learning,",
+      "start_time": 390.0,
+      "end_time": 397.12
+    },
+    {
+      "text": " second one is image text matching, the third one is language modeling. These are the three",
+      "start_time": 397.12,
+      "end_time": 402.48
+    },
+    {
+      "text": " tasks on which Blipp is trained on. Then further it is used in the applications of Blipp would",
+      "start_time": 402.48,
+      "end_time": 413.0
+    },
+    {
+      "text": " go to generation of captions if the given images are given, visual question answering",
+      "start_time": 413.0,
+      "end_time": 418.64
+    },
+    {
+      "text": "",
+      "start_time": 418.64,
+      "end_time": 390.0
+    },
+    {
+      "text": " and so on.",
+      "start_time": 391.34,
+      "end_time": null
+    },
+    {
+      "text": " of the applications are caption generation, VQA, visual question answering and so on.",
+      "start_time": 420.0,
+      "end_time": 431.84
+    },
+    {
+      "text": " Those are some of the applications where blip is used.",
+      "start_time": 431.84,
+      "end_time": 436.16
+    },
+    {
+      "text": " So, there is a vision transformer, same as clip, there is a vision transformer to which",
+      "start_time": 436.16,
+      "end_time": 449.96
+    },
+    {
+      "text": "",
+      "start_time": 449.96,
+      "end_time": 420.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 421.0,
+      "end_time": null
+    },
+    {
+      "text": " you give the images and GPT like decoder, transformer decoder it is, transformer decoder",
+      "start_time": 450.0,
+      "end_time": 462.48
+    },
+    {
+      "text": " you will provide the text. The embeddings are generated, image embeddings, text embeddings",
+      "start_time": 462.48,
+      "end_time": 471.28
+    },
+    {
+      "text": " are generated, image embeddings and text embeddings you have to quickly settle down,",
+      "start_time": 471.28,
+      "end_time": 478.88
+    },
+    {
+      "text": "",
+      "start_time": 478.88,
+      "end_time": 450.0
+    },
+    {
+      "text": " meetings and next time.",
+      "start_time": 451.08,
+      "end_time": null
+    },
+    {
+      "text": " embeddings are generated, if the image and text that you have given are similar, image",
+      "start_time": 480.0,
+      "end_time": 487.04
+    },
+    {
+      "text": " of a cat and you write cat is sitting on the mat, if you give a statement like that then",
+      "start_time": 487.04,
+      "end_time": 492.96
+    },
+    {
+      "text": " they are similar.",
+      "start_time": 492.96,
+      "end_time": 493.96
+    },
+    {
+      "text": " So you check the embeddings, image embedding one, text embedding one, check the cosine",
+      "start_time": 493.96,
+      "end_time": 499.32
+    },
+    {
+      "text": " similarity between image embedding and text embedding, check the score, if the scores",
+      "start_time": 499.32,
+      "end_time": 509.52
+    },
+    {
+      "text": "",
+      "start_time": 509.52,
+      "end_time": 480.0
+    },
+    {
+      "text": " are not.",
+      "start_time": 480.5,
+      "end_time": null
+    },
+    {
+      "text": " matching they have to be similar the cosine similarity should be similar if they are not",
+      "start_time": 510.0,
+      "end_time": 515.08
+    },
+    {
+      "text": " matching you do the back propagation and again update the weights.",
+      "start_time": 515.08,
+      "end_time": 519.52
+    },
+    {
+      "text": " So this is known as a contrastive loss last bench you have to quickly settle down this",
+      "start_time": 519.52,
+      "end_time": 527.76
+    },
+    {
+      "text": " is known as contrastive loss suppose you give an image and the text which are similar last",
+      "start_time": 527.76,
+      "end_time": 533.6
+    },
+    {
+      "text": "",
+      "start_time": 533.6,
+      "end_time": 510.0
+    },
+    {
+      "text": " bench are you done?",
+      "start_time": 517.0,
+      "end_time": null
+    },
+    {
+      "text": " So you are going to check the image embedding and the text embedding, you compare the distance",
+      "start_time": 540.0,
+      "end_time": 546.04
+    },
+    {
+      "text": " between the two using cosine similarity and that difference the cosine similarity is called",
+      "start_time": 546.04,
+      "end_time": 552.56
+    },
+    {
+      "text": " as a contrastive loss.",
+      "start_time": 552.56,
+      "end_time": 554.04
+    },
+    {
+      "text": " If the image and the text actually are same but if the contrastive loss is more then you",
+      "start_time": 554.04,
+      "end_time": 560.4
+    },
+    {
+      "text": " are going to do a gradient descent step and to minimize the loss because they match.",
+      "start_time": 560.4,
+      "end_time": 565.92
+    },
+    {
+      "text": " So that is what the weights are being learnt here.",
+      "start_time": 565.92,
+      "end_time": 568.44
+    },
+    {
+      "text": "",
+      "start_time": 568.44,
+      "end_time": 540.0
+    },
+    {
+      "text": " The vision transformer is learning its way.",
+      "start_time": 541.56,
+      "end_time": null
+    },
+    {
+      "text": " weight, the decoder of the transformer is also learning its weight. So whenever the image",
+      "start_time": 570.0,
+      "end_time": 575.6
+    },
+    {
+      "text": " text are similar, the image embedding and text embedding should match, should come closer.",
+      "start_time": 575.6,
+      "end_time": 582.4
+    },
+    {
+      "text": " If this is the image embedding, your text embedding should be as close to it. They have",
+      "start_time": 582.4,
+      "end_time": 588.36
+    },
+    {
+      "text": " to be in the same space. That is what it achieves. This is known as a contrastive loss and that",
+      "start_time": 588.36,
+      "end_time": 594.16
+    },
+    {
+      "text": "",
+      "start_time": 594.16,
+      "end_time": 570.0
+    },
+    {
+      "text": " That step is called as image training contrast image text contrastive learning.",
+      "start_time": 575.84,
+      "end_time": null
+    },
+    {
+      "text": " is stands for image text contrastive learning. This is the first step in training the blip.",
+      "start_time": 600.0,
+      "end_time": 606.8
+    },
+    {
+      "text": " So the model is now learned to generate embeddings closer to image and text if they are same,",
+      "start_time": 606.8,
+      "end_time": 613.56
+    },
+    {
+      "text": " otherwise if they are dissimilar they will be distinct apart. So if cat is sitting on",
+      "start_time": 613.56,
+      "end_time": 618.64
+    },
+    {
+      "text": " the mat if the image contains like that and you produce that an elephant is in the picture",
+      "start_time": 618.64,
+      "end_time": 624.48
+    },
+    {
+      "text": " like that the embeddings are really far. So they have to be like this. The embeddings",
+      "start_time": 624.48,
+      "end_time": 628.88
+    },
+    {
+      "text": "",
+      "start_time": 628.88,
+      "end_time": 600.0
+    },
+    {
+      "text": " should be made.",
+      "start_time": 601.12,
+      "end_time": null
+    },
+    {
+      "text": " be 90 degree or 180 degree apart. Then if it produces like that then we can say that",
+      "start_time": 630.0,
+      "end_time": 635.8
+    },
+    {
+      "text": " the model has learnt. So that is how the embedding space has to be deviated, they have to be",
+      "start_time": 635.8,
+      "end_time": 641.8
+    },
+    {
+      "text": " separate. So this is what is the first task on which the blip model is trained on. But",
+      "start_time": 641.8,
+      "end_time": 647.64
+    },
+    {
+      "text": " underlying the architecture still uses transformers, you are still not concentrating. Why do not",
+      "start_time": 647.64,
+      "end_time": 653.24
+    },
+    {
+      "text": "",
+      "start_time": 653.24,
+      "end_time": 630.0
+    },
+    {
+      "text": " you come forward last page doesn't suit you yeah no",
+      "start_time": 637.0,
+      "end_time": null
+    },
+    {
+      "text": " So, that is what is going to happen here, this is clear.",
+      "start_time": 660.0,
+      "end_time": 665.2
+    },
+    {
+      "text": " The second step is image training matching.",
+      "start_time": 665.2,
+      "end_time": 668.12
+    },
+    {
+      "text": " So, image text matching, image text matching is one step ahead, this is a feed forward",
+      "start_time": 668.12,
+      "end_time": 675.04
+    },
+    {
+      "text": " network and a softmax.",
+      "start_time": 675.04,
+      "end_time": 681.36
+    },
+    {
+      "text": " It tells one or zero.",
+      "start_time": 681.36,
+      "end_time": 683.6
+    },
+    {
+      "text": "",
+      "start_time": 683.6,
+      "end_time": 660.0
+    },
+    {
+      "text": " So, if you add another layer of feed forward network and a classifier layer.",
+      "start_time": 665.36,
+      "end_time": null
+    },
+    {
+      "text": " to the same blip model then we can perform the second task which is image text matching.",
+      "start_time": 690.0,
+      "end_time": 698.72
+    },
+    {
+      "text": " So the second task on which it is trained is to add another layer of feed forward network",
+      "start_time": 698.72,
+      "end_time": 704.44
+    },
+    {
+      "text": " and a softmax output to say whether the image and text, whether they match or they do not",
+      "start_time": 704.44,
+      "end_time": 710.32
+    },
+    {
+      "text": " match.",
+      "start_time": 710.32,
+      "end_time": 711.32
+    },
+    {
+      "text": " The first task just try to make sure that the embedding space comes closer if they are",
+      "start_time": 711.32,
+      "end_time": 715.4
+    },
+    {
+      "text": " similar, they are far apart if they are dissimilar.",
+      "start_time": 715.4,
+      "end_time": 718.84
+    },
+    {
+      "text": "",
+      "start_time": 718.84,
+      "end_time": 690.0
+    },
+    {
+      "text": " The second step is almost.",
+      "start_time": 691.16,
+      "end_time": null
+    },
+    {
+      "text": " similar except that one more layer is added to say whether the two embeddings are the",
+      "start_time": 720.0,
+      "end_time": 725.12
+    },
+    {
+      "text": " matching it is further refinement are the matching or they are not matching.",
+      "start_time": 725.12,
+      "end_time": 729.16
+    },
+    {
+      "text": " So this is the second task on which the blip is trained on.",
+      "start_time": 729.16,
+      "end_time": 733.28
+    },
+    {
+      "text": " The third task is the language model.",
+      "start_time": 733.28,
+      "end_time": 735.8
+    },
+    {
+      "text": " The language model you are going to give images and you are supposed to generate captions.",
+      "start_time": 735.8,
+      "end_time": 741.04
+    },
+    {
+      "text": " So you are going to feed it to the VIT again and you are going to generate captions.",
+      "start_time": 741.04,
+      "end_time": 746.8
+    },
+    {
+      "text": "",
+      "start_time": 746.8,
+      "end_time": 720.0
+    },
+    {
+      "text": " you are going to generate. So if it is an image of a cat, you can see that it is a cat",
+      "start_time": 727.0,
+      "end_time": null
+    },
+    {
+      "text": " some cat image is there. So you have to generate cat is sitting on the mat like this you have",
+      "start_time": 750.0,
+      "end_time": 759.88
+    },
+    {
+      "text": " to generate. So it just and it is in the autoregressive mode when the image is fed to this transformer",
+      "start_time": 759.88,
+      "end_time": 767.28
+    },
+    {
+      "text": " first it will generate cat then it will generate because cat is generated next it will generate",
+      "start_time": 767.28,
+      "end_time": 772.2
+    },
+    {
+      "text": " ease then next setting so one word at a time like the GPT you have seen one word at a time",
+      "start_time": 772.2,
+      "end_time": 778.0
+    },
+    {
+      "text": "",
+      "start_time": 778.0,
+      "end_time": 750.0
+    },
+    {
+      "text": " is generated that is called as autoregressive mode.",
+      "start_time": 752.0,
+      "end_time": null
+    },
+    {
+      "text": " mode. So, in an autoregressive mode the text is generated for a given image this is the",
+      "start_time": 780.0,
+      "end_time": 785.86
+    },
+    {
+      "text": " third task. So, that is called as a language modeling. The language modeling is that of",
+      "start_time": 785.86,
+      "end_time": 791.84
+    },
+    {
+      "text": " the language of the image and the language output is the English text that is what is",
+      "start_time": 791.84,
+      "end_time": 797.32
+    },
+    {
+      "text": " going to be produced. These are the three tasks on which blip is trained on. So, and",
+      "start_time": 797.32,
+      "end_time": 803.08
+    },
+    {
+      "text": " because it is made to understand the image it is also made to understand the context",
+      "start_time": 803.08,
+      "end_time": 809.72
+    },
+    {
+      "text": "",
+      "start_time": 809.72,
+      "end_time": 780.0
+    },
+    {
+      "text": " between.",
+      "start_time": 780.5,
+      "end_time": null
+    },
+    {
+      "text": " image and text it is said to work well for tasks like caption generation it is said",
+      "start_time": 810.0,
+      "end_time": 815.78
+    },
+    {
+      "text": " to work like vision question answering what is visual question answering so I will give",
+      "start_time": 815.78,
+      "end_time": 820.44
+    },
+    {
+      "text": " an image and I will also ask a question is a cat there in the image I will ask a question",
+      "start_time": 820.44,
+      "end_time": 825.7
+    },
+    {
+      "text": " like this or is a cat drinking milk so if I ask question on the image that I am going",
+      "start_time": 825.7,
+      "end_time": 831.94
+    },
+    {
+      "text": " to feed it may be even video you can extend the project then the output should be yes",
+      "start_time": 831.94,
+      "end_time": 836.56
+    },
+    {
+      "text": "",
+      "start_time": 836.56,
+      "end_time": 810.0
+    },
+    {
+      "text": " or no. So this is the kind of or a, so this is the kind of or a, so this is the kind of",
+      "start_time": 817.0,
+      "end_time": null
+    },
+    {
+      "text": " The output can be an English statement generation.",
+      "start_time": 840.0,
+      "end_time": 843.36
+    },
+    {
+      "text": " So that is what it is good at performing because it is trained in understanding both image as",
+      "start_time": 843.36,
+      "end_time": 849.28
+    },
+    {
+      "text": " well as text.",
+      "start_time": 849.28,
+      "end_time": 850.28
+    },
+    {
+      "text": " So you can provide the image, you can put your question here and you can ask the blip",
+      "start_time": 850.28,
+      "end_time": 854.44
+    },
+    {
+      "text": " model whether this question can be answered by just looking at the image.",
+      "start_time": 854.44,
+      "end_time": 859.76
+    },
+    {
+      "text": " So that is what is the blip model which is a multi-model model.",
+      "start_time": 859.76,
+      "end_time": 863.52
+    },
+    {
+      "text": " This is called as a multi-model model.",
+      "start_time": 863.52,
+      "end_time": 865.92
+    },
+    {
+      "text": " The reason is input is image as well as text.",
+      "start_time": 865.92,
+      "end_time": 869.64
+    },
+    {
+      "text": "",
+      "start_time": 869.64,
+      "end_time": 840.0
+    },
+    {
+      "text": " So there are",
+      "start_time": 840.5,
+      "end_time": null
+    },
+    {
+      "text": " two aspects here and that is why because the multimodal inputs are being processed is called",
+      "start_time": 870.0,
+      "end_time": 875.46
+    },
+    {
+      "text": " as a multimodal LLM. So, next we will move on to whisper AI. Please note that the clip",
+      "start_time": 875.46,
+      "end_time": 886.0
+    },
+    {
+      "text": " does only the first step, the other two steps are carried out in blip. In understanding all",
+      "start_time": 886.0,
+      "end_time": 899.32
+    },
+    {
+      "text": "",
+      "start_time": 899.32,
+      "end_time": 870.0
+    },
+    {
+      "text": " this technique.",
+      "start_time": 870.64,
+      "end_time": null
+    },
+    {
+      "text": " The main thing is understanding transformers.",
+      "start_time": 900.0,
+      "end_time": 904.16
+    },
+    {
+      "text": " So the next one is whisper AI is again based on transformers.",
+      "start_time": 904.16,
+      "end_time": 907.56
+    },
+    {
+      "text": " This is also based on transformer based approach, whisper AI.",
+      "start_time": 907.56,
+      "end_time": 917.0
+    },
+    {
+      "text": " This is for speech related applications, speech to text.",
+      "start_time": 917.0,
+      "end_time": 923.88
+    },
+    {
+      "text": " Basically it is trained on speech to text but you can apply it for speaker recognition",
+      "start_time": 923.88,
+      "end_time": 928.32
+    },
+    {
+      "text": " and so on.",
+      "start_time": 928.32,
+      "end_time": 929.32
+    },
+    {
+      "text": "",
+      "start_time": 929.32,
+      "end_time": 900.0
+    },
+    {
+      "text": " any speech related.",
+      "start_time": 900.72,
+      "end_time": null
+    },
+    {
+      "text": " applications if you want to perform, this per AI is the go to place.",
+      "start_time": 930.0,
+      "end_time": 937.0
+    },
+    {
+      "text": " We open AI, yes and we did use this in the projects in summer. I think you will be able",
+      "start_time": 937.0,
+      "end_time": 948.0
+    },
+    {
+      "text": " to, Chaitra will be able to say and they also received desk paper award for this particular",
+      "start_time": 948.0,
+      "end_time": 953.0
+    },
+    {
+      "text": " project. They used several formers, shape former, wave former, all of that. So, and",
+      "start_time": 953.0,
+      "end_time": 959.12
+    },
+    {
+      "text": "",
+      "start_time": 959.12,
+      "end_time": 930.0
+    },
+    {
+      "text": " in six weeks.",
+      "start_time": 930.84,
+      "end_time": null
+    },
+    {
+      "text": " time they were able to achieve good results and also received the best paper award for",
+      "start_time": 960.0,
+      "end_time": 963.96
+    },
+    {
+      "text": " that.",
+      "start_time": 963.96,
+      "end_time": 964.96
+    },
+    {
+      "text": " So speech to text in other batches also they have made use of the whisper AI and it is",
+      "start_time": 964.96,
+      "end_time": 970.72
+    },
+    {
+      "text": " damn good I would say in speaker separation, multi speaker separations we were using it.",
+      "start_time": 970.72,
+      "end_time": 977.72
+    },
+    {
+      "text": " So there are multiple speakers like Arnab Goswami and all other people they start speaking",
+      "start_time": 977.72,
+      "end_time": 983.12
+    },
+    {
+      "text": " simultaneously we will not know who is speaking what.",
+      "start_time": 983.12,
+      "end_time": 986.96
+    },
+    {
+      "text": "",
+      "start_time": 986.96,
+      "end_time": 960.0
+    },
+    {
+      "text": " So that is when we wanted to separate the speech that is what they were.",
+      "start_time": 963.04,
+      "end_time": null
+    },
+    {
+      "text": " done. So in order to separate multi speakers voice and also want to identify who is the",
+      "start_time": 990.0,
+      "end_time": 996.44
+    },
+    {
+      "text": " speaker. So identification of the speaker it can also be used in let us say music concerts",
+      "start_time": 996.44,
+      "end_time": 1002.56
+    },
+    {
+      "text": " where multiple instruments are being played and let us say you are a flutist and you want",
+      "start_time": 1002.56,
+      "end_time": 1007.76
+    },
+    {
+      "text": " to just listen to only the flute. So how do you separate the flute from rest of the instruments?",
+      "start_time": 1007.76,
+      "end_time": 1012.72
+    },
+    {
+      "text": " So in all such cases the speech related applications you can use extend this application to do that",
+      "start_time": 1012.72,
+      "end_time": 1018.84
+    },
+    {
+      "text": "",
+      "start_time": 1018.84,
+      "end_time": 990.0
+    },
+    {
+      "text": " Okay, but that",
+      "start_time": 992.0,
+      "end_time": null
+    },
+    {
+      "text": " are other formers that we have used like wave formers, shape formers and so on.",
+      "start_time": 1020.0,
+      "end_time": 1025.46
+    },
+    {
+      "text": " This is also one of the transformers applications for speech to text. It is trained on speech",
+      "start_time": 1025.46,
+      "end_time": 1030.9
+    },
+    {
+      "text": " to text. So, how it is done is it uses as its input",
+      "start_time": 1030.9,
+      "end_time": 1036.32
+    },
+    {
+      "text": "",
+      "start_time": 1036.32,
+      "end_time": 1020.0
+    },
+    {
+      "text": " it uses its input as a mel spectrogram. So, its input is input is input is input is input",
+      "start_time": 1033.6,
+      "end_time": 1020.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1021.0,
+      "end_time": null
+    },
+    {
+      "text": " is the speech in the form of an image, in the form of an image, Mell spectrogram is fed.",
+      "start_time": 1050.0,
+      "end_time": 1060.0
+    },
+    {
+      "text": " So, what it does is, now I speak, this is an audio which I record and this audio is",
+      "start_time": 1060.0,
+      "end_time": 1069.52
+    },
+    {
+      "text": " continuous, you can see that, when I am speaking or when I am singing or when I am playing",
+      "start_time": 1069.52,
+      "end_time": 1074.36
+    },
+    {
+      "text": " an instrument, it is continuous in nature, it is an analog signal.",
+      "start_time": 1074.36,
+      "end_time": 1078.84
+    },
+    {
+      "text": "",
+      "start_time": 1078.84,
+      "end_time": 1050.0
+    },
+    {
+      "text": " whisper has done is.",
+      "start_time": 1051.12,
+      "end_time": null
+    },
+    {
+      "text": " From this continuous signal to store it in mp3 format, it is sampling, suppose there",
+      "start_time": 1080.0,
+      "end_time": 1086.72
+    },
+    {
+      "text": " is an mp3 file that you have recorded, 16000 hertz is the sampling rate of whisper AI.",
+      "start_time": 1086.72,
+      "end_time": 1096.64
+    },
+    {
+      "text": " What does this mean, 16000 hertz, a given mp3 file of one second is one second continuous",
+      "start_time": 1096.64,
+      "end_time": 1104.2
+    },
+    {
+      "text": " signal you have, but how do I process it?",
+      "start_time": 1104.2,
+      "end_time": 1107.48
+    },
+    {
+      "text": "",
+      "start_time": 1107.48,
+      "end_time": 1080.0
+    },
+    {
+      "text": " So it has to be quantized or sampled.",
+      "start_time": 1082.0,
+      "end_time": null
+    },
+    {
+      "text": " First you sample and then do quantization all that.",
+      "start_time": 1110.0,
+      "end_time": 1112.64
+    },
+    {
+      "text": " You cannot use the full signal.",
+      "start_time": 1112.64,
+      "end_time": 1114.64
+    },
+    {
+      "text": " So out of the one second, so Vspar AI uses a sampling rate of 16 kilohertz.",
+      "start_time": 1114.64,
+      "end_time": 1122.16
+    },
+    {
+      "text": " This means that for one second it generates 16,000 samples.",
+      "start_time": 1122.16,
+      "end_time": 1130.88
+    },
+    {
+      "text": " One second of audio, 16,000 samples are generated if you have one second audio.",
+      "start_time": 1130.88,
+      "end_time": 1138.32
+    },
+    {
+      "text": "",
+      "start_time": 1138.32,
+      "end_time": 1110.0
+    },
+    {
+      "text": " Now what does it do with the 16000?",
+      "start_time": 1111.68,
+      "end_time": null
+    },
+    {
+      "text": " samples. It is going to break this into frames. So you can generate may be 160 frames at a",
+      "start_time": 1140.0,
+      "end_time": 1146.44
+    },
+    {
+      "text": " time. This is called as a hop size. Hop size. Frame size splitting can be at about let us",
+      "start_time": 1146.44,
+      "end_time": 1154.84
+    },
+    {
+      "text": " say 400. 400 samples, this is what usually whisper does. 25 milliseconds constitutes",
+      "start_time": 1154.84,
+      "end_time": 1163.84
+    },
+    {
+      "text": "",
+      "start_time": 1163.84,
+      "end_time": 1140.0
+    },
+    {
+      "text": " 400 frames, 400 samples constitute one frame.",
+      "start_time": 1144.84,
+      "end_time": null
+    },
+    {
+      "text": " and the hop size is 160, 160 samples, hop size is 160 samples. So what happens is you have",
+      "start_time": 1170.0,
+      "end_time": 1183.36
+    },
+    {
+      "text": " the audio here of 16000 samples, you sample first 400 samples, then next from the next",
+      "start_time": 1183.36,
+      "end_time": 1194.92
+    },
+    {
+      "text": "",
+      "start_time": 1194.92,
+      "end_time": 1170.0
+    },
+    {
+      "text": " side you take 160 hop size 160 samples another 240.",
+      "start_time": 1175.0,
+      "end_time": null
+    },
+    {
+      "text": " will be overlap sample that is the meaning of that. So you have 160 samples as a hop",
+      "start_time": 1200.0,
+      "end_time": 1207.0
+    },
+    {
+      "text": " size, 400 samples from one frame. Every time for processing you are going to pick up one",
+      "start_time": 1207.0,
+      "end_time": 1214.08
+    },
+    {
+      "text": " frame, every time when you pick up one frame means you have to pick up 400 samples but",
+      "start_time": 1214.08,
+      "end_time": 1219.76
+    },
+    {
+      "text": " it is all the time not a new set of 400 samples, only 160 will be new. So what they have experimented",
+      "start_time": 1219.76,
+      "end_time": 1227.52
+    },
+    {
+      "text": "",
+      "start_time": 1227.52,
+      "end_time": 1200.0
+    },
+    {
+      "text": " is that if they take this overlap one, they will be",
+      "start_time": 1202.56,
+      "end_time": null
+    },
+    {
+      "text": " be able to generate a better spectrogram so that is why they do this. So this 160 next",
+      "start_time": 1230.0,
+      "end_time": 1236.32
+    },
+    {
+      "text": " and then 240 from previous is the next 400 frame sample that they pick up like this every",
+      "start_time": 1236.32,
+      "end_time": 1243.0
+    },
+    {
+      "text": " time they pick up 400 samples as one frame and this they subject it to STFT.",
+      "start_time": 1243.0,
+      "end_time": 1253.28
+    },
+    {
+      "text": " There are many more steps it is not required at this point so I am not going into the details",
+      "start_time": 1253.28,
+      "end_time": 1258.12
+    },
+    {
+      "text": "",
+      "start_time": 1258.12,
+      "end_time": 1230.0
+    },
+    {
+      "text": " of mathematics of it.",
+      "start_time": 1231.16,
+      "end_time": null
+    },
+    {
+      "text": " short time Fourier transform, short time Fourier transform. The given audio samples which is",
+      "start_time": 1260.0,
+      "end_time": 1267.12
+    },
+    {
+      "text": " in the time domain, your audio is in time domain right, your audio is going like this,",
+      "start_time": 1267.12,
+      "end_time": 1273.96
+    },
+    {
+      "text": " this is with respect to time. So what they do is, they are before feeding it to the transformer,",
+      "start_time": 1273.96,
+      "end_time": 1280.96
+    },
+    {
+      "text": " they are going to convert this time domain signal into frequency components. What frequency",
+      "start_time": 1280.96,
+      "end_time": 1287.52
+    },
+    {
+      "text": "",
+      "start_time": 1287.52,
+      "end_time": 1260.0
+    },
+    {
+      "text": " are there? Am I speaking at 100%?",
+      "start_time": 1262.48,
+      "end_time": null
+    },
+    {
+      "text": " Hertz I mean also speaking at sometimes at 200 Hertz what frequency components power",
+      "start_time": 1290.0,
+      "end_time": 1296.6
+    },
+    {
+      "text": " components are there in my speech is what is recorded and that is going to happen if you",
+      "start_time": 1296.6,
+      "end_time": 1302.36
+    },
+    {
+      "text": " convert the time domain signal into Fourier components and it is a short time wave therefore",
+      "start_time": 1302.36,
+      "end_time": 1308.16
+    },
+    {
+      "text": " we apply what is known as short time Fourier transform okay.",
+      "start_time": 1308.16,
+      "end_time": 1312.36
+    },
+    {
+      "text": " So for now this is sufficient say in quick time if I have to explain what is Fourier",
+      "start_time": 1312.36,
+      "end_time": 1318.84
+    },
+    {
+      "text": "",
+      "start_time": 1318.84,
+      "end_time": 1290.0
+    },
+    {
+      "text": " a transform.",
+      "start_time": 1291.0,
+      "end_time": null
+    },
+    {
+      "text": " suppose you have a complex signal, the complex signal cannot be analyzed directly, there is",
+      "start_time": 1320.0,
+      "end_time": 1327.08
+    },
+    {
+      "text": " no formula, whereas you can analyze a signal if it is split into sine and cosine waves.",
+      "start_time": 1327.08,
+      "end_time": 1334.12
+    },
+    {
+      "text": " So, the job of the Fourier transform is basically to split the given signal into some of sinusoids",
+      "start_time": 1334.12,
+      "end_time": 1343.12
+    },
+    {
+      "text": "",
+      "start_time": 1343.12,
+      "end_time": 1320.0
+    },
+    {
+      "text": " or some of cosines. If you say that this signal is made up of these many signs, sine wave",
+      "start_time": 1326.84,
+      "end_time": 1320.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1321.0,
+      "end_time": null
+    },
+    {
+      "text": " wave that is what the Fourier transform achieves. So for example this signal I can fit one mother",
+      "start_time": 1350.0,
+      "end_time": 1355.92
+    },
+    {
+      "text": " wave that is called as a fundamental mother wave. So I can fit like this, this sine wave.",
+      "start_time": 1355.92,
+      "end_time": 1361.28
+    },
+    {
+      "text": " This is one sine wave I will fit into the signal but this signal is definitely not as",
+      "start_time": 1361.28,
+      "end_time": 1366.4
+    },
+    {
+      "text": " the original signal. So you will have to add some more signs. So let us say because this",
+      "start_time": 1366.4,
+      "end_time": 1372.56
+    },
+    {
+      "text": " has to be subtracted right. So little bit of extra is there. So one more frequency wave",
+      "start_time": 1372.56,
+      "end_time": 1378.04
+    },
+    {
+      "text": "",
+      "start_time": 1378.04,
+      "end_time": 1350.0
+    },
+    {
+      "text": " is added.",
+      "start_time": 1352.0,
+      "end_time": null
+    },
+    {
+      "text": " more frequency wave is added just to nullify the effect of overdoing. Then again this is",
+      "start_time": 1380.0,
+      "end_time": 1386.0
+    },
+    {
+      "text": " not sufficient. So one more sinusoidal is added, one more is added, another is added",
+      "start_time": 1386.0,
+      "end_time": 1391.6
+    },
+    {
+      "text": " like this you keep adding some of sinusoid. These are called as frequency components.",
+      "start_time": 1391.6,
+      "end_time": 1397.08
+    },
+    {
+      "text": " Some of all the sinusoid put together will generate the original signal back that is",
+      "start_time": 1397.08,
+      "end_time": 1402.8
+    },
+    {
+      "text": " what is achieved in this case. The 400 samples the continuous frame which is an audio signal",
+      "start_time": 1402.8,
+      "end_time": 1409.84
+    },
+    {
+      "text": "",
+      "start_time": 1409.84,
+      "end_time": 1380.0
+    },
+    {
+      "text": " Have",
+      "start_time": 1380.5,
+      "end_time": null
+    },
+    {
+      "text": " to be converted into some of synosoids that is what the short time Fourier transform achieve.",
+      "start_time": 1410.0,
+      "end_time": 1416.6
+    },
+    {
+      "text": " Fourier transform may applicability in understanding how many different synosoids with different",
+      "start_time": 1416.6,
+      "end_time": 1422.16
+    },
+    {
+      "text": " frequencies and different peaks will formulate your original signal.",
+      "start_time": 1422.16,
+      "end_time": 1426.4
+    },
+    {
+      "text": " If I can get to know that I can use these synosoids for my analysis because it is a",
+      "start_time": 1426.4,
+      "end_time": 1431.4
+    },
+    {
+      "text": " very well proven theory how to analyze synosoids but I do not really understand the original",
+      "start_time": 1431.4,
+      "end_time": 1437.28
+    },
+    {
+      "text": "",
+      "start_time": 1437.28,
+      "end_time": 1410.0
+    },
+    {
+      "text": " complex signal. How do I split the complex signal?",
+      "start_time": 1412.76,
+      "end_time": null
+    },
+    {
+      "text": " signal into the various sinusoids which I can analyze further. This is what is going",
+      "start_time": 1440.0,
+      "end_time": 1444.96
+    },
+    {
+      "text": " to be achieved in Fourier transform and this is short time Fourier transform for short",
+      "start_time": 1444.96,
+      "end_time": 1449.32
+    },
+    {
+      "text": " windows. So that is going to be achieved. So overall you need to understand that a continuous",
+      "start_time": 1449.32,
+      "end_time": 1454.52
+    },
+    {
+      "text": " signal is split up into various frequency components. So frequency of 100 hertz, how",
+      "start_time": 1454.52,
+      "end_time": 1459.72
+    },
+    {
+      "text": " much is there in this time duration, what is the power of 200 hertz in this, what is",
+      "start_time": 1459.72,
+      "end_time": 1465.04
+    },
+    {
+      "text": "",
+      "start_time": 1465.04,
+      "end_time": 1440.0
+    },
+    {
+      "text": " the power of 800 hertz all of this you will have to divide it into bins.",
+      "start_time": 1444.16,
+      "end_time": null
+    },
+    {
+      "text": " So in the whisper EI they divide it into 80 melbins, 80 different frequencies and then",
+      "start_time": 1470.0,
+      "end_time": 1478.6
+    },
+    {
+      "text": " they analyze, then they analyze the power that is there in the audio.",
+      "start_time": 1478.6,
+      "end_time": 1484.08
+    },
+    {
+      "text": " This is what is achieved in the STFT.",
+      "start_time": 1484.08,
+      "end_time": 1486.48
+    },
+    {
+      "text": " So again I repeat for one second audio the whisper EI generates 16000 samples and after",
+      "start_time": 1486.48,
+      "end_time": 1494.32
+    },
+    {
+      "text": "",
+      "start_time": 1494.32,
+      "end_time": 1470.0
+    },
+    {
+      "text": " generating 16,000 samples, it has to pick up 400 samples for it to apply STF.",
+      "start_time": 1475.64,
+      "end_time": null
+    },
+    {
+      "text": " There are many other steps I have skipped STFT, there is something called as Gaunt's",
+      "start_time": 1500.0,
+      "end_time": 1505.86
+    },
+    {
+      "text": " waveform and all of that I have skipped those steps directly talking about converting it",
+      "start_time": 1505.86,
+      "end_time": 1510.74
+    },
+    {
+      "text": " into frequency component.",
+      "start_time": 1510.74,
+      "end_time": 1512.46
+    },
+    {
+      "text": " To apply STFT you need to pick up 400 samples but how are the 400 samples going to come?",
+      "start_time": 1512.46,
+      "end_time": 1518.1
+    },
+    {
+      "text": " They come in an overlapped way, only the first 400 will be original rest will be in an overlapped",
+      "start_time": 1518.1,
+      "end_time": 1523.42
+    },
+    {
+      "text": " way.",
+      "start_time": 1523.42,
+      "end_time": 1524.42
+    },
+    {
+      "text": "",
+      "start_time": 1524.42,
+      "end_time": 1500.0
+    },
+    {
+      "text": " every time before applying STFT you get 400 samples from this audio and you apply.",
+      "start_time": 1505.6,
+      "end_time": null
+    },
+    {
+      "text": " short time Fourier transform and in that time step what are the frequency components? So",
+      "start_time": 1530.0,
+      "end_time": 1535.64
+    },
+    {
+      "text": " it applies. So time step 1 what are the frequency components that are there? Next 400 samples",
+      "start_time": 1535.64,
+      "end_time": 1542.0
+    },
+    {
+      "text": " time step 2 what are the frequency components? Time step 3 like this there are about 100 time",
+      "start_time": 1542.0,
+      "end_time": 1547.12
+    },
+    {
+      "text": " step at which you will pick up 400 at a time to complete the full audio signal, generate",
+      "start_time": 1547.12,
+      "end_time": 1553.44
+    },
+    {
+      "text": "",
+      "start_time": 1553.44,
+      "end_time": 1530.0
+    },
+    {
+      "text": " the power spectrum and then converted into mel power.",
+      "start_time": 1534.76,
+      "end_time": 1530.0
+    },
+    {
+      "text": " Okay, STFT, directly give.",
+      "start_time": 1532.0,
+      "end_time": null
+    },
+    {
+      "text": " the power in absolute terms, it has to be converted into a mel power and then it has",
+      "start_time": 1560.0,
+      "end_time": 1565.16
+    },
+    {
+      "text": " to be converted into dB scale, decibel scale.",
+      "start_time": 1565.16,
+      "end_time": 1569.2
+    },
+    {
+      "text": " The reason why they do it is, in that scale the hearing will be usually in the decibel",
+      "start_time": 1569.2,
+      "end_time": 1574.16
+    },
+    {
+      "text": " scale.",
+      "start_time": 1574.16,
+      "end_time": 1575.16
+    },
+    {
+      "text": " Our regular hearing is in the decibel scale, so they do all these steps before feeding",
+      "start_time": 1575.16,
+      "end_time": 1580.0
+    },
+    {
+      "text": " it to transformer so that it is near to our hearing type of power, so that the speech recognition",
+      "start_time": 1580.0,
+      "end_time": 1586.2
+    },
+    {
+      "text": " would be better.",
+      "start_time": 1586.2,
+      "end_time": 1587.2
+    },
+    {
+      "text": "",
+      "start_time": 1587.2,
+      "end_time": 1560.0
+    },
+    {
+      "text": " So that is the reason why they do all of these steps.",
+      "start_time": 1562.32,
+      "end_time": null
+    },
+    {
+      "text": " understand the power, understand it to melt power, there is an equation for conversion",
+      "start_time": 1590.0,
+      "end_time": 1594.68
+    },
+    {
+      "text": " and that depends on how many parameters you have taken and all that, it is not like a",
+      "start_time": 1594.68,
+      "end_time": 1599.12
+    },
+    {
+      "text": " static function and then based on that again it gets compressed into log scale that is",
+      "start_time": 1599.12,
+      "end_time": 1604.84
+    },
+    {
+      "text": " where you have the db scale.",
+      "start_time": 1604.84,
+      "end_time": 1606.4
+    },
+    {
+      "text": " So finally all your frequency components will be converted into db scale, so every frame",
+      "start_time": 1606.4,
+      "end_time": 1612.76
+    },
+    {
+      "text": " 400 frame you will have a set of points which will indicate the db scale amplitude, the",
+      "start_time": 1612.76,
+      "end_time": 1619.76
+    },
+    {
+      "text": "",
+      "start_time": 1619.76,
+      "end_time": 1590.0
+    },
+    {
+      "text": " the way.",
+      "start_time": 1592.0,
+      "end_time": null
+    },
+    {
+      "text": " you have spoken, the power you have spoken, so the data points are generated.",
+      "start_time": 1620.0,
+      "end_time": 1623.88
+    },
+    {
+      "text": " So like this for 400, one set of data points in db scale, another 400, another set of scale,",
+      "start_time": 1623.88,
+      "end_time": 1629.48
+    },
+    {
+      "text": " like this may be some 100 data points, time steps you get.",
+      "start_time": 1629.48,
+      "end_time": 1632.84
+    },
+    {
+      "text": " So now you have 100 time steps, it is like 100 words, 100 words are now fed, now onwards",
+      "start_time": 1632.84,
+      "end_time": 1638.76
+    },
+    {
+      "text": " it is simple, give it to transformer, find out the self-attention, the self-attention",
+      "start_time": 1638.76,
+      "end_time": 1644.8
+    },
+    {
+      "text": " talks about what is the relationship between this time step and this time step, the cross",
+      "start_time": 1644.8,
+      "end_time": 1649.68
+    },
+    {
+      "text": "",
+      "start_time": 1649.68,
+      "end_time": 1620.0
+    },
+    {
+      "text": " Thank you. Thank you.",
+      "start_time": 1621.0,
+      "end_time": 1622.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1622.0,
+      "end_time": 1623.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1623.0,
+      "end_time": 1624.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1624.0,
+      "end_time": 1625.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1625.0,
+      "end_time": 1626.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1626.0,
+      "end_time": 1627.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1627.0,
+      "end_time": 1628.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1628.0,
+      "end_time": 1629.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1629.0,
+      "end_time": 1630.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1630.0,
+      "end_time": 1631.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1631.0,
+      "end_time": 1632.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1632.0,
+      "end_time": 1633.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1633.0,
+      "end_time": 1634.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1634.0,
+      "end_time": 1635.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1635.0,
+      "end_time": 1636.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1636.0,
+      "end_time": 1637.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1637.0,
+      "end_time": 1638.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1638.0,
+      "end_time": 1639.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1639.0,
+      "end_time": 1640.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1640.0,
+      "end_time": 1641.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1641.0,
+      "end_time": 1642.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1642.0,
+      "end_time": 1643.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1643.0,
+      "end_time": 1644.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1644.0,
+      "end_time": 1645.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1645.0,
+      "end_time": 1646.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1646.0,
+      "end_time": 1647.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1647.0,
+      "end_time": 1648.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1648.0,
+      "end_time": 1649.0
+    },
+    {
+      "text": " attention talks about what is the relationship between this audio and the text that is what",
+      "start_time": 1650.0,
+      "end_time": 1655.16
+    },
+    {
+      "text": " it does.",
+      "start_time": 1655.16,
+      "end_time": 1656.16
+    },
+    {
+      "text": " So speech and text speech to speech, self attention talks about speech to speech understanding",
+      "start_time": 1656.16,
+      "end_time": 1662.44
+    },
+    {
+      "text": " and speech to text understanding is done in cross attention that is where you have a decoder.",
+      "start_time": 1662.44,
+      "end_time": 1667.28
+    },
+    {
+      "text": " So it uses both encoder and decoder, encoder talks about understanding the query and key",
+      "start_time": 1667.28,
+      "end_time": 1672.8
+    },
+    {
+      "text": " between speech signal between the two samples between the frame and the query and key will",
+      "start_time": 1672.8,
+      "end_time": 1678.56
+    },
+    {
+      "text": "",
+      "start_time": 1678.56,
+      "end_time": 1650.0
+    },
+    {
+      "text": " come from decoder.",
+      "start_time": 1651.44,
+      "end_time": null
+    },
+    {
+      "text": " text so that way it will train the transformer to make sure that if the audio is given okay",
+      "start_time": 1680.0,
+      "end_time": 1685.68
+    },
+    {
+      "text": " I am Shailaja from PES University it should produce the text I am Shailaja from PES University",
+      "start_time": 1685.68,
+      "end_time": 1691.56
+    },
+    {
+      "text": " so when I tried it I did not get the laptop and I tried it it converted into Shailaja",
+      "start_time": 1691.56,
+      "end_time": 1696.96
+    },
+    {
+      "text": " JHA it converted that so something like this it gave my name it gave like that the whisper",
+      "start_time": 1696.96,
+      "end_time": 1706.04
+    },
+    {
+      "text": "",
+      "start_time": 1706.04,
+      "end_time": 1680.0
+    },
+    {
+      "text": " I tried it on this so it did not give me a it",
+      "start_time": 1683.92,
+      "end_time": null
+    },
+    {
+      "text": " it took it as may be Jai is trained more so it pronounced my name as a may be a north",
+      "start_time": 1710.0,
+      "end_time": 1717.0
+    },
+    {
+      "text": " related person like that so that is how it got trained.",
+      "start_time": 1717.0,
+      "end_time": 1722.0
+    },
+    {
+      "text": " So, 99 languages it says I did not check all the languages but Vispariya is trained on",
+      "start_time": 1722.0,
+      "end_time": 1730.12
+    },
+    {
+      "text": " about 640,000 hours of audio with 99 languages being trained.",
+      "start_time": 1730.12,
+      "end_time": 1735.0
+    },
+    {
+      "text": "",
+      "start_time": 1735.0,
+      "end_time": 1710.0
+    },
+    {
+      "text": " So, whether the some of the languages may be the index.",
+      "start_time": 1715.0,
+      "end_time": null
+    },
+    {
+      "text": " Hindi language it might have been trained but not sure about the Kannada. I did not",
+      "start_time": 1740.0,
+      "end_time": 1744.96
+    },
+    {
+      "text": " check all the 99 languages. So that is why it fairly does well. So this is your whisper",
+      "start_time": 1744.96,
+      "end_time": 1753.56
+    },
+    {
+      "text": " AI. This is clear? So you are in whisper AI the preprocessing step itself is little involved.",
+      "start_time": 1753.56,
+      "end_time": 1761.76
+    },
+    {
+      "text": " These are the preprocessing steps. After that it is a transformer. Transformer will take",
+      "start_time": 1761.76,
+      "end_time": 1766.16
+    },
+    {
+      "text": "",
+      "start_time": 1766.16,
+      "end_time": 1740.0
+    },
+    {
+      "text": " care of generating attentions and checking the",
+      "start_time": 1743.8,
+      "end_time": null
+    },
+    {
+      "text": " correlation between the speech tokens and as well as the text tokens and generates the",
+      "start_time": 1770.0,
+      "end_time": 1775.28
+    },
+    {
+      "text": " text corresponding to the audio that you have created.",
+      "start_time": 1775.28,
+      "end_time": 1778.36
+    },
+    {
+      "text": " So since 40,000 hours of audio has been fed of different languages and then that is the",
+      "start_time": 1778.36,
+      "end_time": 1784.32
+    },
+    {
+      "text": " reason why it is able to learn the various speech signals and generate the text accordingly.",
+      "start_time": 1784.32,
+      "end_time": 1791.04
+    },
+    {
+      "text": " So that is how it has been.",
+      "start_time": 1791.04,
+      "end_time": 1793.04
+    },
+    {
+      "text": " This is clear?",
+      "start_time": 1793.04,
+      "end_time": 1794.2
+    },
+    {
+      "text": " So that is about the multimodal LLMs.",
+      "start_time": 1794.2,
+      "end_time": 1796.2
+    },
+    {
+      "text": " This is clear?",
+      "start_time": 1796.2,
+      "end_time": 1797.2
+    },
+    {
+      "text": "",
+      "start_time": 1797.2,
+      "end_time": 1770.0
+    },
+    {
+      "text": " So, in this multimodal LLM whisper AI.",
+      "start_time": 1772.56,
+      "end_time": null
+    },
+    {
+      "text": " The input is speech, so that is where the, this pariah is called or comes under multimodal",
+      "start_time": 1800.0,
+      "end_time": 1807.36
+    },
+    {
+      "text": " LLM.",
+      "start_time": 1807.36,
+      "end_time": 1808.36
+    },
+    {
+      "text": " Clip and blip, the input is image and text, here it is speech and text, so that is how",
+      "start_time": 1808.36,
+      "end_time": 1813.6
+    },
+    {
+      "text": "",
+      "start_time": 1813.6,
+      "end_time": 1800.0
+    },
+    {
+      "text": " it is straight ok.",
+      "start_time": 1807.0,
+      "end_time": null
+    },
+    {
+      "text": " So, now I am asking you a Ramayana story, where does the attention layer appear in transformer?",
+      "start_time": 1830.0,
+      "end_time": 1842.4
+    },
+    {
+      "text": " What is the first layer?",
+      "start_time": 1842.4,
+      "end_time": 1845.4
+    },
+    {
+      "text": " Bird to Wacke embedding and then positional embedding and after that comes the attention",
+      "start_time": 1845.4,
+      "end_time": 1853.64
+    },
+    {
+      "text": " layer.",
+      "start_time": 1853.64,
+      "end_time": 1854.64
+    },
+    {
+      "text": "",
+      "start_time": 1854.64,
+      "end_time": 1830.0
+    },
+    {
+      "text": " The attention layer, why did we introduce transformer?",
+      "start_time": 1835.12,
+      "end_time": null
+    },
+    {
+      "text": " Long term context they would capture LSTMG are you parallel, but now they are going back",
+      "start_time": 1860.0,
+      "end_time": 1872.92
+    },
+    {
+      "text": " again saying that self-attention is time consuming and they have introduced something called as",
+      "start_time": 1872.92,
+      "end_time": 1879.92
+    },
+    {
+      "text": " Mamba network have you heard of that Mamba network.",
+      "start_time": 1879.92,
+      "end_time": 1884.4
+    },
+    {
+      "text": "",
+      "start_time": 1884.4,
+      "end_time": 1860.0
+    },
+    {
+      "text": " They are trying to eliminate the self attention layer.",
+      "start_time": 1864.96,
+      "end_time": null
+    },
+    {
+      "text": " saying that the time complexity of the attention layer is order of n square can you tell me",
+      "start_time": 1890.0,
+      "end_time": 1895.92
+    },
+    {
+      "text": " why is that the time complexity of the attention layer is order of n square.",
+      "start_time": 1895.92,
+      "end_time": 1905.2
+    },
+    {
+      "text": " The query query there is a sentence query and key query key that is one linear step",
+      "start_time": 1905.2,
+      "end_time": 1912.16
+    },
+    {
+      "text": " and the next query and keys. So it is n square so qk that is softmax layer the softmax layer",
+      "start_time": 1912.16,
+      "end_time": 1919.96
+    },
+    {
+      "text": "",
+      "start_time": 1919.96,
+      "end_time": 1890.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1891.0,
+      "end_time": null
+    },
+    {
+      "text": " Q k transpose by rho B k into V, this is order of n square, this is of the order of n square.",
+      "start_time": 1920.0,
+      "end_time": 1933.52
+    },
+    {
+      "text": " So then, but in RNNs it is sequential processing, so it is of order of n, so they want to mix",
+      "start_time": 1933.52,
+      "end_time": 1942.2
+    },
+    {
+      "text": "",
+      "start_time": 1942.2,
+      "end_time": 1920.0
+    },
+    {
+      "text": " this logic, the LSTM logic but they want to use attention type okay.",
+      "start_time": 1926.6,
+      "end_time": null
+    },
+    {
+      "text": " dependency should be captured. So this mixed logic is called a state space model. This",
+      "start_time": 1950.0,
+      "end_time": 1957.0
+    },
+    {
+      "text": " state space model is used in Mamba network. So they are planning to remove this attention.",
+      "start_time": 1962.84,
+      "end_time": 1969.84
+    },
+    {
+      "text": " So probably this is again from RNN people that they do not want to lose out on their",
+      "start_time": 1969.84,
+      "end_time": 1975.04
+    },
+    {
+      "text": "",
+      "start_time": 1975.04,
+      "end_time": 1950.0
+    },
+    {
+      "text": " architecture and mamba is not an example.",
+      "start_time": 1955.0,
+      "end_time": null
+    },
+    {
+      "text": " it is a name of a snake. So, it the data moves like that something like that. So, here A",
+      "start_time": 1980.0,
+      "end_time": 1992.0
+    },
+    {
+      "text": " ht minus 1 B h B xt is your ht and it is sequential again they have come back to sequential operations",
+      "start_time": 1992.0,
+      "end_time": 2006.2
+    },
+    {
+      "text": "",
+      "start_time": 2006.2,
+      "end_time": 1980.0
+    },
+    {
+      "text": " again they have come back to sequential operations and this is known as the sequential operations.",
+      "start_time": 1983.76,
+      "end_time": null
+    },
+    {
+      "text": " state space model. They capture the previous state, state 1, state 2, state 3 and so on.",
+      "start_time": 2010.0,
+      "end_time": 2017.0
+    },
+    {
+      "text": " It is almost similar to R and N, only thing is it has some gates. Here it stores in the",
+      "start_time": 2020.28,
+      "end_time": 2025.88
+    },
+    {
+      "text": " form of state, nothing else. Some small change they have brought in. So, previous hidden state",
+      "start_time": 2025.88,
+      "end_time": 2032.88
+    },
+    {
+      "text": "",
+      "start_time": 2034.12,
+      "end_time": 2010.0
+    },
+    {
+      "text": " hidden state information, how much you want to use and the new input a and b.",
+      "start_time": 2017.12,
+      "end_time": null
+    },
+    {
+      "text": " control that. How much of previous state information is controlled by A, how much of present input",
+      "start_time": 2040.0,
+      "end_time": 2047.64
+    },
+    {
+      "text": " weight. So it is a weighted input that you are going to give, weighted input B and A,",
+      "start_time": 2047.64,
+      "end_time": 2055.28
+    },
+    {
+      "text": " the previous state will generate the new state and new state is captured in the next one.",
+      "start_time": 2055.28,
+      "end_time": 2062.36
+    },
+    {
+      "text": " So when you generate the third state again use the second state information, X is the",
+      "start_time": 2062.36,
+      "end_time": 2068.52
+    },
+    {
+      "text": "",
+      "start_time": 2068.52,
+      "end_time": 2040.0
+    },
+    {
+      "text": " input sentences.",
+      "start_time": 2041.08,
+      "end_time": null
+    },
+    {
+      "text": " Suppose you are trying to find the sentiment of it, so in the sentiment analysis for the",
+      "start_time": 2070.0,
+      "end_time": 2075.56
+    },
+    {
+      "text": " transformer you would have given all the words simultaneously parallel then QK you would",
+      "start_time": 2075.56,
+      "end_time": 2080.44
+    },
+    {
+      "text": " have calculated and you would have generated the vector and it would have classified it",
+      "start_time": 2080.44,
+      "end_time": 2083.92
+    },
+    {
+      "text": " as positive negative that is transformers way but now one word at a time one word generates",
+      "start_time": 2083.92,
+      "end_time": 2089.48
+    },
+    {
+      "text": " ht-1 store that next word you give next again ht-1 next word next word next word like that",
+      "start_time": 2089.48,
+      "end_time": 2096.12
+    },
+    {
+      "text": "",
+      "start_time": 2096.12,
+      "end_time": 2070.0
+    },
+    {
+      "text": " different time, sir, same as RNN.",
+      "start_time": 2073.72,
+      "end_time": null
+    },
+    {
+      "text": " only thing is in RNN you use input gate, forget gate, update gate and all that architecture",
+      "start_time": 2100.0,
+      "end_time": 2105.48
+    },
+    {
+      "text": " is different.",
+      "start_time": 2105.48,
+      "end_time": 2106.48
+    },
+    {
+      "text": " Here it is using state space model 1 neural network applied ht-1 different time stamps",
+      "start_time": 2106.48,
+      "end_time": 2114.16
+    },
+    {
+      "text": " that is it, sequential and this is a linear equation so this is done in order of n. This",
+      "start_time": 2114.16,
+      "end_time": 2121.52
+    },
+    {
+      "text": " is what they are proposing still it is not it is gaining popularity but not as much as",
+      "start_time": 2121.52,
+      "end_time": 2126.8
+    },
+    {
+      "text": " that of the transformer.",
+      "start_time": 2126.8,
+      "end_time": 2127.8
+    },
+    {
+      "text": "",
+      "start_time": 2127.8,
+      "end_time": 2100.0
+    },
+    {
+      "text": " So there is work going on.",
+      "start_time": 2102.24,
+      "end_time": null
+    },
+    {
+      "text": " Then you need to know the last unit Chinmayan, your friend please.",
+      "start_time": 2130.0,
+      "end_time": 2135.24
+    },
+    {
+      "text": " So there is work going on in the direction of how to remove the attention layer.",
+      "start_time": 2135.24,
+      "end_time": 2141.28
+    },
+    {
+      "text": " All these while they said RNN is sequential and it is time consuming.",
+      "start_time": 2141.28,
+      "end_time": 2146.36
+    },
+    {
+      "text": " So the starting story of Ramayana was different.",
+      "start_time": 2146.36,
+      "end_time": 2149.12
+    },
+    {
+      "text": " I said transformer is doing magic and all of that.",
+      "start_time": 2149.12,
+      "end_time": 2151.92
+    },
+    {
+      "text": " The ending story is how to remove that layer now and make sure that you get back to order",
+      "start_time": 2151.92,
+      "end_time": 2156.56
+    },
+    {
+      "text": " of N.",
+      "start_time": 2156.56,
+      "end_time": 2157.56
+    },
+    {
+      "text": "",
+      "start_time": 2157.56,
+      "end_time": 2130.0
+    },
+    {
+      "text": " all should know that the transformer this is the transformer.",
+      "start_time": 2132.44,
+      "end_time": null
+    },
+    {
+      "text": " calculation is out of n square which is quadratic in nature. So how to reduce the computations",
+      "start_time": 2160.0,
+      "end_time": 2165.4
+    },
+    {
+      "text": " and still capture that in linear time. The efforts are going on in that direction.",
+      "start_time": 2165.4,
+      "end_time": 2171.0
+    },
+    {
+      "text": " Now we are not really sure the importance of the transformers doing it in parallel at",
+      "start_time": 2171.0,
+      "end_time": 2177.2
+    },
+    {
+      "text": " the same time doing something in linear time that has not come okay. So either the problem",
+      "start_time": 2177.2,
+      "end_time": 2182.84
+    },
+    {
+      "text": " of sequential is there and linear time or problem of parallel but it is quadratic in",
+      "start_time": 2182.84,
+      "end_time": 2188.0
+    },
+    {
+      "text": "",
+      "start_time": 2188.0,
+      "end_time": 2160.0
+    },
+    {
+      "text": " nature. This is where we stand today.",
+      "start_time": 2162.0,
+      "end_time": null
+    },
+    {
+      "text": " So, but there is an effort that is going on to remove the attention layer because of the",
+      "start_time": 2190.0,
+      "end_time": 2195.6
+    },
+    {
+      "text": " quadratic nature, but how you are going to do that and still be as effective as the transformer",
+      "start_time": 2195.6,
+      "end_time": 2201.28
+    },
+    {
+      "text": " that we have to discuss last, but when when Charabee and team, yeah please.",
+      "start_time": 2201.28,
+      "end_time": 2206.12
+    },
+    {
+      "text": " So, this is where we stand is that clear.",
+      "start_time": 2206.12,
+      "end_time": 2209.44
+    },
+    {
+      "text": " So, this is the Mamba network which is called as a state space model, I mean it is like",
+      "start_time": 2209.44,
+      "end_time": 2215.16
+    },
+    {
+      "text": "",
+      "start_time": 2215.16,
+      "end_time": 2190.0
+    },
+    {
+      "text": " over simplified in the cloth okay it is we are not going to dwell deep into it.",
+      "start_time": 2194.84,
+      "end_time": null
+    },
+    {
+      "text": " into lot of details here, you just need to know that the drawbacks of the attention layer",
+      "start_time": 2220.0,
+      "end_time": 2225.56
+    },
+    {
+      "text": " that is needed quadratic in nature, why it is quadratic and you need to know that there",
+      "start_time": 2225.56,
+      "end_time": 2230.6
+    },
+    {
+      "text": " is an effort that is going on to remove that attention layer and one of the models that",
+      "start_time": 2230.6,
+      "end_time": 2235.64
+    },
+    {
+      "text": " is coming out is the Mamba network and this Mamba network what it does is based on a state",
+      "start_time": 2235.64,
+      "end_time": 2241.4
+    },
+    {
+      "text": " space model, what it does it does not use gauge, it is a linear model, it captures the hidden",
+      "start_time": 2241.4,
+      "end_time": 2247.68
+    },
+    {
+      "text": "",
+      "start_time": 2247.68,
+      "end_time": 2220.0
+    },
+    {
+      "text": " state. It feeds the word.",
+      "start_time": 2222.0,
+      "end_time": null
+    },
+    {
+      "text": " activation layer is produced, stores that activation in the form of a state and then",
+      "start_time": 2250.0,
+      "end_time": 2255.4
+    },
+    {
+      "text": " next word is fed, it uses a previous activation to some extent using the weighted factor A",
+      "start_time": 2255.4,
+      "end_time": 2261.52
+    },
+    {
+      "text": " and the new input word with the weighting of B and then computes the new activation.",
+      "start_time": 2261.52,
+      "end_time": 2265.6
+    },
+    {
+      "text": " So like this successive steps, let us say the sentence is made up of 10 words, you will",
+      "start_time": 2265.6,
+      "end_time": 2270.48
+    },
+    {
+      "text": " have 10 states and finally you will produce the 10th output, activation.",
+      "start_time": 2270.48,
+      "end_time": 2274.6
+    },
+    {
+      "text": " So this is how the training is going to be carried out, it is sequential in process,",
+      "start_time": 2274.6,
+      "end_time": 2278.24
+    },
+    {
+      "text": "",
+      "start_time": 2278.24,
+      "end_time": 2250.0
+    },
+    {
+      "text": " States are captured.",
+      "start_time": 2251.78,
+      "end_time": null
+    },
+    {
+      "text": " It is similar to LSTM but not similar in the sense it does not use gates.",
+      "start_time": 2280.0,
+      "end_time": 2285.16
+    },
+    {
+      "text": " It uses just this and a feed forward neural network to try out an equivalent of attention.",
+      "start_time": 2285.16,
+      "end_time": 2291.32
+    },
+    {
+      "text": " But the results have not been proven to be as effective as transformers but the research",
+      "start_time": 2291.32,
+      "end_time": 2296.36
+    },
+    {
+      "text": " is going on.",
+      "start_time": 2296.36,
+      "end_time": 2298.48
+    },
+    {
+      "text": " Pardon?",
+      "start_time": 2298.48,
+      "end_time": 2300.28
+    },
+    {
+      "text": " As of now they have mentioned it as static.",
+      "start_time": 2300.28,
+      "end_time": 2308.2
+    },
+    {
+      "text": "",
+      "start_time": 2308.2,
+      "end_time": 2280.0
+    },
+    {
+      "text": " you can also change it and try.",
+      "start_time": 2281.84,
+      "end_time": null
+    },
+    {
+      "text": " this is still under research, a and b right now are static, not yet, not yet. There was",
+      "start_time": 2310.0,
+      "end_time": 2327.0
+    },
+    {
+      "text": " one more, I do not remember the name, there is one more, they are generally come under",
+      "start_time": 2327.0,
+      "end_time": 2330.28
+    },
+    {
+      "text": "",
+      "start_time": 2330.28,
+      "end_time": 2310.0
+    },
+    {
+      "text": " state space models SSMs.",
+      "start_time": 2317.0,
+      "end_time": null
+    },
+    {
+      "text": " The",
+      "start_time": 2340.0,
+      "end_time": 2342.0
+    },
+    {
+      "text": " Yeah.",
+      "start_time": 2370.0,
+      "end_time": 2377.0
+    },
+    {
+      "text": " Okay, shall we look at this?",
+      "start_time": 2400.0,
+      "end_time": 2429.92
+    },
+    {
+      "text": "",
+      "start_time": 2429.92,
+      "end_time": 2400.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 2401.0,
+      "end_time": null
+    },
+    {
+      "text": " I mean you must have heard about it multiple times, let us look at it in a formal setting",
+      "start_time": 2430.0,
+      "end_time": 2438.12
+    },
+    {
+      "text": " now.",
+      "start_time": 2438.12,
+      "end_time": 2439.12
+    },
+    {
+      "text": " So now if I ask LLM what is the value of 5 by 2 is very unlikely that it gives a correct",
+      "start_time": 2439.12,
+      "end_time": 2448.0
+    },
+    {
+      "text": " answer like 2.5.",
+      "start_time": 2448.0,
+      "end_time": 2451.8
+    },
+    {
+      "text": " Why do you think that it may go wrong in giving the answers to these mathematical questions?",
+      "start_time": 2451.8,
+      "end_time": 2459.0
+    },
+    {
+      "text": "",
+      "start_time": 2459.0,
+      "end_time": 2430.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 2432.0,
+      "end_time": null
+    },
+    {
+      "text": " The kind of training that it has undergone, whatever training if I give you training on",
+      "start_time": 2460.0,
+      "end_time": 2469.38
+    },
+    {
+      "text": " history and I expect you to solve calculus equations that is what is happening, you understand.",
+      "start_time": 2469.38,
+      "end_time": 2477.46
+    },
+    {
+      "text": " In your second PUC let us say you are given full non about Ramayana, Mahabharata or politics",
+      "start_time": 2477.46,
+      "end_time": 2484.1
+    },
+    {
+      "text": " and everything and suddenly you give a differential equation in the examination that is how it",
+      "start_time": 2484.1,
+      "end_time": 2489.66
+    },
+    {
+      "text": "",
+      "start_time": 2489.66,
+      "end_time": 2460.0
+    },
+    {
+      "text": " Peace.",
+      "start_time": 2460.84,
+      "end_time": null
+    },
+    {
+      "text": " How will it answer?",
+      "start_time": 2490.0,
+      "end_time": 2492.0
+    },
+    {
+      "text": " So it will answer like that Ramayana story only the mathematics also it is not trained",
+      "start_time": 2492.0,
+      "end_time": 2496.84
+    },
+    {
+      "text": " on that.",
+      "start_time": 2496.84,
+      "end_time": 2497.84
+    },
+    {
+      "text": " So that is the issue is that clear?",
+      "start_time": 2497.84,
+      "end_time": 2501.08
+    },
+    {
+      "text": " So some of these it is not being trained on so it will not be able to give.",
+      "start_time": 2501.08,
+      "end_time": 2507.2
+    },
+    {
+      "text": " So like this how many things are there?",
+      "start_time": 2507.2,
+      "end_time": 2511.48
+    },
+    {
+      "text": " Is it possible to train a large language model on every damn thing on earth and then expect",
+      "start_time": 2511.48,
+      "end_time": 2517.76
+    },
+    {
+      "text": "",
+      "start_time": 2517.76,
+      "end_time": 2490.0
+    },
+    {
+      "text": " it to answer. We are moving to",
+      "start_time": 2492.16,
+      "end_time": null
+    },
+    {
+      "text": " towards it but not yet that is how the DC took a revolution because they took this opportunity",
+      "start_time": 2520.0,
+      "end_time": 2526.9
+    },
+    {
+      "text": " and they came into the reasoning type and math as well math reasoning.",
+      "start_time": 2526.9,
+      "end_time": 2532.72
+    },
+    {
+      "text": " So LLMs have been fundamentally been trained and they are there almost at the top in the",
+      "start_time": 2532.72,
+      "end_time": 2539.48
+    },
+    {
+      "text": " text image revolution has not yet happened, speech revolution has not yet happened it",
+      "start_time": 2539.48,
+      "end_time": 2546.28
+    },
+    {
+      "text": "",
+      "start_time": 2546.28,
+      "end_time": 2520.0
+    },
+    {
+      "text": " is yet to come, but we kind of revolution that has happened in Tainan.",
+      "start_time": 2523.72,
+      "end_time": null
+    },
+    {
+      "text": " But at the same time the questions like this mathematics questions tell me sin of 30, sin",
+      "start_time": 2550.0,
+      "end_time": 2558.44
+    },
+    {
+      "text": " 30 degree it may still give, suddenly you give a vague sin let us say 63 you can check",
+      "start_time": 2558.44,
+      "end_time": 2565.04
+    },
+    {
+      "text": " it.",
+      "start_time": 2565.04,
+      "end_time": 2566.04
+    },
+    {
+      "text": " So many LLMs fail, simple trigonometric function also it fails, is that clear?",
+      "start_time": 2566.04,
+      "end_time": 2573.76
+    },
+    {
+      "text": "",
+      "start_time": 2573.76,
+      "end_time": 2550.0
+    },
+    {
+      "text": " So in we have understood that it is not really good at solving mathematical equations.",
+      "start_time": 2555.84,
+      "end_time": null
+    },
+    {
+      "text": " This is one of the problems that I am talking about.",
+      "start_time": 2580.0,
+      "end_time": 2583.2
+    },
+    {
+      "text": " So like this there can be many for which the current large language models are not capable",
+      "start_time": 2583.2,
+      "end_time": 2588.24
+    },
+    {
+      "text": " of handling things.",
+      "start_time": 2588.24,
+      "end_time": 2590.08
+    },
+    {
+      "text": " But there are other tools.",
+      "start_time": 2590.08,
+      "end_time": 2591.58
+    },
+    {
+      "text": " Suppose it is generating a code.",
+      "start_time": 2591.58,
+      "end_time": 2594.08
+    },
+    {
+      "text": " It is now, it is a solved problem kind in the way it generates the code.",
+      "start_time": 2594.08,
+      "end_time": 2600.08
+    },
+    {
+      "text": " But will it be able to run the code?",
+      "start_time": 2600.08,
+      "end_time": 2604.56
+    },
+    {
+      "text": " How will it run the code and give you the answer?",
+      "start_time": 2604.56,
+      "end_time": 2606.92
+    },
+    {
+      "text": "",
+      "start_time": 2606.92,
+      "end_time": 2580.0
+    },
+    {
+      "text": " I want the court to be run and analyzed by...",
+      "start_time": 2583.08,
+      "end_time": null
+    },
+    {
+      "text": " LLM. I do not want just the code to be generated and then you shift it to collab and paste the",
+      "start_time": 2610.0,
+      "end_time": 2615.92
+    },
+    {
+      "text": " code then run it and you get an error come back and again tell LLM that there is an error",
+      "start_time": 2615.92,
+      "end_time": 2621.48
+    },
+    {
+      "text": " and then LLM will have to say it back and forth you have to do it. LLM itself is not",
+      "start_time": 2621.48,
+      "end_time": 2626.36
+    },
+    {
+      "text": " running the code and giving you. LLM is generating the code. So there are some gaps in the way",
+      "start_time": 2626.36,
+      "end_time": 2632.2
+    },
+    {
+      "text": " the LLM can perform tasks as of today. That is where we see the opportunity and there",
+      "start_time": 2632.2,
+      "end_time": 2638.2
+    },
+    {
+      "text": "",
+      "start_time": 2638.2,
+      "end_time": 2610.0
+    },
+    {
+      "text": " called as agentic workflow.",
+      "start_time": 2611.8,
+      "end_time": null
+    },
+    {
+      "text": " So, agentic workflow let us say if it is a non-agentic workflow, if it is a non-agentic",
+      "start_time": 2640.0,
+      "end_time": 2651.68
+    },
+    {
+      "text": " workflow let us say you want the LLM to answer marketing information to be produced for a",
+      "start_time": 2651.68,
+      "end_time": 2659.12
+    },
+    {
+      "text": " product.",
+      "start_time": 2659.12,
+      "end_time": 2660.12
+    },
+    {
+      "text": " I want I will give the product and I will say give me marketing information or you want",
+      "start_time": 2660.12,
+      "end_time": 2665.6
+    },
+    {
+      "text": "",
+      "start_time": 2665.6,
+      "end_time": 2640.0
+    },
+    {
+      "text": " the LLM to generate a poem for you or generate an essay for you.",
+      "start_time": 2643.96,
+      "end_time": null
+    },
+    {
+      "text": " So, you can ask the LLM the prompt and LLM produces an essay from start to finish, it",
+      "start_time": 2670.0,
+      "end_time": 2682.0
+    },
+    {
+      "text": " keeps generating, you are asking me to generate a poem I will generate start to finish, this",
+      "start_time": 2682.0,
+      "end_time": 2691.16
+    },
+    {
+      "text": " is called as non-agentic workflow.",
+      "start_time": 2691.16,
+      "end_time": 2695.32
+    },
+    {
+      "text": "",
+      "start_time": 2695.32,
+      "end_time": 2670.0
+    },
+    {
+      "text": " But the same thing if you ask a non-agentic, I mean, agentic",
+      "start_time": 2674.5,
+      "end_time": null
+    },
+    {
+      "text": " workflow, it is known as compounded LLM.",
+      "start_time": 2700.0,
+      "end_time": 2708.94
+    },
+    {
+      "text": " Agentic workflow involves compounded LLMs, but that is one of the ways, not the only",
+      "start_time": 2708.94,
+      "end_time": 2720.48
+    },
+    {
+      "text": " method.",
+      "start_time": 2720.48,
+      "end_time": 2721.48
+    },
+    {
+      "text": "",
+      "start_time": 2721.48,
+      "end_time": 2700.0
+    },
+    {
+      "text": " So in the compounded LLM the same question when you ask the LLM you want it to generate",
+      "start_time": 2708.52,
+      "end_time": null
+    },
+    {
+      "text": " a marketing plan for a product or an essay, it generates a draft version draft one. Then",
+      "start_time": 2730.0,
+      "end_time": 2743.0
+    },
+    {
+      "text": " you are going to feed this take this draft or it may generate a code take this draft",
+      "start_time": 2743.0,
+      "end_time": 2749.4
+    },
+    {
+      "text": " and feed it to another LLM or it same LLM again. This will act as a critic the second",
+      "start_time": 2749.4,
+      "end_time": 2758.08
+    },
+    {
+      "text": "",
+      "start_time": 2758.08,
+      "end_time": 2730.0
+    },
+    {
+      "text": " LLM will act as a critic.",
+      "start_time": 2731.76,
+      "end_time": null
+    },
+    {
+      "text": " It can be same LLM or a different LLM, but it has to act as a critic of this essay or",
+      "start_time": 2760.0,
+      "end_time": 2768.12
+    },
+    {
+      "text": " the marketing plan whatever you have asked for.",
+      "start_time": 2768.12,
+      "end_time": 2770.92
+    },
+    {
+      "text": " So now the critics output is obtained, this essay lacks lot of technical content, it is",
+      "start_time": 2770.92,
+      "end_time": 2777.76
+    },
+    {
+      "text": " very superficial in nature, whatever may be the critics view point that output is produced.",
+      "start_time": 2777.76,
+      "end_time": 2783.72
+    },
+    {
+      "text": "",
+      "start_time": 2783.72,
+      "end_time": 2760.0
+    },
+    {
+      "text": " Now you have third LLM where Preetik's output and a draft version both you give.",
+      "start_time": 2766.26,
+      "end_time": null
+    },
+    {
+      "text": " output and a draft version you give and the third LLM will generate draft 2, updating",
+      "start_time": 2790.0,
+      "end_time": 2796.84
+    },
+    {
+      "text": " whatever is the critic. We do that for G P T as well right, this is not what I am liking",
+      "start_time": 2796.84,
+      "end_time": 2802.84
+    },
+    {
+      "text": " modify this and all that. So in our case human itself is a critic, so this instead of this",
+      "start_time": 2802.84,
+      "end_time": 2809.6
+    },
+    {
+      "text": " LLM there can be an element of human and human will act as a critic and give a different",
+      "start_time": 2809.6,
+      "end_time": 2815.72
+    },
+    {
+      "text": "",
+      "start_time": 2815.72,
+      "end_time": 2790.0
+    },
+    {
+      "text": " prompt but that itself can be an LLM.",
+      "start_time": 2794.28,
+      "end_time": null
+    },
+    {
+      "text": " then you produce a draft 2 like this how many iterations you want to have that is your decision.",
+      "start_time": 2820.0,
+      "end_time": 2826.52
+    },
+    {
+      "text": " So if you are okay with draft 2 fine otherwise again you have to loop back again you have",
+      "start_time": 2826.52,
+      "end_time": 2830.84
+    },
+    {
+      "text": " to feed this draft 2 to critic again you have to take the critic again you have to produce",
+      "start_time": 2830.84,
+      "end_time": 2835.4
+    },
+    {
+      "text": " it to a fine tuned LLM.",
+      "start_time": 2835.4,
+      "end_time": 2837.68
+    },
+    {
+      "text": " So this is the finer version finer version LLM.",
+      "start_time": 2837.68,
+      "end_time": 2842.76
+    },
+    {
+      "text": "",
+      "start_time": 2842.76,
+      "end_time": 2820.0
+    },
+    {
+      "text": " So in this view of a genetic workflow, every piece that I spoke about, I will give you",
+      "start_time": 2827.0,
+      "end_time": null
+    },
+    {
+      "text": " about is an LLM. Every piece that I am speaking about, so that is why it is called as compounded",
+      "start_time": 2850.0,
+      "end_time": 2856.4
+    },
+    {
+      "text": " LLM. This is a compounded LLM where every LLM is playing a different role. The perspectives",
+      "start_time": 2856.4,
+      "end_time": 2863.04
+    },
+    {
+      "text": " are different. One LLM's role is to just produce the essay. Second LLM's role is",
+      "start_time": 2863.04,
+      "end_time": 2868.44
+    },
+    {
+      "text": " to critic on the essay. Third LLM's role is to combine the critic and the draft version",
+      "start_time": 2868.44,
+      "end_time": 2874.56
+    },
+    {
+      "text": "",
+      "start_time": 2874.56,
+      "end_time": 2850.0
+    },
+    {
+      "text": " and combine it produce it you can iterate it as well now how many times you want.",
+      "start_time": 2855.44,
+      "end_time": null
+    },
+    {
+      "text": " to iterate it is usually done by something called as an orchestration agent that itself",
+      "start_time": 2880.0,
+      "end_time": 2885.44
+    },
+    {
+      "text": " is a separate agent.",
+      "start_time": 2885.44,
+      "end_time": 2890.24
+    },
+    {
+      "text": " Orchestration agent will decide how many times this need to be repeated, back version need",
+      "start_time": 2890.24,
+      "end_time": 2895.88
+    },
+    {
+      "text": " to be repeated, it is like a plan, okay.",
+      "start_time": 2895.88,
+      "end_time": 2898.84
+    },
+    {
+      "text": " How many times and what all you have to feed, what changes you have to bring in, all of",
+      "start_time": 2898.84,
+      "end_time": 2902.76
+    },
+    {
+      "text": " this usually is orchestrated and that agent is called as an orchestration agent.",
+      "start_time": 2902.76,
+      "end_time": 2907.72
+    },
+    {
+      "text": "",
+      "start_time": 2907.72,
+      "end_time": 2880.0
+    },
+    {
+      "text": " Now in the way I said the",
+      "start_time": 2882.26,
+      "end_time": null
+    },
+    {
+      "text": " the agentic workflow versus the non-agentic workflow, it is like at one go, you just ask",
+      "start_time": 2910.0,
+      "end_time": 2917.36
+    },
+    {
+      "text": " me an essay and you gave me the essay that is it.",
+      "start_time": 2917.36,
+      "end_time": 2920.04
+    },
+    {
+      "text": " But in the agentic workflow, you are not going to stop at that, you are going to refine your",
+      "start_time": 2920.04,
+      "end_time": 2924.68
+    },
+    {
+      "text": " responses, what does that mean?",
+      "start_time": 2924.68,
+      "end_time": 2927.52
+    },
+    {
+      "text": " Your agentic workflow is giving you a better response than a non-agentic approach, that",
+      "start_time": 2927.52,
+      "end_time": 2933.84
+    },
+    {
+      "text": " is the first and foremost objective goal with which agentic workflows work.",
+      "start_time": 2933.84,
+      "end_time": 2939.64
+    },
+    {
+      "text": "",
+      "start_time": 2939.64,
+      "end_time": 2910.0
+    },
+    {
+      "text": " order to",
+      "start_time": 2912.0,
+      "end_time": null
+    },
+    {
+      "text": " to improvise the response. You use agentic workflows this is the objective and how you",
+      "start_time": 2940.0,
+      "end_time": 2946.44
+    },
+    {
+      "text": " do it there can be different methods but this is one of the ways is this clear is the agentic",
+      "start_time": 2946.44,
+      "end_time": 2953.0
+    },
+    {
+      "text": " workflow clear here. Now you can ask the LLM to create a draft version. Now you can ask",
+      "start_time": 2953.0,
+      "end_time": 2964.16
+    },
+    {
+      "text": "",
+      "start_time": 2964.16,
+      "end_time": 2940.0
+    },
+    {
+      "text": " a piece of code for a data request.",
+      "start_time": 2942.84,
+      "end_time": null
+    },
+    {
+      "text": " data request agent, the data request agent may generate the request not in the form of",
+      "start_time": 2970.0,
+      "end_time": 2978.8
+    },
+    {
+      "text": " the JSON file let us say the format but it is in the form of a natural language. The",
+      "start_time": 2978.8,
+      "end_time": 2984.64
+    },
+    {
+      "text": " data request piece module may generate it in the format required for Google search or",
+      "start_time": 2984.64,
+      "end_time": 2991.76
+    },
+    {
+      "text": " web search. So then that output is fed to Google search or any other search, web search",
+      "start_time": 2991.76,
+      "end_time": 2997.92
+    },
+    {
+      "text": "",
+      "start_time": 2997.92,
+      "end_time": 2970.0
+    },
+    {
+      "text": " I will see you next time in the web search.",
+      "start_time": 2972.0,
+      "end_time": null
+    },
+    {
+      "text": " and produce some statistics related to the product. You want to produce marketing plan",
+      "start_time": 3000.0,
+      "end_time": 3006.32
+    },
+    {
+      "text": " for a product. So marketing strategy is like similar product, how they have been done,",
+      "start_time": 3006.32,
+      "end_time": 3010.52
+    },
+    {
+      "text": " all of that, the statistics is brought by web search. Now these statistics are fed to",
+      "start_time": 3010.52,
+      "end_time": 3015.4
+    },
+    {
+      "text": " critique, these statistics are fed to critique. Now the statistics information has been brought",
+      "start_time": 3015.4,
+      "end_time": 3024.08
+    },
+    {
+      "text": "",
+      "start_time": 3024.08,
+      "end_time": 3000.0
+    },
+    {
+      "text": " in from a different path not an LLM. So, agentic workflow let me iterate.",
+      "start_time": 3005.72,
+      "end_time": null
+    },
+    {
+      "text": " agentic workflow does not necessarily mean that all pieces are LLMs.",
+      "start_time": 3030.0,
+      "end_time": 3037.76
+    },
+    {
+      "text": " One leap bound you have to take is in agentic workflow you have compounded LLMs.",
+      "start_time": 3037.76,
+      "end_time": 3043.6
+    },
+    {
+      "text": " Another leap bound that you have to take is the agentic workflow does not necessarily",
+      "start_time": 3043.6,
+      "end_time": 3047.96
+    },
+    {
+      "text": " mean that every piece is an LLM.",
+      "start_time": 3047.96,
+      "end_time": 3051.88
+    },
+    {
+      "text": " The pieces can be different, they can flow from different parts but all of them the objective",
+      "start_time": 3051.88,
+      "end_time": 3058.88
+    },
+    {
+      "text": "",
+      "start_time": 3058.88,
+      "end_time": 3030.0
+    },
+    {
+      "text": " to better produce.",
+      "start_time": 3031.12,
+      "end_time": null
+    },
+    {
+      "text": " better response. The only one goal is to produce better response to a query that is it okay.",
+      "start_time": 3060.0,
+      "end_time": 3066.4
+    },
+    {
+      "text": " So that is another way. This is clear. This is what we mean by agentic workflow. We are",
+      "start_time": 3066.4,
+      "end_time": 3072.36
+    },
+    {
+      "text": " using several modules to generate a better response to the given query. This is what",
+      "start_time": 3072.36,
+      "end_time": 3078.08
+    },
+    {
+      "text": " we mean by agentic workflow.",
+      "start_time": 3078.08,
+      "end_time": 3079.84
+    },
+    {
+      "text": " So now if you look at the stack, AI stack as of today, this is where you have the semiconductor",
+      "start_time": 3079.84,
+      "end_time": 3089.16
+    },
+    {
+      "text": "",
+      "start_time": 3089.16,
+      "end_time": 3060.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 3061.0,
+      "end_time": null
+    },
+    {
+      "text": " semiconductor layer like N media and all of that, then the above layer is a cloud infrastructure,",
+      "start_time": 3090.0,
+      "end_time": 3101.6
+    },
+    {
+      "text": " then the above layer is a foundational model like utility etc.",
+      "start_time": 3101.6,
+      "end_time": 3110.92
+    },
+    {
+      "text": "",
+      "start_time": 3110.92,
+      "end_time": 3090.0
+    },
+    {
+      "text": " Then you have applications, here is a layer of orchestration.",
+      "start_time": 3095.28,
+      "end_time": null
+    },
+    {
+      "text": " This is your AI stack as of today.",
+      "start_time": 3120.0,
+      "end_time": 3126.04
+    },
+    {
+      "text": " The AI stack, bottom most layer is a semiconductor on which it is going to run, N media and all",
+      "start_time": 3126.04,
+      "end_time": 3130.72
+    },
+    {
+      "text": " of that, Intel, AMD processors and above layer is the cloud infrastructure.",
+      "start_time": 3130.72,
+      "end_time": 3136.6
+    },
+    {
+      "text": " So these sit on cloud AWS, Azure, whatever you want to call it as and then above that",
+      "start_time": 3136.6,
+      "end_time": 3141.6
+    },
+    {
+      "text": " is the foundational AI models like GPT and all of that and above layer is now the orchestration",
+      "start_time": 3141.6,
+      "end_time": 3146.88
+    },
+    {
+      "text": "",
+      "start_time": 3146.88,
+      "end_time": 3120.0
+    },
+    {
+      "text": " agent that is sitting to see how the response is.",
+      "start_time": 3123.16,
+      "end_time": null
+    },
+    {
+      "text": " will have to be generated by using agents and on top of that you have the applications.",
+      "start_time": 3150.0,
+      "end_time": 3155.48
+    },
+    {
+      "text": " So there is plenty of opportunity in terms of quickly building the AI products using",
+      "start_time": 3155.48,
+      "end_time": 3161.28
+    },
+    {
+      "text": " this agentic approach because you have plenty of them available already software development",
+      "start_time": 3161.28,
+      "end_time": 3166.72
+    },
+    {
+      "text": " is happening in this direction.",
+      "start_time": 3166.72,
+      "end_time": 3168.12
+    },
+    {
+      "text": " See please note that for us machine learning means that is the only piece but in software",
+      "start_time": 3168.12,
+      "end_time": 3173.0
+    },
+    {
+      "text": " development that is not the only thing.",
+      "start_time": 3173.0,
+      "end_time": 3175.12
+    },
+    {
+      "text": "",
+      "start_time": 3175.12,
+      "end_time": 3150.0
+    },
+    {
+      "text": " You need to also worry about where you will deploy, isn't it? On which hardware you will deploy?",
+      "start_time": 3154.16,
+      "end_time": 3154.88
+    },
+    {
+      "text": " you are going to run it. So we are speaking everything in silos. We never speak about",
+      "start_time": 3180.0,
+      "end_time": 3184.94
+    },
+    {
+      "text": " which GPU system we need. We just build a ML model that is not sufficient, right? Just",
+      "start_time": 3184.94,
+      "end_time": 3190.56
+    },
+    {
+      "text": " that one piece is not sufficient. You have to make sure that the training data where",
+      "start_time": 3190.56,
+      "end_time": 3195.64
+    },
+    {
+      "text": " do you store the data, one lakh images where do you store? You need server. So you have",
+      "start_time": 3195.64,
+      "end_time": 3200.08
+    },
+    {
+      "text": " to talk about the hardware. You want to speak about the clustering. You need to talk about",
+      "start_time": 3200.08,
+      "end_time": 3204.92
+    },
+    {
+      "text": " how GPU processing happens. So all of this is also important. The overall stack you have",
+      "start_time": 3204.92,
+      "end_time": 3209.88
+    },
+    {
+      "text": "",
+      "start_time": 3209.88,
+      "end_time": 3180.0
+    },
+    {
+      "text": " Bye.",
+      "start_time": 3181.0,
+      "end_time": null
+    },
+    {
+      "text": " If you do not understand the overall stack, you are not going to be called as an ML engineer.",
+      "start_time": 3210.0,
+      "end_time": 3216.8
+    },
+    {
+      "text": " Just applying some supervised machine learning and doing sentiment analysis and you say that",
+      "start_time": 3216.8,
+      "end_time": 3221.72
+    },
+    {
+      "text": " you have learned machine learning is not enough.",
+      "start_time": 3221.72,
+      "end_time": 3223.64
+    },
+    {
+      "text": " Do you understand the entire stack?",
+      "start_time": 3223.64,
+      "end_time": 3226.12
+    },
+    {
+      "text": " So you have to understand how the whole module has to be dockerized, containerized.",
+      "start_time": 3226.12,
+      "end_time": 3231.72
+    },
+    {
+      "text": " Completely you need to understand to make sure that you deploy the product in the manner",
+      "start_time": 3231.72,
+      "end_time": 3235.8
+    },
+    {
+      "text": " that is required for it to be usable.",
+      "start_time": 3235.8,
+      "end_time": 3239.08
+    },
+    {
+      "text": "",
+      "start_time": 3239.08,
+      "end_time": 3210.0
+    },
+    {
+      "text": " So only stand.",
+      "start_time": 3210.92,
+      "end_time": null
+    },
+    {
+      "text": " And the loan silos LLM learning is not enough I want to tell you on this okay.",
+      "start_time": 3240.0,
+      "end_time": 3245.44
+    },
+    {
+      "text": " So these are the various AI stack layers as of today that you need to look at.",
+      "start_time": 3245.44,
+      "end_time": 3251.0
+    },
+    {
+      "text": " We are here we talked about LLM we understood this we need to understand how orchestration",
+      "start_time": 3251.0,
+      "end_time": 3256.16
+    },
+    {
+      "text": " agents will have to be learned and agentic applications will have to be built so that",
+      "start_time": 3256.16,
+      "end_time": 3260.4
+    },
+    {
+      "text": " an agentic workflow will be able to answer your questions very well that is where we",
+      "start_time": 3260.4,
+      "end_time": 3265.6
+    },
+    {
+      "text": " stand today is that clear.",
+      "start_time": 3265.6,
+      "end_time": 3268.24
+    },
+    {
+      "text": "",
+      "start_time": 3268.24,
+      "end_time": 3240.0
+    },
+    {
+      "text": " So now let us look at the variance.",
+      "start_time": 3241.76,
+      "end_time": null
+    },
+    {
+      "text": " So, what is the design pattern that you have in your other software engineering and OOID",
+      "start_time": 3270.0,
+      "end_time": 3281.08
+    },
+    {
+      "text": " in the software development style?",
+      "start_time": 3281.08,
+      "end_time": 3283.24
+    },
+    {
+      "text": " What is the pattern design pattern?",
+      "start_time": 3283.24,
+      "end_time": 3284.72
+    },
+    {
+      "text": " You have to be silent.",
+      "start_time": 3284.72,
+      "end_time": 3288.08
+    },
+    {
+      "text": " What is the design pattern as you studied in software engineering or if you are studying",
+      "start_time": 3288.08,
+      "end_time": 3292.04
+    },
+    {
+      "text": " OOID you know about it.",
+      "start_time": 3292.04,
+      "end_time": 3294.2
+    },
+    {
+      "text": " What is the design pattern?",
+      "start_time": 3294.2,
+      "end_time": 3298.72
+    },
+    {
+      "text": "",
+      "start_time": 3298.72,
+      "end_time": 3270.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 3271.0,
+      "end_time": null
+    }
+  ],
+  "transcript_text": " .  .  .  .  .  .  .  So, let us look at multimodal LLMs. Last time we had discussed about clip, contrastive language  image pre-training. Today we will look at two more. Clip we have already done. Contrastive   language.  image pre-training. Today we will look at blip bootstrapped language image pre-training,   is pre-training, glip and whisper AI.  These are the two multimodal LLMs we will see ok.  The main objective of a multimodal LLM is to process multiple modes of input and eventually  they all generate text.   We are not looking at any other kind of generation. Basically, we are looking...  looking at input being in multimodal. The output also can be multimodal in nature but in the  course we are looking at multimodal in the context of the output being still a text.  The input is multimodal in nature. So, Clip also uses images and text like the other day  which I said both embeddings are tried we try to match them and there is something called  as contrastive learning that will happen to check whether the text embedding space and   the image embedding space of the same.  they are not same, it tries to learn in manner in which they are brought together.  If they are dissimilar, their embedding should be falling apart.  That was the objective with which Clip is designed.  Then bootstrapped language image pre-training also has similar objective, but it has, it  is a three step process.  The first step in Clip is same as Clip, which is called as image training contrastive learning,  ITC.   You made text.  text contrastive learning. The second step that is followed in blip is ITM, image text  matching and the third task on which it is processed is language generation. It acts  as a language model. These are the three tasks on which blip is trained. The three tasks   on which the bootstrap  language image pre-training model strains is one on image text contrast to learning,  second one is image text matching, the third one is language modeling. These are the three  tasks on which Blipp is trained on. Then further it is used in the applications of Blipp would  go to generation of captions if the given images are given, visual question answering   and so on.  of the applications are caption generation, VQA, visual question answering and so on.  Those are some of the applications where blip is used.  So, there is a vision transformer, same as clip, there is a vision transformer to which   Thank you.  you give the images and GPT like decoder, transformer decoder it is, transformer decoder  you will provide the text. The embeddings are generated, image embeddings, text embeddings  are generated, image embeddings and text embeddings you have to quickly settle down,   meetings and next time.  embeddings are generated, if the image and text that you have given are similar, image  of a cat and you write cat is sitting on the mat, if you give a statement like that then  they are similar.  So you check the embeddings, image embedding one, text embedding one, check the cosine  similarity between image embedding and text embedding, check the score, if the scores   are not.  matching they have to be similar the cosine similarity should be similar if they are not  matching you do the back propagation and again update the weights.  So this is known as a contrastive loss last bench you have to quickly settle down this  is known as contrastive loss suppose you give an image and the text which are similar last   bench are you done?  So you are going to check the image embedding and the text embedding, you compare the distance  between the two using cosine similarity and that difference the cosine similarity is called  as a contrastive loss.  If the image and the text actually are same but if the contrastive loss is more then you  are going to do a gradient descent step and to minimize the loss because they match.  So that is what the weights are being learnt here.   The vision transformer is learning its way.  weight, the decoder of the transformer is also learning its weight. So whenever the image  text are similar, the image embedding and text embedding should match, should come closer.  If this is the image embedding, your text embedding should be as close to it. They have  to be in the same space. That is what it achieves. This is known as a contrastive loss and that   That step is called as image training contrast image text contrastive learning.  is stands for image text contrastive learning. This is the first step in training the blip.  So the model is now learned to generate embeddings closer to image and text if they are same,  otherwise if they are dissimilar they will be distinct apart. So if cat is sitting on  the mat if the image contains like that and you produce that an elephant is in the picture  like that the embeddings are really far. So they have to be like this. The embeddings   should be made.  be 90 degree or 180 degree apart. Then if it produces like that then we can say that  the model has learnt. So that is how the embedding space has to be deviated, they have to be  separate. So this is what is the first task on which the blip model is trained on. But  underlying the architecture still uses transformers, you are still not concentrating. Why do not   you come forward last page doesn't suit you yeah no  So, that is what is going to happen here, this is clear.  The second step is image training matching.  So, image text matching, image text matching is one step ahead, this is a feed forward  network and a softmax.  It tells one or zero.   So, if you add another layer of feed forward network and a classifier layer.  to the same blip model then we can perform the second task which is image text matching.  So the second task on which it is trained is to add another layer of feed forward network  and a softmax output to say whether the image and text, whether they match or they do not  match.  The first task just try to make sure that the embedding space comes closer if they are  similar, they are far apart if they are dissimilar.   The second step is almost.  similar except that one more layer is added to say whether the two embeddings are the  matching it is further refinement are the matching or they are not matching.  So this is the second task on which the blip is trained on.  The third task is the language model.  The language model you are going to give images and you are supposed to generate captions.  So you are going to feed it to the VIT again and you are going to generate captions.   you are going to generate. So if it is an image of a cat, you can see that it is a cat  some cat image is there. So you have to generate cat is sitting on the mat like this you have  to generate. So it just and it is in the autoregressive mode when the image is fed to this transformer  first it will generate cat then it will generate because cat is generated next it will generate  ease then next setting so one word at a time like the GPT you have seen one word at a time   is generated that is called as autoregressive mode.  mode. So, in an autoregressive mode the text is generated for a given image this is the  third task. So, that is called as a language modeling. The language modeling is that of  the language of the image and the language output is the English text that is what is  going to be produced. These are the three tasks on which blip is trained on. So, and  because it is made to understand the image it is also made to understand the context   between.  image and text it is said to work well for tasks like caption generation it is said  to work like vision question answering what is visual question answering so I will give  an image and I will also ask a question is a cat there in the image I will ask a question  like this or is a cat drinking milk so if I ask question on the image that I am going  to feed it may be even video you can extend the project then the output should be yes   or no. So this is the kind of or a, so this is the kind of or a, so this is the kind of  The output can be an English statement generation.  So that is what it is good at performing because it is trained in understanding both image as  well as text.  So you can provide the image, you can put your question here and you can ask the blip  model whether this question can be answered by just looking at the image.  So that is what is the blip model which is a multi-model model.  This is called as a multi-model model.  The reason is input is image as well as text.   So there are  two aspects here and that is why because the multimodal inputs are being processed is called  as a multimodal LLM. So, next we will move on to whisper AI. Please note that the clip  does only the first step, the other two steps are carried out in blip. In understanding all   this technique.  The main thing is understanding transformers.  So the next one is whisper AI is again based on transformers.  This is also based on transformer based approach, whisper AI.  This is for speech related applications, speech to text.  Basically it is trained on speech to text but you can apply it for speaker recognition  and so on.   any speech related.  applications if you want to perform, this per AI is the go to place.  We open AI, yes and we did use this in the projects in summer. I think you will be able  to, Chaitra will be able to say and they also received desk paper award for this particular  project. They used several formers, shape former, wave former, all of that. So, and   in six weeks.  time they were able to achieve good results and also received the best paper award for  that.  So speech to text in other batches also they have made use of the whisper AI and it is  damn good I would say in speaker separation, multi speaker separations we were using it.  So there are multiple speakers like Arnab Goswami and all other people they start speaking  simultaneously we will not know who is speaking what.   So that is when we wanted to separate the speech that is what they were.  done. So in order to separate multi speakers voice and also want to identify who is the  speaker. So identification of the speaker it can also be used in let us say music concerts  where multiple instruments are being played and let us say you are a flutist and you want  to just listen to only the flute. So how do you separate the flute from rest of the instruments?  So in all such cases the speech related applications you can use extend this application to do that   Okay, but that  are other formers that we have used like wave formers, shape formers and so on.  This is also one of the transformers applications for speech to text. It is trained on speech  to text. So, how it is done is it uses as its input   it uses its input as a mel spectrogram. So, its input is input is input is input is input  Thank you.  is the speech in the form of an image, in the form of an image, Mell spectrogram is fed.  So, what it does is, now I speak, this is an audio which I record and this audio is  continuous, you can see that, when I am speaking or when I am singing or when I am playing  an instrument, it is continuous in nature, it is an analog signal.   whisper has done is.  From this continuous signal to store it in mp3 format, it is sampling, suppose there  is an mp3 file that you have recorded, 16000 hertz is the sampling rate of whisper AI.  What does this mean, 16000 hertz, a given mp3 file of one second is one second continuous  signal you have, but how do I process it?   So it has to be quantized or sampled.  First you sample and then do quantization all that.  You cannot use the full signal.  So out of the one second, so Vspar AI uses a sampling rate of 16 kilohertz.  This means that for one second it generates 16,000 samples.  One second of audio, 16,000 samples are generated if you have one second audio.   Now what does it do with the 16000?  samples. It is going to break this into frames. So you can generate may be 160 frames at a  time. This is called as a hop size. Hop size. Frame size splitting can be at about let us  say 400. 400 samples, this is what usually whisper does. 25 milliseconds constitutes   400 frames, 400 samples constitute one frame.  and the hop size is 160, 160 samples, hop size is 160 samples. So what happens is you have  the audio here of 16000 samples, you sample first 400 samples, then next from the next   side you take 160 hop size 160 samples another 240.  will be overlap sample that is the meaning of that. So you have 160 samples as a hop  size, 400 samples from one frame. Every time for processing you are going to pick up one  frame, every time when you pick up one frame means you have to pick up 400 samples but  it is all the time not a new set of 400 samples, only 160 will be new. So what they have experimented   is that if they take this overlap one, they will be  be able to generate a better spectrogram so that is why they do this. So this 160 next  and then 240 from previous is the next 400 frame sample that they pick up like this every  time they pick up 400 samples as one frame and this they subject it to STFT.  There are many more steps it is not required at this point so I am not going into the details   of mathematics of it.  short time Fourier transform, short time Fourier transform. The given audio samples which is  in the time domain, your audio is in time domain right, your audio is going like this,  this is with respect to time. So what they do is, they are before feeding it to the transformer,  they are going to convert this time domain signal into frequency components. What frequency   are there? Am I speaking at 100%?  Hertz I mean also speaking at sometimes at 200 Hertz what frequency components power  components are there in my speech is what is recorded and that is going to happen if you  convert the time domain signal into Fourier components and it is a short time wave therefore  we apply what is known as short time Fourier transform okay.  So for now this is sufficient say in quick time if I have to explain what is Fourier   a transform.  suppose you have a complex signal, the complex signal cannot be analyzed directly, there is  no formula, whereas you can analyze a signal if it is split into sine and cosine waves.  So, the job of the Fourier transform is basically to split the given signal into some of sinusoids   or some of cosines. If you say that this signal is made up of these many signs, sine wave  Thank you.  wave that is what the Fourier transform achieves. So for example this signal I can fit one mother  wave that is called as a fundamental mother wave. So I can fit like this, this sine wave.  This is one sine wave I will fit into the signal but this signal is definitely not as  the original signal. So you will have to add some more signs. So let us say because this  has to be subtracted right. So little bit of extra is there. So one more frequency wave   is added.  more frequency wave is added just to nullify the effect of overdoing. Then again this is  not sufficient. So one more sinusoidal is added, one more is added, another is added  like this you keep adding some of sinusoid. These are called as frequency components.  Some of all the sinusoid put together will generate the original signal back that is  what is achieved in this case. The 400 samples the continuous frame which is an audio signal   Have  to be converted into some of synosoids that is what the short time Fourier transform achieve.  Fourier transform may applicability in understanding how many different synosoids with different  frequencies and different peaks will formulate your original signal.  If I can get to know that I can use these synosoids for my analysis because it is a  very well proven theory how to analyze synosoids but I do not really understand the original   complex signal. How do I split the complex signal?  signal into the various sinusoids which I can analyze further. This is what is going  to be achieved in Fourier transform and this is short time Fourier transform for short  windows. So that is going to be achieved. So overall you need to understand that a continuous  signal is split up into various frequency components. So frequency of 100 hertz, how  much is there in this time duration, what is the power of 200 hertz in this, what is   the power of 800 hertz all of this you will have to divide it into bins.  So in the whisper EI they divide it into 80 melbins, 80 different frequencies and then  they analyze, then they analyze the power that is there in the audio.  This is what is achieved in the STFT.  So again I repeat for one second audio the whisper EI generates 16000 samples and after   generating 16,000 samples, it has to pick up 400 samples for it to apply STF.  There are many other steps I have skipped STFT, there is something called as Gaunt's  waveform and all of that I have skipped those steps directly talking about converting it  into frequency component.  To apply STFT you need to pick up 400 samples but how are the 400 samples going to come?  They come in an overlapped way, only the first 400 will be original rest will be in an overlapped  way.   every time before applying STFT you get 400 samples from this audio and you apply.  short time Fourier transform and in that time step what are the frequency components? So  it applies. So time step 1 what are the frequency components that are there? Next 400 samples  time step 2 what are the frequency components? Time step 3 like this there are about 100 time  step at which you will pick up 400 at a time to complete the full audio signal, generate   the power spectrum and then converted into mel power.  Okay, STFT, directly give.  the power in absolute terms, it has to be converted into a mel power and then it has  to be converted into dB scale, decibel scale.  The reason why they do it is, in that scale the hearing will be usually in the decibel  scale.  Our regular hearing is in the decibel scale, so they do all these steps before feeding  it to transformer so that it is near to our hearing type of power, so that the speech recognition  would be better.   So that is the reason why they do all of these steps.  understand the power, understand it to melt power, there is an equation for conversion  and that depends on how many parameters you have taken and all that, it is not like a  static function and then based on that again it gets compressed into log scale that is  where you have the db scale.  So finally all your frequency components will be converted into db scale, so every frame  400 frame you will have a set of points which will indicate the db scale amplitude, the   the way.  you have spoken, the power you have spoken, so the data points are generated.  So like this for 400, one set of data points in db scale, another 400, another set of scale,  like this may be some 100 data points, time steps you get.  So now you have 100 time steps, it is like 100 words, 100 words are now fed, now onwards  it is simple, give it to transformer, find out the self-attention, the self-attention  talks about what is the relationship between this time step and this time step, the cross   Thank you. Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  attention talks about what is the relationship between this audio and the text that is what  it does.  So speech and text speech to speech, self attention talks about speech to speech understanding  and speech to text understanding is done in cross attention that is where you have a decoder.  So it uses both encoder and decoder, encoder talks about understanding the query and key  between speech signal between the two samples between the frame and the query and key will   come from decoder.  text so that way it will train the transformer to make sure that if the audio is given okay  I am Shailaja from PES University it should produce the text I am Shailaja from PES University  so when I tried it I did not get the laptop and I tried it it converted into Shailaja  JHA it converted that so something like this it gave my name it gave like that the whisper   I tried it on this so it did not give me a it  it took it as may be Jai is trained more so it pronounced my name as a may be a north  related person like that so that is how it got trained.  So, 99 languages it says I did not check all the languages but Vispariya is trained on  about 640,000 hours of audio with 99 languages being trained.   So, whether the some of the languages may be the index.  Hindi language it might have been trained but not sure about the Kannada. I did not  check all the 99 languages. So that is why it fairly does well. So this is your whisper  AI. This is clear? So you are in whisper AI the preprocessing step itself is little involved.  These are the preprocessing steps. After that it is a transformer. Transformer will take   care of generating attentions and checking the  correlation between the speech tokens and as well as the text tokens and generates the  text corresponding to the audio that you have created.  So since 40,000 hours of audio has been fed of different languages and then that is the  reason why it is able to learn the various speech signals and generate the text accordingly.  So that is how it has been.  This is clear?  So that is about the multimodal LLMs.  This is clear?   So, in this multimodal LLM whisper AI.  The input is speech, so that is where the, this pariah is called or comes under multimodal  LLM.  Clip and blip, the input is image and text, here it is speech and text, so that is how   it is straight ok.  So, now I am asking you a Ramayana story, where does the attention layer appear in transformer?  What is the first layer?  Bird to Wacke embedding and then positional embedding and after that comes the attention  layer.   The attention layer, why did we introduce transformer?  Long term context they would capture LSTMG are you parallel, but now they are going back  again saying that self-attention is time consuming and they have introduced something called as  Mamba network have you heard of that Mamba network.   They are trying to eliminate the self attention layer.  saying that the time complexity of the attention layer is order of n square can you tell me  why is that the time complexity of the attention layer is order of n square.  The query query there is a sentence query and key query key that is one linear step  and the next query and keys. So it is n square so qk that is softmax layer the softmax layer   Thank you.  Q k transpose by rho B k into V, this is order of n square, this is of the order of n square.  So then, but in RNNs it is sequential processing, so it is of order of n, so they want to mix   this logic, the LSTM logic but they want to use attention type okay.  dependency should be captured. So this mixed logic is called a state space model. This  state space model is used in Mamba network. So they are planning to remove this attention.  So probably this is again from RNN people that they do not want to lose out on their   architecture and mamba is not an example.  it is a name of a snake. So, it the data moves like that something like that. So, here A  ht minus 1 B h B xt is your ht and it is sequential again they have come back to sequential operations   again they have come back to sequential operations and this is known as the sequential operations.  state space model. They capture the previous state, state 1, state 2, state 3 and so on.  It is almost similar to R and N, only thing is it has some gates. Here it stores in the  form of state, nothing else. Some small change they have brought in. So, previous hidden state   hidden state information, how much you want to use and the new input a and b.  control that. How much of previous state information is controlled by A, how much of present input  weight. So it is a weighted input that you are going to give, weighted input B and A,  the previous state will generate the new state and new state is captured in the next one.  So when you generate the third state again use the second state information, X is the   input sentences.  Suppose you are trying to find the sentiment of it, so in the sentiment analysis for the  transformer you would have given all the words simultaneously parallel then QK you would  have calculated and you would have generated the vector and it would have classified it  as positive negative that is transformers way but now one word at a time one word generates  ht-1 store that next word you give next again ht-1 next word next word next word like that   different time, sir, same as RNN.  only thing is in RNN you use input gate, forget gate, update gate and all that architecture  is different.  Here it is using state space model 1 neural network applied ht-1 different time stamps  that is it, sequential and this is a linear equation so this is done in order of n. This  is what they are proposing still it is not it is gaining popularity but not as much as  that of the transformer.   So there is work going on.  Then you need to know the last unit Chinmayan, your friend please.  So there is work going on in the direction of how to remove the attention layer.  All these while they said RNN is sequential and it is time consuming.  So the starting story of Ramayana was different.  I said transformer is doing magic and all of that.  The ending story is how to remove that layer now and make sure that you get back to order  of N.   all should know that the transformer this is the transformer.  calculation is out of n square which is quadratic in nature. So how to reduce the computations  and still capture that in linear time. The efforts are going on in that direction.  Now we are not really sure the importance of the transformers doing it in parallel at  the same time doing something in linear time that has not come okay. So either the problem  of sequential is there and linear time or problem of parallel but it is quadratic in   nature. This is where we stand today.  So, but there is an effort that is going on to remove the attention layer because of the  quadratic nature, but how you are going to do that and still be as effective as the transformer  that we have to discuss last, but when when Charabee and team, yeah please.  So, this is where we stand is that clear.  So, this is the Mamba network which is called as a state space model, I mean it is like   over simplified in the cloth okay it is we are not going to dwell deep into it.  into lot of details here, you just need to know that the drawbacks of the attention layer  that is needed quadratic in nature, why it is quadratic and you need to know that there  is an effort that is going on to remove that attention layer and one of the models that  is coming out is the Mamba network and this Mamba network what it does is based on a state  space model, what it does it does not use gauge, it is a linear model, it captures the hidden   state. It feeds the word.  activation layer is produced, stores that activation in the form of a state and then  next word is fed, it uses a previous activation to some extent using the weighted factor A  and the new input word with the weighting of B and then computes the new activation.  So like this successive steps, let us say the sentence is made up of 10 words, you will  have 10 states and finally you will produce the 10th output, activation.  So this is how the training is going to be carried out, it is sequential in process,   States are captured.  It is similar to LSTM but not similar in the sense it does not use gates.  It uses just this and a feed forward neural network to try out an equivalent of attention.  But the results have not been proven to be as effective as transformers but the research  is going on.  Pardon?  As of now they have mentioned it as static.   you can also change it and try.  this is still under research, a and b right now are static, not yet, not yet. There was  one more, I do not remember the name, there is one more, they are generally come under   state space models SSMs.  The  Yeah.  Okay, shall we look at this?   Thank you.  I mean you must have heard about it multiple times, let us look at it in a formal setting  now.  So now if I ask LLM what is the value of 5 by 2 is very unlikely that it gives a correct  answer like 2.5.  Why do you think that it may go wrong in giving the answers to these mathematical questions?   Thank you.  The kind of training that it has undergone, whatever training if I give you training on  history and I expect you to solve calculus equations that is what is happening, you understand.  In your second PUC let us say you are given full non about Ramayana, Mahabharata or politics  and everything and suddenly you give a differential equation in the examination that is how it   Peace.  How will it answer?  So it will answer like that Ramayana story only the mathematics also it is not trained  on that.  So that is the issue is that clear?  So some of these it is not being trained on so it will not be able to give.  So like this how many things are there?  Is it possible to train a large language model on every damn thing on earth and then expect   it to answer. We are moving to  towards it but not yet that is how the DC took a revolution because they took this opportunity  and they came into the reasoning type and math as well math reasoning.  So LLMs have been fundamentally been trained and they are there almost at the top in the  text image revolution has not yet happened, speech revolution has not yet happened it   is yet to come, but we kind of revolution that has happened in Tainan.  But at the same time the questions like this mathematics questions tell me sin of 30, sin  30 degree it may still give, suddenly you give a vague sin let us say 63 you can check  it.  So many LLMs fail, simple trigonometric function also it fails, is that clear?   So in we have understood that it is not really good at solving mathematical equations.  This is one of the problems that I am talking about.  So like this there can be many for which the current large language models are not capable  of handling things.  But there are other tools.  Suppose it is generating a code.  It is now, it is a solved problem kind in the way it generates the code.  But will it be able to run the code?  How will it run the code and give you the answer?   I want the court to be run and analyzed by...  LLM. I do not want just the code to be generated and then you shift it to collab and paste the  code then run it and you get an error come back and again tell LLM that there is an error  and then LLM will have to say it back and forth you have to do it. LLM itself is not  running the code and giving you. LLM is generating the code. So there are some gaps in the way  the LLM can perform tasks as of today. That is where we see the opportunity and there   called as agentic workflow.  So, agentic workflow let us say if it is a non-agentic workflow, if it is a non-agentic  workflow let us say you want the LLM to answer marketing information to be produced for a  product.  I want I will give the product and I will say give me marketing information or you want   the LLM to generate a poem for you or generate an essay for you.  So, you can ask the LLM the prompt and LLM produces an essay from start to finish, it  keeps generating, you are asking me to generate a poem I will generate start to finish, this  is called as non-agentic workflow.   But the same thing if you ask a non-agentic, I mean, agentic  workflow, it is known as compounded LLM.  Agentic workflow involves compounded LLMs, but that is one of the ways, not the only  method.   So in the compounded LLM the same question when you ask the LLM you want it to generate  a marketing plan for a product or an essay, it generates a draft version draft one. Then  you are going to feed this take this draft or it may generate a code take this draft  and feed it to another LLM or it same LLM again. This will act as a critic the second   LLM will act as a critic.  It can be same LLM or a different LLM, but it has to act as a critic of this essay or  the marketing plan whatever you have asked for.  So now the critics output is obtained, this essay lacks lot of technical content, it is  very superficial in nature, whatever may be the critics view point that output is produced.   Now you have third LLM where Preetik's output and a draft version both you give.  output and a draft version you give and the third LLM will generate draft 2, updating  whatever is the critic. We do that for G P T as well right, this is not what I am liking  modify this and all that. So in our case human itself is a critic, so this instead of this  LLM there can be an element of human and human will act as a critic and give a different   prompt but that itself can be an LLM.  then you produce a draft 2 like this how many iterations you want to have that is your decision.  So if you are okay with draft 2 fine otherwise again you have to loop back again you have  to feed this draft 2 to critic again you have to take the critic again you have to produce  it to a fine tuned LLM.  So this is the finer version finer version LLM.   So in this view of a genetic workflow, every piece that I spoke about, I will give you  about is an LLM. Every piece that I am speaking about, so that is why it is called as compounded  LLM. This is a compounded LLM where every LLM is playing a different role. The perspectives  are different. One LLM's role is to just produce the essay. Second LLM's role is  to critic on the essay. Third LLM's role is to combine the critic and the draft version   and combine it produce it you can iterate it as well now how many times you want.  to iterate it is usually done by something called as an orchestration agent that itself  is a separate agent.  Orchestration agent will decide how many times this need to be repeated, back version need  to be repeated, it is like a plan, okay.  How many times and what all you have to feed, what changes you have to bring in, all of  this usually is orchestrated and that agent is called as an orchestration agent.   Now in the way I said the  the agentic workflow versus the non-agentic workflow, it is like at one go, you just ask  me an essay and you gave me the essay that is it.  But in the agentic workflow, you are not going to stop at that, you are going to refine your  responses, what does that mean?  Your agentic workflow is giving you a better response than a non-agentic approach, that  is the first and foremost objective goal with which agentic workflows work.   order to  to improvise the response. You use agentic workflows this is the objective and how you  do it there can be different methods but this is one of the ways is this clear is the agentic  workflow clear here. Now you can ask the LLM to create a draft version. Now you can ask   a piece of code for a data request.  data request agent, the data request agent may generate the request not in the form of  the JSON file let us say the format but it is in the form of a natural language. The  data request piece module may generate it in the format required for Google search or  web search. So then that output is fed to Google search or any other search, web search   I will see you next time in the web search.  and produce some statistics related to the product. You want to produce marketing plan  for a product. So marketing strategy is like similar product, how they have been done,  all of that, the statistics is brought by web search. Now these statistics are fed to  critique, these statistics are fed to critique. Now the statistics information has been brought   in from a different path not an LLM. So, agentic workflow let me iterate.  agentic workflow does not necessarily mean that all pieces are LLMs.  One leap bound you have to take is in agentic workflow you have compounded LLMs.  Another leap bound that you have to take is the agentic workflow does not necessarily  mean that every piece is an LLM.  The pieces can be different, they can flow from different parts but all of them the objective   to better produce.  better response. The only one goal is to produce better response to a query that is it okay.  So that is another way. This is clear. This is what we mean by agentic workflow. We are  using several modules to generate a better response to the given query. This is what  we mean by agentic workflow.  So now if you look at the stack, AI stack as of today, this is where you have the semiconductor   Thank you.  semiconductor layer like N media and all of that, then the above layer is a cloud infrastructure,  then the above layer is a foundational model like utility etc.   Then you have applications, here is a layer of orchestration.  This is your AI stack as of today.  The AI stack, bottom most layer is a semiconductor on which it is going to run, N media and all  of that, Intel, AMD processors and above layer is the cloud infrastructure.  So these sit on cloud AWS, Azure, whatever you want to call it as and then above that  is the foundational AI models like GPT and all of that and above layer is now the orchestration   agent that is sitting to see how the response is.  will have to be generated by using agents and on top of that you have the applications.  So there is plenty of opportunity in terms of quickly building the AI products using  this agentic approach because you have plenty of them available already software development  is happening in this direction.  See please note that for us machine learning means that is the only piece but in software  development that is not the only thing.   You need to also worry about where you will deploy, isn't it? On which hardware you will deploy?  you are going to run it. So we are speaking everything in silos. We never speak about  which GPU system we need. We just build a ML model that is not sufficient, right? Just  that one piece is not sufficient. You have to make sure that the training data where  do you store the data, one lakh images where do you store? You need server. So you have  to talk about the hardware. You want to speak about the clustering. You need to talk about  how GPU processing happens. So all of this is also important. The overall stack you have   Bye.  If you do not understand the overall stack, you are not going to be called as an ML engineer.  Just applying some supervised machine learning and doing sentiment analysis and you say that  you have learned machine learning is not enough.  Do you understand the entire stack?  So you have to understand how the whole module has to be dockerized, containerized.  Completely you need to understand to make sure that you deploy the product in the manner  that is required for it to be usable.   So only stand.  And the loan silos LLM learning is not enough I want to tell you on this okay.  So these are the various AI stack layers as of today that you need to look at.  We are here we talked about LLM we understood this we need to understand how orchestration  agents will have to be learned and agentic applications will have to be built so that  an agentic workflow will be able to answer your questions very well that is where we  stand today is that clear.   So now let us look at the variance.  So, what is the design pattern that you have in your other software engineering and OOID  in the software development style?  What is the pattern design pattern?  You have to be silent.  What is the design pattern as you studied in software engineering or if you are studying  OOID you know about it.  What is the design pattern?   Thank you."
+}

@@ -1,0 +1,2413 @@
+{
+  "video_name": "expn_tree_7a_2020-09-24 09-28-52_ExprTreeCon",
+  "video_path": "data/raw/videos/expn_tree_7a_2020-09-24 09-28-52_ExprTreeCon.mkv",
+  "duration_seconds": 2301.98,
+  "transcript": [
+    {
+      "text": " Hello everyone, welcome back to the lecture capture on data structures and its applications.",
+      "start_time": 0.0,
+      "end_time": 8.2
+    },
+    {
+      "text": " In today's video, I am going to describe to you the concept of expression trees.",
+      "start_time": 8.2,
+      "end_time": 14.4
+    },
+    {
+      "text": " We will see a variant of this known as a binary expression tree and then subsequently look",
+      "start_time": 14.4,
+      "end_time": 22.6
+    },
+    {
+      "text": " at the general expression trees.",
+      "start_time": 22.6,
+      "end_time": 27.56
+    },
+    {
+      "text": "",
+      "start_time": 27.56,
+      "end_time": 0.0
+    },
+    {
+      "text": " the session on trees.",
+      "start_time": 2.32,
+      "end_time": null
+    },
+    {
+      "text": " We have looked at binary trees, binary search trees.",
+      "start_time": 30.0,
+      "end_time": 34.76
+    },
+    {
+      "text": " In both these cases, the tree consists of several set of nodes and each of these nodes",
+      "start_time": 34.76,
+      "end_time": 41.36
+    },
+    {
+      "text": " contain information.",
+      "start_time": 41.36,
+      "end_time": 44.36
+    },
+    {
+      "text": " Now in the case of binary search tree, we have seen that the constraint is also added",
+      "start_time": 44.36,
+      "end_time": 50.64
+    },
+    {
+      "text": " to the creation of the binary search tree wherein all the nodes to the left of a given",
+      "start_time": 50.64,
+      "end_time": 55.96
+    },
+    {
+      "text": "",
+      "start_time": 55.96,
+      "end_time": 30.0
+    },
+    {
+      "text": " node were having information less than the given node and right.",
+      "start_time": 34.04,
+      "end_time": null
+    },
+    {
+      "text": " side were having greater information and on such a tree we were performing certain operations.",
+      "start_time": 60.0,
+      "end_time": 67.28
+    },
+    {
+      "text": " Then today we are going to look at a creation of such a binary tree but what this binary",
+      "start_time": 67.28,
+      "end_time": 76.6
+    },
+    {
+      "text": " tree is going to house is an expression. The data contained in the expression tree is that of an",
+      "start_time": 76.6,
+      "end_time": 83.76
+    },
+    {
+      "text": "",
+      "start_time": 83.76,
+      "end_time": 60.0
+    },
+    {
+      "text": " expression. You know that an expression consists of operands and operands.",
+      "start_time": 66.24,
+      "end_time": null
+    },
+    {
+      "text": " operators. These expressions can be housed in the form of a tree and subsequently used",
+      "start_time": 90.0,
+      "end_time": 97.36
+    },
+    {
+      "text": " for checking the expression correctness and also can be used for evaluation of expressions.",
+      "start_time": 97.36,
+      "end_time": 107.4
+    },
+    {
+      "text": " This kind of a scenario is useful when you have specifically the code written and you",
+      "start_time": 107.4,
+      "end_time": 113.68
+    },
+    {
+      "text": "",
+      "start_time": 113.68,
+      "end_time": 90.0
+    },
+    {
+      "text": " want to transform that into kind of a data. So it finds its up.",
+      "start_time": 95.32,
+      "end_time": 96.32
+    },
+    {
+      "text": " application in translating the code into data and analyzing the tree subsequently for expressions.",
+      "start_time": 120.0,
+      "end_time": 129.72
+    },
+    {
+      "text": " This is a kind of an application that expression trees have and that is a reason why such a",
+      "start_time": 129.72,
+      "end_time": 136.44
+    },
+    {
+      "text": " tree is built.",
+      "start_time": 136.44,
+      "end_time": 140.6
+    },
+    {
+      "text": " But please note that once a tree is built for one expression, it becomes immutable and",
+      "start_time": 140.6,
+      "end_time": 148.56
+    },
+    {
+      "text": "",
+      "start_time": 148.56,
+      "end_time": 120.0
+    },
+    {
+      "text": " you will not be able to",
+      "start_time": 121.36,
+      "end_time": null
+    },
+    {
+      "text": " modify the tree to accommodate for another expression. If at all you want to have another",
+      "start_time": 150.0,
+      "end_time": 157.92
+    },
+    {
+      "text": " expression with some modifications, it calls for creation of another tree. This property",
+      "start_time": 157.92,
+      "end_time": 164.68
+    },
+    {
+      "text": " you must keep in mind. Now let us explore more details on such an expression tree. Normally,",
+      "start_time": 164.68,
+      "end_time": 174.12
+    },
+    {
+      "text": "",
+      "start_time": 174.12,
+      "end_time": 150.0
+    },
+    {
+      "text": " A post fix expression is used in constructing a tree.",
+      "start_time": 154.0,
+      "end_time": null
+    },
+    {
+      "text": " And you all know about the three varieties of expressions, the postfix infix and prefix.",
+      "start_time": 180.0,
+      "end_time": 187.0
+    },
+    {
+      "text": " A postfix expression is the one in which you have the operands and then subsequently the",
+      "start_time": 187.0,
+      "end_time": 192.64
+    },
+    {
+      "text": " operator being fixed.",
+      "start_time": 192.64,
+      "end_time": 194.28
+    },
+    {
+      "text": " The operator is postfixed.",
+      "start_time": 194.28,
+      "end_time": 197.96
+    },
+    {
+      "text": " So in the expression tree construction, what we do is if we receive an operand from a postfix",
+      "start_time": 197.96,
+      "end_time": 204.04
+    },
+    {
+      "text": "",
+      "start_time": 204.04,
+      "end_time": 180.0
+    },
+    {
+      "text": " expression a new node is created and that is going to be made as the leaf of",
+      "start_time": 186.0,
+      "end_time": null
+    },
+    {
+      "text": " the expression tree. Whereas if you receive an operator from the postfix expression,",
+      "start_time": 210.0,
+      "end_time": 216.72
+    },
+    {
+      "text": " it is going to connect the two leaves which were already encountered.",
+      "start_time": 217.68,
+      "end_time": 220.96
+    },
+    {
+      "text": " We make use of the stack data structure to place the intermediary nodes to make sure that the",
+      "start_time": 222.88,
+      "end_time": 228.8
+    },
+    {
+      "text": " entire tree is constructed towards the end. Let us look at an example of constructing an",
+      "start_time": 228.8,
+      "end_time": 236.8
+    },
+    {
+      "text": "",
+      "start_time": 236.8,
+      "end_time": 210.0
+    },
+    {
+      "text": " expression binary expression 3.",
+      "start_time": 212.36,
+      "end_time": null
+    },
+    {
+      "text": " for the expression ABC star plus. Note that there is a stack empty stack that is already ready for us.",
+      "start_time": 240.0,
+      "end_time": 247.76
+    },
+    {
+      "text": " So I start receiving the symbols. The first symbol that I am receiving is A.",
+      "start_time": 248.88,
+      "end_time": 253.52
+    },
+    {
+      "text": " So what is that I need to do? If I told I want to construct a binary expression tree for this,",
+      "start_time": 254.32,
+      "end_time": 260.16
+    },
+    {
+      "text": " the first and foremost thing is to allocate memory for this.",
+      "start_time": 260.56,
+      "end_time": 264.46
+    },
+    {
+      "text": " So I am demonstrating this through an example of a dynamic allocation for the tree.",
+      "start_time": 264.92,
+      "end_time": 269.52
+    },
+    {
+      "text": " So, I am going to allocate memory for this symbol a and then you know the left point",
+      "start_time": 270.0,
+      "end_time": 275.32
+    },
+    {
+      "text": " and right pointers are null and assume that this node has been allocated at location 100.",
+      "start_time": 275.32,
+      "end_time": 281.56
+    },
+    {
+      "text": " Now, I proceed with this and I store the address of 100, the node 100 onto the stack because",
+      "start_time": 281.56,
+      "end_time": 290.92
+    },
+    {
+      "text": " right now I just have one operand that has been received.",
+      "start_time": 290.92,
+      "end_time": 294.12
+    },
+    {
+      "text": " So, I really do not know where I have to place in the tree at this point.",
+      "start_time": 294.12,
+      "end_time": 297.8
+    },
+    {
+      "text": "",
+      "start_time": 297.8,
+      "end_time": 270.0
+    },
+    {
+      "text": " So I have just placed the address of 100.",
+      "start_time": 272.2,
+      "end_time": null
+    },
+    {
+      "text": " entered into the stack structure now.",
+      "start_time": 300.0,
+      "end_time": 303.56
+    },
+    {
+      "text": " Then I continue to read the postfix expression and in this case I am receiving symbol B.",
+      "start_time": 303.56,
+      "end_time": 310.12
+    },
+    {
+      "text": " So I do the same thing.",
+      "start_time": 310.12,
+      "end_time": 311.32
+    },
+    {
+      "text": " So when I receive the next symbol the first and foremost thing that I need to do is to",
+      "start_time": 311.32,
+      "end_time": 316.24
+    },
+    {
+      "text": " allocate memory for that symbol and then make sure that this symbol is correctly connected",
+      "start_time": 316.24,
+      "end_time": 323.48
+    },
+    {
+      "text": " to the tree which is existing if at all.",
+      "start_time": 323.48,
+      "end_time": 326.12
+    },
+    {
+      "text": "",
+      "start_time": 326.12,
+      "end_time": 300.0
+    },
+    {
+      "text": " right now if the decision is pending, we move the address of that particular",
+      "start_time": 304.0,
+      "end_time": null
+    },
+    {
+      "text": " particular node onto the stack.",
+      "start_time": 330.0,
+      "end_time": 332.32
+    },
+    {
+      "text": " Since it is an operand that I have received, whenever you receive an operand, currently",
+      "start_time": 332.32,
+      "end_time": 337.6
+    },
+    {
+      "text": " we will not be in a position to decide where this has to go in unless an operator comes",
+      "start_time": 337.6,
+      "end_time": 342.16
+    },
+    {
+      "text": " in.",
+      "start_time": 342.16,
+      "end_time": 343.16
+    },
+    {
+      "text": " So, we push the address of 150 again onto the stack.",
+      "start_time": 343.16,
+      "end_time": 348.08
+    },
+    {
+      "text": " Next I continue same thing.",
+      "start_time": 348.08,
+      "end_time": 350.04
+    },
+    {
+      "text": " So symbol C and node is created and address 300 is pushed onto the stack.",
+      "start_time": 350.04,
+      "end_time": 357.48
+    },
+    {
+      "text": "",
+      "start_time": 357.48,
+      "end_time": 330.0
+    },
+    {
+      "text": " symbol when I read okay it is a star.",
+      "start_time": 332.48,
+      "end_time": null
+    },
+    {
+      "text": " which is an operator, but even in this case, the first step remains the same.",
+      "start_time": 360.0,
+      "end_time": 364.44
+    },
+    {
+      "text": " So, you will have to create a node for this and assume that the address that is allocated",
+      "start_time": 364.44,
+      "end_time": 370.96
+    },
+    {
+      "text": " to the symbol star is at 250.",
+      "start_time": 370.96,
+      "end_time": 373.76
+    },
+    {
+      "text": " Now, it is an operator that I have received.",
+      "start_time": 373.76,
+      "end_time": 377.04
+    },
+    {
+      "text": " So, since it is an operator, we can construct a small tree now, because this operator will",
+      "start_time": 377.04,
+      "end_time": 382.76
+    },
+    {
+      "text": " have to operate on the two operands which were already received and the nodes have been",
+      "start_time": 382.76,
+      "end_time": 387.76
+    },
+    {
+      "text": " already created for them.",
+      "start_time": 387.76,
+      "end_time": 389.6
+    },
+    {
+      "text": "",
+      "start_time": 389.6,
+      "end_time": 360.0
+    },
+    {
+      "text": " in which.",
+      "start_time": 360.5,
+      "end_time": null
+    },
+    {
+      "text": " address locations they are at locations 350 just the previous two so I pop now the first",
+      "start_time": 390.0,
+      "end_time": 398.3
+    },
+    {
+      "text": " address from top of the stat and I make that as the right side pointer I make that as a",
+      "start_time": 398.3,
+      "end_time": 403.88
+    },
+    {
+      "text": " right child so I am going to use a convention that ok whichever symbol comes later will",
+      "start_time": 403.88,
+      "end_time": 409.8
+    },
+    {
+      "text": " be made as the right child and whichever comes before is made as the left child of the operator",
+      "start_time": 409.8,
+      "end_time": 416.8
+    },
+    {
+      "text": "",
+      "start_time": 416.8,
+      "end_time": 390.0
+    },
+    {
+      "text": " So that way if you see BC star, C comes at a...",
+      "start_time": 393.2,
+      "end_time": null
+    },
+    {
+      "text": " later point. So, it is made as a right child for star and B is the left child for star,",
+      "start_time": 420.0,
+      "end_time": 426.72
+    },
+    {
+      "text": " that is how the creation is going to happen. So, in now what we need to do is the symbol",
+      "start_time": 426.72,
+      "end_time": 431.12
+    },
+    {
+      "text": " C which has to be connected to the right side whose address is 300 is on the stack and that",
+      "start_time": 431.12,
+      "end_time": 437.84
+    },
+    {
+      "text": " I am going to pop out and then attach it to the right side of star and then next symbol",
+      "start_time": 437.84,
+      "end_time": 444.32
+    },
+    {
+      "text": "",
+      "start_time": 444.32,
+      "end_time": 420.0
+    },
+    {
+      "text": " b which whose address is 150 which is on the stack is going to be replay popped out and",
+      "start_time": 425.04,
+      "end_time": null
+    },
+    {
+      "text": " we are going to attach it to the left side of star. So, this intermediary is constructed,",
+      "start_time": 450.0,
+      "end_time": 455.48
+    },
+    {
+      "text": " but we are not it done with the entire tree construction. So, what I need to now do is",
+      "start_time": 455.48,
+      "end_time": 461.24
+    },
+    {
+      "text": " to store the address of 250 which is a current symbols address that needs to be placed into",
+      "start_time": 461.24,
+      "end_time": 468.64
+    },
+    {
+      "text": " the stack. So, I place 250 onto the stack, then I continue reading and passing my post",
+      "start_time": 468.64,
+      "end_time": 474.64
+    },
+    {
+      "text": "",
+      "start_time": 474.64,
+      "end_time": 450.0
+    },
+    {
+      "text": " expression so I read plus now symbol is plus so I am going to allocate member",
+      "start_time": 457.36,
+      "end_time": null
+    },
+    {
+      "text": " for this plus and then since it is an operator again I know that I have to pop out the previous",
+      "start_time": 480.0,
+      "end_time": 487.0
+    },
+    {
+      "text": " two. So, it is this particular one ok, this entire thing as right side and this as the",
+      "start_time": 487.0,
+      "end_time": 496.0
+    },
+    {
+      "text": " left side. You can see that entire BC star becomes the one operand for plus and A becomes",
+      "start_time": 496.0,
+      "end_time": 501.96
+    },
+    {
+      "text": " another operand. So, this star has to be connected to the plus. So, I pop out 250 and then place",
+      "start_time": 501.96,
+      "end_time": 509.0
+    },
+    {
+      "text": "",
+      "start_time": 509.0,
+      "end_time": 480.0
+    },
+    {
+      "text": " that as a right.",
+      "start_time": 481.0,
+      "end_time": null
+    },
+    {
+      "text": " side and pop 100 and place that as the left child. Once that is done you are now reaching",
+      "start_time": 510.0,
+      "end_time": 516.92
+    },
+    {
+      "text": " the null. So, this tree is now constructed is what happens. So, we will look at the",
+      "start_time": 516.92,
+      "end_time": 523.24
+    },
+    {
+      "text": " algorithm for this particular tree construction. So, scan the post fix expression till the",
+      "start_time": 523.24,
+      "end_time": 530.2
+    },
+    {
+      "text": " end one symbol at a time, create a new node with the symbol as information and left and",
+      "start_time": 530.2,
+      "end_time": 536.16
+    },
+    {
+      "text": "",
+      "start_time": 536.16,
+      "end_time": 510.0
+    },
+    {
+      "text": " right link as null. If symbol is an operand push the address of the node to the node.",
+      "start_time": 513.84,
+      "end_time": null
+    },
+    {
+      "text": " stack, your symbol is an operator, pop the address from the stack, make it to the right",
+      "start_time": 540.0,
+      "end_time": 544.64
+    },
+    {
+      "text": " side of the new node, pop address from stack and make it the left side of the new node,",
+      "start_time": 544.64,
+      "end_time": 549.16
+    },
+    {
+      "text": " that is what you have to do.",
+      "start_time": 549.16,
+      "end_time": 550.98
+    },
+    {
+      "text": " And then once this subtree is created, you are going to push the address of the new node",
+      "start_time": 550.98,
+      "end_time": 555.6
+    },
+    {
+      "text": " onto the stack, ok.",
+      "start_time": 555.6,
+      "end_time": 557.72
+    },
+    {
+      "text": " And then finally, the stack has only one element which is the address of the root node, the",
+      "start_time": 557.72,
+      "end_time": 562.28
+    },
+    {
+      "text": " entire binary expression trees root node that can be popped out and sent as the trees construction",
+      "start_time": 562.28,
+      "end_time": 569.04
+    },
+    {
+      "text": "",
+      "start_time": 569.04,
+      "end_time": 540.0
+    },
+    {
+      "text": " and root node set.",
+      "start_time": 542.0,
+      "end_time": null
+    },
+    {
+      "text": " addresses can be returned to the time code.",
+      "start_time": 570.0,
+      "end_time": 573.16
+    },
+    {
+      "text": " So, that is the expression tree construction.",
+      "start_time": 573.16,
+      "end_time": 576.12
+    },
+    {
+      "text": " So, this by a particular code we will look at again from the point of view of an expression.",
+      "start_time": 576.12,
+      "end_time": 582.96
+    },
+    {
+      "text": " So, the symbol is A. So, I create the node and then symbol is an operand push the address.",
+      "start_time": 582.96,
+      "end_time": 589.76
+    },
+    {
+      "text": " Then next symbol B, I create the new node push the address create C. It is a new node",
+      "start_time": 589.76,
+      "end_time": 597.84
+    },
+    {
+      "text": "",
+      "start_time": 597.84,
+      "end_time": 570.0
+    },
+    {
+      "text": " is created push the address.",
+      "start_time": 571.78,
+      "end_time": null
+    },
+    {
+      "text": " Then I create star new node is created it is an operator pop, pop, push, that is what",
+      "start_time": 600.0,
+      "end_time": 608.8
+    },
+    {
+      "text": " has to happen and then again next symbol is plus we create a new node it is an operator",
+      "start_time": 608.8,
+      "end_time": 616.4
+    },
+    {
+      "text": " pop, then pop, and then push the address 400 and then done.",
+      "start_time": 616.4,
+      "end_time": 623.84
+    },
+    {
+      "text": "",
+      "start_time": 623.84,
+      "end_time": 600.0
+    },
+    {
+      "text": " So, finally the stack has only one element which is the root of this expression tree.",
+      "start_time": 604.88,
+      "end_time": null
+    },
+    {
+      "text": " This is how an expression tree binary expression tree is constructed from the postfix expression.",
+      "start_time": 630.0,
+      "end_time": 638.16
+    },
+    {
+      "text": " So given a postfix expression a code is given to you.",
+      "start_time": 638.16,
+      "end_time": 641.96
+    },
+    {
+      "text": " So you are going to construct translate that into the form of a tree.",
+      "start_time": 641.96,
+      "end_time": 646.72
+    },
+    {
+      "text": " Now once so such a tree which houses an expression like ABC star plus is called as a binary expression",
+      "start_time": 646.72,
+      "end_time": 654.8
+    },
+    {
+      "text": " tree because we are now just talking about only two operands for an operator.",
+      "start_time": 654.8,
+      "end_time": 659.6
+    },
+    {
+      "text": "",
+      "start_time": 659.6,
+      "end_time": 630.0
+    },
+    {
+      "text": " Bye now.",
+      "start_time": 630.5,
+      "end_time": null
+    },
+    {
+      "text": " tree expression tree. Now, in this tree now, if they given this tree, now how do we go",
+      "start_time": 660.0,
+      "end_time": 668.84
+    },
+    {
+      "text": " about evaluating such a tree that is the next aspect that we have to consider in expression",
+      "start_time": 668.84,
+      "end_time": 676.28
+    },
+    {
+      "text": " trees. So, you can see that at this point, if you are looking at only this part of the",
+      "start_time": 676.28,
+      "end_time": 682.44
+    },
+    {
+      "text": " tree, subtree, what is the evaluated value of this subtree? It is just A itself, is",
+      "start_time": 682.44,
+      "end_time": 689.56
+    },
+    {
+      "text": "",
+      "start_time": 689.56,
+      "end_time": 660.0
+    },
+    {
+      "text": " water.",
+      "start_time": 660.44,
+      "end_time": null
+    },
+    {
+      "text": " may be the value of A, but that itself is the value, A itself is the value. Suppose,",
+      "start_time": 690.0,
+      "end_time": 695.02
+    },
+    {
+      "text": " A is 4, 4 itself is the value of this tree, right. So, a subtree in the expression tree",
+      "start_time": 695.02,
+      "end_time": 701.02
+    },
+    {
+      "text": " itself may be the value. Now, so in this case also this subtree if you consider it is just",
+      "start_time": 701.02,
+      "end_time": 707.26
+    },
+    {
+      "text": " B. Now, in this subtree it is C. So, we are you know we have finished evaluating the leaves,",
+      "start_time": 707.26,
+      "end_time": 714.1
+    },
+    {
+      "text": "",
+      "start_time": 714.1,
+      "end_time": 690.0
+    },
+    {
+      "text": " ok, it is as good as whatever it contains. So, we will come to this subtree now.",
+      "start_time": 695.6,
+      "end_time": null
+    },
+    {
+      "text": " When you come to this subtree, what we need to do is you know the evaluated value on the",
+      "start_time": 720.0,
+      "end_time": 724.88
+    },
+    {
+      "text": " left hand side and you know the evaluated value on the right hand side.",
+      "start_time": 724.88,
+      "end_time": 730.16
+    },
+    {
+      "text": " So this star has to be applied to the left hand and star and right hand side.",
+      "start_time": 730.16,
+      "end_time": 735.52
+    },
+    {
+      "text": " So you will get B star C from this, B star C from this.",
+      "start_time": 735.52,
+      "end_time": 740.08
+    },
+    {
+      "text": " Now B star C is the evaluated value on the right hand side, then you have the evaluated",
+      "start_time": 740.08,
+      "end_time": 745.6
+    },
+    {
+      "text": " value on the left hand side plus has to be applied on these two.",
+      "start_time": 745.6,
+      "end_time": 749.44
+    },
+    {
+      "text": "",
+      "start_time": 749.44,
+      "end_time": 720.0
+    },
+    {
+      "text": " So let us see.",
+      "start_time": 720.5,
+      "end_time": null
+    },
+    {
+      "text": " B was 2 and C was 3. So, 2 into 3 this will be replacing 6, this is let us say 3. So,",
+      "start_time": 750.0,
+      "end_time": 757.0
+    },
+    {
+      "text": " 3 plus 6 is 9. So, totally the 9 is the evaluated value of this binary expression tree. This",
+      "start_time": 757.0,
+      "end_time": 764.16
+    },
+    {
+      "text": " is how we will proceed with the evaluation. So, let us look at that.",
+      "start_time": 764.16,
+      "end_time": 769.64
+    },
+    {
+      "text": " So, as an example we will consider AS 8, BS 4 and CS 3. Let us look at the recursion methodology",
+      "start_time": 769.64,
+      "end_time": 779.52
+    },
+    {
+      "text": "",
+      "start_time": 779.52,
+      "end_time": 750.0
+    },
+    {
+      "text": " for this.",
+      "start_time": 750.5,
+      "end_time": null
+    },
+    {
+      "text": " So, evaluation of the tree consists of two parts.",
+      "start_time": 780.0,
+      "end_time": 784.32
+    },
+    {
+      "text": " If T data is basically T info, if the T info information is an operator then it is nothing",
+      "start_time": 784.32,
+      "end_time": 791.92
+    },
+    {
+      "text": " but evaluated value on the left hand side, evaluated value on the right hand side, on",
+      "start_time": 791.92,
+      "end_time": 797.08
+    },
+    {
+      "text": " that the operator has to be upright, T data will be an operator.",
+      "start_time": 797.08,
+      "end_time": 800.48
+    },
+    {
+      "text": " So, the operator has to be upright on these two evaluated values.",
+      "start_time": 800.48,
+      "end_time": 804.84
+    },
+    {
+      "text": "",
+      "start_time": 804.84,
+      "end_time": 780.0
+    },
+    {
+      "text": " if the node itself is containing an operand that itself.",
+      "start_time": 785.16,
+      "end_time": null
+    },
+    {
+      "text": " is the evaluated value. So, we just written the operand value. So, if this is the point",
+      "start_time": 810.0,
+      "end_time": 816.6
+    },
+    {
+      "text": " at which we are want to evaluate, this itself is the evaluated value of the tree. But if",
+      "start_time": 816.6,
+      "end_time": 821.4
+    },
+    {
+      "text": " it is at this point, this value applied on this applied with this operator and this operand,",
+      "start_time": 821.4,
+      "end_time": 828.8
+    },
+    {
+      "text": " this is how the evaluation proceeds. So, let us trace the recursion for one such example",
+      "start_time": 828.8,
+      "end_time": 834.32
+    },
+    {
+      "text": "",
+      "start_time": 834.32,
+      "end_time": 810.0
+    },
+    {
+      "text": " okay okay okay even the",
+      "start_time": 817.52,
+      "end_time": null
+    },
+    {
+      "text": " at the node 100. Please note that we pass the address of the root node to the eval function.",
+      "start_time": 840.0,
+      "end_time": 846.84
+    },
+    {
+      "text": " So evaluation of 400 requires that you evaluate this and evaluate this and apply plus. So",
+      "start_time": 846.84,
+      "end_time": 854.68
+    },
+    {
+      "text": " that is what happens it is an operator because this is an operator at 400. So this calls",
+      "start_time": 854.68,
+      "end_time": 861.32
+    },
+    {
+      "text": " for evaluation of the left side tree and evaluation of the right side tree with plus applied for",
+      "start_time": 861.32,
+      "end_time": 869.12
+    },
+    {
+      "text": "",
+      "start_time": 869.12,
+      "end_time": 840.0
+    },
+    {
+      "text": " this instance.",
+      "start_time": 840.88,
+      "end_time": null
+    },
+    {
+      "text": " So, now evaluation of 100, evaluation of 100.",
+      "start_time": 870.0,
+      "end_time": 874.6
+    },
+    {
+      "text": " So, this particular tree has to be evaluated now.",
+      "start_time": 874.6,
+      "end_time": 878.32
+    },
+    {
+      "text": " So, evaluation of 100 is this itself is a data now, ok, A is a data it is an operand.",
+      "start_time": 878.32,
+      "end_time": 883.72
+    },
+    {
+      "text": " So, we just return the value of A which is 8, ok.",
+      "start_time": 883.72,
+      "end_time": 887.84
+    },
+    {
+      "text": " So, that 8 is written and you are going to replace it with 8, ok.",
+      "start_time": 887.84,
+      "end_time": 892.64
+    },
+    {
+      "text": "",
+      "start_time": 892.64,
+      "end_time": 870.0
+    },
+    {
+      "text": " evaluation of 250. 250 we call this intern calls for evaluation of",
+      "start_time": 877.24,
+      "end_time": null
+    },
+    {
+      "text": " this tree which is 150, rooted at 150, evaluation of this tree rooted at 300 and for that we",
+      "start_time": 900.0,
+      "end_time": 907.4
+    },
+    {
+      "text": " have to apply the operator star.",
+      "start_time": 907.4,
+      "end_time": 909.72
+    },
+    {
+      "text": " So this evaluation of 150 is called, evaluation of 150, this sub tree's evaluation is B itself",
+      "start_time": 909.72,
+      "end_time": 916.52
+    },
+    {
+      "text": " with whose value is 4.",
+      "start_time": 916.52,
+      "end_time": 918.2
+    },
+    {
+      "text": " So I return 4, 4 is replacing that and then evaluation of 300 that is nothing but returning",
+      "start_time": 918.2,
+      "end_time": 927.72
+    },
+    {
+      "text": "",
+      "start_time": 927.72,
+      "end_time": 900.0
+    },
+    {
+      "text": " the three and that three is one.",
+      "start_time": 902.32,
+      "end_time": null
+    },
+    {
+      "text": " to replace this position. So, 3 is replaced and 4 star 3 is the answer returned from eval",
+      "start_time": 930.0,
+      "end_time": 937.2
+    },
+    {
+      "text": " 250 which is 12 which is going to replace this part. So, 12 is going to replace this",
+      "start_time": 937.2,
+      "end_time": 943.36
+    },
+    {
+      "text": " and 12 plus 8 is 20 and this 20 is going to be returned back to the main. So, this is",
+      "start_time": 943.36,
+      "end_time": 950.56
+    },
+    {
+      "text": " the way in which eval 400 is going to return. So, the expression ABC star plus resulted",
+      "start_time": 950.56,
+      "end_time": 957.4
+    },
+    {
+      "text": "",
+      "start_time": 957.4,
+      "end_time": 930.0
+    },
+    {
+      "text": " in a value 20.",
+      "start_time": 932.0,
+      "end_time": null
+    },
+    {
+      "text": " that. So, now if you traverse this tree let us say in inorder if you traverse this in",
+      "start_time": 960.0,
+      "end_time": 969.0
+    },
+    {
+      "text": " order what expression you get you can see that. So, first you get A plus and then you",
+      "start_time": 969.0,
+      "end_time": 976.56
+    },
+    {
+      "text": " get B star C. So, if you traverse the same expression if you traverse this binary expression",
+      "start_time": 976.56,
+      "end_time": 985.0
+    },
+    {
+      "text": "",
+      "start_time": 985.0,
+      "end_time": 960.0
+    },
+    {
+      "text": " 3 in inorder you will get an infix expression. If you traverse it in preorder",
+      "start_time": 967.0,
+      "end_time": null
+    },
+    {
+      "text": " order, you will get a prefix expression. If you traverse in post order, you will get",
+      "start_time": 990.0,
+      "end_time": 995.48
+    },
+    {
+      "text": " a postfix expression. So, you will get a then bc star and so traversals in various different",
+      "start_time": 995.48,
+      "end_time": 1004.36
+    },
+    {
+      "text": " ways will yield different types of expressions. So, once the expression has been housed in",
+      "start_time": 1004.36,
+      "end_time": 1009.96
+    },
+    {
+      "text": " a tree, you can traverse in different orders to get their variant expressions according",
+      "start_time": 1009.96,
+      "end_time": 1016.32
+    },
+    {
+      "text": "",
+      "start_time": 1016.32,
+      "end_time": 990.0
+    },
+    {
+      "text": " to the kind of traversal. This is the way in which",
+      "start_time": 993.6,
+      "end_time": null
+    },
+    {
+      "text": " the expression tree is going to be evaluated. Now, we will move on to the general expression tree",
+      "start_time": 1020.0,
+      "end_time": 1027.6
+    },
+    {
+      "text": " evaluations. What is a general expression tree? So, let us look at an example here.",
+      "start_time": 1027.6,
+      "end_time": 1034.96
+    },
+    {
+      "text": "",
+      "start_time": 1040.96,
+      "end_time": 1020.0
+    },
+    {
+      "text": " In the general expression tree, let us take the simple example of 2.",
+      "start_time": 1034.96,
+      "end_time": null
+    },
+    {
+      "text": " 3, 4. Let us say you have a general expression tree of this kind, somehow it has been created.",
+      "start_time": 1050.0,
+      "end_time": 1060.48
+    },
+    {
+      "text": " So, this represents basically 2 plus 3 plus 4 that is the expression that it is housing.",
+      "start_time": 1060.48,
+      "end_time": 1066.24
+    },
+    {
+      "text": " So, in an expression tree of this kind you may have one more let us say. So, I will consider",
+      "start_time": 1066.24,
+      "end_time": 1072.84
+    },
+    {
+      "text": "",
+      "start_time": 1072.84,
+      "end_time": 1050.0
+    },
+    {
+      "text": " 9, 9. So, this is a general expression tree where",
+      "start_time": 1057.12,
+      "end_time": null
+    },
+    {
+      "text": " here one node has more than two branches. So, this is an example of a tree. If you have",
+      "start_time": 1080.0,
+      "end_time": 1087.72
+    },
+    {
+      "text": " the node containing maximum of two, then it becomes a binary expression tree, but if",
+      "start_time": 1087.72,
+      "end_time": 1092.9
+    },
+    {
+      "text": " a node has more than two branches, then it becomes a general expression tree.",
+      "start_time": 1092.9,
+      "end_time": 1097.72
+    },
+    {
+      "text": " Now, what you need to do is you have to evaluate this node. The evaluated value of this is",
+      "start_time": 1097.72,
+      "end_time": 1103.76
+    },
+    {
+      "text": "",
+      "start_time": 1103.76,
+      "end_time": 1080.0
+    },
+    {
+      "text": " two itself this is three this is nine and this is four so now what we need to",
+      "start_time": 1088.12,
+      "end_time": null
+    },
+    {
+      "text": " is since these are all evaluated this is fine now this operator has to be applied on to this",
+      "start_time": 1110.0,
+      "end_time": 1117.68
+    },
+    {
+      "text": " ok. So, 2 plus 3 5 plus 9 14 14 plus 4 18. So, 18 is the evaluated value because for",
+      "start_time": 1117.68,
+      "end_time": 1126.8
+    },
+    {
+      "text": " all these operand plus has to be applied. So, you are going to replace this with 18 ok",
+      "start_time": 1126.8,
+      "end_time": 1134.0
+    },
+    {
+      "text": " and then you are going to say that this is removed this is removed this is removed this",
+      "start_time": 1134.0,
+      "end_time": 1138.72
+    },
+    {
+      "text": "",
+      "start_time": 1138.72,
+      "end_time": 1110.0
+    },
+    {
+      "text": " system.",
+      "start_time": 1112.32,
+      "end_time": null
+    },
+    {
+      "text": " How is this generally an expression tree going to be stored?",
+      "start_time": 1140.0,
+      "end_time": 1145.8
+    },
+    {
+      "text": " You can see that here.",
+      "start_time": 1145.8,
+      "end_time": 1149.88
+    },
+    {
+      "text": " So I am going to create an expression tree like this.",
+      "start_time": 1149.88,
+      "end_time": 1155.0
+    },
+    {
+      "text": " Now this is plus, so it is an operator type and I have two pointers.",
+      "start_time": 1155.0,
+      "end_time": 1163.2
+    },
+    {
+      "text": "",
+      "start_time": 1163.2,
+      "end_time": 1140.0
+    },
+    {
+      "text": " point up please note okay this node this particular node",
+      "start_time": 1148.44,
+      "end_time": null
+    },
+    {
+      "text": " in the general expression tree will have information that it is a plus operator",
+      "start_time": 1170.0,
+      "end_time": 1176.54
+    },
+    {
+      "text": " Okay, and we we can say that it is an operator type",
+      "start_time": 1177.16,
+      "end_time": 1180.64
+    },
+    {
+      "text": " So I place one here and then you have a pointer to",
+      "start_time": 1180.76,
+      "end_time": 1184.46
+    },
+    {
+      "text": " sibling right now the node does not have sibling and it is a pointer to the first child and",
+      "start_time": 1185.24,
+      "end_time": 1191.92
+    },
+    {
+      "text": " You know that it is stored in the form of a linked list",
+      "start_time": 1192.24,
+      "end_time": 1195.04
+    },
+    {
+      "text": " This is how the actual expression tree would be written",
+      "start_time": 1195.56,
+      "end_time": 1199.64
+    },
+    {
+      "text": " These are all the children of this tree and its sibling is null.",
+      "start_time": 1200.0,
+      "end_time": 1205.68
+    },
+    {
+      "text": " We have seen in earlier sessions that this is the way in which the tree is going to be",
+      "start_time": 1205.68,
+      "end_time": 1210.2
+    },
+    {
+      "text": " constructed of that of a binary kind of a node, but the two pointers point to different",
+      "start_time": 1210.2,
+      "end_time": 1216.4
+    },
+    {
+      "text": " child pointer and this is the sibling pointer.",
+      "start_time": 1216.4,
+      "end_time": 1221.64
+    },
+    {
+      "text": " And you know that this is going to be created, all the children are created as a list and",
+      "start_time": 1221.64,
+      "end_time": 1228.32
+    },
+    {
+      "text": "",
+      "start_time": 1228.32,
+      "end_time": 1200.0
+    },
+    {
+      "text": " and they are attached to this node.",
+      "start_time": 1202.0,
+      "end_time": null
+    },
+    {
+      "text": " So, what I am going to do is further we may have branches here, but I am taking an example",
+      "start_time": 1230.0,
+      "end_time": 1235.76
+    },
+    {
+      "text": " of a tree where there is only one node right now.",
+      "start_time": 1235.76,
+      "end_time": 1239.12
+    },
+    {
+      "text": " So, this the entire subtree is to be replaced with its value.",
+      "start_time": 1239.12,
+      "end_time": 1244.88
+    },
+    {
+      "text": " So, right now there are all there is nothing further.",
+      "start_time": 1244.88,
+      "end_time": 1248.16
+    },
+    {
+      "text": " Suppose if this were to be containing star, this had to be replaced.",
+      "start_time": 1248.16,
+      "end_time": 1256.8
+    },
+    {
+      "text": "",
+      "start_time": 1256.8,
+      "end_time": 1230.0
+    },
+    {
+      "text": " Let us say this has 8 and this is star.",
+      "start_time": 1232.88,
+      "end_time": null
+    },
+    {
+      "text": " So this is replaced with 2, 8 into 1, so this is going to be replaced with 8 and this has",
+      "start_time": 1260.0,
+      "end_time": 1266.76
+    },
+    {
+      "text": " to be removed, this has to be removed, select that, okay.",
+      "start_time": 1266.76,
+      "end_time": 1271.08
+    },
+    {
+      "text": " So at every stage we have to do that.",
+      "start_time": 1271.08,
+      "end_time": 1274.52
+    },
+    {
+      "text": " So for the time being I will just take that these are all directly the operands.",
+      "start_time": 1274.52,
+      "end_time": 1278.8
+    },
+    {
+      "text": " So 2, 8, 4 and 5 are the values that I am taking so they are all evaluated now.",
+      "start_time": 1278.8,
+      "end_time": 1285.68
+    },
+    {
+      "text": " So this plus has to be applied on these four nodes.",
+      "start_time": 1285.68,
+      "end_time": 1288.84
+    },
+    {
+      "text": "",
+      "start_time": 1288.84,
+      "end_time": 1260.0
+    },
+    {
+      "text": " So there.",
+      "start_time": 1261.2,
+      "end_time": null
+    },
+    {
+      "text": " the information stored in this is that of an operator which is plus therefore, we are",
+      "start_time": 1290.0,
+      "end_time": 1296.92
+    },
+    {
+      "text": " saying that it is an operator ok. So, this is an operator type operator type the if it",
+      "start_time": 1296.92,
+      "end_time": 1304.84
+    },
+    {
+      "text": " is one or if it is an operator it is going to be one if let us say this is a value the",
+      "start_time": 1304.84,
+      "end_time": 1311.68
+    },
+    {
+      "text": "",
+      "start_time": 1311.68,
+      "end_time": 1290.0
+    },
+    {
+      "text": " value stored will have information like this. This is operand type so operate",
+      "start_time": 1298.32,
+      "end_time": null
+    },
+    {
+      "text": " value, this will be 0. So, 0 here indicates that this is directly the value, 1 here indicates",
+      "start_time": 1320.0,
+      "end_time": 1326.6
+    },
+    {
+      "text": " that this is an operator type, an operator type. So, now, so this is value done, this",
+      "start_time": 1326.6,
+      "end_time": 1333.6
+    },
+    {
+      "text": " is value, this is value, this is value. So, plus has to be applied on the all the children",
+      "start_time": 1333.6,
+      "end_time": 1338.56
+    },
+    {
+      "text": " here. So, we apply the operator to a 10, 10 plus",
+      "start_time": 1338.56,
+      "end_time": 1343.2
+    },
+    {
+      "text": "",
+      "start_time": 1343.2,
+      "end_time": 1320.0
+    },
+    {
+      "text": " 14 14 plus 19 so I am going to replace this plus with 19",
+      "start_time": 1328.24,
+      "end_time": null
+    },
+    {
+      "text": " the value that is evaluated 19 and I am going to convert this into operand type",
+      "start_time": 1350.0,
+      "end_time": 1356.24
+    },
+    {
+      "text": " okay operand type and then I am going to remove these nodes one at a time. So, I am going to make",
+      "start_time": 1356.96,
+      "end_time": 1363.6
+    },
+    {
+      "text": " this null I am going to make this null now okay because this link is getting broken now. So,",
+      "start_time": 1363.6,
+      "end_time": 1369.68
+    },
+    {
+      "text": " I am going to use some pointer and then start removing one by one free this node free this",
+      "start_time": 1369.68,
+      "end_time": 1375.52
+    },
+    {
+      "text": "",
+      "start_time": 1375.52,
+      "end_time": 1350.0
+    },
+    {
+      "text": " node free this node free this node so as long as I have nodes here I remember",
+      "start_time": 1356.36,
+      "end_time": null
+    },
+    {
+      "text": " know the entire set of children here because all of them have been considered and then",
+      "start_time": 1380.0,
+      "end_time": 1386.88
+    },
+    {
+      "text": " the final evaluated value is here. So, 19 so, you have only one node now left and the",
+      "start_time": 1386.88,
+      "end_time": 1392.28
+    },
+    {
+      "text": " value is 19 that is the value of the general expression tree. So, this 19 is also returned",
+      "start_time": 1392.28,
+      "end_time": 1398.84
+    },
+    {
+      "text": " and you can free this particular node also. So, the evaluated value of this particular",
+      "start_time": 1398.84,
+      "end_time": 1404.48
+    },
+    {
+      "text": "",
+      "start_time": 1404.48,
+      "end_time": 1380.0
+    },
+    {
+      "text": " tree is 19. So, this is how we are going to evaluate the tree and this is",
+      "start_time": 1385.44,
+      "end_time": null
+    },
+    {
+      "text": " how the trees construction is also going to be carried out. So, I repeat this with one",
+      "start_time": 1410.0,
+      "end_time": 1415.84
+    },
+    {
+      "text": " other example here let us say minus ok, you have 8 and then you have let us say star 2,",
+      "start_time": 1415.84,
+      "end_time": 1428.04
+    },
+    {
+      "text": " 1, 3. So, this is an example of a binary sorry a general expression tree. So, here although",
+      "start_time": 1428.04,
+      "end_time": 1436.96
+    },
+    {
+      "text": "",
+      "start_time": 1436.96,
+      "end_time": 1410.0
+    },
+    {
+      "text": " I am representing this in this form the weight.",
+      "start_time": 1413.0,
+      "end_time": null
+    },
+    {
+      "text": " is going to be stored internally will be like this 8 it will be pointing to star and star",
+      "start_time": 1440.0,
+      "end_time": 1447.2
+    },
+    {
+      "text": " will be pointing to its child and then it the remaining children of star will be connected",
+      "start_time": 1447.2,
+      "end_time": 1454.28
+    },
+    {
+      "text": " to a link ok and here you have 1 and here you have 3.",
+      "start_time": 1454.28,
+      "end_time": 1460.64
+    },
+    {
+      "text": " So this is the way in which it will be constructed.",
+      "start_time": 1460.64,
+      "end_time": 1463.68
+    },
+    {
+      "text": " So you come to this evaluation you have to replace this with evaluation value it is replaced",
+      "start_time": 1463.68,
+      "end_time": 1469.8
+    },
+    {
+      "text": "",
+      "start_time": 1469.8,
+      "end_time": 1440.0
+    },
+    {
+      "text": " Next.",
+      "start_time": 1440.5,
+      "end_time": null
+    },
+    {
+      "text": " we move to the next one, we have to replace this with evaluated value, but to do that",
+      "start_time": 1470.0,
+      "end_time": 1475.12
+    },
+    {
+      "text": " we have to again call it in recursion its sub trace evaluated values.",
+      "start_time": 1475.12,
+      "end_time": 1480.4
+    },
+    {
+      "text": " So, at this point at this point eval will make sure that all its children are evaluated.",
+      "start_time": 1480.4,
+      "end_time": 1486.12
+    },
+    {
+      "text": " So, when we evaluate its children this is 8 itself, but when we have to evaluate this",
+      "start_time": 1486.12,
+      "end_time": 1491.44
+    },
+    {
+      "text": " this further has to be done at the down level.",
+      "start_time": 1491.44,
+      "end_time": 1494.68
+    },
+    {
+      "text": " So, we evaluate this, we evaluate this, we evaluate this, but evaluation of this tree",
+      "start_time": 1494.68,
+      "end_time": 1499.28
+    },
+    {
+      "text": "",
+      "start_time": 1499.28,
+      "end_time": 1470.0
+    },
+    {
+      "text": " is nothing but two.",
+      "start_time": 1470.76,
+      "end_time": null
+    },
+    {
+      "text": " itself, 1 itself, 3 itself. Once this is done we evaluate. So, 2 into 1, 2, 2 into 3 is",
+      "start_time": 1500.0,
+      "end_time": 1508.08
+    },
+    {
+      "text": " 6. So, this is 6 and we remove these nodes, we remove these nodes ok.",
+      "start_time": 1508.08,
+      "end_time": 1515.4
+    },
+    {
+      "text": " Next I move forward nothing else is there. So, we are done at this level. So, I back",
+      "start_time": 1515.4,
+      "end_time": 1520.88
+    },
+    {
+      "text": "",
+      "start_time": 1520.88,
+      "end_time": 1500.0
+    },
+    {
+      "text": " evaluated value this is 8 minus 6 2. So, this will be replaced with value 2 and then",
+      "start_time": 1508.88,
+      "end_time": null
+    },
+    {
+      "text": " we are going to remove the once the root node gets replaced with its children's value then",
+      "start_time": 1530.0,
+      "end_time": 1537.48
+    },
+    {
+      "text": " we remove that. So, finally 2 is going to be returned as answer. So, even the root node",
+      "start_time": 1537.48,
+      "end_time": 1542.92
+    },
+    {
+      "text": " is removed. So, this way we start eliminating the expression tree. So, the evaluated value",
+      "start_time": 1542.92,
+      "end_time": 1548.12
+    },
+    {
+      "text": " of this expression tree is going to be 2 that is how the value is going to be returned.",
+      "start_time": 1548.12,
+      "end_time": 1553.88
+    },
+    {
+      "text": " So, this is the way in which the general expression trees are evaluated. Now, if you want to",
+      "start_time": 1553.88,
+      "end_time": 1559.98
+    },
+    {
+      "text": "",
+      "start_time": 1559.98,
+      "end_time": 1530.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1532.0,
+      "end_time": null
+    },
+    {
+      "text": " So, let us say I create one root node, I create one root node and I want to add plus and I",
+      "start_time": 1560.0,
+      "end_time": 1572.04
+    },
+    {
+      "text": " want to add children to this as expressions 2 plus 3 plus 4 so that expression.",
+      "start_time": 1572.04,
+      "end_time": 1577.44
+    },
+    {
+      "text": " So, we have to create a linked list of all the children that need to be connected to",
+      "start_time": 1577.44,
+      "end_time": 1583.88
+    },
+    {
+      "text": "",
+      "start_time": 1583.88,
+      "end_time": 1560.0
+    },
+    {
+      "text": " this ok, all the children that are connected to this and then .",
+      "start_time": 1566.12,
+      "end_time": null
+    },
+    {
+      "text": " I make this as a child of plus and its sibling is set to null and I make this as 1. This",
+      "start_time": 1590.0,
+      "end_time": 1596.8
+    },
+    {
+      "text": " is how I create and this is created as 0 and all its left and right are set to null. So,",
+      "start_time": 1596.8,
+      "end_time": 1603.12
+    },
+    {
+      "text": " this is the way in which I create. Suppose I want to create this as star then this as",
+      "start_time": 1603.12,
+      "end_time": 1608.6
+    },
+    {
+      "text": " star and this one and then I create a set of children for this and every time I add",
+      "start_time": 1608.6,
+      "end_time": 1614.88
+    },
+    {
+      "text": "",
+      "start_time": 1614.88,
+      "end_time": 1590.0
+    },
+    {
+      "text": " mode. So one linked list is created and this linked list will be added as a",
+      "start_time": 1595.0,
+      "end_time": null
+    },
+    {
+      "text": " for the node ok. So, this list is added as all the children set these children are set",
+      "start_time": 1620.0,
+      "end_time": 1626.72
+    },
+    {
+      "text": " as children of this particular node. So, a child pointer basically has to be adjusted.",
+      "start_time": 1626.72,
+      "end_time": 1633.32
+    },
+    {
+      "text": " So, if you want to let us say add a new child to this you can do so by creating another node.",
+      "start_time": 1633.32,
+      "end_time": 1642.16
+    },
+    {
+      "text": " So, this is for general tree if you want to add another child to this ok. Normally once",
+      "start_time": 1642.16,
+      "end_time": 1648.2
+    },
+    {
+      "text": "",
+      "start_time": 1648.2,
+      "end_time": 1620.0
+    },
+    {
+      "text": " Since the expression is created we don't.",
+      "start_time": 1621.68,
+      "end_time": null
+    },
+    {
+      "text": " add it for expression tree, but I am generally saying that if you want to add a node to a",
+      "start_time": 1650.0,
+      "end_time": 1654.88
+    },
+    {
+      "text": " tree not representing an expression, you can do so by creating another child node here.",
+      "start_time": 1654.88,
+      "end_time": 1661.48
+    },
+    {
+      "text": " So, this is how the expression tree is constructed here, ok.",
+      "start_time": 1661.48,
+      "end_time": 1666.4
+    },
+    {
+      "text": " We will look at two functions which will create the nodes in this way and we will also look",
+      "start_time": 1666.4,
+      "end_time": 1673.08
+    },
+    {
+      "text": " at the general tree expression evaluation, is that clear?",
+      "start_time": 1673.08,
+      "end_time": 1679.12
+    },
+    {
+      "text": "",
+      "start_time": 1679.12,
+      "end_time": 1650.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1652.0,
+      "end_time": null
+    },
+    {
+      "text": " So, you can see here that this is the expression. So, Q of a plus b sin c x star y plus z. So,",
+      "start_time": 1680.0,
+      "end_time": 1695.12
+    },
+    {
+      "text": " this is some operator you can define that. So, that is the function. So, this is how",
+      "start_time": 1695.12,
+      "end_time": 1700.32
+    },
+    {
+      "text": " the expression is housed in the form of a general expression tree. So, now, as I said",
+      "start_time": 1700.32,
+      "end_time": 1707.96
+    },
+    {
+      "text": "",
+      "start_time": 1707.96,
+      "end_time": 1680.0
+    },
+    {
+      "text": " the tree node consists of type.",
+      "start_time": 1682.0,
+      "end_time": null
+    },
+    {
+      "text": " So, based on the type either the node contains an operator or contains a value.",
+      "start_time": 1710.0,
+      "end_time": 1715.76
+    },
+    {
+      "text": " So, information can be either operator or value not both right.",
+      "start_time": 1715.76,
+      "end_time": 1719.72
+    },
+    {
+      "text": " So, I have created a union here for the tree node just to save the space ok.",
+      "start_time": 1719.72,
+      "end_time": 1725.2
+    },
+    {
+      "text": " In the same space either I create an operator or put a value.",
+      "start_time": 1725.2,
+      "end_time": 1729.32
+    },
+    {
+      "text": " So, information is not only one type whether it is operator type or it is a value type",
+      "start_time": 1729.32,
+      "end_time": 1735.2
+    },
+    {
+      "text": "",
+      "start_time": 1735.2,
+      "end_time": 1710.0
+    },
+    {
+      "text": " And in fact, just a character operator is enough.",
+      "start_time": 1714.8,
+      "end_time": null
+    },
+    {
+      "text": " we do not need to have an array also. Then the new type is either 1 or 0 and then you",
+      "start_time": 1740.0,
+      "end_time": 1747.28
+    },
+    {
+      "text": " have a child pointer and a sibling pointer. So, this concept can be just a character operator",
+      "start_time": 1747.28,
+      "end_time": 1758.2
+    },
+    {
+      "text": " if it is a single character that is a representation. Otherwise, if the operator is extending to",
+      "start_time": 1758.2,
+      "end_time": 1764.64
+    },
+    {
+      "text": " multiple then only you need an array otherwise you do not need an array you just a character",
+      "start_time": 1764.64,
+      "end_time": 1768.76
+    },
+    {
+      "text": "",
+      "start_time": 1768.76,
+      "end_time": 1740.0
+    },
+    {
+      "text": " operators in us.",
+      "start_time": 1741.0,
+      "end_time": null
+    },
+    {
+      "text": " Now, let us look at the reevaluation function which is called as replace which just now",
+      "start_time": 1770.0,
+      "end_time": 1776.32
+    },
+    {
+      "text": " I explained to you with the diagram.",
+      "start_time": 1776.32,
+      "end_time": 1778.32
+    },
+    {
+      "text": " So, if the u type is an operator, so we were looking at plus rate, if the u type is an",
+      "start_time": 1778.32,
+      "end_time": 1784.32
+    },
+    {
+      "text": " operator then you have going to start from all the child must be evaluated right.",
+      "start_time": 1784.32,
+      "end_time": 1793.6
+    },
+    {
+      "text": "",
+      "start_time": 1793.6,
+      "end_time": 1770.0
+    },
+    {
+      "text": " So, Q you will set it to beast child, ok. So, that is what we will do here.",
+      "start_time": 1776.16,
+      "end_time": null
+    },
+    {
+      "text": " a pointer like Q not this Q, a pointer Q is said to its children. So, this has to be replaced",
+      "start_time": 1800.0,
+      "end_time": 1806.8
+    },
+    {
+      "text": " with evaluated value, this has to be replaced value, this has to be replaced right, that is what",
+      "start_time": 1806.8,
+      "end_time": 1812.24
+    },
+    {
+      "text": " we will achieve. So, P child while Q not null, every child has to be replaced it with value,",
+      "start_time": 1812.24,
+      "end_time": 1819.84
+    },
+    {
+      "text": " Q is moved to Q next. So, we keep replacing that and then once it is done, so we are ready to apply",
+      "start_time": 1819.84,
+      "end_time": 1827.28
+    },
+    {
+      "text": "",
+      "start_time": 1827.28,
+      "end_time": 1800.0
+    },
+    {
+      "text": " the operator ok and then",
+      "start_time": 1802.2,
+      "end_time": null
+    },
+    {
+      "text": " U type has to be changed. So, let us say plus 2, 3, 4, 2 is evaluated, 3 is evaluated,",
+      "start_time": 1830.0,
+      "end_time": 1836.84
+    },
+    {
+      "text": " 4 is evaluated. So, you apply plus on 2, 3, 4, apply function does that. And so, value",
+      "start_time": 1836.84,
+      "end_time": 1844.08
+    },
+    {
+      "text": " returned is 2 plus 3 plus 4 which is 5 plus 4 9. So, 9 value is returned to the root.",
+      "start_time": 1844.08,
+      "end_time": 1851.24
+    },
+    {
+      "text": " So, U type is changed to operand, value is changed to the value 9 and then Q is set to",
+      "start_time": 1851.24,
+      "end_time": 1858.28
+    },
+    {
+      "text": "",
+      "start_time": 1858.28,
+      "end_time": 1830.0
+    },
+    {
+      "text": " be child is second child.",
+      "start_time": 1832.0,
+      "end_time": null
+    },
+    {
+      "text": " to null because the once the nodes are getting deleted, P child has to be set to null, all",
+      "start_time": 1860.0,
+      "end_time": 1866.04
+    },
+    {
+      "text": " the children have to be removed.",
+      "start_time": 1866.04,
+      "end_time": 1867.92
+    },
+    {
+      "text": " So this is whatever I explained in diagrammatically that is what we are doing in the form of the",
+      "start_time": 1867.92,
+      "end_time": 1872.8
+    },
+    {
+      "text": " code.",
+      "start_time": 1872.8,
+      "end_time": 1873.8
+    },
+    {
+      "text": " This is how the expression is being evaluated.",
+      "start_time": 1873.8,
+      "end_time": 1877.16
+    },
+    {
+      "text": " So I repeat if I come at plus, let us visualize plus and 2, 3, 4, I come at plus it is an operator.",
+      "start_time": 1877.16,
+      "end_time": 1886.56
+    },
+    {
+      "text": "",
+      "start_time": 1886.56,
+      "end_time": 1860.0
+    },
+    {
+      "text": " So Q is said to be P child while Q not null replaced.",
+      "start_time": 1863.44,
+      "end_time": null
+    },
+    {
+      "text": " with every node here I will take the example. So, 2, 3, 4 this is the this piece type is",
+      "start_time": 1890.0,
+      "end_time": 1909.64
+    },
+    {
+      "text": " operator type. So, I am going to set Q to piece child piece child while Q not null replace",
+      "start_time": 1909.64,
+      "end_time": 1919.08
+    },
+    {
+      "text": "",
+      "start_time": 1919.08,
+      "end_time": 1890.0
+    },
+    {
+      "text": " this.",
+      "start_time": 1890.84,
+      "end_time": null
+    },
+    {
+      "text": " again in recursion replace this with information, but this will be replaced and I come to this",
+      "start_time": 1920.0,
+      "end_time": 1926.08
+    },
+    {
+      "text": " this will be replaced, I come to this this will be replaced.",
+      "start_time": 1926.08,
+      "end_time": 1929.6
+    },
+    {
+      "text": " Replaced in this example they are all numbers only.",
+      "start_time": 1929.6,
+      "end_time": 1933.04
+    },
+    {
+      "text": " So this you need to worry because it is like a replacement only.",
+      "start_time": 1933.04,
+      "end_time": 1938.2
+    },
+    {
+      "text": " Then I go to the next stage where I am going to apply the operator, I am going to apply",
+      "start_time": 1938.2,
+      "end_time": 1949.8
+    },
+    {
+      "text": "",
+      "start_time": 1949.8,
+      "end_time": 1920.0
+    },
+    {
+      "text": " Bye.",
+      "start_time": 1920.5,
+      "end_time": null
+    },
+    {
+      "text": " operator plus ok on 234 so 5 plus 49 so I am going to convert this operand operand type",
+      "start_time": 1950.0,
+      "end_time": 1958.6
+    },
+    {
+      "text": " to operand type and I am going to replace the value 2 plus 3 5 plus 49 I am going to",
+      "start_time": 1958.6,
+      "end_time": 1965.44
+    },
+    {
+      "text": " replace it with 9 ok and then Q is set to P child Q is set to P child and P child is",
+      "start_time": 1965.44,
+      "end_time": 1973.44
+    },
+    {
+      "text": "",
+      "start_time": 1973.44,
+      "end_time": 1950.0
+    },
+    {
+      "text": " made as null so this link will be broken and then we are going to remove all these.",
+      "start_time": 1956.52,
+      "end_time": null
+    },
+    {
+      "text": " nodes, remove all this node that is what is being done. So, you will get only 9 here,",
+      "start_time": 1980.0,
+      "end_time": 1985.28
+    },
+    {
+      "text": " this 9 will be written and this also will be removed. So, this is how the evaluation",
+      "start_time": 1985.28,
+      "end_time": 1989.76
+    },
+    {
+      "text": " of the expression is going to happen. So, this is from the main you are calling the",
+      "start_time": 1989.76,
+      "end_time": 1996.92
+    },
+    {
+      "text": " function replace p and then return p value and then free p that is the only node that",
+      "start_time": 1996.92,
+      "end_time": 2005.0
+    },
+    {
+      "text": "",
+      "start_time": 2005.0,
+      "end_time": 1980.0
+    },
+    {
+      "text": " So, that is how the entire general expression tree is evaluated. Now, we will take the general expression tree.",
+      "start_time": 1984.4,
+      "end_time": 1987.4
+    },
+    {
+      "text": " will see two small functions related to tree construction which I said. So, tree node p",
+      "start_time": 2010.0,
+      "end_time": 2018.58
+    },
+    {
+      "text": " has to be attached is not generally for expression tree. I am saying for any tree if you want",
+      "start_time": 2018.58,
+      "end_time": 2025.74
+    },
+    {
+      "text": " to attach a list of nodes, list of nodes contain children for a particular node p we can do",
+      "start_time": 2025.74,
+      "end_time": 2031.98
+    },
+    {
+      "text": " so. So, we have to set children. So, the function name is set children. Set children where",
+      "start_time": 2031.98,
+      "end_time": 2039.86
+    },
+    {
+      "text": "",
+      "start_time": 2039.86,
+      "end_time": 2010.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 2011.0,
+      "end_time": null
+    },
+    {
+      "text": " the children they are in the form of a list and these should be set as children for whom",
+      "start_time": 2040.0,
+      "end_time": 2045.0
+    },
+    {
+      "text": " this parent p that is the function. So, but if parent itself is null then we cannot even",
+      "start_time": 2045.0,
+      "end_time": 2051.0
+    },
+    {
+      "text": " insert these as children and if parent child is not null then you cannot insert this as",
+      "start_time": 2051.0,
+      "end_time": 2058.48
+    },
+    {
+      "text": " a new set otherwise p child will be set to. So, here what happens is you already have",
+      "start_time": 2058.48,
+      "end_time": 2065.88
+    },
+    {
+      "text": "",
+      "start_time": 2065.88,
+      "end_time": 2040.0
+    },
+    {
+      "text": " some let us say a and I have a list like",
+      "start_time": 2043.72,
+      "end_time": null
+    },
+    {
+      "text": " B, C, D and E in the form of a link list and I want to set these B, C, D, E as children",
+      "start_time": 2070.0,
+      "end_time": 2078.4
+    },
+    {
+      "text": " of A. So, all that I need to do is this is P. So, P child pointer will be set as this",
+      "start_time": 2078.4,
+      "end_time": 2084.52
+    },
+    {
+      "text": " list. So, this is your list. So, P child will be set as this list. This is how the children",
+      "start_time": 2084.52,
+      "end_time": 2090.32
+    },
+    {
+      "text": " are created. But if the child is already not null then I cannot set this. So, that is why",
+      "start_time": 2090.32,
+      "end_time": 2096.2
+    },
+    {
+      "text": "",
+      "start_time": 2096.2,
+      "end_time": 2070.0
+    },
+    {
+      "text": " it is checking it is for fresh creation of",
+      "start_time": 2075.36,
+      "end_time": null
+    },
+    {
+      "text": " these entire set of nodes to be made as children of A. Already if A has a child we are not",
+      "start_time": 2100.0,
+      "end_time": 2106.88
+    },
+    {
+      "text": " going to create the list that is the logic which is being used in this particular function.",
+      "start_time": 2106.88,
+      "end_time": 2112.12
+    },
+    {
+      "text": " This is one way, I mean there can be variations that you can try out, but this is one assumption",
+      "start_time": 2112.12,
+      "end_time": 2117.48
+    },
+    {
+      "text": " that if A already has a child the other children are not set otherwise you would be setting",
+      "start_time": 2117.48,
+      "end_time": 2122.68
+    },
+    {
+      "text": " these BCDE as children for A by just setting the child pointer to point to this list.",
+      "start_time": 2122.68,
+      "end_time": 2129.12
+    },
+    {
+      "text": "",
+      "start_time": 2129.12,
+      "end_time": 2100.0
+    },
+    {
+      "text": " Okay.",
+      "start_time": 2101.0,
+      "end_time": null
+    },
+    {
+      "text": " is a set children function. Now, the next function that we are looking at is add child.",
+      "start_time": 2130.0,
+      "end_time": 2135.68
+    },
+    {
+      "text": " So, I will assume that a then you have b and then you have c. So, in this example if you",
+      "start_time": 2135.68,
+      "end_time": 2143.48
+    },
+    {
+      "text": " want to add another child, so d is created and you just have to add it to this. So, all",
+      "start_time": 2143.48,
+      "end_time": 2148.96
+    },
+    {
+      "text": " that it requires is if p already has a child then you will come to this, you will go here",
+      "start_time": 2148.96,
+      "end_time": 2155.28
+    },
+    {
+      "text": "",
+      "start_time": 2155.28,
+      "end_time": 2130.0
+    },
+    {
+      "text": " and you will set this to next of Q. Suppose the",
+      "start_time": 2134.76,
+      "end_time": null
+    },
+    {
+      "text": " node A did not have any child, then D itself will be set as the first child. If we already",
+      "start_time": 2160.0,
+      "end_time": 2166.32
+    },
+    {
+      "text": " A already had two children, D will be set as the youngest child, if A did not have any",
+      "start_time": 2166.32,
+      "end_time": 2173.92
+    },
+    {
+      "text": " children then D will be set as the first child. So, but for that A must exist. So, that is",
+      "start_time": 2173.92,
+      "end_time": 2179.64
+    },
+    {
+      "text": " this functionality. So, here in this example add child example, we are going to add the",
+      "start_time": 2179.64,
+      "end_time": 2186.8
+    },
+    {
+      "text": "",
+      "start_time": 2186.8,
+      "end_time": 2160.0
+    },
+    {
+      "text": " element x, ok, in this example d I am taking.",
+      "start_time": 2163.22,
+      "end_time": null
+    },
+    {
+      "text": " So, D is added as a child to P, but provided P must exist, P if P equal to null it is a",
+      "start_time": 2190.0,
+      "end_time": 2196.48
+    },
+    {
+      "text": " void insertion, otherwise it is possible to insert.",
+      "start_time": 2196.48,
+      "end_time": 2200.32
+    },
+    {
+      "text": " So, R is said to null, Q is equal to P child and while Q not null, so you have to move",
+      "start_time": 2200.32,
+      "end_time": 2207.76
+    },
+    {
+      "text": " traverse through the children, right.",
+      "start_time": 2207.76,
+      "end_time": 2210.48
+    },
+    {
+      "text": " So, R is equal to Q, Q equal to Q next.",
+      "start_time": 2210.48,
+      "end_time": 2212.96
+    },
+    {
+      "text": " Otherwise, you could have said Q next not equal to null, but Q may be null also.",
+      "start_time": 2212.96,
+      "end_time": 2217.44
+    },
+    {
+      "text": "",
+      "start_time": 2217.44,
+      "end_time": 2190.0
+    },
+    {
+      "text": " So, you will get note for this information.",
+      "start_time": 2192.56,
+      "end_time": null
+    },
+    {
+      "text": " Q next will be set to null because this is going as a last child. So, if R is null P",
+      "start_time": 2220.0,
+      "end_time": 2225.68
+    },
+    {
+      "text": " child is equal to Q else R next equal to Q. So, you can see that this is the case if P",
+      "start_time": 2225.68,
+      "end_time": 2232.64
+    },
+    {
+      "text": " did not have any children then the new node will be set as the D which I was talking about",
+      "start_time": 2232.64,
+      "end_time": 2238.68
+    },
+    {
+      "text": " which is present in Q address Q. So, that it will be set as the first child otherwise",
+      "start_time": 2238.68,
+      "end_time": 2243.8
+    },
+    {
+      "text": " it will be set as the last child. This is the last child example this is the first child",
+      "start_time": 2243.8,
+      "end_time": 2248.28
+    },
+    {
+      "text": "",
+      "start_time": 2248.28,
+      "end_time": 2220.0
+    },
+    {
+      "text": " example it all depends on the.",
+      "start_time": 2221.76,
+      "end_time": null
+    },
+    {
+      "text": " traverse cell, if r is still null and you are not even traverse, it is understood that",
+      "start_time": 2250.0,
+      "end_time": 2255.84
+    },
+    {
+      "text": " there is no child for p at this point. So, you will add this q as a new child, otherwise",
+      "start_time": 2255.84,
+      "end_time": 2263.52
+    },
+    {
+      "text": " it is added as the last child that is how the tree construction is going to be done for",
+      "start_time": 2263.52,
+      "end_time": 2269.24
+    },
+    {
+      "text": " adding a child and as adding a set of nodes. And once the tree is in the form of an expression",
+      "start_time": 2269.24,
+      "end_time": 2276.0
+    },
+    {
+      "text": "",
+      "start_time": 2276.0,
+      "end_time": 2250.0
+    },
+    {
+      "text": " You can use recursive methodology to make sure that.",
+      "start_time": 2253.96,
+      "end_time": null
+    },
+    {
+      "text": " tree is requested you are evaluating. So, this is how the evaluations are going to be carried",
+      "start_time": 2280.0,
+      "end_time": 2286.56
+    },
+    {
+      "text": " out. So, now let us look at its implementation from the point of view of a binary expression",
+      "start_time": 2286.56,
+      "end_time": 2292.48
+    },
+    {
+      "text": " tree. So, we will create a binary expression tree and also subsequently know how the implementation",
+      "start_time": 2292.48,
+      "end_time": 2299.52
+    },
+    {
+      "text": " can be done. Thank you.",
+      "start_time": 2299.52,
+      "end_time": 2300.92
+    }
+  ],
+  "transcript_text": " Hello everyone, welcome back to the lecture capture on data structures and its applications.  In today's video, I am going to describe to you the concept of expression trees.  We will see a variant of this known as a binary expression tree and then subsequently look  at the general expression trees.   the session on trees.  We have looked at binary trees, binary search trees.  In both these cases, the tree consists of several set of nodes and each of these nodes  contain information.  Now in the case of binary search tree, we have seen that the constraint is also added  to the creation of the binary search tree wherein all the nodes to the left of a given   node were having information less than the given node and right.  side were having greater information and on such a tree we were performing certain operations.  Then today we are going to look at a creation of such a binary tree but what this binary  tree is going to house is an expression. The data contained in the expression tree is that of an   expression. You know that an expression consists of operands and operands.  operators. These expressions can be housed in the form of a tree and subsequently used  for checking the expression correctness and also can be used for evaluation of expressions.  This kind of a scenario is useful when you have specifically the code written and you   want to transform that into kind of a data. So it finds its up.  application in translating the code into data and analyzing the tree subsequently for expressions.  This is a kind of an application that expression trees have and that is a reason why such a  tree is built.  But please note that once a tree is built for one expression, it becomes immutable and   you will not be able to  modify the tree to accommodate for another expression. If at all you want to have another  expression with some modifications, it calls for creation of another tree. This property  you must keep in mind. Now let us explore more details on such an expression tree. Normally,   A post fix expression is used in constructing a tree.  And you all know about the three varieties of expressions, the postfix infix and prefix.  A postfix expression is the one in which you have the operands and then subsequently the  operator being fixed.  The operator is postfixed.  So in the expression tree construction, what we do is if we receive an operand from a postfix   expression a new node is created and that is going to be made as the leaf of  the expression tree. Whereas if you receive an operator from the postfix expression,  it is going to connect the two leaves which were already encountered.  We make use of the stack data structure to place the intermediary nodes to make sure that the  entire tree is constructed towards the end. Let us look at an example of constructing an   expression binary expression 3.  for the expression ABC star plus. Note that there is a stack empty stack that is already ready for us.  So I start receiving the symbols. The first symbol that I am receiving is A.  So what is that I need to do? If I told I want to construct a binary expression tree for this,  the first and foremost thing is to allocate memory for this.  So I am demonstrating this through an example of a dynamic allocation for the tree.  So, I am going to allocate memory for this symbol a and then you know the left point  and right pointers are null and assume that this node has been allocated at location 100.  Now, I proceed with this and I store the address of 100, the node 100 onto the stack because  right now I just have one operand that has been received.  So, I really do not know where I have to place in the tree at this point.   So I have just placed the address of 100.  entered into the stack structure now.  Then I continue to read the postfix expression and in this case I am receiving symbol B.  So I do the same thing.  So when I receive the next symbol the first and foremost thing that I need to do is to  allocate memory for that symbol and then make sure that this symbol is correctly connected  to the tree which is existing if at all.   right now if the decision is pending, we move the address of that particular  particular node onto the stack.  Since it is an operand that I have received, whenever you receive an operand, currently  we will not be in a position to decide where this has to go in unless an operator comes  in.  So, we push the address of 150 again onto the stack.  Next I continue same thing.  So symbol C and node is created and address 300 is pushed onto the stack.   symbol when I read okay it is a star.  which is an operator, but even in this case, the first step remains the same.  So, you will have to create a node for this and assume that the address that is allocated  to the symbol star is at 250.  Now, it is an operator that I have received.  So, since it is an operator, we can construct a small tree now, because this operator will  have to operate on the two operands which were already received and the nodes have been  already created for them.   in which.  address locations they are at locations 350 just the previous two so I pop now the first  address from top of the stat and I make that as the right side pointer I make that as a  right child so I am going to use a convention that ok whichever symbol comes later will  be made as the right child and whichever comes before is made as the left child of the operator   So that way if you see BC star, C comes at a...  later point. So, it is made as a right child for star and B is the left child for star,  that is how the creation is going to happen. So, in now what we need to do is the symbol  C which has to be connected to the right side whose address is 300 is on the stack and that  I am going to pop out and then attach it to the right side of star and then next symbol   b which whose address is 150 which is on the stack is going to be replay popped out and  we are going to attach it to the left side of star. So, this intermediary is constructed,  but we are not it done with the entire tree construction. So, what I need to now do is  to store the address of 250 which is a current symbols address that needs to be placed into  the stack. So, I place 250 onto the stack, then I continue reading and passing my post   expression so I read plus now symbol is plus so I am going to allocate member  for this plus and then since it is an operator again I know that I have to pop out the previous  two. So, it is this particular one ok, this entire thing as right side and this as the  left side. You can see that entire BC star becomes the one operand for plus and A becomes  another operand. So, this star has to be connected to the plus. So, I pop out 250 and then place   that as a right.  side and pop 100 and place that as the left child. Once that is done you are now reaching  the null. So, this tree is now constructed is what happens. So, we will look at the  algorithm for this particular tree construction. So, scan the post fix expression till the  end one symbol at a time, create a new node with the symbol as information and left and   right link as null. If symbol is an operand push the address of the node to the node.  stack, your symbol is an operator, pop the address from the stack, make it to the right  side of the new node, pop address from stack and make it the left side of the new node,  that is what you have to do.  And then once this subtree is created, you are going to push the address of the new node  onto the stack, ok.  And then finally, the stack has only one element which is the address of the root node, the  entire binary expression trees root node that can be popped out and sent as the trees construction   and root node set.  addresses can be returned to the time code.  So, that is the expression tree construction.  So, this by a particular code we will look at again from the point of view of an expression.  So, the symbol is A. So, I create the node and then symbol is an operand push the address.  Then next symbol B, I create the new node push the address create C. It is a new node   is created push the address.  Then I create star new node is created it is an operator pop, pop, push, that is what  has to happen and then again next symbol is plus we create a new node it is an operator  pop, then pop, and then push the address 400 and then done.   So, finally the stack has only one element which is the root of this expression tree.  This is how an expression tree binary expression tree is constructed from the postfix expression.  So given a postfix expression a code is given to you.  So you are going to construct translate that into the form of a tree.  Now once so such a tree which houses an expression like ABC star plus is called as a binary expression  tree because we are now just talking about only two operands for an operator.   Bye now.  tree expression tree. Now, in this tree now, if they given this tree, now how do we go  about evaluating such a tree that is the next aspect that we have to consider in expression  trees. So, you can see that at this point, if you are looking at only this part of the  tree, subtree, what is the evaluated value of this subtree? It is just A itself, is   water.  may be the value of A, but that itself is the value, A itself is the value. Suppose,  A is 4, 4 itself is the value of this tree, right. So, a subtree in the expression tree  itself may be the value. Now, so in this case also this subtree if you consider it is just  B. Now, in this subtree it is C. So, we are you know we have finished evaluating the leaves,   ok, it is as good as whatever it contains. So, we will come to this subtree now.  When you come to this subtree, what we need to do is you know the evaluated value on the  left hand side and you know the evaluated value on the right hand side.  So this star has to be applied to the left hand and star and right hand side.  So you will get B star C from this, B star C from this.  Now B star C is the evaluated value on the right hand side, then you have the evaluated  value on the left hand side plus has to be applied on these two.   So let us see.  B was 2 and C was 3. So, 2 into 3 this will be replacing 6, this is let us say 3. So,  3 plus 6 is 9. So, totally the 9 is the evaluated value of this binary expression tree. This  is how we will proceed with the evaluation. So, let us look at that.  So, as an example we will consider AS 8, BS 4 and CS 3. Let us look at the recursion methodology   for this.  So, evaluation of the tree consists of two parts.  If T data is basically T info, if the T info information is an operator then it is nothing  but evaluated value on the left hand side, evaluated value on the right hand side, on  that the operator has to be upright, T data will be an operator.  So, the operator has to be upright on these two evaluated values.   if the node itself is containing an operand that itself.  is the evaluated value. So, we just written the operand value. So, if this is the point  at which we are want to evaluate, this itself is the evaluated value of the tree. But if  it is at this point, this value applied on this applied with this operator and this operand,  this is how the evaluation proceeds. So, let us trace the recursion for one such example   okay okay okay even the  at the node 100. Please note that we pass the address of the root node to the eval function.  So evaluation of 400 requires that you evaluate this and evaluate this and apply plus. So  that is what happens it is an operator because this is an operator at 400. So this calls  for evaluation of the left side tree and evaluation of the right side tree with plus applied for   this instance.  So, now evaluation of 100, evaluation of 100.  So, this particular tree has to be evaluated now.  So, evaluation of 100 is this itself is a data now, ok, A is a data it is an operand.  So, we just return the value of A which is 8, ok.  So, that 8 is written and you are going to replace it with 8, ok.   evaluation of 250. 250 we call this intern calls for evaluation of  this tree which is 150, rooted at 150, evaluation of this tree rooted at 300 and for that we  have to apply the operator star.  So this evaluation of 150 is called, evaluation of 150, this sub tree's evaluation is B itself  with whose value is 4.  So I return 4, 4 is replacing that and then evaluation of 300 that is nothing but returning   the three and that three is one.  to replace this position. So, 3 is replaced and 4 star 3 is the answer returned from eval  250 which is 12 which is going to replace this part. So, 12 is going to replace this  and 12 plus 8 is 20 and this 20 is going to be returned back to the main. So, this is  the way in which eval 400 is going to return. So, the expression ABC star plus resulted   in a value 20.  that. So, now if you traverse this tree let us say in inorder if you traverse this in  order what expression you get you can see that. So, first you get A plus and then you  get B star C. So, if you traverse the same expression if you traverse this binary expression   3 in inorder you will get an infix expression. If you traverse it in preorder  order, you will get a prefix expression. If you traverse in post order, you will get  a postfix expression. So, you will get a then bc star and so traversals in various different  ways will yield different types of expressions. So, once the expression has been housed in  a tree, you can traverse in different orders to get their variant expressions according   to the kind of traversal. This is the way in which  the expression tree is going to be evaluated. Now, we will move on to the general expression tree  evaluations. What is a general expression tree? So, let us look at an example here.   In the general expression tree, let us take the simple example of 2.  3, 4. Let us say you have a general expression tree of this kind, somehow it has been created.  So, this represents basically 2 plus 3 plus 4 that is the expression that it is housing.  So, in an expression tree of this kind you may have one more let us say. So, I will consider   9, 9. So, this is a general expression tree where  here one node has more than two branches. So, this is an example of a tree. If you have  the node containing maximum of two, then it becomes a binary expression tree, but if  a node has more than two branches, then it becomes a general expression tree.  Now, what you need to do is you have to evaluate this node. The evaluated value of this is   two itself this is three this is nine and this is four so now what we need to  is since these are all evaluated this is fine now this operator has to be applied on to this  ok. So, 2 plus 3 5 plus 9 14 14 plus 4 18. So, 18 is the evaluated value because for  all these operand plus has to be applied. So, you are going to replace this with 18 ok  and then you are going to say that this is removed this is removed this is removed this   system.  How is this generally an expression tree going to be stored?  You can see that here.  So I am going to create an expression tree like this.  Now this is plus, so it is an operator type and I have two pointers.   point up please note okay this node this particular node  in the general expression tree will have information that it is a plus operator  Okay, and we we can say that it is an operator type  So I place one here and then you have a pointer to  sibling right now the node does not have sibling and it is a pointer to the first child and  You know that it is stored in the form of a linked list  This is how the actual expression tree would be written  These are all the children of this tree and its sibling is null.  We have seen in earlier sessions that this is the way in which the tree is going to be  constructed of that of a binary kind of a node, but the two pointers point to different  child pointer and this is the sibling pointer.  And you know that this is going to be created, all the children are created as a list and   and they are attached to this node.  So, what I am going to do is further we may have branches here, but I am taking an example  of a tree where there is only one node right now.  So, this the entire subtree is to be replaced with its value.  So, right now there are all there is nothing further.  Suppose if this were to be containing star, this had to be replaced.   Let us say this has 8 and this is star.  So this is replaced with 2, 8 into 1, so this is going to be replaced with 8 and this has  to be removed, this has to be removed, select that, okay.  So at every stage we have to do that.  So for the time being I will just take that these are all directly the operands.  So 2, 8, 4 and 5 are the values that I am taking so they are all evaluated now.  So this plus has to be applied on these four nodes.   So there.  the information stored in this is that of an operator which is plus therefore, we are  saying that it is an operator ok. So, this is an operator type operator type the if it  is one or if it is an operator it is going to be one if let us say this is a value the   value stored will have information like this. This is operand type so operate  value, this will be 0. So, 0 here indicates that this is directly the value, 1 here indicates  that this is an operator type, an operator type. So, now, so this is value done, this  is value, this is value, this is value. So, plus has to be applied on the all the children  here. So, we apply the operator to a 10, 10 plus   14 14 plus 19 so I am going to replace this plus with 19  the value that is evaluated 19 and I am going to convert this into operand type  okay operand type and then I am going to remove these nodes one at a time. So, I am going to make  this null I am going to make this null now okay because this link is getting broken now. So,  I am going to use some pointer and then start removing one by one free this node free this   node free this node free this node so as long as I have nodes here I remember  know the entire set of children here because all of them have been considered and then  the final evaluated value is here. So, 19 so, you have only one node now left and the  value is 19 that is the value of the general expression tree. So, this 19 is also returned  and you can free this particular node also. So, the evaluated value of this particular   tree is 19. So, this is how we are going to evaluate the tree and this is  how the trees construction is also going to be carried out. So, I repeat this with one  other example here let us say minus ok, you have 8 and then you have let us say star 2,  1, 3. So, this is an example of a binary sorry a general expression tree. So, here although   I am representing this in this form the weight.  is going to be stored internally will be like this 8 it will be pointing to star and star  will be pointing to its child and then it the remaining children of star will be connected  to a link ok and here you have 1 and here you have 3.  So this is the way in which it will be constructed.  So you come to this evaluation you have to replace this with evaluation value it is replaced   Next.  we move to the next one, we have to replace this with evaluated value, but to do that  we have to again call it in recursion its sub trace evaluated values.  So, at this point at this point eval will make sure that all its children are evaluated.  So, when we evaluate its children this is 8 itself, but when we have to evaluate this  this further has to be done at the down level.  So, we evaluate this, we evaluate this, we evaluate this, but evaluation of this tree   is nothing but two.  itself, 1 itself, 3 itself. Once this is done we evaluate. So, 2 into 1, 2, 2 into 3 is  6. So, this is 6 and we remove these nodes, we remove these nodes ok.  Next I move forward nothing else is there. So, we are done at this level. So, I back   evaluated value this is 8 minus 6 2. So, this will be replaced with value 2 and then  we are going to remove the once the root node gets replaced with its children's value then  we remove that. So, finally 2 is going to be returned as answer. So, even the root node  is removed. So, this way we start eliminating the expression tree. So, the evaluated value  of this expression tree is going to be 2 that is how the value is going to be returned.  So, this is the way in which the general expression trees are evaluated. Now, if you want to   Thank you.  So, let us say I create one root node, I create one root node and I want to add plus and I  want to add children to this as expressions 2 plus 3 plus 4 so that expression.  So, we have to create a linked list of all the children that need to be connected to   this ok, all the children that are connected to this and then .  I make this as a child of plus and its sibling is set to null and I make this as 1. This  is how I create and this is created as 0 and all its left and right are set to null. So,  this is the way in which I create. Suppose I want to create this as star then this as  star and this one and then I create a set of children for this and every time I add   mode. So one linked list is created and this linked list will be added as a  for the node ok. So, this list is added as all the children set these children are set  as children of this particular node. So, a child pointer basically has to be adjusted.  So, if you want to let us say add a new child to this you can do so by creating another node.  So, this is for general tree if you want to add another child to this ok. Normally once   Since the expression is created we don't.  add it for expression tree, but I am generally saying that if you want to add a node to a  tree not representing an expression, you can do so by creating another child node here.  So, this is how the expression tree is constructed here, ok.  We will look at two functions which will create the nodes in this way and we will also look  at the general tree expression evaluation, is that clear?   Thank you.  So, you can see here that this is the expression. So, Q of a plus b sin c x star y plus z. So,  this is some operator you can define that. So, that is the function. So, this is how  the expression is housed in the form of a general expression tree. So, now, as I said   the tree node consists of type.  So, based on the type either the node contains an operator or contains a value.  So, information can be either operator or value not both right.  So, I have created a union here for the tree node just to save the space ok.  In the same space either I create an operator or put a value.  So, information is not only one type whether it is operator type or it is a value type   And in fact, just a character operator is enough.  we do not need to have an array also. Then the new type is either 1 or 0 and then you  have a child pointer and a sibling pointer. So, this concept can be just a character operator  if it is a single character that is a representation. Otherwise, if the operator is extending to  multiple then only you need an array otherwise you do not need an array you just a character   operators in us.  Now, let us look at the reevaluation function which is called as replace which just now  I explained to you with the diagram.  So, if the u type is an operator, so we were looking at plus rate, if the u type is an  operator then you have going to start from all the child must be evaluated right.   So, Q you will set it to beast child, ok. So, that is what we will do here.  a pointer like Q not this Q, a pointer Q is said to its children. So, this has to be replaced  with evaluated value, this has to be replaced value, this has to be replaced right, that is what  we will achieve. So, P child while Q not null, every child has to be replaced it with value,  Q is moved to Q next. So, we keep replacing that and then once it is done, so we are ready to apply   the operator ok and then  U type has to be changed. So, let us say plus 2, 3, 4, 2 is evaluated, 3 is evaluated,  4 is evaluated. So, you apply plus on 2, 3, 4, apply function does that. And so, value  returned is 2 plus 3 plus 4 which is 5 plus 4 9. So, 9 value is returned to the root.  So, U type is changed to operand, value is changed to the value 9 and then Q is set to   be child is second child.  to null because the once the nodes are getting deleted, P child has to be set to null, all  the children have to be removed.  So this is whatever I explained in diagrammatically that is what we are doing in the form of the  code.  This is how the expression is being evaluated.  So I repeat if I come at plus, let us visualize plus and 2, 3, 4, I come at plus it is an operator.   So Q is said to be P child while Q not null replaced.  with every node here I will take the example. So, 2, 3, 4 this is the this piece type is  operator type. So, I am going to set Q to piece child piece child while Q not null replace   this.  again in recursion replace this with information, but this will be replaced and I come to this  this will be replaced, I come to this this will be replaced.  Replaced in this example they are all numbers only.  So this you need to worry because it is like a replacement only.  Then I go to the next stage where I am going to apply the operator, I am going to apply   Bye.  operator plus ok on 234 so 5 plus 49 so I am going to convert this operand operand type  to operand type and I am going to replace the value 2 plus 3 5 plus 49 I am going to  replace it with 9 ok and then Q is set to P child Q is set to P child and P child is   made as null so this link will be broken and then we are going to remove all these.  nodes, remove all this node that is what is being done. So, you will get only 9 here,  this 9 will be written and this also will be removed. So, this is how the evaluation  of the expression is going to happen. So, this is from the main you are calling the  function replace p and then return p value and then free p that is the only node that   So, that is how the entire general expression tree is evaluated. Now, we will take the general expression tree.  will see two small functions related to tree construction which I said. So, tree node p  has to be attached is not generally for expression tree. I am saying for any tree if you want  to attach a list of nodes, list of nodes contain children for a particular node p we can do  so. So, we have to set children. So, the function name is set children. Set children where   Thank you.  the children they are in the form of a list and these should be set as children for whom  this parent p that is the function. So, but if parent itself is null then we cannot even  insert these as children and if parent child is not null then you cannot insert this as  a new set otherwise p child will be set to. So, here what happens is you already have   some let us say a and I have a list like  B, C, D and E in the form of a link list and I want to set these B, C, D, E as children  of A. So, all that I need to do is this is P. So, P child pointer will be set as this  list. So, this is your list. So, P child will be set as this list. This is how the children  are created. But if the child is already not null then I cannot set this. So, that is why   it is checking it is for fresh creation of  these entire set of nodes to be made as children of A. Already if A has a child we are not  going to create the list that is the logic which is being used in this particular function.  This is one way, I mean there can be variations that you can try out, but this is one assumption  that if A already has a child the other children are not set otherwise you would be setting  these BCDE as children for A by just setting the child pointer to point to this list.   Okay.  is a set children function. Now, the next function that we are looking at is add child.  So, I will assume that a then you have b and then you have c. So, in this example if you  want to add another child, so d is created and you just have to add it to this. So, all  that it requires is if p already has a child then you will come to this, you will go here   and you will set this to next of Q. Suppose the  node A did not have any child, then D itself will be set as the first child. If we already  A already had two children, D will be set as the youngest child, if A did not have any  children then D will be set as the first child. So, but for that A must exist. So, that is  this functionality. So, here in this example add child example, we are going to add the   element x, ok, in this example d I am taking.  So, D is added as a child to P, but provided P must exist, P if P equal to null it is a  void insertion, otherwise it is possible to insert.  So, R is said to null, Q is equal to P child and while Q not null, so you have to move  traverse through the children, right.  So, R is equal to Q, Q equal to Q next.  Otherwise, you could have said Q next not equal to null, but Q may be null also.   So, you will get note for this information.  Q next will be set to null because this is going as a last child. So, if R is null P  child is equal to Q else R next equal to Q. So, you can see that this is the case if P  did not have any children then the new node will be set as the D which I was talking about  which is present in Q address Q. So, that it will be set as the first child otherwise  it will be set as the last child. This is the last child example this is the first child   example it all depends on the.  traverse cell, if r is still null and you are not even traverse, it is understood that  there is no child for p at this point. So, you will add this q as a new child, otherwise  it is added as the last child that is how the tree construction is going to be done for  adding a child and as adding a set of nodes. And once the tree is in the form of an expression   You can use recursive methodology to make sure that.  tree is requested you are evaluating. So, this is how the evaluations are going to be carried  out. So, now let us look at its implementation from the point of view of a binary expression  tree. So, we will create a binary expression tree and also subsequently know how the implementation  can be done. Thank you."
+}

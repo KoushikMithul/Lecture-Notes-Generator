@@ -1,0 +1,1808 @@
+{
+  "video_name": "TBT_6a_2020-09-22 09-49-32_TBTCon",
+  "video_path": "data/raw/videos/TBT_6a_2020-09-22 09-49-32_TBTCon.mkv",
+  "duration_seconds": 1519.444,
+  "transcript": [
+    {
+      "text": " Welcome back to PES University online classes on data structures and its applications.",
+      "start_time": 0.0,
+      "end_time": 8.64
+    },
+    {
+      "text": " In the previous sessions, we have started our discussions on tree data structure and",
+      "start_time": 8.64,
+      "end_time": 14.64
+    },
+    {
+      "text": " a specific case of the tree called as binary tree has been discussed within that another",
+      "start_time": 14.64,
+      "end_time": 20.96
+    },
+    {
+      "text": " special case of binary tree has been discussed which is called as a binary search tree.",
+      "start_time": 20.96,
+      "end_time": 28.0
+    },
+    {
+      "text": "",
+      "start_time": 28.0,
+      "end_time": 0.0
+    },
+    {
+      "text": " The binary surgery has been",
+      "start_time": 2.0,
+      "end_time": null
+    },
+    {
+      "text": " implemented using both dynamic allocation as well as implicit array representations.",
+      "start_time": 30.0,
+      "end_time": 37.28
+    },
+    {
+      "text": " And we have also looked at the tree traversals, the three methods are pre-order, in-order",
+      "start_time": 37.28,
+      "end_time": 42.88
+    },
+    {
+      "text": " and post-order.",
+      "start_time": 42.88,
+      "end_time": 43.88
+    },
+    {
+      "text": " We went ahead and also implemented them using recursive method and as well as iterative",
+      "start_time": 43.88,
+      "end_time": 50.879999999999995
+    },
+    {
+      "text": " method.",
+      "start_time": 50.879999999999995,
+      "end_time": 51.879999999999995
+    },
+    {
+      "text": " In today's class, we will discuss threaded binary search tree and its implementation.",
+      "start_time": 51.879999999999995,
+      "end_time": 58.879999999999995
+    },
+    {
+      "text": "",
+      "start_time": 58.879999999999995,
+      "end_time": 30.0
+    },
+    {
+      "text": " I start giving",
+      "start_time": 32.0,
+      "end_time": null
+    },
+    {
+      "text": " giving an example for why we should go in for a threaded binary search tree. Let me do",
+      "start_time": 60.0,
+      "end_time": 65.2
+    },
+    {
+      "text": " a quick recap of what we did in the earlier session on the iterative traversal and as",
+      "start_time": 65.2,
+      "end_time": 72.48
+    },
+    {
+      "text": " well as on the recursive traversal taking the in order as an example.",
+      "start_time": 72.48,
+      "end_time": 79.4
+    },
+    {
+      "text": "",
+      "start_time": 79.4,
+      "end_time": 60.0
+    },
+    {
+      "text": " Now let me write the tree example here what we did was we wrote the",
+      "start_time": 60.0,
+      "end_time": null
+    },
+    {
+      "text": " in order traversal by passing the route is a simplistic code that I am trying to represent.",
+      "start_time": 90.0,
+      "end_time": 99.2
+    },
+    {
+      "text": " Then we saw that we have to traverse to the left if route is not null of course that condition",
+      "start_time": 99.2,
+      "end_time": 104.46000000000001
+    },
+    {
+      "text": " is present.",
+      "start_time": 104.46000000000001,
+      "end_time": 105.46000000000001
+    },
+    {
+      "text": " Then print route information we went ahead processed route information and then in order",
+      "start_time": 105.46000000000001,
+      "end_time": 113.03999999999999
+    },
+    {
+      "text": "",
+      "start_time": 113.03999999999999,
+      "end_time": 90.0
+    },
+    {
+      "text": " root right, this was the recursive traversal ok. All these would be executed if root root",
+      "start_time": 97.0,
+      "end_time": null
+    },
+    {
+      "text": " root is not null, root is not null, right. This is what we did. You can see that there",
+      "start_time": 120.0,
+      "end_time": 130.0
+    },
+    {
+      "text": " is an implicit stack here. So, let us take one small example, ok. And then we saw that",
+      "start_time": 130.0,
+      "end_time": 138.1
+    },
+    {
+      "text": " in order a when I call, ok, this in turn is going to call in order b, then a is printed",
+      "start_time": 138.1,
+      "end_time": 145.1
+    },
+    {
+      "text": "",
+      "start_time": 145.1,
+      "end_time": 120.0
+    },
+    {
+      "text": " in order null ok. This is what happens in the in order null.",
+      "start_time": 124.92,
+      "end_time": null
+    },
+    {
+      "text": " So, in order if you look at the stack, so there is a stack for in order a and then in",
+      "start_time": 150.0,
+      "end_time": 157.9
+    },
+    {
+      "text": " order b is called.",
+      "start_time": 157.9,
+      "end_time": 158.9
+    },
+    {
+      "text": " So, there is a stack frame for in order b and then in order b in turn will call in order",
+      "start_time": 158.9,
+      "end_time": 168.24
+    },
+    {
+      "text": " c ok.",
+      "start_time": 168.24,
+      "end_time": 169.24
+    },
+    {
+      "text": " So, there is a stack frame for in order c, in order c is created ok.",
+      "start_time": 169.24,
+      "end_time": 177.12
+    },
+    {
+      "text": "",
+      "start_time": 177.12,
+      "end_time": 150.0
+    },
+    {
+      "text": " So, this is how the stack frames are.",
+      "start_time": 152.88,
+      "end_time": null
+    },
+    {
+      "text": " There is an implicit stack that is being used here.",
+      "start_time": 180.0,
+      "end_time": 184.8
+    },
+    {
+      "text": " This is what happened in the recursive traversal.",
+      "start_time": 184.8,
+      "end_time": 188.4
+    },
+    {
+      "text": " Now the same if you look at the iterative traversal, what did we do?",
+      "start_time": 188.4,
+      "end_time": 195.64
+    },
+    {
+      "text": " The tree is given what the iterative traversal says.",
+      "start_time": 195.64,
+      "end_time": 201.52
+    },
+    {
+      "text": "",
+      "start_time": 201.52,
+      "end_time": 180.0
+    },
+    {
+      "text": " If you have a tree like this, say you have a tree like this, you have a tree like this,",
+      "start_time": 187.0,
+      "end_time": null
+    },
+    {
+      "text": " to start from this go on to the deepest, ok, keep traversed to the left. So, as in when",
+      "start_time": 210.0,
+      "end_time": 218.12
+    },
+    {
+      "text": " you are traversing because your handler to the tree is through this, you are using an",
+      "start_time": 218.12,
+      "end_time": 223.4
+    },
+    {
+      "text": " explicit stack when you are using a iterative traversal and then as in when you go you lose",
+      "start_time": 223.4,
+      "end_time": 230.56
+    },
+    {
+      "text": " track of the address. So, we were storing address of A on the stack then when we went",
+      "start_time": 230.56,
+      "end_time": 236.68
+    },
+    {
+      "text": "",
+      "start_time": 236.68,
+      "end_time": 210.0
+    },
+    {
+      "text": " to the left side we store address of b and then we will get the address of b.",
+      "start_time": 213.36,
+      "end_time": null
+    },
+    {
+      "text": " has told address of C, then its left side is null. So, we know that the top most element",
+      "start_time": 240.0,
+      "end_time": 246.04
+    },
+    {
+      "text": " left is done. So, we popped this and printed C, then we had to push suppose if you had",
+      "start_time": 246.04,
+      "end_time": 252.88
+    },
+    {
+      "text": " one more here. So, after popping out this, popping out this, we pushed address of f",
+      "start_time": 252.88,
+      "end_time": 261.36
+    },
+    {
+      "text": " onto the stack, address of f onto the stack to the right side of C and then we continued",
+      "start_time": 261.36,
+      "end_time": 269.04
+    },
+    {
+      "text": "",
+      "start_time": 269.04,
+      "end_time": 240.0
+    },
+    {
+      "text": " Thank you. Thank you.",
+      "start_time": 241.0,
+      "end_time": 242.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 242.0,
+      "end_time": 243.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 243.0,
+      "end_time": 244.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 244.0,
+      "end_time": 245.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 245.0,
+      "end_time": 246.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 246.0,
+      "end_time": 247.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 247.0,
+      "end_time": 248.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 248.0,
+      "end_time": 249.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 249.0,
+      "end_time": 250.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 250.0,
+      "end_time": 251.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 251.0,
+      "end_time": 252.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 252.0,
+      "end_time": 253.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 253.0,
+      "end_time": 254.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 254.0,
+      "end_time": 255.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 255.0,
+      "end_time": 256.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 256.0,
+      "end_time": 257.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 257.0,
+      "end_time": 258.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 258.0,
+      "end_time": 259.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 259.0,
+      "end_time": 260.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 260.0,
+      "end_time": 261.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 261.0,
+      "end_time": 262.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 262.0,
+      "end_time": 263.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 263.0,
+      "end_time": 264.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 264.0,
+      "end_time": 265.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 265.0,
+      "end_time": 266.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 266.0,
+      "end_time": 267.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 267.0,
+      "end_time": 268.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 268.0,
+      "end_time": 269.0
+    },
+    {
+      "text": " entire process. So, here again f is bought and then printed, then b is printed. So, it",
+      "start_time": 270.0,
+      "end_time": 278.08
+    },
+    {
+      "text": " was easier for us to go back from this step to back to this because we were able to capture",
+      "start_time": 278.08,
+      "end_time": 284.16
+    },
+    {
+      "text": " these addresses. Otherwise, once you go deep down into the tree let us say, then how do",
+      "start_time": 284.16,
+      "end_time": 290.4
+    },
+    {
+      "text": " we go back to these various levels? I have already traversed. So, we were explicitly",
+      "start_time": 290.4,
+      "end_time": 294.8
+    },
+    {
+      "text": "",
+      "start_time": 294.8,
+      "end_time": 270.0
+    },
+    {
+      "text": " making use of this tag to store these addresses as in when I am traversing through the tree.",
+      "start_time": 275.04,
+      "end_time": null
+    },
+    {
+      "text": " if you wanted an iterative in order traversal. In the recursive traversal, automatically a",
+      "start_time": 300.0,
+      "end_time": 306.24
+    },
+    {
+      "text": " stack is created. In the iterative in order traversal, these stack frames had to be created by",
+      "start_time": 306.24,
+      "end_time": 313.76
+    },
+    {
+      "text": " the programmer and then the pushing of these various addresses were happening.",
+      "start_time": 313.76,
+      "end_time": 319.6
+    },
+    {
+      "text": " Now, we know that recursion versus iteration if you look at, iterative programs are machine",
+      "start_time": 320.96,
+      "end_time": 328.8
+    },
+    {
+      "text": "",
+      "start_time": 328.8,
+      "end_time": 300.0
+    },
+    {
+      "text": " efficient recursive.",
+      "start_time": 301.2,
+      "end_time": null
+    },
+    {
+      "text": " are program of efficient, but in the case of trees the recursive code was equally efficient",
+      "start_time": 330.0,
+      "end_time": 336.42
+    },
+    {
+      "text": " in the sense we did not have much of the variables and it is a simple three line code.",
+      "start_time": 336.42,
+      "end_time": 341.5
+    },
+    {
+      "text": " The iterative traversal made use of explicit stack especially for this program in order",
+      "start_time": 341.5,
+      "end_time": 347.62
+    },
+    {
+      "text": " traversal and recursive program made use of implicit stack. Implicit stack activity is",
+      "start_time": 347.62,
+      "end_time": 353.62
+    },
+    {
+      "text": "",
+      "start_time": 353.62,
+      "end_time": 330.0
+    },
+    {
+      "text": " always faster than the explicit stacking activity because we had to create a stack.",
+      "start_time": 335.84,
+      "end_time": null
+    },
+    {
+      "text": " The implicit stack would be on the architecture itself, the hardware support can be made use",
+      "start_time": 360.0,
+      "end_time": 365.28
+    },
+    {
+      "text": " of to make the implicit stacking faster than an explicit stack activity which the programmer",
+      "start_time": 365.28,
+      "end_time": 371.84
+    },
+    {
+      "text": " creates because this is always on the RAM.",
+      "start_time": 371.84,
+      "end_time": 374.6
+    },
+    {
+      "text": " Now, how do we still go ahead with iterative traversal and avoid this stacking activity,",
+      "start_time": 374.6,
+      "end_time": 381.84
+    },
+    {
+      "text": " that is the thought process that we are bringing in.",
+      "start_time": 381.84,
+      "end_time": 384.68
+    },
+    {
+      "text": "",
+      "start_time": 384.68,
+      "end_time": 360.0
+    },
+    {
+      "text": " We are saying in this special case, iterative traversal is time consuming because of the",
+      "start_time": 367.0,
+      "end_time": null
+    },
+    {
+      "text": " Because we are making use of an explicit stack here.",
+      "start_time": 390.0,
+      "end_time": 393.64
+    },
+    {
+      "text": " So, this explicit stacking activity is more expensive than an implicit stacking activity.",
+      "start_time": 393.64,
+      "end_time": 401.08
+    },
+    {
+      "text": " Therefore, is there any way of traversing the binary surgery without this stacking activity",
+      "start_time": 401.08,
+      "end_time": 409.4
+    },
+    {
+      "text": " that we are talking about.",
+      "start_time": 409.4,
+      "end_time": 410.8
+    },
+    {
+      "text": " So, how do we go about doing that?",
+      "start_time": 410.8,
+      "end_time": 413.16
+    },
+    {
+      "text": " This is what we are going to achieve in a topic called as the threaded binary search",
+      "start_time": 413.16,
+      "end_time": 418.92
+    },
+    {
+      "text": " trees.",
+      "start_time": 418.92,
+      "end_time": 419.92
+    },
+    {
+      "text": "",
+      "start_time": 419.92,
+      "end_time": 390.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 391.0,
+      "end_time": null
+    },
+    {
+      "text": " Let us look at the threaded binary search trees.",
+      "start_time": 420.0,
+      "end_time": 423.36
+    },
+    {
+      "text": " So, as I said the motivation is iterative in order traversal requires an explicit stack",
+      "start_time": 423.36,
+      "end_time": 430.28
+    },
+    {
+      "text": " and it is costly.",
+      "start_time": 430.28,
+      "end_time": 431.28
+    },
+    {
+      "text": " So, since we lose track of our dosers as and when we navigate, so no dosers were stacked.",
+      "start_time": 431.28,
+      "end_time": 437.6
+    },
+    {
+      "text": " But if this can be done using other less expensive mechanism, we can eliminate the use of explicit",
+      "start_time": 437.6,
+      "end_time": 443.36
+    },
+    {
+      "text": " stack.",
+      "start_time": 443.36,
+      "end_time": 444.36
+    },
+    {
+      "text": "",
+      "start_time": 444.36,
+      "end_time": 420.0
+    },
+    {
+      "text": " So, all that is required is to make some small structural modifications to the structure",
+      "start_time": 427.0,
+      "end_time": null
+    },
+    {
+      "text": " be carried out on the binary tree that will solve the above problem of explicit stacking.",
+      "start_time": 450.0,
+      "end_time": 454.92
+    },
+    {
+      "text": " So, let us look at how this can be achieved.",
+      "start_time": 454.92,
+      "end_time": 459.12
+    },
+    {
+      "text": " So, here we have seen that in the tree the leaf pointers both left and right pointers",
+      "start_time": 459.12,
+      "end_time": 465.8
+    },
+    {
+      "text": " are null.",
+      "start_time": 465.8,
+      "end_time": 466.8
+    },
+    {
+      "text": " Do you agree with me?",
+      "start_time": 466.8,
+      "end_time": 467.8
+    },
+    {
+      "text": " So, when you have created a tree the leaves left and right pointers both will be null",
+      "start_time": 467.8,
+      "end_time": 472.84
+    },
+    {
+      "text": " because they are not having the children.",
+      "start_time": 472.84,
+      "end_time": 475.28
+    },
+    {
+      "text": "",
+      "start_time": 475.28,
+      "end_time": 450.0
+    },
+    {
+      "text": " So, now why cannot we make use of those pointers?",
+      "start_time": 454.56,
+      "end_time": null
+    },
+    {
+      "text": " instead of making them null, why cannot they point to their successors or predecessors.",
+      "start_time": 480.0,
+      "end_time": 485.92
+    },
+    {
+      "text": " So, if you make use of the nodes, leaf nodes, right side pointer to point to its in order",
+      "start_time": 485.92,
+      "end_time": 494.0
+    },
+    {
+      "text": " successor, then such a tree is called as threaded tree, specifically since the right",
+      "start_time": 494.0,
+      "end_time": 500.24
+    },
+    {
+      "text": " pointer is being used, it is called as a right in threaded binary tree.",
+      "start_time": 500.24,
+      "end_time": 505.12
+    },
+    {
+      "text": "",
+      "start_time": 505.12,
+      "end_time": 480.0
+    },
+    {
+      "text": " if in case you use a left pointer it will be called as a left in threaded leak.",
+      "start_time": 484.8,
+      "end_time": null
+    },
+    {
+      "text": " is a clear and this left pointer will be pointing to its inorder predecessor. If both pointers",
+      "start_time": 510.0,
+      "end_time": 517.16
+    },
+    {
+      "text": " are used then that such a tree is called as a in threaded binary tree. So, this is the",
+      "start_time": 517.16,
+      "end_time": 522.92
+    },
+    {
+      "text": " concept of a threaded binary tree. Now, let us look at a right in threaded binary tree.",
+      "start_time": 522.92,
+      "end_time": 529.64
+    },
+    {
+      "text": " So, here this is the in or if you do the in order traversal of such a tree, you know that",
+      "start_time": 529.64,
+      "end_time": 536.2
+    },
+    {
+      "text": "",
+      "start_time": 536.2,
+      "end_time": 510.0
+    },
+    {
+      "text": " the sequence in which the nodes are going to be traversed is A1, A2, A3, A4, A5, A5,",
+      "start_time": 517.0,
+      "end_time": null
+    },
+    {
+      "text": " first and then B and then C and then D and then E and then F then G and then H and then",
+      "start_time": 540.0,
+      "end_time": 547.24
+    },
+    {
+      "text": " I. This is how the nodes will be traversed in",
+      "start_time": 547.24,
+      "end_time": 551.6
+    },
+    {
+      "text": " in order we know that. So, now how do we achieve that? So, what I am going to do is nodes with",
+      "start_time": 551.6,
+      "end_time": 558.68
+    },
+    {
+      "text": " right pointer here are A, C, E, H and then I. These are the nodes with right pointers",
+      "start_time": 558.68,
+      "end_time": 566.56
+    },
+    {
+      "text": "",
+      "start_time": 566.56,
+      "end_time": 540.0
+    },
+    {
+      "text": " right now being null because b has a right, d has a right.",
+      "start_time": 543.44,
+      "end_time": null
+    },
+    {
+      "text": " G also has a right child, F has a right child. So, the right side nodes which are having",
+      "start_time": 570.0,
+      "end_time": 576.48
+    },
+    {
+      "text": " the nodes which are having the right pointer null are these nodes. So, what I am going",
+      "start_time": 576.48,
+      "end_time": 581.24
+    },
+    {
+      "text": " to do is use these nodes for storing the in order successor except the last one ok.",
+      "start_time": 581.24,
+      "end_time": 588.24
+    },
+    {
+      "text": " So, I know that the in order successor of A is B. So, in A is right side pointer because",
+      "start_time": 588.24,
+      "end_time": 595.88
+    },
+    {
+      "text": "",
+      "start_time": 595.88,
+      "end_time": 570.0
+    },
+    {
+      "text": " once I come into this position how do I go back becomes difficult right.",
+      "start_time": 574.0,
+      "end_time": null
+    },
+    {
+      "text": " See here is an example of a tree with only 3 levels, I may have some 10 levels, I mean",
+      "start_time": 600.0,
+      "end_time": 605.12
+    },
+    {
+      "text": " how many pointers explicitly I can have in 10 pointers or 20 pointers, you never know",
+      "start_time": 605.12,
+      "end_time": 611.48
+    },
+    {
+      "text": " the depth of the tree right.",
+      "start_time": 611.48,
+      "end_time": 613.12
+    },
+    {
+      "text": " So, you cannot use an additional pointer because if you are thinking that we cannot",
+      "start_time": 613.12,
+      "end_time": 617.72
+    },
+    {
+      "text": " use some previous pointers.",
+      "start_time": 617.72,
+      "end_time": 619.24
+    },
+    {
+      "text": " So, how many such we can use if the depth is really high.",
+      "start_time": 619.24,
+      "end_time": 622.64
+    },
+    {
+      "text": " So, that is the reason why we are saying that instead of using some external pointers as",
+      "start_time": 622.64,
+      "end_time": 628.08
+    },
+    {
+      "text": "",
+      "start_time": 628.08,
+      "end_time": 600.0
+    },
+    {
+      "text": " and when I am traversing I will just.",
+      "start_time": 601.88,
+      "end_time": null
+    },
+    {
+      "text": " keep traversing I am not going to store their addresses at all.",
+      "start_time": 630.0,
+      "end_time": 633.36
+    },
+    {
+      "text": " Now, I come to A, when I come to A, I print the A because there is no left side of A that",
+      "start_time": 633.36,
+      "end_time": 639.52
+    },
+    {
+      "text": " is fine.",
+      "start_time": 639.52,
+      "end_time": 640.52
+    },
+    {
+      "text": " But now how do I go back to the route back I have to backtrack right.",
+      "start_time": 640.52,
+      "end_time": 644.08
+    },
+    {
+      "text": " So, I have to go back to the route of or the parent of A here, how do I do that?",
+      "start_time": 644.08,
+      "end_time": 650.08
+    },
+    {
+      "text": " If you have already gone past this then there is no way to go back.",
+      "start_time": 650.08,
+      "end_time": 653.28
+    },
+    {
+      "text": " So, that is when I am going to use the right side pointer of A because it is anyway not",
+      "start_time": 653.28,
+      "end_time": 657.84
+    },
+    {
+      "text": "",
+      "start_time": 657.84,
+      "end_time": 630.0
+    },
+    {
+      "text": " point to the right side and you can see that the right side is the same as the left side.",
+      "start_time": 637.0,
+      "end_time": null
+    },
+    {
+      "text": " you know that the in order successor of A will be B in the case this has no right side",
+      "start_time": 660.0,
+      "end_time": 665.4
+    },
+    {
+      "text": " child and that as you can see here B is the in order successor for A. So, I am going to",
+      "start_time": 665.4,
+      "end_time": 670.76
+    },
+    {
+      "text": " use this right side pointer to make it point to B ok.",
+      "start_time": 670.76,
+      "end_time": 674.4
+    },
+    {
+      "text": " Now, similarly C's in order successor will be D. So, I am going to make it point to this.",
+      "start_time": 674.4,
+      "end_time": 679.8
+    },
+    {
+      "text": " E's in order successor will be F and then head's in order successor will be I. So,",
+      "start_time": 679.8,
+      "end_time": 686.04
+    },
+    {
+      "text": "",
+      "start_time": 686.04,
+      "end_time": 660.0
+    },
+    {
+      "text": " This is how I am going to create threads and then keep the .",
+      "start_time": 663.64,
+      "end_time": null
+    },
+    {
+      "text": " 3 so that when I traverse down level A, it is possible to print A and then since there",
+      "start_time": 690.0,
+      "end_time": 697.68
+    },
+    {
+      "text": " is no right side 3 for A, I go back one level up and print B and then go after printing",
+      "start_time": 697.68,
+      "end_time": 703.36
+    },
+    {
+      "text": " B you have to go to the right side and start all over traversal, then I come to C, print",
+      "start_time": 703.36,
+      "end_time": 708.8
+    },
+    {
+      "text": " C, then I go to D and then print D like that as usual you go.",
+      "start_time": 708.8,
+      "end_time": 713.32
+    },
+    {
+      "text": "",
+      "start_time": 713.32,
+      "end_time": 690.0
+    },
+    {
+      "text": " So, when I come to sorry when I come to A, I am not losing track of B because I have a",
+      "start_time": 696.48,
+      "end_time": 697.48
+    },
+    {
+      "text": " .",
+      "start_time": 697.48,
+      "end_time": 698.48
+    },
+    {
+      "text": " thread here, through the threads path I am going to point to B and then go over there.",
+      "start_time": 720.0,
+      "end_time": 726.48
+    },
+    {
+      "text": " But please note that in this case the right side of A, that pointer has been used up to",
+      "start_time": 726.48,
+      "end_time": 733.16
+    },
+    {
+      "text": " point to an address. Now, the question is the right side pointer in this case for example,",
+      "start_time": 733.16,
+      "end_time": 739.56
+    },
+    {
+      "text": " the right side pointer is actually pointing to a child, if you look at B, the right side",
+      "start_time": 739.56,
+      "end_time": 744.0
+    },
+    {
+      "text": " pointer is pointing to D, D is pointing to E. Now, this address may be 200, B's address",
+      "start_time": 744.0,
+      "end_time": 749.52
+    },
+    {
+      "text": "",
+      "start_time": 749.52,
+      "end_time": 720.0
+    },
+    {
+      "text": " maybe",
+      "start_time": 722.24,
+      "end_time": null
+    },
+    {
+      "text": " Now, by just inspecting the addresses, how do we know that whether it is the path of",
+      "start_time": 750.0,
+      "end_time": 757.24
+    },
+    {
+      "text": " the thread or is it the actual child path, ok, that understanding we should have.",
+      "start_time": 757.24,
+      "end_time": 762.44
+    },
+    {
+      "text": " Because the way we are going to handle if it is a right thread, it is like a new tree",
+      "start_time": 762.44,
+      "end_time": 766.56
+    },
+    {
+      "text": " and we start the in order traversal all over.",
+      "start_time": 766.56,
+      "end_time": 769.48
+    },
+    {
+      "text": " But if it is a thread, we just print it, is not it?",
+      "start_time": 769.48,
+      "end_time": 772.16
+    },
+    {
+      "text": " So, let me repeat FBA, I come to that, A is print 10.",
+      "start_time": 772.16,
+      "end_time": 777.24
+    },
+    {
+      "text": "",
+      "start_time": 777.24,
+      "end_time": 750.0
+    },
+    {
+      "text": " If you had a tree here to the right side of here, I would have.",
+      "start_time": 752.72,
+      "end_time": null
+    },
+    {
+      "text": " gone in the trees path and start the inorder all over. But in this case since A is having",
+      "start_time": 780.0,
+      "end_time": 784.92
+    },
+    {
+      "text": " a right thread I just print B. Now, after printing B it is not having a thread, but",
+      "start_time": 784.92,
+      "end_time": 789.88
+    },
+    {
+      "text": " it is having a separate subtree here which for which I will start the inorder traversal",
+      "start_time": 789.88,
+      "end_time": 795.32
+    },
+    {
+      "text": " all over and I come to D and then go back to the go to the D past left side and then",
+      "start_time": 795.32,
+      "end_time": 801.64
+    },
+    {
+      "text": " do that traversal and then print C and then D and then E and then come back and then go",
+      "start_time": 801.64,
+      "end_time": 808.52
+    },
+    {
+      "text": "",
+      "start_time": 808.52,
+      "end_time": 780.0
+    },
+    {
+      "text": " to F.",
+      "start_time": 780.64,
+      "end_time": null
+    },
+    {
+      "text": " This is how I have to do that. So, now the question that I am trying to pose in front",
+      "start_time": 810.0,
+      "end_time": 816.96
+    },
+    {
+      "text": " of you is if you have the right pointer pointing to something how do I know whether the right",
+      "start_time": 816.96,
+      "end_time": 822.96
+    },
+    {
+      "text": " pointer is pointing to a back thread or is it pointing to a new tree altogether which is a",
+      "start_time": 822.96,
+      "end_time": 829.92
+    },
+    {
+      "text": " child of that particular node. So, how do I differentiate? In order to do that we have to",
+      "start_time": 829.92,
+      "end_time": 835.28
+    },
+    {
+      "text": "",
+      "start_time": 835.28,
+      "end_time": 810.0
+    },
+    {
+      "text": " to again keep an additional field maybe like an arthrid flag field.",
+      "start_time": 814.64,
+      "end_time": null
+    },
+    {
+      "text": " which will tell us whether the right pointer in this node is it pointing to a child or",
+      "start_time": 840.0,
+      "end_time": 845.48
+    },
+    {
+      "text": " is it pointing to a back thread.",
+      "start_time": 845.48,
+      "end_time": 848.24
+    },
+    {
+      "text": " Is it a thread pointer or is it a child pointer?",
+      "start_time": 848.24,
+      "end_time": 851.76
+    },
+    {
+      "text": " That information has to be explicitly stored in order to say whether A is having a right",
+      "start_time": 851.76,
+      "end_time": 857.44
+    },
+    {
+      "text": " thread or is it having a child.",
+      "start_time": 857.44,
+      "end_time": 859.36
+    },
+    {
+      "text": " So that is the additional information that one has to capture in order to make sure that",
+      "start_time": 859.36,
+      "end_time": 865.44
+    },
+    {
+      "text": " the understanding of the right pointer is clear.",
+      "start_time": 865.44,
+      "end_time": 868.56
+    },
+    {
+      "text": "",
+      "start_time": 868.56,
+      "end_time": 840.0
+    },
+    {
+      "text": " Now in the case of left-in thread.",
+      "start_time": 841.48,
+      "end_time": null
+    },
+    {
+      "text": " the pointers will be pointing to their in order predecessors. So, which are those nodes",
+      "start_time": 870.0,
+      "end_time": 875.96
+    },
+    {
+      "text": " with left point of being null. So, as usual we have ASEE and then GH in this case. So,",
+      "start_time": 875.96,
+      "end_time": 882.4
+    },
+    {
+      "text": " you can see that the leftmost will not be pointing to anything except that all other",
+      "start_time": 882.4,
+      "end_time": 886.76
+    },
+    {
+      "text": " nodes are pointing to the predecessors. C's predecessor will be B and E's predecessor",
+      "start_time": 886.76,
+      "end_time": 895.2
+    },
+    {
+      "text": "",
+      "start_time": 895.2,
+      "end_time": 870.0
+    },
+    {
+      "text": " will be D and so on. This is the concept of a left hand threaded binary.",
+      "start_time": 874.8,
+      "end_time": null
+    },
+    {
+      "text": " tree. So, these are the ways in which the threads are being created here ok.",
+      "start_time": 900.0,
+      "end_time": 905.88
+    },
+    {
+      "text": " So, in threaded binary tree as we said we will have pointers both the pointers used up in",
+      "start_time": 905.88,
+      "end_time": 912.44
+    },
+    {
+      "text": " the leaves you can see that the leftmost nodes left pointer is not used right most pointers",
+      "start_time": 912.44,
+      "end_time": 920.76
+    },
+    {
+      "text": " nodes right pointers not used otherwise all other nodes left and right pointer see its",
+      "start_time": 920.76,
+      "end_time": 925.92
+    },
+    {
+      "text": "",
+      "start_time": 925.92,
+      "end_time": 900.0
+    },
+    {
+      "text": " right pointer is used up and this fellow's left pointer is",
+      "start_time": 904.08,
+      "end_time": null
+    },
+    {
+      "text": " used, this nodes left is also used, right is also used, left is used, right point is",
+      "start_time": 930.0,
+      "end_time": 936.72
+    },
+    {
+      "text": " used, left is used and right point is used. Such a tree is called as a threaded binary",
+      "start_time": 936.72,
+      "end_time": 942.16
+    },
+    {
+      "text": " tree. Now, the question is what was our root problem? I mean if you have threads like this",
+      "start_time": 942.16,
+      "end_time": 947.92
+    },
+    {
+      "text": " as in when we are traversing there is no need to have a explicit stack that we have to ascertain.",
+      "start_time": 947.92,
+      "end_time": 954.08
+    },
+    {
+      "text": " But how do we create such a tree? I mean such a tree first of all has to be in place, you",
+      "start_time": 954.08,
+      "end_time": 959.24
+    },
+    {
+      "text": "",
+      "start_time": 959.24,
+      "end_time": 930.0
+    },
+    {
+      "text": " to create a new world.",
+      "start_time": 931.0,
+      "end_time": null
+    },
+    {
+      "text": " threads is not it? So, let us look at the right in threaded binary trees creation.",
+      "start_time": 960.0,
+      "end_time": 965.24
+    },
+    {
+      "text": " We will look at right in threaded binary trees similarly, we can follow the left in threaded",
+      "start_time": 965.24,
+      "end_time": 971.04
+    },
+    {
+      "text": " binary trees. Now, in this case as I said the node will have information field ok, this",
+      "start_time": 971.04,
+      "end_time": 977.36
+    },
+    {
+      "text": " is dynamic implementation that I am talking about. It has a left pointer to point to the",
+      "start_time": 977.36,
+      "end_time": 982.08
+    },
+    {
+      "text": " left child and a right pointer in addition to that there is another flag field called",
+      "start_time": 982.08,
+      "end_time": 987.52
+    },
+    {
+      "text": "",
+      "start_time": 987.52,
+      "end_time": 960.0
+    },
+    {
+      "text": " as a R thread field which will say true.",
+      "start_time": 962.48,
+      "end_time": null
+    },
+    {
+      "text": " if the right pointer is a thread, otherwise it will be set to 0, null in this case is",
+      "start_time": 990.0,
+      "end_time": 996.8
+    },
+    {
+      "text": " basically 0 and non-null in the case if it is a pointing to a child. So, that is the",
+      "start_time": 996.8,
+      "end_time": 1005.76
+    },
+    {
+      "text": " meaning of null and non-null here it is actually 1 or 0 or thread is 1 or thread is 0. So,",
+      "start_time": 1005.76,
+      "end_time": 1014.84
+    },
+    {
+      "text": "",
+      "start_time": 1014.84,
+      "end_time": 990.0
+    },
+    {
+      "text": " So now this is how the node structure would be. Now in such a binary search, we can see that the node structure is not the same as the",
+      "start_time": 993.08,
+      "end_time": 997.0
+    },
+    {
+      "text": " node structure.",
+      "start_time": 997.0,
+      "end_time": 998.0
+    },
+    {
+      "text": " tree implementation with threads, how do we create a node?",
+      "start_time": 1020.0,
+      "end_time": 1024.72
+    },
+    {
+      "text": " Normally the creation of the node will go as usual like a malloc and then once a node",
+      "start_time": 1024.72,
+      "end_time": 1029.52
+    },
+    {
+      "text": " is allocated its information field is stuffed and then because a new node in the binary",
+      "start_time": 1029.52,
+      "end_time": 1034.96
+    },
+    {
+      "text": " surgery always goes as a leaf node its left end is set to null, right side is set to null",
+      "start_time": 1034.96,
+      "end_time": 1041.64
+    },
+    {
+      "text": " and the temp's right thread is set to 1 and we have to return the temporary node because",
+      "start_time": 1041.64,
+      "end_time": 1049.52
+    },
+    {
+      "text": "",
+      "start_time": 1049.52,
+      "end_time": 1020.0
+    },
+    {
+      "text": " You know that",
+      "start_time": 1020.5,
+      "end_time": null
+    },
+    {
+      "text": " this new node will capture the right thread as 1. So, it will go into the leaf position",
+      "start_time": 1050.0,
+      "end_time": 1057.62
+    },
+    {
+      "text": " and its right pointer will be set at a later point once we finish the traversal. But initial",
+      "start_time": 1057.62,
+      "end_time": 1062.48
+    },
+    {
+      "text": " creation I will set the left and right to be null. So, that is how create node 57 will",
+      "start_time": 1062.48,
+      "end_time": 1069.52
+    },
+    {
+      "text": " happen. 57 is filled left is set to null right is set to null right thread right now it is",
+      "start_time": 1069.52,
+      "end_time": 1075.28
+    },
+    {
+      "text": "",
+      "start_time": 1075.28,
+      "end_time": 1050.0
+    },
+    {
+      "text": " set to 1 ok and then we return the address 2000.",
+      "start_time": 1054.22,
+      "end_time": null
+    },
+    {
+      "text": " So, now a node is created with armthread set to true, 57 is created ok.",
+      "start_time": 1080.0,
+      "end_time": 1087.12
+    },
+    {
+      "text": " Next I want to create 25 ok.",
+      "start_time": 1087.12,
+      "end_time": 1089.24
+    },
+    {
+      "text": " So, similarly the 25 is set, now 25 is less than 57.",
+      "start_time": 1089.24,
+      "end_time": 1094.64
+    },
+    {
+      "text": " So, I create that to the left side of it and since I am creating to the left side obviously,",
+      "start_time": 1094.64,
+      "end_time": 1101.48
+    },
+    {
+      "text": " the any node which is created to the left side of a given node the in the in order successor",
+      "start_time": 1101.48,
+      "end_time": 1108.08
+    },
+    {
+      "text": "",
+      "start_time": 1108.08,
+      "end_time": 1080.0
+    },
+    {
+      "text": " that node will be the .",
+      "start_time": 1081.92,
+      "end_time": null
+    },
+    {
+      "text": " 57 will be the in order successor for 25 ok. So, now, you observe R thread of 25 is created.",
+      "start_time": 1110.0,
+      "end_time": 1119.24
+    },
+    {
+      "text": " So, it is pointing to this node R thread is adjusted and then we set the 25 as a left",
+      "start_time": 1119.24,
+      "end_time": 1131.96
+    },
+    {
+      "text": " side. So, how do we the set left function work? So, set left to the left side of Q ok.",
+      "start_time": 1131.96,
+      "end_time": 1138.32
+    },
+    {
+      "text": "",
+      "start_time": 1138.32,
+      "end_time": 1110.0
+    },
+    {
+      "text": " So, to do that.",
+      "start_time": 1111.68,
+      "end_time": null
+    },
+    {
+      "text": " we create the node for the new node this node is created and once that is created its address",
+      "start_time": 1140.0,
+      "end_time": 1146.24
+    },
+    {
+      "text": " which is 400 ok, Q's left side is set as that Q's left side is set to 10 and then",
+      "start_time": 1146.24,
+      "end_time": 1153.36
+    },
+    {
+      "text": " temp's right side, temp's right side is set to this Q itself ok and then we make the thread as",
+      "start_time": 1153.36,
+      "end_time": 1161.2
+    },
+    {
+      "text": "",
+      "start_time": 1161.2,
+      "end_time": 1140.0
+    },
+    {
+      "text": " true and then we have the address 1200 where 28 is created.",
+      "start_time": 1148.8,
+      "end_time": null
+    },
+    {
+      "text": " there is a next information and 28's right thread has to be 57 because 25 has to go to",
+      "start_time": 1170.0,
+      "end_time": 1179.72
+    },
+    {
+      "text": " the right side of 28 correct, first 28 is less than 57, 28 is greater than 25.",
+      "start_time": 1179.72,
+      "end_time": 1186.76
+    },
+    {
+      "text": " So, it has to be set to the right side of 25.",
+      "start_time": 1186.76,
+      "end_time": 1189.6
+    },
+    {
+      "text": " So, in order to set the 28 to the right side of 25, what all we have to do?",
+      "start_time": 1189.6,
+      "end_time": 1196.16
+    },
+    {
+      "text": "",
+      "start_time": 1196.16,
+      "end_time": 1170.0
+    },
+    {
+      "text": " it 28 since the 20th century.",
+      "start_time": 1173.84,
+      "end_time": null
+    },
+    {
+      "text": " 28 is coming as a right side of 25, you know that this is already pointing to this thread,",
+      "start_time": 1200.0,
+      "end_time": 1208.0
+    },
+    {
+      "text": " this fellow this link will be now set as this link ok, whatever this was pointing, now this",
+      "start_time": 1208.0,
+      "end_time": 1213.84
+    },
+    {
+      "text": " will point to that and this right side will be made as child ok.",
+      "start_time": 1213.84,
+      "end_time": 1218.68
+    },
+    {
+      "text": " So that is what we have to do, so that is disconnected ok, whatever 25 was pointing",
+      "start_time": 1218.68,
+      "end_time": 1224.64
+    },
+    {
+      "text": "",
+      "start_time": 1224.64,
+      "end_time": 1200.0
+    },
+    {
+      "text": " will be made by 28 pointing and then 25's right side will be the new child.",
+      "start_time": 1205.36,
+      "end_time": null
+    },
+    {
+      "text": " and 25 R thread is 0 and then 28 R thread is positive. So, that is how the setting of the",
+      "start_time": 1230.0,
+      "end_time": 1239.64
+    },
+    {
+      "text": " right side is going to be done. So, let us look at the code. So, code wise let us see",
+      "start_time": 1239.64,
+      "end_time": 1244.56
+    },
+    {
+      "text": " what happened. So, you create a node 28 with all these value and then I temp write, temp",
+      "start_time": 1244.56,
+      "end_time": 1252.4
+    },
+    {
+      "text": " write is set to Q's write whatever Q is pointing to. So, that happens and then we have Q write",
+      "start_time": 1252.4,
+      "end_time": 1259.32
+    },
+    {
+      "text": "",
+      "start_time": 1259.32,
+      "end_time": 1230.0
+    },
+    {
+      "text": " pointing to.",
+      "start_time": 1230.64,
+      "end_time": null
+    },
+    {
+      "text": " m and then q write is q R thread is set to 0. This is how the new node is going to be",
+      "start_time": 1260.0,
+      "end_time": 1266.6
+    },
+    {
+      "text": " created in a write in threaded binary.",
+      "start_time": 1266.6,
+      "end_time": 1269.72
+    },
+    {
+      "text": " Now, after having created such a threaded tree, let us see how the traversal is going",
+      "start_time": 1269.72,
+      "end_time": 1277.32
+    },
+    {
+      "text": " to happen. So, I am going to start the traversal by setting q to null and two pointers I will",
+      "start_time": 1277.32,
+      "end_time": 1285.4
+    },
+    {
+      "text": "",
+      "start_time": 1285.4,
+      "end_time": 1260.0
+    },
+    {
+      "text": " values. So, we will go out of the loop and Q will stay here ok.",
+      "start_time": 1264.56,
+      "end_time": null
+    },
+    {
+      "text": " So, while p naught null I start from the root. So, I make the p point to the root and q is",
+      "start_time": 1290.0,
+      "end_time": 1297.36
+    },
+    {
+      "text": " said to null. So, while q is null and then while p naught null I keep traversing q will",
+      "start_time": 1297.36,
+      "end_time": 1303.28
+    },
+    {
+      "text": " come to the place of p and p will move forward to the left. So, I deep down I go to the left",
+      "start_time": 1303.28,
+      "end_time": 1311.16
+    },
+    {
+      "text": " side and once p is out of the scope p has become null. So, now, when once p has become",
+      "start_time": 1311.16,
+      "end_time": 1318.56
+    },
+    {
+      "text": "",
+      "start_time": 1318.56,
+      "end_time": 1290.0
+    },
+    {
+      "text": " null it is time .",
+      "start_time": 1291.44,
+      "end_time": null
+    },
+    {
+      "text": " have gone to the deepest left side. So, what I need to do is to print the value of the",
+      "start_time": 1320.0,
+      "end_time": 1326.28
+    },
+    {
+      "text": " node which is pointed by Q. So, if Q is not null I print the information. After printing",
+      "start_time": 1326.28,
+      "end_time": 1332.2
+    },
+    {
+      "text": " where do I traverse I have to go to the right side of Q. Now, in this case I do not know",
+      "start_time": 1332.2,
+      "end_time": 1336.6
+    },
+    {
+      "text": " whether the right side is a thread or whether it is a new tree altogether. So, I will set",
+      "start_time": 1336.6,
+      "end_time": 1342.0
+    },
+    {
+      "text": "",
+      "start_time": 1342.0,
+      "end_time": 1320.0
+    },
+    {
+      "text": " the P to right side ok. So, now, what I do is 22 is printed.",
+      "start_time": 1328.0,
+      "end_time": null
+    },
+    {
+      "text": " P is set to the right side of Q. So, when I set this to right side, now I do not know",
+      "start_time": 1350.0,
+      "end_time": 1356.76
+    },
+    {
+      "text": " whether Q is the thread path or is it the new tree path. If the Q is a thread path, if",
+      "start_time": 1356.76,
+      "end_time": 1364.64
+    },
+    {
+      "text": " Q is a thread path and P is pointing to some nodes, then it is time for me to print the",
+      "start_time": 1364.64,
+      "end_time": 1369.84
+    },
+    {
+      "text": " information of the P and I print that 25 is printed. Now Q will go to the place of P and",
+      "start_time": 1369.84,
+      "end_time": 1377.24
+    },
+    {
+      "text": "",
+      "start_time": 1377.24,
+      "end_time": 1350.0
+    },
+    {
+      "text": " we will go to the right side.",
+      "start_time": 1352.32,
+      "end_time": null
+    },
+    {
+      "text": " it is not the thread path see if this tree was not there then it would have pointed to",
+      "start_time": 1380.0,
+      "end_time": 1385.72
+    },
+    {
+      "text": " another thread. So, I had to just continue the thread path right, but in this case P",
+      "start_time": 1385.72,
+      "end_time": 1390.24
+    },
+    {
+      "text": " is now pointing to a new tree. So, P is not null, but Q it is not the thread path. So,",
+      "start_time": 1390.24,
+      "end_time": 1395.36
+    },
+    {
+      "text": " it is like all over the traversal again. So, I have to come to traversal and then start",
+      "start_time": 1395.36,
+      "end_time": 1399.72
+    },
+    {
+      "text": " printing ok. So, that is how the whole process proceeds.",
+      "start_time": 1399.72,
+      "end_time": 1404.68
+    },
+    {
+      "text": "",
+      "start_time": 1404.68,
+      "end_time": 1380.0
+    },
+    {
+      "text": " So, in this case Q is not me, so I continue. So, it is this whole.",
+      "start_time": 1383.28,
+      "end_time": 1385.28
+    },
+    {
+      "text": " thing is like a new tree, this is like a new tree which I have to traverse now. So, I go",
+      "start_time": 1410.0,
+      "end_time": 1415.54
+    },
+    {
+      "text": " to p0 null. So, in this case p becomes null. So, I print the value of q 28 and set p to",
+      "start_time": 1415.54,
+      "end_time": 1424.44
+    },
+    {
+      "text": " the right side, again it is not the thread path. So, I have to start all over again.",
+      "start_time": 1424.44,
+      "end_time": 1428.44
+    },
+    {
+      "text": " So, again I traverse the new tree, p becomes null and q is printed and then p is set to",
+      "start_time": 1428.44,
+      "end_time": 1435.16
+    },
+    {
+      "text": "",
+      "start_time": 1435.16,
+      "end_time": 1410.0
+    },
+    {
+      "text": " Q's right, this is the thread path now. See because it is a thread path I am going to",
+      "start_time": 1414.64,
+      "end_time": 1410.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1410.5,
+      "end_time": null
+    },
+    {
+      "text": " the information 57 ok. Now, this is not there q is also said to null and p is also null ok.",
+      "start_time": 1440.0,
+      "end_time": 1454.32
+    },
+    {
+      "text": " So, that is the reason why we are done with the traversal and then we are closing this.",
+      "start_time": 1454.32,
+      "end_time": 1459.44
+    },
+    {
+      "text": " So, as you can see in the entire this episode of in order iterative traversal all that I",
+      "start_time": 1459.44,
+      "end_time": 1467.2
+    },
+    {
+      "text": "",
+      "start_time": 1467.2,
+      "end_time": 1440.0
+    },
+    {
+      "text": " I had to do is keep traversing to the left.",
+      "start_time": 1442.76,
+      "end_time": null
+    },
+    {
+      "text": " keep traverse into the left, print the information go to the right side. If it is a thread path",
+      "start_time": 1470.0,
+      "end_time": 1475.5
+    },
+    {
+      "text": " printed, if it is a new child path again keep the traversal ok. Again I go to so either",
+      "start_time": 1475.5,
+      "end_time": 1481.06
+    },
+    {
+      "text": " it is traverse to the left, deepest left, print and go to right. When I go to the right",
+      "start_time": 1481.06,
+      "end_time": 1486.34
+    },
+    {
+      "text": " I either print and continue or I start the traversal all over again. So, without making",
+      "start_time": 1486.34,
+      "end_time": 1492.3
+    },
+    {
+      "text": " use of an explicit stack I am able to achieve the in order traversal. So, that explicit",
+      "start_time": 1492.3,
+      "end_time": 1498.7
+    },
+    {
+      "text": "",
+      "start_time": 1498.7,
+      "end_time": 1470.0
+    },
+    {
+      "text": " stacking activity.",
+      "start_time": 1471.2,
+      "end_time": null
+    },
+    {
+      "text": " has been eliminated because I have while the while I am creating the binary search tree itself,",
+      "start_time": 1500.0,
+      "end_time": 1505.76
+    },
+    {
+      "text": " I have created threads and therefore, I am I have been able to eliminate the usage of the",
+      "start_time": 1505.76,
+      "end_time": 1511.68
+    },
+    {
+      "text": " explicit stacking which is expensive in nature. This is the concept of a threaded binary tree.",
+      "start_time": 1511.68,
+      "end_time": 1518.16
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1518.16,
+      "end_time": 1519.2
+    }
+  ],
+  "transcript_text": " Welcome back to PES University online classes on data structures and its applications.  In the previous sessions, we have started our discussions on tree data structure and  a specific case of the tree called as binary tree has been discussed within that another  special case of binary tree has been discussed which is called as a binary search tree.   The binary surgery has been  implemented using both dynamic allocation as well as implicit array representations.  And we have also looked at the tree traversals, the three methods are pre-order, in-order  and post-order.  We went ahead and also implemented them using recursive method and as well as iterative  method.  In today's class, we will discuss threaded binary search tree and its implementation.   I start giving  giving an example for why we should go in for a threaded binary search tree. Let me do  a quick recap of what we did in the earlier session on the iterative traversal and as  well as on the recursive traversal taking the in order as an example.   Now let me write the tree example here what we did was we wrote the  in order traversal by passing the route is a simplistic code that I am trying to represent.  Then we saw that we have to traverse to the left if route is not null of course that condition  is present.  Then print route information we went ahead processed route information and then in order   root right, this was the recursive traversal ok. All these would be executed if root root  root is not null, root is not null, right. This is what we did. You can see that there  is an implicit stack here. So, let us take one small example, ok. And then we saw that  in order a when I call, ok, this in turn is going to call in order b, then a is printed   in order null ok. This is what happens in the in order null.  So, in order if you look at the stack, so there is a stack for in order a and then in  order b is called.  So, there is a stack frame for in order b and then in order b in turn will call in order  c ok.  So, there is a stack frame for in order c, in order c is created ok.   So, this is how the stack frames are.  There is an implicit stack that is being used here.  This is what happened in the recursive traversal.  Now the same if you look at the iterative traversal, what did we do?  The tree is given what the iterative traversal says.   If you have a tree like this, say you have a tree like this, you have a tree like this,  to start from this go on to the deepest, ok, keep traversed to the left. So, as in when  you are traversing because your handler to the tree is through this, you are using an  explicit stack when you are using a iterative traversal and then as in when you go you lose  track of the address. So, we were storing address of A on the stack then when we went   to the left side we store address of b and then we will get the address of b.  has told address of C, then its left side is null. So, we know that the top most element  left is done. So, we popped this and printed C, then we had to push suppose if you had  one more here. So, after popping out this, popping out this, we pushed address of f  onto the stack, address of f onto the stack to the right side of C and then we continued   Thank you. Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  Thank you.  entire process. So, here again f is bought and then printed, then b is printed. So, it  was easier for us to go back from this step to back to this because we were able to capture  these addresses. Otherwise, once you go deep down into the tree let us say, then how do  we go back to these various levels? I have already traversed. So, we were explicitly   making use of this tag to store these addresses as in when I am traversing through the tree.  if you wanted an iterative in order traversal. In the recursive traversal, automatically a  stack is created. In the iterative in order traversal, these stack frames had to be created by  the programmer and then the pushing of these various addresses were happening.  Now, we know that recursion versus iteration if you look at, iterative programs are machine   efficient recursive.  are program of efficient, but in the case of trees the recursive code was equally efficient  in the sense we did not have much of the variables and it is a simple three line code.  The iterative traversal made use of explicit stack especially for this program in order  traversal and recursive program made use of implicit stack. Implicit stack activity is   always faster than the explicit stacking activity because we had to create a stack.  The implicit stack would be on the architecture itself, the hardware support can be made use  of to make the implicit stacking faster than an explicit stack activity which the programmer  creates because this is always on the RAM.  Now, how do we still go ahead with iterative traversal and avoid this stacking activity,  that is the thought process that we are bringing in.   We are saying in this special case, iterative traversal is time consuming because of the  Because we are making use of an explicit stack here.  So, this explicit stacking activity is more expensive than an implicit stacking activity.  Therefore, is there any way of traversing the binary surgery without this stacking activity  that we are talking about.  So, how do we go about doing that?  This is what we are going to achieve in a topic called as the threaded binary search  trees.   Thank you.  Let us look at the threaded binary search trees.  So, as I said the motivation is iterative in order traversal requires an explicit stack  and it is costly.  So, since we lose track of our dosers as and when we navigate, so no dosers were stacked.  But if this can be done using other less expensive mechanism, we can eliminate the use of explicit  stack.   So, all that is required is to make some small structural modifications to the structure  be carried out on the binary tree that will solve the above problem of explicit stacking.  So, let us look at how this can be achieved.  So, here we have seen that in the tree the leaf pointers both left and right pointers  are null.  Do you agree with me?  So, when you have created a tree the leaves left and right pointers both will be null  because they are not having the children.   So, now why cannot we make use of those pointers?  instead of making them null, why cannot they point to their successors or predecessors.  So, if you make use of the nodes, leaf nodes, right side pointer to point to its in order  successor, then such a tree is called as threaded tree, specifically since the right  pointer is being used, it is called as a right in threaded binary tree.   if in case you use a left pointer it will be called as a left in threaded leak.  is a clear and this left pointer will be pointing to its inorder predecessor. If both pointers  are used then that such a tree is called as a in threaded binary tree. So, this is the  concept of a threaded binary tree. Now, let us look at a right in threaded binary tree.  So, here this is the in or if you do the in order traversal of such a tree, you know that   the sequence in which the nodes are going to be traversed is A1, A2, A3, A4, A5, A5,  first and then B and then C and then D and then E and then F then G and then H and then  I. This is how the nodes will be traversed in  in order we know that. So, now how do we achieve that? So, what I am going to do is nodes with  right pointer here are A, C, E, H and then I. These are the nodes with right pointers   right now being null because b has a right, d has a right.  G also has a right child, F has a right child. So, the right side nodes which are having  the nodes which are having the right pointer null are these nodes. So, what I am going  to do is use these nodes for storing the in order successor except the last one ok.  So, I know that the in order successor of A is B. So, in A is right side pointer because   once I come into this position how do I go back becomes difficult right.  See here is an example of a tree with only 3 levels, I may have some 10 levels, I mean  how many pointers explicitly I can have in 10 pointers or 20 pointers, you never know  the depth of the tree right.  So, you cannot use an additional pointer because if you are thinking that we cannot  use some previous pointers.  So, how many such we can use if the depth is really high.  So, that is the reason why we are saying that instead of using some external pointers as   and when I am traversing I will just.  keep traversing I am not going to store their addresses at all.  Now, I come to A, when I come to A, I print the A because there is no left side of A that  is fine.  But now how do I go back to the route back I have to backtrack right.  So, I have to go back to the route of or the parent of A here, how do I do that?  If you have already gone past this then there is no way to go back.  So, that is when I am going to use the right side pointer of A because it is anyway not   point to the right side and you can see that the right side is the same as the left side.  you know that the in order successor of A will be B in the case this has no right side  child and that as you can see here B is the in order successor for A. So, I am going to  use this right side pointer to make it point to B ok.  Now, similarly C's in order successor will be D. So, I am going to make it point to this.  E's in order successor will be F and then head's in order successor will be I. So,   This is how I am going to create threads and then keep the .  3 so that when I traverse down level A, it is possible to print A and then since there  is no right side 3 for A, I go back one level up and print B and then go after printing  B you have to go to the right side and start all over traversal, then I come to C, print  C, then I go to D and then print D like that as usual you go.   So, when I come to sorry when I come to A, I am not losing track of B because I have a  .  thread here, through the threads path I am going to point to B and then go over there.  But please note that in this case the right side of A, that pointer has been used up to  point to an address. Now, the question is the right side pointer in this case for example,  the right side pointer is actually pointing to a child, if you look at B, the right side  pointer is pointing to D, D is pointing to E. Now, this address may be 200, B's address   maybe  Now, by just inspecting the addresses, how do we know that whether it is the path of  the thread or is it the actual child path, ok, that understanding we should have.  Because the way we are going to handle if it is a right thread, it is like a new tree  and we start the in order traversal all over.  But if it is a thread, we just print it, is not it?  So, let me repeat FBA, I come to that, A is print 10.   If you had a tree here to the right side of here, I would have.  gone in the trees path and start the inorder all over. But in this case since A is having  a right thread I just print B. Now, after printing B it is not having a thread, but  it is having a separate subtree here which for which I will start the inorder traversal  all over and I come to D and then go back to the go to the D past left side and then  do that traversal and then print C and then D and then E and then come back and then go   to F.  This is how I have to do that. So, now the question that I am trying to pose in front  of you is if you have the right pointer pointing to something how do I know whether the right  pointer is pointing to a back thread or is it pointing to a new tree altogether which is a  child of that particular node. So, how do I differentiate? In order to do that we have to   to again keep an additional field maybe like an arthrid flag field.  which will tell us whether the right pointer in this node is it pointing to a child or  is it pointing to a back thread.  Is it a thread pointer or is it a child pointer?  That information has to be explicitly stored in order to say whether A is having a right  thread or is it having a child.  So that is the additional information that one has to capture in order to make sure that  the understanding of the right pointer is clear.   Now in the case of left-in thread.  the pointers will be pointing to their in order predecessors. So, which are those nodes  with left point of being null. So, as usual we have ASEE and then GH in this case. So,  you can see that the leftmost will not be pointing to anything except that all other  nodes are pointing to the predecessors. C's predecessor will be B and E's predecessor   will be D and so on. This is the concept of a left hand threaded binary.  tree. So, these are the ways in which the threads are being created here ok.  So, in threaded binary tree as we said we will have pointers both the pointers used up in  the leaves you can see that the leftmost nodes left pointer is not used right most pointers  nodes right pointers not used otherwise all other nodes left and right pointer see its   right pointer is used up and this fellow's left pointer is  used, this nodes left is also used, right is also used, left is used, right point is  used, left is used and right point is used. Such a tree is called as a threaded binary  tree. Now, the question is what was our root problem? I mean if you have threads like this  as in when we are traversing there is no need to have a explicit stack that we have to ascertain.  But how do we create such a tree? I mean such a tree first of all has to be in place, you   to create a new world.  threads is not it? So, let us look at the right in threaded binary trees creation.  We will look at right in threaded binary trees similarly, we can follow the left in threaded  binary trees. Now, in this case as I said the node will have information field ok, this  is dynamic implementation that I am talking about. It has a left pointer to point to the  left child and a right pointer in addition to that there is another flag field called   as a R thread field which will say true.  if the right pointer is a thread, otherwise it will be set to 0, null in this case is  basically 0 and non-null in the case if it is a pointing to a child. So, that is the  meaning of null and non-null here it is actually 1 or 0 or thread is 1 or thread is 0. So,   So now this is how the node structure would be. Now in such a binary search, we can see that the node structure is not the same as the  node structure.  tree implementation with threads, how do we create a node?  Normally the creation of the node will go as usual like a malloc and then once a node  is allocated its information field is stuffed and then because a new node in the binary  surgery always goes as a leaf node its left end is set to null, right side is set to null  and the temp's right thread is set to 1 and we have to return the temporary node because   You know that  this new node will capture the right thread as 1. So, it will go into the leaf position  and its right pointer will be set at a later point once we finish the traversal. But initial  creation I will set the left and right to be null. So, that is how create node 57 will  happen. 57 is filled left is set to null right is set to null right thread right now it is   set to 1 ok and then we return the address 2000.  So, now a node is created with armthread set to true, 57 is created ok.  Next I want to create 25 ok.  So, similarly the 25 is set, now 25 is less than 57.  So, I create that to the left side of it and since I am creating to the left side obviously,  the any node which is created to the left side of a given node the in the in order successor   that node will be the .  57 will be the in order successor for 25 ok. So, now, you observe R thread of 25 is created.  So, it is pointing to this node R thread is adjusted and then we set the 25 as a left  side. So, how do we the set left function work? So, set left to the left side of Q ok.   So, to do that.  we create the node for the new node this node is created and once that is created its address  which is 400 ok, Q's left side is set as that Q's left side is set to 10 and then  temp's right side, temp's right side is set to this Q itself ok and then we make the thread as   true and then we have the address 1200 where 28 is created.  there is a next information and 28's right thread has to be 57 because 25 has to go to  the right side of 28 correct, first 28 is less than 57, 28 is greater than 25.  So, it has to be set to the right side of 25.  So, in order to set the 28 to the right side of 25, what all we have to do?   it 28 since the 20th century.  28 is coming as a right side of 25, you know that this is already pointing to this thread,  this fellow this link will be now set as this link ok, whatever this was pointing, now this  will point to that and this right side will be made as child ok.  So that is what we have to do, so that is disconnected ok, whatever 25 was pointing   will be made by 28 pointing and then 25's right side will be the new child.  and 25 R thread is 0 and then 28 R thread is positive. So, that is how the setting of the  right side is going to be done. So, let us look at the code. So, code wise let us see  what happened. So, you create a node 28 with all these value and then I temp write, temp  write is set to Q's write whatever Q is pointing to. So, that happens and then we have Q write   pointing to.  m and then q write is q R thread is set to 0. This is how the new node is going to be  created in a write in threaded binary.  Now, after having created such a threaded tree, let us see how the traversal is going  to happen. So, I am going to start the traversal by setting q to null and two pointers I will   values. So, we will go out of the loop and Q will stay here ok.  So, while p naught null I start from the root. So, I make the p point to the root and q is  said to null. So, while q is null and then while p naught null I keep traversing q will  come to the place of p and p will move forward to the left. So, I deep down I go to the left  side and once p is out of the scope p has become null. So, now, when once p has become   null it is time .  have gone to the deepest left side. So, what I need to do is to print the value of the  node which is pointed by Q. So, if Q is not null I print the information. After printing  where do I traverse I have to go to the right side of Q. Now, in this case I do not know  whether the right side is a thread or whether it is a new tree altogether. So, I will set   the P to right side ok. So, now, what I do is 22 is printed.  P is set to the right side of Q. So, when I set this to right side, now I do not know  whether Q is the thread path or is it the new tree path. If the Q is a thread path, if  Q is a thread path and P is pointing to some nodes, then it is time for me to print the  information of the P and I print that 25 is printed. Now Q will go to the place of P and   we will go to the right side.  it is not the thread path see if this tree was not there then it would have pointed to  another thread. So, I had to just continue the thread path right, but in this case P  is now pointing to a new tree. So, P is not null, but Q it is not the thread path. So,  it is like all over the traversal again. So, I have to come to traversal and then start  printing ok. So, that is how the whole process proceeds.   So, in this case Q is not me, so I continue. So, it is this whole.  thing is like a new tree, this is like a new tree which I have to traverse now. So, I go  to p0 null. So, in this case p becomes null. So, I print the value of q 28 and set p to  the right side, again it is not the thread path. So, I have to start all over again.  So, again I traverse the new tree, p becomes null and q is printed and then p is set to   Q's right, this is the thread path now. See because it is a thread path I am going to  Thank you.  the information 57 ok. Now, this is not there q is also said to null and p is also null ok.  So, that is the reason why we are done with the traversal and then we are closing this.  So, as you can see in the entire this episode of in order iterative traversal all that I   I had to do is keep traversing to the left.  keep traverse into the left, print the information go to the right side. If it is a thread path  printed, if it is a new child path again keep the traversal ok. Again I go to so either  it is traverse to the left, deepest left, print and go to right. When I go to the right  I either print and continue or I start the traversal all over again. So, without making  use of an explicit stack I am able to achieve the in order traversal. So, that explicit   stacking activity.  has been eliminated because I have while the while I am creating the binary search tree itself,  I have created threads and therefore, I am I have been able to eliminate the usage of the  explicit stacking which is expensive in nature. This is the concept of a threaded binary tree.  Thank you."
+}

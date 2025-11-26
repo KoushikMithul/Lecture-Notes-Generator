@@ -1,0 +1,2493 @@
+{
+  "video_name": "binary_tree_traversal_5a_2020-09-15 09-04-51_BinTraversal",
+  "video_path": "data/raw/videos/binary_tree_traversal_5a_2020-09-15 09-04-51_BinTraversal.mkv",
+  "duration_seconds": 2070.314,
+  "transcript": [
+    {
+      "text": " Hello everyone, welcome to PES University online classes on data structures and its applications.",
+      "start_time": 0.0,
+      "end_time": 9.64
+    },
+    {
+      "text": " I am Professor Shailaja, working in the Department of Computer Science and Engineering.",
+      "start_time": 9.64,
+      "end_time": 14.08
+    },
+    {
+      "text": " This content is co-authored by my colleague Usuma KB.",
+      "start_time": 14.08,
+      "end_time": 18.12
+    },
+    {
+      "text": " In today's session, we will look at binary tree traversals.",
+      "start_time": 18.12,
+      "end_time": 23.8
+    },
+    {
+      "text": " In the previous session, we have understood how we can go about organizing the data in",
+      "start_time": 23.8,
+      "end_time": 29.64
+    },
+    {
+      "text": "",
+      "start_time": 29.64,
+      "end_time": 0.0
+    },
+    {
+      "text": " and not",
+      "start_time": 2.0,
+      "end_time": null
+    },
+    {
+      "text": " linear fashion especially in the form of a binary tree. We have seen that it consists",
+      "start_time": 30.0,
+      "end_time": 36.88
+    },
+    {
+      "text": " of a root node then it has a left subset which is the left binary tree and it has a right",
+      "start_time": 36.88,
+      "end_time": 43.36
+    },
+    {
+      "text": " subset which is called as a right binary tree. After having placed them in memory subsequently",
+      "start_time": 43.36,
+      "end_time": 50.96
+    },
+    {
+      "text": " we may want to retrieve some information from each and every node. If it is the question",
+      "start_time": 50.96,
+      "end_time": 57.64
+    },
+    {
+      "text": "",
+      "start_time": 57.64,
+      "end_time": 30.0
+    },
+    {
+      "text": " of enumerating every node.",
+      "start_time": 31.78,
+      "end_time": null
+    },
+    {
+      "text": " and visiting each and every node and performing certain operation, then we will have to traverse",
+      "start_time": 60.0,
+      "end_time": 66.96
+    },
+    {
+      "text": " the tree. We will have to go through each and every node. We may want to update the age of",
+      "start_time": 66.96,
+      "end_time": 73.28
+    },
+    {
+      "text": " customers, let us say the binary tree is representing the customer's information.",
+      "start_time": 73.28,
+      "end_time": 77.6
+    },
+    {
+      "text": " Or we may want to modify the marks of each and every student if the binary tree is",
+      "start_time": 78.24,
+      "end_time": 84.24
+    },
+    {
+      "text": "",
+      "start_time": 84.24,
+      "end_time": 60.0
+    },
+    {
+      "text": " representing students information or you may want to edit some field of",
+      "start_time": 65.6,
+      "end_time": null
+    },
+    {
+      "text": " the student like if we are planning to give a BES ID to each and every student",
+      "start_time": 90.0,
+      "end_time": 95.92
+    },
+    {
+      "text": " we may want to update the email ID field of every student. This calls for",
+      "start_time": 95.92,
+      "end_time": 102.0
+    },
+    {
+      "text": " exploring every node, enumerating every node. Now the question is what is the",
+      "start_time": 102.0,
+      "end_time": 108.84
+    },
+    {
+      "text": " order in which we will have to make this traversal? In the case of linear",
+      "start_time": 108.84,
+      "end_time": 116.08
+    },
+    {
+      "text": "",
+      "start_time": 116.08,
+      "end_time": 90.0
+    },
+    {
+      "text": " organization it is only one sequence that we have.",
+      "start_time": 93.84,
+      "end_time": null
+    },
+    {
+      "text": " Whereas in the case of non-linear organization, there are multiple possibilities.",
+      "start_time": 120.0,
+      "end_time": 126.22
+    },
+    {
+      "text": " So let us look at these traversal techniques.",
+      "start_time": 126.22,
+      "end_time": 130.68
+    },
+    {
+      "text": " As I said, moving through all the nodes in a binary tree and visiting each one in turn",
+      "start_time": 130.68,
+      "end_time": 136.64
+    },
+    {
+      "text": " is called as a binary tree traversal.",
+      "start_time": 136.64,
+      "end_time": 140.6
+    },
+    {
+      "text": " Since it is a non-linear organization, there are many possibilities.",
+      "start_time": 140.6,
+      "end_time": 145.76
+    },
+    {
+      "text": "",
+      "start_time": 145.76,
+      "end_time": 120.0
+    },
+    {
+      "text": " Let us use some convention here. Visiting a node is called as v.",
+      "start_time": 122.32,
+      "end_time": 124.24
+    },
+    {
+      "text": " and if you want to traverse the left subtree we will denote it by L and if you want to",
+      "start_time": 150.0,
+      "end_time": 156.64
+    },
+    {
+      "text": " traverse the right side subtree we will denote it as R. So, we have three letters denoting",
+      "start_time": 156.64,
+      "end_time": 163.36
+    },
+    {
+      "text": " certain operation. Now, since we have three letters here there are totally six combinations",
+      "start_time": 163.36,
+      "end_time": 171.4
+    },
+    {
+      "text": " possible. There are six ways in which you can arrange these letters. So, what are they?",
+      "start_time": 171.4,
+      "end_time": 178.52
+    },
+    {
+      "text": "",
+      "start_time": 178.52,
+      "end_time": 150.0
+    },
+    {
+      "text": " We have VLR.",
+      "start_time": 151.4,
+      "end_time": null
+    },
+    {
+      "text": " L, V, R, L, R, L, V, R, L, L, V, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L,",
+      "start_time": 180.0,
+      "end_time": 187.0
+    },
+    {
+      "text": " L. Among these six ways, we will be studying in this course three ways which are quite popular",
+      "start_time": 187.0,
+      "end_time": 191.72
+    },
+    {
+      "text": " in nature. One is V, L, R, visiting the node followed by the left subtree traversal and",
+      "start_time": 191.72,
+      "end_time": 200.22
+    },
+    {
+      "text": " the right subtree traversal which is called as a pre-ordered traversal of a binary tree.",
+      "start_time": 200.22,
+      "end_time": 205.48
+    },
+    {
+      "text": "",
+      "start_time": 205.48,
+      "end_time": 180.0
+    },
+    {
+      "text": " Then we have left traversal, visiting a node and then right traversal which is called.",
+      "start_time": 184.56,
+      "end_time": null
+    },
+    {
+      "text": " as the in-order traversal and then we have the left and right sub pre traversals followed",
+      "start_time": 210.0,
+      "end_time": 216.4
+    },
+    {
+      "text": " by visiting the node called as the host-order traversal of a binary tree.",
+      "start_time": 216.4,
+      "end_time": 222.8
+    },
+    {
+      "text": " Let us look at each of these traversal techniques in turn.",
+      "start_time": 222.8,
+      "end_time": 228.16
+    },
+    {
+      "text": " The first one is the pre-order traversal.",
+      "start_time": 228.16,
+      "end_time": 232.6
+    },
+    {
+      "text": " In the pre-order traversal as said, it is the root node which is going to be visited",
+      "start_time": 232.6,
+      "end_time": 237.96
+    },
+    {
+      "text": " first.",
+      "start_time": 237.96,
+      "end_time": 238.96
+    },
+    {
+      "text": "",
+      "start_time": 238.96,
+      "end_time": 210.0
+    },
+    {
+      "text": " Good evening.",
+      "start_time": 211.0,
+      "end_time": null
+    },
+    {
+      "text": " here by visiting is to perform an operation when we are at that node.",
+      "start_time": 240.0,
+      "end_time": 245.36
+    },
+    {
+      "text": " So for the purposes of this session, when I visit the node, what is that I can do?",
+      "start_time": 245.36,
+      "end_time": 251.92
+    },
+    {
+      "text": " So since the elements have been marked as F, B, G and all of that, some alphabets have",
+      "start_time": 251.92,
+      "end_time": 258.16
+    },
+    {
+      "text": " been used in the example tree, so I am going to print the information, display the information.",
+      "start_time": 258.16,
+      "end_time": 264.44
+    },
+    {
+      "text": " When I visit the node, I will be displaying the information, that is the business logic",
+      "start_time": 264.44,
+      "end_time": 269.12
+    },
+    {
+      "text": "",
+      "start_time": 269.12,
+      "end_time": 240.0
+    },
+    {
+      "text": " that I'm only...",
+      "start_time": 240.84,
+      "end_time": null
+    },
+    {
+      "text": " use in the tree that I have here. Then I am going to traverse to the left side and then",
+      "start_time": 270.0,
+      "end_time": 277.36
+    },
+    {
+      "text": " I am going to traverse to the right side. So, let us look at what is going to be yielded",
+      "start_time": 277.36,
+      "end_time": 282.68
+    },
+    {
+      "text": " out of the traversal from this tree. So, first and foremost I go to the root of the binary",
+      "start_time": 282.68,
+      "end_time": 289.4
+    },
+    {
+      "text": " tree and since when I go to the root of the tree I am expected to visit it which in this",
+      "start_time": 289.4,
+      "end_time": 296.28
+    },
+    {
+      "text": "",
+      "start_time": 296.28,
+      "end_time": 270.0
+    },
+    {
+      "text": " case I am going to display. So, f is displayed here.",
+      "start_time": 277.0,
+      "end_time": null
+    },
+    {
+      "text": " Okay and then I am going to go to the left sub tree. Please note that it is a recursive definition.",
+      "start_time": 300.0,
+      "end_time": 306.72
+    },
+    {
+      "text": " You have to traverse this left sub tree in pre-order that is what you need to do. So in order to",
+      "start_time": 306.72,
+      "end_time": 313.28
+    },
+    {
+      "text": " do this in pre-order what does a pre-order say? Again visit the root node. So the root of the",
+      "start_time": 314.4,
+      "end_time": 319.6
+    },
+    {
+      "text": " left sub tree must be visited. So I visit B and then again I traverse to the left side of this.",
+      "start_time": 319.6,
+      "end_time": 326.72
+    },
+    {
+      "text": "",
+      "start_time": 326.72,
+      "end_time": 300.0
+    },
+    {
+      "text": " So every time it is like a new tree when I move to the left side.",
+      "start_time": 303.2,
+      "end_time": null
+    },
+    {
+      "text": " side, you have to all over start the pre-ordered travel side. So, I go here and I visit the",
+      "start_time": 330.0,
+      "end_time": 335.6
+    },
+    {
+      "text": " route. So, when I come here, I go to the left side of A, but when I go to the left side,",
+      "start_time": 335.6,
+      "end_time": 342.36
+    },
+    {
+      "text": " it is null. So, I am done. There is nothing like a left side sub-tree being present. It",
+      "start_time": 342.36,
+      "end_time": 346.96
+    },
+    {
+      "text": " is an empty left sub-tree. So, I come back to the route, then I traverse to the right",
+      "start_time": 346.96,
+      "end_time": 352.16
+    },
+    {
+      "text": " side, there is nothing. So, you have to go one level above, backtrack and then here you",
+      "start_time": 352.16,
+      "end_time": 358.88
+    },
+    {
+      "text": "",
+      "start_time": 358.88,
+      "end_time": 330.0
+    },
+    {
+      "text": " You know that once you are...",
+      "start_time": 331.12,
+      "end_time": null
+    },
+    {
+      "text": " done with the left subtree the root is again going back to the root and then you have to",
+      "start_time": 360.0,
+      "end_time": 367.22
+    },
+    {
+      "text": " traverse to the right side of that tree in that order. So, this is the subtree that right",
+      "start_time": 367.22,
+      "end_time": 372.74
+    },
+    {
+      "text": " side subtree of B I am looking at. So, please note I came to B and then printed it then I",
+      "start_time": 372.74,
+      "end_time": 379.06
+    },
+    {
+      "text": " came to A printed it there is no left and right. So, go back one level above because",
+      "start_time": 379.06,
+      "end_time": 384.74
+    },
+    {
+      "text": "",
+      "start_time": 384.74,
+      "end_time": 360.0
+    },
+    {
+      "text": " we are done with the left side of B and I have to now traverse to the right side of B.",
+      "start_time": 365.0,
+      "end_time": null
+    },
+    {
+      "text": " and right side of B again is a new tree again start all over again the visit the root so",
+      "start_time": 390.0,
+      "end_time": 397.92
+    },
+    {
+      "text": " you have to go here and then come to this D and then I come to C so I print C then there",
+      "start_time": 397.92,
+      "end_time": 405.48
+    },
+    {
+      "text": " is no left and right here so I go back one level above and then I traverse to the right",
+      "start_time": 405.48,
+      "end_time": 410.52
+    },
+    {
+      "text": " side of D and then I print E so there is no left and right I go back one level up and",
+      "start_time": 410.52,
+      "end_time": 418.68
+    },
+    {
+      "text": "",
+      "start_time": 418.68,
+      "end_time": 390.0
+    },
+    {
+      "text": " then I...",
+      "start_time": 390.84,
+      "end_time": null
+    },
+    {
+      "text": " I go back one level above and then this is done.",
+      "start_time": 420.0,
+      "end_time": 429.04
+    },
+    {
+      "text": " So then I go to this level then I come to this.",
+      "start_time": 429.04,
+      "end_time": 432.08
+    },
+    {
+      "text": " I am done with the left side of this root node.",
+      "start_time": 432.08,
+      "end_time": 435.64
+    },
+    {
+      "text": " Now I am supposed to traverse to the right side of this.",
+      "start_time": 435.64,
+      "end_time": 438.84
+    },
+    {
+      "text": " So I come here then print G and then I print I and then I print H and then I am done.",
+      "start_time": 438.84,
+      "end_time": 448.4
+    },
+    {
+      "text": "",
+      "start_time": 448.4,
+      "end_time": 420.0
+    },
+    {
+      "text": " So, yes, then.",
+      "start_time": 421.68,
+      "end_time": null
+    },
+    {
+      "text": " with the completion of the tree traversal. So, I print F then B and then A come back",
+      "start_time": 450.0,
+      "end_time": 457.16
+    },
+    {
+      "text": " then go to the right side B then left side C and come back then E right side then I am",
+      "start_time": 457.16,
+      "end_time": 463.56
+    },
+    {
+      "text": " done with the left side go to the right side G and then left side nothing then I go to",
+      "start_time": 463.56,
+      "end_time": 469.44
+    },
+    {
+      "text": " right side I then I go to left side H and I continue. So, this is the pre-ordered traversal",
+      "start_time": 469.44,
+      "end_time": 476.16
+    },
+    {
+      "text": "",
+      "start_time": 476.16,
+      "end_time": 450.0
+    },
+    {
+      "text": " that we have.",
+      "start_time": 450.76,
+      "end_time": null
+    },
+    {
+      "text": " Next is the in order traversal.",
+      "start_time": 480.0,
+      "end_time": 484.04
+    },
+    {
+      "text": " In the in order traversal, left subtree is traversed in in order.",
+      "start_time": 484.04,
+      "end_time": 489.48
+    },
+    {
+      "text": " Here we complete the traversal of all the nodes that are to the left side of a given",
+      "start_time": 489.48,
+      "end_time": 495.56
+    },
+    {
+      "text": " node and then we visit the node given node, root node and then we traverse to the right",
+      "start_time": 495.56,
+      "end_time": 501.56
+    },
+    {
+      "text": " side.",
+      "start_time": 501.56,
+      "end_time": 502.56
+    },
+    {
+      "text": " This is a way of traversal.",
+      "start_time": 502.56,
+      "end_time": 505.12
+    },
+    {
+      "text": "",
+      "start_time": 505.12,
+      "end_time": 480.0
+    },
+    {
+      "text": " So you want to complete all the left side portions of the given.",
+      "start_time": 484.9,
+      "end_time": null
+    },
+    {
+      "text": " node and then visit the parent and then visit the right side of the given node.",
+      "start_time": 510.0,
+      "end_time": 516.88
+    },
+    {
+      "text": " That is how the in-order traversal is going to proceed.",
+      "start_time": 516.88,
+      "end_time": 520.04
+    },
+    {
+      "text": " So what you need to understand is if you want to print, if whatever traversal starts from",
+      "start_time": 520.04,
+      "end_time": 525.28
+    },
+    {
+      "text": " F but we do not perform the operation there.",
+      "start_time": 525.28,
+      "end_time": 529.36
+    },
+    {
+      "text": " So I see F but if I find that there is still left sub P left, I do not process this, I",
+      "start_time": 529.36,
+      "end_time": 535.92
+    },
+    {
+      "text": " proceed to the left side.",
+      "start_time": 535.92,
+      "end_time": 538.16
+    },
+    {
+      "text": "",
+      "start_time": 538.16,
+      "end_time": 510.0
+    },
+    {
+      "text": " if it has left side again.",
+      "start_time": 511.64,
+      "end_time": null
+    },
+    {
+      "text": " Again I proceed to the left side and if there is no left side here it is time for me to process",
+      "start_time": 540.0,
+      "end_time": 547.44
+    },
+    {
+      "text": " this no I display this and then process go towards the right side of A but there is nothing. So,",
+      "start_time": 547.44,
+      "end_time": 554.4
+    },
+    {
+      "text": " I am done with this so when I go one level above I know that I am going back to the root. So,",
+      "start_time": 554.4,
+      "end_time": 559.44
+    },
+    {
+      "text": " when I am going back to the root you know that its left side is all done so it is time for us to",
+      "start_time": 559.44,
+      "end_time": 564.8
+    },
+    {
+      "text": "",
+      "start_time": 564.8,
+      "end_time": 540.0
+    },
+    {
+      "text": " display B and then I go to the right side of B and start the process all over.",
+      "start_time": 545.6,
+      "end_time": null
+    },
+    {
+      "text": " You can see that here also it is a recursive definition.",
+      "start_time": 570.0,
+      "end_time": 573.92
+    },
+    {
+      "text": " Left subtree is traversed in order.",
+      "start_time": 573.92,
+      "end_time": 576.48
+    },
+    {
+      "text": " So, I go to the left subtree.",
+      "start_time": 576.48,
+      "end_time": 579.78
+    },
+    {
+      "text": " This is the left subtree.",
+      "start_time": 579.78,
+      "end_time": 581.36
+    },
+    {
+      "text": " This has to be traversed in order.",
+      "start_time": 581.36,
+      "end_time": 583.48
+    },
+    {
+      "text": " Again I come to be this has to be traversed in order.",
+      "start_time": 583.48,
+      "end_time": 586.4
+    },
+    {
+      "text": " So, this has to be traversed in order like that.",
+      "start_time": 586.4,
+      "end_time": 589.44
+    },
+    {
+      "text": " Every time when you visit to a new place, it has to be traversed in order.",
+      "start_time": 589.44,
+      "end_time": 593.76
+    },
+    {
+      "text": " The three steps will have to be followed.",
+      "start_time": 593.76,
+      "end_time": 597.36
+    },
+    {
+      "text": "",
+      "start_time": 597.36,
+      "end_time": 570.0
+    },
+    {
+      "text": " So, let us see what is the difference between the two.",
+      "start_time": 577.0,
+      "end_time": null
+    },
+    {
+      "text": " the traversal is going to yield for this kind of a tree. So, I come to F, it is not time",
+      "start_time": 600.0,
+      "end_time": 605.84
+    },
+    {
+      "text": " for me to process this as my left sub tree is not yet done. You can note that the root",
+      "start_time": 605.84,
+      "end_time": 611.72
+    },
+    {
+      "text": " node is processed only after completion of the traversal of the left sub tree that is",
+      "start_time": 611.72,
+      "end_time": 616.88
+    },
+    {
+      "text": " a meaning. So, here F cannot be displayed because its left side is not yet done. Only",
+      "start_time": 616.88,
+      "end_time": 623.0
+    },
+    {
+      "text": " after all of the nodes towards left side are done then only you can process F that is a",
+      "start_time": 623.0,
+      "end_time": 628.8
+    },
+    {
+      "text": "",
+      "start_time": 628.8,
+      "end_time": 600.0
+    },
+    {
+      "text": " meaning and in our case.",
+      "start_time": 601.2,
+      "end_time": null
+    },
+    {
+      "text": " processing is about displaying the information. So, I come to B again this is not possible",
+      "start_time": 630.0,
+      "end_time": 637.28
+    },
+    {
+      "text": " because my left side is not yet done. So, I come to A here it is possible because there",
+      "start_time": 637.28,
+      "end_time": 643.2
+    },
+    {
+      "text": " is no left side tree at all it is empty. Therefore, the first and foremost known in",
+      "start_time": 643.2,
+      "end_time": 648.08
+    },
+    {
+      "text": " the in order traversal that I will be displaying is A. Then I go back one level see here the",
+      "start_time": 648.08,
+      "end_time": 656.72
+    },
+    {
+      "text": "",
+      "start_time": 656.72,
+      "end_time": 630.0
+    },
+    {
+      "text": " right side is also empty after printing A.",
+      "start_time": 633.2,
+      "end_time": null
+    },
+    {
+      "text": " I would have traversed to the right side of A if I had a tree but there is no right side",
+      "start_time": 660.0,
+      "end_time": 665.28
+    },
+    {
+      "text": " so I go back one level above.",
+      "start_time": 665.28,
+      "end_time": 667.76
+    },
+    {
+      "text": " So when I go back one level above you know that you would have finished the left side",
+      "start_time": 667.76,
+      "end_time": 671.68
+    },
+    {
+      "text": " correct?",
+      "start_time": 671.68,
+      "end_time": 672.68
+    },
+    {
+      "text": " Therefore you will print B. So B is now printed because it is left side is done.",
+      "start_time": 672.68,
+      "end_time": 678.36
+    },
+    {
+      "text": " So I print B. Once I print the root node you can see that you have to traverse to the right",
+      "start_time": 678.36,
+      "end_time": 683.96
+    },
+    {
+      "text": "",
+      "start_time": 683.96,
+      "end_time": 660.0
+    },
+    {
+      "text": " sub tree so I come to D and when I come to D it is like a new sub tree and I have",
+      "start_time": 667.92,
+      "end_time": null
+    },
+    {
+      "text": " to traverse this in order. So, can I print D now? No, so because it is left separate is",
+      "start_time": 690.0,
+      "end_time": 696.0
+    },
+    {
+      "text": " still left. So, I come to C and this is possible. So, I print C then I go back one level above",
+      "start_time": 696.0,
+      "end_time": 702.76
+    },
+    {
+      "text": " then I print D. After printing D I have to go to the right side, I go to the right side",
+      "start_time": 702.76,
+      "end_time": 708.4
+    },
+    {
+      "text": " and print E. So, once you are done with E there is nothing further from E. So, I go",
+      "start_time": 708.4,
+      "end_time": 713.4
+    },
+    {
+      "text": "",
+      "start_time": 713.4,
+      "end_time": 690.0
+    },
+    {
+      "text": " one level above T since I have traversed from right side. So, this level is done.",
+      "start_time": 696.56,
+      "end_time": null
+    },
+    {
+      "text": " level is also done because it is from the right side. So, I go back to this F. So, I",
+      "start_time": 720.0,
+      "end_time": 725.52
+    },
+    {
+      "text": " print F now since I came from left side I print F because all these nodes have been",
+      "start_time": 725.52,
+      "end_time": 731.88
+    },
+    {
+      "text": " displayed. So, after displaying F I go to the right side of F and start all over the",
+      "start_time": 731.88,
+      "end_time": 739.12
+    },
+    {
+      "text": " in order traversal for this tree. So, here G can my process because there is no left",
+      "start_time": 739.12,
+      "end_time": 744.64
+    },
+    {
+      "text": "",
+      "start_time": 744.64,
+      "end_time": 720.0
+    },
+    {
+      "text": " side and printing G, then I come to this particular subtree and",
+      "start_time": 725.36,
+      "end_time": null
+    },
+    {
+      "text": " start the inorder traversal all over can I print I now not possible because its left",
+      "start_time": 750.0,
+      "end_time": 755.06
+    },
+    {
+      "text": " side is still not done. So, I come to H, so I print H then I go back one level above",
+      "start_time": 755.06,
+      "end_time": 762.2
+    },
+    {
+      "text": " then I print I and then I just go back and complete the process. This is the way in which",
+      "start_time": 762.2,
+      "end_time": 770.18
+    },
+    {
+      "text": " the inorder traversal is going to be carried out. I just repeat I come to F but it is not",
+      "start_time": 770.18,
+      "end_time": 776.3
+    },
+    {
+      "text": "",
+      "start_time": 776.3,
+      "end_time": 750.0
+    },
+    {
+      "text": " possible to discreet because of the left side tree not being done. Then I come",
+      "start_time": 753.76,
+      "end_time": null
+    },
+    {
+      "text": " to be, then I come to A, then there is no left subtree here. So, I print A, come to",
+      "start_time": 780.0,
+      "end_time": 785.92
+    },
+    {
+      "text": " right subtree, but there is nothing. So, this time for me to go back one level above.",
+      "start_time": 785.92,
+      "end_time": 790.64
+    },
+    {
+      "text": " So, then since you are traversing from the left side, I print the row to B, then I come",
+      "start_time": 790.64,
+      "end_time": 796.36
+    },
+    {
+      "text": " to the right side of this. After printing a node, you have to traverse to the right",
+      "start_time": 796.36,
+      "end_time": 801.68
+    },
+    {
+      "text": " side, please note that. So, now I come to D, this is like altogether",
+      "start_time": 801.68,
+      "end_time": 807.64
+    },
+    {
+      "text": "",
+      "start_time": 807.64,
+      "end_time": 780.0
+    },
+    {
+      "text": " new statement.",
+      "start_time": 782.28,
+      "end_time": null
+    },
+    {
+      "text": " a new set of trees that you have now to visit. So, start all over ok, can I visit the room?",
+      "start_time": 810.0,
+      "end_time": 816.4
+    },
+    {
+      "text": " No, it is because it is left separate is still not done. So, I have come here and then print",
+      "start_time": 816.4,
+      "end_time": 821.12
+    },
+    {
+      "text": " C go back print D and then once I print D again I come to the right side print E and",
+      "start_time": 821.12,
+      "end_time": 827.44
+    },
+    {
+      "text": " then after printing E you should have gone to right side, but there is nothing. So,",
+      "start_time": 827.44,
+      "end_time": 831.0
+    },
+    {
+      "text": " I am going back going back and then print F then I am done with this spot and F is also",
+      "start_time": 831.0,
+      "end_time": 837.48
+    },
+    {
+      "text": "",
+      "start_time": 837.48,
+      "end_time": 810.0
+    },
+    {
+      "text": " So, take this new tree and you can see that this is the same as the previous one.",
+      "start_time": 817.0,
+      "end_time": null
+    },
+    {
+      "text": " G because there is no left side and then after printing G where do you go to the right side",
+      "start_time": 840.0,
+      "end_time": 846.08
+    },
+    {
+      "text": " I and then print this and then come to the left side edge and this is how the inorder",
+      "start_time": 846.08,
+      "end_time": 851.2
+    },
+    {
+      "text": " traversal is going to proceed. Now, let us look at the post-order traversal.",
+      "start_time": 851.2,
+      "end_time": 858.24
+    },
+    {
+      "text": " In the post-order traversal what you are going to do is to traverse both left and right subtrees",
+      "start_time": 858.24,
+      "end_time": 865.08
+    },
+    {
+      "text": "",
+      "start_time": 865.08,
+      "end_time": 840.0
+    },
+    {
+      "text": " before even you can process the root node. That is the way in which the",
+      "start_time": 844.56,
+      "end_time": null
+    },
+    {
+      "text": " traversal is going to proceed. So, we have to if we want to process this node, the node",
+      "start_time": 870.0,
+      "end_time": 876.4
+    },
+    {
+      "text": " with content F, then you have to you should have completed this and you should have completed",
+      "start_time": 876.4,
+      "end_time": 882.08
+    },
+    {
+      "text": " this. To the left side of F is this subtree and to the right side of F is this subtree,",
+      "start_time": 882.08,
+      "end_time": 888.84
+    },
+    {
+      "text": " you should have completed the processing of these two sub trees that is what it says.",
+      "start_time": 888.84,
+      "end_time": 893.76
+    },
+    {
+      "text": " Left subtree is traversed in post order, right subtree is traversed in post order, finish",
+      "start_time": 893.76,
+      "end_time": 898.6
+    },
+    {
+      "text": "",
+      "start_time": 898.6,
+      "end_time": 870.0
+    },
+    {
+      "text": " the night.",
+      "start_time": 871.44,
+      "end_time": null
+    },
+    {
+      "text": " and right sub tree is processing then only visit the route that is the meaning of post",
+      "start_time": 900.0,
+      "end_time": 905.36
+    },
+    {
+      "text": " order traversing. So, I come to F not possible to display that because it is both left and",
+      "start_time": 905.36,
+      "end_time": 912.4
+    },
+    {
+      "text": " right are still pending. So, I first go in the route of left sub tree. So, I come here",
+      "start_time": 912.4,
+      "end_time": 917.84
+    },
+    {
+      "text": " B again it is not possible both left and right are not done. So, the rule is both left and",
+      "start_time": 917.84,
+      "end_time": 923.6
+    },
+    {
+      "text": "",
+      "start_time": 923.6,
+      "end_time": 900.0
+    },
+    {
+      "text": " write should have been completed before you can visit the route. So I come to A.",
+      "start_time": 906.12,
+      "end_time": null
+    },
+    {
+      "text": " It is left and right both are empty therefore it is time for us to process A. So, the very",
+      "start_time": 930.0,
+      "end_time": 936.88
+    },
+    {
+      "text": " first node that I will be displaying is EA. So, once I am done with this left right is",
+      "start_time": 936.88,
+      "end_time": 942.72
+    },
+    {
+      "text": " done, root is done I go back one level.",
+      "start_time": 942.72,
+      "end_time": 945.08
+    },
+    {
+      "text": " Now, when I go back one level it is not time for me to print B, but I have to go to the",
+      "start_time": 945.08,
+      "end_time": 949.68
+    },
+    {
+      "text": " right side of it and then I see D as a new tree, but again D cannot be processed now",
+      "start_time": 949.68,
+      "end_time": 958.0
+    },
+    {
+      "text": "",
+      "start_time": 958.0,
+      "end_time": 930.0
+    },
+    {
+      "text": " as I have both them left and right.",
+      "start_time": 932.0,
+      "end_time": null
+    },
+    {
+      "text": " at the point of D not it completed. So, I come to C. So, I print C because there is",
+      "start_time": 960.0,
+      "end_time": 966.4
+    },
+    {
+      "text": " left and right null then I go back one level that is still not possible. So, I then print",
+      "start_time": 966.4,
+      "end_time": 972.48
+    },
+    {
+      "text": " E that is possible then I go back one level. Now, it is time for me to print D because",
+      "start_time": 972.48,
+      "end_time": 977.44
+    },
+    {
+      "text": " left subtree of D and right subtree of D both are done. So, I print D. So, when I go back",
+      "start_time": 977.44,
+      "end_time": 983.28
+    },
+    {
+      "text": " one level above B also can be processed now because both left is done, right side is done.",
+      "start_time": 983.28,
+      "end_time": 989.24
+    },
+    {
+      "text": "",
+      "start_time": 989.24,
+      "end_time": 960.0
+    },
+    {
+      "text": " So, it's pretty...",
+      "start_time": 961.0,
+      "end_time": null
+    },
+    {
+      "text": " be now I go back here but this cannot be printed so I go to G G also cannot be printed because",
+      "start_time": 990.0,
+      "end_time": 997.2
+    },
+    {
+      "text": " left side is done but right side I am not it done so I come to right side I cannot be done",
+      "start_time": 997.2,
+      "end_time": 1003.12
+    },
+    {
+      "text": " because it is left side is not it done so I come to this then I print H then I come back to I right",
+      "start_time": 1003.12,
+      "end_time": 1009.12
+    },
+    {
+      "text": " side is not there so it is time for me to display I then I print G then I print F this is how my",
+      "start_time": 1009.12,
+      "end_time": 1017.2
+    },
+    {
+      "text": "",
+      "start_time": 1017.2,
+      "end_time": 990.0
+    },
+    {
+      "text": " Post order traverser is going to be here.",
+      "start_time": 992.0,
+      "end_time": null
+    },
+    {
+      "text": " So, in this case, I will be processing the node only when I am done with its left subtree",
+      "start_time": 1020.0,
+      "end_time": 1027.64
+    },
+    {
+      "text": " and right subtree.",
+      "start_time": 1027.64,
+      "end_time": 1028.64
+    },
+    {
+      "text": " So, for me to print F, all these nodes must have been processed and then only the F is",
+      "start_time": 1028.64,
+      "end_time": 1034.16
+    },
+    {
+      "text": " appearing here.",
+      "start_time": 1034.16,
+      "end_time": 1035.16
+    },
+    {
+      "text": " You can see that similarly for B, all these must have appeared.",
+      "start_time": 1035.16,
+      "end_time": 1039.44
+    },
+    {
+      "text": " So, A, B, C, E, all of these are all these nodes have appeared and after that only the",
+      "start_time": 1039.44,
+      "end_time": 1045.16
+    },
+    {
+      "text": " B is appearing.",
+      "start_time": 1045.16,
+      "end_time": 1047.08
+    },
+    {
+      "text": "",
+      "start_time": 1047.08,
+      "end_time": 1020.0
+    },
+    {
+      "text": " g is appearing only after the appearance of a.",
+      "start_time": 1022.92,
+      "end_time": null
+    },
+    {
+      "text": " and hedge. Accordingly at every level you have to take care of these things and at every",
+      "start_time": 1050.0,
+      "end_time": 1055.52
+    },
+    {
+      "text": " stage when you move to a new node you have to follow these three steps and then accordingly",
+      "start_time": 1055.52,
+      "end_time": 1061.48
+    },
+    {
+      "text": " the perform the post order traversals. So, now let me start explaining you how recursively",
+      "start_time": 1061.48,
+      "end_time": 1071.92
+    },
+    {
+      "text": "",
+      "start_time": 1071.92,
+      "end_time": 1050.0
+    },
+    {
+      "text": " we can hold this particular type of a concept.",
+      "start_time": 1053.84,
+      "end_time": null
+    },
+    {
+      "text": " After having understood recursive traversal, let us also understand the iterative way of",
+      "start_time": 1080.0,
+      "end_time": 1088.68
+    },
+    {
+      "text": " traversing the binary tree.",
+      "start_time": 1088.68,
+      "end_time": 1090.92
+    },
+    {
+      "text": " So, let us see how the iterative traversals need to be carried out.",
+      "start_time": 1090.92,
+      "end_time": 1097.12
+    },
+    {
+      "text": " So, the first and foremost I am talking about iterative in-order traversal.",
+      "start_time": 1097.12,
+      "end_time": 1103.08
+    },
+    {
+      "text": "",
+      "start_time": 1103.08,
+      "end_time": 1080.0
+    },
+    {
+      "text": " Let us understand from the point of view of the code. In this case, the iterative inorder traverse.",
+      "start_time": 1084.42,
+      "end_time": 1086.92
+    },
+    {
+      "text": " traversal requires that we make use of a stack.",
+      "start_time": 1110.0,
+      "end_time": 1114.48
+    },
+    {
+      "text": " Please note in recursive traversal also there is a stack involved, but that stack is an",
+      "start_time": 1114.48,
+      "end_time": 1119.92
+    },
+    {
+      "text": " implicit stack.",
+      "start_time": 1119.92,
+      "end_time": 1121.92
+    },
+    {
+      "text": " Automatically the recursive function makes use of the stack frame and places the nodes",
+      "start_time": 1121.92,
+      "end_time": 1127.04
+    },
+    {
+      "text": " addresses on top of each other.",
+      "start_time": 1127.04,
+      "end_time": 1129.96
+    },
+    {
+      "text": " So the way the stack is organized that way it is stored.",
+      "start_time": 1129.96,
+      "end_time": 1133.76
+    },
+    {
+      "text": " But in the iterative traversal it becomes the responsibility on the part of the programmer",
+      "start_time": 1133.76,
+      "end_time": 1139.36
+    },
+    {
+      "text": "",
+      "start_time": 1139.36,
+      "end_time": 1110.0
+    },
+    {
+      "text": " to use a",
+      "start_time": 1112.0,
+      "end_time": null
+    },
+    {
+      "text": " an explicit stack and make use of this stack to store some addresses. I will tell you why",
+      "start_time": 1140.0,
+      "end_time": 1145.88
+    },
+    {
+      "text": " we are using an explicit stack in this case. So, once the stack is made ready and it is",
+      "start_time": 1145.88,
+      "end_time": 1155.4
+    },
+    {
+      "text": " an empty stack, so we will start the traversal as long as we have nodes. So, we have to keep",
+      "start_time": 1155.4,
+      "end_time": 1162.92
+    },
+    {
+      "text": "",
+      "start_time": 1162.92,
+      "end_time": 1140.0
+    },
+    {
+      "text": " doing it while. So, the initially the current pointer is set to the root node.",
+      "start_time": 1146.88,
+      "end_time": null
+    },
+    {
+      "text": " as long as the current pointer is pointing to a node, we have to keep pushing these addresses.",
+      "start_time": 1170.0,
+      "end_time": 1178.48
+    },
+    {
+      "text": " So, you note that in the inorder traversal, we traverse to the left most. This node we start",
+      "start_time": 1178.48,
+      "end_time": 1184.24
+    },
+    {
+      "text": " with since its left side is not done, then I come to this, then I come to this like this.",
+      "start_time": 1184.24,
+      "end_time": 1188.32
+    },
+    {
+      "text": " So, in the iterative traversal, what happens is as and when we are moving down, we will lose the",
+      "start_time": 1189.2,
+      "end_time": 1194.48
+    },
+    {
+      "text": " address because you have to backtrack, which I said earlier. So, since you have to backtrack it,",
+      "start_time": 1194.48,
+      "end_time": 1198.96
+    },
+    {
+      "text": "",
+      "start_time": 1198.96,
+      "end_time": 1170.0
+    },
+    {
+      "text": " How do I backtrack?",
+      "start_time": 1172.0,
+      "end_time": null
+    },
+    {
+      "text": " unless I have stored those addresses explicitly in that order.",
+      "start_time": 1200.0,
+      "end_time": 1204.02
+    },
+    {
+      "text": " So what I need to use is a stack.",
+      "start_time": 1204.02,
+      "end_time": 1206.32
+    },
+    {
+      "text": " So I am going to push each and every nodes address onto the stack and then I come deep",
+      "start_time": 1206.32,
+      "end_time": 1212.52
+    },
+    {
+      "text": " to the left side.",
+      "start_time": 1212.52,
+      "end_time": 1213.52
+    },
+    {
+      "text": " Once I come deep to the left side, I know that once I do not have further left side,",
+      "start_time": 1213.52,
+      "end_time": 1218.84
+    },
+    {
+      "text": " it is time for me to pop out one element from the stack and print it.",
+      "start_time": 1218.84,
+      "end_time": 1223.12
+    },
+    {
+      "text": " So that is what I am going to do in the next part.",
+      "start_time": 1223.12,
+      "end_time": 1226.52
+    },
+    {
+      "text": "",
+      "start_time": 1226.52,
+      "end_time": 1200.0
+    },
+    {
+      "text": " So I store all the addresses to the left side and then",
+      "start_time": 1203.46,
+      "end_time": null
+    },
+    {
+      "text": " I pop out an information and then print it. Once I print you know that in the inorder",
+      "start_time": 1230.0,
+      "end_time": 1234.88
+    },
+    {
+      "text": " traversal after the printing of the nodes you have to go to the right side of that node",
+      "start_time": 1234.88,
+      "end_time": 1239.92
+    },
+    {
+      "text": " and push all of them. Treat this as a nutrient complete this. So, this you have to keep doing",
+      "start_time": 1239.92,
+      "end_time": 1245.68
+    },
+    {
+      "text": " it as long as the stack is not empty or the current is not null. So, this is the kind",
+      "start_time": 1245.68,
+      "end_time": 1252.8
+    },
+    {
+      "text": " of traversal. So, do while the stack is not empty or at least the current pointer is pointed",
+      "start_time": 1252.8,
+      "end_time": 1258.48
+    },
+    {
+      "text": "",
+      "start_time": 1258.48,
+      "end_time": 1230.0
+    },
+    {
+      "text": " a new tree. See, stat.",
+      "start_time": 1231.0,
+      "end_time": 1231.52
+    },
+    {
+      "text": " might be empty, but you might have set it to a new tree altogether.",
+      "start_time": 1260.0,
+      "end_time": 1262.96
+    },
+    {
+      "text": " So, in any case or you may not have a right side tree, so we had seen examples like you",
+      "start_time": 1262.96,
+      "end_time": 1268.28
+    },
+    {
+      "text": " keep traversed into left most and I print.",
+      "start_time": 1268.28,
+      "end_time": 1270.64
+    },
+    {
+      "text": " Suppose there is no right side, but the stack is already having some information right,",
+      "start_time": 1270.64,
+      "end_time": 1275.16
+    },
+    {
+      "text": " the other moves.",
+      "start_time": 1275.16,
+      "end_time": 1276.16
+    },
+    {
+      "text": " So, either stack is having value or the new tree has been created.",
+      "start_time": 1276.16,
+      "end_time": 1281.4
+    },
+    {
+      "text": " So, in any case you have to continue.",
+      "start_time": 1281.4,
+      "end_time": 1283.68
+    },
+    {
+      "text": " So, what I do as in when I am traversed into a new tree, I keep pushing to pushing the",
+      "start_time": 1283.68,
+      "end_time": 1289.52
+    },
+    {
+      "text": "",
+      "start_time": 1289.52,
+      "end_time": 1260.0
+    },
+    {
+      "text": " practices.",
+      "start_time": 1260.5,
+      "end_time": null
+    },
+    {
+      "text": " on the stack and go to the leftmost and then once I go to the leftmost I pop and then traverse",
+      "start_time": 1290.0,
+      "end_time": 1295.88
+    },
+    {
+      "text": " to the right side.",
+      "start_time": 1295.88,
+      "end_time": 1296.88
+    },
+    {
+      "text": " This is how the iterative in order traversal is going to happen.",
+      "start_time": 1296.88,
+      "end_time": 1301.28
+    },
+    {
+      "text": " So let us understand this kind of a code through an example now.",
+      "start_time": 1301.28,
+      "end_time": 1306.52
+    },
+    {
+      "text": " So here what happens is I have created an empty stack.",
+      "start_time": 1306.52,
+      "end_time": 1312.4
+    },
+    {
+      "text": " So now in this case, current is set to the root file.",
+      "start_time": 1312.4,
+      "end_time": 1317.84
+    },
+    {
+      "text": "",
+      "start_time": 1317.84,
+      "end_time": 1290.0
+    },
+    {
+      "text": " So I start the traversal too.",
+      "start_time": 1291.6,
+      "end_time": null
+    },
+    {
+      "text": " while current not equal to null, current is not null in this case. So, what does the in",
+      "start_time": 1320.0,
+      "end_time": 1324.64
+    },
+    {
+      "text": " order traverse will say, 5 cannot be printed, then I come to the left, 3 cannot be printed,",
+      "start_time": 1324.64,
+      "end_time": 1330.2
+    },
+    {
+      "text": " then I come to the left, 2 cannot be printed, I come to the left. So, till such point of",
+      "start_time": 1330.2,
+      "end_time": 1335.68
+    },
+    {
+      "text": " time we have to keep pushing these addresses, because I have to go back later on in that",
+      "start_time": 1335.68,
+      "end_time": 1339.6
+    },
+    {
+      "text": " order right. So, 5, once I move forward then I will have no way of going back. So, I am",
+      "start_time": 1339.6,
+      "end_time": 1346.36
+    },
+    {
+      "text": "",
+      "start_time": 1346.36,
+      "end_time": 1320.0
+    },
+    {
+      "text": " going to push these addresses on the stack. So, I am going to",
+      "start_time": 1323.64,
+      "end_time": null
+    },
+    {
+      "text": " to push the address of 5, because stack contains the address of each and every mode here. So,",
+      "start_time": 1350.0,
+      "end_time": 1357.0
+    },
+    {
+      "text": " address of 5 is pushed onto the stack, then I move to the left side, then it is again",
+      "start_time": 1357.0,
+      "end_time": 1363.96
+    },
+    {
+      "text": " pushed onto the stack, then I move to the left side, then I push it onto the stack,",
+      "start_time": 1363.96,
+      "end_time": 1370.16
+    },
+    {
+      "text": " then when I move it has become null. So, when it has become null, I have traversed",
+      "start_time": 1370.16,
+      "end_time": 1375.12
+    },
+    {
+      "text": "",
+      "start_time": 1375.12,
+      "end_time": 1350.0
+    },
+    {
+      "text": " all the way downwards to the left most and its left is null.",
+      "start_time": 1354.8,
+      "end_time": null
+    },
+    {
+      "text": " it is time for me to see that the root node is present on the top of the stack that has",
+      "start_time": 1380.0,
+      "end_time": 1386.16
+    },
+    {
+      "text": " to be popped and printed. So, I pop out that node 2 and then print that information ok.",
+      "start_time": 1386.16,
+      "end_time": 1393.92
+    },
+    {
+      "text": " Then it is my turn to traverse to the right side of 2, but there is no right side of 2.",
+      "start_time": 1393.92,
+      "end_time": 1399.36
+    },
+    {
+      "text": " So, when I said current to the right side, current is null, but does it mean that we",
+      "start_time": 1399.36,
+      "end_time": 1404.44
+    },
+    {
+      "text": " have finished the traversal loop. So, what is the other condition for which we are continuing",
+      "start_time": 1404.44,
+      "end_time": 1408.68
+    },
+    {
+      "text": "",
+      "start_time": 1408.68,
+      "end_time": 1380.0
+    },
+    {
+      "text": " the traversal. Just.",
+      "start_time": 1381.0,
+      "end_time": 1382.0
+    },
+    {
+      "text": " stack is not yet empty. So, I continue my traversal. So, in this case since there is",
+      "start_time": 1410.0,
+      "end_time": 1415.0
+    },
+    {
+      "text": " no new tree to the right side. So, it is time for me to go back one step and pop and print.",
+      "start_time": 1415.0,
+      "end_time": 1420.24
+    },
+    {
+      "text": " So, this process is going to be skipped and I go back I print to I would have done this",
+      "start_time": 1420.24,
+      "end_time": 1428.2
+    },
+    {
+      "text": " part if I had a new tree here, but this is not there in this case. So, I go back one",
+      "start_time": 1428.2,
+      "end_time": 1433.84
+    },
+    {
+      "text": "",
+      "start_time": 1433.84,
+      "end_time": 1410.0
+    },
+    {
+      "text": " level up and then pop it once again and then I print the information.",
+      "start_time": 1416.12,
+      "end_time": null
+    },
+    {
+      "text": " So, I pop out 3 and then print this information and I go to the right side of 3 now.",
+      "start_time": 1440.0,
+      "end_time": 1447.68
+    },
+    {
+      "text": " So, your current is 4.",
+      "start_time": 1447.68,
+      "end_time": 1449.4
+    },
+    {
+      "text": " So, this is the new tree that I am targeting now.",
+      "start_time": 1449.4,
+      "end_time": 1452.32
+    },
+    {
+      "text": " So, I am going to go back and this is like a new tree I start the inorder traversal.",
+      "start_time": 1452.32,
+      "end_time": 1457.68
+    },
+    {
+      "text": " So, when I start the inorder traversal I am going to push 4 now, it is like a new tree.",
+      "start_time": 1457.68,
+      "end_time": 1463.64
+    },
+    {
+      "text": " So, and then the current has become null.",
+      "start_time": 1463.64,
+      "end_time": 1466.4
+    },
+    {
+      "text": "",
+      "start_time": 1466.4,
+      "end_time": 1440.0
+    },
+    {
+      "text": " So now the Bob Rotten node is 4. Then I print the",
+      "start_time": 1442.0,
+      "end_time": 1444.0
+    },
+    {
+      "text": " information. Now, I again I go back, but there is no right side of 4. So, but the stack is",
+      "start_time": 1470.0,
+      "end_time": 1476.12
+    },
+    {
+      "text": " not empty. So, I because of this my traversal is not complete. So, I go back and then I",
+      "start_time": 1476.12,
+      "end_time": 1483.12
+    },
+    {
+      "text": " pop out 5, print that 5 and then go to the right side of 5 and then still continue my",
+      "start_time": 1483.12,
+      "end_time": 1489.32
+    },
+    {
+      "text": " traversal and then current is not null. So, I push 6 and then I complete that traversal",
+      "start_time": 1489.32,
+      "end_time": 1497.24
+    },
+    {
+      "text": "",
+      "start_time": 1497.24,
+      "end_time": 1470.0
+    },
+    {
+      "text": " of 446, then information is",
+      "start_time": 1472.56,
+      "end_time": null
+    },
+    {
+      "text": " So, the current side right side is null stack is also empty.",
+      "start_time": 1500.0,
+      "end_time": 1504.96
+    },
+    {
+      "text": " So, which means that I am completely done with the iterative traversal.",
+      "start_time": 1504.96,
+      "end_time": 1509.04
+    },
+    {
+      "text": " So, this is how the iterative in order traversal is going to work out wherein you are using",
+      "start_time": 1509.04,
+      "end_time": 1517.6
+    },
+    {
+      "text": " a stack to maintain addresses as and when we move forward to the left most we traverse",
+      "start_time": 1517.6,
+      "end_time": 1523.92
+    },
+    {
+      "text": " and because of which as and when we move we keep pushing and when we go to a new tree",
+      "start_time": 1523.92,
+      "end_time": 1529.2
+    },
+    {
+      "text": "",
+      "start_time": 1529.2,
+      "end_time": 1500.0
+    },
+    {
+      "text": " also.",
+      "start_time": 1500.6,
+      "end_time": null
+    },
+    {
+      "text": " we have to keep pushing those addresses and in that order therefore we use a last in first",
+      "start_time": 1530.0,
+      "end_time": 1535.76
+    },
+    {
+      "text": " out kind of a structure which is nothing but a stack structure.",
+      "start_time": 1535.76,
+      "end_time": 1539.78
+    },
+    {
+      "text": " You can note that there is an explicit stack that is being made use of.",
+      "start_time": 1539.78,
+      "end_time": 1543.48
+    },
+    {
+      "text": " So as and when we are moving to the rest most some nodes have been pushed and once we print",
+      "start_time": 1543.48,
+      "end_time": 1548.36
+    },
+    {
+      "text": " it we have to move to the right side.",
+      "start_time": 1548.36,
+      "end_time": 1550.36
+    },
+    {
+      "text": " So your current may be pointing to a new tree or stack may still have nodes in any case",
+      "start_time": 1550.36,
+      "end_time": 1557.48
+    },
+    {
+      "text": "",
+      "start_time": 1557.48,
+      "end_time": 1530.0
+    },
+    {
+      "text": " you have to continue the traversal.",
+      "start_time": 1532.0,
+      "end_time": null
+    },
+    {
+      "text": " also empty and your current is also not pointing to any new tree then we have to stop the traversal.",
+      "start_time": 1560.0,
+      "end_time": 1566.48
+    },
+    {
+      "text": " This is how the iterative in order traversal is going to work.",
+      "start_time": 1566.48,
+      "end_time": 1571.68
+    },
+    {
+      "text": " Then we have the iterative pre-order traversal.",
+      "start_time": 1571.68,
+      "end_time": 1574.92
+    },
+    {
+      "text": " In the iterative pre-order traversal you know that you have to visit the root and then traverse",
+      "start_time": 1574.92,
+      "end_time": 1581.68
+    },
+    {
+      "text": " to the left subtree and then to the right subtree.",
+      "start_time": 1581.68,
+      "end_time": 1585.2
+    },
+    {
+      "text": "",
+      "start_time": 1585.2,
+      "end_time": 1560.0
+    },
+    {
+      "text": " So what we do is, current is set to the root, if this is the current, if this is the current",
+      "start_time": 1567.0,
+      "end_time": null
+    },
+    {
+      "text": " there is no pre at all then you just return otherwise I create a stack again in this case",
+      "start_time": 1590.0,
+      "end_time": 1597.0
+    },
+    {
+      "text": " what I am going to do is as long as the stack is not empty first I push the root node onto",
+      "start_time": 1597.0,
+      "end_time": 1604.16
+    },
+    {
+      "text": " the stack so that the while loop is entered.",
+      "start_time": 1604.16,
+      "end_time": 1607.76
+    },
+    {
+      "text": " So there is root information on the stack and then I pop out this information and print",
+      "start_time": 1607.76,
+      "end_time": 1613.36
+    },
+    {
+      "text": " it because I know I am popping out a root information then what I need to do you please",
+      "start_time": 1613.36,
+      "end_time": 1619.04
+    },
+    {
+      "text": "",
+      "start_time": 1619.04,
+      "end_time": 1590.0
+    },
+    {
+      "text": " Please note that in pre-order",
+      "start_time": 1592.0,
+      "end_time": null
+    },
+    {
+      "text": " you have to finish left and then go to right. So, on the stack I am going to put right side",
+      "start_time": 1620.0,
+      "end_time": 1625.04
+    },
+    {
+      "text": " first and then left, so that when I am popping left side will come first, you get that. So,",
+      "start_time": 1625.04,
+      "end_time": 1629.76
+    },
+    {
+      "text": " here while stack is not empty, I pop out the root information and push the right side node",
+      "start_time": 1629.76,
+      "end_time": 1635.6
+    },
+    {
+      "text": " information and left side node information. Then I again repeat the procedure, stack is not empty,",
+      "start_time": 1635.6,
+      "end_time": 1641.44
+    },
+    {
+      "text": " take out the left side node, print it and its right side first and left side, then like that I keep",
+      "start_time": 1641.44,
+      "end_time": 1647.36
+    },
+    {
+      "text": "",
+      "start_time": 1647.36,
+      "end_time": 1620.0
+    },
+    {
+      "text": " So, let us understand to one end.",
+      "start_time": 1622.64,
+      "end_time": null
+    },
+    {
+      "text": " information how this is done. So, initially stack is empty. So, what I am going to do",
+      "start_time": 1650.0,
+      "end_time": 1655.68
+    },
+    {
+      "text": " is the current value is 5. So, that is going to be pushed on the stack. So, a stack has",
+      "start_time": 1655.68,
+      "end_time": 1664.16
+    },
+    {
+      "text": " addresses of nodes pushed into it. So, I push the root nodes information on the stack. So,",
+      "start_time": 1664.16,
+      "end_time": 1670.84
+    },
+    {
+      "text": " now while the stack is not empty, I keep repeating the operations. So, you pop out this information,",
+      "start_time": 1670.84,
+      "end_time": 1678.24
+    },
+    {
+      "text": "",
+      "start_time": 1678.24,
+      "end_time": 1650.0
+    },
+    {
+      "text": " print the current and for me.",
+      "start_time": 1651.78,
+      "end_time": null
+    },
+    {
+      "text": " and then the right side notner so I push 6 then I left side notner I push 3 then I repeat",
+      "start_time": 1680.0,
+      "end_time": 1690.56
+    },
+    {
+      "text": " stack is not empty. So, it is time for me to pop out left side is on top. So, I pop",
+      "start_time": 1690.56,
+      "end_time": 1695.8
+    },
+    {
+      "text": " out 3 and then print that information then once I print it I know that it is left and",
+      "start_time": 1695.8,
+      "end_time": 1702.52
+    },
+    {
+      "text": "",
+      "start_time": 1702.52,
+      "end_time": 1680.0
+    },
+    {
+      "text": " right should be displayed, but I push 4 first and then I push 2 and then again I see.",
+      "start_time": 1687.48,
+      "end_time": null
+    },
+    {
+      "text": " start. So now this time 2 is popped out. Then the right side is null, left side is null.",
+      "start_time": 1710.0,
+      "end_time": 1717.12
+    },
+    {
+      "text": " So I am going to come back. Now 4 is popped out. Left side is null, right side is null.",
+      "start_time": 1717.12,
+      "end_time": 1722.8
+    },
+    {
+      "text": " So nothing pushed on the stack. Then I come to the top of the stack which is 6. Then I",
+      "start_time": 1722.8,
+      "end_time": 1729.2
+    },
+    {
+      "text": " print that left is null, right is null and stack is also empty and therefore I am completing",
+      "start_time": 1729.2,
+      "end_time": 1734.88
+    },
+    {
+      "text": "",
+      "start_time": 1734.88,
+      "end_time": 1710.0
+    },
+    {
+      "text": " the preorder traversal. Now, let us look at the iterative post.",
+      "start_time": 1712.0,
+      "end_time": 1715.12
+    },
+    {
+      "text": " order traversal. For this I am going to use two stacks, one stack I am going to push and",
+      "start_time": 1740.0,
+      "end_time": 1747.28
+    },
+    {
+      "text": " when I am removing from one stack I am going to add it to the second stack and once I am",
+      "start_time": 1747.28,
+      "end_time": 1753.04
+    },
+    {
+      "text": " done with all the entries in the second stack then I am going to just pop out from the second",
+      "start_time": 1753.04,
+      "end_time": 1758.08
+    },
+    {
+      "text": " stack and print the information that is how I am going to do the iterative post order traversal.",
+      "start_time": 1758.08,
+      "end_time": 1763.84
+    },
+    {
+      "text": "",
+      "start_time": 1765.52,
+      "end_time": 1740.0
+    },
+    {
+      "text": " So, you have to push the root node first and to the stack one.",
+      "start_time": 1746.16,
+      "end_time": null
+    },
+    {
+      "text": " While the stack one is not empty, keep popping, pop the element from the stack and you have",
+      "start_time": 1770.0,
+      "end_time": 1779.12
+    },
+    {
+      "text": " to push that popped out root node because you know that in the post order root is going",
+      "start_time": 1779.12,
+      "end_time": 1784.04
+    },
+    {
+      "text": " to come at the end.",
+      "start_time": 1784.04,
+      "end_time": 1785.04
+    },
+    {
+      "text": " So, I am going to push it onto the second stack.",
+      "start_time": 1785.04,
+      "end_time": 1787.92
+    },
+    {
+      "text": " So, the root node of the tree, the root for the entire tree is pushed onto the stack too.",
+      "start_time": 1787.92,
+      "end_time": 1793.96
+    },
+    {
+      "text": " So, that is what is going to be done here.",
+      "start_time": 1793.96,
+      "end_time": 1797.56
+    },
+    {
+      "text": "",
+      "start_time": 1797.56,
+      "end_time": 1770.0
+    },
+    {
+      "text": " Now what I am going to do is left side.",
+      "start_time": 1772.44,
+      "end_time": null
+    },
+    {
+      "text": " is not null then I am going to push the left side on to the stack and to the right side.",
+      "start_time": 1800.0,
+      "end_time": 1805.68
+    },
+    {
+      "text": " You can see that left is pushed and then right is pushed. So on stack 1 you have left and",
+      "start_time": 1805.68,
+      "end_time": 1810.72
+    },
+    {
+      "text": " right so when you pop out right is coming first. So right is put on stack 2 then left",
+      "start_time": 1810.72,
+      "end_time": 1815.92
+    },
+    {
+      "text": " is put on the stack 2. So stack 2 is going the root then right side and then left side",
+      "start_time": 1815.92,
+      "end_time": 1822.04
+    },
+    {
+      "text": " is going. So what happens suppose you had only A, B, C, A is put on stack 2 then C is",
+      "start_time": 1822.04,
+      "end_time": 1828.92
+    },
+    {
+      "text": "",
+      "start_time": 1828.92,
+      "end_time": 1800.0
+    },
+    {
+      "text": " put on stack B.",
+      "start_time": 1801.08,
+      "end_time": null
+    },
+    {
+      "text": " put on stack board. So, left side is popped out first, right side is popped out next and",
+      "start_time": 1830.0,
+      "end_time": 1835.22
+    },
+    {
+      "text": " then root. So, left, right and root that is how the post-order traversal is going to be.",
+      "start_time": 1835.22,
+      "end_time": 1841.08
+    },
+    {
+      "text": " So, if the root this has both left and right. So, what you are going to do is put left first",
+      "start_time": 1841.08,
+      "end_time": 1849.08
+    },
+    {
+      "text": " onto the stack one, right next onto the stack one and in stack two it will be right first",
+      "start_time": 1849.08,
+      "end_time": 1857.68
+    },
+    {
+      "text": "",
+      "start_time": 1857.68,
+      "end_time": 1830.0
+    },
+    {
+      "text": " and then lift like that. So, that is .",
+      "start_time": 1832.32,
+      "end_time": null
+    },
+    {
+      "text": " is and once you are you have finished processing S1 in that order, S2 you would have put it",
+      "start_time": 1860.0,
+      "end_time": 1866.32
+    },
+    {
+      "text": " in an order where all the elements can be just popped out and printed that is how the",
+      "start_time": 1866.32,
+      "end_time": 1871.52
+    },
+    {
+      "text": " post-order traversal is going to work.",
+      "start_time": 1871.52,
+      "end_time": 1874.56
+    },
+    {
+      "text": " So you are going to push the route initially while the stack one is not empty you will",
+      "start_time": 1874.56,
+      "end_time": 1879.64
+    },
+    {
+      "text": " pop out and then push it to stack 2 and that nodes left if it is not null, if it is right",
+      "start_time": 1879.64,
+      "end_time": 1887.04
+    },
+    {
+      "text": "",
+      "start_time": 1887.04,
+      "end_time": 1860.0
+    },
+    {
+      "text": " not know push them to s1. So, one push to s1, one push to s2, one push to s3, one push",
+      "start_time": 1867.0,
+      "end_time": null
+    },
+    {
+      "text": " yes2 and 2 pushes to yes1. This way you keep doing it and then once you are done with the",
+      "start_time": 1890.0,
+      "end_time": 1896.72
+    },
+    {
+      "text": " emptying of stack1 then you are going to start with the emptying of stack2 and you just pop",
+      "start_time": 1896.72,
+      "end_time": 1902.88
+    },
+    {
+      "text": " out in that order and then print the information. So, let us look at the example through an animation.",
+      "start_time": 1902.88,
+      "end_time": 1908.88
+    },
+    {
+      "text": " So, stack1 is empty and then stack2 is also empty then push the root information on to stack1",
+      "start_time": 1910.16,
+      "end_time": 1918.56
+    },
+    {
+      "text": "",
+      "start_time": 1918.56,
+      "end_time": 1890.0
+    },
+    {
+      "text": " and then you start the robot.",
+      "start_time": 1892.0,
+      "end_time": null
+    },
+    {
+      "text": " While the list is not empty, if the stack 1 is not empty, what I am going to do is the",
+      "start_time": 1920.0,
+      "end_time": 1927.0
+    },
+    {
+      "text": " root node has to be popped out and then you have to push it onto the stack.",
+      "start_time": 1927.0,
+      "end_time": 1934.24
+    },
+    {
+      "text": " Then the left is not null, right is not null.",
+      "start_time": 1934.24,
+      "end_time": 1937.68
+    },
+    {
+      "text": " So I push left first onto this, current left is 3, push it onto stack 1, current right",
+      "start_time": 1937.68,
+      "end_time": 1944.52
+    },
+    {
+      "text": " is 6 that is also pushed onto the stack.",
+      "start_time": 1944.52,
+      "end_time": 1947.0
+    },
+    {
+      "text": " So it is not empty node.",
+      "start_time": 1947.0,
+      "end_time": 1949.0
+    },
+    {
+      "text": "",
+      "start_time": 1949.0,
+      "end_time": 1920.0
+    },
+    {
+      "text": " So you know that this is a very important thing. So you know that this is a very important thing.",
+      "start_time": 1921.0,
+      "end_time": 1922.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1922.0,
+      "end_time": 1923.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1923.0,
+      "end_time": 1924.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1924.0,
+      "end_time": 1925.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1925.0,
+      "end_time": 1926.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1926.0,
+      "end_time": 1927.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1927.0,
+      "end_time": 1928.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1928.0,
+      "end_time": 1929.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1929.0,
+      "end_time": 1930.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1930.0,
+      "end_time": 1931.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1931.0,
+      "end_time": 1932.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1932.0,
+      "end_time": 1933.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1933.0,
+      "end_time": 1934.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1934.0,
+      "end_time": 1935.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1935.0,
+      "end_time": 1936.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1936.0,
+      "end_time": 1937.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1937.0,
+      "end_time": 1938.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1938.0,
+      "end_time": 1939.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1939.0,
+      "end_time": 1940.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1940.0,
+      "end_time": 1941.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1941.0,
+      "end_time": 1942.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1942.0,
+      "end_time": 1943.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1943.0,
+      "end_time": 1944.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1944.0,
+      "end_time": 1945.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1945.0,
+      "end_time": 1946.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1946.0,
+      "end_time": 1947.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1947.0,
+      "end_time": 1948.0
+    },
+    {
+      "text": " So you know that this is a very important thing.",
+      "start_time": 1948.0,
+      "end_time": 1949.0
+    },
+    {
+      "text": " fellows left side and right side have been pushed. So, your right is on top here. So,",
+      "start_time": 1950.0,
+      "end_time": 1956.44
+    },
+    {
+      "text": " now what I do is it is not empty. So, 6 is popped out because this is see 5 will come",
+      "start_time": 1956.44,
+      "end_time": 1963.52
+    },
+    {
+      "text": " at the last. So, that is on the stack. 6 will come later the right side of this will come",
+      "start_time": 1963.52,
+      "end_time": 1969.24
+    },
+    {
+      "text": " next right. So, much before 5 in the post-order traversal. So, 6 has gone but 6 left and right",
+      "start_time": 1969.24,
+      "end_time": 1977.76
+    },
+    {
+      "text": "",
+      "start_time": 1977.76,
+      "end_time": 1950.0
+    },
+    {
+      "text": " turn on. So, this is done.",
+      "start_time": 1952.2,
+      "end_time": null
+    },
+    {
+      "text": " this part is done now we do not have to take care of that ok right is now then I come to",
+      "start_time": 1980.0,
+      "end_time": 1985.68
+    },
+    {
+      "text": " the stack 3 so next fellow to be targeted is 3 so I push 3 onto the stack and then you",
+      "start_time": 1985.68,
+      "end_time": 1993.16
+    },
+    {
+      "text": " know that 3 can come only after 4 is done 2 is done right so you are going to take 2",
+      "start_time": 1993.16,
+      "end_time": 2001.24
+    },
+    {
+      "text": " first push it into the stack 4 next push it into the stack and repeat so if at all there",
+      "start_time": 2001.24,
+      "end_time": 2007.96
+    },
+    {
+      "text": "",
+      "start_time": 2007.96,
+      "end_time": 1980.0
+    },
+    {
+      "text": " is a septree here this part will be completed.",
+      "start_time": 1982.08,
+      "end_time": null
+    },
+    {
+      "text": " needed first before even taking up this. So, I pop 4 and push it on to the stack 2 and",
+      "start_time": 2010.0,
+      "end_time": 2017.84
+    },
+    {
+      "text": " pop 2 and then push it on to the stack and then that is how the whole thing is going",
+      "start_time": 2017.84,
+      "end_time": 2024.64
+    },
+    {
+      "text": " to be done. So, now, while not stack mts 2, you have to keep popping out and print the",
+      "start_time": 2024.64,
+      "end_time": 2030.48
+    },
+    {
+      "text": " information. So, that is the order in which the post order iterative traversal is going",
+      "start_time": 2030.48,
+      "end_time": 2037.36
+    },
+    {
+      "text": "",
+      "start_time": 2037.36,
+      "end_time": 2010.0
+    },
+    {
+      "text": " to what? So, what?",
+      "start_time": 2012.64,
+      "end_time": null
+    },
+    {
+      "text": " you did was 5 is pushed here, then that is the root element go here, then you know that",
+      "start_time": 2040.0,
+      "end_time": 2048.56
+    },
+    {
+      "text": " just before 5 watt will come in post order is right side.",
+      "start_time": 2048.56,
+      "end_time": 2052.04
+    },
+    {
+      "text": " So and then comes left side.",
+      "start_time": 2052.04,
+      "end_time": 2054.12
+    },
+    {
+      "text": " So first you put left here, then right and pop 6, finish this part of the tree and then",
+      "start_time": 2054.12,
+      "end_time": 2061.2
+    },
+    {
+      "text": " come to this part of the tree like that.",
+      "start_time": 2061.2,
+      "end_time": 2063.24
+    },
+    {
+      "text": " The iterative post order traversal is going to.",
+      "start_time": 2063.24,
+      "end_time": 2067.8
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 2067.8,
+      "end_time": 2069.28
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 2070.0,
+      "end_time": 2071.0
+    }
+  ],
+  "transcript_text": " Hello everyone, welcome to PES University online classes on data structures and its applications.  I am Professor Shailaja, working in the Department of Computer Science and Engineering.  This content is co-authored by my colleague Usuma KB.  In today's session, we will look at binary tree traversals.  In the previous session, we have understood how we can go about organizing the data in   and not  linear fashion especially in the form of a binary tree. We have seen that it consists  of a root node then it has a left subset which is the left binary tree and it has a right  subset which is called as a right binary tree. After having placed them in memory subsequently  we may want to retrieve some information from each and every node. If it is the question   of enumerating every node.  and visiting each and every node and performing certain operation, then we will have to traverse  the tree. We will have to go through each and every node. We may want to update the age of  customers, let us say the binary tree is representing the customer's information.  Or we may want to modify the marks of each and every student if the binary tree is   representing students information or you may want to edit some field of  the student like if we are planning to give a BES ID to each and every student  we may want to update the email ID field of every student. This calls for  exploring every node, enumerating every node. Now the question is what is the  order in which we will have to make this traversal? In the case of linear   organization it is only one sequence that we have.  Whereas in the case of non-linear organization, there are multiple possibilities.  So let us look at these traversal techniques.  As I said, moving through all the nodes in a binary tree and visiting each one in turn  is called as a binary tree traversal.  Since it is a non-linear organization, there are many possibilities.   Let us use some convention here. Visiting a node is called as v.  and if you want to traverse the left subtree we will denote it by L and if you want to  traverse the right side subtree we will denote it as R. So, we have three letters denoting  certain operation. Now, since we have three letters here there are totally six combinations  possible. There are six ways in which you can arrange these letters. So, what are they?   We have VLR.  L, V, R, L, R, L, V, R, L, L, V, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L,  L. Among these six ways, we will be studying in this course three ways which are quite popular  in nature. One is V, L, R, visiting the node followed by the left subtree traversal and  the right subtree traversal which is called as a pre-ordered traversal of a binary tree.   Then we have left traversal, visiting a node and then right traversal which is called.  as the in-order traversal and then we have the left and right sub pre traversals followed  by visiting the node called as the host-order traversal of a binary tree.  Let us look at each of these traversal techniques in turn.  The first one is the pre-order traversal.  In the pre-order traversal as said, it is the root node which is going to be visited  first.   Good evening.  here by visiting is to perform an operation when we are at that node.  So for the purposes of this session, when I visit the node, what is that I can do?  So since the elements have been marked as F, B, G and all of that, some alphabets have  been used in the example tree, so I am going to print the information, display the information.  When I visit the node, I will be displaying the information, that is the business logic   that I'm only...  use in the tree that I have here. Then I am going to traverse to the left side and then  I am going to traverse to the right side. So, let us look at what is going to be yielded  out of the traversal from this tree. So, first and foremost I go to the root of the binary  tree and since when I go to the root of the tree I am expected to visit it which in this   case I am going to display. So, f is displayed here.  Okay and then I am going to go to the left sub tree. Please note that it is a recursive definition.  You have to traverse this left sub tree in pre-order that is what you need to do. So in order to  do this in pre-order what does a pre-order say? Again visit the root node. So the root of the  left sub tree must be visited. So I visit B and then again I traverse to the left side of this.   So every time it is like a new tree when I move to the left side.  side, you have to all over start the pre-ordered travel side. So, I go here and I visit the  route. So, when I come here, I go to the left side of A, but when I go to the left side,  it is null. So, I am done. There is nothing like a left side sub-tree being present. It  is an empty left sub-tree. So, I come back to the route, then I traverse to the right  side, there is nothing. So, you have to go one level above, backtrack and then here you   You know that once you are...  done with the left subtree the root is again going back to the root and then you have to  traverse to the right side of that tree in that order. So, this is the subtree that right  side subtree of B I am looking at. So, please note I came to B and then printed it then I  came to A printed it there is no left and right. So, go back one level above because   we are done with the left side of B and I have to now traverse to the right side of B.  and right side of B again is a new tree again start all over again the visit the root so  you have to go here and then come to this D and then I come to C so I print C then there  is no left and right here so I go back one level above and then I traverse to the right  side of D and then I print E so there is no left and right I go back one level up and   then I...  I go back one level above and then this is done.  So then I go to this level then I come to this.  I am done with the left side of this root node.  Now I am supposed to traverse to the right side of this.  So I come here then print G and then I print I and then I print H and then I am done.   So, yes, then.  with the completion of the tree traversal. So, I print F then B and then A come back  then go to the right side B then left side C and come back then E right side then I am  done with the left side go to the right side G and then left side nothing then I go to  right side I then I go to left side H and I continue. So, this is the pre-ordered traversal   that we have.  Next is the in order traversal.  In the in order traversal, left subtree is traversed in in order.  Here we complete the traversal of all the nodes that are to the left side of a given  node and then we visit the node given node, root node and then we traverse to the right  side.  This is a way of traversal.   So you want to complete all the left side portions of the given.  node and then visit the parent and then visit the right side of the given node.  That is how the in-order traversal is going to proceed.  So what you need to understand is if you want to print, if whatever traversal starts from  F but we do not perform the operation there.  So I see F but if I find that there is still left sub P left, I do not process this, I  proceed to the left side.   if it has left side again.  Again I proceed to the left side and if there is no left side here it is time for me to process  this no I display this and then process go towards the right side of A but there is nothing. So,  I am done with this so when I go one level above I know that I am going back to the root. So,  when I am going back to the root you know that its left side is all done so it is time for us to   display B and then I go to the right side of B and start the process all over.  You can see that here also it is a recursive definition.  Left subtree is traversed in order.  So, I go to the left subtree.  This is the left subtree.  This has to be traversed in order.  Again I come to be this has to be traversed in order.  So, this has to be traversed in order like that.  Every time when you visit to a new place, it has to be traversed in order.  The three steps will have to be followed.   So, let us see what is the difference between the two.  the traversal is going to yield for this kind of a tree. So, I come to F, it is not time  for me to process this as my left sub tree is not yet done. You can note that the root  node is processed only after completion of the traversal of the left sub tree that is  a meaning. So, here F cannot be displayed because its left side is not yet done. Only  after all of the nodes towards left side are done then only you can process F that is a   meaning and in our case.  processing is about displaying the information. So, I come to B again this is not possible  because my left side is not yet done. So, I come to A here it is possible because there  is no left side tree at all it is empty. Therefore, the first and foremost known in  the in order traversal that I will be displaying is A. Then I go back one level see here the   right side is also empty after printing A.  I would have traversed to the right side of A if I had a tree but there is no right side  so I go back one level above.  So when I go back one level above you know that you would have finished the left side  correct?  Therefore you will print B. So B is now printed because it is left side is done.  So I print B. Once I print the root node you can see that you have to traverse to the right   sub tree so I come to D and when I come to D it is like a new sub tree and I have  to traverse this in order. So, can I print D now? No, so because it is left separate is  still left. So, I come to C and this is possible. So, I print C then I go back one level above  then I print D. After printing D I have to go to the right side, I go to the right side  and print E. So, once you are done with E there is nothing further from E. So, I go   one level above T since I have traversed from right side. So, this level is done.  level is also done because it is from the right side. So, I go back to this F. So, I  print F now since I came from left side I print F because all these nodes have been  displayed. So, after displaying F I go to the right side of F and start all over the  in order traversal for this tree. So, here G can my process because there is no left   side and printing G, then I come to this particular subtree and  start the inorder traversal all over can I print I now not possible because its left  side is still not done. So, I come to H, so I print H then I go back one level above  then I print I and then I just go back and complete the process. This is the way in which  the inorder traversal is going to be carried out. I just repeat I come to F but it is not   possible to discreet because of the left side tree not being done. Then I come  to be, then I come to A, then there is no left subtree here. So, I print A, come to  right subtree, but there is nothing. So, this time for me to go back one level above.  So, then since you are traversing from the left side, I print the row to B, then I come  to the right side of this. After printing a node, you have to traverse to the right  side, please note that. So, now I come to D, this is like altogether   new statement.  a new set of trees that you have now to visit. So, start all over ok, can I visit the room?  No, it is because it is left separate is still not done. So, I have come here and then print  C go back print D and then once I print D again I come to the right side print E and  then after printing E you should have gone to right side, but there is nothing. So,  I am going back going back and then print F then I am done with this spot and F is also   So, take this new tree and you can see that this is the same as the previous one.  G because there is no left side and then after printing G where do you go to the right side  I and then print this and then come to the left side edge and this is how the inorder  traversal is going to proceed. Now, let us look at the post-order traversal.  In the post-order traversal what you are going to do is to traverse both left and right subtrees   before even you can process the root node. That is the way in which the  traversal is going to proceed. So, we have to if we want to process this node, the node  with content F, then you have to you should have completed this and you should have completed  this. To the left side of F is this subtree and to the right side of F is this subtree,  you should have completed the processing of these two sub trees that is what it says.  Left subtree is traversed in post order, right subtree is traversed in post order, finish   the night.  and right sub tree is processing then only visit the route that is the meaning of post  order traversing. So, I come to F not possible to display that because it is both left and  right are still pending. So, I first go in the route of left sub tree. So, I come here  B again it is not possible both left and right are not done. So, the rule is both left and   write should have been completed before you can visit the route. So I come to A.  It is left and right both are empty therefore it is time for us to process A. So, the very  first node that I will be displaying is EA. So, once I am done with this left right is  done, root is done I go back one level.  Now, when I go back one level it is not time for me to print B, but I have to go to the  right side of it and then I see D as a new tree, but again D cannot be processed now   as I have both them left and right.  at the point of D not it completed. So, I come to C. So, I print C because there is  left and right null then I go back one level that is still not possible. So, I then print  E that is possible then I go back one level. Now, it is time for me to print D because  left subtree of D and right subtree of D both are done. So, I print D. So, when I go back  one level above B also can be processed now because both left is done, right side is done.   So, it's pretty...  be now I go back here but this cannot be printed so I go to G G also cannot be printed because  left side is done but right side I am not it done so I come to right side I cannot be done  because it is left side is not it done so I come to this then I print H then I come back to I right  side is not there so it is time for me to display I then I print G then I print F this is how my   Post order traverser is going to be here.  So, in this case, I will be processing the node only when I am done with its left subtree  and right subtree.  So, for me to print F, all these nodes must have been processed and then only the F is  appearing here.  You can see that similarly for B, all these must have appeared.  So, A, B, C, E, all of these are all these nodes have appeared and after that only the  B is appearing.   g is appearing only after the appearance of a.  and hedge. Accordingly at every level you have to take care of these things and at every  stage when you move to a new node you have to follow these three steps and then accordingly  the perform the post order traversals. So, now let me start explaining you how recursively   we can hold this particular type of a concept.  After having understood recursive traversal, let us also understand the iterative way of  traversing the binary tree.  So, let us see how the iterative traversals need to be carried out.  So, the first and foremost I am talking about iterative in-order traversal.   Let us understand from the point of view of the code. In this case, the iterative inorder traverse.  traversal requires that we make use of a stack.  Please note in recursive traversal also there is a stack involved, but that stack is an  implicit stack.  Automatically the recursive function makes use of the stack frame and places the nodes  addresses on top of each other.  So the way the stack is organized that way it is stored.  But in the iterative traversal it becomes the responsibility on the part of the programmer   to use a  an explicit stack and make use of this stack to store some addresses. I will tell you why  we are using an explicit stack in this case. So, once the stack is made ready and it is  an empty stack, so we will start the traversal as long as we have nodes. So, we have to keep   doing it while. So, the initially the current pointer is set to the root node.  as long as the current pointer is pointing to a node, we have to keep pushing these addresses.  So, you note that in the inorder traversal, we traverse to the left most. This node we start  with since its left side is not done, then I come to this, then I come to this like this.  So, in the iterative traversal, what happens is as and when we are moving down, we will lose the  address because you have to backtrack, which I said earlier. So, since you have to backtrack it,   How do I backtrack?  unless I have stored those addresses explicitly in that order.  So what I need to use is a stack.  So I am going to push each and every nodes address onto the stack and then I come deep  to the left side.  Once I come deep to the left side, I know that once I do not have further left side,  it is time for me to pop out one element from the stack and print it.  So that is what I am going to do in the next part.   So I store all the addresses to the left side and then  I pop out an information and then print it. Once I print you know that in the inorder  traversal after the printing of the nodes you have to go to the right side of that node  and push all of them. Treat this as a nutrient complete this. So, this you have to keep doing  it as long as the stack is not empty or the current is not null. So, this is the kind  of traversal. So, do while the stack is not empty or at least the current pointer is pointed   a new tree. See, stat.  might be empty, but you might have set it to a new tree altogether.  So, in any case or you may not have a right side tree, so we had seen examples like you  keep traversed into left most and I print.  Suppose there is no right side, but the stack is already having some information right,  the other moves.  So, either stack is having value or the new tree has been created.  So, in any case you have to continue.  So, what I do as in when I am traversed into a new tree, I keep pushing to pushing the   practices.  on the stack and go to the leftmost and then once I go to the leftmost I pop and then traverse  to the right side.  This is how the iterative in order traversal is going to happen.  So let us understand this kind of a code through an example now.  So here what happens is I have created an empty stack.  So now in this case, current is set to the root file.   So I start the traversal too.  while current not equal to null, current is not null in this case. So, what does the in  order traverse will say, 5 cannot be printed, then I come to the left, 3 cannot be printed,  then I come to the left, 2 cannot be printed, I come to the left. So, till such point of  time we have to keep pushing these addresses, because I have to go back later on in that  order right. So, 5, once I move forward then I will have no way of going back. So, I am   going to push these addresses on the stack. So, I am going to  to push the address of 5, because stack contains the address of each and every mode here. So,  address of 5 is pushed onto the stack, then I move to the left side, then it is again  pushed onto the stack, then I move to the left side, then I push it onto the stack,  then when I move it has become null. So, when it has become null, I have traversed   all the way downwards to the left most and its left is null.  it is time for me to see that the root node is present on the top of the stack that has  to be popped and printed. So, I pop out that node 2 and then print that information ok.  Then it is my turn to traverse to the right side of 2, but there is no right side of 2.  So, when I said current to the right side, current is null, but does it mean that we  have finished the traversal loop. So, what is the other condition for which we are continuing   the traversal. Just.  stack is not yet empty. So, I continue my traversal. So, in this case since there is  no new tree to the right side. So, it is time for me to go back one step and pop and print.  So, this process is going to be skipped and I go back I print to I would have done this  part if I had a new tree here, but this is not there in this case. So, I go back one   level up and then pop it once again and then I print the information.  So, I pop out 3 and then print this information and I go to the right side of 3 now.  So, your current is 4.  So, this is the new tree that I am targeting now.  So, I am going to go back and this is like a new tree I start the inorder traversal.  So, when I start the inorder traversal I am going to push 4 now, it is like a new tree.  So, and then the current has become null.   So now the Bob Rotten node is 4. Then I print the  information. Now, I again I go back, but there is no right side of 4. So, but the stack is  not empty. So, I because of this my traversal is not complete. So, I go back and then I  pop out 5, print that 5 and then go to the right side of 5 and then still continue my  traversal and then current is not null. So, I push 6 and then I complete that traversal   of 446, then information is  So, the current side right side is null stack is also empty.  So, which means that I am completely done with the iterative traversal.  So, this is how the iterative in order traversal is going to work out wherein you are using  a stack to maintain addresses as and when we move forward to the left most we traverse  and because of which as and when we move we keep pushing and when we go to a new tree   also.  we have to keep pushing those addresses and in that order therefore we use a last in first  out kind of a structure which is nothing but a stack structure.  You can note that there is an explicit stack that is being made use of.  So as and when we are moving to the rest most some nodes have been pushed and once we print  it we have to move to the right side.  So your current may be pointing to a new tree or stack may still have nodes in any case   you have to continue the traversal.  also empty and your current is also not pointing to any new tree then we have to stop the traversal.  This is how the iterative in order traversal is going to work.  Then we have the iterative pre-order traversal.  In the iterative pre-order traversal you know that you have to visit the root and then traverse  to the left subtree and then to the right subtree.   So what we do is, current is set to the root, if this is the current, if this is the current  there is no pre at all then you just return otherwise I create a stack again in this case  what I am going to do is as long as the stack is not empty first I push the root node onto  the stack so that the while loop is entered.  So there is root information on the stack and then I pop out this information and print  it because I know I am popping out a root information then what I need to do you please   Please note that in pre-order  you have to finish left and then go to right. So, on the stack I am going to put right side  first and then left, so that when I am popping left side will come first, you get that. So,  here while stack is not empty, I pop out the root information and push the right side node  information and left side node information. Then I again repeat the procedure, stack is not empty,  take out the left side node, print it and its right side first and left side, then like that I keep   So, let us understand to one end.  information how this is done. So, initially stack is empty. So, what I am going to do  is the current value is 5. So, that is going to be pushed on the stack. So, a stack has  addresses of nodes pushed into it. So, I push the root nodes information on the stack. So,  now while the stack is not empty, I keep repeating the operations. So, you pop out this information,   print the current and for me.  and then the right side notner so I push 6 then I left side notner I push 3 then I repeat  stack is not empty. So, it is time for me to pop out left side is on top. So, I pop  out 3 and then print that information then once I print it I know that it is left and   right should be displayed, but I push 4 first and then I push 2 and then again I see.  start. So now this time 2 is popped out. Then the right side is null, left side is null.  So I am going to come back. Now 4 is popped out. Left side is null, right side is null.  So nothing pushed on the stack. Then I come to the top of the stack which is 6. Then I  print that left is null, right is null and stack is also empty and therefore I am completing   the preorder traversal. Now, let us look at the iterative post.  order traversal. For this I am going to use two stacks, one stack I am going to push and  when I am removing from one stack I am going to add it to the second stack and once I am  done with all the entries in the second stack then I am going to just pop out from the second  stack and print the information that is how I am going to do the iterative post order traversal.   So, you have to push the root node first and to the stack one.  While the stack one is not empty, keep popping, pop the element from the stack and you have  to push that popped out root node because you know that in the post order root is going  to come at the end.  So, I am going to push it onto the second stack.  So, the root node of the tree, the root for the entire tree is pushed onto the stack too.  So, that is what is going to be done here.   Now what I am going to do is left side.  is not null then I am going to push the left side on to the stack and to the right side.  You can see that left is pushed and then right is pushed. So on stack 1 you have left and  right so when you pop out right is coming first. So right is put on stack 2 then left  is put on the stack 2. So stack 2 is going the root then right side and then left side  is going. So what happens suppose you had only A, B, C, A is put on stack 2 then C is   put on stack B.  put on stack board. So, left side is popped out first, right side is popped out next and  then root. So, left, right and root that is how the post-order traversal is going to be.  So, if the root this has both left and right. So, what you are going to do is put left first  onto the stack one, right next onto the stack one and in stack two it will be right first   and then lift like that. So, that is .  is and once you are you have finished processing S1 in that order, S2 you would have put it  in an order where all the elements can be just popped out and printed that is how the  post-order traversal is going to work.  So you are going to push the route initially while the stack one is not empty you will  pop out and then push it to stack 2 and that nodes left if it is not null, if it is right   not know push them to s1. So, one push to s1, one push to s2, one push to s3, one push  yes2 and 2 pushes to yes1. This way you keep doing it and then once you are done with the  emptying of stack1 then you are going to start with the emptying of stack2 and you just pop  out in that order and then print the information. So, let us look at the example through an animation.  So, stack1 is empty and then stack2 is also empty then push the root information on to stack1   and then you start the robot.  While the list is not empty, if the stack 1 is not empty, what I am going to do is the  root node has to be popped out and then you have to push it onto the stack.  Then the left is not null, right is not null.  So I push left first onto this, current left is 3, push it onto stack 1, current right  is 6 that is also pushed onto the stack.  So it is not empty node.   So you know that this is a very important thing. So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  So you know that this is a very important thing.  fellows left side and right side have been pushed. So, your right is on top here. So,  now what I do is it is not empty. So, 6 is popped out because this is see 5 will come  at the last. So, that is on the stack. 6 will come later the right side of this will come  next right. So, much before 5 in the post-order traversal. So, 6 has gone but 6 left and right   turn on. So, this is done.  this part is done now we do not have to take care of that ok right is now then I come to  the stack 3 so next fellow to be targeted is 3 so I push 3 onto the stack and then you  know that 3 can come only after 4 is done 2 is done right so you are going to take 2  first push it into the stack 4 next push it into the stack and repeat so if at all there   is a septree here this part will be completed.  needed first before even taking up this. So, I pop 4 and push it on to the stack 2 and  pop 2 and then push it on to the stack and then that is how the whole thing is going  to be done. So, now, while not stack mts 2, you have to keep popping out and print the  information. So, that is the order in which the post order iterative traversal is going   to what? So, what?  you did was 5 is pushed here, then that is the root element go here, then you know that  just before 5 watt will come in post order is right side.  So and then comes left side.  So first you put left here, then right and pop 6, finish this part of the tree and then  come to this part of the tree like that.  The iterative post order traversal is going to.  Thank you.  Thank you."
+}

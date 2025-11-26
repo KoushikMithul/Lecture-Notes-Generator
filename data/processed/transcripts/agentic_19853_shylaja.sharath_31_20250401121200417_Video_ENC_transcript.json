@@ -1,0 +1,3578 @@
+{
+  "video_name": "agentic_19853_shylaja.sharath_31_20250401121200417_Video_ENC",
+  "video_path": "data/raw/videos/agentic_19853_shylaja.sharath_31_20250401121200417_Video_ENC.mp4",
+  "duration_seconds": 3300.096,
+  "transcript": [
+    {
+      "text": " workflow, it is known as compounded LLM.",
+      "start_time": 0.0,
+      "end_time": 8.84
+    },
+    {
+      "text": " Agentic workflow involves compounded LLMs but that is one of the ways not the only method.",
+      "start_time": 8.84,
+      "end_time": 21.16
+    },
+    {
+      "text": "",
+      "start_time": 21.16,
+      "end_time": 0.0
+    },
+    {
+      "text": " So in the compounded LLM the same question when you ask the LLM you want it to generate",
+      "start_time": 8.8,
+      "end_time": 0.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1.0,
+      "end_time": null
+    },
+    {
+      "text": " a marketing plan for a product or an essay, it generates a draft version, draft one.",
+      "start_time": 30.0,
+      "end_time": 42.92
+    },
+    {
+      "text": " Then you are going to feed this, take this draft or it may generate a code, take this",
+      "start_time": 42.92,
+      "end_time": 48.64
+    },
+    {
+      "text": " draft and feed it to another LLM or it same LLM again.",
+      "start_time": 48.64,
+      "end_time": 53.92
+    },
+    {
+      "text": "",
+      "start_time": 53.92,
+      "end_time": 30.0
+    },
+    {
+      "text": " will act as a critic. The second LLM will act as a critic.",
+      "start_time": 35.84,
+      "end_time": null
+    },
+    {
+      "text": " It can be same LLM or a different LLM, but it has to act as a critic of this essay or",
+      "start_time": 60.0,
+      "end_time": 68.0
+    },
+    {
+      "text": " the marketing plan whatever you have asked for.",
+      "start_time": 68.0,
+      "end_time": 70.84
+    },
+    {
+      "text": " So now the critics output is obtained.",
+      "start_time": 70.84,
+      "end_time": 74.48
+    },
+    {
+      "text": " This essay lacks lot of technical content.",
+      "start_time": 74.48,
+      "end_time": 77.56
+    },
+    {
+      "text": " It is very superficial in nature.",
+      "start_time": 77.56,
+      "end_time": 79.76
+    },
+    {
+      "text": " Whatever may be the critics view point that output is produced.",
+      "start_time": 79.76,
+      "end_time": 83.68
+    },
+    {
+      "text": " Now you have third LLM where critics output and a draft version both you give.",
+      "start_time": 83.68,
+      "end_time": 89.96000000000001
+    },
+    {
+      "text": "",
+      "start_time": 89.96000000000001,
+      "end_time": 60.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 61.0,
+      "end_time": null
+    },
+    {
+      "text": " output and a draft version you give and the third LLM will generate draft 2, updating",
+      "start_time": 90.0,
+      "end_time": 96.78
+    },
+    {
+      "text": " whatever is the critic. We do that for GPPT as well right, this is not what I am liking",
+      "start_time": 96.78,
+      "end_time": 102.74
+    },
+    {
+      "text": " modify this and all that. So in our case human itself is a critic, so this instead of this",
+      "start_time": 102.74,
+      "end_time": 109.46000000000001
+    },
+    {
+      "text": " LLM there can be an element of human and human will act as a critic and give a different",
+      "start_time": 109.46000000000001,
+      "end_time": 115.66
+    },
+    {
+      "text": "",
+      "start_time": 115.66,
+      "end_time": 90.0
+    },
+    {
+      "text": " prompt but that itself can be an LLM.",
+      "start_time": 94.32,
+      "end_time": null
+    },
+    {
+      "text": " Then you produce a draft 2 like this how many iterations you want to have that is your decision.",
+      "start_time": 120.0,
+      "end_time": 126.44
+    },
+    {
+      "text": " So if you are okay with draft 2 fine otherwise again you have to loop back again you have",
+      "start_time": 126.44,
+      "end_time": 130.76
+    },
+    {
+      "text": " to feed this draft 2 to critic again you have to take the critic again you have to produce",
+      "start_time": 130.76,
+      "end_time": 135.28
+    },
+    {
+      "text": " it to a fine tuned LLM.",
+      "start_time": 135.28,
+      "end_time": 137.6
+    },
+    {
+      "text": " So this is the finer version finer version LLM.",
+      "start_time": 137.6,
+      "end_time": 142.64
+    },
+    {
+      "text": "",
+      "start_time": 142.64,
+      "end_time": 120.0
+    },
+    {
+      "text": " So in this view, in this view of energetic workflow, every piece that I spoke of, I have",
+      "start_time": 127.0,
+      "end_time": null
+    },
+    {
+      "text": " about is an LLM. Every piece that I am speaking about, so that is why it is called as compounded",
+      "start_time": 150.0,
+      "end_time": 156.32
+    },
+    {
+      "text": " LLM. There is a compounded LLM where every LLM is playing a different role. The perspectives",
+      "start_time": 156.32,
+      "end_time": 162.96
+    },
+    {
+      "text": " are different. One LLM's role is to just produce an essay. Second LLM's role is to",
+      "start_time": 162.96,
+      "end_time": 168.52
+    },
+    {
+      "text": " critic on the essay. Third LLM's role is to combine the critic and the draft version",
+      "start_time": 168.52,
+      "end_time": 174.48
+    },
+    {
+      "text": "",
+      "start_time": 174.48,
+      "end_time": 150.0
+    },
+    {
+      "text": " and combine it produce it you can iterate it as well now how many times you want to",
+      "start_time": 155.48,
+      "end_time": null
+    },
+    {
+      "text": " So, it is usually done by something called as an orchestration agent that itself is a",
+      "start_time": 180.0,
+      "end_time": 185.64
+    },
+    {
+      "text": " separate agent.",
+      "start_time": 185.64,
+      "end_time": 190.18
+    },
+    {
+      "text": " Orchestration agent will decide how many times this need to be repeated, back version need",
+      "start_time": 190.18,
+      "end_time": 195.8
+    },
+    {
+      "text": " to be repeated, it is like a plan, okay.",
+      "start_time": 195.8,
+      "end_time": 198.76
+    },
+    {
+      "text": " How many times and what all you have to feed, what changes you have to bring in, all of",
+      "start_time": 198.76,
+      "end_time": 202.68
+    },
+    {
+      "text": " this usually is orchestrated and that agent is called as an orchestration agent.",
+      "start_time": 202.68,
+      "end_time": 207.64
+    },
+    {
+      "text": "",
+      "start_time": 207.64,
+      "end_time": 180.0
+    },
+    {
+      "text": " Now in the way I said the a-",
+      "start_time": 182.34,
+      "end_time": null
+    },
+    {
+      "text": " work flow versus the non-agent work flow it is like at one go you just ask me an essay",
+      "start_time": 210.0,
+      "end_time": 217.8
+    },
+    {
+      "text": " and you gave me the essay that is it.",
+      "start_time": 217.8,
+      "end_time": 219.96
+    },
+    {
+      "text": " But in the agent work flow you are not going to stop at that you are going to refine your",
+      "start_time": 219.96,
+      "end_time": 224.6
+    },
+    {
+      "text": " responses what does that mean your agent work flow is giving you a better response than",
+      "start_time": 224.6,
+      "end_time": 232.16
+    },
+    {
+      "text": " a non-agent work approach that is the first and foremost objective goal with which agent",
+      "start_time": 232.16,
+      "end_time": 237.44
+    },
+    {
+      "text": "",
+      "start_time": 237.44,
+      "end_time": 210.0
+    },
+    {
+      "text": " work flows work in order to.",
+      "start_time": 212.56,
+      "end_time": null
+    },
+    {
+      "text": " improvise the response. You use agentic workflows. This is the objective and how you do it? There",
+      "start_time": 240.0,
+      "end_time": 247.0
+    },
+    {
+      "text": " can be different methods but this is one of the ways. Is this clear? Is the agentic workflow",
+      "start_time": 247.0,
+      "end_time": 253.28
+    },
+    {
+      "text": " clear here? Now you can ask the LLM to create a draft version. Now you can ask another piece",
+      "start_time": 253.28,
+      "end_time": 264.56
+    },
+    {
+      "text": "",
+      "start_time": 264.56,
+      "end_time": 240.0
+    },
+    {
+      "text": " of code for a data request.",
+      "start_time": 245.44,
+      "end_time": null
+    },
+    {
+      "text": " The data request agent may generate the request not in the form of the JSON file let us say",
+      "start_time": 270.0,
+      "end_time": 280.44
+    },
+    {
+      "text": " the format but it is in the form of a natural language.",
+      "start_time": 280.44,
+      "end_time": 284.52
+    },
+    {
+      "text": " The data request piece module may generate it in the format required for Google search",
+      "start_time": 284.52,
+      "end_time": 291.52
+    },
+    {
+      "text": " or web search.",
+      "start_time": 291.52,
+      "end_time": 292.52
+    },
+    {
+      "text": "",
+      "start_time": 292.52,
+      "end_time": 270.0
+    },
+    {
+      "text": " So then that output is fed to Google search or any other search, web search I will say web search.",
+      "start_time": 275.84,
+      "end_time": 276.68
+    },
+    {
+      "text": " and produce some statistics related to the product. You want to produce marketing plans for a product.",
+      "start_time": 300.0,
+      "end_time": 307.0
+    },
+    {
+      "text": " So marketing strategy is like similar products, how they have been done, all of that.",
+      "start_time": 307.0,
+      "end_time": 311.0
+    },
+    {
+      "text": " The statistics is brought by web search. Now these statistics are fed to critic.",
+      "start_time": 311.0,
+      "end_time": 316.0
+    },
+    {
+      "text": " These statistics are fed to critic. Now the statistics information has been brought in",
+      "start_time": 316.0,
+      "end_time": 324.0
+    },
+    {
+      "text": "",
+      "start_time": 324.0,
+      "end_time": 300.0
+    },
+    {
+      "text": " in from a different path not an LLM. So, agentic workflow let me iterate.",
+      "start_time": 305.72,
+      "end_time": null
+    },
+    {
+      "text": " agentic workflow does not necessarily mean that all pieces are LLMs.",
+      "start_time": 330.0,
+      "end_time": 337.68
+    },
+    {
+      "text": " One leap bound you have to take is in agentic workflow you have compounded LLMs.",
+      "start_time": 337.68,
+      "end_time": 343.56
+    },
+    {
+      "text": " Another leap bound that you have to take is the agentic workflow does not necessarily",
+      "start_time": 343.56,
+      "end_time": 347.88
+    },
+    {
+      "text": " mean that every piece is an LLM.",
+      "start_time": 347.88,
+      "end_time": 351.8
+    },
+    {
+      "text": " The pieces can be different, they can flow from different paths.",
+      "start_time": 351.8,
+      "end_time": 355.96
+    },
+    {
+      "text": "",
+      "start_time": 355.96,
+      "end_time": 330.0
+    },
+    {
+      "text": " But all of them, the objective is to better produce better",
+      "start_time": 334.0,
+      "end_time": null
+    },
+    {
+      "text": " The only one goal is to produce better response to a query that is it okay so that is another",
+      "start_time": 360.0,
+      "end_time": 367.16
+    },
+    {
+      "text": " way.",
+      "start_time": 367.16,
+      "end_time": 368.16
+    },
+    {
+      "text": " This is clear this is what we mean by agentic workflow we are using several modules to generate",
+      "start_time": 368.16,
+      "end_time": 374.8
+    },
+    {
+      "text": " a better response to the given query this is what we mean by agentic workflow.",
+      "start_time": 374.8,
+      "end_time": 381.0
+    },
+    {
+      "text": " So now if you look at the stack AI stack as of today this is where you have the semiconductor",
+      "start_time": 381.0,
+      "end_time": 389.12
+    },
+    {
+      "text": "",
+      "start_time": 389.12,
+      "end_time": 360.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 361.0,
+      "end_time": null
+    },
+    {
+      "text": " semiconductor layer like N media and all of that, then the above layer is a cloud infrastructure,",
+      "start_time": 390.0,
+      "end_time": 401.52
+    },
+    {
+      "text": " then the above layer is a foundational model like utility etc.",
+      "start_time": 401.52,
+      "end_time": 410.84
+    },
+    {
+      "text": "",
+      "start_time": 410.84,
+      "end_time": 390.0
+    },
+    {
+      "text": " and then you have applications. Here is a layer of orchestration.",
+      "start_time": 397.0,
+      "end_time": null
+    },
+    {
+      "text": " This is your AI stack as of today.",
+      "start_time": 420.0,
+      "end_time": 425.96
+    },
+    {
+      "text": " The AI stack, bottom most layer is a semiconductor on which it is going to run, N media and all",
+      "start_time": 425.96,
+      "end_time": 430.64
+    },
+    {
+      "text": " of that, Intel, AMD processors and above layer is the cloud infrastructure.",
+      "start_time": 430.64,
+      "end_time": 436.48
+    },
+    {
+      "text": " So these sit on cloud AWS, Azure, whatever you want to call it as and then above that",
+      "start_time": 436.48,
+      "end_time": 441.48
+    },
+    {
+      "text": " is the foundational AI models like GPT and all of that and above layer is now the orchestration",
+      "start_time": 441.48,
+      "end_time": 446.76
+    },
+    {
+      "text": "",
+      "start_time": 446.76,
+      "end_time": 420.0
+    },
+    {
+      "text": " agent that is sitting to see how the response is.",
+      "start_time": 423.24,
+      "end_time": null
+    },
+    {
+      "text": " will have to be generated by using agents and on top of that you have the applications.",
+      "start_time": 450.0,
+      "end_time": 455.4
+    },
+    {
+      "text": " So there is plenty of opportunity in terms of quickly building the AI products using",
+      "start_time": 455.4,
+      "end_time": 461.2
+    },
+    {
+      "text": " this agentic approach because you have plenty of them available already software development",
+      "start_time": 461.2,
+      "end_time": 466.64
+    },
+    {
+      "text": " is happening in this direction.",
+      "start_time": 466.64,
+      "end_time": 468.04
+    },
+    {
+      "text": " See please note that for us machine learning means that is the only piece but in software",
+      "start_time": 468.04,
+      "end_time": 472.92
+    },
+    {
+      "text": " development that is not the only thing.",
+      "start_time": 472.92,
+      "end_time": 475.0
+    },
+    {
+      "text": "",
+      "start_time": 475.0,
+      "end_time": 450.0
+    },
+    {
+      "text": " You need to also worry about where you will deploy, isn't it? On which hardware you will deploy?",
+      "start_time": 454.2,
+      "end_time": 454.96
+    },
+    {
+      "text": " you are going to run it. So we are speaking everything in silos. We never speak about",
+      "start_time": 480.0,
+      "end_time": 484.88
+    },
+    {
+      "text": " which GPU system we need. We just build a ML model that is not sufficient, right? Just",
+      "start_time": 484.88,
+      "end_time": 490.48
+    },
+    {
+      "text": " that one piece is not sufficient. You have to make sure that the training, data, where",
+      "start_time": 490.48,
+      "end_time": 495.56
+    },
+    {
+      "text": " do you store the data? One lakh images where do you store? You need server. So you have",
+      "start_time": 495.56,
+      "end_time": 500.0
+    },
+    {
+      "text": " to talk about hardware. You want to speak about the clustering. You need to talk about",
+      "start_time": 500.0,
+      "end_time": 504.84
+    },
+    {
+      "text": " how GPU processing happens. So all of this is also important. The overall stack you have",
+      "start_time": 504.84,
+      "end_time": 509.8
+    },
+    {
+      "text": "",
+      "start_time": 509.8,
+      "end_time": 480.0
+    },
+    {
+      "text": " on.",
+      "start_time": 480.5,
+      "end_time": null
+    },
+    {
+      "text": " If you do not understand the overall stack, you are not going to be called as an ML engineer.",
+      "start_time": 510.0,
+      "end_time": 516.68
+    },
+    {
+      "text": " Just applying some supervised machine learning and doing sentiment analysis and you say that",
+      "start_time": 516.68,
+      "end_time": 521.64
+    },
+    {
+      "text": " you have learned machine learning is not enough.",
+      "start_time": 521.64,
+      "end_time": 524.04
+    },
+    {
+      "text": " Do you understand the entire stack?",
+      "start_time": 524.04,
+      "end_time": 526.04
+    },
+    {
+      "text": " So you have to understand how the whole module has to be dockerized, containerized.",
+      "start_time": 526.04,
+      "end_time": 531.6
+    },
+    {
+      "text": " Completely you need to understand to make sure that you deploy the product in the manner",
+      "start_time": 531.6,
+      "end_time": 535.68
+    },
+    {
+      "text": " that is required for it to be usable.",
+      "start_time": 535.68,
+      "end_time": 539.0
+    },
+    {
+      "text": "",
+      "start_time": 539.0,
+      "end_time": 510.0
+    },
+    {
+      "text": " So only stand up.",
+      "start_time": 511.0,
+      "end_time": null
+    },
+    {
+      "text": " Cylose LLM learning is not enough I want to tell you on this okay.",
+      "start_time": 540.0,
+      "end_time": 545.36
+    },
+    {
+      "text": " So these are the various AI stack layers as of today that you need to look at we are here",
+      "start_time": 545.36,
+      "end_time": 551.68
+    },
+    {
+      "text": " we talked about LLM we understood this we need to understand how orchestration agents",
+      "start_time": 551.68,
+      "end_time": 556.52
+    },
+    {
+      "text": " will have to be learned and agentic applications will have to be built so that an agentic workflow",
+      "start_time": 556.52,
+      "end_time": 562.04
+    },
+    {
+      "text": " will be able to answer your questions very well that is where we stand today is that",
+      "start_time": 562.04,
+      "end_time": 566.64
+    },
+    {
+      "text": "",
+      "start_time": 566.64,
+      "end_time": 540.0
+    },
+    {
+      "text": " So, now let us look at the various",
+      "start_time": 547.0,
+      "end_time": null
+    },
+    {
+      "text": " So, that is the agentic architectural patterns that are available.",
+      "start_time": 570.0,
+      "end_time": 574.8
+    },
+    {
+      "text": " So, like the design patterns that you have in your other software engineering and OVOID",
+      "start_time": 574.8,
+      "end_time": 581.0
+    },
+    {
+      "text": " in the software development style, what is the pattern design pattern?",
+      "start_time": 581.0,
+      "end_time": 584.64
+    },
+    {
+      "text": " You have to be silent.",
+      "start_time": 584.64,
+      "end_time": 587.96
+    },
+    {
+      "text": " What is the design pattern as you studied in software engineering or if you are studying",
+      "start_time": 587.96,
+      "end_time": 591.96
+    },
+    {
+      "text": " OVOID you know about it.",
+      "start_time": 591.96,
+      "end_time": 594.08
+    },
+    {
+      "text": "",
+      "start_time": 594.08,
+      "end_time": 570.0
+    },
+    {
+      "text": " What is the design pattern?",
+      "start_time": 571.04,
+      "end_time": null
+    },
+    {
+      "text": " No idea, factory pattern, singleton pattern, prototype pattern, there are lot of patterns.",
+      "start_time": 600.0,
+      "end_time": 608.0
+    },
+    {
+      "text": " Software engineering I am sure is one of the units contained in it.",
+      "start_time": 608.0,
+      "end_time": 611.24
+    },
+    {
+      "text": " It is called as shameless copying.",
+      "start_time": 611.24,
+      "end_time": 614.24
+    },
+    {
+      "text": " Do you understand?",
+      "start_time": 614.24,
+      "end_time": 616.76
+    },
+    {
+      "text": " See over years many if you if you claim that you have studied software engineering and",
+      "start_time": 616.76,
+      "end_time": 624.36
+    },
+    {
+      "text": "",
+      "start_time": 624.36,
+      "end_time": 600.0
+    },
+    {
+      "text": " OOAD and if you do not know about design patterns, you will be able to see the difference between",
+      "start_time": 607.0,
+      "end_time": null
+    },
+    {
+      "text": " be souped in the placements, you should know about it, this is the important topic okay,",
+      "start_time": 630.0,
+      "end_time": 637.68
+    },
+    {
+      "text": " but it is about copying, please understand this is about plagiarism, I am talking about,",
+      "start_time": 637.68,
+      "end_time": 644.12
+    },
+    {
+      "text": " what it means is, this is the problem statement that I encountered in the software industry,",
+      "start_time": 644.12,
+      "end_time": 650.24
+    },
+    {
+      "text": " if you encounter this problem of you want only one instance of the object, you singleton",
+      "start_time": 650.24,
+      "end_time": 656.16
+    },
+    {
+      "text": "",
+      "start_time": 656.16,
+      "end_time": 630.0
+    },
+    {
+      "text": " object type, design pattern, code style they will tell you.",
+      "start_time": 633.56,
+      "end_time": null
+    },
+    {
+      "text": " How to code? This is a pattern, private constructor only you should have like that they will tell",
+      "start_time": 660.0,
+      "end_time": 666.88
+    },
+    {
+      "text": " you. This is how the code should look like for a singleton pattern if you want only one",
+      "start_time": 666.88,
+      "end_time": 671.84
+    },
+    {
+      "text": " instance of the object. If the application calls for it then you should use singleton",
+      "start_time": 671.84,
+      "end_time": 676.28
+    },
+    {
+      "text": " pattern. If it is a factory pattern this is what happens. If it is a builder pattern this",
+      "start_time": 676.28,
+      "end_time": 683.84
+    },
+    {
+      "text": " is how the code should be. So what is the problem statement? How the code should appear?",
+      "start_time": 683.84,
+      "end_time": 688.88
+    },
+    {
+      "text": "",
+      "start_time": 688.88,
+      "end_time": 660.0
+    },
+    {
+      "text": " That is the problem statement how the .",
+      "start_time": 661.12,
+      "end_time": null
+    },
+    {
+      "text": " code should appear. They have given solutions to all the problems, some n set of problems,",
+      "start_time": 690.0,
+      "end_time": 695.04
+    },
+    {
+      "text": " n set of design patterns, how to code. This if you know you will survive in the industry",
+      "start_time": 695.04,
+      "end_time": 700.88
+    },
+    {
+      "text": " because everybody uses this, everybody uses this. I am surprised that you have not heard",
+      "start_time": 700.88,
+      "end_time": 705.88
+    },
+    {
+      "text": " of it. So in OOAD it is heavily discussed. In one full unit, one and half units they",
+      "start_time": 705.88,
+      "end_time": 713.64
+    },
+    {
+      "text": " discuss only design patterns in the OOAD subject and it is the damn mandatory topic that you",
+      "start_time": 713.64,
+      "end_time": 719.44
+    },
+    {
+      "text": "",
+      "start_time": 719.44,
+      "end_time": 690.0
+    },
+    {
+      "text": " should know.",
+      "start_time": 690.56,
+      "end_time": null
+    },
+    {
+      "text": " In case you are losing out on OOAD and not learning design patterns, I urge you that",
+      "start_time": 720.0,
+      "end_time": 725.68
+    },
+    {
+      "text": " before you take up the placements you should know patterns.",
+      "start_time": 725.68,
+      "end_time": 729.0
+    },
+    {
+      "text": " Because in the industry as I have heard from people, I have not worked, so I do not know",
+      "start_time": 729.0,
+      "end_time": 733.08
+    },
+    {
+      "text": " but I have heard from people that they all the day they just do design patterns.",
+      "start_time": 733.08,
+      "end_time": 738.72
+    },
+    {
+      "text": " Because it is all about okay this problem I should use this type of code, this pattern",
+      "start_time": 738.72,
+      "end_time": 742.52
+    },
+    {
+      "text": " this problem I should use this type of code.",
+      "start_time": 742.52,
+      "end_time": 744.72
+    },
+    {
+      "text": " They have handcrafted the way the code has to be written for this kind of problem and",
+      "start_time": 744.72,
+      "end_time": 749.76
+    },
+    {
+      "text": "",
+      "start_time": 749.76,
+      "end_time": 720.0
+    },
+    {
+      "text": " Dope",
+      "start_time": 720.5,
+      "end_time": null
+    },
+    {
+      "text": " problems are going to recur for any new problem and there is no need to reinvent the wheel",
+      "start_time": 750.0,
+      "end_time": 755.72
+    },
+    {
+      "text": " it is like reusable that is how it is only little bit of customization you have to use",
+      "start_time": 755.72,
+      "end_time": 760.68
+    },
+    {
+      "text": " that is why it is called as copying the design patterns are very very important.",
+      "start_time": 760.68,
+      "end_time": 765.04
+    },
+    {
+      "text": " So like that so I thought that you know the design patterns and similar to that AI agent",
+      "start_time": 765.04,
+      "end_time": 769.56
+    },
+    {
+      "text": " work flow also has a design pattern okay so there are some design patterns that are coming",
+      "start_time": 769.56,
+      "end_time": 775.08
+    },
+    {
+      "text": "",
+      "start_time": 775.08,
+      "end_time": 750.0
+    },
+    {
+      "text": " up even for agent work flows. So we need to take a look at these designs.",
+      "start_time": 754.96,
+      "end_time": null
+    },
+    {
+      "text": " experience, all the software engineers over here have had similar experiences, so it is",
+      "start_time": 780.0,
+      "end_time": 791.84
+    },
+    {
+      "text": " shared public, okay, all different types of patterns, design patterns you should study",
+      "start_time": 791.84,
+      "end_time": 797.24
+    },
+    {
+      "text": " because that will help in software development and that is your job bread and butter and",
+      "start_time": 797.24,
+      "end_time": 802.44
+    },
+    {
+      "text": " you should know about design patterns, eventually you will learn in the on the field you will",
+      "start_time": 802.44,
+      "end_time": 806.24
+    },
+    {
+      "text": "",
+      "start_time": 806.24,
+      "end_time": 780.0
+    },
+    {
+      "text": " definitely learn but in the placement let us say if they will get a",
+      "start_time": 784.0,
+      "end_time": null
+    },
+    {
+      "text": " If you claim that you know design patterns, they need not have to teach you, right?",
+      "start_time": 810.0,
+      "end_time": 817.0
+    },
+    {
+      "text": " These are the four design patterns that you should know.",
+      "start_time": 840.0,
+      "end_time": 869.96
+    },
+    {
+      "text": "",
+      "start_time": 869.96,
+      "end_time": 840.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 841.0,
+      "end_time": null
+    },
+    {
+      "text": " when you are building agentic workflow. So probably in the hackathon I will expect you",
+      "start_time": 870.0,
+      "end_time": 877.0
+    },
+    {
+      "text": " to implement one of these or multiple of these.",
+      "start_time": 877.0,
+      "end_time": 890.0
+    },
+    {
+      "text": "",
+      "start_time": 890.0,
+      "end_time": 870.0
+    },
+    {
+      "text": " 3, 2, drive.",
+      "start_time": 880.0,
+      "end_time": null
+    },
+    {
+      "text": " your attention it is so difficult last but one bench and last bench there yes if you",
+      "start_time": 900.0,
+      "end_time": 911.8
+    },
+    {
+      "text": " bring your own problem statement it is already pre coded I do not want anything like that",
+      "start_time": 911.8,
+      "end_time": 915.92
+    },
+    {
+      "text": " on the spot you will build I have said it tentatively as 8 provided I come ready with",
+      "start_time": 915.92,
+      "end_time": 927.6
+    },
+    {
+      "text": "",
+      "start_time": 927.6,
+      "end_time": 900.0
+    },
+    {
+      "text": " the following statement. I am discussing still.",
+      "start_time": 902.08,
+      "end_time": null
+    },
+    {
+      "text": " I am discussing with CTO as well as with Anantraman sir, if I come out with a nice problem statement",
+      "start_time": 930.0,
+      "end_time": 935.2
+    },
+    {
+      "text": " by then I will announce otherwise, I need time.",
+      "start_time": 935.2,
+      "end_time": 940.24
+    },
+    {
+      "text": " Shall we take a look at it, it does not take much time, after this I will give break.",
+      "start_time": 940.24,
+      "end_time": 947.68
+    },
+    {
+      "text": " So you have reflection design pattern, reflection design pattern is same as this whatever I",
+      "start_time": 947.68,
+      "end_time": 954.0
+    },
+    {
+      "text": " explained, compounded LLM that is called as reflection pattern.",
+      "start_time": 954.0,
+      "end_time": 958.04
+    },
+    {
+      "text": "",
+      "start_time": 958.04,
+      "end_time": 930.0
+    },
+    {
+      "text": " So you ask the LLM to generate code.",
+      "start_time": 931.84,
+      "end_time": null
+    },
+    {
+      "text": " You have to reflect on that code that is the meaning of reflection and that code when you",
+      "start_time": 960.0,
+      "end_time": 967.36
+    },
+    {
+      "text": " run it it is generating error.",
+      "start_time": 967.36,
+      "end_time": 970.2
+    },
+    {
+      "text": " So the critic is saying that there is an error in line number 10.",
+      "start_time": 970.2,
+      "end_time": 976.16
+    },
+    {
+      "text": " So then the other LLM, final LLM it can be different LLM they can be same LLM.",
+      "start_time": 976.16,
+      "end_time": 982.68
+    },
+    {
+      "text": " So another LLM will say okay I have corrected the error in line 10 you now check it again.",
+      "start_time": 982.68,
+      "end_time": 987.96
+    },
+    {
+      "text": "",
+      "start_time": 987.96,
+      "end_time": 960.0
+    },
+    {
+      "text": " So this is called as reflection.",
+      "start_time": 961.34,
+      "end_time": null
+    },
+    {
+      "text": " reflection pattern, reflection pattern is nothing but compounded LLM. What is tool use? Tool",
+      "start_time": 990.0,
+      "end_time": 998.0
+    },
+    {
+      "text": " use is the second path that I said okay. I have asked LLM to give me 5 by 2 example or",
+      "start_time": 998.0,
+      "end_time": 1007.12
+    },
+    {
+      "text": " sign 63. So when I say like that LLM alone cannot answer. So what it has to do? It has",
+      "start_time": 1007.12,
+      "end_time": 1014.48
+    },
+    {
+      "text": "",
+      "start_time": 1014.48,
+      "end_time": 990.0
+    },
+    {
+      "text": " to call an API. API to Calculator Agent. It has to call an API to Calculator Agent.",
+      "start_time": 995.52,
+      "end_time": null
+    },
+    {
+      "text": " to web search or it has to generate a code for calculating sin 63 and the code has to",
+      "start_time": 1020.0,
+      "end_time": 1028.08
+    },
+    {
+      "text": " be run in an environment where code can be run, isn't it?",
+      "start_time": 1028.08,
+      "end_time": 1032.48
+    },
+    {
+      "text": " So you have to make an API call to the code generation engine and to run the code and",
+      "start_time": 1032.48,
+      "end_time": 1038.12
+    },
+    {
+      "text": " give back the answer.",
+      "start_time": 1038.12,
+      "end_time": 1039.64
+    },
+    {
+      "text": " So all that you do it and then you produce it to LLM.",
+      "start_time": 1039.64,
+      "end_time": 1043.68
+    },
+    {
+      "text": " So you are making use of a tool to answer the question.",
+      "start_time": 1043.68,
+      "end_time": 1048.34
+    },
+    {
+      "text": "",
+      "start_time": 1048.34,
+      "end_time": 1020.0
+    },
+    {
+      "text": " You will not allow GPT itself.",
+      "start_time": 1021.68,
+      "end_time": null
+    },
+    {
+      "text": " have to answer 5 by 2 or sign 35 like that. The GPT alone cannot answer that. GPT will",
+      "start_time": 1050.0,
+      "end_time": 1057.96
+    },
+    {
+      "text": " have to resort to some Apa call. It should make use of a tool like calculator or a python",
+      "start_time": 1057.96,
+      "end_time": 1065.28
+    },
+    {
+      "text": " code and use math libraries, run the code and then get back the answer and then produce",
+      "start_time": 1065.28,
+      "end_time": 1071.6
+    },
+    {
+      "text": " the answer. So in giving its response it is using Apa calls tools and that is called as",
+      "start_time": 1071.6,
+      "end_time": 1078.0
+    },
+    {
+      "text": "",
+      "start_time": 1078.0,
+      "end_time": 1050.0
+    },
+    {
+      "text": " a tool use pattern.",
+      "start_time": 1052.0,
+      "end_time": null
+    },
+    {
+      "text": " So if you are making use of external tools to run or to answer other than just the LLM",
+      "start_time": 1080.0,
+      "end_time": 1086.96
+    },
+    {
+      "text": " then it is called as tool use pattern.",
+      "start_time": 1086.96,
+      "end_time": 1089.6
+    },
+    {
+      "text": " Both examples already had given there is nothing new in this.",
+      "start_time": 1089.6,
+      "end_time": 1092.92
+    },
+    {
+      "text": " In one path it is reflection design pattern in this path it is tool use pattern.",
+      "start_time": 1092.92,
+      "end_time": 1098.68
+    },
+    {
+      "text": " In giving the response if it makes use of API calls to external agents then it is called",
+      "start_time": 1098.68,
+      "end_time": 1104.12
+    },
+    {
+      "text": " as the tool use pattern.",
+      "start_time": 1104.12,
+      "end_time": 1106.16
+    },
+    {
+      "text": "",
+      "start_time": 1106.16,
+      "end_time": 1080.0
+    },
+    {
+      "text": " pattern, okay then there is a planar pattern.",
+      "start_time": 1083.64,
+      "end_time": null
+    },
+    {
+      "text": " You are going to find your LLM is already trained, GPT is already trained or LAMA 3.1",
+      "start_time": 1110.0,
+      "end_time": 1122.88
+    },
+    {
+      "text": " is already trained on language while doing the fine tuning on your data set.",
+      "start_time": 1122.88,
+      "end_time": 1128.08
+    },
+    {
+      "text": " So now let us say math related questions if you are asking, you should identify using an",
+      "start_time": 1128.08,
+      "end_time": 1132.88
+    },
+    {
+      "text": " orchestration agent that this is a math related question.",
+      "start_time": 1132.88,
+      "end_time": 1136.28
+    },
+    {
+      "text": "",
+      "start_time": 1136.28,
+      "end_time": 1110.0
+    },
+    {
+      "text": " I am going to so we did it for in one of the.",
+      "start_time": 1113.72,
+      "end_time": null
+    },
+    {
+      "text": " projects, we did that. So what we did was, please be silent, LLM I asked a question,",
+      "start_time": 1140.0,
+      "end_time": 1147.0
+    },
+    {
+      "text": " how many scores, let us say we have only had scored, this is a question. So what we did",
+      "start_time": 1147.92,
+      "end_time": 1154.92
+    },
+    {
+      "text": " was, we identified an agent, orchestration agent, orchestration agent understood that",
+      "start_time": 1157.44,
+      "end_time": 1164.44
+    },
+    {
+      "text": "",
+      "start_time": 1164.56,
+      "end_time": 1140.0
+    },
+    {
+      "text": " that the question is related to cricket. So we gave it to cricket agent.",
+      "start_time": 1144.44,
+      "end_time": null
+    },
+    {
+      "text": " This base LLM understood the language.",
+      "start_time": 1170.0,
+      "end_time": 1174.44
+    },
+    {
+      "text": " Then we developed an agent, orchestration agent, which would orchestrate between cricket, football",
+      "start_time": 1174.44,
+      "end_time": 1181.0
+    },
+    {
+      "text": " and other sports.",
+      "start_time": 1181.0,
+      "end_time": 1183.24
+    },
+    {
+      "text": " So this cricket agent will fetch data from its own cricket database, produces the answer",
+      "start_time": 1183.24,
+      "end_time": 1189.36
+    },
+    {
+      "text": " and then gives it back to another LLM.",
+      "start_time": 1189.36,
+      "end_time": 1193.96
+    },
+    {
+      "text": " And then it produces the answer.",
+      "start_time": 1193.96,
+      "end_time": 1195.8
+    },
+    {
+      "text": " This is what we developed.",
+      "start_time": 1195.8,
+      "end_time": 1196.8
+    },
+    {
+      "text": "",
+      "start_time": 1196.8,
+      "end_time": 1170.0
+    },
+    {
+      "text": " recently they got approved in NLP journal also.",
+      "start_time": 1173.2,
+      "end_time": null
+    },
+    {
+      "text": " of work. So this is an agent, cricket agent, football agent, we did it for Olympics, Paris",
+      "start_time": 1200.0,
+      "end_time": 1207.0
+    },
+    {
+      "text": " Olympics. So all the indoor games, outdoor games, all of these, each one is one agent.",
+      "start_time": 1207.0,
+      "end_time": 1212.96
+    },
+    {
+      "text": " It will answer pin pointed questions on one particular sports and to which agent we have",
+      "start_time": 1212.96,
+      "end_time": 1218.32
+    },
+    {
+      "text": " to ask that is done by orchestration agent and orchestration agent is going to be called",
+      "start_time": 1218.32,
+      "end_time": 1224.28
+    },
+    {
+      "text": " by LLM after identifying what the question is. So this is used only for understanding",
+      "start_time": 1224.28,
+      "end_time": 1228.92
+    },
+    {
+      "text": "",
+      "start_time": 1228.92,
+      "end_time": 1200.0
+    },
+    {
+      "text": " the language.",
+      "start_time": 1200.5,
+      "end_time": null
+    },
+    {
+      "text": " This is how you even web search is used okay.",
+      "start_time": 1230.0,
+      "end_time": 1243.0
+    },
+    {
+      "text": " So can I have your attention for few more minutes please and after that I will close.",
+      "start_time": 1243.0,
+      "end_time": 1249.68
+    },
+    {
+      "text": " We are done with two design pattern the third design pattern let us say you want a robot",
+      "start_time": 1249.68,
+      "end_time": 1255.88
+    },
+    {
+      "text": "",
+      "start_time": 1255.88,
+      "end_time": 1230.0
+    },
+    {
+      "text": " to clean a room. You want a robot to clean the room.",
+      "start_time": 1237.0,
+      "end_time": null
+    },
+    {
+      "text": " clean a room, you want a robot to clean a room, what are the aspects that are involved?",
+      "start_time": 1260.0,
+      "end_time": 1270.84
+    },
+    {
+      "text": " So first of all you have to plan this, so robot to clean a room you have to probably",
+      "start_time": 1270.84,
+      "end_time": 1276.18
+    },
+    {
+      "text": " give information about the room as well, so first step is to understand the layout and",
+      "start_time": 1276.18,
+      "end_time": 1283.32
+    },
+    {
+      "text": "",
+      "start_time": 1283.32,
+      "end_time": 1260.0
+    },
+    {
+      "text": " split it into regions. So this may be the, okay then you have to create a map.",
+      "start_time": 1266.72,
+      "end_time": null
+    },
+    {
+      "text": " of it I am just saying these may not be the steps but I am saying map of that region",
+      "start_time": 1290.0,
+      "end_time": 1294.4
+    },
+    {
+      "text": " you may have to create and then you have to generate navigation, navigation using that",
+      "start_time": 1294.4,
+      "end_time": 1301.56
+    },
+    {
+      "text": " map how the robot has to move in what direction so that you will completely cover. Objective",
+      "start_time": 1301.56,
+      "end_time": 1306.6
+    },
+    {
+      "text": " is to really clean the room not clean some portion of the room completely clear the room.",
+      "start_time": 1306.6,
+      "end_time": 1312.28
+    },
+    {
+      "text": "",
+      "start_time": 1312.28,
+      "end_time": 1290.0
+    },
+    {
+      "text": " So this can be the steps. So you are going to plan it.",
+      "start_time": 1291.88,
+      "end_time": 1293.44
+    },
+    {
+      "text": " Last bench.",
+      "start_time": 1293.44,
+      "end_time": 1294.44
+    },
+    {
+      "text": " Are you done?",
+      "start_time": 1294.44,
+      "end_time": 1296.44
+    },
+    {
+      "text": " How many times I mean this is like shameless, how many times you say it simply seem to be",
+      "start_time": 1320.0,
+      "end_time": 1327.0
+    },
+    {
+      "text": " disrespect, okay.",
+      "start_time": 1327.0,
+      "end_time": 1328.0
+    },
+    {
+      "text": " So the planner module what it does is it has to plan certain subtask, it has to plan subtask",
+      "start_time": 1328.0,
+      "end_time": 1336.96
+    },
+    {
+      "text": " involved in carrying out the global task that is what the planner model is going to be.",
+      "start_time": 1336.96,
+      "end_time": 1344.92
+    },
+    {
+      "text": "",
+      "start_time": 1344.92,
+      "end_time": 1320.0
+    },
+    {
+      "text": " In another example, let us say there is a boy.",
+      "start_time": 1323.4,
+      "end_time": null
+    },
+    {
+      "text": " picture of a boy in some pose and you ask the LLM generate a girl studying the book",
+      "start_time": 1350.0,
+      "end_time": 1359.1
+    },
+    {
+      "text": " in the same pose as that of the boy.",
+      "start_time": 1359.1,
+      "end_time": 1362.36
+    },
+    {
+      "text": " That is a boy is doing some action doing some exercise like this but I am turned like this",
+      "start_time": 1362.36,
+      "end_time": 1369.24
+    },
+    {
+      "text": " but you are asking LLM to generate a girl reading a book in the same pose as that of",
+      "start_time": 1369.24,
+      "end_time": 1373.24
+    },
+    {
+      "text": " the boy.",
+      "start_time": 1373.24,
+      "end_time": 1374.24
+    },
+    {
+      "text": " So what are the plans that you need to undertake first and foremost you have to identify the",
+      "start_time": 1374.24,
+      "end_time": 1378.4
+    },
+    {
+      "text": "",
+      "start_time": 1378.4,
+      "end_time": 1350.0
+    },
+    {
+      "text": " a boy in the image.",
+      "start_time": 1351.3,
+      "end_time": null
+    },
+    {
+      "text": " So, recognition may be yellow or some other model you will use you have to plan this",
+      "start_time": 1380.0,
+      "end_time": 1386.9
+    },
+    {
+      "text": " recognition and then using open pose you have to detect the pose open pose this may be this",
+      "start_time": 1386.9,
+      "end_time": 1393.64
+    },
+    {
+      "text": " is like your project as well.",
+      "start_time": 1393.64,
+      "end_time": 1395.64
+    },
+    {
+      "text": " So, open pose you identify the pose of the person then you have to generate a girl.",
+      "start_time": 1395.64,
+      "end_time": 1401.48
+    },
+    {
+      "text": "",
+      "start_time": 1401.48,
+      "end_time": 1380.0
+    },
+    {
+      "text": " So, you have to generate a girl image and then you have to fuse girl image and the pose.",
+      "start_time": 1388.36,
+      "end_time": null
+    },
+    {
+      "text": " fuse this and generate the final image, generate the final image. So some decision making is",
+      "start_time": 1410.0,
+      "end_time": 1418.32
+    },
+    {
+      "text": " involved in this. So this is known as planning pattern okay.",
+      "start_time": 1418.32,
+      "end_time": 1423.12
+    },
+    {
+      "text": " So your agents are recognition agent, open pose agent, this is agentic workflow and not",
+      "start_time": 1423.12,
+      "end_time": 1429.8
+    },
+    {
+      "text": " necessarily that every agent is a LLM here. So AI agentic workflow does not, I am reiterating",
+      "start_time": 1429.8,
+      "end_time": 1436.8
+    },
+    {
+      "text": "",
+      "start_time": 1436.8,
+      "end_time": 1410.0
+    },
+    {
+      "text": " AI agentic workflow does not necessarily mean",
+      "start_time": 1413.0,
+      "end_time": null
+    },
+    {
+      "text": " LLM, it can be one piece can be LLM, this is about software development, this is about",
+      "start_time": 1440.0,
+      "end_time": 1448.8
+    },
+    {
+      "text": " design pattern, in the whole of the design pattern one piece can be LLM, is that clear?",
+      "start_time": 1448.8,
+      "end_time": 1455.64
+    },
+    {
+      "text": " So this is going to hold good even for non-LLM course as well, but if it is LLM may be invariably",
+      "start_time": 1455.64,
+      "end_time": 1462.72
+    },
+    {
+      "text": " one piece will be LLM, it can be compounded LLM, but there are other things that may be",
+      "start_time": 1462.72,
+      "end_time": 1468.4
+    },
+    {
+      "text": "",
+      "start_time": 1468.4,
+      "end_time": 1440.0
+    },
+    {
+      "text": " required so this plan.",
+      "start_time": 1441.6,
+      "end_time": null
+    },
+    {
+      "text": " planning and decision making has to happen and that is what the planner agent is going",
+      "start_time": 1470.0,
+      "end_time": 1474.76
+    },
+    {
+      "text": " to do, planner design pattern is going to do and then execute, plan and execute.",
+      "start_time": 1474.76,
+      "end_time": 1481.68
+    },
+    {
+      "text": " So that is what the planner design pattern does but all of this will have to be fine",
+      "start_time": 1481.68,
+      "end_time": 1486.28
+    },
+    {
+      "text": " tuned.",
+      "start_time": 1486.28,
+      "end_time": 1487.28
+    },
+    {
+      "text": " This is like he was asking me how is it done?",
+      "start_time": 1487.28,
+      "end_time": 1489.76
+    },
+    {
+      "text": " We take the base LLM and on top of that we work on this various pieces.",
+      "start_time": 1489.76,
+      "end_time": 1493.84
+    },
+    {
+      "text": " We have to create agents.",
+      "start_time": 1493.84,
+      "end_time": 1496.84
+    },
+    {
+      "text": "",
+      "start_time": 1496.84,
+      "end_time": 1470.0
+    },
+    {
+      "text": " the agents can be your OO models.",
+      "start_time": 1473.18,
+      "end_time": null
+    },
+    {
+      "text": " have to create. Then the last one is multimodal collaboration. For the multimodal collaboration",
+      "start_time": 1500.0,
+      "end_time": 1506.96
+    },
+    {
+      "text": " again you may need one vision model, you may need one speech model, okay. Based on the",
+      "start_time": 1506.96,
+      "end_time": 1512.12
+    },
+    {
+      "text": " vision model text has to be generated. So vision features will have to be understood",
+      "start_time": 1512.12,
+      "end_time": 1516.92
+    },
+    {
+      "text": " by the vision model. Then it has to collaborate with text model, okay. And then it is kind",
+      "start_time": 1516.92,
+      "end_time": 1522.96
+    },
+    {
+      "text": " of similar to this, only thing is there are collaborative agents now. It is not in sequence,",
+      "start_time": 1522.96,
+      "end_time": 1527.2
+    },
+    {
+      "text": "",
+      "start_time": 1527.2,
+      "end_time": 1500.0
+    },
+    {
+      "text": " It's not about that decision making, these agents call",
+      "start_time": 1502.82,
+      "end_time": null
+    },
+    {
+      "text": " For example, there is an autonomous vehicle that is being using agentic workflow.",
+      "start_time": 1530.0,
+      "end_time": 1537.48
+    },
+    {
+      "text": " What are the different agents that may be required for autonomous driving?",
+      "start_time": 1537.48,
+      "end_time": 1541.08
+    },
+    {
+      "text": " Can you tell me?",
+      "start_time": 1541.08,
+      "end_time": 1544.16
+    },
+    {
+      "text": " For autonomous driving, what different agents may be required?",
+      "start_time": 1544.16,
+      "end_time": 1549.68
+    },
+    {
+      "text": " Movement navigation, object detection, so vision system agent you need, then communication",
+      "start_time": 1549.68,
+      "end_time": 1557.12
+    },
+    {
+      "text": "",
+      "start_time": 1557.12,
+      "end_time": 1530.0
+    },
+    {
+      "text": " agent to the driver, then safety.",
+      "start_time": 1532.64,
+      "end_time": null
+    },
+    {
+      "text": " So, like this there are many agents, each agent will have its own responsibility and",
+      "start_time": 1560.0,
+      "end_time": 1566.56
+    },
+    {
+      "text": " they need to come in flag trigger at the right time so that the driver is given correct information.",
+      "start_time": 1566.56,
+      "end_time": 1572.36
+    },
+    {
+      "text": " So, there are many agents so they are all collaborating.",
+      "start_time": 1572.36,
+      "end_time": 1576.44
+    },
+    {
+      "text": " Sometimes you may want to take the vision and the safety agent together and form a decision",
+      "start_time": 1576.44,
+      "end_time": 1581.08
+    },
+    {
+      "text": " making.",
+      "start_time": 1581.08,
+      "end_time": 1582.08
+    },
+    {
+      "text": " So, decision making will be combined from various agents, different agents will give",
+      "start_time": 1582.08,
+      "end_time": 1588.2
+    },
+    {
+      "text": "",
+      "start_time": 1588.2,
+      "end_time": 1560.0
+    },
+    {
+      "text": " their inputs.",
+      "start_time": 1561.84,
+      "end_time": null
+    },
+    {
+      "text": " And then the driver will take a decision based on different inputs that have come in.",
+      "start_time": 1590.0,
+      "end_time": 1595.36
+    },
+    {
+      "text": " There may be a speech agent as well.",
+      "start_time": 1595.36,
+      "end_time": 1597.16
+    },
+    {
+      "text": " Take a right turn now, take a left turn now.",
+      "start_time": 1597.16,
+      "end_time": 1599.96
+    },
+    {
+      "text": " And the agent also may, the driver also may have to speak.",
+      "start_time": 1599.96,
+      "end_time": 1602.92
+    },
+    {
+      "text": " So there may be a speech agent as well required.",
+      "start_time": 1602.92,
+      "end_time": 1605.4
+    },
+    {
+      "text": " So different agents will perform different actions.",
+      "start_time": 1605.4,
+      "end_time": 1608.56
+    },
+    {
+      "text": " Some may be in sequence, some may be together, some may be together and decision making like",
+      "start_time": 1608.56,
+      "end_time": 1613.56
+    },
+    {
+      "text": " this.",
+      "start_time": 1613.56,
+      "end_time": 1614.56
+    },
+    {
+      "text": " You will have to decide what is appropriate for your application.",
+      "start_time": 1614.56,
+      "end_time": 1618.28
+    },
+    {
+      "text": "",
+      "start_time": 1618.28,
+      "end_time": 1590.0
+    },
+    {
+      "text": " As I said these are possible.",
+      "start_time": 1591.28,
+      "end_time": null
+    },
+    {
+      "text": " But how you want to design your entire application is dependent on you, is that clear?",
+      "start_time": 1620.0,
+      "end_time": 1626.04
+    },
+    {
+      "text": " So this is about application development using some of these patterns.",
+      "start_time": 1626.04,
+      "end_time": 1630.44
+    },
+    {
+      "text": " So you have to decide whether already a pre-existing vision model is there, there is no need to",
+      "start_time": 1630.44,
+      "end_time": 1634.88
+    },
+    {
+      "text": " build some scratch, I will use that, speech model is there, I will use it, I will build",
+      "start_time": 1634.88,
+      "end_time": 1638.88
+    },
+    {
+      "text": " an autonomous vehicle system.",
+      "start_time": 1638.88,
+      "end_time": 1641.0
+    },
+    {
+      "text": " In today's system developing ML model is quite fast unlike in the earlier case because",
+      "start_time": 1641.0,
+      "end_time": 1649.56
+    },
+    {
+      "text": "",
+      "start_time": 1649.56,
+      "end_time": 1620.0
+    },
+    {
+      "text": " for the",
+      "start_time": 1622.0,
+      "end_time": null
+    },
+    {
+      "text": " LLM sentiment analysis in no time it happens but how do you finally deploy this product",
+      "start_time": 1650.0,
+      "end_time": 1655.04
+    },
+    {
+      "text": " is the challenging thing.",
+      "start_time": 1655.04,
+      "end_time": 1656.74
+    },
+    {
+      "text": " How do you make sure that this pattern will coordinate and then produce a meaningful output",
+      "start_time": 1656.74,
+      "end_time": 1661.0
+    },
+    {
+      "text": " is a challenging thing.",
+      "start_time": 1661.0,
+      "end_time": 1662.72
+    },
+    {
+      "text": " The whole stack AI stack is more important than just building one model alone.",
+      "start_time": 1662.72,
+      "end_time": 1667.72
+    },
+    {
+      "text": " In the classroom we always teach subjects in silos where in LLM course we just understand",
+      "start_time": 1667.72,
+      "end_time": 1673.76
+    },
+    {
+      "text": " only LLM sometimes we do understand about hardware resources problem but there is no",
+      "start_time": 1673.76,
+      "end_time": 1679.96
+    },
+    {
+      "text": "",
+      "start_time": 1679.96,
+      "end_time": 1650.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1652.0,
+      "end_time": null
+    },
+    {
+      "text": " discussed in separate one in parallel algorithms you do not even study about various GPU processing",
+      "start_time": 1680.0,
+      "end_time": 1685.0
+    },
+    {
+      "text": " units that are available how the clusters are formed what is the drawback that is there",
+      "start_time": 1685.0,
+      "end_time": 1689.28
+    },
+    {
+      "text": " in the current cluster where are we studying that and how is it impacting your LLM those",
+      "start_time": 1689.28,
+      "end_time": 1694.36
+    },
+    {
+      "text": " aspects we have not studied here purely from the software stack point of view we have studied",
+      "start_time": 1694.36,
+      "end_time": 1698.76
+    },
+    {
+      "text": " LLM okay so that is where we still have the gaps and according to top professional Stanford",
+      "start_time": 1698.76,
+      "end_time": 1705.32
+    },
+    {
+      "text": "",
+      "start_time": 1705.32,
+      "end_time": 1680.0
+    },
+    {
+      "text": " and all of these people, there is still token problem in agentic workflow.",
+      "start_time": 1684.48,
+      "end_time": null
+    },
+    {
+      "text": " Token are not being generated quickly and very large number of tokens are being generated",
+      "start_time": 1710.0,
+      "end_time": 1715.46
+    },
+    {
+      "text": " in agent work flow and data engineering for text image, video and all of that there is",
+      "start_time": 1715.46,
+      "end_time": 1721.28
+    },
+    {
+      "text": " still agent work flow not that very effective.",
+      "start_time": 1721.28,
+      "end_time": 1723.96
+    },
+    {
+      "text": " So there is still lot of scope which means that we are all very happy everybody of every",
+      "start_time": 1723.96,
+      "end_time": 1729.04
+    },
+    {
+      "text": " one of you will have very good jobs okay.",
+      "start_time": 1729.04,
+      "end_time": 1731.6
+    },
+    {
+      "text": " So that is where he also stops this is from Andrews words not mine okay he says that there",
+      "start_time": 1731.6,
+      "end_time": 1737.32
+    },
+    {
+      "text": "",
+      "start_time": 1737.32,
+      "end_time": 1710.0
+    },
+    {
+      "text": " There is plenty of opportunity.",
+      "start_time": 1712.0,
+      "end_time": null
+    },
+    {
+      "text": " is like electricity as quoted by Andrew NG is like electricity can be used for fans,",
+      "start_time": 1740.0,
+      "end_time": 1745.66
+    },
+    {
+      "text": " electricity for light, electricity for anything else, borewell and all of that like that AI",
+      "start_time": 1745.66,
+      "end_time": 1750.6
+    },
+    {
+      "text": " can be used as electricity in many applications and the domain is really nice and that is",
+      "start_time": 1750.6,
+      "end_time": 1756.16
+    },
+    {
+      "text": " for all of you to flourish.",
+      "start_time": 1756.16,
+      "end_time": 1758.16
+    },
+    {
+      "text": " So with that I will stop.",
+      "start_time": 1758.16,
+      "end_time": 1760.84
+    },
+    {
+      "text": " So with this I have only one more topic that is left LLM security and ethics which I will",
+      "start_time": 1760.84,
+      "end_time": 1766.16
+    },
+    {
+      "text": "",
+      "start_time": 1766.16,
+      "end_time": 1740.0
+    },
+    {
+      "text": " take it up otherwise I am done with fourth unit.",
+      "start_time": 1742.32,
+      "end_time": null
+    },
+    {
+      "text": " will have decision making.",
+      "start_time": 1770.0,
+      "end_time": 1782.32
+    },
+    {
+      "text": "",
+      "start_time": 1782.32,
+      "end_time": 1770.0
+    },
+    {
+      "text": " will have decision making. It will have orchestration. Orchestration agent can decide or they can be decision making. There are different patterns",
+      "start_time": 1777.0,
+      "end_time": 1783.0
+    },
+    {
+      "text": " available.",
+      "start_time": 1783.0,
+      "end_time": 1784.0
+    },
+    {
+      "text": " I'm going to go back to the car.",
+      "start_time": 1800.0,
+      "end_time": 1807.0
+    },
+    {
+      "text": " After the break I want you to try out whisper AI and generate the male spectrogram and also",
+      "start_time": 1830.0,
+      "end_time": 1842.64
+    },
+    {
+      "text": "",
+      "start_time": 1842.64,
+      "end_time": 1830.0
+    },
+    {
+      "text": " generate use whisper AI for some speaker recognition kind and try it out.",
+      "start_time": 1847.36,
+      "end_time": null
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1860.0,
+      "end_time": 1867.0
+    },
+    {
+      "text": " I have to book PESO 52.",
+      "start_time": 1890.0,
+      "end_time": 1897.0
+    },
+    {
+      "text": " So could you like get a PC?",
+      "start_time": 1897.0,
+      "end_time": 1900.0
+    },
+    {
+      "text": " Yeah, PC you want to get.",
+      "start_time": 1900.0,
+      "end_time": 1902.0
+    },
+    {
+      "text": " Oh I just get it.",
+      "start_time": 1902.0,
+      "end_time": 1903.0
+    },
+    {
+      "text": " That's what you want to get a PC?",
+      "start_time": 1903.0,
+      "end_time": 1905.0
+    },
+    {
+      "text": " Yes ma'am.",
+      "start_time": 1905.0,
+      "end_time": 1906.0
+    },
+    {
+      "text": " laptop, PC has the...",
+      "start_time": 1906.0,
+      "end_time": 1908.0
+    },
+    {
+      "text": " My laptop and potato, ma'am.",
+      "start_time": 1908.0,
+      "end_time": 1911.0
+    },
+    {
+      "text": " It overheats if I run through.",
+      "start_time": 1911.0,
+      "end_time": 1914.0
+    },
+    {
+      "text": " But then you have to take permission later.",
+      "start_time": 1914.0,
+      "end_time": 1917.0
+    },
+    {
+      "text": "",
+      "start_time": 1917.0,
+      "end_time": 1890.0
+    },
+    {
+      "text": " it will come in now, then while going they won't allow you.",
+      "start_time": 1892.64,
+      "end_time": null
+    },
+    {
+      "text": " PC down that side. Take a permission letter if you are bringing. I will just check you,",
+      "start_time": 1920.0,
+      "end_time": 1926.16
+    },
+    {
+      "text": " but PESU 52 you have to get your hardware. There is no hardware. I will check if PESU",
+      "start_time": 1926.16,
+      "end_time": 1934.04
+    },
+    {
+      "text": " 52 is available. All this I have to do now. Because if I do not cover agent takes here",
+      "start_time": 1934.04,
+      "end_time": 1939.32
+    },
+    {
+      "text": " today, then I cannot give hackathon on agent. So I was thinking whether I will be able to",
+      "start_time": 1939.32,
+      "end_time": 1943.36
+    },
+    {
+      "text": " cover but I finished.",
+      "start_time": 1943.36,
+      "end_time": 1944.36
+    },
+    {
+      "text": "",
+      "start_time": 1944.36,
+      "end_time": 1920.0
+    },
+    {
+      "text": " No, he is in HP, he overcut.",
+      "start_time": 1925.6,
+      "end_time": null
+    },
+    {
+      "text": " connection is HPA and he was his HP. So that's why he was not able to. So he wanted to check",
+      "start_time": 1950.0,
+      "end_time": 1956.0
+    },
+    {
+      "text": " whether it's HP or HP. From the screenshot he was not able to identify.",
+      "start_time": 1956.0,
+      "end_time": 1959.0
+    },
+    {
+      "text": " It's not even I just want to know. Because HP comes under HP. So I didn't really know that",
+      "start_time": 1959.0,
+      "end_time": 1966.0
+    },
+    {
+      "text": " this was HP.",
+      "start_time": 1966.0,
+      "end_time": 1967.0
+    },
+    {
+      "text": " Even I didn't know about it. When he wrote back to me, I sent it to him. Then he said whether",
+      "start_time": 1967.0,
+      "end_time": 1971.0
+    },
+    {
+      "text": " it's HP or HP, then I wrote to him. He has not yet got back on that.",
+      "start_time": 1971.0,
+      "end_time": 1976.0
+    },
+    {
+      "text": "",
+      "start_time": 1976.0,
+      "end_time": 1950.0
+    },
+    {
+      "text": " The application status is sensitive and published.",
+      "start_time": 1953.0,
+      "end_time": null
+    },
+    {
+      "text": " I have written to him in any case.",
+      "start_time": 1980.0,
+      "end_time": 1982.0
+    },
+    {
+      "text": " the",
+      "start_time": 2010.0,
+      "end_time": 2017.0
+    },
+    {
+      "text": " I went through relative positional embedding also, I am seeing that the cat in that context,",
+      "start_time": 2040.0,
+      "end_time": 2052.32
+    },
+    {
+      "text": " now I again forget, see different embeddings are generated for cat based on the context,",
+      "start_time": 2052.32,
+      "end_time": 2059.44
+    },
+    {
+      "text": " so that relatedness he is trying to capture that is what he is trying to say, what will",
+      "start_time": 2059.44,
+      "end_time": 2064.88
+    },
+    {
+      "text": "",
+      "start_time": 2064.88,
+      "end_time": 2040.0
+    },
+    {
+      "text": " be the embedding for CAD in which context.",
+      "start_time": 2045.0,
+      "end_time": null
+    },
+    {
+      "text": " window size of 2 he is generating in the absolute personal embedding it will be the same embedding",
+      "start_time": 2070.0,
+      "end_time": 2076.4
+    },
+    {
+      "text": " for cat but it will be relative embedding if it is in that context.",
+      "start_time": 2076.4,
+      "end_time": 2086.44
+    },
+    {
+      "text": " That is what he said so when I took self attention will take care but in the relative embedding",
+      "start_time": 2086.44,
+      "end_time": 2095.48
+    },
+    {
+      "text": "",
+      "start_time": 2095.48,
+      "end_time": 2070.0
+    },
+    {
+      "text": " it happens like that. So here itself we have captured the position of the cat where",
+      "start_time": 2074.5,
+      "end_time": null
+    },
+    {
+      "text": " relative positional embedding, but further refinement will be done in attention layer.",
+      "start_time": 2100.0,
+      "end_time": 2108.36
+    },
+    {
+      "text": " Because already you have come close to where the cat is supposed to. Already you have reached",
+      "start_time": 2108.36,
+      "end_time": 2114.48
+    },
+    {
+      "text": " some extent, so maybe the attention layer will learn faster. If instead of initializing",
+      "start_time": 2114.48,
+      "end_time": 2119.28
+    },
+    {
+      "text": " the weights to 0, if you start from some proper value, maybe the learning would be faster.",
+      "start_time": 2119.28,
+      "end_time": 2125.28
+    },
+    {
+      "text": "",
+      "start_time": 2125.28,
+      "end_time": 2100.0
+    },
+    {
+      "text": " That is my gift.",
+      "start_time": 2102.0,
+      "end_time": null
+    },
+    {
+      "text": " Because it may have to use the context length and all of that some additional parameters",
+      "start_time": 2130.0,
+      "end_time": 2146.08
+    },
+    {
+      "text": " are needed.",
+      "start_time": 2146.08,
+      "end_time": 2153.88
+    },
+    {
+      "text": "",
+      "start_time": 2153.88,
+      "end_time": 2130.0
+    },
+    {
+      "text": " But it is not completely convincing. It is not proven it.",
+      "start_time": 2132.0,
+      "end_time": 2134.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 2160.0,
+      "end_time": 2162.0
+    },
+    {
+      "text": " Okay.",
+      "start_time": 2190.0,
+      "end_time": 2197.0
+    },
+    {
+      "text": " .",
+      "start_time": 2220.0,
+      "end_time": 2222.0
+    },
+    {
+      "text": " .",
+      "start_time": 2250.0,
+      "end_time": 2252.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 2280.0,
+      "end_time": 2287.0
+    },
+    {
+      "text": " Okay.",
+      "start_time": 2310.0,
+      "end_time": 2312.0
+    },
+    {
+      "text": " So, the agent is already there.",
+      "start_time": 2340.0,
+      "end_time": 2362.4
+    },
+    {
+      "text": "",
+      "start_time": 2362.4,
+      "end_time": 2340.0
+    },
+    {
+      "text": " the square you know. Sequentially first HTML then CSS then the JavaScript.",
+      "start_time": 2347.0,
+      "end_time": null
+    },
+    {
+      "text": " So you can see life is different.",
+      "start_time": 2370.0,
+      "end_time": 2372.0
+    },
+    {
+      "text": " This is the same.",
+      "start_time": 2372.0,
+      "end_time": 2374.0
+    },
+    {
+      "text": " Now it will add up and it will make the night sky white.",
+      "start_time": 2374.0,
+      "end_time": 2378.0
+    },
+    {
+      "text": " And then it will add up from people using javasco.",
+      "start_time": 2378.0,
+      "end_time": 2381.0
+    },
+    {
+      "text": " It's here to see some life.",
+      "start_time": 2381.0,
+      "end_time": 2383.0
+    },
+    {
+      "text": " Now javasco is just up ahead and we can see.",
+      "start_time": 2383.0,
+      "end_time": 2386.0
+    },
+    {
+      "text": " I think the plane is ready.",
+      "start_time": 2400.0,
+      "end_time": 2405.0
+    },
+    {
+      "text": " Different times it's only different.",
+      "start_time": 2410.0,
+      "end_time": 2413.0
+    },
+    {
+      "text": " It gave us the same structure.",
+      "start_time": 2413.0,
+      "end_time": 2415.0
+    },
+    {
+      "text": " It can be a regular plane.",
+      "start_time": 2415.0,
+      "end_time": 2417.0
+    },
+    {
+      "text": " And the structure is made from modification and it will again execute.",
+      "start_time": 2417.0,
+      "end_time": 2422.0
+    },
+    {
+      "text": " Nice.",
+      "start_time": 2422.0,
+      "end_time": 2424.0
+    },
+    {
+      "text": " This is actually a platform.",
+      "start_time": 2424.0,
+      "end_time": 2426.0
+    },
+    {
+      "text": " Now we learn people concept.",
+      "start_time": 2426.0,
+      "end_time": 2428.0
+    },
+    {
+      "text": "",
+      "start_time": 2428.0,
+      "end_time": 2400.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 2402.0,
+      "end_time": null
+    },
+    {
+      "text": " understood the pattern now but this is like kind of design pattern only thing is LLM",
+      "start_time": 2430.0,
+      "end_time": 2440.0
+    },
+    {
+      "text": " you are there and then asking to generate HTML code but LLM itself is generating that",
+      "start_time": 2440.0,
+      "end_time": 2446.0
+    },
+    {
+      "text": " only the runtime is different.",
+      "start_time": 2446.0,
+      "end_time": 2450.0
+    },
+    {
+      "text": "",
+      "start_time": 2450.0,
+      "end_time": 2430.0
+    },
+    {
+      "text": " But you have to explicitly make it make",
+      "start_time": 2440.0,
+      "end_time": null
+    },
+    {
+      "text": " call to agent. But here you are making that.",
+      "start_time": 2460.0,
+      "end_time": 2467.0
+    },
+    {
+      "text": " But how are you feeding it to the LLM you are from?",
+      "start_time": 2490.0,
+      "end_time": 2497.0
+    },
+    {
+      "text": " Directly the question is.",
+      "start_time": 2497.0,
+      "end_time": 2500.0
+    },
+    {
+      "text": "",
+      "start_time": 2518.0,
+      "end_time": 2490.0
+    },
+    {
+      "text": " But running HTML...",
+      "start_time": 2510.0,
+      "end_time": null
+    },
+    {
+      "text": " file is like it is known how you have to run it is known so I think there is an API call",
+      "start_time": 2520.0,
+      "end_time": 2527.0
+    },
+    {
+      "text": " that is made it is a tool use pattern tool use and then there is a API call.",
+      "start_time": 2527.0,
+      "end_time": 2544.0
+    },
+    {
+      "text": "",
+      "start_time": 2544.0,
+      "end_time": 2520.0
+    },
+    {
+      "text": " That is not reflection, that is adjusting the loss.",
+      "start_time": 2526.0,
+      "end_time": null
+    },
+    {
+      "text": " that cannot be called as reflection because loss is fed back in all the cases that is",
+      "start_time": 2550.0,
+      "end_time": 2558.0
+    },
+    {
+      "text": " not see in this case the output is fed back output the output draft version and critics",
+      "start_time": 2558.0,
+      "end_time": 2564.48
+    },
+    {
+      "text": " output are fed for reflection the in GAN it is not like that.",
+      "start_time": 2564.48,
+      "end_time": 2570.44
+    },
+    {
+      "text": "",
+      "start_time": 2570.44,
+      "end_time": 2550.0
+    },
+    {
+      "text": " Basically you vary the personnel and then it produces a draft and then the second person will identify some error and it works and it repays another draft and then it's gone.",
+      "start_time": 2554.96,
+      "end_time": 2558.88
+    },
+    {
+      "text": " It's critical.",
+      "start_time": 2558.88,
+      "end_time": 2559.52
+    },
+    {
+      "text": " only it does not prefer any draft is critic saying that this line is incorrect this line",
+      "start_time": 2580.0,
+      "end_time": 2584.64
+    },
+    {
+      "text": " grammar is wrong this line there is no technical content like that only critic comments. So,",
+      "start_time": 2584.64,
+      "end_time": 2590.16
+    },
+    {
+      "text": " critic comments and that draft version is fed to another LLM for it to what is a refined",
+      "start_time": 2590.16,
+      "end_time": 2595.04
+    },
+    {
+      "text": " version. So, that way the output this is not like loss these are responses are only fed",
+      "start_time": 2595.04,
+      "end_time": 2601.36
+    },
+    {
+      "text": " as inputs. So, generative adversarial is generator discriminator loss is created when",
+      "start_time": 2601.36,
+      "end_time": 2608.16
+    },
+    {
+      "text": "",
+      "start_time": 2608.16,
+      "end_time": 2580.0
+    },
+    {
+      "text": " the real images when they are...",
+      "start_time": 2581.84,
+      "end_time": null
+    },
+    {
+      "text": " Fake image is not nearer to real image.",
+      "start_time": 2610.0,
+      "end_time": 2617.0
+    },
+    {
+      "text": " That is a loss function. The distribution of the produced by the generator should be close to the realistic image distribution.",
+      "start_time": 2617.0,
+      "end_time": 2625.0
+    },
+    {
+      "text": " If it does not do that, then there is a loss, generator loss.",
+      "start_time": 2625.0,
+      "end_time": 2630.0
+    },
+    {
+      "text": " Generator loss will have to be fed back to produce better image.",
+      "start_time": 2630.0,
+      "end_time": 2635.0
+    },
+    {
+      "text": "",
+      "start_time": 2635.0,
+      "end_time": 2610.0
+    },
+    {
+      "text": " And the deep thick and the little extra mirror was based on this. Yeah.",
+      "start_time": 2614.0,
+      "end_time": 2615.0
+    },
+    {
+      "text": " StyleGAN, StarGAN it is called as StarGAN, StarGAN version 1 and version 2.",
+      "start_time": 2640.0,
+      "end_time": 2647.0
+    },
+    {
+      "text": " We used StarGAN to destroy defaked image, one project we did last time.",
+      "start_time": 2647.0,
+      "end_time": 2652.0
+    },
+    {
+      "text": " If it is faked, we don't allow it to post only.",
+      "start_time": 2652.0,
+      "end_time": 2656.0
+    },
+    {
+      "text": " We have to identify, it's actually not faking.",
+      "start_time": 2656.0,
+      "end_time": 2661.0
+    },
+    {
+      "text": " If it is faked, you are not going to even allow it to go through.",
+      "start_time": 2661.0,
+      "end_time": 2665.0
+    },
+    {
+      "text": " So there is a filter.",
+      "start_time": 2665.0,
+      "end_time": 2668.0
+    },
+    {
+      "text": "",
+      "start_time": 2668.0,
+      "end_time": 2640.0
+    },
+    {
+      "text": " Mm.",
+      "start_time": 2640.84,
+      "end_time": null
+    },
+    {
+      "text": " Upload a fake image, the social media platform will run our application, if it is a fake",
+      "start_time": 2670.0,
+      "end_time": 2680.0
+    },
+    {
+      "text": " image it will destroy it.",
+      "start_time": 2680.0,
+      "end_time": 2682.0
+    },
+    {
+      "text": " So we attempted that, not completely.",
+      "start_time": 2682.0,
+      "end_time": 2686.0
+    },
+    {
+      "text": " Sargan V2 and Sargan version V1.",
+      "start_time": 2686.0,
+      "end_time": 2689.0
+    },
+    {
+      "text": " Okay.",
+      "start_time": 2689.0,
+      "end_time": 2690.0
+    },
+    {
+      "text": " No, no, no, no, that batch already graduated.",
+      "start_time": 2690.0,
+      "end_time": 2694.0
+    },
+    {
+      "text": "",
+      "start_time": 2694.0,
+      "end_time": 2670.0
+    },
+    {
+      "text": " He was a club head, no, he was a visit.",
+      "start_time": 2676.0,
+      "end_time": null
+    },
+    {
+      "text": " He is a club head, he has one of the club's head. He did the project.",
+      "start_time": 2700.0,
+      "end_time": 2704.0
+    },
+    {
+      "text": " Vijit and other members are there. I don't remember.",
+      "start_time": 2706.0,
+      "end_time": 2709.0
+    },
+    {
+      "text": " Sir, our cast members are always the agent.",
+      "start_time": 2710.0,
+      "end_time": 2712.0
+    },
+    {
+      "text": " Yes.",
+      "start_time": 2713.0,
+      "end_time": 2714.0
+    },
+    {
+      "text": " So, if we do that, we have modularizing all the...",
+      "start_time": 2714.0,
+      "end_time": 2716.0
+    },
+    {
+      "text": " Yes. You also are like multimodal mostly and planning.",
+      "start_time": 2716.0,
+      "end_time": 2720.0
+    },
+    {
+      "text": " Yeah.",
+      "start_time": 2720.0,
+      "end_time": 2721.0
+    },
+    {
+      "text": " Multimodal.",
+      "start_time": 2721.0,
+      "end_time": 2722.0
+    },
+    {
+      "text": " Multimodal, yeah.",
+      "start_time": 2722.0,
+      "end_time": 2723.0
+    },
+    {
+      "text": " Sir, we are very much in our...",
+      "start_time": 2723.0,
+      "end_time": 2726.0
+    },
+    {
+      "text": "",
+      "start_time": 2726.0,
+      "end_time": 2700.0
+    },
+    {
+      "text": " This is also a place that is better than the city.",
+      "start_time": 2704.0,
+      "end_time": null
+    },
+    {
+      "text": " generating the post images. That is little difficult. I was trying to search for the",
+      "start_time": 2730.0,
+      "end_time": 2737.0
+    },
+    {
+      "text": " models which are available like from text it used to like source this and that. So they",
+      "start_time": 2737.0,
+      "end_time": 2744.0
+    },
+    {
+      "text": " are like you know, first you detect the text and create the post image and then you use",
+      "start_time": 2744.0,
+      "end_time": 2749.0
+    },
+    {
+      "text": " some like to like upscale it like SSR and that.",
+      "start_time": 2749.0,
+      "end_time": 2754.0
+    },
+    {
+      "text": "",
+      "start_time": 2754.0,
+      "end_time": 2730.0
+    },
+    {
+      "text": " only from text is not possible is okay can you give me an example",
+      "start_time": 2735.6,
+      "end_time": null
+    },
+    {
+      "text": " As discussed, there were three contexts. One is Bakun, one is Bharatna Temple.",
+      "start_time": 2760.0,
+      "end_time": 2767.0
+    },
+    {
+      "text": " And one more is Akka.",
+      "start_time": 2767.0,
+      "end_time": 2769.0
+    },
+    {
+      "text": " Bharatna Temple context is a thread to that model.",
+      "start_time": 2769.0,
+      "end_time": 2774.0
+    },
+    {
+      "text": " So based on that Bharatna Temple context, we should generate the...",
+      "start_time": 2774.0,
+      "end_time": 2777.0
+    },
+    {
+      "text": " Your project, Raghusar was not there, no?",
+      "start_time": 2777.0,
+      "end_time": 2780.0
+    },
+    {
+      "text": " Here we are.",
+      "start_time": 2780.0,
+      "end_time": 2782.0
+    },
+    {
+      "text": " Here?",
+      "start_time": 2782.0,
+      "end_time": 2784.0
+    },
+    {
+      "text": " So the post sequence is the generator.",
+      "start_time": 2784.0,
+      "end_time": 2786.0
+    },
+    {
+      "text": "",
+      "start_time": 2786.0,
+      "end_time": 2760.0
+    },
+    {
+      "text": " in the afternoon.",
+      "start_time": 2763.96,
+      "end_time": null
+    },
+    {
+      "text": " No you tell me where the issue is?",
+      "start_time": 2790.0,
+      "end_time": 2797.0
+    },
+    {
+      "text": " The issue is from text you need to post sequence.",
+      "start_time": 2797.0,
+      "end_time": 2799.0
+    },
+    {
+      "text": " Post sequence.",
+      "start_time": 2799.0,
+      "end_time": 2800.0
+    },
+    {
+      "text": " So, unapproach what I got from text to image and then you.",
+      "start_time": 2800.0,
+      "end_time": 2805.0
+    },
+    {
+      "text": " No, but you fine tune using lot of sequences like that no.",
+      "start_time": 2805.0,
+      "end_time": 2808.0
+    },
+    {
+      "text": " No, that is.",
+      "start_time": 2808.0,
+      "end_time": 2810.0
+    },
+    {
+      "text": " You have to create at least 1000 data sets.",
+      "start_time": 2810.0,
+      "end_time": 2813.0
+    },
+    {
+      "text": " Create 1000 for this text this is the sequence.",
+      "start_time": 2813.0,
+      "end_time": 2816.0
+    },
+    {
+      "text": "",
+      "start_time": 2816.0,
+      "end_time": 2790.0
+    },
+    {
+      "text": " For this text, this is a sequence like that for different poses you create.",
+      "start_time": 2793.72,
+      "end_time": null
+    },
+    {
+      "text": " Without the data exposure it will not learn.",
+      "start_time": 2820.0,
+      "end_time": 2827.0
+    },
+    {
+      "text": " Now I am telling you suppose you say Bharatnathim this pose, I am not sure of the various poses.",
+      "start_time": 2827.0,
+      "end_time": 2846.0
+    },
+    {
+      "text": "",
+      "start_time": 2846.0,
+      "end_time": 2820.0
+    },
+    {
+      "text": " play this post.",
+      "start_time": 2824.0,
+      "end_time": null
+    },
+    {
+      "text": " that they will play the pose, a Rimundi or something like that they said no.",
+      "start_time": 2850.0,
+      "end_time": 2854.0
+    },
+    {
+      "text": " So there is a pose. So capture that video, cut it into frames. That becomes a sequence.",
+      "start_time": 2854.0,
+      "end_time": 2861.0
+    },
+    {
+      "text": " Like that there are different mudras and there are sequences. You fine tune a model no, which will understand that sequence.",
+      "start_time": 2861.0,
+      "end_time": 2868.0
+    },
+    {
+      "text": "",
+      "start_time": 2868.0,
+      "end_time": 2850.0
+    },
+    {
+      "text": " Here only you ask, you find out all the various types.",
+      "start_time": 2862.0,
+      "end_time": null
+    },
+    {
+      "text": " whether the video is available or they have to play and show it to you but then they have to find because you will be displaying there",
+      "start_time": 2880.0,
+      "end_time": 2887.08
+    },
+    {
+      "text": " So you create sequence for that you just capture the video",
+      "start_time": 2887.8,
+      "end_time": 2891.32
+    },
+    {
+      "text": " Text is known create a RM and D video they will play",
+      "start_time": 2892.92,
+      "end_time": 2897.08
+    },
+    {
+      "text": " Like that another mudra they will play so capture the video first convert it into frame sequence",
+      "start_time": 2898.16,
+      "end_time": 2904.36
+    },
+    {
+      "text": " So sequences are going to be created keep training it then it will do mix and match later",
+      "start_time": 2904.72,
+      "end_time": 2909.88
+    },
+    {
+      "text": " That you have to create for at least 100 and 3.",
+      "start_time": 2910.0,
+      "end_time": 2917.0
+    },
+    {
+      "text": " If we do that to market it just.",
+      "start_time": 2917.0,
+      "end_time": 2920.0
+    },
+    {
+      "text": " Then it is very simple.",
+      "start_time": 2920.0,
+      "end_time": 2922.0
+    },
+    {
+      "text": " So input all this in the ground.",
+      "start_time": 2922.0,
+      "end_time": 2924.0
+    },
+    {
+      "text": " LLM is always like that.",
+      "start_time": 2924.0,
+      "end_time": 2926.0
+    },
+    {
+      "text": " LLM is data.",
+      "start_time": 2926.0,
+      "end_time": 2927.0
+    },
+    {
+      "text": " Data hungry it is.",
+      "start_time": 2927.0,
+      "end_time": 2929.0
+    },
+    {
+      "text": " If you expose it to that, it will do mix and match.",
+      "start_time": 2929.0,
+      "end_time": 2931.0
+    },
+    {
+      "text": " It will produce.",
+      "start_time": 2931.0,
+      "end_time": 2932.0
+    },
+    {
+      "text": " Only that.",
+      "start_time": 2932.0,
+      "end_time": 2933.0
+    },
+    {
+      "text": "",
+      "start_time": 2933.0,
+      "end_time": 2910.0
+    },
+    {
+      "text": " Only that a post-election is necessary when the whole project is going. Again it depends on the potential of the relation.",
+      "start_time": 2914.0,
+      "end_time": 2917.0
+    },
+    {
+      "text": " There are many papers where in their phones like from comparison to the Niyamu there is far more better",
+      "start_time": 2940.0,
+      "end_time": 2950.0
+    },
+    {
+      "text": " Compared to?",
+      "start_time": 2950.0,
+      "end_time": 2951.0
+    },
+    {
+      "text": " Niyamu",
+      "start_time": 2951.0,
+      "end_time": 2952.0
+    },
+    {
+      "text": " There is something like anime anyone, then they have done more variation and there are three or four other papers",
+      "start_time": 2952.0,
+      "end_time": 2962.0
+    },
+    {
+      "text": "",
+      "start_time": 2962.0,
+      "end_time": 2940.0
+    },
+    {
+      "text": " No, they're telling you to use audio tape, it is generator. They're telling you to use tape and the tape is generator.",
+      "start_time": 2943.44,
+      "end_time": 2946.64
+    },
+    {
+      "text": " Image question...",
+      "start_time": 2946.64,
+      "end_time": 2948.0
+    },
+    {
+      "text": " They are telling you to give the audio and you give the text to the gendered.",
+      "start_time": 2970.0,
+      "end_time": 2974.0
+    },
+    {
+      "text": " They are telling you to give audio and you give the image to the gendered.",
+      "start_time": 2974.0,
+      "end_time": 2977.0
+    },
+    {
+      "text": " And they are telling you to give much better than the text.",
+      "start_time": 2977.0,
+      "end_time": 2980.0
+    },
+    {
+      "text": " So, such a person came to be actually very much.",
+      "start_time": 2980.0,
+      "end_time": 2985.0
+    },
+    {
+      "text": " You can say for that one.",
+      "start_time": 2985.0,
+      "end_time": 2989.0
+    },
+    {
+      "text": " You were telling them?",
+      "start_time": 2989.0,
+      "end_time": 2990.0
+    },
+    {
+      "text": " That's the element of faith.",
+      "start_time": 2990.0,
+      "end_time": 2991.0
+    },
+    {
+      "text": "",
+      "start_time": 2991.0,
+      "end_time": 2970.0
+    },
+    {
+      "text": " Please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please,",
+      "start_time": 2970.0,
+      "end_time": null
+    },
+    {
+      "text": " It is basically a speech to talk.",
+      "start_time": 3000.0,
+      "end_time": 3007.0
+    },
+    {
+      "text": " And it is called Amazon call.",
+      "start_time": 3007.0,
+      "end_time": 3010.0
+    },
+    {
+      "text": " It is responsible for text to speech.",
+      "start_time": 3010.0,
+      "end_time": 3015.0
+    },
+    {
+      "text": " It is made so well.",
+      "start_time": 3015.0,
+      "end_time": 3017.0
+    },
+    {
+      "text": " Other people are coming to the movie.",
+      "start_time": 3017.0,
+      "end_time": 3020.0
+    },
+    {
+      "text": " They introduce it to some people too.",
+      "start_time": 3020.0,
+      "end_time": 3022.0
+    },
+    {
+      "text": " They call it adbp comprehend.",
+      "start_time": 3022.0,
+      "end_time": 3024.0
+    },
+    {
+      "text": "",
+      "start_time": 3024.0,
+      "end_time": 3000.0
+    },
+    {
+      "text": " I think it's very good. They are a heavy work.",
+      "start_time": 3002.0,
+      "end_time": 3006.0
+    },
+    {
+      "text": " That's the proper way to do it.",
+      "start_time": 3030.0,
+      "end_time": 3033.0
+    },
+    {
+      "text": " RxCentra also writes the patient details first.",
+      "start_time": 3033.0,
+      "end_time": 3036.0
+    },
+    {
+      "text": " Then we can get a number of them.",
+      "start_time": 3036.0,
+      "end_time": 3038.0
+    },
+    {
+      "text": " Even if my dad's hospital is using it,",
+      "start_time": 3038.0,
+      "end_time": 3041.0
+    },
+    {
+      "text": " I'm looking for collaboration.",
+      "start_time": 3041.0,
+      "end_time": 3044.0
+    },
+    {
+      "text": " A data-based component is normally what you write.",
+      "start_time": 3044.0,
+      "end_time": 3047.0
+    },
+    {
+      "text": " I will just try to write the authorize of it.",
+      "start_time": 3047.0,
+      "end_time": 3050.0
+    },
+    {
+      "text": " Now, man, you give the patient's name.",
+      "start_time": 3050.0,
+      "end_time": 3054.0
+    },
+    {
+      "text": " It is later, what's here.",
+      "start_time": 3054.0,
+      "end_time": 3057.0
+    },
+    {
+      "text": "",
+      "start_time": 3057.0,
+      "end_time": 3030.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 3033.0,
+      "end_time": null
+    },
+    {
+      "text": " What is the secret behind all this?",
+      "start_time": 3060.0,
+      "end_time": 3063.0
+    },
+    {
+      "text": " The secret",
+      "start_time": 3063.0,
+      "end_time": 3064.0
+    },
+    {
+      "text": " The secret",
+      "start_time": 3064.0,
+      "end_time": 3065.0
+    },
+    {
+      "text": " And the integrated so well with them",
+      "start_time": 3065.0,
+      "end_time": 3068.0
+    },
+    {
+      "text": " And they were telling us that",
+      "start_time": 3068.0,
+      "end_time": 3070.0
+    },
+    {
+      "text": " Shri Mataji is equal",
+      "start_time": 3070.0,
+      "end_time": 3073.0
+    },
+    {
+      "text": " That also means that the transfer",
+      "start_time": 3073.0,
+      "end_time": 3075.0
+    },
+    {
+      "text": " It's super of a lot of money",
+      "start_time": 3075.0,
+      "end_time": 3077.0
+    },
+    {
+      "text": " And it's huge, all of these sensitive information",
+      "start_time": 3077.0,
+      "end_time": 3079.0
+    },
+    {
+      "text": " They have a sense of name, and a sense of market",
+      "start_time": 3079.0,
+      "end_time": 3083.0
+    },
+    {
+      "text": " It will directly",
+      "start_time": 3083.0,
+      "end_time": 3086.0
+    },
+    {
+      "text": " Like you know, it will",
+      "start_time": 3086.0,
+      "end_time": 3088.0
+    },
+    {
+      "text": "",
+      "start_time": 3088.0,
+      "end_time": 3060.0
+    },
+    {
+      "text": " As you can see from here.",
+      "start_time": 3062.0,
+      "end_time": null
+    },
+    {
+      "text": " in real time",
+      "start_time": 3090.0,
+      "end_time": 3092.0
+    },
+    {
+      "text": " left and right",
+      "start_time": 3096.0,
+      "end_time": 3098.0
+    },
+    {
+      "text": " so they are also embracing technology",
+      "start_time": 3108.0,
+      "end_time": 3110.0
+    },
+    {
+      "text": " I am not sure if it is a good thing or not.",
+      "start_time": 3120.0,
+      "end_time": 3122.0
+    },
+    {
+      "text": " I am not sure if it is a good thing or not.",
+      "start_time": 3122.0,
+      "end_time": 3124.0
+    },
+    {
+      "text": " I am not sure if it is a good thing or not.",
+      "start_time": 3124.0,
+      "end_time": 3126.0
+    },
+    {
+      "text": " I am not sure if it is a good thing or not.",
+      "start_time": 3126.0,
+      "end_time": 3128.0
+    },
+    {
+      "text": " I am not sure if it is a good thing or not.",
+      "start_time": 3128.0,
+      "end_time": 3130.0
+    },
+    {
+      "text": " I am not sure if it is a good thing or not.",
+      "start_time": 3130.0,
+      "end_time": 3132.0
+    },
+    {
+      "text": " I am not sure if it is a good thing or not.",
+      "start_time": 3132.0,
+      "end_time": 3134.0
+    },
+    {
+      "text": " I am not sure if it is a good thing or not.",
+      "start_time": 3134.0,
+      "end_time": 3136.0
+    },
+    {
+      "text": " I am not sure if it is a good thing or not.",
+      "start_time": 3136.0,
+      "end_time": 3138.0
+    },
+    {
+      "text": " I am not sure if it is a good thing or not.",
+      "start_time": 3138.0,
+      "end_time": 3140.0
+    },
+    {
+      "text": " I am not sure if it is a good thing or not.",
+      "start_time": 3140.0,
+      "end_time": 3142.0
+    },
+    {
+      "text": " I am not sure if it is a good thing or not.",
+      "start_time": 3142.0,
+      "end_time": 3144.0
+    },
+    {
+      "text": " I am not sure if it is a good thing or not.",
+      "start_time": 3144.0,
+      "end_time": 3146.0
+    },
+    {
+      "text": " I am not sure if it is a good thing or not.",
+      "start_time": 3146.0,
+      "end_time": 3148.0
+    },
+    {
+      "text": "",
+      "start_time": 3148.0,
+      "end_time": 3120.0
+    },
+    {
+      "text": " I don't have a beard.",
+      "start_time": 3122.0,
+      "end_time": null
+    },
+    {
+      "text": " It takes me like 2 years to complete the test.",
+      "start_time": 3150.0,
+      "end_time": 3156.0
+    },
+    {
+      "text": " So full checkup is there.",
+      "start_time": 3156.0,
+      "end_time": 3159.0
+    },
+    {
+      "text": " It's so nice.",
+      "start_time": 3159.0,
+      "end_time": 3163.0
+    },
+    {
+      "text": " Their MRAs in technology last night were different.",
+      "start_time": 3163.0,
+      "end_time": 3166.0
+    },
+    {
+      "text": " For X-ray also, they're using that, not medical comprehensive,",
+      "start_time": 3166.0,
+      "end_time": 3171.0
+    },
+    {
+      "text": " they're using the normal AWS comprehensive.",
+      "start_time": 3171.0,
+      "end_time": 3176.0
+    },
+    {
+      "text": "",
+      "start_time": 3176.0,
+      "end_time": 3150.0
+    },
+    {
+      "text": " And in Amazon, they recommend it.",
+      "start_time": 3153.0,
+      "end_time": null
+    },
+    {
+      "text": " There are plenty of application opportunities.",
+      "start_time": 3180.0,
+      "end_time": 3185.0
+    },
+    {
+      "text": " How quickly you can deploy software development?",
+      "start_time": 3185.0,
+      "end_time": 3190.0
+    },
+    {
+      "text": "",
+      "start_time": 3190.0,
+      "end_time": 3180.0
+    },
+    {
+      "text": " This is a factory company, truck, they have made all the trucks What is the company?",
+      "start_time": 3184.84,
+      "end_time": 3185.84
+    },
+    {
+      "text": " That is the company that you operate in",
+      "start_time": 3185.84,
+      "end_time": 3190.92
+    },
+    {
+      "text": " We have made all the trucks, we have made all the trucks",
+      "start_time": 3190.92,
+      "end_time": 3194.56
+    },
+    {
+      "text": " It is a brand new Lama",
+      "start_time": 3194.56,
+      "end_time": 3196.44
+    },
+    {
+      "text": " Lama is so fast",
+      "start_time": 3196.44,
+      "end_time": 3198.44
+    },
+    {
+      "text": " It is a very open company",
+      "start_time": 3198.44,
+      "end_time": 3200.44
+    },
+    {
+      "text": " I am just trying to understand.",
+      "start_time": 3210.0,
+      "end_time": 3212.0
+    },
+    {
+      "text": " Is it right to do that complete thing that they become another case from Kerala?",
+      "start_time": 3212.0,
+      "end_time": 3218.0
+    },
+    {
+      "text": " No, I am just trying to understand.",
+      "start_time": 3218.0,
+      "end_time": 3220.0
+    },
+    {
+      "text": " Where we are heading, Janata Nisweta?",
+      "start_time": 3220.0,
+      "end_time": 3223.0
+    },
+    {
+      "text": " This is the architecture what we are doing.",
+      "start_time": 3223.0,
+      "end_time": 3226.0
+    },
+    {
+      "text": " Here, this is the block very nervous, it doesn't work.",
+      "start_time": 3226.0,
+      "end_time": 3229.0
+    },
+    {
+      "text": " Got it. I understood what you are saying.",
+      "start_time": 3229.0,
+      "end_time": 3231.0
+    },
+    {
+      "text": " By just giving text, you can't generate sequence of poses, that's what.",
+      "start_time": 3231.0,
+      "end_time": 3236.0
+    },
+    {
+      "text": " Understood.",
+      "start_time": 3236.0,
+      "end_time": 3237.0
+    },
+    {
+      "text": "",
+      "start_time": 3237.0,
+      "end_time": 3210.0
+    },
+    {
+      "text": " That's the idea.",
+      "start_time": 3212.0,
+      "end_time": null
+    },
+    {
+      "text": " Then this and all we can do like there are ML we can apply ML models to validate it or",
+      "start_time": 3240.0,
+      "end_time": 3245.2
+    },
+    {
+      "text": " text it to all you that also there are some other like ML models and this is the Dria",
+      "start_time": 3245.2,
+      "end_time": 3250.28
+    },
+    {
+      "text": " movies and implementation.",
+      "start_time": 3250.28,
+      "end_time": 3251.28
+    },
+    {
+      "text": " So we don't need to actually break or make a wits or something.",
+      "start_time": 3251.28,
+      "end_time": 3252.28
+    },
+    {
+      "text": " If we give all of this according to that brochure it will create like a video.",
+      "start_time": 3252.28,
+      "end_time": 3253.28
+    },
+    {
+      "text": " That is the model is finding.",
+      "start_time": 3253.28,
+      "end_time": 3254.28
+    },
+    {
+      "text": " You have to come up with some plan then like the way I said you have to ask somebody to",
+      "start_time": 3254.28,
+      "end_time": 3265.28
+    },
+    {
+      "text": "",
+      "start_time": 3265.28,
+      "end_time": 3240.0
+    },
+    {
+      "text": " like the way I tell you to ask somebody to",
+      "start_time": 3242.0,
+      "end_time": null
+    },
+    {
+      "text": " So, the same thing is happening with the changing of the button.",
+      "start_time": 3270.0,
+      "end_time": 3272.0
+    },
+    {
+      "text": " That's how it will be.",
+      "start_time": 3272.0,
+      "end_time": 3274.0
+    },
+    {
+      "text": " Which way will it be able to do that?",
+      "start_time": 3274.0,
+      "end_time": 3276.0
+    },
+    {
+      "text": " We see the light is just as the monitor.",
+      "start_time": 3276.0,
+      "end_time": 3278.0
+    },
+    {
+      "text": " And that's why we are telling what the two phases are there.",
+      "start_time": 3278.0,
+      "end_time": 3281.0
+    },
+    {
+      "text": " Are you concentrating on the two-part image or the other way?",
+      "start_time": 3281.0,
+      "end_time": 3284.0
+    },
+    {
+      "text": " That is where we have done all of this validation.",
+      "start_time": 3284.0,
+      "end_time": 3287.0
+    },
+    {
+      "text": " Very lecture percent use, Abdul Ghoor.",
+      "start_time": 3287.0,
+      "end_time": 3290.0
+    },
+    {
+      "text": " And he tells you something, animation.",
+      "start_time": 3290.0,
+      "end_time": 3292.0
+    },
+    {
+      "text": " So, you'll see, there is a phase of model.",
+      "start_time": 3292.0,
+      "end_time": 3294.0
+    },
+    {
+      "text": " And then there is some world of model which is bigger.",
+      "start_time": 3294.0,
+      "end_time": 3296.0
+    },
+    {
+      "text": " The phase is bigger, then it is more.",
+      "start_time": 3296.0,
+      "end_time": 3298.0
+    },
+    {
+      "text": "",
+      "start_time": 3298.0,
+      "end_time": 3270.0
+    },
+    {
+      "text": " If you can turn it off.",
+      "start_time": 3272.0,
+      "end_time": null
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 3300.0,
+      "end_time": 3301.0
+    }
+  ],
+  "transcript_text": " workflow, it is known as compounded LLM.  Agentic workflow involves compounded LLMs but that is one of the ways not the only method.   So in the compounded LLM the same question when you ask the LLM you want it to generate  Thank you.  a marketing plan for a product or an essay, it generates a draft version, draft one.  Then you are going to feed this, take this draft or it may generate a code, take this  draft and feed it to another LLM or it same LLM again.   will act as a critic. The second LLM will act as a critic.  It can be same LLM or a different LLM, but it has to act as a critic of this essay or  the marketing plan whatever you have asked for.  So now the critics output is obtained.  This essay lacks lot of technical content.  It is very superficial in nature.  Whatever may be the critics view point that output is produced.  Now you have third LLM where critics output and a draft version both you give.   Thank you.  output and a draft version you give and the third LLM will generate draft 2, updating  whatever is the critic. We do that for GPPT as well right, this is not what I am liking  modify this and all that. So in our case human itself is a critic, so this instead of this  LLM there can be an element of human and human will act as a critic and give a different   prompt but that itself can be an LLM.  Then you produce a draft 2 like this how many iterations you want to have that is your decision.  So if you are okay with draft 2 fine otherwise again you have to loop back again you have  to feed this draft 2 to critic again you have to take the critic again you have to produce  it to a fine tuned LLM.  So this is the finer version finer version LLM.   So in this view, in this view of energetic workflow, every piece that I spoke of, I have  about is an LLM. Every piece that I am speaking about, so that is why it is called as compounded  LLM. There is a compounded LLM where every LLM is playing a different role. The perspectives  are different. One LLM's role is to just produce an essay. Second LLM's role is to  critic on the essay. Third LLM's role is to combine the critic and the draft version   and combine it produce it you can iterate it as well now how many times you want to  So, it is usually done by something called as an orchestration agent that itself is a  separate agent.  Orchestration agent will decide how many times this need to be repeated, back version need  to be repeated, it is like a plan, okay.  How many times and what all you have to feed, what changes you have to bring in, all of  this usually is orchestrated and that agent is called as an orchestration agent.   Now in the way I said the a-  work flow versus the non-agent work flow it is like at one go you just ask me an essay  and you gave me the essay that is it.  But in the agent work flow you are not going to stop at that you are going to refine your  responses what does that mean your agent work flow is giving you a better response than  a non-agent work approach that is the first and foremost objective goal with which agent   work flows work in order to.  improvise the response. You use agentic workflows. This is the objective and how you do it? There  can be different methods but this is one of the ways. Is this clear? Is the agentic workflow  clear here? Now you can ask the LLM to create a draft version. Now you can ask another piece   of code for a data request.  The data request agent may generate the request not in the form of the JSON file let us say  the format but it is in the form of a natural language.  The data request piece module may generate it in the format required for Google search  or web search.   So then that output is fed to Google search or any other search, web search I will say web search.  and produce some statistics related to the product. You want to produce marketing plans for a product.  So marketing strategy is like similar products, how they have been done, all of that.  The statistics is brought by web search. Now these statistics are fed to critic.  These statistics are fed to critic. Now the statistics information has been brought in   in from a different path not an LLM. So, agentic workflow let me iterate.  agentic workflow does not necessarily mean that all pieces are LLMs.  One leap bound you have to take is in agentic workflow you have compounded LLMs.  Another leap bound that you have to take is the agentic workflow does not necessarily  mean that every piece is an LLM.  The pieces can be different, they can flow from different paths.   But all of them, the objective is to better produce better  The only one goal is to produce better response to a query that is it okay so that is another  way.  This is clear this is what we mean by agentic workflow we are using several modules to generate  a better response to the given query this is what we mean by agentic workflow.  So now if you look at the stack AI stack as of today this is where you have the semiconductor   Thank you.  semiconductor layer like N media and all of that, then the above layer is a cloud infrastructure,  then the above layer is a foundational model like utility etc.   and then you have applications. Here is a layer of orchestration.  This is your AI stack as of today.  The AI stack, bottom most layer is a semiconductor on which it is going to run, N media and all  of that, Intel, AMD processors and above layer is the cloud infrastructure.  So these sit on cloud AWS, Azure, whatever you want to call it as and then above that  is the foundational AI models like GPT and all of that and above layer is now the orchestration   agent that is sitting to see how the response is.  will have to be generated by using agents and on top of that you have the applications.  So there is plenty of opportunity in terms of quickly building the AI products using  this agentic approach because you have plenty of them available already software development  is happening in this direction.  See please note that for us machine learning means that is the only piece but in software  development that is not the only thing.   You need to also worry about where you will deploy, isn't it? On which hardware you will deploy?  you are going to run it. So we are speaking everything in silos. We never speak about  which GPU system we need. We just build a ML model that is not sufficient, right? Just  that one piece is not sufficient. You have to make sure that the training, data, where  do you store the data? One lakh images where do you store? You need server. So you have  to talk about hardware. You want to speak about the clustering. You need to talk about  how GPU processing happens. So all of this is also important. The overall stack you have   on.  If you do not understand the overall stack, you are not going to be called as an ML engineer.  Just applying some supervised machine learning and doing sentiment analysis and you say that  you have learned machine learning is not enough.  Do you understand the entire stack?  So you have to understand how the whole module has to be dockerized, containerized.  Completely you need to understand to make sure that you deploy the product in the manner  that is required for it to be usable.   So only stand up.  Cylose LLM learning is not enough I want to tell you on this okay.  So these are the various AI stack layers as of today that you need to look at we are here  we talked about LLM we understood this we need to understand how orchestration agents  will have to be learned and agentic applications will have to be built so that an agentic workflow  will be able to answer your questions very well that is where we stand today is that   So, now let us look at the various  So, that is the agentic architectural patterns that are available.  So, like the design patterns that you have in your other software engineering and OVOID  in the software development style, what is the pattern design pattern?  You have to be silent.  What is the design pattern as you studied in software engineering or if you are studying  OVOID you know about it.   What is the design pattern?  No idea, factory pattern, singleton pattern, prototype pattern, there are lot of patterns.  Software engineering I am sure is one of the units contained in it.  It is called as shameless copying.  Do you understand?  See over years many if you if you claim that you have studied software engineering and   OOAD and if you do not know about design patterns, you will be able to see the difference between  be souped in the placements, you should know about it, this is the important topic okay,  but it is about copying, please understand this is about plagiarism, I am talking about,  what it means is, this is the problem statement that I encountered in the software industry,  if you encounter this problem of you want only one instance of the object, you singleton   object type, design pattern, code style they will tell you.  How to code? This is a pattern, private constructor only you should have like that they will tell  you. This is how the code should look like for a singleton pattern if you want only one  instance of the object. If the application calls for it then you should use singleton  pattern. If it is a factory pattern this is what happens. If it is a builder pattern this  is how the code should be. So what is the problem statement? How the code should appear?   That is the problem statement how the .  code should appear. They have given solutions to all the problems, some n set of problems,  n set of design patterns, how to code. This if you know you will survive in the industry  because everybody uses this, everybody uses this. I am surprised that you have not heard  of it. So in OOAD it is heavily discussed. In one full unit, one and half units they  discuss only design patterns in the OOAD subject and it is the damn mandatory topic that you   should know.  In case you are losing out on OOAD and not learning design patterns, I urge you that  before you take up the placements you should know patterns.  Because in the industry as I have heard from people, I have not worked, so I do not know  but I have heard from people that they all the day they just do design patterns.  Because it is all about okay this problem I should use this type of code, this pattern  this problem I should use this type of code.  They have handcrafted the way the code has to be written for this kind of problem and   Dope  problems are going to recur for any new problem and there is no need to reinvent the wheel  it is like reusable that is how it is only little bit of customization you have to use  that is why it is called as copying the design patterns are very very important.  So like that so I thought that you know the design patterns and similar to that AI agent  work flow also has a design pattern okay so there are some design patterns that are coming   up even for agent work flows. So we need to take a look at these designs.  experience, all the software engineers over here have had similar experiences, so it is  shared public, okay, all different types of patterns, design patterns you should study  because that will help in software development and that is your job bread and butter and  you should know about design patterns, eventually you will learn in the on the field you will   definitely learn but in the placement let us say if they will get a  If you claim that you know design patterns, they need not have to teach you, right?  These are the four design patterns that you should know.   Thank you.  when you are building agentic workflow. So probably in the hackathon I will expect you  to implement one of these or multiple of these.   3, 2, drive.  your attention it is so difficult last but one bench and last bench there yes if you  bring your own problem statement it is already pre coded I do not want anything like that  on the spot you will build I have said it tentatively as 8 provided I come ready with   the following statement. I am discussing still.  I am discussing with CTO as well as with Anantraman sir, if I come out with a nice problem statement  by then I will announce otherwise, I need time.  Shall we take a look at it, it does not take much time, after this I will give break.  So you have reflection design pattern, reflection design pattern is same as this whatever I  explained, compounded LLM that is called as reflection pattern.   So you ask the LLM to generate code.  You have to reflect on that code that is the meaning of reflection and that code when you  run it it is generating error.  So the critic is saying that there is an error in line number 10.  So then the other LLM, final LLM it can be different LLM they can be same LLM.  So another LLM will say okay I have corrected the error in line 10 you now check it again.   So this is called as reflection.  reflection pattern, reflection pattern is nothing but compounded LLM. What is tool use? Tool  use is the second path that I said okay. I have asked LLM to give me 5 by 2 example or  sign 63. So when I say like that LLM alone cannot answer. So what it has to do? It has   to call an API. API to Calculator Agent. It has to call an API to Calculator Agent.  to web search or it has to generate a code for calculating sin 63 and the code has to  be run in an environment where code can be run, isn't it?  So you have to make an API call to the code generation engine and to run the code and  give back the answer.  So all that you do it and then you produce it to LLM.  So you are making use of a tool to answer the question.   You will not allow GPT itself.  have to answer 5 by 2 or sign 35 like that. The GPT alone cannot answer that. GPT will  have to resort to some Apa call. It should make use of a tool like calculator or a python  code and use math libraries, run the code and then get back the answer and then produce  the answer. So in giving its response it is using Apa calls tools and that is called as   a tool use pattern.  So if you are making use of external tools to run or to answer other than just the LLM  then it is called as tool use pattern.  Both examples already had given there is nothing new in this.  In one path it is reflection design pattern in this path it is tool use pattern.  In giving the response if it makes use of API calls to external agents then it is called  as the tool use pattern.   pattern, okay then there is a planar pattern.  You are going to find your LLM is already trained, GPT is already trained or LAMA 3.1  is already trained on language while doing the fine tuning on your data set.  So now let us say math related questions if you are asking, you should identify using an  orchestration agent that this is a math related question.   I am going to so we did it for in one of the.  projects, we did that. So what we did was, please be silent, LLM I asked a question,  how many scores, let us say we have only had scored, this is a question. So what we did  was, we identified an agent, orchestration agent, orchestration agent understood that   that the question is related to cricket. So we gave it to cricket agent.  This base LLM understood the language.  Then we developed an agent, orchestration agent, which would orchestrate between cricket, football  and other sports.  So this cricket agent will fetch data from its own cricket database, produces the answer  and then gives it back to another LLM.  And then it produces the answer.  This is what we developed.   recently they got approved in NLP journal also.  of work. So this is an agent, cricket agent, football agent, we did it for Olympics, Paris  Olympics. So all the indoor games, outdoor games, all of these, each one is one agent.  It will answer pin pointed questions on one particular sports and to which agent we have  to ask that is done by orchestration agent and orchestration agent is going to be called  by LLM after identifying what the question is. So this is used only for understanding   the language.  This is how you even web search is used okay.  So can I have your attention for few more minutes please and after that I will close.  We are done with two design pattern the third design pattern let us say you want a robot   to clean a room. You want a robot to clean the room.  clean a room, you want a robot to clean a room, what are the aspects that are involved?  So first of all you have to plan this, so robot to clean a room you have to probably  give information about the room as well, so first step is to understand the layout and   split it into regions. So this may be the, okay then you have to create a map.  of it I am just saying these may not be the steps but I am saying map of that region  you may have to create and then you have to generate navigation, navigation using that  map how the robot has to move in what direction so that you will completely cover. Objective  is to really clean the room not clean some portion of the room completely clear the room.   So this can be the steps. So you are going to plan it.  Last bench.  Are you done?  How many times I mean this is like shameless, how many times you say it simply seem to be  disrespect, okay.  So the planner module what it does is it has to plan certain subtask, it has to plan subtask  involved in carrying out the global task that is what the planner model is going to be.   In another example, let us say there is a boy.  picture of a boy in some pose and you ask the LLM generate a girl studying the book  in the same pose as that of the boy.  That is a boy is doing some action doing some exercise like this but I am turned like this  but you are asking LLM to generate a girl reading a book in the same pose as that of  the boy.  So what are the plans that you need to undertake first and foremost you have to identify the   a boy in the image.  So, recognition may be yellow or some other model you will use you have to plan this  recognition and then using open pose you have to detect the pose open pose this may be this  is like your project as well.  So, open pose you identify the pose of the person then you have to generate a girl.   So, you have to generate a girl image and then you have to fuse girl image and the pose.  fuse this and generate the final image, generate the final image. So some decision making is  involved in this. So this is known as planning pattern okay.  So your agents are recognition agent, open pose agent, this is agentic workflow and not  necessarily that every agent is a LLM here. So AI agentic workflow does not, I am reiterating   AI agentic workflow does not necessarily mean  LLM, it can be one piece can be LLM, this is about software development, this is about  design pattern, in the whole of the design pattern one piece can be LLM, is that clear?  So this is going to hold good even for non-LLM course as well, but if it is LLM may be invariably  one piece will be LLM, it can be compounded LLM, but there are other things that may be   required so this plan.  planning and decision making has to happen and that is what the planner agent is going  to do, planner design pattern is going to do and then execute, plan and execute.  So that is what the planner design pattern does but all of this will have to be fine  tuned.  This is like he was asking me how is it done?  We take the base LLM and on top of that we work on this various pieces.  We have to create agents.   the agents can be your OO models.  have to create. Then the last one is multimodal collaboration. For the multimodal collaboration  again you may need one vision model, you may need one speech model, okay. Based on the  vision model text has to be generated. So vision features will have to be understood  by the vision model. Then it has to collaborate with text model, okay. And then it is kind  of similar to this, only thing is there are collaborative agents now. It is not in sequence,   It's not about that decision making, these agents call  For example, there is an autonomous vehicle that is being using agentic workflow.  What are the different agents that may be required for autonomous driving?  Can you tell me?  For autonomous driving, what different agents may be required?  Movement navigation, object detection, so vision system agent you need, then communication   agent to the driver, then safety.  So, like this there are many agents, each agent will have its own responsibility and  they need to come in flag trigger at the right time so that the driver is given correct information.  So, there are many agents so they are all collaborating.  Sometimes you may want to take the vision and the safety agent together and form a decision  making.  So, decision making will be combined from various agents, different agents will give   their inputs.  And then the driver will take a decision based on different inputs that have come in.  There may be a speech agent as well.  Take a right turn now, take a left turn now.  And the agent also may, the driver also may have to speak.  So there may be a speech agent as well required.  So different agents will perform different actions.  Some may be in sequence, some may be together, some may be together and decision making like  this.  You will have to decide what is appropriate for your application.   As I said these are possible.  But how you want to design your entire application is dependent on you, is that clear?  So this is about application development using some of these patterns.  So you have to decide whether already a pre-existing vision model is there, there is no need to  build some scratch, I will use that, speech model is there, I will use it, I will build  an autonomous vehicle system.  In today's system developing ML model is quite fast unlike in the earlier case because   for the  LLM sentiment analysis in no time it happens but how do you finally deploy this product  is the challenging thing.  How do you make sure that this pattern will coordinate and then produce a meaningful output  is a challenging thing.  The whole stack AI stack is more important than just building one model alone.  In the classroom we always teach subjects in silos where in LLM course we just understand  only LLM sometimes we do understand about hardware resources problem but there is no   Thank you.  discussed in separate one in parallel algorithms you do not even study about various GPU processing  units that are available how the clusters are formed what is the drawback that is there  in the current cluster where are we studying that and how is it impacting your LLM those  aspects we have not studied here purely from the software stack point of view we have studied  LLM okay so that is where we still have the gaps and according to top professional Stanford   and all of these people, there is still token problem in agentic workflow.  Token are not being generated quickly and very large number of tokens are being generated  in agent work flow and data engineering for text image, video and all of that there is  still agent work flow not that very effective.  So there is still lot of scope which means that we are all very happy everybody of every  one of you will have very good jobs okay.  So that is where he also stops this is from Andrews words not mine okay he says that there   There is plenty of opportunity.  is like electricity as quoted by Andrew NG is like electricity can be used for fans,  electricity for light, electricity for anything else, borewell and all of that like that AI  can be used as electricity in many applications and the domain is really nice and that is  for all of you to flourish.  So with that I will stop.  So with this I have only one more topic that is left LLM security and ethics which I will   take it up otherwise I am done with fourth unit.  will have decision making.   will have decision making. It will have orchestration. Orchestration agent can decide or they can be decision making. There are different patterns  available.  I'm going to go back to the car.  After the break I want you to try out whisper AI and generate the male spectrogram and also   generate use whisper AI for some speaker recognition kind and try it out.  Thank you.  I have to book PESO 52.  So could you like get a PC?  Yeah, PC you want to get.  Oh I just get it.  That's what you want to get a PC?  Yes ma'am.  laptop, PC has the...  My laptop and potato, ma'am.  It overheats if I run through.  But then you have to take permission later.   it will come in now, then while going they won't allow you.  PC down that side. Take a permission letter if you are bringing. I will just check you,  but PESU 52 you have to get your hardware. There is no hardware. I will check if PESU  52 is available. All this I have to do now. Because if I do not cover agent takes here  today, then I cannot give hackathon on agent. So I was thinking whether I will be able to  cover but I finished.   No, he is in HP, he overcut.  connection is HPA and he was his HP. So that's why he was not able to. So he wanted to check  whether it's HP or HP. From the screenshot he was not able to identify.  It's not even I just want to know. Because HP comes under HP. So I didn't really know that  this was HP.  Even I didn't know about it. When he wrote back to me, I sent it to him. Then he said whether  it's HP or HP, then I wrote to him. He has not yet got back on that.   The application status is sensitive and published.  I have written to him in any case.  the  I went through relative positional embedding also, I am seeing that the cat in that context,  now I again forget, see different embeddings are generated for cat based on the context,  so that relatedness he is trying to capture that is what he is trying to say, what will   be the embedding for CAD in which context.  window size of 2 he is generating in the absolute personal embedding it will be the same embedding  for cat but it will be relative embedding if it is in that context.  That is what he said so when I took self attention will take care but in the relative embedding   it happens like that. So here itself we have captured the position of the cat where  relative positional embedding, but further refinement will be done in attention layer.  Because already you have come close to where the cat is supposed to. Already you have reached  some extent, so maybe the attention layer will learn faster. If instead of initializing  the weights to 0, if you start from some proper value, maybe the learning would be faster.   That is my gift.  Because it may have to use the context length and all of that some additional parameters  are needed.   But it is not completely convincing. It is not proven it.  Thank you.  Okay.  .  .  Thank you.  Okay.  So, the agent is already there.   the square you know. Sequentially first HTML then CSS then the JavaScript.  So you can see life is different.  This is the same.  Now it will add up and it will make the night sky white.  And then it will add up from people using javasco.  It's here to see some life.  Now javasco is just up ahead and we can see.  I think the plane is ready.  Different times it's only different.  It gave us the same structure.  It can be a regular plane.  And the structure is made from modification and it will again execute.  Nice.  This is actually a platform.  Now we learn people concept.   Thank you.  understood the pattern now but this is like kind of design pattern only thing is LLM  you are there and then asking to generate HTML code but LLM itself is generating that  only the runtime is different.   But you have to explicitly make it make  call to agent. But here you are making that.  But how are you feeding it to the LLM you are from?  Directly the question is.   But running HTML...  file is like it is known how you have to run it is known so I think there is an API call  that is made it is a tool use pattern tool use and then there is a API call.   That is not reflection, that is adjusting the loss.  that cannot be called as reflection because loss is fed back in all the cases that is  not see in this case the output is fed back output the output draft version and critics  output are fed for reflection the in GAN it is not like that.   Basically you vary the personnel and then it produces a draft and then the second person will identify some error and it works and it repays another draft and then it's gone.  It's critical.  only it does not prefer any draft is critic saying that this line is incorrect this line  grammar is wrong this line there is no technical content like that only critic comments. So,  critic comments and that draft version is fed to another LLM for it to what is a refined  version. So, that way the output this is not like loss these are responses are only fed  as inputs. So, generative adversarial is generator discriminator loss is created when   the real images when they are...  Fake image is not nearer to real image.  That is a loss function. The distribution of the produced by the generator should be close to the realistic image distribution.  If it does not do that, then there is a loss, generator loss.  Generator loss will have to be fed back to produce better image.   And the deep thick and the little extra mirror was based on this. Yeah.  StyleGAN, StarGAN it is called as StarGAN, StarGAN version 1 and version 2.  We used StarGAN to destroy defaked image, one project we did last time.  If it is faked, we don't allow it to post only.  We have to identify, it's actually not faking.  If it is faked, you are not going to even allow it to go through.  So there is a filter.   Mm.  Upload a fake image, the social media platform will run our application, if it is a fake  image it will destroy it.  So we attempted that, not completely.  Sargan V2 and Sargan version V1.  Okay.  No, no, no, no, that batch already graduated.   He was a club head, no, he was a visit.  He is a club head, he has one of the club's head. He did the project.  Vijit and other members are there. I don't remember.  Sir, our cast members are always the agent.  Yes.  So, if we do that, we have modularizing all the...  Yes. You also are like multimodal mostly and planning.  Yeah.  Multimodal.  Multimodal, yeah.  Sir, we are very much in our...   This is also a place that is better than the city.  generating the post images. That is little difficult. I was trying to search for the  models which are available like from text it used to like source this and that. So they  are like you know, first you detect the text and create the post image and then you use  some like to like upscale it like SSR and that.   only from text is not possible is okay can you give me an example  As discussed, there were three contexts. One is Bakun, one is Bharatna Temple.  And one more is Akka.  Bharatna Temple context is a thread to that model.  So based on that Bharatna Temple context, we should generate the...  Your project, Raghusar was not there, no?  Here we are.  Here?  So the post sequence is the generator.   in the afternoon.  No you tell me where the issue is?  The issue is from text you need to post sequence.  Post sequence.  So, unapproach what I got from text to image and then you.  No, but you fine tune using lot of sequences like that no.  No, that is.  You have to create at least 1000 data sets.  Create 1000 for this text this is the sequence.   For this text, this is a sequence like that for different poses you create.  Without the data exposure it will not learn.  Now I am telling you suppose you say Bharatnathim this pose, I am not sure of the various poses.   play this post.  that they will play the pose, a Rimundi or something like that they said no.  So there is a pose. So capture that video, cut it into frames. That becomes a sequence.  Like that there are different mudras and there are sequences. You fine tune a model no, which will understand that sequence.   Here only you ask, you find out all the various types.  whether the video is available or they have to play and show it to you but then they have to find because you will be displaying there  So you create sequence for that you just capture the video  Text is known create a RM and D video they will play  Like that another mudra they will play so capture the video first convert it into frame sequence  So sequences are going to be created keep training it then it will do mix and match later  That you have to create for at least 100 and 3.  If we do that to market it just.  Then it is very simple.  So input all this in the ground.  LLM is always like that.  LLM is data.  Data hungry it is.  If you expose it to that, it will do mix and match.  It will produce.  Only that.   Only that a post-election is necessary when the whole project is going. Again it depends on the potential of the relation.  There are many papers where in their phones like from comparison to the Niyamu there is far more better  Compared to?  Niyamu  There is something like anime anyone, then they have done more variation and there are three or four other papers   No, they're telling you to use audio tape, it is generator. They're telling you to use tape and the tape is generator.  Image question...  They are telling you to give the audio and you give the text to the gendered.  They are telling you to give audio and you give the image to the gendered.  And they are telling you to give much better than the text.  So, such a person came to be actually very much.  You can say for that one.  You were telling them?  That's the element of faith.   Please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please,  It is basically a speech to talk.  And it is called Amazon call.  It is responsible for text to speech.  It is made so well.  Other people are coming to the movie.  They introduce it to some people too.  They call it adbp comprehend.   I think it's very good. They are a heavy work.  That's the proper way to do it.  RxCentra also writes the patient details first.  Then we can get a number of them.  Even if my dad's hospital is using it,  I'm looking for collaboration.  A data-based component is normally what you write.  I will just try to write the authorize of it.  Now, man, you give the patient's name.  It is later, what's here.   Thank you.  What is the secret behind all this?  The secret  The secret  And the integrated so well with them  And they were telling us that  Shri Mataji is equal  That also means that the transfer  It's super of a lot of money  And it's huge, all of these sensitive information  They have a sense of name, and a sense of market  It will directly  Like you know, it will   As you can see from here.  in real time  left and right  so they are also embracing technology  I am not sure if it is a good thing or not.  I am not sure if it is a good thing or not.  I am not sure if it is a good thing or not.  I am not sure if it is a good thing or not.  I am not sure if it is a good thing or not.  I am not sure if it is a good thing or not.  I am not sure if it is a good thing or not.  I am not sure if it is a good thing or not.  I am not sure if it is a good thing or not.  I am not sure if it is a good thing or not.  I am not sure if it is a good thing or not.  I am not sure if it is a good thing or not.  I am not sure if it is a good thing or not.  I am not sure if it is a good thing or not.   I don't have a beard.  It takes me like 2 years to complete the test.  So full checkup is there.  It's so nice.  Their MRAs in technology last night were different.  For X-ray also, they're using that, not medical comprehensive,  they're using the normal AWS comprehensive.   And in Amazon, they recommend it.  There are plenty of application opportunities.  How quickly you can deploy software development?   This is a factory company, truck, they have made all the trucks What is the company?  That is the company that you operate in  We have made all the trucks, we have made all the trucks  It is a brand new Lama  Lama is so fast  It is a very open company  I am just trying to understand.  Is it right to do that complete thing that they become another case from Kerala?  No, I am just trying to understand.  Where we are heading, Janata Nisweta?  This is the architecture what we are doing.  Here, this is the block very nervous, it doesn't work.  Got it. I understood what you are saying.  By just giving text, you can't generate sequence of poses, that's what.  Understood.   That's the idea.  Then this and all we can do like there are ML we can apply ML models to validate it or  text it to all you that also there are some other like ML models and this is the Dria  movies and implementation.  So we don't need to actually break or make a wits or something.  If we give all of this according to that brochure it will create like a video.  That is the model is finding.  You have to come up with some plan then like the way I said you have to ask somebody to   like the way I tell you to ask somebody to  So, the same thing is happening with the changing of the button.  That's how it will be.  Which way will it be able to do that?  We see the light is just as the monitor.  And that's why we are telling what the two phases are there.  Are you concentrating on the two-part image or the other way?  That is where we have done all of this validation.  Very lecture percent use, Abdul Ghoor.  And he tells you something, animation.  So, you'll see, there is a phase of model.  And then there is some world of model which is bigger.  The phase is bigger, then it is more.   If you can turn it off.  Thank you."
+}

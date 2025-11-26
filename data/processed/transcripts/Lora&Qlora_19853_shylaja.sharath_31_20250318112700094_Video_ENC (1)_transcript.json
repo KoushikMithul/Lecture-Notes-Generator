@@ -1,0 +1,3213 @@
+{
+  "video_name": "Lora&Qlora_19853_shylaja.sharath_31_20250318112700094_Video_ENC (1)",
+  "video_path": "data/raw/videos/Lora&Qlora_19853_shylaja.sharath_31_20250318112700094_Video_ENC (1).mp4",
+  "duration_seconds": 3300.096,
+  "transcript": [
+    {
+      "text": " .",
+      "start_time": 0.0,
+      "end_time": 2.0
+    },
+    {
+      "text": " .",
+      "start_time": 30.0,
+      "end_time": 32.0
+    },
+    {
+      "text": " .",
+      "start_time": 60.0,
+      "end_time": 62.0
+    },
+    {
+      "text": " .",
+      "start_time": 90.0,
+      "end_time": 92.0
+    },
+    {
+      "text": " .",
+      "start_time": 120.0,
+      "end_time": 122.0
+    },
+    {
+      "text": " .",
+      "start_time": 150.0,
+      "end_time": 152.0
+    },
+    {
+      "text": " .",
+      "start_time": 180.0,
+      "end_time": 182.0
+    },
+    {
+      "text": " .",
+      "start_time": 210.0,
+      "end_time": 212.0
+    },
+    {
+      "text": " .",
+      "start_time": 240.0,
+      "end_time": 242.0
+    },
+    {
+      "text": " .",
+      "start_time": 270.0,
+      "end_time": 272.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 300.0,
+      "end_time": 329.84
+    },
+    {
+      "text": " I'm going to go back to the other side of the road.",
+      "start_time": 330.0,
+      "end_time": 337.0
+    },
+    {
+      "text": " So, I think you need to quickly settle down good morning.",
+      "start_time": 360.0,
+      "end_time": 386.04
+    },
+    {
+      "text": "",
+      "start_time": 386.04,
+      "end_time": 360.0
+    },
+    {
+      "text": " See normally when",
+      "start_time": 363.72,
+      "end_time": null
+    },
+    {
+      "text": " you train can I have your attention? Normally when you train the models what is that you",
+      "start_time": 390.0,
+      "end_time": 400.12
+    },
+    {
+      "text": " are going to get in return? Ways, right? Normally all these are based on neural network all",
+      "start_time": 400.12,
+      "end_time": 410.64
+    },
+    {
+      "text": " the models that we have talked about are all based on neural network and hence we are going",
+      "start_time": 410.64,
+      "end_time": 415.8
+    },
+    {
+      "text": "",
+      "start_time": 415.8,
+      "end_time": 390.0
+    },
+    {
+      "text": " to get the models learnings in the form of weights.",
+      "start_time": 393.64,
+      "end_time": null
+    },
+    {
+      "text": " It is a weight matrix that we are going to get.",
+      "start_time": 420.0,
+      "end_time": 426.24
+    },
+    {
+      "text": " So when we say GPT is some 176 billion and all of that, what is that we are talking about?",
+      "start_time": 426.24,
+      "end_time": 439.36
+    },
+    {
+      "text": " Parameters or the weights, it is such a huge matrix.",
+      "start_time": 439.36,
+      "end_time": 445.76
+    },
+    {
+      "text": "",
+      "start_time": 445.76,
+      "end_time": 420.0
+    },
+    {
+      "text": " 176 billion parameters matrix is a weight matrix.",
+      "start_time": 424.28,
+      "end_time": null
+    },
+    {
+      "text": " that I am talking about. Now does it correspond to only one layer, one head? No, all of that",
+      "start_time": 450.0,
+      "end_time": 456.44
+    },
+    {
+      "text": " together is 176 billion parameters. So, your GPT model let us say is 176 billion or your",
+      "start_time": 456.44,
+      "end_time": 463.44
+    },
+    {
+      "text": " Lama 3.2 then you have 7 billion, 8 billion, 13 billion what do they exactly represent?",
+      "start_time": 463.44,
+      "end_time": 470.48
+    },
+    {
+      "text": " They represent the weight matrix. Is that clear? They represent the parametric knowledge",
+      "start_time": 470.48,
+      "end_time": 477.16
+    },
+    {
+      "text": "",
+      "start_time": 477.16,
+      "end_time": 450.0
+    },
+    {
+      "text": " And that is what we are talking about in terms of the billions.",
+      "start_time": 452.68,
+      "end_time": null
+    },
+    {
+      "text": " And these billion parameters represented a single W here is not just of one layer but",
+      "start_time": 480.0,
+      "end_time": 487.4
+    },
+    {
+      "text": " all of the layers that are present in your transformer.",
+      "start_time": 487.4,
+      "end_time": 490.28
+    },
+    {
+      "text": " If they are all transformer based layer, so the several layers, several heads, all of",
+      "start_time": 490.28,
+      "end_time": 495.84
+    },
+    {
+      "text": " these together consist of these weights.",
+      "start_time": 495.84,
+      "end_time": 499.16
+    },
+    {
+      "text": " Is this clear?",
+      "start_time": 499.16,
+      "end_time": 501.96
+    },
+    {
+      "text": " That is what we mean by the weight matrix.",
+      "start_time": 501.96,
+      "end_time": 503.96
+    },
+    {
+      "text": " So as an example we will take 176 billion.",
+      "start_time": 503.96,
+      "end_time": 508.44
+    },
+    {
+      "text": "",
+      "start_time": 508.44,
+      "end_time": 480.0
+    },
+    {
+      "text": " Now how do these weights appear?",
+      "start_time": 481.56,
+      "end_time": null
+    },
+    {
+      "text": " what format they are appearing. So the values would be like this 2.3, 6.7, 6.7, minus 0.1",
+      "start_time": 510.0,
+      "end_time": 520.68
+    },
+    {
+      "text": " like this. The 176 billion, billion is 10 to the power of 9, 9. So those many parameters",
+      "start_time": 520.68,
+      "end_time": 535.72
+    },
+    {
+      "text": "",
+      "start_time": 535.72,
+      "end_time": 510.0
+    },
+    {
+      "text": " all of them are represented in the floating point representation.",
+      "start_time": 514.32,
+      "end_time": null
+    },
+    {
+      "text": " Every weight that you have learned all of these 176 billion parameters are in the floating",
+      "start_time": 540.0,
+      "end_time": 546.88
+    },
+    {
+      "text": " point format.",
+      "start_time": 546.88,
+      "end_time": 547.88
+    },
+    {
+      "text": " When you say they are in the floating point format, what is the internal representation",
+      "start_time": 547.88,
+      "end_time": 555.32
+    },
+    {
+      "text": " of it?",
+      "start_time": 555.32,
+      "end_time": 556.32
+    },
+    {
+      "text": " The internal representation can be 32 bits, which is full precision.",
+      "start_time": 556.32,
+      "end_time": 568.04
+    },
+    {
+      "text": "",
+      "start_time": 568.04,
+      "end_time": 540.0
+    },
+    {
+      "text": " is full precision.",
+      "start_time": 541.0,
+      "end_time": null
+    },
+    {
+      "text": " 32 bits is full precision for those numbers and by now all of you know that the numbers",
+      "start_time": 570.0,
+      "end_time": 580.76
+    },
+    {
+      "text": " always underlying computer are represented in the form of binary.",
+      "start_time": 580.76,
+      "end_time": 586.88
+    },
+    {
+      "text": " There is nothing like decimal, hexadecimal representation that is all for our visualization.",
+      "start_time": 586.88,
+      "end_time": 592.64
+    },
+    {
+      "text": " The only language that the computer even today understands is the binary and your weights",
+      "start_time": 592.64,
+      "end_time": 598.48
+    },
+    {
+      "text": "",
+      "start_time": 598.48,
+      "end_time": 570.0
+    },
+    {
+      "text": " which are floating point number.",
+      "start_time": 571.56,
+      "end_time": null
+    },
+    {
+      "text": " represented in the decimal notation right now for our visualization but internally it is",
+      "start_time": 600.0,
+      "end_time": 606.64
+    },
+    {
+      "text": " represented using a 32 bit representation and what are these 32 bits representing?",
+      "start_time": 606.64,
+      "end_time": 612.56
+    },
+    {
+      "text": " How does the floating point 32 get represented?",
+      "start_time": 612.56,
+      "end_time": 617.88
+    },
+    {
+      "text": " One bit is a sign bit and then you have the 8 bits of exponent and then 23 bits of mantisor.",
+      "start_time": 617.88,
+      "end_time": 629.56
+    },
+    {
+      "text": "",
+      "start_time": 629.56,
+      "end_time": 600.0
+    },
+    {
+      "text": " This is how the...",
+      "start_time": 601.0,
+      "end_time": null
+    },
+    {
+      "text": " of floating point numbers are represented. One bit represents a sign bit, 8 bits of exponent",
+      "start_time": 630.0,
+      "end_time": 637.04
+    },
+    {
+      "text": " and 23 bits of mantisov in the exponential format. This is the internal representation",
+      "start_time": 637.04,
+      "end_time": 644.92
+    },
+    {
+      "text": " and this is used for every number. Do you understand? 176 billion is a weight into 32",
+      "start_time": 644.92,
+      "end_time": 656.8
+    },
+    {
+      "text": "",
+      "start_time": 656.8,
+      "end_time": 630.0
+    },
+    {
+      "text": " We're going to be right back.",
+      "start_time": 632.0,
+      "end_time": null
+    },
+    {
+      "text": " into 32 bits, 176 billion parameters large language model into 32 bits is about 800 GB",
+      "start_time": 660.0,
+      "end_time": 672.24
+    },
+    {
+      "text": " approximately is about 800 GB of memory.",
+      "start_time": 672.24,
+      "end_time": 684.76
+    },
+    {
+      "text": "",
+      "start_time": 684.76,
+      "end_time": 660.0
+    },
+    {
+      "text": " which computer here has this much memory?",
+      "start_time": 663.88,
+      "end_time": 660.0
+    },
+    {
+      "text": " Forget about it",
+      "start_time": 662.0,
+      "end_time": null
+    },
+    {
+      "text": " 800 you cut off 1 0 that also we do not have you understand and this is only weights but",
+      "start_time": 690.0,
+      "end_time": 698.76
+    },
+    {
+      "text": " what about the gradients w plus w plus w is equal to w plus eta dou L by dou w this is",
+      "start_time": 698.76,
+      "end_time": 710.2
+    },
+    {
+      "text": " another 176 billion gradients is also same.",
+      "start_time": 710.2,
+      "end_time": 715.4
+    },
+    {
+      "text": "",
+      "start_time": 715.4,
+      "end_time": 690.0
+    },
+    {
+      "text": " So you need another 800 GB to store the gradients.",
+      "start_time": 692.48,
+      "end_time": null
+    },
+    {
+      "text": " and then you have to add. So it is easily crossing 1600 GB if you are storing all of",
+      "start_time": 720.0,
+      "end_time": 727.68
+    },
+    {
+      "text": " that in memory I am talking about RAM. That is why only open AI, Google, Microsoft, these",
+      "start_time": 727.68,
+      "end_time": 739.12
+    },
+    {
+      "text": " well known meta all of these only can afford to do this.",
+      "start_time": 739.12,
+      "end_time": 744.0
+    },
+    {
+      "text": "",
+      "start_time": 744.0,
+      "end_time": 720.0
+    },
+    {
+      "text": " I was and I am given to understand that they have used 25000 A1.",
+      "start_time": 726.0,
+      "end_time": null
+    },
+    {
+      "text": " 100 N media GPUs, 25000 A100 N media of 80 GB has been used 25000 of them which is about",
+      "start_time": 750.0,
+      "end_time": 767.6
+    },
+    {
+      "text": " 4000 crores to train this large language model.",
+      "start_time": 767.6,
+      "end_time": 771.72
+    },
+    {
+      "text": " They have built tensor parallelism and lots of parallelism, clusterization, so many different",
+      "start_time": 771.72,
+      "end_time": 779.4
+    },
+    {
+      "text": "",
+      "start_time": 779.4,
+      "end_time": 750.0
+    },
+    {
+      "text": " Try it out, son.",
+      "start_time": 750.84,
+      "end_time": null
+    },
+    {
+      "text": " all of that because of which the entire internet has been trained. So you can see that the",
+      "start_time": 780.0,
+      "end_time": 787.94
+    },
+    {
+      "text": " flops, the floating point operations per second is also quite high. The number of floating",
+      "start_time": 787.94,
+      "end_time": 796.2
+    },
+    {
+      "text": " point operations is high because the number of parameters is high. I am just talking about",
+      "start_time": 796.2,
+      "end_time": 801.4
+    },
+    {
+      "text": " what we are going to learn and use them. During inference we need to have those weights in",
+      "start_time": 801.4,
+      "end_time": 806.8
+    },
+    {
+      "text": "",
+      "start_time": 806.8,
+      "end_time": 780.0
+    },
+    {
+      "text": " your memory for you to run.",
+      "start_time": 781.84,
+      "end_time": null
+    },
+    {
+      "text": " If you want to have the model in your laptop which is impossible you can't have a GPT",
+      "start_time": 810.0,
+      "end_time": 817.0
+    },
+    {
+      "text": " model in your laptop at all.",
+      "start_time": 817.0,
+      "end_time": 819.24
+    },
+    {
+      "text": " If you want to have it then you need to have 800 GB of memory that is only for learnt weights",
+      "start_time": 819.24,
+      "end_time": 826.28
+    },
+    {
+      "text": " for training though you forget 1600 GB more than that.",
+      "start_time": 826.28,
+      "end_time": 830.92
+    },
+    {
+      "text": " So it is impossible for small startups even some medium sized companies, academic institutions",
+      "start_time": 830.92,
+      "end_time": 839.72
+    },
+    {
+      "text": "",
+      "start_time": 839.72,
+      "end_time": 810.0
+    },
+    {
+      "text": " to read",
+      "start_time": 810.5,
+      "end_time": null
+    },
+    {
+      "text": " Even if I decide to do so, it is not possible.",
+      "start_time": 840.0,
+      "end_time": 845.64
+    },
+    {
+      "text": " First is cost, flops, the parameters, RAM, nothing is available.",
+      "start_time": 845.64,
+      "end_time": 853.16
+    },
+    {
+      "text": " The investment is so huge, even big companies cannot afford to do this.",
+      "start_time": 853.16,
+      "end_time": 860.12
+    },
+    {
+      "text": " Only some number of like single digit companies, single digit, the number of companies which",
+      "start_time": 860.12,
+      "end_time": 865.12
+    },
+    {
+      "text": "",
+      "start_time": 865.12,
+      "end_time": 840.0
+    },
+    {
+      "text": " are investing in this is really, really small in number.",
+      "start_time": 844.8,
+      "end_time": null
+    },
+    {
+      "text": " So, building a large language model it is all good for understanding the Harikate here,",
+      "start_time": 870.0,
+      "end_time": 876.84
+    },
+    {
+      "text": " but it is not possible for us to really build.",
+      "start_time": 876.84,
+      "end_time": 880.24
+    },
+    {
+      "text": " So, what is one other little bit way out?",
+      "start_time": 880.24,
+      "end_time": 885.4
+    },
+    {
+      "text": " So, can we use a floating point 16 bits and what is the compromise?",
+      "start_time": 885.4,
+      "end_time": 891.48
+    },
+    {
+      "text": " So, instead of there is another format for representing the floating point number, if",
+      "start_time": 891.48,
+      "end_time": 897.36
+    },
+    {
+      "text": "",
+      "start_time": 897.36,
+      "end_time": 870.0
+    },
+    {
+      "text": " If you want to reduce the memory footprint, you can use the memory.",
+      "start_time": 872.32,
+      "end_time": null
+    },
+    {
+      "text": " So let us say 400 GB, let us say some company can afford to have at least 400 GB of memory,",
+      "start_time": 900.0,
+      "end_time": 907.46
+    },
+    {
+      "text": " then instead of thinking of 800 GB kind of system, they can reduce it to about 400 GB.",
+      "start_time": 907.46,
+      "end_time": 914.4
+    },
+    {
+      "text": " And how is that possible?",
+      "start_time": 914.4,
+      "end_time": 915.4
+    },
+    {
+      "text": " You have to simply reduce the number of bits that you are going to utilize to store the",
+      "start_time": 915.4,
+      "end_time": 920.88
+    },
+    {
+      "text": " floating point number.",
+      "start_time": 920.88,
+      "end_time": 923.64
+    },
+    {
+      "text": " So that is when you are going to use 16 bits precision.",
+      "start_time": 923.64,
+      "end_time": 927.56
+    },
+    {
+      "text": "",
+      "start_time": 927.56,
+      "end_time": 900.0
+    },
+    {
+      "text": " 16 bits precision.",
+      "start_time": 902.0,
+      "end_time": null
+    },
+    {
+      "text": " So, 1 bit for the sign, 5 bits for the exponent already there is downgrade and then another",
+      "start_time": 930.0,
+      "end_time": 938.88
+    },
+    {
+      "text": " 10 bits for the mantel serve.",
+      "start_time": 938.88,
+      "end_time": 942.56
+    },
+    {
+      "text": " So, based on the number of bits, so if you look at to understand the implication of this,",
+      "start_time": 942.56,
+      "end_time": 950.12
+    },
+    {
+      "text": " let us understand a 2 bit number.",
+      "start_time": 950.12,
+      "end_time": 952.08
+    },
+    {
+      "text": " If it is a single binary bit, what are the numbers that I can represent?",
+      "start_time": 952.08,
+      "end_time": 957.2
+    },
+    {
+      "text": "",
+      "start_time": 957.2,
+      "end_time": 930.0
+    },
+    {
+      "text": " But if I x, x is equal to 0.",
+      "start_time": 937.0,
+      "end_time": null
+    },
+    {
+      "text": " it to 2 bits what will happen 0 0 0 1 1 0 1 1, 4 numbers can be written. So if I extend",
+      "start_time": 960.0,
+      "end_time": 967.56
+    },
+    {
+      "text": " it to 3 bits, 8 numbers can be represented. So more the number of bits the range that",
+      "start_time": 967.56,
+      "end_time": 980.2
+    },
+    {
+      "text": " you can have is higher, isn't it? The same thing is true here, this is for whole numbers",
+      "start_time": 980.2,
+      "end_time": 987.52
+    },
+    {
+      "text": "",
+      "start_time": 987.52,
+      "end_time": 960.0
+    },
+    {
+      "text": " I am talking about, but this I am talking about for.",
+      "start_time": 962.44,
+      "end_time": null
+    },
+    {
+      "text": " the floating point numbers where you have a fractional part also, so you can represent",
+      "start_time": 990.0,
+      "end_time": 994.48
+    },
+    {
+      "text": " it in the exponential format where you are going to represent exponent and the mantis",
+      "start_time": 994.48,
+      "end_time": 999.16
+    },
+    {
+      "text": " apart that is how the floating point numbers are represented internally.",
+      "start_time": 999.16,
+      "end_time": 1004.8
+    },
+    {
+      "text": " So you have 1 bit of sine bit, 5 bits for the exponent and 10 bits, so you are downgrading",
+      "start_time": 1004.8,
+      "end_time": 1010.76
+    },
+    {
+      "text": " it so much from 32 bit, actually you wanted 32 bit but you are downgrading it. For example",
+      "start_time": 1010.76,
+      "end_time": 1016.32
+    },
+    {
+      "text": "",
+      "start_time": 1016.32,
+      "end_time": 990.0
+    },
+    {
+      "text": " a number like pi 3.1414.",
+      "start_time": 993.72,
+      "end_time": null
+    },
+    {
+      "text": " This is double precision it goes on like this again but the moment you reduce it to 16 bit",
+      "start_time": 1020.0,
+      "end_time": 1028.48
+    },
+    {
+      "text": " precision this number usually comes up to 3.125.",
+      "start_time": 1028.48,
+      "end_time": 1035.28
+    },
+    {
+      "text": " The number pi which is in 32 bit is 3.14159265 and so on.",
+      "start_time": 1035.28,
+      "end_time": 1042.32
+    },
+    {
+      "text": " The moment you say that I want to store this number in a 16 bit precision the number degrades",
+      "start_time": 1042.32,
+      "end_time": 1047.52
+    },
+    {
+      "text": "",
+      "start_time": 1047.52,
+      "end_time": 1020.0
+    },
+    {
+      "text": " to 3.125.",
+      "start_time": 1021.4,
+      "end_time": null
+    },
+    {
+      "text": " Is it clear the binary bits that you can accommodate here when you convert back to decimal you",
+      "start_time": 1050.0,
+      "end_time": 1055.68
+    },
+    {
+      "text": " will only get 3.125.",
+      "start_time": 1055.68,
+      "end_time": 1056.68
+    },
+    {
+      "text": " So there is an error here.",
+      "start_time": 1056.68,
+      "end_time": 1059.8
+    },
+    {
+      "text": " So the moment you start representing a floating point number in 16 bits okay the amount of",
+      "start_time": 1059.8,
+      "end_time": 1065.2
+    },
+    {
+      "text": " information that it communicates definitely comes down.",
+      "start_time": 1065.2,
+      "end_time": 1068.68
+    },
+    {
+      "text": " But people have experimented the performance degradation definitely will happen to an extent",
+      "start_time": 1068.68,
+      "end_time": 1073.6
+    },
+    {
+      "text": " but not so much.",
+      "start_time": 1073.6,
+      "end_time": 1074.6
+    },
+    {
+      "text": " So people are still happy because you are 400 gp saved.",
+      "start_time": 1074.6,
+      "end_time": 1077.92
+    },
+    {
+      "text": "",
+      "start_time": 1077.92,
+      "end_time": 1050.0
+    },
+    {
+      "text": " Instead of 800 gp I want to now you",
+      "start_time": 1052.06,
+      "end_time": null
+    },
+    {
+      "text": " use only 400 GB of memory and you are still fine with it. So many a times if you look",
+      "start_time": 1080.0,
+      "end_time": 1085.18
+    },
+    {
+      "text": " at the training arguments list you will see Fp16 is equal to true okay. So there you are",
+      "start_time": 1085.18,
+      "end_time": 1092.34
+    },
+    {
+      "text": " preferably using a 16 bit precision which is called as half precision. So you should",
+      "start_time": 1092.34,
+      "end_time": 1097.76
+    },
+    {
+      "text": " know this what is full precision, what is half precision, half precision refers to 16",
+      "start_time": 1097.76,
+      "end_time": 1103.14
+    },
+    {
+      "text": "",
+      "start_time": 1103.14,
+      "end_time": 1080.0
+    },
+    {
+      "text": " and full precision refers to 32 bits and our weights are 32 bits.",
+      "start_time": 1087.0,
+      "end_time": null
+    },
+    {
+      "text": " floating point numbers and you are asking the model to get trained and then it is getting",
+      "start_time": 1110.0,
+      "end_time": 1116.16
+    },
+    {
+      "text": " trained you have to now say whether the weights have to be stored in 16 bits or 32 bits.",
+      "start_time": 1116.16,
+      "end_time": 1122.2
+    },
+    {
+      "text": " So that is a parameter that you will give for the training arguments.",
+      "start_time": 1122.2,
+      "end_time": 1125.4
+    },
+    {
+      "text": " When you give that then it will accommodate in a smaller memory area when compared to",
+      "start_time": 1125.4,
+      "end_time": 1131.08
+    },
+    {
+      "text": " the 32 bit precision.",
+      "start_time": 1131.08,
+      "end_time": 1133.2
+    },
+    {
+      "text": " So this is important and based on that the number of floating point operations would",
+      "start_time": 1133.2,
+      "end_time": 1137.2
+    },
+    {
+      "text": "",
+      "start_time": 1137.2,
+      "end_time": 1110.0
+    },
+    {
+      "text": " also be different. So it will come down.",
+      "start_time": 1112.48,
+      "end_time": null
+    },
+    {
+      "text": " So, drops also will have an impact on how many bits you are going to represent.",
+      "start_time": 1140.0,
+      "end_time": 1145.52
+    },
+    {
+      "text": " So, this is one part, this is about precision.",
+      "start_time": 1145.52,
+      "end_time": 1150.84
+    },
+    {
+      "text": " The next part that I would like to talk about is something called as quantization.",
+      "start_time": 1150.84,
+      "end_time": 1163.84
+    },
+    {
+      "text": "",
+      "start_time": 1163.84,
+      "end_time": 1140.0
+    },
+    {
+      "text": " I want to speak about quantization.",
+      "start_time": 1142.12,
+      "end_time": null
+    },
+    {
+      "text": " What is quantization in signal theory?",
+      "start_time": 1170.0,
+      "end_time": 1176.64
+    },
+    {
+      "text": " This word has come from signals and systems.",
+      "start_time": 1176.64,
+      "end_time": 1182.04
+    },
+    {
+      "text": " You have a continuous signal.",
+      "start_time": 1182.04,
+      "end_time": 1183.52
+    },
+    {
+      "text": " See you have to be silent.",
+      "start_time": 1183.52,
+      "end_time": 1187.32
+    },
+    {
+      "text": " You cannot be doing capstone work here.",
+      "start_time": 1187.32,
+      "end_time": 1189.4
+    },
+    {
+      "text": " Please close your laptops.",
+      "start_time": 1189.4,
+      "end_time": 1192.8
+    },
+    {
+      "text": " All that work you should do it before at your home, not here, sitting inside the class.",
+      "start_time": 1192.8,
+      "end_time": 1197.32
+    },
+    {
+      "text": "",
+      "start_time": 1197.32,
+      "end_time": 1170.0
+    },
+    {
+      "text": " So you have a continuous analog or...",
+      "start_time": 1172.56,
+      "end_time": null
+    },
+    {
+      "text": " any signal let us say, continuous signal but you would like to extract only certain regions",
+      "start_time": 1200.0,
+      "end_time": 1207.2
+    },
+    {
+      "text": " in this, you want to quantize, you want to pick this, you want to pick this, you want",
+      "start_time": 1207.2,
+      "end_time": 1210.44
+    },
+    {
+      "text": " to pick this, you want to pick this, so only certain discrete values you will pick up.",
+      "start_time": 1210.44,
+      "end_time": 1214.8
+    },
+    {
+      "text": " So if the signal is close to this, suppose your signal measurement is close to this,",
+      "start_time": 1214.8,
+      "end_time": 1221.52
+    },
+    {
+      "text": " you will still assign this number, so you will only take certain quantization steps,",
+      "start_time": 1221.52,
+      "end_time": 1226.8
+    },
+    {
+      "text": "",
+      "start_time": 1226.8,
+      "end_time": 1200.0
+    },
+    {
+      "text": " depending on how many quantization steps that you are going to take.",
+      "start_time": 1202.76,
+      "end_time": null
+    },
+    {
+      "text": " What I mean to say is you are going to pick up select only certain values in the continuous",
+      "start_time": 1230.0,
+      "end_time": 1235.72
+    },
+    {
+      "text": " signals.",
+      "start_time": 1235.72,
+      "end_time": 1236.72
+    },
+    {
+      "text": " Do you understand?",
+      "start_time": 1236.72,
+      "end_time": 1237.72
+    },
+    {
+      "text": " You will select only certain values in the continuous signal.",
+      "start_time": 1237.72,
+      "end_time": 1241.52
+    },
+    {
+      "text": " That is what we mean by quantization.",
+      "start_time": 1241.52,
+      "end_time": 1245.76
+    },
+    {
+      "text": " And now you have selected some set of values for your further processing.",
+      "start_time": 1245.76,
+      "end_time": 1249.36
+    },
+    {
+      "text": " Now suppose you make a measurement and the measurement is exact like this then you have",
+      "start_time": 1249.36,
+      "end_time": 1255.28
+    },
+    {
+      "text": " direct quantization value.",
+      "start_time": 1255.28,
+      "end_time": 1257.76
+    },
+    {
+      "text": "",
+      "start_time": 1257.76,
+      "end_time": 1230.0
+    },
+    {
+      "text": " suppose suppose this is 2 this value.",
+      "start_time": 1232.28,
+      "end_time": null
+    },
+    {
+      "text": " values 2. Suppose when I make the measurement 2.3, 2.3 is close to 2. So instead of sending",
+      "start_time": 1260.0,
+      "end_time": 1268.44
+    },
+    {
+      "text": " 2.3 directly I am going to send it as 2. I am not going to send it as 2.3, I am going",
+      "start_time": 1268.44,
+      "end_time": 1275.36
+    },
+    {
+      "text": " to change it to 2. This is what we mean by quantization. You have a whole lot of continuous",
+      "start_time": 1275.36,
+      "end_time": 1282.08
+    },
+    {
+      "text": " values ranging from minus infinity to plus infinity but you are going to quantize it",
+      "start_time": 1282.08,
+      "end_time": 1287.84
+    },
+    {
+      "text": "",
+      "start_time": 1287.84,
+      "end_time": 1260.0
+    },
+    {
+      "text": " to only certain set of discrete values.",
+      "start_time": 1262.0,
+      "end_time": null
+    },
+    {
+      "text": " and use those discrete values for your further processing. This will drastically reduce the",
+      "start_time": 1290.0,
+      "end_time": 1296.78
+    },
+    {
+      "text": " variations that can come in and this is a reversible process. You can always change it, reverse",
+      "start_time": 1296.78,
+      "end_time": 1303.68
+    },
+    {
+      "text": " it back but there will be some amount of error. You can also do decontization. This kind of",
+      "start_time": 1303.68,
+      "end_time": 1309.48
+    },
+    {
+      "text": " a process is also being used here in large language models.",
+      "start_time": 1309.48,
+      "end_time": 1314.08
+    },
+    {
+      "text": "",
+      "start_time": 1314.08,
+      "end_time": 1290.0
+    },
+    {
+      "text": " So let us look at that now.",
+      "start_time": 1291.2,
+      "end_time": null
+    },
+    {
+      "text": " So like this you have your weights, I have written a 1D array now but weights will be",
+      "start_time": 1320.0,
+      "end_time": 1330.48
+    },
+    {
+      "text": " usually multidimensional but right now I am just for quantization understanding I have",
+      "start_time": 1330.48,
+      "end_time": 1336.16
+    },
+    {
+      "text": " written a single 1D array.",
+      "start_time": 1336.16,
+      "end_time": 1339.52
+    },
+    {
+      "text": " So you have a range of continuous weights, I want to now quantize this.",
+      "start_time": 1339.52,
+      "end_time": 1346.4
+    },
+    {
+      "text": "",
+      "start_time": 1346.4,
+      "end_time": 1320.0
+    },
+    {
+      "text": " So quantize this first and foremost thing you have to detect",
+      "start_time": 1323.64,
+      "end_time": null
+    },
+    {
+      "text": " mean how many discrete levels you want to have? You have to decide the minus infinity",
+      "start_time": 1350.0,
+      "end_time": 1357.72
+    },
+    {
+      "text": " to plus infinity range how much I have to compress, how many discrete levels you want",
+      "start_time": 1357.72,
+      "end_time": 1363.78
+    },
+    {
+      "text": " to have? Do you want to reduce the minus infinity to plus infinity to just 16 values 4 bit quantization",
+      "start_time": 1363.78,
+      "end_time": 1370.8
+    },
+    {
+      "text": " or do you want to reduce it to 127 depending on how many bits you want to use for representation?",
+      "start_time": 1370.8,
+      "end_time": 1376.6
+    },
+    {
+      "text": "",
+      "start_time": 1376.6,
+      "end_time": 1350.0
+    },
+    {
+      "text": " So generally followed is a 4 bit quantization.",
+      "start_time": 1352.32,
+      "end_time": null
+    },
+    {
+      "text": " 4 bit quantization, you can also use 8 bit quantization if you want better accuracy.",
+      "start_time": 1380.0,
+      "end_time": 1391.6
+    },
+    {
+      "text": " What does that mean?",
+      "start_time": 1391.6,
+      "end_time": 1393.64
+    },
+    {
+      "text": " The minus infinity to plus infinity will range now discretized to 2 to the power of 4 values,",
+      "start_time": 1393.64,
+      "end_time": 1402.16
+    },
+    {
+      "text": "",
+      "start_time": 1402.16,
+      "end_time": 1380.0
+    },
+    {
+      "text": " 16 levels minus infinity to plus infinity will be scaled to just 16 values.",
+      "start_time": 1387.72,
+      "end_time": null
+    },
+    {
+      "text": " that big range you are reducing it to this much. So you can also represent it using int",
+      "start_time": 1410.0,
+      "end_time": 1421.4
+    },
+    {
+      "text": " 8. So what are those values, the 16 values that you can generate that you have to see.",
+      "start_time": 1421.4,
+      "end_time": 1432.38
+    },
+    {
+      "text": "",
+      "start_time": 1432.38,
+      "end_time": 1410.0
+    },
+    {
+      "text": " So you have 0 to 1, 2, 3, 4, 5, 6 up to 15, these are the",
+      "start_time": 1417.6,
+      "end_time": null
+    },
+    {
+      "text": " 16 levels that you have, 0th level represents let us say 0.2, this or let us say this is",
+      "start_time": 1440.0,
+      "end_time": 1447.68
+    },
+    {
+      "text": " minus 1, minus 1 to 1, minus or some 0.8, this is signed quantization, signed quantization,",
+      "start_time": 1447.68,
+      "end_time": 1459.68
+    },
+    {
+      "text": " it may go in some sequence but I am just writing it randomly right now, 0.5 and so on.",
+      "start_time": 1459.68,
+      "end_time": 1469.92
+    },
+    {
+      "text": "",
+      "start_time": 1469.92,
+      "end_time": 1440.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1442.0,
+      "end_time": null
+    },
+    {
+      "text": " minus 1 reduced, minus 1.5, 0.8, increasing order of identity, these are the quantization",
+      "start_time": 1470.0,
+      "end_time": 1481.22
+    },
+    {
+      "text": " levels. So what did I do now? I am now talking about a concept called as quantization. What",
+      "start_time": 1481.22,
+      "end_time": 1490.32
+    },
+    {
+      "text": " this is trying to say is, I will come to what I am going to say by now I think you must",
+      "start_time": 1490.32,
+      "end_time": 1495.0
+    },
+    {
+      "text": " have guessed, but I am giving a background to what we are doing.",
+      "start_time": 1495.0,
+      "end_time": 1498.76
+    },
+    {
+      "text": "",
+      "start_time": 1498.76,
+      "end_time": 1470.0
+    },
+    {
+      "text": " If you understand this then the",
+      "start_time": 1471.0,
+      "end_time": null
+    },
+    {
+      "text": " the next procedure is very simple. The quantization is one important step that is usually used",
+      "start_time": 1500.0,
+      "end_time": 1508.76
+    },
+    {
+      "text": " in many systems and that step is nothing but compressing the range, compressing the range.",
+      "start_time": 1508.76,
+      "end_time": 1516.68
+    },
+    {
+      "text": " The compression of the range is from minus infinity to plus infinity is reduced to this",
+      "start_time": 1516.68,
+      "end_time": 1522.2
+    },
+    {
+      "text": " range only. I am going to use only these ranges, nothing else and each of these ranges represent",
+      "start_time": 1522.2,
+      "end_time": 1528.48
+    },
+    {
+      "text": "",
+      "start_time": 1528.48,
+      "end_time": 1500.0
+    },
+    {
+      "text": " an integer number.",
+      "start_time": 1501.0,
+      "end_time": null
+    },
+    {
+      "text": " And how many ranges have taken 16 levels which is nothing but 4 bit quantization.",
+      "start_time": 1530.0,
+      "end_time": 1536.82
+    },
+    {
+      "text": " If there are 16 levels it is called as 4 bit quantization because to represent these numbers",
+      "start_time": 1536.82,
+      "end_time": 1542.48
+    },
+    {
+      "text": " I just need 4 bits.",
+      "start_time": 1542.48,
+      "end_time": 1543.48
+    },
+    {
+      "text": " If there are 16 numbers you need 4 bits to represent.",
+      "start_time": 1543.48,
+      "end_time": 1546.88
+    },
+    {
+      "text": " So now let us pick up one number 2.0.",
+      "start_time": 1546.88,
+      "end_time": 1551.52
+    },
+    {
+      "text": " 2.0 is a floating point weight that has been learnt.",
+      "start_time": 1551.52,
+      "end_time": 1559.04
+    },
+    {
+      "text": "",
+      "start_time": 1559.04,
+      "end_time": 1530.0
+    },
+    {
+      "text": " Training nothing",
+      "start_time": 1532.0,
+      "end_time": null
+    },
+    {
+      "text": " can be done. Open AI continues to train. The weights are in this format. It may be in 32",
+      "start_time": 1560.0,
+      "end_time": 1565.6
+    },
+    {
+      "text": " bit format or it may be in the 16 bit format. Full precision or half precision, the floating",
+      "start_time": 1565.6,
+      "end_time": 1570.76
+    },
+    {
+      "text": " point number is appearing like this, 2.0. This 2.0 is the weight matrix that I have but",
+      "start_time": 1570.76,
+      "end_time": 1578.24
+    },
+    {
+      "text": " I am going to create a new weight matrix called as W dash which is a quantized weight matrix.",
+      "start_time": 1578.24,
+      "end_time": 1584.88
+    },
+    {
+      "text": "",
+      "start_time": 1584.88,
+      "end_time": 1560.0
+    },
+    {
+      "text": " I am going to convert the given weight matrix into a quantized weight matrix which is in",
+      "start_time": 1565.1,
+      "end_time": 1560.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 1561.0,
+      "end_time": null
+    },
+    {
+      "text": " in nature which is integer in nature. So, 2.0 where does it come very close to what?",
+      "start_time": 1590.0,
+      "end_time": 1598.36
+    },
+    {
+      "text": " So, this usually will be in the range of minus 1 to 1. So, I will still take a smaller number",
+      "start_time": 1598.36,
+      "end_time": 1603.16
+    },
+    {
+      "text": " here for just for reference because I am just using minus 1 to 1 little bit higher also you",
+      "start_time": 1603.16,
+      "end_time": 1609.32
+    },
+    {
+      "text": " can take. So, 1.8 that is also still closer to this number. So, 2 or 1.8 does not matter",
+      "start_time": 1609.32,
+      "end_time": 1617.08
+    },
+    {
+      "text": "",
+      "start_time": 1617.08,
+      "end_time": 1590.0
+    },
+    {
+      "text": " It is close to one. It is close to one.",
+      "start_time": 1592.0,
+      "end_time": 1593.0
+    },
+    {
+      "text": " So what is the number corresponding to 1? 15. So instead of writing 1.8 the number that",
+      "start_time": 1620.0,
+      "end_time": 1631.2
+    },
+    {
+      "text": " I am going to write in the weight matrix is 15. This is one way of quantization which",
+      "start_time": 1631.2,
+      "end_time": 1635.64
+    },
+    {
+      "text": " I am just giving you a crude method but actual quantization formula is different that I will",
+      "start_time": 1635.64,
+      "end_time": 1640.8
+    },
+    {
+      "text": " talk about it later. But right now I am just giving you a small intuition of how to do",
+      "start_time": 1640.8,
+      "end_time": 1645.6
+    },
+    {
+      "text": "",
+      "start_time": 1645.6,
+      "end_time": 1620.0
+    },
+    {
+      "text": " the quantization. So then you have minus, minus, minus, minus, minus, minus, minus,",
+      "start_time": 1627.0,
+      "end_time": null
+    },
+    {
+      "text": " any small number minus 0.4 let us or plus 0.4 plus 0.4 is one other weight 0.4 is it",
+      "start_time": 1650.0,
+      "end_time": 1658.52
+    },
+    {
+      "text": " there directly in the list no but it is close to which one 0.5 what is the number for that",
+      "start_time": 1658.52,
+      "end_time": 1664.24
+    },
+    {
+      "text": " 1.",
+      "start_time": 1664.24,
+      "end_time": 1665.24
+    },
+    {
+      "text": " So you will write 1. This is what we mean by quantization. So quantization step is converting",
+      "start_time": 1665.24,
+      "end_time": 1674.64
+    },
+    {
+      "text": "",
+      "start_time": 1674.64,
+      "end_time": 1650.0
+    },
+    {
+      "text": " your either full precision weights or the half precision weights into an integral.",
+      "start_time": 1655.36,
+      "end_time": null
+    },
+    {
+      "text": " integer representation, is that clear? And how many different types of integers are there?",
+      "start_time": 1680.0,
+      "end_time": 1688.08
+    },
+    {
+      "text": " Depends on how many quantization levels you will have. All of the floating point numbers,",
+      "start_time": 1688.08,
+      "end_time": 1695.12
+    },
+    {
+      "text": " they get converted into a number, 4 bit representation. This is just in 4 bit representation. So,",
+      "start_time": 1695.12,
+      "end_time": 1702.84
+    },
+    {
+      "text": "",
+      "start_time": 1702.84,
+      "end_time": 1680.0
+    },
+    {
+      "text": " your 176 billion parameters, all of them are now converted into 4 bits.",
+      "start_time": 1686.68,
+      "end_time": null
+    },
+    {
+      "text": " because this number requires just 4 bits to be represented. All the weights you will quantize",
+      "start_time": 1710.0,
+      "end_time": 1716.64
+    },
+    {
+      "text": " to 4 bits using this tabular form like this. You need to have a mapping. You have to generate",
+      "start_time": 1716.64,
+      "end_time": 1724.0
+    },
+    {
+      "text": " this. You have to define the range of floating point numbers corresponding to the numbers",
+      "start_time": 1724.0,
+      "end_time": 1730.08
+    },
+    {
+      "text": " integers. Once this table is ready all of the weights that you have will have to be quantized",
+      "start_time": 1730.08,
+      "end_time": 1736.16
+    },
+    {
+      "text": "",
+      "start_time": 1736.16,
+      "end_time": 1710.0
+    },
+    {
+      "text": " to these numbers. This is what we mean by quantization.",
+      "start_time": 1712.92,
+      "end_time": null
+    },
+    {
+      "text": " Now, this W dash is going to be created. So, 176 billion into 4 bits reduces to approximately",
+      "start_time": 1740.0,
+      "end_time": 1747.44
+    },
+    {
+      "text": " 80 GB. From 800 GB, we have reduced it to 80 GB. The same 176 billion I am talking about,",
+      "start_time": 1747.44,
+      "end_time": 1758.96
+    },
+    {
+      "text": " I have not reduced the number of parameters. But look at the variation in the memory that",
+      "start_time": 1758.96,
+      "end_time": 1765.6
+    },
+    {
+      "text": "",
+      "start_time": 1765.6,
+      "end_time": 1740.0
+    },
+    {
+      "text": " I have achieved from 800 GB to 80 GB.",
+      "start_time": 1743.58,
+      "end_time": null
+    },
+    {
+      "text": " By storing all the floating point values in the form of a quantized representation, this",
+      "start_time": 1770.0,
+      "end_time": 1780.32
+    },
+    {
+      "text": " is the quantization step, is this clear?",
+      "start_time": 1780.32,
+      "end_time": 1788.08
+    },
+    {
+      "text": " Now what do we do?",
+      "start_time": 1788.08,
+      "end_time": 1791.24
+    },
+    {
+      "text": " Now let us, so how are you going to make use of this quantized weights in your further",
+      "start_time": 1791.24,
+      "end_time": 1799.12
+    },
+    {
+      "text": "",
+      "start_time": 1799.12,
+      "end_time": 1770.0
+    },
+    {
+      "text": " processing down",
+      "start_time": 1772.66,
+      "end_time": null
+    },
+    {
+      "text": " some stream tough. The large language model has been built by open AI, meta and all of",
+      "start_time": 1800.0,
+      "end_time": 1807.76
+    },
+    {
+      "text": " these. They gave me this weight matrix but this weight matrix now has been converted",
+      "start_time": 1807.76,
+      "end_time": 1813.52
+    },
+    {
+      "text": " into W dash which is a quantized version of it and I also have this table with me. This",
+      "start_time": 1813.52,
+      "end_time": 1819.56
+    },
+    {
+      "text": " is available to me. I know how to decontize also. So now if I take 15, if I have 15 what",
+      "start_time": 1819.56,
+      "end_time": 1827.36
+    },
+    {
+      "text": "",
+      "start_time": 1827.36,
+      "end_time": 1800.0
+    },
+    {
+      "text": " What is its equivalent floating point number 15 I will not take.",
+      "start_time": 1802.64,
+      "end_time": null
+    },
+    {
+      "text": " will take 1. If I take 1 what is the equivalent floating point number 0.5 I can decontize",
+      "start_time": 1830.0,
+      "end_time": 1835.92
+    },
+    {
+      "text": " it. So I will get 0.5 but what was the original? So there is an error decontization error.",
+      "start_time": 1835.92,
+      "end_time": 1845.72
+    },
+    {
+      "text": " So for further downstream task I will still use floating point 16 or 32 only but I will",
+      "start_time": 1845.72,
+      "end_time": 1854.96
+    },
+    {
+      "text": "",
+      "start_time": 1854.96,
+      "end_time": 1830.0
+    },
+    {
+      "text": " use that on the fly when I want just about to retrieve one block",
+      "start_time": 1830.0,
+      "end_time": null
+    },
+    {
+      "text": " of weights I will pick up, decontize it and use the floating point number only for further",
+      "start_time": 1860.0,
+      "end_time": 1865.72
+    },
+    {
+      "text": " processing. Do you get what I am saying? This is only for temporarily storing it. This is",
+      "start_time": 1865.72,
+      "end_time": 1873.72
+    },
+    {
+      "text": " a quantization step. I will tell you the whole sequence but just see whether you understood",
+      "start_time": 1873.72,
+      "end_time": 1879.04
+    },
+    {
+      "text": " floating point 32 means what? Floating point 16 means what? What does it mean in terms",
+      "start_time": 1879.04,
+      "end_time": 1886.18
+    },
+    {
+      "text": "",
+      "start_time": 1886.18,
+      "end_time": 1860.0
+    },
+    {
+      "text": " of the impact in the size of memory, what does it mean?",
+      "start_time": 1863.84,
+      "end_time": null
+    },
+    {
+      "text": " to store all your learned weights in the FP32, what does it mean to store all the weights",
+      "start_time": 1890.0,
+      "end_time": 1897.12
+    },
+    {
+      "text": " in FP16, what does it mean to store all the weights in the 4 bit quantization model, all",
+      "start_time": 1897.12,
+      "end_time": 1905.44
+    },
+    {
+      "text": " of this you need to first understand.",
+      "start_time": 1905.44,
+      "end_time": 1907.44
+    },
+    {
+      "text": " This is going to do a lot of saving in memory, the learned weights from GPT now ATGP if I",
+      "start_time": 1907.44,
+      "end_time": 1914.6
+    },
+    {
+      "text": "",
+      "start_time": 1914.6,
+      "end_time": 1890.0
+    },
+    {
+      "text": " I have one GPU of this size, the GPT model can be stored in my system if I have",
+      "start_time": 1890.0,
+      "end_time": null
+    },
+    {
+      "text": " of 80 GB memory, 176 billion parameters, I am successful in storing it on my system,",
+      "start_time": 1920.0,
+      "end_time": 1926.64
+    },
+    {
+      "text": " if I have one RTX 4090 with 80 GB or one A100, one A100 GPU with 80 GB, that much of possibility",
+      "start_time": 1926.64,
+      "end_time": 1934.64
+    },
+    {
+      "text": " is there, but does it mean that I am going to continue to use these numbers for my further",
+      "start_time": 1934.64,
+      "end_time": 1939.24
+    },
+    {
+      "text": " processing, these are integer numbers, they will not make sense, they are not the learned",
+      "start_time": 1939.24,
+      "end_time": 1944.08
+    },
+    {
+      "text": "",
+      "start_time": 1944.08,
+      "end_time": 1920.0
+    },
+    {
+      "text": " weights actually, the larnate weights are something else, I cannot be using them for my toss.",
+      "start_time": 1924.52,
+      "end_time": 1925.92
+    },
+    {
+      "text": " I need to still use the floating point numbers only for my inferencing, for my summarization,",
+      "start_time": 1950.0,
+      "end_time": 1955.8
+    },
+    {
+      "text": " for my named entity recognition.",
+      "start_time": 1955.8,
+      "end_time": 1957.64
+    },
+    {
+      "text": " I still need to have floating point numbers, but I am going to do it on the fly that I",
+      "start_time": 1957.64,
+      "end_time": 1962.28
+    },
+    {
+      "text": " will tell you.",
+      "start_time": 1962.28,
+      "end_time": 1963.28
+    },
+    {
+      "text": " But right now are these processes clear?",
+      "start_time": 1963.28,
+      "end_time": 1965.68
+    },
+    {
+      "text": " So now you are going to use these tricks in your task, further downstream task and that",
+      "start_time": 1965.68,
+      "end_time": 1972.76
+    },
+    {
+      "text": " task is nothing but the fine tuning.",
+      "start_time": 1972.76,
+      "end_time": 1974.92
+    },
+    {
+      "text": "",
+      "start_time": 1974.92,
+      "end_time": 1950.0
+    },
+    {
+      "text": " So, the topic of today's discussion is fine tuning.",
+      "start_time": 1953.08,
+      "end_time": null
+    },
+    {
+      "text": " But fine tuning basically is based on these three parameters which I discussed so far.",
+      "start_time": 1980.0,
+      "end_time": 1992.72
+    },
+    {
+      "text": " If you have understood that fine tuning is just like cake walk nothing else is there.",
+      "start_time": 1992.72,
+      "end_time": 2001.84
+    },
+    {
+      "text": " The next topic that we need to discuss in LLM is fine tuning.",
+      "start_time": 2001.84,
+      "end_time": 2008.28
+    },
+    {
+      "text": "",
+      "start_time": 2008.28,
+      "end_time": 1980.0
+    },
+    {
+      "text": " tuning there are plenty of methods.",
+      "start_time": 1981.72,
+      "end_time": null
+    },
+    {
+      "text": " that are available but in our course here we are restricting to one type called as theft.",
+      "start_time": 2010.0,
+      "end_time": 2018.8
+    },
+    {
+      "text": " Parameter efficient fine tuning, parameter efficient fine tuning and under this for",
+      "start_time": 2018.8,
+      "end_time": 2036.64
+    },
+    {
+      "text": "",
+      "start_time": 2036.64,
+      "end_time": 2010.0
+    },
+    {
+      "text": " our course we will be studying three loads.",
+      "start_time": 2013.4,
+      "end_time": null
+    },
+    {
+      "text": " Qlora and prefix tuning. These are the three methods. This is one of the methods only for",
+      "start_time": 2040.0,
+      "end_time": 2060.12
+    },
+    {
+      "text": " fine tuning, one of the methods for fine tuning and in that again we are studying only three",
+      "start_time": 2060.12,
+      "end_time": 2066.52
+    },
+    {
+      "text": "",
+      "start_time": 2066.52,
+      "end_time": 2040.0
+    },
+    {
+      "text": " methods which are part of your syllabus, lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower",
+      "start_time": 2043.44,
+      "end_time": 2044.44
+    },
+    {
+      "text": " or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower",
+      "start_time": 2044.44,
+      "end_time": 2045.44
+    },
+    {
+      "text": " or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower",
+      "start_time": 2045.44,
+      "end_time": 2046.44
+    },
+    {
+      "text": " or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower",
+      "start_time": 2046.44,
+      "end_time": 2047.44
+    },
+    {
+      "text": " or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower",
+      "start_time": 2047.44,
+      "end_time": 2048.44
+    },
+    {
+      "text": " or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower",
+      "start_time": 2048.44,
+      "end_time": 2049.44
+    },
+    {
+      "text": " or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower",
+      "start_time": 2049.44,
+      "end_time": 2050.44
+    },
+    {
+      "text": " or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or",
+      "start_time": 2050.44,
+      "end_time": 2051.44
+    },
+    {
+      "text": " q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower",
+      "start_time": 2051.44,
+      "end_time": 2052.44
+    },
+    {
+      "text": " or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q",
+      "start_time": 2052.44,
+      "end_time": 2053.44
+    },
+    {
+      "text": " lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q",
+      "start_time": 2053.44,
+      "end_time": 2054.44
+    },
+    {
+      "text": " lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q",
+      "start_time": 2054.44,
+      "end_time": 2055.44
+    },
+    {
+      "text": " or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower",
+      "start_time": 2055.44,
+      "end_time": 2056.44
+    },
+    {
+      "text": " or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q",
+      "start_time": 2056.44,
+      "end_time": 2057.44
+    },
+    {
+      "text": " and pre six tuning. So what is fine tuning? Any any answers what is fine tuning? Now I",
+      "start_time": 2070.0,
+      "end_time": 2089.6
+    },
+    {
+      "text": " have discussed so much of Harikate about pre pre trained models weights are there 176 billion",
+      "start_time": 2089.6,
+      "end_time": 2095.08
+    },
+    {
+      "text": "",
+      "start_time": 2095.08,
+      "end_time": 2070.0
+    },
+    {
+      "text": " parameters, the entire Harikrata I have told you, now you tell me what is fine tuning.",
+      "start_time": 2074.08,
+      "end_time": null
+    },
+    {
+      "text": " Yes, exactly, Ajay exactly said it, you have 176 billion weights that is given to you and",
+      "start_time": 2100.0,
+      "end_time": 2117.44
+    },
+    {
+      "text": " 176 billion weights what is that they have learnt, what is that parametric knowledge",
+      "start_time": 2117.44,
+      "end_time": 2123.44
+    },
+    {
+      "text": " consists of?",
+      "start_time": 2123.44,
+      "end_time": 2124.44
+    },
+    {
+      "text": " It is a language model, it just understands the language.",
+      "start_time": 2124.44,
+      "end_time": 2129.68
+    },
+    {
+      "text": "",
+      "start_time": 2129.68,
+      "end_time": 2100.0
+    },
+    {
+      "text": " one.",
+      "start_time": 2102.0,
+      "end_time": null
+    },
+    {
+      "text": " to build a medical chatbot let us say. So on this see you have to be silent please be",
+      "start_time": 2130.0,
+      "end_time": 2138.56
+    },
+    {
+      "text": " silent you want to build a medical chatbot or you want to build a chatbot of a chatbot",
+      "start_time": 2138.56,
+      "end_time": 2143.2
+    },
+    {
+      "text": " for our PES applications that knowledge is not exposed to the large language model your",
+      "start_time": 2143.2,
+      "end_time": 2149.76
+    },
+    {
+      "text": " data set is not known. So the data set on which you want to train this model okay you",
+      "start_time": 2149.76,
+      "end_time": 2157.56
+    },
+    {
+      "text": "",
+      "start_time": 2157.56,
+      "end_time": 2130.0
+    },
+    {
+      "text": " You have to preload this.",
+      "start_time": 2132.44,
+      "end_time": null
+    },
+    {
+      "text": " This is transfer learning.",
+      "start_time": 2160.0,
+      "end_time": 2163.08
+    },
+    {
+      "text": " So 176 billion parameters model you will load last but one bench Bhavana and your friend",
+      "start_time": 2163.08,
+      "end_time": 2169.44
+    },
+    {
+      "text": " please be silent.",
+      "start_time": 2169.44,
+      "end_time": 2171.0
+    },
+    {
+      "text": " 176 billion parameters you will load and you will give your new data set and all the 176",
+      "start_time": 2171.0,
+      "end_time": 2179.4
+    },
+    {
+      "text": " billion parameters get an update.",
+      "start_time": 2179.4,
+      "end_time": 2182.72
+    },
+    {
+      "text": " All 176 billion parameters get updated which means that you should have 176 gradients also",
+      "start_time": 2182.72,
+      "end_time": 2189.96
+    },
+    {
+      "text": "",
+      "start_time": 2189.96,
+      "end_time": 2160.0
+    },
+    {
+      "text": " Thank you.",
+      "start_time": 2161.0,
+      "end_time": null
+    },
+    {
+      "text": " are generated. 176 gradients and 176 stochastic gradient update rule, you have to do, look",
+      "start_time": 2190.0,
+      "end_time": 2200.16
+    },
+    {
+      "text": " at the number of lobs required. Are you understanding the scale with which we are operating? So",
+      "start_time": 2200.16,
+      "end_time": 2206.76
+    },
+    {
+      "text": " full fine tuning involves updating 176 billion parameters by generating 176 gradients. Normally",
+      "start_time": 2206.76,
+      "end_time": 2216.12
+    },
+    {
+      "text": "",
+      "start_time": 2216.12,
+      "end_time": 2190.0
+    },
+    {
+      "text": " it is not done. Again this is the issue of memory.",
+      "start_time": 2192.64,
+      "end_time": null
+    },
+    {
+      "text": " It is simply the infrastructure is not supporting, it is not about our intelligence, it is about",
+      "start_time": 2220.0,
+      "end_time": 2227.06
+    },
+    {
+      "text": " lack of infrastructural support that we may have, is that clear?",
+      "start_time": 2227.06,
+      "end_time": 2232.36
+    },
+    {
+      "text": " Because of which we are not able to do full fine tuning, this is called as full fine tuning,",
+      "start_time": 2232.36,
+      "end_time": 2241.44
+    },
+    {
+      "text": " what is full fine tuning?",
+      "start_time": 2241.44,
+      "end_time": 2243.88
+    },
+    {
+      "text": "",
+      "start_time": 2243.88,
+      "end_time": 2220.0
+    },
+    {
+      "text": " all 176 billion parameters, if you have taken a 176 billion parameter GPT model.",
+      "start_time": 2225.84,
+      "end_time": null
+    },
+    {
+      "text": " updating all 176 billion parameters which on the new data set this is known as full fine",
+      "start_time": 2250.0,
+      "end_time": 2258.6
+    },
+    {
+      "text": " tuning, full fine tuning is that clear?",
+      "start_time": 2258.6,
+      "end_time": 2262.0
+    },
+    {
+      "text": " Normally this is not done and what is done?",
+      "start_time": 2262.0,
+      "end_time": 2266.32
+    },
+    {
+      "text": " We do peft parameter efficient fine tuning.",
+      "start_time": 2266.32,
+      "end_time": 2270.32
+    },
+    {
+      "text": " Do you understand?",
+      "start_time": 2270.32,
+      "end_time": 2272.2
+    },
+    {
+      "text": " We do not go for full fine tuning but we do what is known as peft parameter efficient",
+      "start_time": 2272.2,
+      "end_time": 2277.12
+    },
+    {
+      "text": "",
+      "start_time": 2277.12,
+      "end_time": 2250.0
+    },
+    {
+      "text": " fine tuning which means that a portion",
+      "start_time": 2252.88,
+      "end_time": null
+    },
+    {
+      "text": " of the parameters only we update not the entire 176 billion. We do not change that, we freeze",
+      "start_time": 2280.0,
+      "end_time": 2288.0
+    },
+    {
+      "text": " 176 billion. Is that clear? We freeze actually 176 billion in the first methodology of fine",
+      "start_time": 2288.0,
+      "end_time": 2296.6
+    },
+    {
+      "text": " tuning. We do not touch that 176 first. We train a new set altogether. Is that clear?",
+      "start_time": 2296.6,
+      "end_time": 2307.52
+    },
+    {
+      "text": "",
+      "start_time": 2307.52,
+      "end_time": 2280.0
+    },
+    {
+      "text": " That is what is followed in LORA. So, let us look at LORA.",
+      "start_time": 2281.0,
+      "end_time": 2282.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2282.0,
+      "end_time": 2283.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2283.0,
+      "end_time": 2284.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2284.0,
+      "end_time": 2285.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2285.0,
+      "end_time": 2286.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2286.0,
+      "end_time": 2287.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2287.0,
+      "end_time": 2288.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2288.0,
+      "end_time": 2289.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2289.0,
+      "end_time": 2290.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2290.0,
+      "end_time": 2291.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2291.0,
+      "end_time": 2292.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2292.0,
+      "end_time": 2293.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2293.0,
+      "end_time": 2294.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2294.0,
+      "end_time": 2295.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2295.0,
+      "end_time": 2296.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2296.0,
+      "end_time": 2297.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2297.0,
+      "end_time": 2298.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2298.0,
+      "end_time": 2299.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2299.0,
+      "end_time": 2300.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2300.0,
+      "end_time": 2301.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2301.0,
+      "end_time": 2302.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2302.0,
+      "end_time": 2303.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2303.0,
+      "end_time": 2304.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2304.0,
+      "end_time": 2305.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2305.0,
+      "end_time": 2306.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2306.0,
+      "end_time": 2307.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2307.0,
+      "end_time": 2308.0
+    },
+    {
+      "text": " So, let us look at LORA.",
+      "start_time": 2308.0,
+      "end_time": 2309.0
+    },
+    {
+      "text": " at Lora what it does, how it trains let us look at that. What is Lora? So Lora is one",
+      "start_time": 2310.0,
+      "end_time": 2320.96
+    },
+    {
+      "text": " of the ways in which you are going to fine tune and please remember it is not full fine",
+      "start_time": 2320.96,
+      "end_time": 2328.72
+    },
+    {
+      "text": " tuning okay, it is parameter efficient fine tuning.",
+      "start_time": 2328.72,
+      "end_time": 2333.44
+    },
+    {
+      "text": "",
+      "start_time": 2333.44,
+      "end_time": 2310.0
+    },
+    {
+      "text": " you should always remember, peft and glora is under peft.",
+      "start_time": 2316.24,
+      "end_time": null
+    },
+    {
+      "text": " parameter efficient fine tuning. So let us say your original matrix weight instead of",
+      "start_time": 2340.0,
+      "end_time": 2348.44
+    },
+    {
+      "text": " 176 billion for example say I will take 25, 5 cross 5, 25 parameters. I have taken a toy",
+      "start_time": 2348.44,
+      "end_time": 2358.88
+    },
+    {
+      "text": " example to demonstrate what Lora is but this is the 176 billion parameters. I have now",
+      "start_time": 2358.88,
+      "end_time": 2365.6
+    },
+    {
+      "text": "",
+      "start_time": 2365.6,
+      "end_time": 2340.0
+    },
+    {
+      "text": " saying it as 25, it is a 5 cross 5 matrix.",
+      "start_time": 2344.4,
+      "end_time": null
+    },
+    {
+      "text": " matrix that you have. Initially we will take floating point Fp 16, Fp 16 matrix. If I say",
+      "start_time": 2370.0,
+      "end_time": 2382.52
+    },
+    {
+      "text": " Fp 16 matrix I think by now you understand what it is. What is the meaning? The weight",
+      "start_time": 2382.52,
+      "end_time": 2387.84
+    },
+    {
+      "text": " is stored in the form of a Fp 16 matrix. If I state like that what do you understand from",
+      "start_time": 2387.84,
+      "end_time": 2393.36
+    },
+    {
+      "text": "",
+      "start_time": 2393.36,
+      "end_time": 2370.0
+    },
+    {
+      "text": " now on. All the weights are stored in 15 bits underline. That is the meaning, okay.",
+      "start_time": 2376.6,
+      "end_time": null
+    },
+    {
+      "text": " So, 16 bits weights have been stored, 25 weights, 5 cross 5, okay.",
+      "start_time": 2400.0,
+      "end_time": 2407.64
+    },
+    {
+      "text": " What Lora does is, now I have a new dataset, let us say PES dataset I have, I want to train",
+      "start_time": 2407.64,
+      "end_time": 2413.72
+    },
+    {
+      "text": " the model.",
+      "start_time": 2413.72,
+      "end_time": 2414.72
+    },
+    {
+      "text": " So, what I am going to do is, to the model I am going to add what are known as Lora",
+      "start_time": 2414.72,
+      "end_time": 2422.44
+    },
+    {
+      "text": "",
+      "start_time": 2422.44,
+      "end_time": 2400.0
+    },
+    {
+      "text": " Adapter layers.",
+      "start_time": 2402.0,
+      "end_time": null
+    },
+    {
+      "text": " I am going to add Lora adapter layers and these usually the Lora adapter layers come",
+      "start_time": 2430.0,
+      "end_time": 2438.48
+    },
+    {
+      "text": " above self attention and also come above feed forward network at two places they come.",
+      "start_time": 2438.48,
+      "end_time": 2445.44
+    },
+    {
+      "text": " Two adapter layers per layer of transformer they add.",
+      "start_time": 2445.44,
+      "end_time": 2450.8
+    },
+    {
+      "text": " The way they add the layer is something like this.",
+      "start_time": 2450.8,
+      "end_time": 2454.96
+    },
+    {
+      "text": "",
+      "start_time": 2454.96,
+      "end_time": 2430.0
+    },
+    {
+      "text": " is known as low rank adaptation.",
+      "start_time": 2433.44,
+      "end_time": 2430.0
+    },
+    {
+      "text": " of stands first.",
+      "start_time": 2430.84,
+      "end_time": null
+    },
+    {
+      "text": " Low ranked adaptation, what does this mean?",
+      "start_time": 2460.0,
+      "end_time": 2471.28
+    },
+    {
+      "text": " To do the fine-curing for a PES data set which is a downstream task, what is done is you take",
+      "start_time": 2471.28,
+      "end_time": 2479.16
+    },
+    {
+      "text": " the original model, you add layers the original transform on model, okay, your W is also staying",
+      "start_time": 2479.16,
+      "end_time": 2485.44
+    },
+    {
+      "text": " there, you have the W that is already initialized.",
+      "start_time": 2485.44,
+      "end_time": 2489.2
+    },
+    {
+      "text": "",
+      "start_time": 2489.2,
+      "end_time": 2460.0
+    },
+    {
+      "text": " Now addition...",
+      "start_time": 2460.84,
+      "end_time": null
+    },
+    {
+      "text": " Similarly you have to create two more layers which are initialized with weight, the two",
+      "start_time": 2490.0,
+      "end_time": 2495.16
+    },
+    {
+      "text": " layers are initialized with weight and the two layers are split up, they are decomposed",
+      "start_time": 2495.16,
+      "end_time": 2500.96
+    },
+    {
+      "text": " based on the weights, based on the rank of the matrix, they choose the rank.",
+      "start_time": 2500.96,
+      "end_time": 2506.24
+    },
+    {
+      "text": " So let us say I choose rank 1, 5 cross n, 1 and 1 cross 5.",
+      "start_time": 2506.24,
+      "end_time": 2515.28
+    },
+    {
+      "text": "",
+      "start_time": 2515.28,
+      "end_time": 2490.0
+    },
+    {
+      "text": " So this is called as B and this is called as A.",
+      "start_time": 2493.48,
+      "end_time": null
+    },
+    {
+      "text": " The adapter layers consist of two divisions, one is a B layer, other one is a A layer,",
+      "start_time": 2520.0,
+      "end_time": 2530.0
+    },
+    {
+      "text": " these two together are added as the adapter layers above the self-attention and above",
+      "start_time": 2530.0,
+      "end_time": 2535.6
+    },
+    {
+      "text": " feed forward network. So, B is added, A is added. What is the size of B? Phi cross 1,",
+      "start_time": 2535.6,
+      "end_time": 2542.92
+    },
+    {
+      "text": "",
+      "start_time": 2542.92,
+      "end_time": 2520.0
+    },
+    {
+      "text": " is the size of a 1 cross 5 and then they fine-tune the model. So, you are acting",
+      "start_time": 2527.0,
+      "end_time": null
+    },
+    {
+      "text": " module plus the adapter layer together is trained, this is adapter, adapter, adapter",
+      "start_time": 2550.0,
+      "end_time": 2561.76
+    },
+    {
+      "text": " layer together they are trained.",
+      "start_time": 2561.76,
+      "end_time": 2564.76
+    },
+    {
+      "text": " When you finish training what is the meaning of training the model along with the adapter,",
+      "start_time": 2564.76,
+      "end_time": 2572.8
+    },
+    {
+      "text": "",
+      "start_time": 2572.8,
+      "end_time": 2550.0
+    },
+    {
+      "text": " the adapter layers contain two matrices kind of weights, phi cross 1 and 1 cross phi in this example.",
+      "start_time": 2555.92,
+      "end_time": 2556.76
+    },
+    {
+      "text": " The two decomposition matrix, low ranked matrices are used in these layers and they get trained",
+      "start_time": 2580.0,
+      "end_time": 2587.76
+    },
+    {
+      "text": " which means that the output of this function unchanged w, no change in w.",
+      "start_time": 2587.76,
+      "end_time": 2594.44
+    },
+    {
+      "text": " While training parameter efficient fine tuning, while training on the new PES dataset, only",
+      "start_time": 2594.44,
+      "end_time": 2601.68
+    },
+    {
+      "text": " B and A are getting changed, only those gradients are getting updated.",
+      "start_time": 2601.68,
+      "end_time": 2607.24
+    },
+    {
+      "text": "",
+      "start_time": 2607.24,
+      "end_time": 2580.0
+    },
+    {
+      "text": " W remains frozen.",
+      "start_time": 2582.0,
+      "end_time": null
+    },
+    {
+      "text": " frozen. Once you finish training it on the PES data set, your B and A are ready now.",
+      "start_time": 2610.0,
+      "end_time": 2619.4
+    },
+    {
+      "text": " B and A are ready. B is a 5 cross 1 weight matrix, A is a 1 cross 5 matrix, they get",
+      "start_time": 2619.4,
+      "end_time": 2626.54
+    },
+    {
+      "text": " trained actually. W does not get trained, you are not going to alter W that is frozen.",
+      "start_time": 2626.54,
+      "end_time": 2632.08
+    },
+    {
+      "text": " That is how internally the implementations will take care. Any gradient back propagation",
+      "start_time": 2632.08,
+      "end_time": 2637.04
+    },
+    {
+      "text": "",
+      "start_time": 2637.04,
+      "end_time": 2610.0
+    },
+    {
+      "text": " will only update those weights and it will not affect this.",
+      "start_time": 2612.44,
+      "end_time": null
+    },
+    {
+      "text": " W continues to be there, for calculations they use it, for training they use it, but",
+      "start_time": 2640.0,
+      "end_time": 2647.12
+    },
+    {
+      "text": " updations are done not on this, you do not touch this at all, you touch only B and A,",
+      "start_time": 2647.12,
+      "end_time": 2652.76
+    },
+    {
+      "text": " when the gradients get propagated only B and A get updated.",
+      "start_time": 2652.76,
+      "end_time": 2657.24
+    },
+    {
+      "text": " Now, the two lower end matrices are used for some purpose, I will tell you that. Now, when",
+      "start_time": 2657.24,
+      "end_time": 2663.92
+    },
+    {
+      "text": "",
+      "start_time": 2663.92,
+      "end_time": 2640.0
+    },
+    {
+      "text": " you do b into a, how many parameters are there totally here?",
+      "start_time": 2644.92,
+      "end_time": null
+    },
+    {
+      "text": " The total number of parameters that are injected here B and A it is 5 and 5, 10 parameters",
+      "start_time": 2670.0,
+      "end_time": 2677.6
+    },
+    {
+      "text": " 5 in this 5 cross 1, 5 parameters, other 5 parameters.",
+      "start_time": 2677.6,
+      "end_time": 2683.4
+    },
+    {
+      "text": " Only 10 parameters you are learning, you are learning only 10 parameters but that you will",
+      "start_time": 2683.4,
+      "end_time": 2688.8
+    },
+    {
+      "text": " project it to 25 by doing B into A. Do you understand?",
+      "start_time": 2688.8,
+      "end_time": 2694.2
+    },
+    {
+      "text": " You are learning only 10 parameters while doing fine tuning but you are going to project",
+      "start_time": 2694.2,
+      "end_time": 2698.44
+    },
+    {
+      "text": "",
+      "start_time": 2698.44,
+      "end_time": 2670.0
+    },
+    {
+      "text": " it to BA.",
+      "start_time": 2670.92,
+      "end_time": null
+    },
+    {
+      "text": " B into A which is going to be blown up to 25. Now what you are going to do is you do",
+      "start_time": 2700.0,
+      "end_time": 2706.16
+    },
+    {
+      "text": " W plus B A. W is of the original size 25. So the two low ranked matrices which are learned,",
+      "start_time": 2706.16,
+      "end_time": 2715.64
+    },
+    {
+      "text": " these two low ranked matrices after they have learned which have very less parameters,",
+      "start_time": 2715.64,
+      "end_time": 2720.64
+    },
+    {
+      "text": " they when they are combined will get projected to the original dimension of the matrix and",
+      "start_time": 2720.64,
+      "end_time": 2726.6
+    },
+    {
+      "text": "",
+      "start_time": 2726.6,
+      "end_time": 2700.0
+    },
+    {
+      "text": " then you add them but there is another variation.",
+      "start_time": 2703.4,
+      "end_time": null
+    },
+    {
+      "text": " There is alpha by r, alpha by r, alpha by r, r stands for rank and alpha is another scaling",
+      "start_time": 2730.0,
+      "end_time": 2746.52
+    },
+    {
+      "text": " factor, alpha by r into B A.",
+      "start_time": 2746.52,
+      "end_time": 2757.12
+    },
+    {
+      "text": "",
+      "start_time": 2757.12,
+      "end_time": 2730.0
+    },
+    {
+      "text": " This is based on principle similar to SVD.",
+      "start_time": 2732.9,
+      "end_time": null
+    },
+    {
+      "text": " S V D decomposition, if you remember it in linear algebra you did that, S V D decomposition.",
+      "start_time": 2760.0,
+      "end_time": 2766.6
+    },
+    {
+      "text": " How did you do? Matrix A was decomposed into U S V transpose. Remember that, what does",
+      "start_time": 2766.6,
+      "end_time": 2775.12
+    },
+    {
+      "text": "",
+      "start_time": 2775.12,
+      "end_time": 2760.0
+    },
+    {
+      "text": " SVD, what is the reason why we use SVD decomposition?",
+      "start_time": 2774.78,
+      "end_time": 2760.0
+    },
+    {
+      "text": " Ready?",
+      "start_time": 2760.5,
+      "end_time": null
+    },
+    {
+      "text": " mathematics but I am asking why is SVD decomposition useful, reason, compressing, dimensionality",
+      "start_time": 2790.0,
+      "end_time": 2797.8
+    },
+    {
+      "text": " reduction. Why do you think the dimensionality can be reduced? A matrix has some information,",
+      "start_time": 2797.8,
+      "end_time": 2807.88
+    },
+    {
+      "text": " A has some information. When you, it is possible to decompose a rectangular matrix, otherwise",
+      "start_time": 2807.88,
+      "end_time": 2813.8
+    },
+    {
+      "text": " PCI is only for square matrix but SVD can be used for rectangular matrix and you can",
+      "start_time": 2813.8,
+      "end_time": 2819.52
+    },
+    {
+      "text": "",
+      "start_time": 2819.52,
+      "end_time": 2790.0
+    },
+    {
+      "text": " do it.",
+      "start_time": 2790.5,
+      "end_time": null
+    },
+    {
+      "text": " decomposition. But if you observe the singular value matrix, it is a diagonal matrix. You",
+      "start_time": 2820.0,
+      "end_time": 2826.56
+    },
+    {
+      "text": " remember that singular value matrix is a diagonal matrix where you will have singular",
+      "start_time": 2826.56,
+      "end_time": 2830.96
+    },
+    {
+      "text": " values only across the diagonal. When you decompose this, see please note that A is",
+      "start_time": 2830.96,
+      "end_time": 2838.12
+    },
+    {
+      "text": " represented in the form of USB transpose, decomposed matrix. A is a matrix that is",
+      "start_time": 2838.12,
+      "end_time": 2844.24
+    },
+    {
+      "text": " written in the form of three matrices, that is it.",
+      "start_time": 2844.24,
+      "end_time": 2847.72
+    },
+    {
+      "text": "",
+      "start_time": 2847.72,
+      "end_time": 2820.0
+    },
+    {
+      "text": " Together they have to capture back this.",
+      "start_time": 2822.0,
+      "end_time": null
+    },
+    {
+      "text": " Do you agree with me?",
+      "start_time": 2850.0,
+      "end_time": 2852.04
+    },
+    {
+      "text": " Together they have to capture back A when you multiply all of these matrices.",
+      "start_time": 2852.04,
+      "end_time": 2855.72
+    },
+    {
+      "text": " So, A is decomposed into these three, but when you look at the singular value matrix,",
+      "start_time": 2855.72,
+      "end_time": 2861.8
+    },
+    {
+      "text": " yes the singular values will be along the diagonal and rest of the entries will be 0.",
+      "start_time": 2861.8,
+      "end_time": 2868.0
+    },
+    {
+      "text": " Now, if you observe the singular values as and when you move towards lower end, most of",
+      "start_time": 2868.0,
+      "end_time": 2875.6
+    },
+    {
+      "text": "",
+      "start_time": 2875.6,
+      "end_time": 2850.0
+    },
+    {
+      "text": " the values will be 0's even the singular values will be near 0.",
+      "start_time": 2854.44,
+      "end_time": null
+    },
+    {
+      "text": " are 0's, most of the singular values will be near 0's. What you can do is you can cut",
+      "start_time": 2880.0,
+      "end_time": 2886.24
+    },
+    {
+      "text": " off actually this portion, you can remove some singular values. So when you do the",
+      "start_time": 2886.24,
+      "end_time": 2892.6
+    },
+    {
+      "text": " matrix multiplication, it will automatically reduce the dimension. By removing these singular",
+      "start_time": 2892.6,
+      "end_time": 2899.2
+    },
+    {
+      "text": " values, of course there is loss of information, you are compressing because full combined",
+      "start_time": 2899.2,
+      "end_time": 2905.8
+    },
+    {
+      "text": "",
+      "start_time": 2905.8,
+      "end_time": 2880.0
+    },
+    {
+      "text": " the u s v transpose will be your original a, but your original a will be your original a.",
+      "start_time": 2884.0,
+      "end_time": 2884.2
+    },
+    {
+      "text": " will be at some loss if you disconnect this portion, of course dimensions should match.",
+      "start_time": 2910.0,
+      "end_time": 2917.12
+    },
+    {
+      "text": " But you are going to, I am sure you are getting some idea regarding, I am not now talking",
+      "start_time": 2917.12,
+      "end_time": 2920.84
+    },
+    {
+      "text": " about dimensions. You have to remove some singular values because they are close to",
+      "start_time": 2920.84,
+      "end_time": 2925.24
+    },
+    {
+      "text": " 0. By removing this there will be some loss of information but the amount of dimensionality",
+      "start_time": 2925.24,
+      "end_time": 2933.08
+    },
+    {
+      "text": "",
+      "start_time": 2933.08,
+      "end_time": 2910.0
+    },
+    {
+      "text": " reduction that you get is immense and the performance is not that much affected.",
+      "start_time": 2916.96,
+      "end_time": null
+    },
+    {
+      "text": " apply singular value decomposition, figure out how many singular values can be removed",
+      "start_time": 2940.0,
+      "end_time": 2944.92
+    },
+    {
+      "text": " and then you recombine form a new matrix so that it is a reduction matrix and then there",
+      "start_time": 2944.92,
+      "end_time": 2950.44
+    },
+    {
+      "text": " is some rank matrix linearly independent dependent rows and all of that.",
+      "start_time": 2950.44,
+      "end_time": 2954.88
+    },
+    {
+      "text": " So these concepts were used in low rank decomposition that is what they did this matrix can be decomposed",
+      "start_time": 2954.88,
+      "end_time": 2963.72
+    },
+    {
+      "text": " into 5 cross 1 and 1 cross 5 and then you can merge this into a blown up matrix. This",
+      "start_time": 2963.72,
+      "end_time": 2969.76
+    },
+    {
+      "text": "",
+      "start_time": 2969.76,
+      "end_time": 2940.0
+    },
+    {
+      "text": " This is a",
+      "start_time": 2940.5,
+      "end_time": null
+    },
+    {
+      "text": " concept that is used in low rank adaptation. So they have used a low rank adaptation, lower",
+      "start_time": 2970.0,
+      "end_time": 2976.24
+    },
+    {
+      "text": " size dimensions that they will learn first and then they will blow it up to a new matrix",
+      "start_time": 2976.24,
+      "end_time": 2981.2
+    },
+    {
+      "text": " by combining the two. So learning these low rank matrices will still capture useful information,",
+      "start_time": 2981.2,
+      "end_time": 2989.6
+    },
+    {
+      "text": " there will be not much of loss of information. Of course there will be some loss, it is not",
+      "start_time": 2989.6,
+      "end_time": 2993.88
+    },
+    {
+      "text": "",
+      "start_time": 2993.88,
+      "end_time": 2970.0
+    },
+    {
+      "text": " like totally it is eliminated but learning low rank matrix and combining it is okay.",
+      "start_time": 2976.12,
+      "end_time": null
+    },
+    {
+      "text": " it is equivalent to learning at a 5 cross 5 matrix but you are learning the amount of",
+      "start_time": 3000.0,
+      "end_time": 3006.24
+    },
+    {
+      "text": " saving for a small matrix like this. If you had to learn inject the full 5, 5 cross 5",
+      "start_time": 3006.24,
+      "end_time": 3012.52
+    },
+    {
+      "text": " you had to inject but instead of injecting a 5 cross 5 you are decomposing it into 5",
+      "start_time": 3012.52,
+      "end_time": 3018.4
+    },
+    {
+      "text": " cross 1 and 1 cross 5, you are learning only 10 parameters and projecting it to 25 and",
+      "start_time": 3018.4,
+      "end_time": 3025.72
+    },
+    {
+      "text": "",
+      "start_time": 3025.72,
+      "end_time": 3000.0
+    },
+    {
+      "text": " it still gives a reasonable answer as if phi cross phi has been in the same direction.",
+      "start_time": 3004.32,
+      "end_time": null
+    },
+    {
+      "text": " So, you are decomposing a 5 cross 5 into this rank 5 cross 1 and 1 cross 5, 1 represents",
+      "start_time": 3030.0,
+      "end_time": 3036.48
+    },
+    {
+      "text": " the rank of the matrix, rank of the matrix.",
+      "start_time": 3036.48,
+      "end_time": 3043.92
+    },
+    {
+      "text": " Did you understand what is the trick that is used in low rank matrices?",
+      "start_time": 3043.92,
+      "end_time": 3047.92
+    },
+    {
+      "text": " Instead of injecting a 5 cross 5 like full blown up type of matrix, the Lora used the",
+      "start_time": 3047.92,
+      "end_time": 3054.12
+    },
+    {
+      "text": " linear algebra, you just understand this much right now, Lora use the linear algebra principle",
+      "start_time": 3054.12,
+      "end_time": 3059.36
+    },
+    {
+      "text": "",
+      "start_time": 3059.36,
+      "end_time": 3030.0
+    },
+    {
+      "text": " of decomp...",
+      "start_time": 3030.64,
+      "end_time": null
+    },
+    {
+      "text": " position and injected a low rant matrix into the adapter layers and learnt smaller number",
+      "start_time": 3060.0,
+      "end_time": 3068.04
+    },
+    {
+      "text": " of parameters, parameter efficient fine tuning, smaller number of parameters but that does",
+      "start_time": 3068.04,
+      "end_time": 3073.76
+    },
+    {
+      "text": " not mean that it will use only those, it will be blown up to the original size at the time",
+      "start_time": 3073.76,
+      "end_time": 3078.96
+    },
+    {
+      "text": " of inferencing, it will not before only merchant keep it.",
+      "start_time": 3078.96,
+      "end_time": 3084.36
+    },
+    {
+      "text": "",
+      "start_time": 3084.36,
+      "end_time": 3060.0
+    },
+    {
+      "text": " Are you getting what I am saying? So B is kept learnt, A is kept you just.",
+      "start_time": 3062.08,
+      "end_time": 3065.68
+    },
+    {
+      "text": " need memory of 5 cross 1 and 1 cross 5 only you just need the memory of only 10 instead",
+      "start_time": 3090.0,
+      "end_time": 3095.84
+    },
+    {
+      "text": " of 25 that is kept and then you have your original w that is kept and at the time of",
+      "start_time": 3095.84,
+      "end_time": 3102.08
+    },
+    {
+      "text": " inference new x comes in you need all of those weights the fine tuned weights you need 25",
+      "start_time": 3102.08,
+      "end_time": 3107.84
+    },
+    {
+      "text": " you need original weights pre-trained you need totally finally you need final 25 pre-trained",
+      "start_time": 3107.84,
+      "end_time": 3114.12
+    },
+    {
+      "text": " plus fine tuned weights to do that what you are going to do at the inference time you",
+      "start_time": 3114.12,
+      "end_time": 3119.04
+    },
+    {
+      "text": "",
+      "start_time": 3119.04,
+      "end_time": 3090.0
+    },
+    {
+      "text": " you will actually multiply.",
+      "start_time": 3091.0,
+      "end_time": null
+    },
+    {
+      "text": " at that time it is temporary for a only short period you need that and then you will combine",
+      "start_time": 3120.0,
+      "end_time": 3125.36
+    },
+    {
+      "text": " and then produce. But for inference time you will still need it, 25 size you need inference",
+      "start_time": 3125.36,
+      "end_time": 3131.64
+    },
+    {
+      "text": " time but that is for a short period. Sometimes what they do is they do not do the full thing",
+      "start_time": 3131.64,
+      "end_time": 3137.0
+    },
+    {
+      "text": " I will tell you that also. But is the concept clear? Now how much of so be it do you understand",
+      "start_time": 3137.0,
+      "end_time": 3145.16
+    },
+    {
+      "text": "",
+      "start_time": 3145.16,
+      "end_time": 3120.0
+    },
+    {
+      "text": " the lower weight if I ask you questions like this he is lower weight.",
+      "start_time": 3124.84,
+      "end_time": null
+    },
+    {
+      "text": " doing full fine tuning? No. What is the LOROV concept? It injects low ranked matrices as",
+      "start_time": 3150.0,
+      "end_time": 3161.8
+    },
+    {
+      "text": " two adapter layers, one above self attention, one above feed forward network in every layer",
+      "start_time": 3161.8,
+      "end_time": 3168.76
+    },
+    {
+      "text": " and learns those weights, freezing the original weights, freezing the original weights. The",
+      "start_time": 3168.76,
+      "end_time": 3175.36
+    },
+    {
+      "text": "",
+      "start_time": 3175.36,
+      "end_time": 3150.0
+    },
+    {
+      "text": " The original weights are not touched, they are there but they are not touched. What is the meaning of...",
+      "start_time": 3153.84,
+      "end_time": 3154.64
+    },
+    {
+      "text": " that freezing when you do back propagation you will only update the lower weights decompose",
+      "start_time": 3180.0,
+      "end_time": 3187.12
+    },
+    {
+      "text": " weight matrices but you will not update W, W continues to remain same and once the training",
+      "start_time": 3187.12,
+      "end_time": 3195.08
+    },
+    {
+      "text": " fine tuning is done you are ready with your B and A, you are ready with B and A. Now your",
+      "start_time": 3195.08,
+      "end_time": 3203.24
+    },
+    {
+      "text": " new input comes what you should do the new input comes and you have to give an answer",
+      "start_time": 3203.24,
+      "end_time": 3207.96
+    },
+    {
+      "text": "",
+      "start_time": 3207.96,
+      "end_time": 3180.0
+    },
+    {
+      "text": " to that new input x.",
+      "start_time": 3181.16,
+      "end_time": null
+    },
+    {
+      "text": " you have this is the inference time, test image you are giving or test script, test",
+      "start_time": 3210.0,
+      "end_time": 3214.4
+    },
+    {
+      "text": " line you are giving. At that time you need to perform this operation on the fly, B into",
+      "start_time": 3214.4,
+      "end_time": 3221.24
+    },
+    {
+      "text": " A 25 scale the lower weights and then add it to original that is the final total learning",
+      "start_time": 3221.24,
+      "end_time": 3229.52
+    },
+    {
+      "text": " and apply X on that W into X, final W into X will give you the inference value.",
+      "start_time": 3229.52,
+      "end_time": 3238.44
+    },
+    {
+      "text": "",
+      "start_time": 3238.44,
+      "end_time": 3210.0
+    },
+    {
+      "text": " Is that clear? This is\u2026",
+      "start_time": 3211.0,
+      "end_time": 3211.52
+    },
+    {
+      "text": " what we do in the LoRa case. Now alpha by r this rank that I chose and alpha which is",
+      "start_time": 3240.0,
+      "end_time": 3248.32
+    },
+    {
+      "text": " a scaling factor this is used to modulate how much of LoRa weights you should use in",
+      "start_time": 3248.32,
+      "end_time": 3254.08
+    },
+    {
+      "text": " the inference alpha by r. Typical values used are 16 for alpha and rank will be 4 to 8,",
+      "start_time": 3254.08,
+      "end_time": 3263.08
+    },
+    {
+      "text": "",
+      "start_time": 3263.08,
+      "end_time": 3240.0
+    },
+    {
+      "text": " You can choose, you can set it. The alpha value and the rank value.",
+      "start_time": 3245.12,
+      "end_time": 3246.96
+    },
+    {
+      "text": " value. What is the rank that I have chosen now for injecting? When I say for Lora what",
+      "start_time": 3270.0,
+      "end_time": 3278.8
+    },
+    {
+      "text": " is the rank used? You should look at the injection B and A and decide. The second parameter is",
+      "start_time": 3278.8,
+      "end_time": 3284.76
+    },
+    {
+      "text": " the rank that I have added. So what is the rank that I have added? 1, rank is 1. If I",
+      "start_time": 3284.76,
+      "end_time": 3291.68
+    },
+    {
+      "text": "",
+      "start_time": 3291.68,
+      "end_time": 3270.0
+    },
+    {
+      "text": " say I want to inject a rank 2 matrices into Laura what is your understanding? 5 cross 2.",
+      "start_time": 3277.96,
+      "end_time": 3278.32
+    },
+    {
+      "text": " you",
+      "start_time": 3300.0,
+      "end_time": 3302.06
+    }
+  ],
+  "transcript_text": " .  .  .  .  .  .  .  .  .  .  Thank you.  I'm going to go back to the other side of the road.  So, I think you need to quickly settle down good morning.   See normally when  you train can I have your attention? Normally when you train the models what is that you  are going to get in return? Ways, right? Normally all these are based on neural network all  the models that we have talked about are all based on neural network and hence we are going   to get the models learnings in the form of weights.  It is a weight matrix that we are going to get.  So when we say GPT is some 176 billion and all of that, what is that we are talking about?  Parameters or the weights, it is such a huge matrix.   176 billion parameters matrix is a weight matrix.  that I am talking about. Now does it correspond to only one layer, one head? No, all of that  together is 176 billion parameters. So, your GPT model let us say is 176 billion or your  Lama 3.2 then you have 7 billion, 8 billion, 13 billion what do they exactly represent?  They represent the weight matrix. Is that clear? They represent the parametric knowledge   And that is what we are talking about in terms of the billions.  And these billion parameters represented a single W here is not just of one layer but  all of the layers that are present in your transformer.  If they are all transformer based layer, so the several layers, several heads, all of  these together consist of these weights.  Is this clear?  That is what we mean by the weight matrix.  So as an example we will take 176 billion.   Now how do these weights appear?  what format they are appearing. So the values would be like this 2.3, 6.7, 6.7, minus 0.1  like this. The 176 billion, billion is 10 to the power of 9, 9. So those many parameters   all of them are represented in the floating point representation.  Every weight that you have learned all of these 176 billion parameters are in the floating  point format.  When you say they are in the floating point format, what is the internal representation  of it?  The internal representation can be 32 bits, which is full precision.   is full precision.  32 bits is full precision for those numbers and by now all of you know that the numbers  always underlying computer are represented in the form of binary.  There is nothing like decimal, hexadecimal representation that is all for our visualization.  The only language that the computer even today understands is the binary and your weights   which are floating point number.  represented in the decimal notation right now for our visualization but internally it is  represented using a 32 bit representation and what are these 32 bits representing?  How does the floating point 32 get represented?  One bit is a sign bit and then you have the 8 bits of exponent and then 23 bits of mantisor.   This is how the...  of floating point numbers are represented. One bit represents a sign bit, 8 bits of exponent  and 23 bits of mantisov in the exponential format. This is the internal representation  and this is used for every number. Do you understand? 176 billion is a weight into 32   We're going to be right back.  into 32 bits, 176 billion parameters large language model into 32 bits is about 800 GB  approximately is about 800 GB of memory.   which computer here has this much memory?  Forget about it  800 you cut off 1 0 that also we do not have you understand and this is only weights but  what about the gradients w plus w plus w is equal to w plus eta dou L by dou w this is  another 176 billion gradients is also same.   So you need another 800 GB to store the gradients.  and then you have to add. So it is easily crossing 1600 GB if you are storing all of  that in memory I am talking about RAM. That is why only open AI, Google, Microsoft, these  well known meta all of these only can afford to do this.   I was and I am given to understand that they have used 25000 A1.  100 N media GPUs, 25000 A100 N media of 80 GB has been used 25000 of them which is about  4000 crores to train this large language model.  They have built tensor parallelism and lots of parallelism, clusterization, so many different   Try it out, son.  all of that because of which the entire internet has been trained. So you can see that the  flops, the floating point operations per second is also quite high. The number of floating  point operations is high because the number of parameters is high. I am just talking about  what we are going to learn and use them. During inference we need to have those weights in   your memory for you to run.  If you want to have the model in your laptop which is impossible you can't have a GPT  model in your laptop at all.  If you want to have it then you need to have 800 GB of memory that is only for learnt weights  for training though you forget 1600 GB more than that.  So it is impossible for small startups even some medium sized companies, academic institutions   to read  Even if I decide to do so, it is not possible.  First is cost, flops, the parameters, RAM, nothing is available.  The investment is so huge, even big companies cannot afford to do this.  Only some number of like single digit companies, single digit, the number of companies which   are investing in this is really, really small in number.  So, building a large language model it is all good for understanding the Harikate here,  but it is not possible for us to really build.  So, what is one other little bit way out?  So, can we use a floating point 16 bits and what is the compromise?  So, instead of there is another format for representing the floating point number, if   If you want to reduce the memory footprint, you can use the memory.  So let us say 400 GB, let us say some company can afford to have at least 400 GB of memory,  then instead of thinking of 800 GB kind of system, they can reduce it to about 400 GB.  And how is that possible?  You have to simply reduce the number of bits that you are going to utilize to store the  floating point number.  So that is when you are going to use 16 bits precision.   16 bits precision.  So, 1 bit for the sign, 5 bits for the exponent already there is downgrade and then another  10 bits for the mantel serve.  So, based on the number of bits, so if you look at to understand the implication of this,  let us understand a 2 bit number.  If it is a single binary bit, what are the numbers that I can represent?   But if I x, x is equal to 0.  it to 2 bits what will happen 0 0 0 1 1 0 1 1, 4 numbers can be written. So if I extend  it to 3 bits, 8 numbers can be represented. So more the number of bits the range that  you can have is higher, isn't it? The same thing is true here, this is for whole numbers   I am talking about, but this I am talking about for.  the floating point numbers where you have a fractional part also, so you can represent  it in the exponential format where you are going to represent exponent and the mantis  apart that is how the floating point numbers are represented internally.  So you have 1 bit of sine bit, 5 bits for the exponent and 10 bits, so you are downgrading  it so much from 32 bit, actually you wanted 32 bit but you are downgrading it. For example   a number like pi 3.1414.  This is double precision it goes on like this again but the moment you reduce it to 16 bit  precision this number usually comes up to 3.125.  The number pi which is in 32 bit is 3.14159265 and so on.  The moment you say that I want to store this number in a 16 bit precision the number degrades   to 3.125.  Is it clear the binary bits that you can accommodate here when you convert back to decimal you  will only get 3.125.  So there is an error here.  So the moment you start representing a floating point number in 16 bits okay the amount of  information that it communicates definitely comes down.  But people have experimented the performance degradation definitely will happen to an extent  but not so much.  So people are still happy because you are 400 gp saved.   Instead of 800 gp I want to now you  use only 400 GB of memory and you are still fine with it. So many a times if you look  at the training arguments list you will see Fp16 is equal to true okay. So there you are  preferably using a 16 bit precision which is called as half precision. So you should  know this what is full precision, what is half precision, half precision refers to 16   and full precision refers to 32 bits and our weights are 32 bits.  floating point numbers and you are asking the model to get trained and then it is getting  trained you have to now say whether the weights have to be stored in 16 bits or 32 bits.  So that is a parameter that you will give for the training arguments.  When you give that then it will accommodate in a smaller memory area when compared to  the 32 bit precision.  So this is important and based on that the number of floating point operations would   also be different. So it will come down.  So, drops also will have an impact on how many bits you are going to represent.  So, this is one part, this is about precision.  The next part that I would like to talk about is something called as quantization.   I want to speak about quantization.  What is quantization in signal theory?  This word has come from signals and systems.  You have a continuous signal.  See you have to be silent.  You cannot be doing capstone work here.  Please close your laptops.  All that work you should do it before at your home, not here, sitting inside the class.   So you have a continuous analog or...  any signal let us say, continuous signal but you would like to extract only certain regions  in this, you want to quantize, you want to pick this, you want to pick this, you want  to pick this, you want to pick this, so only certain discrete values you will pick up.  So if the signal is close to this, suppose your signal measurement is close to this,  you will still assign this number, so you will only take certain quantization steps,   depending on how many quantization steps that you are going to take.  What I mean to say is you are going to pick up select only certain values in the continuous  signals.  Do you understand?  You will select only certain values in the continuous signal.  That is what we mean by quantization.  And now you have selected some set of values for your further processing.  Now suppose you make a measurement and the measurement is exact like this then you have  direct quantization value.   suppose suppose this is 2 this value.  values 2. Suppose when I make the measurement 2.3, 2.3 is close to 2. So instead of sending  2.3 directly I am going to send it as 2. I am not going to send it as 2.3, I am going  to change it to 2. This is what we mean by quantization. You have a whole lot of continuous  values ranging from minus infinity to plus infinity but you are going to quantize it   to only certain set of discrete values.  and use those discrete values for your further processing. This will drastically reduce the  variations that can come in and this is a reversible process. You can always change it, reverse  it back but there will be some amount of error. You can also do decontization. This kind of  a process is also being used here in large language models.   So let us look at that now.  So like this you have your weights, I have written a 1D array now but weights will be  usually multidimensional but right now I am just for quantization understanding I have  written a single 1D array.  So you have a range of continuous weights, I want to now quantize this.   So quantize this first and foremost thing you have to detect  mean how many discrete levels you want to have? You have to decide the minus infinity  to plus infinity range how much I have to compress, how many discrete levels you want  to have? Do you want to reduce the minus infinity to plus infinity to just 16 values 4 bit quantization  or do you want to reduce it to 127 depending on how many bits you want to use for representation?   So generally followed is a 4 bit quantization.  4 bit quantization, you can also use 8 bit quantization if you want better accuracy.  What does that mean?  The minus infinity to plus infinity will range now discretized to 2 to the power of 4 values,   16 levels minus infinity to plus infinity will be scaled to just 16 values.  that big range you are reducing it to this much. So you can also represent it using int  8. So what are those values, the 16 values that you can generate that you have to see.   So you have 0 to 1, 2, 3, 4, 5, 6 up to 15, these are the  16 levels that you have, 0th level represents let us say 0.2, this or let us say this is  minus 1, minus 1 to 1, minus or some 0.8, this is signed quantization, signed quantization,  it may go in some sequence but I am just writing it randomly right now, 0.5 and so on.   Thank you.  minus 1 reduced, minus 1.5, 0.8, increasing order of identity, these are the quantization  levels. So what did I do now? I am now talking about a concept called as quantization. What  this is trying to say is, I will come to what I am going to say by now I think you must  have guessed, but I am giving a background to what we are doing.   If you understand this then the  the next procedure is very simple. The quantization is one important step that is usually used  in many systems and that step is nothing but compressing the range, compressing the range.  The compression of the range is from minus infinity to plus infinity is reduced to this  range only. I am going to use only these ranges, nothing else and each of these ranges represent   an integer number.  And how many ranges have taken 16 levels which is nothing but 4 bit quantization.  If there are 16 levels it is called as 4 bit quantization because to represent these numbers  I just need 4 bits.  If there are 16 numbers you need 4 bits to represent.  So now let us pick up one number 2.0.  2.0 is a floating point weight that has been learnt.   Training nothing  can be done. Open AI continues to train. The weights are in this format. It may be in 32  bit format or it may be in the 16 bit format. Full precision or half precision, the floating  point number is appearing like this, 2.0. This 2.0 is the weight matrix that I have but  I am going to create a new weight matrix called as W dash which is a quantized weight matrix.   I am going to convert the given weight matrix into a quantized weight matrix which is in  Thank you.  in nature which is integer in nature. So, 2.0 where does it come very close to what?  So, this usually will be in the range of minus 1 to 1. So, I will still take a smaller number  here for just for reference because I am just using minus 1 to 1 little bit higher also you  can take. So, 1.8 that is also still closer to this number. So, 2 or 1.8 does not matter   It is close to one. It is close to one.  So what is the number corresponding to 1? 15. So instead of writing 1.8 the number that  I am going to write in the weight matrix is 15. This is one way of quantization which  I am just giving you a crude method but actual quantization formula is different that I will  talk about it later. But right now I am just giving you a small intuition of how to do   the quantization. So then you have minus, minus, minus, minus, minus, minus, minus,  any small number minus 0.4 let us or plus 0.4 plus 0.4 is one other weight 0.4 is it  there directly in the list no but it is close to which one 0.5 what is the number for that  1.  So you will write 1. This is what we mean by quantization. So quantization step is converting   your either full precision weights or the half precision weights into an integral.  integer representation, is that clear? And how many different types of integers are there?  Depends on how many quantization levels you will have. All of the floating point numbers,  they get converted into a number, 4 bit representation. This is just in 4 bit representation. So,   your 176 billion parameters, all of them are now converted into 4 bits.  because this number requires just 4 bits to be represented. All the weights you will quantize  to 4 bits using this tabular form like this. You need to have a mapping. You have to generate  this. You have to define the range of floating point numbers corresponding to the numbers  integers. Once this table is ready all of the weights that you have will have to be quantized   to these numbers. This is what we mean by quantization.  Now, this W dash is going to be created. So, 176 billion into 4 bits reduces to approximately  80 GB. From 800 GB, we have reduced it to 80 GB. The same 176 billion I am talking about,  I have not reduced the number of parameters. But look at the variation in the memory that   I have achieved from 800 GB to 80 GB.  By storing all the floating point values in the form of a quantized representation, this  is the quantization step, is this clear?  Now what do we do?  Now let us, so how are you going to make use of this quantized weights in your further   processing down  some stream tough. The large language model has been built by open AI, meta and all of  these. They gave me this weight matrix but this weight matrix now has been converted  into W dash which is a quantized version of it and I also have this table with me. This  is available to me. I know how to decontize also. So now if I take 15, if I have 15 what   What is its equivalent floating point number 15 I will not take.  will take 1. If I take 1 what is the equivalent floating point number 0.5 I can decontize  it. So I will get 0.5 but what was the original? So there is an error decontization error.  So for further downstream task I will still use floating point 16 or 32 only but I will   use that on the fly when I want just about to retrieve one block  of weights I will pick up, decontize it and use the floating point number only for further  processing. Do you get what I am saying? This is only for temporarily storing it. This is  a quantization step. I will tell you the whole sequence but just see whether you understood  floating point 32 means what? Floating point 16 means what? What does it mean in terms   of the impact in the size of memory, what does it mean?  to store all your learned weights in the FP32, what does it mean to store all the weights  in FP16, what does it mean to store all the weights in the 4 bit quantization model, all  of this you need to first understand.  This is going to do a lot of saving in memory, the learned weights from GPT now ATGP if I   I have one GPU of this size, the GPT model can be stored in my system if I have  of 80 GB memory, 176 billion parameters, I am successful in storing it on my system,  if I have one RTX 4090 with 80 GB or one A100, one A100 GPU with 80 GB, that much of possibility  is there, but does it mean that I am going to continue to use these numbers for my further  processing, these are integer numbers, they will not make sense, they are not the learned   weights actually, the larnate weights are something else, I cannot be using them for my toss.  I need to still use the floating point numbers only for my inferencing, for my summarization,  for my named entity recognition.  I still need to have floating point numbers, but I am going to do it on the fly that I  will tell you.  But right now are these processes clear?  So now you are going to use these tricks in your task, further downstream task and that  task is nothing but the fine tuning.   So, the topic of today's discussion is fine tuning.  But fine tuning basically is based on these three parameters which I discussed so far.  If you have understood that fine tuning is just like cake walk nothing else is there.  The next topic that we need to discuss in LLM is fine tuning.   tuning there are plenty of methods.  that are available but in our course here we are restricting to one type called as theft.  Parameter efficient fine tuning, parameter efficient fine tuning and under this for   our course we will be studying three loads.  Qlora and prefix tuning. These are the three methods. This is one of the methods only for  fine tuning, one of the methods for fine tuning and in that again we are studying only three   methods which are part of your syllabus, lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower  or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower  or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower  or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower  or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower  or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower  or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower  or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or  q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower  or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q  lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q  lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q  or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower  or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q lower or q  and pre six tuning. So what is fine tuning? Any any answers what is fine tuning? Now I  have discussed so much of Harikate about pre pre trained models weights are there 176 billion   parameters, the entire Harikrata I have told you, now you tell me what is fine tuning.  Yes, exactly, Ajay exactly said it, you have 176 billion weights that is given to you and  176 billion weights what is that they have learnt, what is that parametric knowledge  consists of?  It is a language model, it just understands the language.   one.  to build a medical chatbot let us say. So on this see you have to be silent please be  silent you want to build a medical chatbot or you want to build a chatbot of a chatbot  for our PES applications that knowledge is not exposed to the large language model your  data set is not known. So the data set on which you want to train this model okay you   You have to preload this.  This is transfer learning.  So 176 billion parameters model you will load last but one bench Bhavana and your friend  please be silent.  176 billion parameters you will load and you will give your new data set and all the 176  billion parameters get an update.  All 176 billion parameters get updated which means that you should have 176 gradients also   Thank you.  are generated. 176 gradients and 176 stochastic gradient update rule, you have to do, look  at the number of lobs required. Are you understanding the scale with which we are operating? So  full fine tuning involves updating 176 billion parameters by generating 176 gradients. Normally   it is not done. Again this is the issue of memory.  It is simply the infrastructure is not supporting, it is not about our intelligence, it is about  lack of infrastructural support that we may have, is that clear?  Because of which we are not able to do full fine tuning, this is called as full fine tuning,  what is full fine tuning?   all 176 billion parameters, if you have taken a 176 billion parameter GPT model.  updating all 176 billion parameters which on the new data set this is known as full fine  tuning, full fine tuning is that clear?  Normally this is not done and what is done?  We do peft parameter efficient fine tuning.  Do you understand?  We do not go for full fine tuning but we do what is known as peft parameter efficient   fine tuning which means that a portion  of the parameters only we update not the entire 176 billion. We do not change that, we freeze  176 billion. Is that clear? We freeze actually 176 billion in the first methodology of fine  tuning. We do not touch that 176 first. We train a new set altogether. Is that clear?   That is what is followed in LORA. So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  So, let us look at LORA.  at Lora what it does, how it trains let us look at that. What is Lora? So Lora is one  of the ways in which you are going to fine tune and please remember it is not full fine  tuning okay, it is parameter efficient fine tuning.   you should always remember, peft and glora is under peft.  parameter efficient fine tuning. So let us say your original matrix weight instead of  176 billion for example say I will take 25, 5 cross 5, 25 parameters. I have taken a toy  example to demonstrate what Lora is but this is the 176 billion parameters. I have now   saying it as 25, it is a 5 cross 5 matrix.  matrix that you have. Initially we will take floating point Fp 16, Fp 16 matrix. If I say  Fp 16 matrix I think by now you understand what it is. What is the meaning? The weight  is stored in the form of a Fp 16 matrix. If I state like that what do you understand from   now on. All the weights are stored in 15 bits underline. That is the meaning, okay.  So, 16 bits weights have been stored, 25 weights, 5 cross 5, okay.  What Lora does is, now I have a new dataset, let us say PES dataset I have, I want to train  the model.  So, what I am going to do is, to the model I am going to add what are known as Lora   Adapter layers.  I am going to add Lora adapter layers and these usually the Lora adapter layers come  above self attention and also come above feed forward network at two places they come.  Two adapter layers per layer of transformer they add.  The way they add the layer is something like this.   is known as low rank adaptation.  of stands first.  Low ranked adaptation, what does this mean?  To do the fine-curing for a PES data set which is a downstream task, what is done is you take  the original model, you add layers the original transform on model, okay, your W is also staying  there, you have the W that is already initialized.   Now addition...  Similarly you have to create two more layers which are initialized with weight, the two  layers are initialized with weight and the two layers are split up, they are decomposed  based on the weights, based on the rank of the matrix, they choose the rank.  So let us say I choose rank 1, 5 cross n, 1 and 1 cross 5.   So this is called as B and this is called as A.  The adapter layers consist of two divisions, one is a B layer, other one is a A layer,  these two together are added as the adapter layers above the self-attention and above  feed forward network. So, B is added, A is added. What is the size of B? Phi cross 1,   is the size of a 1 cross 5 and then they fine-tune the model. So, you are acting  module plus the adapter layer together is trained, this is adapter, adapter, adapter  layer together they are trained.  When you finish training what is the meaning of training the model along with the adapter,   the adapter layers contain two matrices kind of weights, phi cross 1 and 1 cross phi in this example.  The two decomposition matrix, low ranked matrices are used in these layers and they get trained  which means that the output of this function unchanged w, no change in w.  While training parameter efficient fine tuning, while training on the new PES dataset, only  B and A are getting changed, only those gradients are getting updated.   W remains frozen.  frozen. Once you finish training it on the PES data set, your B and A are ready now.  B and A are ready. B is a 5 cross 1 weight matrix, A is a 1 cross 5 matrix, they get  trained actually. W does not get trained, you are not going to alter W that is frozen.  That is how internally the implementations will take care. Any gradient back propagation   will only update those weights and it will not affect this.  W continues to be there, for calculations they use it, for training they use it, but  updations are done not on this, you do not touch this at all, you touch only B and A,  when the gradients get propagated only B and A get updated.  Now, the two lower end matrices are used for some purpose, I will tell you that. Now, when   you do b into a, how many parameters are there totally here?  The total number of parameters that are injected here B and A it is 5 and 5, 10 parameters  5 in this 5 cross 1, 5 parameters, other 5 parameters.  Only 10 parameters you are learning, you are learning only 10 parameters but that you will  project it to 25 by doing B into A. Do you understand?  You are learning only 10 parameters while doing fine tuning but you are going to project   it to BA.  B into A which is going to be blown up to 25. Now what you are going to do is you do  W plus B A. W is of the original size 25. So the two low ranked matrices which are learned,  these two low ranked matrices after they have learned which have very less parameters,  they when they are combined will get projected to the original dimension of the matrix and   then you add them but there is another variation.  There is alpha by r, alpha by r, alpha by r, r stands for rank and alpha is another scaling  factor, alpha by r into B A.   This is based on principle similar to SVD.  S V D decomposition, if you remember it in linear algebra you did that, S V D decomposition.  How did you do? Matrix A was decomposed into U S V transpose. Remember that, what does   SVD, what is the reason why we use SVD decomposition?  Ready?  mathematics but I am asking why is SVD decomposition useful, reason, compressing, dimensionality  reduction. Why do you think the dimensionality can be reduced? A matrix has some information,  A has some information. When you, it is possible to decompose a rectangular matrix, otherwise  PCI is only for square matrix but SVD can be used for rectangular matrix and you can   do it.  decomposition. But if you observe the singular value matrix, it is a diagonal matrix. You  remember that singular value matrix is a diagonal matrix where you will have singular  values only across the diagonal. When you decompose this, see please note that A is  represented in the form of USB transpose, decomposed matrix. A is a matrix that is  written in the form of three matrices, that is it.   Together they have to capture back this.  Do you agree with me?  Together they have to capture back A when you multiply all of these matrices.  So, A is decomposed into these three, but when you look at the singular value matrix,  yes the singular values will be along the diagonal and rest of the entries will be 0.  Now, if you observe the singular values as and when you move towards lower end, most of   the values will be 0's even the singular values will be near 0.  are 0's, most of the singular values will be near 0's. What you can do is you can cut  off actually this portion, you can remove some singular values. So when you do the  matrix multiplication, it will automatically reduce the dimension. By removing these singular  values, of course there is loss of information, you are compressing because full combined   the u s v transpose will be your original a, but your original a will be your original a.  will be at some loss if you disconnect this portion, of course dimensions should match.  But you are going to, I am sure you are getting some idea regarding, I am not now talking  about dimensions. You have to remove some singular values because they are close to  0. By removing this there will be some loss of information but the amount of dimensionality   reduction that you get is immense and the performance is not that much affected.  apply singular value decomposition, figure out how many singular values can be removed  and then you recombine form a new matrix so that it is a reduction matrix and then there  is some rank matrix linearly independent dependent rows and all of that.  So these concepts were used in low rank decomposition that is what they did this matrix can be decomposed  into 5 cross 1 and 1 cross 5 and then you can merge this into a blown up matrix. This   This is a  concept that is used in low rank adaptation. So they have used a low rank adaptation, lower  size dimensions that they will learn first and then they will blow it up to a new matrix  by combining the two. So learning these low rank matrices will still capture useful information,  there will be not much of loss of information. Of course there will be some loss, it is not   like totally it is eliminated but learning low rank matrix and combining it is okay.  it is equivalent to learning at a 5 cross 5 matrix but you are learning the amount of  saving for a small matrix like this. If you had to learn inject the full 5, 5 cross 5  you had to inject but instead of injecting a 5 cross 5 you are decomposing it into 5  cross 1 and 1 cross 5, you are learning only 10 parameters and projecting it to 25 and   it still gives a reasonable answer as if phi cross phi has been in the same direction.  So, you are decomposing a 5 cross 5 into this rank 5 cross 1 and 1 cross 5, 1 represents  the rank of the matrix, rank of the matrix.  Did you understand what is the trick that is used in low rank matrices?  Instead of injecting a 5 cross 5 like full blown up type of matrix, the Lora used the  linear algebra, you just understand this much right now, Lora use the linear algebra principle   of decomp...  position and injected a low rant matrix into the adapter layers and learnt smaller number  of parameters, parameter efficient fine tuning, smaller number of parameters but that does  not mean that it will use only those, it will be blown up to the original size at the time  of inferencing, it will not before only merchant keep it.   Are you getting what I am saying? So B is kept learnt, A is kept you just.  need memory of 5 cross 1 and 1 cross 5 only you just need the memory of only 10 instead  of 25 that is kept and then you have your original w that is kept and at the time of  inference new x comes in you need all of those weights the fine tuned weights you need 25  you need original weights pre-trained you need totally finally you need final 25 pre-trained  plus fine tuned weights to do that what you are going to do at the inference time you   you will actually multiply.  at that time it is temporary for a only short period you need that and then you will combine  and then produce. But for inference time you will still need it, 25 size you need inference  time but that is for a short period. Sometimes what they do is they do not do the full thing  I will tell you that also. But is the concept clear? Now how much of so be it do you understand   the lower weight if I ask you questions like this he is lower weight.  doing full fine tuning? No. What is the LOROV concept? It injects low ranked matrices as  two adapter layers, one above self attention, one above feed forward network in every layer  and learns those weights, freezing the original weights, freezing the original weights. The   The original weights are not touched, they are there but they are not touched. What is the meaning of...  that freezing when you do back propagation you will only update the lower weights decompose  weight matrices but you will not update W, W continues to remain same and once the training  fine tuning is done you are ready with your B and A, you are ready with B and A. Now your  new input comes what you should do the new input comes and you have to give an answer   to that new input x.  you have this is the inference time, test image you are giving or test script, test  line you are giving. At that time you need to perform this operation on the fly, B into  A 25 scale the lower weights and then add it to original that is the final total learning  and apply X on that W into X, final W into X will give you the inference value.   Is that clear? This is\u2026  what we do in the LoRa case. Now alpha by r this rank that I chose and alpha which is  a scaling factor this is used to modulate how much of LoRa weights you should use in  the inference alpha by r. Typical values used are 16 for alpha and rank will be 4 to 8,   You can choose, you can set it. The alpha value and the rank value.  value. What is the rank that I have chosen now for injecting? When I say for Lora what  is the rank used? You should look at the injection B and A and decide. The second parameter is  the rank that I have added. So what is the rank that I have added? 1, rank is 1. If I   say I want to inject a rank 2 matrices into Laura what is your understanding? 5 cross 2.  you"
+}
